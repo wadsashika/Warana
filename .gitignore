@@ -1,0 +1,27 @@
+*~
+*.swp
+target
+test-output
+.openshift
+.gitkeep
+*.class
+
+# Package Files #
+*.war
+*.ear
+
+#eclipse genetated files
+.project
+.settings
+.classpath
+.metadata
+.buildpath
+.springBeans
+
+
+#idea generated files
+.idea
+*.ipr
+*.iws
+*.iml
+
