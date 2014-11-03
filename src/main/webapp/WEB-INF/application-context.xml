@@ -6,6 +6,8 @@
 
     <context:annotation-config/>
 
+    <!--Data source configuration goes here-->
+
     <context:component-scan base-package="com.cse.warana.service,com.cse.warana.dao"/>
 
 </beans>
