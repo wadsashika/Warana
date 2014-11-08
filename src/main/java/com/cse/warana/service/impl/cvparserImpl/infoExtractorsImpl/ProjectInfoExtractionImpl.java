@@ -122,23 +122,20 @@ public class ProjectInfoExtractionImpl implements ProjectInfoExtraction {
          * In order to identify the line which describes the technologies
          */
         if (tempText.toLowerCase().contains("technologies") || tempText.toLowerCase().contains("technology")) {
-            tempText = tempText.replaceAll("technology", "").replaceAll("technologies", "").replaceAll("Technologies", "").replaceAll("Technology", "").replaceAll("[:|\\(|\\)]", "");
-            tokenizer = new StringTokenizer(tempText, ",");
-            if (tokenizer.countTokens() > 1) {
-                while (tokenizer.hasMoreElements()) {
-                    temp = (String) tokenizer.nextElement();
-                    System.out.println("************" + temp);
-                    if (!technologies.contains(temp.toLowerCase().trim())) {
 
-                        /**
-                         * TODO Write to the technologies file after lowering the case (enrich the gazeteer list)
-                         * Also added to the technologies in order to avoid the duplicate entries entering the file.
-                         */
-                        technologies.add(temp.toLowerCase().trim());
+            String[] technologyArr = tempText.substring(tempText.toLowerCase().indexOf("technologies") + 12).split(",");
+            if (technologyArr.length > 1){
+                for (int a = 0; a < technologyArr.length; a++){
+                    technologyArr[a] = technologyArr[a].replaceAll("[:]","");
+                    System.out.println("************" + technologyArr[a].toLowerCase().trim());
+                    if (!technologies.contains(technologyArr[a].toLowerCase().trim())) {
+                        // Write to the technologies file after lowering the case
+                        // Also added to the technologies in order to avoid the duplicate entries entering the file.
+                        technologies.add(technologyArr[a].toLowerCase().trim());
                     }
                 }
                 return true;
-            } else {
+            }else {
                 tokenizer = new StringTokenizer(tempText, " ");
                 if (tokenizer.countTokens() <= 2) {
                     System.out.println("*************" + tempText);
