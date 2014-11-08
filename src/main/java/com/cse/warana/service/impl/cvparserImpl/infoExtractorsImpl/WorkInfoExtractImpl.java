@@ -96,6 +96,8 @@ public class WorkInfoExtractImpl implements WorkInfoExtract {
                     if (!foundCompany && matcher.matches()) {
                         System.out.println();
                         System.out.println("found");
+                        System.out.println(lineText);
+                        findDuration(lineText,lines.get(b + 1));
                         linesCopy.remove(lineText);
                     }
 
