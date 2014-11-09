@@ -16,7 +16,7 @@ public interface ProjectInfoExtraction {
      * @param linesCopy
      * @throws java.io.IOException
      */
-    public void extractProjectInfo(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy);
+    public void extractProjectInfo(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy, ArrayList<String> candidateTechnologies);
 
 
     /**
@@ -27,7 +27,7 @@ public interface ProjectInfoExtraction {
      * @param lineText
      * @return
      */
-    public boolean checkForTechnologiesDescription(String lineText);
+    public boolean checkForTechnologiesDescription(String lineText,ArrayList<String> candidateTechnologies);
 
 
     /**

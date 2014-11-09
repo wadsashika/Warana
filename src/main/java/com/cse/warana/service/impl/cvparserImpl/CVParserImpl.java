@@ -246,6 +246,27 @@ public class CVParserImpl implements CVParser {
                         System.out.println(line + "-----Matched to PROJECTS INFO");
                     }
                 }
+
+                /**
+                 * Check for the Special interests of the candidate
+                 */
+                pattern = Pattern.compile(".*interests.*");
+                matcher = pattern.matcher(line.toLowerCase());
+
+                if (matcher.matches()) {
+                    if (sectionMap.containsKey("INTERESTS_INFO")) {
+                        if (!(sectionMap.get("INTERESTS_INFO")).contains(new Integer(a))) {
+                            (sectionMap.get("INTERESTS_INFO")).add(new Integer(a));
+                        }
+                    } else {
+                        ArrayList<Integer> l = new ArrayList<Integer>();
+                        l.add(new Integer(a));
+                        sectionMap.put("INTERESTS_INFO", l);
+                    }
+                    indexedLines.add(String.valueOf(a));
+
+                    System.out.println(line + "-----Matched to INTERESTS INFO");
+                }
             }
 
             pattern = Pattern.compile(".*referee.*");
@@ -282,6 +303,8 @@ public class CVParserImpl implements CVParser {
         ProjectInfoExtractionImpl projInfo = new ProjectInfoExtractionImpl();
         RefereeInfoExtractImpl refInfo = new RefereeInfoExtractImpl(classifier);
         FindMissedInfoImpl missedInfo = new FindMissedInfoImpl();
+        InterestsInfoExtractImpl interestsInfo =  new InterestsInfoExtractImpl();
+        ArrayList<String> candidateTechnologies = new ArrayList<String>();
 
         String previous = "";
         Iterator it = sectionMap.entrySet().iterator();
@@ -297,12 +320,22 @@ public class CVParserImpl implements CVParser {
             } else if (pairs.getKey().equals("AWRD_INFO")) {
                 achInfo.extractAchievementInformation(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy);
             } else if (pairs.getKey().equals("PROJ_INFO")) {
-                projInfo.extractProjectInfo(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy);
+                projInfo.extractProjectInfo(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy, candidateTechnologies);
             } else if (pairs.getKey().equals("REF_INFO")) {
                 refInfo.getRefereeInfo(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy);
+            } else if (pairs.getKey().equals("INTERESTS_INFO")){
+                interestsInfo.extractInterestsInformation(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy);
             }
         }
         missedInfo.findProfileInfo(linesCopy);
+
+        /**
+         * String technologies is used to store the technologies of the candidate as a comma separated string
+         */
+        String technologies = "";
+        for (int a = 0; a < candidateTechnologies.size(); a++){
+            technologies += candidateTechnologies.get(a) + ",";
+        }
     }
 
 
