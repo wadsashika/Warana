@@ -383,7 +383,11 @@ public class CVParserServiceImpl implements CVParserService {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-            cdoc.close();
+            try {
+                cdoc.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }

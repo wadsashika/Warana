@@ -133,6 +133,24 @@
             <version>1.7.2</version>
         </dependency>
 
+        <!--pdfbox-->
+        <dependency>
+            <groupId>org.apache.pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
+            <version>1.8.6</version>
+        </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>org.apache.maven.doxia</groupId>-->
+            <!--<artifactId>doxia</artifactId>-->
+            <!--<version>1.0-alpha-7</version>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>edu.stanford.nlp</groupId>
+            <artifactId>stanford-corenlp</artifactId>
+            <version>3.4</version>
+        </dependency>
     </dependencies>
 
     <build>
