@@ -105,6 +105,12 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
+        </dependency>
+
         <!-- slf4j-log4j Bridge for testing -->
         <dependency>
             <groupId>org.slf4j</groupId>
