@@ -1,5 +1,8 @@
 package com.cse.warana.utility.infoExtractors;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -14,6 +17,7 @@ import java.util.regex.Pattern;
 public class EducationalInfoExtract {
 
 
+    private static Logger LOG = LoggerFactory.getLogger(EducationalInfoExtract.class);
     /**
      * Extract educational information
      *
@@ -27,7 +31,7 @@ public class EducationalInfoExtract {
         BufferedReader br = null;
         String indexWord = "";
         try {
-            br = new BufferedReader(new FileReader("input/eduIndex.txt"));
+            br = new BufferedReader(new FileReader("F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\gazeteerLists\\eduIndex"));
             indexWord = br.readLine();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -53,7 +57,7 @@ public class EducationalInfoExtract {
         }
 
 
-        System.out.println("----Beginning Educational Information----");
+        LOG.info("----Beginning Educational Information----");
         for (int a = 0; a < headingLines.size(); a++) {
             for (int b = (headingLines.get(a).intValue() + 1); b < lines.size(); b++) {
                 lineText = lines.get(b);
@@ -65,7 +69,7 @@ public class EducationalInfoExtract {
                         matcher = pattern.matcher(lineText.toLowerCase());
 
                         if (matcher.matches()) {
-                            System.out.println(lineText + "--------THIS IS EDUCATIONAL INFORMATION");
+                            LOG.info(lineText + "--------THIS IS EDUCATIONAL INFORMATION");
                             // Remove the line from the array list.
                             linesCopy.remove(lineText);
                         }
@@ -73,6 +77,6 @@ public class EducationalInfoExtract {
                 }
             }
         }
-        System.out.println("----Ending Educational Information----\n");
+        LOG.info("----Ending Educational Information----\n");
     }
 }

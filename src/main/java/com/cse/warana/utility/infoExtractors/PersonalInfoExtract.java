@@ -1,5 +1,8 @@
 package com.cse.warana.utility.infoExtractors;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;
@@ -10,6 +13,8 @@ import java.util.regex.Pattern;
  */
 public class PersonalInfoExtract {
 
+
+    private static Logger LOG = LoggerFactory.getLogger(PersonalInfoExtract.class);
 
     /**
      * Extract the personal information from the text, such as name, email, gender, mobile number, etc..
@@ -25,7 +30,7 @@ public class PersonalInfoExtract {
 
         String lineText = "";
 
-        System.out.println("----Beginning Personal/profile Information----");
+        LOG.info("----Beginning Personal/profile Information----");
         for (int a = 0; a < headingLines.size(); a++) {
             for (int b = (headingLines.get(a).intValue() + 1); b < lines.size(); b++) {
                 lineText = lines.get(b);
@@ -54,7 +59,7 @@ public class PersonalInfoExtract {
 
             }
         }
-        System.out.println("----Ending personal Information----\n");
+        LOG.info("----Ending personal Information----\n");
     }
 
 
@@ -75,16 +80,16 @@ public class PersonalInfoExtract {
                     if (tokens[a + 1].equalsIgnoreCase("with") && tokens[a + 2].equalsIgnoreCase("initials")) {
                         for (int b = a + 3; b < tokens.length; b++) {
                             name += tokens[b] + " ";
-                            System.out.println(tokens[b]);
+                            LOG.info(tokens[b]);
                         }
-                        System.out.println();
+                        LOG.info("");
                         return true;
                     } else {
                         for (int b = a + 1; b < tokens.length; b++) {
                             name += tokens[b] + " ";
-                            System.out.print(tokens[b] + " ");
+                            LOG.info(tokens[b] + " ");
                         }
-                        System.out.println();
+                        LOG.info("");
                         return true;
                     }
                 }
@@ -110,7 +115,7 @@ public class PersonalInfoExtract {
             if (tokens[a].equalsIgnoreCase("Gender") || tokens[a].equalsIgnoreCase("Sex")) {
                 for (int b = a + 1; b < tokens.length; b++) {
                     geneder += tokens[b];
-                    System.out.println(tokens[b]);
+                    LOG.info(tokens[b]);
                 }
                 return true;
             }
@@ -137,7 +142,7 @@ public class PersonalInfoExtract {
             Matcher matcher = pattern.matcher(para.trim());
 
             if (matcher.find()) {
-                System.out.println(matcher.group(1));
+                LOG.info(matcher.group(1));
                 return true;
             }
         }
@@ -159,12 +164,12 @@ public class PersonalInfoExtract {
         if (paraLower.contains("date of birth")) {
             String[] arr = paraLower.split("date of birth");
             dob += arr[1];
-            System.out.println(arr[1]);
+            LOG.info(arr[1]);
             return true;
         } else if (paraLower.contains("birth day")) {
             String[] arr = paraLower.split("birth day");
             dob += arr[1];
-            System.out.println(arr[1]);
+            LOG.info(arr[1]);
             return true;
         }
         return false;
@@ -197,10 +202,10 @@ public class PersonalInfoExtract {
             gitMtch = gitPtrn.matcher(tempTk);
 
             if (linkedInMtch.matches()) {
-                System.out.println("LinkedIn: " + tempTk);
+                LOG.info("LinkedIn: " + tempTk);
                 foundOther = true;
             } else if (gitMtch.matches()) {
-                System.out.println("Git: " + tempTk);
+                LOG.info("Git: " + tempTk);
                 foundOther = true;
             }
         }

@@ -35,5 +35,7 @@ public interface CVParserService {
      */
     public void readPdfDocument(File file);
 
+    public String test();
+
 
 }

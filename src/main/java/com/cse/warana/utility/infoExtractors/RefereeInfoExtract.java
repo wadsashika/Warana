@@ -2,6 +2,8 @@ package com.cse.warana.utility.infoExtractors;
 
 import edu.stanford.nlp.ie.AbstractSequenceClassifier;
 import edu.stanford.nlp.ling.CoreLabel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.regex.Matcher;
@@ -12,7 +14,7 @@ import java.util.regex.Pattern;
  */
 public class RefereeInfoExtract {
 
-
+    private static Logger LOG = LoggerFactory.getLogger(AchievementsInfoExtract.class);
     public static AbstractSequenceClassifier<CoreLabel> classifier = null;
 
     /**
@@ -41,7 +43,7 @@ public class RefereeInfoExtract {
          * Get the name of the referee
          */
 
-        System.out.println("----Beginning Referee Information----");
+        LOG.info("----Beginning Referee Information----");
         for (int a = 0; a < headingLines.size(); a++) {
             for (int b = (headingLines.get(a).intValue() + 1); b < lines.size(); b++) {
                 lineText = lines.get(b);
@@ -59,7 +61,7 @@ public class RefereeInfoExtract {
                         Pattern pattern = Pattern.compile("<PERSON>(.*?)</PERSON>");
                         Matcher matcher = pattern.matcher(classifierText);
                         while (matcher.find()) {
-                            System.out.println(matcher.group(1));
+                            LOG.info(matcher.group(1));
                         }
                         identified = true;
                     }
@@ -72,7 +74,7 @@ public class RefereeInfoExtract {
                         Pattern pattern = Pattern.compile("<ORGANIZATION>(.*?)</ORGANIZATION>");
                         Matcher matcher = pattern.matcher(classifierText);
                         while (matcher.find()) {
-                            System.out.println(matcher.group(1));
+                            LOG.info(matcher.group(1));
                         }
                         identified = true;
                     }
@@ -101,7 +103,7 @@ public class RefereeInfoExtract {
                         Pattern pattern = Pattern.compile("((dr|prof)(.*?))");
                         Matcher matcher = pattern.matcher(lineText.toLowerCase());
                         while (matcher.find()) {
-                            System.out.println(matcher.group(0));
+                            LOG.info(matcher.group(0));
                         }
                         identified = true;
                     }
@@ -115,7 +117,7 @@ public class RefereeInfoExtract {
                 }
             }
         }
-        System.out.println("----Ending Referee Information----\n");
+        LOG.info("----Ending Referee Information----\n");
     }
 
 
@@ -131,7 +133,7 @@ public class RefereeInfoExtract {
 
         while (matcher.find()) {
             String email = matcher.group();
-            System.out.println(email);
+            LOG.info(email);
             return true;
         }
         return false;
@@ -148,7 +150,7 @@ public class RefereeInfoExtract {
         Matcher matcher = pattern.matcher(para.toLowerCase());
 
         if (matcher.find()) {
-            System.out.println(para);
+            LOG.info(para);
             return true;
         }
         return false;

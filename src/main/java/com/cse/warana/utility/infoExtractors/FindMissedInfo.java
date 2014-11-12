@@ -1,5 +1,8 @@
 package com.cse.warana.utility.infoExtractors;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -9,6 +12,8 @@ import java.util.regex.Pattern;
  */
 public class FindMissedInfo {
 
+
+    private static Logger LOG = LoggerFactory.getLogger(FindMissedInfo.class);
 
     /**
      * Assume that the profile information is mentioned at the beginning of the resume
@@ -33,7 +38,7 @@ public class FindMissedInfo {
             if (matcher.matches()) {
                 for (int b = a + 1; b < terminatingLine; b++) {
                     if (getEmail(lines.get(b))) {
-                        System.out.println("Suggested as name: " + matcher.group(1));
+                        LOG.info("Suggested as name: " + matcher.group(1));
                         break;
                     }
                 }
@@ -56,7 +61,7 @@ public class FindMissedInfo {
             Matcher matcher = pattern.matcher(tokens[a].trim());
 
             if (matcher.find()) {
-                System.out.println(matcher.group(1));
+                LOG.info(matcher.group(1));
                 return true;
             }
         }

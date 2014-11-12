@@ -1,5 +1,6 @@
 package com.cse.warana.service.impl;
 
+import com.cse.warana.controller.ExampleController;
 import com.cse.warana.service.CVParserService;
 import com.cse.warana.utility.infoExtractors.*;
 import edu.stanford.nlp.ie.AbstractSequenceClassifier;
@@ -9,6 +10,10 @@ import org.apache.pdfbox.cos.COSDocument;
 import org.apache.pdfbox.pdfparser.PDFParser;
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.util.PDFTextStripper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -23,6 +28,7 @@ import java.util.regex.Pattern;
  * Created by Nadeeshaan on 11/7/2014.
  */
 
+@Service("cvParser")
 public class CVParserServiceImpl implements CVParserService {
 
     /**
@@ -42,6 +48,11 @@ public class CVParserServiceImpl implements CVParserService {
 
     public static AbstractSequenceClassifier<CoreLabel> classifier = null;
 
+    private static Logger LOG = LoggerFactory.getLogger(CVParserServiceImpl.class);
+
+    @Value("${GAZETEER.LIST.PATH}")
+    private static String listPath;
+
 
     /**
      * Constructor
@@ -51,7 +62,7 @@ public class CVParserServiceImpl implements CVParserService {
          * Load the 7 class classifier
          * Finds Time, Location, Organization, Person, Money, Percent, Date
          */
-        String serializedClassifier = "classifiers/english.muc.7class.distsim.crf.ser.gz";
+        String serializedClassifier = "F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\classifiers\\english.muc.7class.distsim.crf.ser.gz";
         try {
             classifier = CRFClassifier.getClassifier(serializedClassifier);
         } catch (IOException e) {
@@ -60,7 +71,6 @@ public class CVParserServiceImpl implements CVParserService {
             e.printStackTrace();
         }
     }
-
 
     /**
      * In this method, tokens are loaded to the memory(ArrayList)
@@ -74,11 +84,11 @@ public class CVParserServiceImpl implements CVParserService {
          */
         String token = "";
         try {
-            BufferedReader EduBr = new BufferedReader(new FileReader("input/eduTokens"));
-            BufferedReader ProfsBr = new BufferedReader(new FileReader("input/profTokens"));
-            BufferedReader WrkBr = new BufferedReader(new FileReader("input/wrkTokens"));
-            BufferedReader AwrdBr = new BufferedReader(new FileReader("input/awardsTokens"));
-            BufferedReader ProjBr = new BufferedReader(new FileReader("input/projTokens"));
+            BufferedReader EduBr = new BufferedReader(new FileReader("F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\gazeteerLists\\eduTokens"));
+            BufferedReader ProfsBr = new BufferedReader(new FileReader("F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\gazeteerLists\\profTokens"));
+            BufferedReader WrkBr = new BufferedReader(new FileReader("F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\gazeteerLists\\wrkTokens"));
+            BufferedReader AwrdBr = new BufferedReader(new FileReader("F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\gazeteerLists\\awardsTokens"));
+            BufferedReader ProjBr = new BufferedReader(new FileReader("F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\gazeteerLists\\projTokens"));
 
             token = EduBr.readLine();
 
@@ -159,7 +169,7 @@ public class CVParserServiceImpl implements CVParserService {
                         }
                         indexedLines.add(String.valueOf(a));
 
-                        System.out.println(line + "-----Matched to EDUCATIONAL INFO");
+                        LOG.info(line + "-----Matched to EDUCATIONAL INFO");
                     }
                 }
 
@@ -181,7 +191,7 @@ public class CVParserServiceImpl implements CVParserService {
                         }
                         indexedLines.add(String.valueOf(a));
 
-                        System.out.println(line + "-----Matched to PROFILE INFO");
+                        LOG.info(line + "-----Matched to PROFILE INFO");
                     }
                 }
 
@@ -201,7 +211,7 @@ public class CVParserServiceImpl implements CVParserService {
                         }
                         indexedLines.add(String.valueOf(a));
 
-                        System.out.println(line + "-----Matched to Work INFO");
+                        LOG.info(line + "-----Matched to Work INFO");
                     }
                 }
 
@@ -221,7 +231,7 @@ public class CVParserServiceImpl implements CVParserService {
                         }
                         indexedLines.add(String.valueOf(a));
 
-                        System.out.println(line + "-----Matched to AWARDS INFO");
+                        LOG.info(line + "-----Matched to AWARDS INFO");
                     }
                 }
 
@@ -241,7 +251,7 @@ public class CVParserServiceImpl implements CVParserService {
                         }
                         indexedLines.add(String.valueOf(a));
 
-                        System.out.println(line + "-----Matched to PROJECTS INFO");
+                        LOG.info(line + "-----Matched to PROJECTS INFO");
                     }
                 }
 
@@ -263,7 +273,7 @@ public class CVParserServiceImpl implements CVParserService {
                     }
                     indexedLines.add(String.valueOf(a));
 
-                    System.out.println(line + "-----Matched to INTERESTS INFO");
+                    LOG.info(line + "-----Matched to INTERESTS INFO");
                 }
             }
 
@@ -282,7 +292,7 @@ public class CVParserServiceImpl implements CVParserService {
                 }
                 indexedLines.add(String.valueOf(a));
 
-                System.out.println(line + "-----Matched to REFEREE INFO");
+                LOG.info(line + "-----Matched to REFEREE INFO");
             }
         }
     }
@@ -308,7 +318,7 @@ public class CVParserServiceImpl implements CVParserService {
         Iterator it = sectionMap.entrySet().iterator();
         while (it.hasNext()) {
             Map.Entry pairs = (Map.Entry) it.next();
-            System.out.println(pairs.getKey() + " = " + pairs.getValue());
+            LOG.info(pairs.getKey() + " = " + pairs.getValue());
             if (pairs.getKey().equals("EDU_INFO")) {
                 eduInfo.extractEduInformation(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy);
             } else if (pairs.getKey().equals("PROF_INFO")) {
@@ -378,7 +388,7 @@ public class CVParserServiceImpl implements CVParserService {
             }
 
             for (int a = 0; a < lines.size(); a++) {
-                System.out.println(lines.get(a));
+                LOG.info(lines.get(a));
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -389,5 +399,10 @@ public class CVParserServiceImpl implements CVParserService {
                 e.printStackTrace();
             }
         }
+    }
+
+    @Override
+    public String test(){
+        return "Hello There";
     }
 }

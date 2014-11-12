@@ -1,5 +1,8 @@
 package com.cse.warana.utility.infoExtractors;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -13,6 +16,8 @@ import java.util.regex.Pattern;
  */
 public class AchievementsInfoExtract {
 
+
+    private static Logger LOG = LoggerFactory.getLogger(AchievementsInfoExtract.class);
 
     /**
      * Extract the Achievement information
@@ -31,7 +36,7 @@ public class AchievementsInfoExtract {
         String indexString = "";
 
         try {
-            br = new BufferedReader(new FileReader("input/achievementsIndex.txt"));
+            br = new BufferedReader(new FileReader("F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\gazeteerLists\\achievementsIndex"));
             indexString = br.readLine();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -53,7 +58,7 @@ public class AchievementsInfoExtract {
 
         String lineText = "";
 
-        System.out.println("----Beginning Achievements Information----");
+        LOG.info("----Beginning Achievements Information----");
         for (int a = 0; a < headingLines.size(); a++) {
             for (int b = (headingLines.get(a).intValue() + 1); b < lines.size(); b++) {
                 lineText = lines.get(b);
@@ -66,7 +71,7 @@ public class AchievementsInfoExtract {
                             matcher = pattern.matcher(lineText.toLowerCase());
 
                             if (matcher.matches()) {
-                                System.out.println(lineText + "----- THIS IS AN ACHIEVEMENT");
+                                LOG.info(lineText + "----- THIS IS AN ACHIEVEMENT");
                                 // Remove the line from the array list.
                                 linesCopy.remove(lineText);
                                 break;
@@ -76,6 +81,6 @@ public class AchievementsInfoExtract {
                 }
             }
         }
-        System.out.println("----Ending Achievements Information----\n");
+        LOG.info("----Ending Achievements Information----\n");
     }
 }

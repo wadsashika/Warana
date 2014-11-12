@@ -1,26 +1,32 @@
 package com.cse.warana.utility.infoExtractors;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.ArrayList;
 
 /**
  * Created by Nadeeshaan on 11/9/2014.
  */
 public class InterestsInfoExtract {
+
+    private static Logger LOG = LoggerFactory.getLogger(InterestsInfoExtract.class);
+
     public void extractInterestsInformation(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy){
         String lineText = "";
 
-        System.out.println("----Beginning Interests Information----");
+        LOG.info("----Beginning Interests Information----");
         for (int a = 0; a < headingLines.size(); a++) {
             for (int b = (headingLines.get(a).intValue() + 1); b < lines.size(); b++) {
                 lineText = lines.get(b);
                 if (allHeadings.contains(String.valueOf(b))) {
                     break;
                 } else {
-                    System.out.println(lineText);
+                    LOG.info(lineText);
                 }
 
             }
         }
-        System.out.println("----Ending Interests Information----\n");
+        LOG.info("----Ending Interests Information----\n");
     }
 }

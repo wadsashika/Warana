@@ -2,6 +2,8 @@ package com.cse.warana.utility.infoExtractors;
 
 import edu.stanford.nlp.ie.AbstractSequenceClassifier;
 import edu.stanford.nlp.ling.CoreLabel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -18,6 +20,7 @@ public class WorkInfoExtract {
 
     public static AbstractSequenceClassifier<CoreLabel> classifier = null;
     public static ArrayList<String> companies = new ArrayList<String>();
+    private static Logger LOG = LoggerFactory.getLogger(AchievementsInfoExtract.class);
 
     /**
      * Constructor Method
@@ -29,7 +32,7 @@ public class WorkInfoExtract {
         /**
          * Load the companies gazeteer list
          */
-        populateByFile("input/companyNames", companies);
+        populateByFile("F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\gazeteerLists\\companyNames", companies);
     }
 
 
@@ -45,7 +48,7 @@ public class WorkInfoExtract {
         String lineText = "";
         boolean foundCompany = false;
 
-        System.out.println("----Beginning Work Information----");
+        LOG.info("----Beginning Work Information----");
         for (int a = 0; a < headingLines.size(); a++) {
             for (int b = (headingLines.get(a).intValue() + 1); b < lines.size(); b++) {
                 lineText = lines.get(b);
@@ -66,7 +69,7 @@ public class WorkInfoExtract {
                             Pattern pattern = Pattern.compile("<ORGANIZATION>(.*?)</ORGANIZATION>");
                             Matcher matcher = pattern.matcher(classifierText);
                             while (matcher.find()) {
-                                System.out.println(matcher.group(1));
+                                LOG.info(matcher.group(1));
                             }
                         }
                     }
@@ -82,9 +85,9 @@ public class WorkInfoExtract {
                         String tokens[] = lineText.split(" ");
                         for (int x = 0; x < tokens.length; x++) {
                             if (companies.contains(tokens[x].toLowerCase())) {
-                                System.out.println(findFullCompanyName(tokens, x));
+                                LOG.info(findFullCompanyName(tokens, x));
                                 findDuration(lineText, lines.get(b + 1));
-                                System.out.println("Found");
+                                LOG.info("Found");
                                 linesCopy.remove(lineText);
                                 foundCompany = true;
                             }
@@ -100,9 +103,9 @@ public class WorkInfoExtract {
                     Matcher matcher = pattern.matcher(lineText.toLowerCase());
 
                     if (!foundCompany && matcher.matches()) {
-                        System.out.println();
-                        System.out.println("found");
-                        System.out.println(lineText);
+                        LOG.info("");
+                        LOG.info("found");
+                        LOG.info(lineText);
                         findDuration(lineText,lines.get(b + 1));
                         linesCopy.remove(lineText);
                     }
@@ -113,7 +116,7 @@ public class WorkInfoExtract {
                 }
             }
         }
-        System.out.println("----Ending Work Information----\n");
+        LOG.info("----Ending Work Information----\n");
     }
 
 
@@ -153,10 +156,10 @@ public class WorkInfoExtract {
             Matcher matcher = pattern.matcher(classifierText);
             while (matcher.find()) {
                 if (x == 0) {
-                    System.out.println("From:" + matcher.group(1));
+                    LOG.info("From:" + matcher.group(1));
                     x++;
                 } else {
-                    System.out.println("To:" + matcher.group(1));
+                    LOG.info("To:" + matcher.group(1));
                 }
             }
         } else if (classifierText2.contains("<DATE>")) {
@@ -165,10 +168,10 @@ public class WorkInfoExtract {
             Matcher matcher = pattern.matcher(classifierText2);
             while (matcher.find()) {
                 if (x == 0) {
-                    System.out.println("From:" + matcher.group(1));
+                    LOG.info("From:" + matcher.group(1));
                     x++;
                 } else {
-                    System.out.println("To:" + matcher.group(1));
+                    LOG.info("To:" + matcher.group(1));
                 }
             }
         }

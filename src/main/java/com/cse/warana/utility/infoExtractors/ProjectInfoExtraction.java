@@ -1,5 +1,8 @@
 package com.cse.warana.utility.infoExtractors;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -16,7 +19,7 @@ public class ProjectInfoExtraction {
 
     public static ArrayList<String> technologies = new ArrayList<String>();
 
-
+    private static Logger LOG = LoggerFactory.getLogger(ProjectInfoExtraction.class);
     /**
      * Extract the project information
      *
@@ -37,7 +40,7 @@ public class ProjectInfoExtraction {
         BufferedReader br = null;
         String biWrod = "";
         try {
-            br = new BufferedReader(new FileReader("input/projBiwordIndex.txt"));
+            br = new BufferedReader(new FileReader("F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\gazeteerLists\\projBiwordIndex"));
             biWrod = br.readLine();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -67,7 +70,7 @@ public class ProjectInfoExtraction {
          * People usually include the project related technologies after or within the project description and
          * the project description is always included after the name of the project
          */
-        System.out.println("----Beginning Project Information----");
+        LOG.info("----Beginning Project Information----");
         for (int a = 0; a < headingLines.size(); a++) {
             startProjectLine = -1;
             endProjectLine = -1;
@@ -86,7 +89,7 @@ public class ProjectInfoExtraction {
                         for (int x = startProjectLine; x < endProjectLine; x++) {
                             tokenizer = new StringTokenizer(lines.get(x), " ");
                             if (tokenizer.countTokens() > 2) {
-                                System.out.println(lines.get(x));
+                                LOG.info(lines.get(x));
                             }
                         }
                         startProjectLine = -1;
@@ -94,7 +97,7 @@ public class ProjectInfoExtraction {
                 }
             }
         }
-        System.out.println("----Ending Project Information----\n");
+        LOG.info("----Ending Project Information----\n");
     }
 
 
@@ -127,7 +130,7 @@ public class ProjectInfoExtraction {
                 for (int a = 0; a < technologyArr.length; a++) {
                     technologyArr[a] = technologyArr[a].replaceAll("[:]", "");
                     technologyVal = technologyArr[a].toLowerCase().trim();
-                    System.out.println("************" + technologyVal);
+                    LOG.info("************" + technologyVal);
                     if (!candidateTechnologies.contains(technologyVal)) {
                         candidateTechnologies.add(technologyVal);
                     }
@@ -163,7 +166,7 @@ public class ProjectInfoExtraction {
                             if (!candidateTechnologies.contains(technologyVal)) {
                                 candidateTechnologies.add(technologyVal);
                             }
-                            System.out.println("**************" + technologyVal);
+                           LOG.info("**************" + technologyVal);
                         }
                         return true;
                     }
@@ -182,7 +185,7 @@ public class ProjectInfoExtraction {
                             // Also added to the technologies in order to avoid the duplicate entries entering the file.
                             technologies.add(tokens[y].toLowerCase().trim());
                         }
-                        System.out.println("**************" + tokens[y].toLowerCase().trim());
+                        LOG.info("**************" + tokens[y].toLowerCase().trim());
                     }
                     return true;
                 }
