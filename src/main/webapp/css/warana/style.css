@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+header {
+    width: 100%;
+    min-height: 50px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    box-shadow: 0 1px 3px #111;
+}
+
+footer {
+    width: 100%;
+    min-height: 100px;
+    background: url("../../images/footer-back.png") repeat;
+    box-shadow: inset 0 0 10px #222;
+}
+
+footer .footer-content {
+    margin: 0 auto;
+}
+
+footer .footer-content .social {
+    width: 100%;
+    height: 47px;
+}
+
+.social .social-icons{
+    width: 200px;
+    margin: 25px auto;
+}
+
+.social span {
+    width: 40px;
+    height: 42px;
+    margin-left: 20px;
+    display: block;
+    float: left;
+    background: url(../../images/icon-sprite.png) no-repeat;
+}
+
+.social span.footer-twitter {
+    background-position: -112px -9px;
+}
+
+.social span.footer-twitter:hover{
+    background-position: -255px -9px;
+}
+
+.social span.footer-facebook {
+    background-position: -211px -9px;
+}
+
+.social span.footer-facebook:hover{
+    background-position: -11px -9px;
+}
+
+.social span.footer-google {
+    background-position: -162px -9px;
+}
+
+.social span.footer-google:hover{
+    background-position: -61px -9px;
+}
+
+.content-copy{
+    width: 100%;
+    text-align: center;
+}
+.content-copy .content-copy-text{
+    width: 210px;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1050px;
+}
+
+.body-container {
+    max-width: 1200px;
+}
+
+.logo-holder {
+    float: left;
+    width: 150px;
+}
+
+.top-buttons {
+    padding: 16px 15px;
+    display: block;
+    background-color: inherit;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    color: #ffffff;
+}
+
+.last-button {
+    border-right: none;
+}
+
