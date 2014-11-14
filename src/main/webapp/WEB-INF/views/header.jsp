@@ -35,8 +35,8 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><button data-toggle="modal" href="#login-popup" class="top-buttons">Login</button></li>
-                    <li><button href="#" class="top-buttons last-button">Sign Up</button></li>
+                    <li><button id="loginBtn" data-toggle="modal" href="#login-popup" class="top-buttons">Login</button></li>
+                    <li><button href="#signup-form" class="top-buttons last-button">Sign Up</button></li>
                 </ul>
             </div>
         </div>

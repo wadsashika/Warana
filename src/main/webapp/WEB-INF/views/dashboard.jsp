@@ -1,11 +1,9 @@
 <%@include file="header.jsp" %>
 
 
-<link href='<c:url value="/css/bootstrap.min.css" />' rel="stylesheet" type="text/css"/>
 <link href='<c:url value="/css/warana/pages-commons.css" />' rel="stylesheet" type="text/css"/>
 <link href='<c:url value="/css/warana/dashboard.css" />' rel="stylesheet" type="text/css"/>
 
-<script src='<c:url value="/js/bootstrap.min.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/morris-data.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/morris.min.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/raphael.min.js" />' type="text/javascript"></script>

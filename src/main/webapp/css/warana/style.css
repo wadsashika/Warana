@@ -78,7 +78,6 @@ footer .footer-content .social {
 .content-copy .content-copy-text{
     width: 210px;
     display: inline-block;
-    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     color: #ffffff;
 }
@@ -136,7 +135,7 @@ footer .footer-content .social {
     background: #FFFFFF url('../../images/hero-back.png') repeat;
     padding: 30px 0 40px 0;
     text-align: center;
-    color: #fff;
+    color: #222;
     border-bottom: 1px solid #147f8b;
 }
 
@@ -152,23 +151,27 @@ footer .footer-content .social {
     margin: 5px auto;
 }
 
-.hero-head h1,p{
-    font-family: 'Open Sans Condensed', sans-serif;
-}
 
 .head{
     text-align: center;
     padding: 0;
-    margin-bottom: 25px;
-    color: #222;
+    margin-bottom: 30px;
 }
 
 .head h2{
     font-size: 40px;
 }
 
+.feature .head{
+    color: #fff;
+}
+
+.signup .head{
+    color: #222;
+}
+
 .feature{
-     background: #FFFFFF url('../../images/features-back.png') repeat;
+     background: #FFFFFF url('../../images/feature-back.jpg') center center repeat;
      padding: 40px 0;
      box-shadow: inset 0 0 10px #000;
  }
@@ -177,11 +180,11 @@ footer .footer-content .social {
     max-width: 300px;
     margin: 0 auto 25px;
     padding: 25px;
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.18);
     text-align: center;
     border-radius: 5px;
-    box-shadow: inset 0 0 15px rgba(66, 58, 58, 0.15);
-    border: 1px solid rgba(76, 63, 63, 0.15);
+    box-shadow: inset 0 0 15px rgba(255,255,255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .feature .feature-item span{
@@ -213,13 +216,18 @@ footer .footer-content .social {
 
 .feature .feature-item h3{
      margin: 12px 0 0;
-     color: #222;
+     color: #ffffff;
      font-size: 23px;
  }
 
 .feature .feature-item p{
     padding-top: 10px;
-    color: #222;
+    color: #ffffff;
     font-size: 15px;
     line-height: 22px;
+}
+
+.signup .btn{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
 }
