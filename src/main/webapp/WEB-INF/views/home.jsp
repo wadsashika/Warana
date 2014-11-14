@@ -6,10 +6,10 @@
 <script src='<c:url value="/js/bootstrap-modal.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/bootstrap-modalmanager.js" />' type="text/javascript"></script>
 
-<div class="body-container col-xs-12">
-    <div id="login-popup" class="modal  fade" tabindex="-1" data-width="400">
+<div class="body-container col-sm-12 col-md-12">
+    <div id="login-popup" class="modal  fade" tabindex="-1" data-width="350">
         <c:if test="${not empty error}">
-            <div class="msg-box error">
+            <div class="login-error">
                 <div class="ln">Username and password do not match</div>
             </div>
         </c:if>
@@ -17,36 +17,80 @@
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
             <h3>User Login</h3>
         </div>
-        <c:url value="/customer/j_spring_security_check" var="loginUrl"/>
-        <form role="form" action="${loginUrl}" method='POST'>
+        <c:url value="/j_spring_security_check" var="loginUrl"/>
+        <form class="login-form" role="form" action="${loginUrl}" method='POST'>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-sm-12">
                         <div class="form-group">
-                            <label for="inputEmail3">Email address</label>
-                            <input type="email" class="form-control" name="j_username" id="inputEmail3">
+                            <input type="email" class="form-control" placeholder="Email" name="j_username"
+                                   id="inputEmail3">
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-sm-12">
                         <div class="form-group">
-                            <label for="inputPassword3">Password</label>
-                            <input type="password" class="form-control" name="j_password" id="inputPassword3">
+                            <input type="password" class="form-control" placeholder="Password" name="j_password"
+                                   id="inputPassword3">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <div class="register">
-                    <span>Not registered? </span>
-                    <a href="<c:url value="/register"/>">
-                        <button type="button" class="btn btn-success">Sign Up</button>
-                    </a>
-                </div>
-                <button type="submit" class="btn btn-primary">Log in</button>
+                <button type="submit" class="btn btn-primary col-sm-12">Login</button>
             </div>
         </form>
+    </div>
+</div>
+
+<%@include file="slider.jsp" %>
+
+<div class="hero">
+    <div class="container">
+        <div class="hero-head">
+            <h1><strong>Warana</strong></h1>
+            <p>We provide the best solution for the problems arise in the recruitment process of any enterprises</p>
+        </div>
+    </div>
+</div>
+
+<div class="feature">
+    <div class="container">
+        <div class="head">
+            <h2><strong>Feature</strong></h2>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 col-sm-6">
+                <div class="feature-item">
+                    <span class="glyphicon glyphicon-ok green"></span>
+                    <h3><strong>Feature 1</strong></h3>
+                    <p>This is a test</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="feature-item">
+                    <span class="glyphicon glyphicon-user red"></span>
+                    <h3><strong>Feature 2</strong></h3>
+                    <p>This is a test</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="feature-item">
+                    <span class="glyphicon glyphicon-eye-open blue"></span>
+                    <h3><strong>Feature 3</strong></h3>
+                    <p>This is a test</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="feature-item">
+                    <span class="glyphicon glyphicon-plane orange"></span>
+                    <h3><strong>Feature 4</strong></h3>
+                    <p>This is a test</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
