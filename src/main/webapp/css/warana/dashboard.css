@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+.tile-text{
+    font-size: 30px;
+    padding: 0 0 0 0px;
+    text-decoration: none;
+}
+
+.tile-text-align{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tile{
+    min-height: 140px;
+    width: 300px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: #428bca;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+.panel-lightYellow {
+    border-color: #ECB71D;
+}
+
+.panel-lightYellow .panel-heading {
+    border-color: #ECB71D;
+    color: #fff;
+    background-color: #ECB71D;
+}
+
+.panel-lightYellow a {
+    color: #ECB71D;
+}
+
+.panel-lightYellow a:hover {
+    color: #ECB71D;
+}
+
+.panel-darkGreen {
+    border-color: #08AE62;
+}
+
+.panel-darkGreen .panel-heading {
+    border-color: #08AE62;
+    color: #fff;
+    background-color: #08AE62;
+}
+
+.panel-darkGreen a {
+    color: #08AE62;
+}
+
+.panel-darkGreen a:hover {
+    color: #08AE62;
+}
+
+.panel-darkBlue {
+    border-color: #336699;
+}
+
+.panel-darkBlue .panel-heading {
+    border-color: #336699;
+    color: #fff;
+    background-color: #336699;
+}
+
+.panel-darkBlue a {
+    color: #336699;
+}
+
+.panel-darkBlue a:hover {
+    color: #336699;
+}
+
+.panel-darkPurple {
+    border-color: #F46F24;
+}
+
+.panel-darkPurple .panel-heading {
+    border-color: #F46F24;
+    color: #fff;
+    background-color: #F46F24;
+}
+
+.panel-darkPurple a {
+    color: #F46F24;
+}
+
+.panel-darkPurple a:hover {
+    color: #F46F24;
+}
+
+.tile.panel-darkPurple{
+    background-color: #F46F24;
+}
+
+.tile.panel-darkGreen{
+    background-color: #08AE62;
+}
+
+.tile.panel-darkBlue{
+    background-color: #336699;
+}
+
+.tile.panel-lightYellow{
+    background-color: #ECB71D;
+}
+
+.tile.panel-red{
+    background-color: #D9534F;
+}
+
+.dash-board-title{
+    color: #3B3B3B;
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+@media(min-width:768px) {
+    .tile-text-align{
+        text-align: justify;
+        margin-right: 20px;
+    }
+}
