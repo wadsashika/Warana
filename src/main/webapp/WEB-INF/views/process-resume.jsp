@@ -1,6 +1,5 @@
 <%@include file="header.jsp" %>
 
-<link href='<c:url value="/css/bootstrap.min.css" />' rel="stylesheet" type="text/css"/>
 <link href='<c:url value="/css/warana/pages-commons.css" />' rel="stylesheet" type="text/css"/>
 <link href='<c:url value="/css/dataTables.bootstrap.css" />' rel="stylesheet" type="text/css"/>
 

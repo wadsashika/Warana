@@ -7,6 +7,13 @@
 <script src='<c:url value="/js/bootstrap-modalmanager.js" />' type="text/javascript"></script>
 
 <div class="body-container col-sm-12 col-md-12">
+    <c:if test="${not empty error}">
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#loginBtn").trigger("click");
+            });
+        </script>
+    </c:if>
     <div id="login-popup" class="modal  fade" tabindex="-1" data-width="350">
         <c:if test="${not empty error}">
             <div class="login-error">
@@ -50,6 +57,7 @@
     <div class="container">
         <div class="hero-head">
             <h1><strong>Warana</strong></h1>
+
             <p>We provide the best solution for the problems arise in the recruitment process of any enterprises</p>
         </div>
     </div>
@@ -65,29 +73,113 @@
             <div class="col-md-3 col-sm-6">
                 <div class="feature-item">
                     <span class="glyphicon glyphicon-ok green"></span>
+
                     <h3><strong>Feature 1</strong></h3>
+
                     <p>This is a test</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="feature-item">
                     <span class="glyphicon glyphicon-user red"></span>
+
                     <h3><strong>Feature 2</strong></h3>
+
                     <p>This is a test</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="feature-item">
                     <span class="glyphicon glyphicon-eye-open blue"></span>
+
                     <h3><strong>Feature 3</strong></h3>
+
                     <p>This is a test</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="feature-item">
                     <span class="glyphicon glyphicon-plane orange"></span>
+
                     <h3><strong>Feature 4</strong></h3>
+
                     <p>This is a test</p>
+                </div>
+            </div>
+            <span id="signup-form"/>
+        </div>
+    </div>
+</div>
+
+<div class="signup">
+    <div class="container">
+        <div class="head">
+            <h2><strong>Sign Up</strong></h2>
+        </div>
+
+        <div class="col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div id="signup-form-body" class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-sm-12 col-md-3">
+                                <label for="firstName" class="text-left">First Name</label>
+                            </div>
+                            <div class="col-sm-8 col-md-5">
+                                <input type="text" class="form-control" name="firstName" id="firstName"
+                                       data-valid="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12 col-md-3">
+                                <label for="lastName" class="text-left">Last Name</label>
+                            </div>
+                            <div class="col-sm-8 col-md-5">
+                                <input type="text" class="form-control" name="firstName" id="lastName"
+                                       data-valid="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12 col-md-3">
+                                <label for="email" class="text-left">E-mail</label>
+                            </div>
+                            <div class="col-sm-8 col-md-5">
+                                <input type="email" class="form-control" name="firstName" id="email"
+                                       data-valid="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12 col-md-3">
+                                <label for="password" class="text-left">Password</label>
+                            </div>
+                            <div class="col-sm-8 col-md-5">
+                                <input type="password" class="form-control" name="firstName" id="password"
+                                       data-valid="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12 col-md-3">
+                                <label for="reEnterPassword" class="text-left">Re-Enter Password</label>
+                            </div>
+                            <div class="col-sm-8 col-md-5">
+                                <input type="password" class="form-control" name="firstName" id="reEnterPassword"
+                                       data-valid="required">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12 col-md-3">
+                            </div>
+                            <div class="col-sm-8 col-md-5">
+                                <button type="reset" class="btn btn-primary"><span class="glyphicon glyphicon-refresh"/>
+                                    Reset
+                                </button>
+                                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-save"/>
+                                    Save
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>

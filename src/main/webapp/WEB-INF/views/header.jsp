@@ -12,7 +12,7 @@
     <link href='<c:url value="/css/warana/style.css" />' rel="stylesheet" type="text/css"/>
 
     <%--common js files--%>
-    <script src='<c:url value="/js/jquery-1.10.2.min.js" />' type="text/javascript"></script>
+    <script src='<c:url value="/js/jquery-1.10.2.js" />' type="text/javascript"></script>
     <script src='<c:url value="/js/jquery-migrate-1.2.1.js" />' type="text/javascript"></script>
     <script src='<c:url value="/js/jquery.json.min.js" />' type="text/javascript"></script>
     <script src='<c:url value="/js/jquery.pnotify.js" />' type="text/javascript"></script>
@@ -35,8 +35,8 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li><button data-toggle="modal" href="#login-popup" class="top-buttons">Login</button></li>
-                    <li><button href="#" class="top-buttons last-button">Sign Up</button></li>
+                    <li><button id="loginBtn" data-toggle="modal" href="#login-popup" class="top-buttons">Login</button></li>
+                    <li><button href="#signup-form" class="top-buttons last-button">Sign Up</button></li>
                 </ul>
             </div>
         </div>
