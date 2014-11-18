@@ -27,7 +27,7 @@ public class ProcessResumeController {
         /**
          * TODO ENTER THE FOLDER PATH
          */
-        File directory = new File("..Enter path Here");
+        File directory = new File("F:\\Accademic\\Semister 7\\Final_Year_Project\\CareersDay2013_CVs\\CareersDay2013_CVs\\pdfs");
         File[] fileList = directory.listFiles();
         List<String> filesNames = new ArrayList<String>();
 

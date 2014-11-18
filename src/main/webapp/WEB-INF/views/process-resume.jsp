@@ -1,10 +1,15 @@
 <%@include file="header.jsp" %>
 
-<link href='<c:url value="/css/warana/pages-commons.css" />' rel="stylesheet" type="text/css"/>
+<link href='<c:url value="/css/metisMenu.min.css" />' rel="stylesheet" type="text/css"/>
 <link href='<c:url value="/css/dataTables.bootstrap.css" />' rel="stylesheet" type="text/css"/>
+<link href='<c:url value="/css/warana/pages-commons.css" />' rel="stylesheet" type="text/css"/>
+<link href='<c:url value="/css/font-awesome.min.css" />' rel="stylesheet" type="text/css"/>
 
+<script src='<c:url value="/js/metisMenu.min.js" />' type="text/javascript"></script>
+<script src='<c:url value="/js/jquery.dataTables.js" />' type="text/javascript"></script>
+<script src='<c:url value="/js/dataTables.bootstrap.js" />' type="text/javascript"></script>
+<script src='<c:url value="/js/sb-admin-2.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/warana/process-resume.js" />' type="text/javascript"></script>
-
 
 <div id = "wrapper">
     <div id="page-wrapper">
@@ -25,7 +30,7 @@
                             <h4 style="margin-left: 10px"><input type="checkbox" id = "select-all" style="margin-right: 10px"/>Select All</h4>
                         </div>
                         <div class="table-responsive">
-                            <table class="table table-hover">
+                            <table class="table table-striped table-hover" id="unprocessed-resume-list">
                                 <thead>
                                     <tr>
                                         <th>Select</th>
@@ -48,18 +53,16 @@
                                 </tbody>
                             </table>
                         </div>
-
-                        <div id = "operation-buttons-row" class="pull-right">
+                    </div>
+                    <div class="panel-footer">
+                        <div id = "operation-buttons-row" class="process-btn-div">
                             <button type="button" id="clear-selection" class="btn btn-warning" style="margin-right: 10px;">
                                 <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Clear
                             </button>
                             <button type="button" class="btn btn-success">
-                                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Process
+                                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Analyze
                             </button>
                         </div>
-                    </div>
-                    <div class="panel-footer">
-                        Panel Footer
                     </div>
                 </div>
                 <!-- /.col-lg-4 -->

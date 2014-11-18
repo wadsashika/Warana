@@ -347,3 +347,13 @@ table.dataTable thead .sorting:after {
 .panel-yellow a:hover {
     color: #df8a13;
 }
+
+.btn-center{
+    margin-left: 75px;
+    width: 75px;
+}
+
+.process-btn-div{
+    width: 200px;
+    margin-left: auto;
+}
