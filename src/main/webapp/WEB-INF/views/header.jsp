@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -33,13 +34,20 @@
             <div class="logo-holder">
                 <a href='<c:url value="/home" />'><img src='<c:url value="/images/logo-icon.png" />'></a>
             </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><button id="loginBtn" data-toggle="modal" href="#login-popup" class="top-buttons">Login</button></li>
-                    <li><button href="#signup-form" class="top-buttons last-button">Sign Up</button></li>
-                </ul>
-            </div>
+            <sec:authorize ifNotGranted="ROLE_USER">
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <button id="loginBtn" data-toggle="modal" href="#login-popup" class="top-buttons">Login
+                            </button>
+                        </li>
+                        <li>
+                            <button href="#signup-form" class="top-buttons last-button">Sign Up</button>
+                        </li>
+                    </ul>
+                </div>
+            </sec:authorize>
         </div>
-        
+
     </nav>
 </header>
