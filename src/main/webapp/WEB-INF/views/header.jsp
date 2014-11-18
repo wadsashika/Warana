@@ -11,6 +11,7 @@
     <link href='<c:url value="/css/bootstrap-dialog.css" />' rel="stylesheet" type="text/css"/>
     <link href='<c:url value="/css/jquery.pnotify.default.css" />' rel="stylesheet" type="text/css"/>
     <link href='<c:url value="/css/warana/style.css" />' rel="stylesheet" type="text/css"/>
+    <link href='<c:url value="/css/camera.css" />' rel="stylesheet" type="text/css"/>
 
     <%--common js files--%>
     <script src='<c:url value="/js/jquery-1.10.2.js" />' type="text/javascript"></script>
@@ -24,6 +25,8 @@
     <script src='<c:url value="/js/warana.common.js" />' type="text/javascript"></script>
     <script src='<c:url value="/js/warana.validation.js" />' type="text/javascript"></script>
     <script src='<c:url value="/js/base.js" />' type="text/javascript"></script>
+    <script src='<c:url value="/js/camera.js" />' type="text/javascript"></script>
+    <script src='<c:url value="/js/jquery.easing.1.3.js" />' type="text/javascript"></script>
 
 </head>
 <body>
@@ -44,6 +47,22 @@
                         <li>
                             <button href="#signup-form" class="top-buttons last-button">Sign Up</button>
                         </li>
+                    </ul>
+                </div>
+            </sec:authorize>
+            <sec:authorize ifAnyGranted="ROLE_USER">
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <button  data-toggle="dropdown" class="top-buttons dropdown-toggle">Dulanga Sashika
+                            </button>
+                            <ul class="dropdown-menu home-links" role="menu">
+                                <li><a href="<c:url value="/dashboard"/>"><span class="glyphicon glyphicon-dashboard"/> Dashboard</a></li>
+                                <li><a href="<c:url value="/#"/>"><span class="glyphicon glyphicon-eye-open"/> View Statics</a></li>
+                                <li><a href="<c:url value="/j_spring_security_logout" />"><span class="glyphicon glyphicon-log-out"/> Logout</a></li>
+                            </ul>
+                        </li>
+
                     </ul>
                 </div>
             </sec:authorize>

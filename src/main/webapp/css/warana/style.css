@@ -231,3 +231,7 @@ footer .footer-content .social {
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
 }
+
+.dropdown-menu.home-links{
+    font-size: 14px;
+}
