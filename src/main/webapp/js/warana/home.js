@@ -14,10 +14,17 @@ WARANA.module.home = function () {
         });
     };
 
+    var scrollAnimated = function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("#signup-form").offset().top
+        }, 1000);
+    };
 
     return {
         init: function () {
             startSlider();
+            $(document).on("click", "#signupBtn", scrollAnimated);
         }
     };
 

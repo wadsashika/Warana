@@ -178,8 +178,9 @@ footer .footer-content .social {
 
 .feature .feature-item{
     max-width: 300px;
+    height: 275px;
     margin: 0 auto 25px;
-    padding: 25px;
+    padding: 13px;
     background: rgba(255, 255, 255, 0.18);
     text-align: center;
     border-radius: 5px;
@@ -215,13 +216,13 @@ footer .footer-content .social {
 }
 
 .feature .feature-item h3{
-     margin: 12px 0 0;
+     margin: 18px 0 0;
      color: #ffffff;
      font-size: 23px;
  }
 
 .feature .feature-item p{
-    padding-top: 10px;
+    padding-top: 20px;
     color: #ffffff;
     font-size: 15px;
     line-height: 22px;
@@ -234,4 +235,9 @@ footer .footer-content .social {
 
 .dropdown-menu.home-links{
     font-size: 14px;
+}
+
+.camera-wrapper{
+    margin-top: 5px;
+    width: 100%;
 }

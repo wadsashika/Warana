@@ -73,47 +73,46 @@
         <div class="row">
             <div class="col-md-3 col-sm-6">
                 <div class="feature-item">
-                    <span class="glyphicon glyphicon-ok green"></span>
+                    <span class="glyphicon glyphicon-book green"></span>
 
-                    <h3><strong>Feature 1</strong></h3>
+                    <h3><strong>IR from Resumes</strong></h3>
 
-                    <p>This is a test</p>
+                    <p>We analyze candidates' resume and extract important information</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="feature-item">
-                    <span class="glyphicon glyphicon-user red"></span>
+                    <span class="glyphicon glyphicon-globe red"></span>
 
-                    <h3><strong>Feature 2</strong></h3>
+                    <h3><strong>IR from Online</strong></h3>
 
-                    <p>This is a test</p>
+                    <p>We extract important information of candidates' from the web</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="feature-item">
-                    <span class="glyphicon glyphicon-eye-open blue"></span>
+                    <span class="glyphicon glyphicon-user blue"></span>
 
-                    <h3><strong>Feature 3</strong></h3>
+                    <h3><strong>Aggregate Profiles</strong></h3>
 
-                    <p>This is a test</p>
+                    <p>Create aggregated profiles including both information extracted from the resume and web</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="feature-item">
-                    <span class="glyphicon glyphicon-plane orange"></span>
+                    <span class="glyphicon glyphicon-th-list orange"></span>
 
-                    <h3><strong>Feature 4</strong></h3>
+                    <h3><strong>Detailed Analytics</strong></h3>
 
-                    <p>This is a test</p>
+                    <p>Produce detailed analytics of the candidates comparing with company knowledge base</p>
                 </div>
             </div>
-            <span id="signup-form"/>
         </div>
     </div>
 </div>
 
 <sec:authorize ifNotGranted="ROLE_USER">
-    <div class="signup">
+    <div class="signup" id="signup-form">
         <div class="container">
             <div class="head">
                 <h2><strong>Sign Up</strong></h2>
@@ -173,11 +172,11 @@
                                 </div>
                                 <div class="col-sm-8 col-md-5">
                                     <button type="reset" class="btn btn-primary"><span
-                                            class="glyphicon glyphicon-refresh"/>
+                                            class="glyphicon glyphicon-refresh"></span>
                                         Reset
                                     </button>
                                     <button type="submit" class="btn btn-primary"><span
-                                            class="glyphicon glyphicon-save"/>
+                                            class="glyphicon glyphicon-save"></span>
                                         Save
                                     </button>
                                 </div>

@@ -45,7 +45,7 @@
                             </button>
                         </li>
                         <li>
-                            <button href="#signup-form" class="top-buttons last-button">Sign Up</button>
+                            <button id="signupBtn" class="top-buttons last-button">Sign Up</button>
                         </li>
                     </ul>
                 </div>
@@ -57,9 +57,9 @@
                             <button  data-toggle="dropdown" class="top-buttons dropdown-toggle">Dulanga Sashika
                             </button>
                             <ul class="dropdown-menu home-links" role="menu">
-                                <li><a href="<c:url value="/dashboard"/>"><span class="glyphicon glyphicon-dashboard"/> Dashboard</a></li>
-                                <li><a href="<c:url value="/#"/>"><span class="glyphicon glyphicon-eye-open"/> View Statics</a></li>
-                                <li><a href="<c:url value="/j_spring_security_logout" />"><span class="glyphicon glyphicon-log-out"/> Logout</a></li>
+                                <li><a href="<c:url value="/dashboard"/>"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+                                <li><a href="<c:url value="/#"/>"><span class="glyphicon glyphicon-eye-open"></span> View Statics</a></li>
+                                <li><a href="<c:url value="/j_spring_security_logout" />"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                             </ul>
                         </li>
 
