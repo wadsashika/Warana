@@ -1,0 +1,222 @@
+processing |processing 			0.9999999015273553
+digital |Digital 			0.9995159485351931
+computer |Computer 			0.955763051318063
+isbn |ISBN 			0.955763051318063
+jump |Jump 			0.8764324718556207
+algorithm |algorithms 			0.7902127254540808
+digital image |digital images 			0.6357448085967963
+use |use 			0.6357448085967963
+history |History 			0.6357448085967963
+imaging |imaging 			0.6357448085967963
+intelligent transportation system |intelligent transportation systems |Intelligent transportation systems 			0.6357448085967963
+technology |Technology 			0.6357448085967963
+film |Film 			0.6357448085967963
+technique |techniques 			0.33827164237103263
+age progression |Age progression 			0.33827164237103263
+digital camera |digital cameras |Digital cameras 			0.33827164237103263
+computer algorithm |computer algorithms 			0.33827164237103263
+dedicated hardware |dedicated hardware 			0.33827164237103263
+software |software 			0.33827164237103263
+matlab |MATLAB |Matlab 			0.33827164237103263
+chip |chips 			0.33827164237103263
+alan peter |Alan Peters 			0.33827164237103263
+space foundation |Space Foundation 			0.33827164237103263
+specialized |specialized 			0.33827164237103263
+fame |Fame 			0.33827164237103263
+springer |Springer 			0.33827164237103263
+university |University 			0.33827164237103263
+problem |problems 			0.33827164237103263
+image |images |image |Images 			-9.975470132883102E-13
+image processing |image processing |Image processing |Image Processing 			-1.3326822925627413E-8
+digital image processing |digital image processing |Digital Image Processing |Digital image processing 			-3.972724589668694E-5
+article |article 			-0.07367725408829676
+computer vision |Computer vision |computer vision |Computer Vision 			-0.12356752814437935
+citation |citations 			-0.2097872745459192
+modern science |modern sciences 			-0.34567687170520284
+c robertson |C Robertson 			-0.34567687170520284
+photograph |photograph 			-0.34567687170520284
+videophone |videophone 			-0.34567687170520284
+breckon |Breckon 			-0.34567687170520284
+standard image file |standard image file 			-0.34567687170520284
+physical content |physical contents 			-0.34567687170520284
+practical approach |Practical Approach 			-0.34567687170520284
+computing equipment |computing equipment 			-0.34567687170520284
+complex algorithm |complex algorithms 			-0.34567687170520284
+digital image processing technology |Digital image processing technology 			-0.34567687170520284
+role |role 			-0.34567687170520284
+mathematical processing |mathematical processing 			-0.34567687170520284
+image editing |Image editing 			-0.34567687170520284
+further information |Further information 			-0.34567687170520284
+versatile method |versatile method 			-0.34567687170520284
+gradientshop |Gradientshop 			-0.34567687170520284
+john wiley |John Wiley 			-0.34567687170520284
+azriel rosenfeld |Azriel Rosenfeld 			-0.34567687170520284
+wide application |wide applications 			-0.34567687170520284
+person aundria bowman |person Aundria Bowman 			-0.34567687170520284
+larry yaeger |Larry Yaeger 			-0.34567687170520284
+e trucco |E Trucco 			-0.34567687170520284
+quality |quality 			-0.34567687170520284
+image superresolution multidimensional system |image Superresolution Multidimensional systems 			-0.34567687170520284
+view |view 			-0.34567687170520284
+imaging device |imaging devices 			-0.34567687170520284
+signal distortion |signal distortion 			-0.34567687170520284
+genetic research |genetic research 			-0.34567687170520284
+discrete fourier |Discrete Fourier 			-0.34567687170520284
+practical technology |practical technology 			-0.34567687170520284
+character recognition |character recognition 			-0.34567687170520284
+video frame |video frame 			-0.34567687170520284
+special software program |special software programs 			-0.34567687170520284
+pravin |Pravin 			-0.34567687170520284
+wilhelm burger |Wilhelm Burger 			-0.34567687170520284
+k dawson-howe |K Dawson-Howe 			-0.34567687170520284
+vaclav hlavac |Vaclav Hlavac 			-0.34567687170520284
+image and video filtering |image and video filtering 			-0.34567687170520284
+field |field 			-0.34567687170520284
+lighting |lighting 			-0.34567687170520284
+subcategory |subcategory 			-0.34567687170520284
+sequence |sequence 			-0.34567687170520284
+noise and signal distortion |noise and signal distortion 			-0.34567687170520284
+notorious mobster |notorious mobster 			-0.34567687170520284
+optical |optical 			-0.34567687170520284
+characteristics or parameter |characteristics or parameters 			-0.34567687170520284
+lecture |Lectures 			-0.34567687170520284
+tim morris |Tim Morris 			-0.34567687170520284
+space foundation space technology hall |Space Foundation Space Technology Hall 			-0.34567687170520284
+signal processing |signal processing 			-0.34567687170520284
+science |science 			-0.34567687170520284
+traffic sign recognition |traffic sign recognition 			-0.34567687170520284
+medical imaging |medical imaging 			-0.34567687170520284
+iprg open group |IPRG Open group 			-0.34567687170520284
+digital signal processing |digital signal processing 			-0.34567687170520284
+cost |cost 			-0.34567687170520284
+natural scene |natural scenes 			-0.34567687170520284
+academic press |Academic Press 			-0.34567687170520284
+photograph or video frame |photograph or video frame 			-0.34567687170520284
+machine vision |Machine Vision 			-0.34567687170520284
+external links edit |External links edit 			-0.34567687170520284
+real-time multi-asset portfolio trading |real-time multi-asset portfolio trading 			-0.34567687170520284
+scientific visualization |scientific visualization 			-0.34567687170520284
+intelligent transportation systems edit |Intelligent transportation systems edit 			-0.34567687170520284
+computer visionimage processing |Computer visionImage processing 			-0.34567687170520284
+attempt |attempt 			-0.34567687170520284
+simple task |simple tasks 			-0.34567687170520284
+cheapest |cheapest 			-0.34567687170520284
+android |android 			-0.34567687170520284
+massachusetts institute |Massachusetts Institute 			-0.34567687170520284
+set |set 			-0.34567687170520284
+era |era 			-0.34567687170520284
+color-corrected image |color-corrected image 			-0.34567687170520284
+frequency |frequency 			-0.34567687170520284
+analysis |Analysis 			-0.34567687170520284
+additional processing |additional processing 			-0.34567687170520284
+photography |photography 			-0.34567687170520284
+hand |hand 			-0.34567687170520284
+general technique |general techniques 			-0.34567687170520284
+milan sonka |Milan Sonka 			-0.34567687170520284
+pws publishing |PWS Publishing 			-0.34567687170520284
+acm transaction |ACM Transactions 			-0.34567687170520284
+gradient-domain optimization framework |gradient-domain optimization framework 			-0.34567687170520284
+web demo |web demos 			-0.34567687170520284
+satellite imagery |satellite imagery 			-0.34567687170520284
+solomon |Solomon 			-0.34567687170520284
+dedicated chip |dedicated chips 			-0.34567687170520284
+photograph enhancement |photograph enhancement 			-0.34567687170520284
+camera |cameras 			-0.34567687170520284
+computer-intensive operation |computer-intensive operations 			-0.34567687170520284
+growing importance |growing importance 			-0.34567687170520284
+variety |variety 			-0.34567687170520284
+analog mean |analog means 			-0.34567687170520284
+upsampling refer digital image processing |Upsampling Refer Digital Image Processing 			-0.34567687170520284
+dimension |dimensions 			-0.34567687170520284
+advantage |advantages 			-0.34567687170520284
+television standards conversion |television standards conversion 			-0.34567687170520284
+wiley-blackwell |Wiley-Blackwell 			-0.34567687170520284
+whitey bulger |Whitey Bulger 			-0.34567687170520284
+two-dimensional signal |two-dimensional signal 			-0.34567687170520284
+optical and analog image processing |optical and analog image processing 			-0.34567687170520284
+specialized digital image processing hardware |specialized digital image processing hardware 			-0.34567687170520284
+video filtering |video filtering 			-0.34567687170520284
+added circuitry |added circuitry 			-0.34567687170520284
+input image |input image 			-0.34567687170520284
+gradient domain image processing |Gradient domain image processing 			-0.34567687170520284
+subcategory or field |subcategory or field 			-0.34567687170520284
+rafael c gonzalez |Rafael C Gonzalez 			-0.34567687170520284
+pearson education |Pearson Education 			-0.34567687170520284
+graphics tog |Graphics TOG 			-0.34567687170520284
+physical model |physical models 			-0.34567687170520284
+pixel |pixels 			-0.34567687170520284
+standard signal-processing technique |standard signal-processing techniques 			-0.34567687170520284
+image sensor |image sensor 			-0.34567687170520284
+acquisition |acquisition 			-0.34567687170520284
+dft discrete-time fourier |DFT Discrete-time Fourier 			-0.34567687170520284
+multidimensional system |multidimensional systems 			-0.34567687170520284
+broader scope |broader scopes 			-0.34567687170520284
+wire-photo standards conversion |wire-photo standards conversion 			-0.34567687170520284
+fast computer |fast computers 			-0.34567687170520284
+dictionary |Dictionary 			-0.34567687170520284
+wider range |wider range 			-0.34567687170520284
+build-up |build-up 			-0.34567687170520284
+high-level image |high-level image 			-0.34567687170520284
+tasks edit digital image processing |Tasks edit Digital image processing 			-0.34567687170520284
+finance |finance 			-0.34567687170520284
+method |methods 			-0.34567687170520284
+steven l eddin |Steven L Eddins 			-0.34567687170520284
+general-purpose computer |general-purpose computers 			-0.34567687170520284
+first feature film |first feature film 			-0.34567687170520284
+techniques advanced z-transform bilinear |Techniques Advanced Z-transform Bilinear 			-0.34567687170520284
+richard e wood |Richard E Woods 			-0.34567687170520284
+digital picture processing |digital picture processing 			-0.34567687170520284
+cheaper computer |cheaper computers 			-0.34567687170520284
+desired special effect |desired special effects 			-0.34567687170520284
+contents hide |Contents hide 			-0.34567687170520284
+artistic processing |artistic processing 			-0.34567687170520284
+signal processor |signal processors 			-0.34567687170520284
+maryland |Maryland 			-0.34567687170520284
+capture digital image processing |capture Digital image processing 			-0.34567687170520284
+image-processing technique |image-processing techniques 			-0.34567687170520284
+fisher |Fisher 			-0.34567687170520284
+quantization sampling rate |Quantization Sampling rate 			-0.34567687170520284
+picture processing |Picture Processing 			-0.34567687170520284
+digital camera images edit |Digital camera images edit 			-0.34567687170520284
+fitzgibbon |Fitzgibbon 			-0.34567687170520284
+standard phraseextractor nlp resource |Standard PhraseExtractor nlp resources 			-0.34567687170520284
+open research journal |Open research journal 			-0.34567687170520284
+environment |environments 			-0.34567687170520284
+software and web demo |software and web demos 			-0.34567687170520284
+output |output 			-0.34567687170520284
+algorithmic approach using java |Algorithmic Approach Using Java 			-0.34567687170520284
+dedicated problem |dedicated problems 			-0.34567687170520284
+vanderbilt university |Vanderbilt University 			-0.34567687170520284
+pixelation linear |Pixelation Linear 			-0.34567687170520284
+object |objects 			-0.34567687170520284
+jet propulsion laboratory |Jet Propulsion Laboratory 			-0.34567687170520284
+real |real 			-0.34567687170520284
+parameter |parameters 			-0.34567687170520284
+york |York 			-0.34567687170520284
+automatic number plate recognition |automatic number plate recognition 			-0.34567687170520284
+first place |first place 			-0.34567687170520284
+application |application 			-0.34567687170520284
+bhat |Bhat 			-0.34567687170520284
+neural network |Neural networks 			-0.34567687170520284
+common form |common form 			-0.34567687170520284
+pixel value |pixel values 			-0.34567687170520284
+noise |noise 			-0.34567687170520284
+medical application |medical applications 			-0.34567687170520284
+specialized and computer-intensive operation |specialized and computer-intensive operations 			-0.34567687170520284
+images e g video |images e g videos 			-0.34567687170520284
+implementation |implementation 			-0.34567687170520284
+fundamental |Fundamentals 			-0.34567687170520284
+sophisticated performance |sophisticated performance 			-0.34567687170520284
+palgrave macmillan |Palgrave Macmillan 			-0.34567687170520284
+characteristic |characteristics 			-0.34567687170520284
+form |form 			-0.36425519140320384
+computer graphic |Computer Graphics |computer graphics 			-0.36425519140320384
+example |Examples 			-0.6617283576289674
+analog image processing |analog image processing 			-0.6617283576289674
+reliable source |reliable sources 			-0.6617283576289674
+help |help 			-0.6617283576289674
+verification |verification 			-0.6617283576289674
+additional citation |additional citations 			-0.6617283576289674
+unsourced material |Unsourced material 			-0.6617283576289674
+wikipedia |Wikipedia 			-0.6617283576289674
+encyclopedia |encyclopedia 			-0.6617283576289674

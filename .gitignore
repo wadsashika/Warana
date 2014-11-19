@@ -25,3 +25,7 @@ test-output
 *.iws
 *.iml
 
+\src\main\resources\Docs
+
+
+
