@@ -58,7 +58,9 @@
                             </button>
                             <ul class="dropdown-menu home-links" role="menu">
                                 <li><a href="<c:url value="/dashboard"/>"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
-                                <li><a href="<c:url value="/#"/>"><span class="glyphicon glyphicon-eye-open"></span> View Statics</a></li>
+                                <li class="divider"></li>
+                                <li><a href="<c:url value="/viewstat"/>"><span class="glyphicon glyphicon-eye-open"></span> View Statics</a></li>
+                                <li class="divider"></li>
                                 <li><a href="<c:url value="/j_spring_security_logout" />"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                             </ul>
                         </li>

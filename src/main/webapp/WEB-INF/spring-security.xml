@@ -9,6 +9,7 @@
     <http use-expressions="true" authentication-manager-ref="authenticationManager">
 
         <intercept-url pattern="/home" access="permitAll"/>
+        <intercept-url pattern="/loginfailed" access="permitAll"/>
         <intercept-url pattern="/css/**" access="permitAll"/>
         <intercept-url pattern="/js/**" access="permitAll"/>
         <intercept-url pattern="/fonts/**" access="permitAll"/>

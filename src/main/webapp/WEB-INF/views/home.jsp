@@ -123,8 +123,9 @@
                     <div class="panel-body">
                         <div id="signup-form-body" class="form-horizontal">
                             <div class="form-group">
-                                <div class="col-sm-12 col-md-3">
-                                    <label for="firstName" class="text-left">First Name</label>
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-2">
+                                    <label for="firstName" class="not-bold">First Name</label>
                                 </div>
                                 <div class="col-sm-8 col-md-5">
                                     <input type="text" class="form-control" name="firstName" id="firstName"
@@ -132,8 +133,9 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-12 col-md-3">
-                                    <label for="lastName" class="text-left">Last Name</label>
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-2">
+                                    <label for="lastName" class="not-bold">Last Name</label>
                                 </div>
                                 <div class="col-sm-8 col-md-5">
                                     <input type="text" class="form-control" name="firstName" id="lastName"
@@ -141,8 +143,9 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-12 col-md-3">
-                                    <label for="email" class="text-left">E-mail</label>
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-2">
+                                    <label for="email" class="not-bold">E-mail</label>
                                 </div>
                                 <div class="col-sm-8 col-md-5">
                                     <input type="email" class="form-control" name="firstName" id="email"
@@ -150,8 +153,9 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-12 col-md-3">
-                                    <label for="password" class="text-left">Password</label>
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-2">
+                                    <label for="password" class="not-bold">Password</label>
                                 </div>
                                 <div class="col-sm-8 col-md-5">
                                     <input type="password" class="form-control" name="firstName" id="password"
@@ -159,8 +163,9 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-12 col-md-3">
-                                    <label for="reEnterPassword" class="text-left">Re-Enter Password</label>
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-2">
+                                    <label for="reEnterPassword" class="not-bold">Re-Enter Password</label>
                                 </div>
                                 <div class="col-sm-8 col-md-5">
                                     <input type="password" class="form-control" name="firstName" id="reEnterPassword"
@@ -168,7 +173,8 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <div class="col-sm-12 col-md-3">
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-2">
                                 </div>
                                 <div class="col-sm-8 col-md-5">
                                     <button type="reset" class="btn btn-primary"><span
