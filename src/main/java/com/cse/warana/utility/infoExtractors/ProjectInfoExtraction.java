@@ -1,5 +1,6 @@
 package com.cse.warana.utility.infoExtractors;
 
+import com.cse.warana.utility.infoHolders.Project;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -29,7 +30,7 @@ public class ProjectInfoExtraction {
      * @param linesCopy
      * @throws java.io.IOException
      */
-    public void extractProjectInfo(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy, ArrayList<String> candidateTechnologies) {
+    public void extractProjectInfo(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy, ArrayList<String> candidateTechnologies, ArrayList<Project> projects) {
         /**
          * TODO NEED TO CHECK FOR THE TECHNOLOGIES
          * using the selected word phrase matching

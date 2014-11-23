@@ -1,5 +1,6 @@
 package com.cse.warana.utility.infoExtractors;
 
+import com.cse.warana.utility.infoHolders.Profile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,7 +27,7 @@ public class PersonalInfoExtract {
      * @param allHeadings
      * @param linesCopy
      */
-    public void extractPersonalInformation(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy) {
+    public void extractPersonalInformation(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy, Profile profile) {
 
         String lineText = "";
 
@@ -38,19 +39,22 @@ public class PersonalInfoExtract {
                     break;
                 } else {
                     if (!lineText.equals("")) {
-                        if (getName(lineText)) {
+
+                        Profile prof = new Profile();
+
+                        if (getName(lineText, prof)) {
                             linesCopy.remove(lineText);
 
-                        } else if (getDbo(lineText)) {
+                        } else if (getDbo(lineText, prof)) {
                             linesCopy.remove(lineText);
 
-                        } else if (getEmail(lineText)) {
+                        } else if (getEmail(lineText, prof)) {
                             linesCopy.remove(lineText);
 
-                        } else if (getGender(lineText)) {
+                        } else if (getGender(lineText, prof)) {
                             linesCopy.remove(lineText);
 
-                        } else if (getOtherInfo(lineText)) {
+                        } else if (getOtherInfo(lineText, prof)) {
                             linesCopy.remove(lineText);
 
                         }
@@ -69,7 +73,7 @@ public class PersonalInfoExtract {
      * @param para
      * @return
      */
-    public boolean getName(String para) {
+    public boolean getName(String para, Profile profile) {
 
         String tokens[] = para.split("\\W");
         String name = "";
@@ -83,6 +87,8 @@ public class PersonalInfoExtract {
                             LOG.info(tokens[b]);
                         }
                         LOG.info("");
+
+                        profile.setName(name);
                         return true;
                     } else {
                         for (int b = a + 1; b < tokens.length; b++) {
@@ -90,6 +96,8 @@ public class PersonalInfoExtract {
                             LOG.info(tokens[b] + " ");
                         }
                         LOG.info("");
+
+                        profile.setName(name);
                         return true;
                     }
                 }
@@ -106,7 +114,7 @@ public class PersonalInfoExtract {
      * @param para
      * @return
      */
-    public boolean getGender(String para) {
+    public boolean getGender(String para, Profile profile) {
 
         String tokens[] = para.split("\\W");
         String geneder = "";
@@ -117,6 +125,8 @@ public class PersonalInfoExtract {
                     geneder += tokens[b];
                     LOG.info(tokens[b]);
                 }
+
+                profile.setGender(geneder);
                 return true;
             }
         }
@@ -130,7 +140,7 @@ public class PersonalInfoExtract {
      * @param para
      * @return
      */
-    public boolean getEmail(String para) {
+    public boolean getEmail(String para, Profile profile) {
 
         String tokens[] = para.split(" ");
         String email = "";
@@ -142,7 +152,10 @@ public class PersonalInfoExtract {
             Matcher matcher = pattern.matcher(para.trim());
 
             if (matcher.find()) {
-                LOG.info(matcher.group(1));
+                email = matcher.group(1);
+                LOG.info(email);
+
+                profile.setEmail(email);
                 return true;
             }
         }
@@ -156,7 +169,7 @@ public class PersonalInfoExtract {
      * @param para
      * @return
      */
-    public boolean getDbo(String para) {
+    public boolean getDbo(String para, Profile profile) {
 
         String paraLower = para.toLowerCase();
         String dob = "";
@@ -165,6 +178,7 @@ public class PersonalInfoExtract {
             String[] arr = paraLower.split("date of birth");
             dob += arr[1];
             LOG.info(arr[1]);
+
             return true;
         } else if (paraLower.contains("birth day")) {
             String[] arr = paraLower.split("birth day");
@@ -180,9 +194,9 @@ public class PersonalInfoExtract {
      * TODO need some more testing on this method for the possible flaws
      *
      * @param para
-     * @return sypeID, LinkedInID, blogUrl, gitID
+     * @return skypeID, LinkedInID, blogUrl, gitID
      */
-    public boolean getOtherInfo(String para) {
+    public boolean getOtherInfo(String para, Profile profile) {
 
         String linkedIn = ".*linkedin.com.*";
         String git = ".*github.com.*";

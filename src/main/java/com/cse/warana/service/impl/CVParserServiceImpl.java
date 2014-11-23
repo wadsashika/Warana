@@ -3,6 +3,7 @@ package com.cse.warana.service.impl;
 import com.cse.warana.controller.ExampleController;
 import com.cse.warana.service.CVParserService;
 import com.cse.warana.utility.infoExtractors.*;
+import com.cse.warana.utility.infoHolders.*;
 import edu.stanford.nlp.ie.AbstractSequenceClassifier;
 import edu.stanford.nlp.ie.crf.CRFClassifier;
 import edu.stanford.nlp.ling.CoreLabel;
@@ -34,21 +35,21 @@ public class CVParserServiceImpl implements CVParserService {
     /**
      * Initialize the global variables
      */
-    public static ArrayList<String> EducationalHeadings = new ArrayList<String>();
-    public static ArrayList<String> ProfileHeadings = new ArrayList<String>();
-    public static ArrayList<String> WorkHistoryHeadings = new ArrayList<String>();
-    public static ArrayList<String> AwardsAndAchievementsHeadings = new ArrayList<String>();
-    public static ArrayList<String> ProjectsHeadings = new ArrayList<String>();
-    public static ArrayList<String> lines = new ArrayList<String>();
-    public static ArrayList<String> linesCopy = new ArrayList<String>();
-    public static ArrayList<String> indexedLines = new ArrayList<String>();
+    private static ArrayList<String> EducationalHeadings;
+    private static ArrayList<String> ProfileHeadings;
+    private static ArrayList<String> WorkHistoryHeadings;
+    private static ArrayList<String> AwardsAndAchievementsHeadings;
+    private static ArrayList<String> ProjectsHeadings;
+    private static ArrayList<String> lines;
+    private static ArrayList<String> linesCopy;
+    private static ArrayList<String> indexedLines;
 
-    public static String[] docLines = null;
-    public static HashMap<String, ArrayList<Integer>> sectionMap = new HashMap<String, ArrayList<Integer>>();
+    private static String[] docLines;
+    private static HashMap<String, ArrayList<Integer>> sectionMap;
 
-    public static AbstractSequenceClassifier<CoreLabel> classifier = null;
+    private static AbstractSequenceClassifier<CoreLabel> classifier;
 
-    private static Logger LOG = LoggerFactory.getLogger(CVParserServiceImpl.class);
+    private static Logger LOG;
 
     @Value("${GAZETEER.LIST.PATH}")
     private static String listPath;
@@ -58,6 +59,7 @@ public class CVParserServiceImpl implements CVParserService {
      * Constructor
      */
     public CVParserServiceImpl() {
+
         /**
          * Load the 7 class classifier
          * Finds Time, Location, Organization, Person, Money, Percent, Date
@@ -70,6 +72,22 @@ public class CVParserServiceImpl implements CVParserService {
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
+
+        EducationalHeadings = new ArrayList<String>();
+        ProfileHeadings = new ArrayList<String>();
+        WorkHistoryHeadings = new ArrayList<String>();
+        AwardsAndAchievementsHeadings = new ArrayList<String>();
+        ProjectsHeadings = new ArrayList<String>();
+        lines = new ArrayList<String>();
+        linesCopy = new ArrayList<String>();
+        indexedLines = new ArrayList<String>();
+
+        docLines = null;
+        sectionMap = new HashMap<String, ArrayList<Integer>>();
+
+        classifier = null;
+
+        LOG = LoggerFactory.getLogger(CVParserServiceImpl.class);
     }
 
     /**
@@ -303,7 +321,7 @@ public class CVParserServiceImpl implements CVParserService {
      * required information
      */
     @Override
-    public void parseLines() {
+    public void parseLines(HashMap<String,Object> infoCategoryTypes) {
         EducationalInfoExtract eduInfo = new EducationalInfoExtract();
         PersonalInfoExtract perInfo = new PersonalInfoExtract();
         WorkInfoExtract wrkInfo = new WorkInfoExtract(classifier);
@@ -320,17 +338,17 @@ public class CVParserServiceImpl implements CVParserService {
             Map.Entry pairs = (Map.Entry) it.next();
             LOG.info(pairs.getKey() + " = " + pairs.getValue());
             if (pairs.getKey().equals("EDU_INFO")) {
-                eduInfo.extractEduInformation(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy);
+                eduInfo.extractEduInformation(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy, (ArrayList<Education>) infoCategoryTypes.get("EDUCATION_LIST"));
             } else if (pairs.getKey().equals("PROF_INFO")) {
-                perInfo.extractPersonalInformation(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy);
+                perInfo.extractPersonalInformation(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy, (Profile) infoCategoryTypes.get("PROFILE"));
             } else if (pairs.getKey().equals("WRK_INFO")) {
-                wrkInfo.extractWorkInfo(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy);
+                wrkInfo.extractWorkInfo(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy, (ArrayList<Work>) infoCategoryTypes.get("WORK_LIST"));
             } else if (pairs.getKey().equals("AWRD_INFO")) {
-                achInfo.extractAchievementInformation(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy);
+                achInfo.extractAchievementInformation(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy, (ArrayList<Achievement>) infoCategoryTypes.get("ACHIEVEMENTS_LIST"));
             } else if (pairs.getKey().equals("PROJ_INFO")) {
-                projInfo.extractProjectInfo(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy, candidateTechnologies);
+                projInfo.extractProjectInfo(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy, candidateTechnologies, (ArrayList<Project>) infoCategoryTypes.get("PROJECTS_LIST"));
             } else if (pairs.getKey().equals("REF_INFO")) {
-                refInfo.getRefereeInfo(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy);
+                refInfo.getRefereeInfo(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy, (ArrayList<Referee>) infoCategoryTypes.get("REFEREE_LIST"));
             } else if (pairs.getKey().equals("INTERESTS_INFO")){
                 interestsInfo.extractInterestsInformation(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy);
             }
