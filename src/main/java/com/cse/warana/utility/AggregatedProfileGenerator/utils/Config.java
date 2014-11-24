@@ -32,7 +32,7 @@ public class Config {
     public static final String averageCorpusTF ="AverageCorpusTF_ALGORITHM.csv";
     public static final String c_value ="CValue_ALGORITHM.csv";
     public static final String IBMglossEx ="IBM_GlossEx_ALGORITHM.csv";
-    public static final String RIDF ="RIDF_ALGORITHM.txt";
+    public static final String RIDF ="RIDF_ALGORITHM.csv";
     public static final String simpleTF ="Simple_term_frequency_ALGORITHM.csv";
     public static final String termex ="TermEx_ALGORITHM.csv";
     public static final String TFIDF ="TfIdf_ALGORITHM.csv";
@@ -47,4 +47,7 @@ public class Config {
     public static final int MULTITHREAD_COUNTER_NUMBERS=5;
     public static final Boolean TERM_IGNORE_DIGITS=true;
 
+    public static int minTextLength=100;
+    public static int maxReloadTimes=3;
+    public static int skillDosLimit=3;
 }

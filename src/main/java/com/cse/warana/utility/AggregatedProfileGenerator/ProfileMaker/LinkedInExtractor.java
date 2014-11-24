@@ -1,6 +1,6 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker;
 
-import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Profile.Profile;
+import com.cse.warana.utility.infoHolders.Profile;
 import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Profile.Project;
 import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Profile.Publication;
 import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Skills.SkillsExtractor;

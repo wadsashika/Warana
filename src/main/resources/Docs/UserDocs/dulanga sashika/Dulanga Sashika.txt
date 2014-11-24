@@ -1,0 +1,47 @@
+Dulanga Sashika
+Undergraduate Student at University of Moratuwa
+
+
+Path Following Robot(Link)
+We did this project as our engineering skill development project. This robot was made so it can detect black path in white background, and also turn in junctions according to some marks located on the path. More details about design and implementation is available in the presentation.
+
+Hacking JOSH
+In this project, I edit the operating system which having simple kernel and shell to display the hardware information of the computer. I used x86 Assembly to complete that project
+
+Rise and Shine Alarm Clock
+We did this project as our Digital Electronic (EN2022) project. The project idea was to develop an intelligent alarm clock which is capable of basic functions of an alarm clock, along with the ability to sense whether the user is awake in response to the alarm. People continuing to sleep after pressing the snooze button do not ensure the person getting out of bed at the right time. This project tries to give a solution to the aforementioned problem. Smart, wake-up-sensing, digital alarm clock makes sure that the person is awake when the alarm tone is terminated by using a sensor panel to sense a person in standing position. The person can decide where to place the sensing panel depending on his sleep appetite.
+
+Tank Game(Link)
+This game was a multi-player tank game. The main thing is that, our tanks should play the game alone. Therefore we had to implement AI to play the game against the other players. There was a game server which five players can join to the game. This server will broadcast the messages including positions of the other tanks, coin piles, health packs, water pits and walls. We had to implement the AI code to read this messages and act according to it. We used Java socket programming to connect to the server and java to implement the AI part. More information about the game will be on our game website. Game source can be found here. https://github.com/wadsashika/TankGame
+
+ cryptico
+ An easy-to-use encryption system utilizing RSA and AES for javascript.
+
+ JavaScript Graph_Similarity_NM
+ This is an inmplementation of graph similarity algorithm using neighbor matching
+
+ Java gsoc-demo
+ Gsoc demo repo
+
+ C KDDCup2014_DonorsChoose.org
+ This project done as a assignment for the Data Mining and Information Retrieval module. We had to compete in Kegglle site Predicting Excitement at DonorsChoose.org competition. We got 52 place in that competition.
+
+ Python openmrs-module-hl7query
+ An OpenMRS module to export HL7 messages
+
+ Java Profile-Seeker
+ This is a mini web project for gathering data for users 
+
+ JavaScript SigmaCV
+ Final Year Project - SigmaCV extension
+
+ Java TankGame
+ This is a AI game which can play multiple players. I will add to the AI code(java) and the code of GUI(C#). 
+
+ Java Warana
+ Warana is a recruitment helper for enterprises. It provide a solution for the recruiting process of the enterprises which is a tedious task now a day. 
+
+ JavaScript workShop
+ 
+
+ null

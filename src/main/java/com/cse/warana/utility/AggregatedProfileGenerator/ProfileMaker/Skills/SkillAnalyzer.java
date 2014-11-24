@@ -28,32 +28,27 @@ public class SkillAnalyzer {
     }
 
     public void SortSkills(){
-        this.profileName=profileName;
         sortedSkills =new HashMap<String, Double>();
         File skillDocs=new File(aggregateSkillsPath);
         String[] skillNames=skillDocs.list();
         double score=0;
         AlgorithmComparotor comparotor=new AlgorithmComparotor();
-        comparotor.Compare(Config.profilesPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath);
-//        File profileTermEx=new File("D:\\Projects\\Repositories\\Final Year Project\\SigmaCV finder 2\\src\\com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker\\Skills\\Aggregated\\UserDocs\\Thilina Premasiri_out.csv");
+        comparotor.Compare(Config.profilesOutputPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath);
         File profileRoot=new File(Config.aggregatedProfilesPath);
         for (File file : profileRoot.listFiles()) {
             HashMap<String,Double> profileMap=fileManager.FileToMap(file);
             for (String skillName : skillNames) {
-                if (skillName.contains("_out")){
+//                if (skillName.contains("_out")){
                     score =analyzeSkill(skillName,profileMap);
                     sortedSkills.put(skillName.split("_")[0],score);
-                }
+//                }
             }
             System.out.println("\n"+file.getName()+"====================\n");
             sortedSkills=fileManager.SortByComparator(sortedSkills);
-            for (Map.Entry<String,Double> entry : sortedSkills.entrySet()) {
-                System.out.println(entry.getKey()+" : "+entry.getValue());
-            }
             fileManager.WriteFile(file.getName(),sortedSkills, Config.processedProfilesPath);
         }
-
     }
+
     public void ClusterSkills(){
         this.profileName=profileName;
         File skillDocs=new File(aggregateSkillsPath);
@@ -121,7 +116,7 @@ public class SkillAnalyzer {
     public static void main(String[] args){
         SkillAnalyzer sk=new SkillAnalyzer();
 //        Map<String,Double> skillScores=sk.SortSkills("Nisansa Dilushan de Silva");
-//        sk.SortSkills();
-        sk.ClusterSkills();
+        sk.SortSkills();
+//        sk.ClusterSkills();
     }
 }

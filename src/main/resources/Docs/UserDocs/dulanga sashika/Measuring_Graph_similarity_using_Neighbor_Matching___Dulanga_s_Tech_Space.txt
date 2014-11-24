@@ -1,0 +1,207 @@
+Measuring Graph similarity using Neighbor Matching | Dulanga's Tech SpaceMeasuring Graph similarity using Neighbor Matching | Dulanga's Tech Space Skip to content Dulanga's Tech Space A place which I hope to share my technical experiences. Menu Home About Measuring Graph similarity using Neighbor Matching Posted on September 19, 2014September 20, 2014 by Dulanga Sashika Graphs are very important in present applications because many data structures in real world problems are represented as graphs. Examples vary from the web graph of documents to a social network graph of friends and road map graph of cities. Many of these applications call for a quantitative measure of the “similarity” of two graphs. There are many researches going on this topic and many people introduce various techniques to measure the similarity. In here, I am going to talk about one technique that use neighbor matching to measure the similarity score of the two directed graphs. I am going to demonstrate this algorithm using a java code that I implemented. This algorithm is based on the research paper, “Measuring Similarity of Graph Nodes by Neighbor Matching”[1]. The algorithm that mentioned in this paper is based on a simple concept that, two nodes i ∈ VA and j ∈ VB are considered to be similar if neighbor nodes of i can be matched to similar neighbor nodes of j. In here, we first iteratively measure the similarity of nodes in the two graphs and finally calculate one similarity score using that similarity measures. Followings are the equations that we use to calculate the similarity of nodes and I will explain what will happens in each one clearly. calculate the similarity of nodes in two graphs This equation will calculate the similarity of i th node of graph A and j th node of graph B in (k+1) th iteration. As we see, we need to calculate S(i,j)in and S(i,j)out in (k+1)th iteration first. These S(i,j)in is the in degree similarity of node i in A and j in B. S(i,j)out is the out degree similarity of node i in A and j in B. They can be calculate using following equations. calculate in-node similarity calculate out-degree similarity In here id() means in-degree and od() means out-degree of the node. We calculate the similarity of in-degree and out-degree of nodes by taking the summation of the neighbors’ similarity in previous iteration. We choose those similarity values according to the enumeration functions. Enumeration functions is a functions that gives the maximum similarity value for the each node in the given node list. I think that, what happens in the enumeration function will clear when you look at the implementation. Let’s see how can we implement this method using java. We need to have a object called Graph which will keep the graphs and do basic operations that we needed.  public class Graph {
+    private Integer[][] graph;
+    private int graphSize;
+    private List<Integer> nodeList;
+    private List<List<Integer>> inDegreeNodeList;
+    private List<List<Integer>> outDegreeNodeList;
+
+    public Graph(Integer[][] graph) throws Exception {
+        try {
+            this.graph = graph;
+            this.graphSize = graph.length;
+            this.nodeList = new ArrayList<Integer>();
+            this.inDegreeNodeList = new ArrayList<List<Integer>>();
+            this.outDegreeNodeList = new ArrayList<List<Integer>>();
+            setDegreeNodeList();
+        } catch (Exception e) {
+            e.printStackTrace();
+            throw e;
+        }
+    }
+
+    public void setDegreeNodeList() {
+        for (int i=0; i<graphSize ; i++){
+            inDegreeNodeList.add(new ArrayList<Integer>());
+            outDegreeNodeList.add(new ArrayList<Integer>());
+        }
+        for (int i = 0; i < graphSize; i++) {
+            for (int j = 0; j < graphSize; j++) {
+                if (graph[i][j] != 0){
+                    inDegreeNodeList.get(j).add(i);
+                    outDegreeNodeList.get(i).add(j);
+                }
+            }
+        }
+    }
+
+    public Integer[][] getGraph() {
+        return graph;
+    }
+
+    public int getGraphSize() {
+        return graphSize;
+    }
+
+    public List<List<Integer>> getInDegreeNodeList() {
+        return inDegreeNodeList;
+    }
+
+    public List<List<Integer>> getOutDegreeNodeList() {
+        return outDegreeNodeList;
+    }
+
+    public List<Integer> getNodeList() {
+        setNodeList();
+        return nodeList;
+    }
+
+    public void setNodeList() {
+        for(int i=0; i<graphSize;i++){
+            nodeList.add(i);
+        }
+    }
+} Then we need to initialize the in-degree and out-degree similarity matrices. We can do it as follows. initialize in-degree and out-degree similarity matrices Then we should initialize our similarity matrix using those two matrices. Following is the initializing function of matrices.  public void initializeSimilarityMatrices() {
+        for (int i = 0; i < graphSizeA; i++) {
+            for (int j = 0; j < graphSizeB; j++) {
+                Double maxDegree = Double.valueOf(Math.max(inNodeListA.get(i).size(), inNodeListB.get(j).size()));
+                if (maxDegree != 0) {
+                    inNodeSimilarity[i][j] = ((Math.min(inNodeListA.get(i).size(), inNodeListB.get(j).size())) / (maxDegree));
+                } else {
+                    inNodeSimilarity[i][j] = Double.valueOf(0);
+                }
+
+                maxDegree = Double.valueOf(Math.max(outNodeListA.get(i).size(), outNodeListB.get(j).size()));
+                if (maxDegree != 0) {
+                    outNodeSimilarity[i][j] = ((Math.min(outNodeListA.get(i).size(), outNodeListB.get(j).size())) / (maxDegree));
+                } else {
+                    outNodeSimilarity[i][j] = Double.valueOf(0);
+                }
+            }
+        }
+
+        for (int i = 0; i < graphSizeA; i++) {
+            for (int j = 0; j < graphSizeB; j++) {
+                nodeSimilarity[i][j] = (inNodeSimilarity[i][j] + outNodeSimilarity[i][j]) / 2;
+            }
+        }
+    } Then we iterate and calculate the similarity of the each nodes until the similarity scores are getting converge. To check that, we use a value called epsilon and if the maximum similarity value difference than previous similarity value is less than epsilon, we terminate the loop. public void measureSimilarity() {
+        double maxDifference = 0.0;
+        boolean terminate = false;
+
+        while (!terminate) {
+            maxDifference = 0.0;
+            for (int i = 0; i < graphSizeA; i++) {
+                for (int j = 0; j < graphSizeB; j++) {
+                    //calculate in-degree similarities
+                    double similaritySum = 0.0;
+                    double maxDegree = Double.valueOf(Math.max(inNodeListA.get(i).size(), inNodeListB.get(j).size()));
+                    int minDegree = Math.min(inNodeListA.get(i).size(), inNodeListB.get(j).size());
+                    if (minDegree == inNodeListA.get(i).size()) {
+                        similaritySum = enumerationFunction(inNodeListA.get(i), inNodeListB.get(j), 0);
+                    } else {
+                        similaritySum = enumerationFunction(inNodeListB.get(j), inNodeListA.get(i), 1);
+                    }
+                    if (maxDegree == 0.0 && similaritySum == 0.0) {
+                        inNodeSimilarity[i][j] = 1.0;
+                    } else if (maxDegree == 0.0) {
+                        inNodeSimilarity[i][j] = 0.0;
+                    } else {
+                        inNodeSimilarity[i][j] = similaritySum / maxDegree;
+                    }
+
+                    //calculate out-degree similarities
+                    similaritySum = 0.0;
+                    maxDegree = Double.valueOf(Math.max(outNodeListA.get(i).size(), outNodeListB.get(j).size()));
+                    minDegree = Math.min(outNodeListA.get(i).size(), outNodeListB.get(j).size());
+                    if (minDegree == outNodeListA.get(i).size()) {
+                        similaritySum = enumerationFunction(outNodeListA.get(i), outNodeListB.get(j), 0);
+                    } else {
+                        similaritySum = enumerationFunction(outNodeListB.get(j), outNodeListA.get(i), 1);
+                    }
+                    if (maxDegree == 0.0 && similaritySum == 0.0) {
+                        outNodeSimilarity[i][j] = 1.0;
+                    } else if (maxDegree == 0.0) {
+                        outNodeSimilarity[i][j] = 0.0;
+                    } else {
+                        outNodeSimilarity[i][j] = similaritySum / maxDegree;
+                    }
+
+                }
+            }
+
+            for (int i = 0; i < graphSizeA; i++) {
+                for (int j = 0; j < graphSizeB; j++) {
+                    double temp = (inNodeSimilarity[i][j] + outNodeSimilarity[i][j]) / 2;
+                    if (Math.abs(nodeSimilarity[i][j] - temp) > maxDifference) {
+                        maxDifference = Math.abs(nodeSimilarity[i][j] - temp);
+                    }
+                    nodeSimilarity[i][j] = temp;
+                }
+            }
+            if (maxDifference < epsilon) {
+                terminate = true;
+            }
+        }
+        DecimalFormat f = new DecimalFormat("0.000");
+
+        for (int i = 0; i < graphSizeA; i++) {
+            for (int j = 0; j < graphSizeB; j++) {
+                nodeSimilarity[i][j] = Double.valueOf(f.format(nodeSimilarity[i][j]));
+                System.out.print(nodeSimilarity[i][j] + " ");
+            }
+            System.out.println("");
+        }
+    } As I mentioned before, enumeration function need to calculate the similarities. It can be implement as follow. public double enumerationFunction(List<Integer> neighborListMin, List<Integer> neighborListMax, int graph) {
+        double similaritySum = 0.0;
+        Map<Integer, Double> valueMap = new HashMap<Integer, Double>();
+        if (graph == 0) {
+            for (int i = 0; i < neighborListMin.size(); i++) {
+                int node = neighborListMin.get(i);
+                double max = 0.0;
+                int maxIndex = -1;
+                for (int j = 0; j < neighborListMax.size(); j++) {
+                    int key = neighborListMax.get(j);
+                    if (!valueMap.containsKey(key)) {
+                        if (max < nodeSimilarity[node][key]) {
+                            max = nodeSimilarity[node][key];
+                            maxIndex = key;
+                        }
+                    }
+                }
+                valueMap.put(maxIndex, max);
+            }
+        } else {
+            for (int i = 0; i < neighborListMin.size(); i++) {
+                int node = neighborListMin.get(i);
+                double max = 0.0;
+                int maxIndex = -1;
+                for (int j = 0; j < neighborListMax.size(); j++) {
+                    int key = neighborListMax.get(j);
+                    if (!valueMap.containsKey(key)) {
+                        if (max < nodeSimilarity[key][node]) {
+                            max = nodeSimilarity[key][node];
+                            maxIndex = key;
+                        }
+                    }
+                }
+                valueMap.put(maxIndex, max);
+            }
+        }
+
+        for (double value : valueMap.values()) {
+            similaritySum += value;
+        }
+        return similaritySum;
+    } Now we have a similarity score matrix of the nodes in two graphs. We need to get single percentage that will give the similarity of two graphs. It can be calculate using following function. In here also we use an enumeration function like above to get the maximum similarity values for the given set of nodes. public Double getGraphSimilarity() {
+        Double finalGraphSimilarity = 0.0;
+        DecimalFormat f = new DecimalFormat("0.000");
+        measureSimilarity();
+
+        if (graphA.getGraphSize() < graphB.getGraphSize()) {
+            finalGraphSimilarity = enumerationFunction(graphA.getNodeList(), graphB.getNodeList(), 0) / graphA.getGraphSize();
+        } else {
+            finalGraphSimilarity = enumerationFunction(graphB.getNodeList(), graphA.getNodeList(), 1) / graphB.getGraphSize();
+        }
+        finalGraphSimilarity = Double.valueOf(f.format(finalGraphSimilarity * 100));
+        return finalGraphSimilarity;
+    } Using this method we can measure the similarity into considerable amount of accuracy. This method will work fine if two graphs are sparse. Connected graphs means node similarity will depend on many neighboring nodes. It will reduce the accuracy of the measure that we calculate. You can download the java source from here. References: Mladen Nikolic, Measuring Similarity of Graph Nodes by Neighbor Matching, Faculty of Mathematics, University of Belgrade L. Zager, G. Verghese, Graph similarity scoring and matching, Applied Mathematics Letters 21 (2008) 86-94. About these ads Rate this:            i   1 Vote Share this: Twitter1 Facebook18 Google LinkedIn Like this: Like Loading... Posted in AlgorithmTagged graph node similarity, Graph Similarity, Neighbor Matching, similarity measureLeave a comment Post navigation Next PostConfigure a JMS queue in standalone.xml of JBoss AS7 Leave a Reply Cancel reply Fill in your details below or click an icon to log in: Email (required) (Address never made public) Name (required) Website You are commenting using your WordPress.com account. ( Log Out / Change ) You are commenting using your Twitter account. ( Log Out / Change ) You are commenting using your Facebook account. ( Log Out / Change ) You are commenting using your Google+ account. ( Log Out / Change ) Cancel Connecting to %s Notify me of new comments via email. Notify me of new posts via email. Search for: Recent Posts Configure a JMS queue in standalone.xml of JBoss AS7 September 20, 2014 Measuring Graph similarity using Neighbor Matching September 19, 2014 Archives September 2014 Tags configurations graph node similarity Graph Similarity JBoss AS7 JMS JMS queue configuration Neighbor Matching similarity measure standalone.xml Blog Stats 554 hits Create a free website or blog at WordPress.com. | The Goran Theme. Follow Follow “Dulanga's Tech Space” Get every new post delivered to your Inbox. Build a website with WordPress.com %d bloggers like this: <img src="http://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" />

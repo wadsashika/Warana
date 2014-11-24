@@ -1,0 +1,54 @@
+Nisansa Dilushan de Silva
+Lecturer at University of Moratuwa (On Study Leave)
+
+
+Collaborator, "Wikipedia-based Ontology Extraction"
+LIRNEasia has negotiated access to months of anonymized, temporal and geo-referenced, high velocity, Transaction Generated Information (TGI) from multiple operators in Sri Lanka. These data sets can collectively shed rich insights into the mobility, connectedness and consumption of more than 10 million people in Sri Lanka (i.e. more than 50% of Sri Lanka’s population). Such insights from Big Data analytics can positively inform multiple policy domains (transportation and infrastructure policy, urban planning, disaster preparedness, health policy and even social policy).
+
+Big Data for Development(Link)
+
+
+ node-simplecrawler
+ A very simple crawler for nodejs.
+
+ JavaScript SEPGrouping_Final
+ Code for the algorithm describe in my paper "Enabling Effective Synoptic Assessment via Algorithmic Constitution of Review Panels" 
+
+ C# Solver
+ 
+
+ C# Topics
+ Table Topics Project for Toastmasters club, University of Moratuwa
+
+ PHP WikiLeaks_Analysis
+ Scripts and analysis in support of statistical analysis of WL Afghanistan data
+
+ RDocument analysis based automatic concept map generation for enterprises
+AbstractEver growing knowledge bases of enterprises present the demanding challenge of proper organization of information that would enable fast retrieval of related and intended information. Document repositories of enterprises consist of large collections of documents of varying size, format and writing styles. This diversified and unstructured nature of documents restrict the possibilities of developing uniform techniques for extracting important concepts and relationships for summarization, structured representation and fast retrieval. ...
+
+EL Karannagoda, H Herath, KNJ Fernando, M Karunarathne, N de Silva, ...
+http://scholar.google.com//citations?view_op=view_citation&hl=en&oe=ASCII&user=OgPD66oAAAAJ&citation_for_view=OgPD66oAAAAJ:Tyk-4Ss8FVUCSeMap-mapping dependency relationships into semantic frame relationships
+We describe the refacloring process of the RelEx2Frame component of OpenCog AGI Framework, a method for expanding concept variables used in RelEx and automatic generation of a common sense knowledge base specifically with relation to concept relationships. The well-known Drools rule engine is used instead of handcoded rides; an asynchronous concurrent architecture and an indexing mechanism are designed to gain performance of re-factored RelEx2Frame. WordNet aided supervised learning mechanism ...
+
+C Fernando, M Maldeniya, DNC Wijeratne, AS Perera, B Goertze, ...
+http://scholar.google.com//citations?view_op=view_citation&hl=en&oe=ASCII&user=OgPD66oAAAAJ&citation_for_view=OgPD66oAAAAJ:u5HHmVD_uO8CEnabling effective synoptic assessment via algorithmic constitution of review panels
+Abstract-This paper presents an algorithmic tool that was used to create panels of experts for the synoptic assessment of a software engineering project course that is targeted towards fostering innovation and creativity in software engineering students. Synoptic assessments succeed with the ability to formulate expert evaluation panels. Yet many industry experts are busy professionals, and hence, the process of constituting appropriately balanced evaluation panels for project demonstrations is a significant challenge. The discussion ...
+
+ND de Silva, SM Weerawarana, AS Perera
+http://scholar.google.com//citations?view_op=view_citation&hl=en&oe=ASCII&user=OgPD66oAAAAJ&citation_for_view=OgPD66oAAAAJ:2osOgNQ5qMECSubject Specific Stream Classification Preprocessing Algorithm for Twitter Data Stream
+
+
+ASP N. H. N. D. de Silva, M. K. D. T. Maldeniya, D. N
+http://scholar.google.com//citations?view_op=view_citation&hl=en&oe=ASCII&user=OgPD66oAAAAJ&citation_for_view=OgPD66oAAAAJ:9yKSN-GCB0IC10-14th December 2014, Colombo (Sri Lanka)
+AbstractEver growing knowledge bases of enterprises present the demanding challenge of proper organization of information that would enable fast retrieval of related and intended information. Document repositories of enterprises consist of large collections of documents of varying size, format and writing styles. This diversified and unstructured nature of documents restrict the possibilities of developing uniform techniques for extracting important concepts and relationships for summarization, structured representation and fast retrieval. ...
+
+EL Karannagoda, H Herath, KNJ Fernando, M Karunarathne, N de Silva, ...
+http://scholar.google.com//citations?view_op=view_citation&hl=en&oe=ASCII&user=OgPD66oAAAAJ&citation_for_view=OgPD66oAAAAJ:Y0pCki6q_DkCBuilding a WordNet for Sinhala
+Abstract Sinhala is one of the official languages of Sri Lanka and is used by over 19 million people. It belongs to the Indo-Aryan branch of the Indo-European languages and its origins date back to at least 2000 years. It has developed into its current form over a long period of time with influences from a wide variety of languages including Tamil, Portuguese and English. As for any other language, a WordNet is extremely important for Sinhala to take it into the digital era. This paper is based on the project to develop a WordNet for Sinhala ...
+
+I Wijesiri, M Gallage, B Gunathilaka, M Lakjeewa, DC Wimalasuriya, ...
+http://scholar.google.com//citations?view_op=view_citation&hl=en&oe=ASCII&user=OgPD66oAAAAJ&citation_for_view=OgPD66oAAAAJ:IjCSPb-OGe4CMapping Dependency Relationships into Semantic Frame Relationships
+AbstractWe describe the refactoring process of the RelEx2Frame component of OpenCog AGI Framework, a method for expanding concept variables used in RelEx and automatic generation of a common sense knowledge base specifically with relation to concept relationships. The wellknown Drools rule engine is used instead of hand-coded rules; an asynchronous concurrent architecture and an indexing mechanism are designed to gain performance of re-factored RelEx2Frame. WordNet aided supervised learning mechanism ...
+
+N de Silva, C Fernando, M Maldeniya, DNC Wijeratne, AS Perera, ...
+http://scholar.google.com//citations?view_op=view_citation&hl=en&oe=ASCII&user=OgPD66oAAAAJ&citation_for_view=OgPD66oAAAAJ:u-x6o8ySG0sC

@@ -67,7 +67,7 @@ public class Wikipedia {
                 if(text.length()>10)
                 writeFile(searchTerm, i + "", text);
             }
-            phraseAnalyzer.RecognizeTerms(Config.skillsPath + "/" + searchTerm, Config.skillsOutputPath + "/" + searchTerm );
+//            phraseAnalyzer.RecognizeTerms(Config.skillsPath + "/" + searchTerm, Config.skillsOutputPath + "/" + searchTerm );
         }
     }
     private String tokenizePage(String url){

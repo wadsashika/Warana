@@ -1,5 +1,6 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker;
 
+import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -82,8 +83,8 @@ public class Google {
     }
 
     public static void main(String[] args) {
-        new Google().FindOnGoogleScholar("nisansa dilushan");
-//        new Google().FindOnWikipedia("image processing");
+//        new Google().FindOnGoogleScholar("nisansa dilushan");
+        new Google().FindOnWikipedia("unity3d");
     }
 
     public ArrayList<String> FindOnWikipedia(String searchTerm) {
@@ -104,11 +105,12 @@ public class Google {
         int i = 0;
         ArrayList<String> links=new ArrayList<String>();
         for (Element element : elements) {
-            if (element.text().contains("en.wikipedia.org")) {
+            System.out.println(element.text()+" | "+searchTerm.split("[\\s|-|_]")[0]);
+            if (element.text().contains("en.wikipedia.org") && element.text().toLowerCase().contains(searchTerm.split("[\\s|-|_]")[0].toLowerCase())) {
                 System.out.println(element.text());
                 links.add("http://"+element.text());
                 i++;
-                if(i>5)
+                if(i> Config.skillDosLimit)
                     break;
             }
         }

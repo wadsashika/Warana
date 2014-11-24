@@ -1,15 +1,13 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.WebCrawler;
 
-import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Profile.Profile;
-import com.cse.warana.utility.AggregatedProfileGenerator.jate.model.Document;
+import com.cse.warana.utility.infoHolders.Profile;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.FileManager;
-import com.thoughtworks.selenium.Wait;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,54 +18,73 @@ import java.util.concurrent.TimeUnit;
  * Created by Thilina on 11/19/2014.
  */
 public class WebCrawler {
-    private WebDriver driver;
+    private FirefoxDriver driver;
     private Profile profile;
     private String baseUrl;
     FileManager fileManager;
     public static void main(String[] args){
         Profile profile1=new Profile("dulanga sashika");
-        WebCrawler sel=new WebCrawler(profile1);
+//        WebCrawler sel=new WebCrawler(profile1);
 //        sel.SavePage("http://wadsashika.wordpress.com/");
 
-        profile1=new Profile("Thilina premasiri");
-        sel=new WebCrawler(profile1);
-        sel.SavePage("http://gamedevsl.blogspot.com/");
+//        profile1=new Profile("Thilina premasiri");
+//        sel=new WebCrawler(profile1);
+//        sel.SavePage("http://gamedevsl.blogspot.com/");
 
-//        sel.SavePage("http://wadsashika.wordpress.com/feed/");
+        profile1=new Profile("Nisansa Dilushan de Silva");
+        WebCrawler sel=new WebCrawler(profile1);
+        sel.SavePage("http://solibnis.blogspot.com/");
     }
 
     public WebCrawler(Profile profile) {
         this.profile=profile;
-        this.driver = new FirefoxDriver();
         fileManager=new FileManager();
+        FirefoxProfile fp=new FirefoxProfile();
+//        firefox_profile = driver.FirefoxProfile()
+        fp.setPreference("permissions.default.stylesheet", 2);
+        fp.setPreference("permissions.default.image", 2);
+        fp.setPreference("dom.ipc.plugins.enabled.libflashplayer.so", false);
+
+        this.driver = new FirefoxDriver(fp);
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
+
+//        driver = webdriver.Firefox(firefox_profile=firefox_profile)
 
     }
 
     public void SavePage(String url){
         this.baseUrl=url;
-
-        driver.get(url);
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        driver=downloadPage(url);
         String source=driver.getPageSource();
         System.out.println(driver.getTitle());
 //        System.out.println(source);
         GetLinks(source);
-        driver.close();
+//        driver.close();
     }
+
+    private FirefoxDriver downloadPage(String url) {
+//        try {
+//        driver.close();
+            driver.get(url);
+            int textLength = Jsoup.parse(driver.getPageSource()).text().length();
+//        for (int i = 0; i < Config.maxReloadTimes; i++) {
+//            if ()
+//        }
+//        }
+//        catch (Exception e){
+//            driver=downloadPage(url);
+//        }
+        return driver;
+    }
+
     public void GetLinks(String source){
 
         ArrayList<String> allLinks=new ArrayList<String>();
         HashMap<String,Integer> linkMap=new HashMap<String,Integer>();
+        linkMap.put(baseUrl,0);
 
         org.jsoup.nodes.Document doc = Jsoup.parse(source);
         Elements links = doc.select("a[href]");
-        Elements media = doc.select("[src]");
-        Elements imports = doc.select("link[href]");
 
 
         // href ...
@@ -79,20 +96,6 @@ public class WebCrawler {
         }
 
         saveToUserDocs(linkMap);
-
-        // img ...
-//        for (Element src : media) {
-//            if(src.attr("abs:href").contains(baseUrl))
-//            System.out.println(src.attr("abs:src"));
-//        }
-//
-//        // js, css, ...
-//        for (Element link : imports) {
-//            if(link.attr("abs:href").contains(baseUrl))
-//            System.out.println(link.attr("abs:href"));
-//        }
-
-
     }
 
     private void saveToUserDocs(HashMap<String,Integer> linkMap) {
@@ -107,12 +110,12 @@ public class WebCrawler {
 
             fileManager.WriteFile(Config.profilesPath+"/"+profile.name,entry);
         }
-
+        driver.quit();
 
     }
 
     private void getContent(HashMap<String, String> pageMap, String link) {
-        driver.get(link);
+        driver=downloadPage(link);
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
@@ -130,5 +133,6 @@ public class WebCrawler {
                 pageMap.put(driver.getTitle(), doc.text());
             }
         }
+//        driver.close();
     }
 }

@@ -121,7 +121,7 @@ public class FileManager {
                 file.createNewFile();
             FileWriter writer = new FileWriter(file);
             for (Map.Entry<String, Double> entry : dataMap.entrySet()) {
-                writer.write(entry.getKey()+","+entry.getValue().toString()+"\n");
+                writer.write(entry.getKey().replace(".csv","")+","+entry.getValue().toString()+"\n");
             }
             writer.flush();
             writer.close();

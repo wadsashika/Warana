@@ -13,40 +13,42 @@ import java.util.*;
  * Created by Thilina on 11/14/2014.
  */
 public class AlgorithmComparotor {
-//    private String skillsPath=Config.skillsPath;
-//    private String normalizedSkillsPath=Config.normalizedSkillsPath;
     private FileManager fileManager;
+    private PhraseAnalyzer phraseAnalyzer;
 
     public AlgorithmComparotor() {
-            fileManager =new FileManager();
+
+        fileManager =new FileManager();
+        phraseAnalyzer =new PhraseAnalyzer();
     }
 
     public static void main(String[] args){
         AlgorithmComparotor comparotor=new AlgorithmComparotor();
+//        comparotor.ExtractTerms(Config.skillsPath,Config.skillsOutputPath);
         comparotor.Compare(Config.skillsOutputPath,Config.normalizedSkillsPath,Config.aggregatedSkillsPath);
-        comparotor.Compare(Config.profilesOutputPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath);
+//        comparotor.Compare(Config.profilesOutputPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath);
 //        comparotor.Compare(Config);
         comparotor.AggregateAllSkills();
 //        System.out.println(Integer.MIN_VALUE);
 
     }
     public void Compare(String rootPath,String normalizedFilesPath,String aggregatedFilesPath){
-        File skillDirectories=new File(rootPath);
-        String[] directoryNames=skillDirectories.list();
+        System.out.println("Comparing "+rootPath);
+        File directories=new File(rootPath);
+        String[] directoryNames=directories.list();
         for (String name : directoryNames) {
 //            if (name.contains("_out")){
                 NormalizeFiles(rootPath + "/" + name,normalizedFilesPath);
 //                fileManager.Normalize();
 //            }
         }
-        skillDirectories=new File(normalizedFilesPath);
-        directoryNames=skillDirectories.list();
+        directories=new File(normalizedFilesPath);
+        directoryNames=directories.list();
         for (String name : directoryNames) {
 //            if (name.contains("_out")){
                 CompareTerms(normalizedFilesPath+"/"+name,aggregatedFilesPath);
 //            }
         }
-
 
     }
 
@@ -71,10 +73,10 @@ public class AlgorithmComparotor {
 //        fileList.add(new File(path+"/"+Config.averageCorpusTF));
         fileList.add(new File(path+"/"+Config.c_value));
         fileList.add(new File(path+"/"+Config.IBMglossEx));
-//        fileList.add(new File(path+"/"+Config.RIDF));
+        fileList.add(new File(path+"/"+Config.RIDF));
 //        fileList.add(new File(path+"/"+Config.simpleTF));
         fileList.add(new File(path+"/"+Config.termex));
-//        fileList.add(new File(path+"/"+Config.TFIDF));
+        fileList.add(new File(path+"/"+Config.TFIDF));
         fileList.add(new File(path+"/"+Config.weirdness));
         for (File file : fileList) {
             aggregateTerms(termsMap, file);
@@ -89,9 +91,9 @@ public class AlgorithmComparotor {
 //        for (File file : root.listFiles()) {
 //            aggregateValues(termsMap, file);
 //        }
-        for (Map.Entry<String, Double> entry : termsMap.entrySet()) {
-            System.out.println(entry.getKey()+" , "+entry.getValue());
-        }
+//        for (Map.Entry<String, Double> entry : termsMap.entrySet()) {
+//            System.out.println(entry.getKey()+" , "+entry.getValue());
+//        }
         termsMap= (HashMap<String, Double>) fileManager.SortByComparator(termsMap);
         writeFile(root.getName(),termsMap,aggregatedDestination);
     }
@@ -154,6 +156,14 @@ public class AlgorithmComparotor {
         fileManager.NormalizeMap(termsMap);
         termsMap= (HashMap<String, Double>) fileManager.SortByComparator(termsMap);
         writeFile(file.getName(),termsMap,Config.aggregatedAllDocsPath);
+
+    }
+
+    public void ExtractTerms(String rootPath,String destPath){
+        File root=new File(rootPath);
+        for (String s : root.list()) {
+            phraseAnalyzer.RecognizeTerms(rootPath+"/"+s,destPath+"/"+s);
+        }
 
     }
 
