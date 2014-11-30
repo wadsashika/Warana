@@ -54,10 +54,11 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
     }
 
     @Override
-    public void extractCVInformation(CVParserService cvParser) {
+    public void extractCVInformation(CVParserServiceImpl cvParser) {
         cvParser.initializeHeadingTokens();
         cvParser.identifyHeadings();
-        cvParser.readPdfDocument(new File("kkk"));
+        cvParser.readPdfDocument(new File("F:\\Accademic\\Semister 7\\Final_Year_Project\\CareersDay2013_CVs\\CareersDay2013_CVs\\pdfs\\090067P_CHATHURANGA R.G.pdf"));
+        cvParser.identifyHeadings();
         cvParser.parseLines(infoCategoryTypes);
     }
 
@@ -65,4 +66,23 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
     public void extractOnlineProfileInformation() {
 
     }
+
+    @Override
+    public void generateCandidateProfile() {
+        candidate.setProfile(profile);
+        candidate.setAchievementsList(achievementsList);
+        candidate.setEducationsList(educationList);
+        candidate.setProjectsLists(projectsList);
+        candidate.setRefereesList(refereesList);
+        candidate.setTechnologiesList(technologiesList);
+        candidate.setWorksList(worksList);
+    }
+
+    public static void main(String[] args){
+        CandidateProfileGeneratorServiceImpl test = new CandidateProfileGeneratorServiceImpl();
+        test.extractCVInformation(new CVParserServiceImpl());
+        test.generateCandidateProfile();
+    }
+
+
 }

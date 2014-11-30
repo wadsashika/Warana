@@ -1,6 +1,7 @@
 package com.cse.warana.utility.infoExtractors;
 
 import com.cse.warana.utility.infoHolders.Project;
+import com.cse.warana.utility.infoHolders.Technology;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,7 +31,7 @@ public class ProjectInfoExtraction {
      * @param linesCopy
      * @throws java.io.IOException
      */
-    public void extractProjectInfo(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy, ArrayList<String> candidateTechnologies, ArrayList<Project> projects) {
+    public void extractProjectInfo(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy, ArrayList<String> candidateTechnologies, ArrayList<Project> projects,ArrayList<Technology> techs) {
         /**
          * TODO NEED TO CHECK FOR THE TECHNOLOGIES
          * using the selected word phrase matching
@@ -85,13 +86,25 @@ public class ProjectInfoExtraction {
                     if (startProjectLine == -1) {
                         startProjectLine = b;
                     }
-                    if (checkForTechnologiesDescription(lineText, candidateTechnologies)) {
+                    if (checkForTechnologiesDescription(lineText, candidateTechnologies, techs)) {
                         endProjectLine = b;
+                        Project proj= new Project();
+                        String description = "";
                         for (int x = startProjectLine; x < endProjectLine; x++) {
                             tokenizer = new StringTokenizer(lines.get(x), " ");
                             if (tokenizer.countTokens() > 2) {
+                                if (x == startProjectLine){
+                                    proj.setName(lines.get(x));
+                                }
+                                else{
+                                    description += lines.get(x);
+                                }
                                 LOG.info(lines.get(x));
                             }
+                        }
+                        proj.setDescription(description);
+                        if (proj.getName() != null){
+                            projects.add(proj);
                         }
                         startProjectLine = -1;
                     }
@@ -110,7 +123,7 @@ public class ProjectInfoExtraction {
      * @param lineText
      * @return
      */
-    public boolean checkForTechnologiesDescription(String lineText, ArrayList<String> candidateTechnologies) {
+    public boolean checkForTechnologiesDescription(String lineText, ArrayList<String> candidateTechnologies, ArrayList<Technology> techsList) {
         String tempText = lineText;
         String tempText2 = lineText;
         String technologyVal = "";
@@ -134,6 +147,9 @@ public class ProjectInfoExtraction {
                     LOG.info("************" + technologyVal);
                     if (!candidateTechnologies.contains(technologyVal)) {
                         candidateTechnologies.add(technologyVal);
+                        Technology technology= new Technology();
+                        technology.setName(technologyVal);
+                        techsList.add(technology);
                     }
                     if (!technologies.contains(technologyVal)) {
                         // Write to the technologies file after lowering the case

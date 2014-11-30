@@ -39,6 +39,7 @@ public class WorkInfoExtract {
 
     /**
      * Extract the Work Information
+     *
      * @param lines
      * @param headingLines
      * @param allHeadings
@@ -49,7 +50,7 @@ public class WorkInfoExtract {
         String lineText = "";
         String companyName = "";
         boolean foundCompany = false;
-        boolean newCompany = true;
+        boolean newCompany = false;
         Work work = null;
 
         LOG.info("----Beginning Work Information----");
@@ -65,12 +66,11 @@ public class WorkInfoExtract {
                      * Need to mention the "at" before the company name
                      */
 
-                    if (newCompany){
-                        if (work != null){
-                            worksList.add(work);
-                        }
-                        work = new Work();
+                    if (newCompany && work != null) {
+                        worksList.add(work);
+                        newCompany = false;
                     }
+                    else
 
                     if (lineText.contains("at")) {
 
@@ -78,6 +78,8 @@ public class WorkInfoExtract {
                         classifierText = classifier.classifyWithInlineXML(lineText);
 
                         if (classifierText.contains("<ORGANIZATION>")) {
+                            work = new Work();
+                            newCompany = true;
                             Pattern pattern = Pattern.compile("<ORGANIZATION>(.*?)</ORGANIZATION>");
                             Matcher matcher = pattern.matcher(classifierText);
                             while (matcher.find()) {
@@ -99,6 +101,8 @@ public class WorkInfoExtract {
                         String tokens[] = lineText.split(" ");
                         for (int x = 0; x < tokens.length; x++) {
                             if (companies.contains(tokens[x].toLowerCase())) {
+                                work = new Work();
+                                newCompany = true;
                                 companyName = findFullCompanyName(tokens, x);
                                 LOG.info(companyName);
 
@@ -124,7 +128,8 @@ public class WorkInfoExtract {
                         LOG.info("");
                         LOG.info("found");
                         LOG.info(lineText);
-                        findDuration(lineText,lines.get(b + 1), work);
+                        findDuration(lineText, lines.get(b + 1), work);
+
                         linesCopy.remove(lineText);
                     }
 
@@ -140,6 +145,7 @@ public class WorkInfoExtract {
 
     /**
      * Find the full name of the company
+     *
      * @param lineTokens
      * @param start
      * @return
@@ -158,6 +164,7 @@ public class WorkInfoExtract {
 
     /**
      * Find the work time period of a particular company
+     *
      * @param line1
      * @param line2
      */
@@ -202,6 +209,7 @@ public class WorkInfoExtract {
 
     /**
      * Load the Gazeteer list
+     *
      * @param path
      * @param list
      */

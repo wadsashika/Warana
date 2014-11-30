@@ -60,19 +60,6 @@ public class CVParserServiceImpl implements CVParserService {
      */
     public CVParserServiceImpl() {
 
-        /**
-         * Load the 7 class classifier
-         * Finds Time, Location, Organization, Person, Money, Percent, Date
-         */
-        String serializedClassifier = "F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\classifiers\\english.muc.7class.distsim.crf.ser.gz";
-        try {
-            classifier = CRFClassifier.getClassifier(serializedClassifier);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
-
         EducationalHeadings = new ArrayList<String>();
         ProfileHeadings = new ArrayList<String>();
         WorkHistoryHeadings = new ArrayList<String>();
@@ -88,6 +75,19 @@ public class CVParserServiceImpl implements CVParserService {
         classifier = null;
 
         LOG = LoggerFactory.getLogger(CVParserServiceImpl.class);
+
+        /**
+         * Load the 7 class classifier
+         * Finds Time, Location, Organization, Person, Money, Percent, Date
+         */
+        String serializedClassifier = "F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\classifiers\\english.muc.7class.distsim.crf.ser.gz";
+        try {
+            classifier = CRFClassifier.getClassifier(serializedClassifier);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -346,7 +346,7 @@ public class CVParserServiceImpl implements CVParserService {
             } else if (pairs.getKey().equals("AWRD_INFO")) {
                 achInfo.extractAchievementInformation(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy, (ArrayList<Achievement>) infoCategoryTypes.get("ACHIEVEMENTS_LIST"));
             } else if (pairs.getKey().equals("PROJ_INFO")) {
-                projInfo.extractProjectInfo(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy, candidateTechnologies, (ArrayList<Project>) infoCategoryTypes.get("PROJECTS_LIST"));
+                projInfo.extractProjectInfo(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy, candidateTechnologies, (ArrayList<Project>) infoCategoryTypes.get("PROJECTS_LIST"), (ArrayList<Technology>) infoCategoryTypes.get("TECHNOLOGIES_LIST"));
             } else if (pairs.getKey().equals("REF_INFO")) {
                 refInfo.getRefereeInfo(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy, (ArrayList<Referee>) infoCategoryTypes.get("REFEREE_LIST"));
             } else if (pairs.getKey().equals("INTERESTS_INFO")){
