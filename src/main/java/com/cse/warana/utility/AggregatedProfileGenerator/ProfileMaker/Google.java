@@ -110,7 +110,7 @@ public class Google {
                 System.out.println(element.text());
                 links.add("http://"+element.text());
                 i++;
-                if(i> Config.skillDosLimit)
+                if(i> Config.skillDocsLimit)
                     break;
             }
         }

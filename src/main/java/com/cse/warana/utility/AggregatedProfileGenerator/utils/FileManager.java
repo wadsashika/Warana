@@ -100,7 +100,12 @@ public class FileManager {
                 String[] ary= line.split(",");
 //                System.out.println(ary[1]);
 //                System.out.println(ary[0].split("\\|")[0]);
-                map.put(ary[0].split("\\|")[0],Double.parseDouble(ary[1]));
+                if(ary.length>1) {
+                    map.put(ary[0].split("\\|")[0], Double.parseDouble(ary[1]));
+                }
+                else {
+                    map.put(ary[0].split("\\|")[0],0.0);
+                }
 
             }
         } catch (FileNotFoundException e) {
@@ -149,4 +154,64 @@ public class FileManager {
             e.printStackTrace();
         }
     }
+
+    public void WriteFile(String fileName, HashMap<String, Integer> dataMap, String destinationPath) {
+        boolean f = new File(destinationPath).mkdirs();
+        File file=new File(destinationPath+fileName);
+        // creates the file
+        try {
+            if(!file.exists())
+                file.createNewFile();
+            FileWriter writer = new FileWriter(file);
+            for (Map.Entry<String, Integer> entry : dataMap.entrySet()) {
+                writer.write(entry.getKey().replace(".csv","")+","+entry.getValue().toString()+"\n");
+            }
+            writer.flush();
+            writer.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+    public HashMap<String, Double> RemoveDuplications(HashMap<String, Double> map) {
+        String shortKey;
+        HashMap<String, Double> clone = (HashMap<String, Double>) map.clone();
+        for (String key : map.keySet()) {
+            for (String otherKey : map.keySet()) {
+                if (key.equals(otherKey)){
+                    break;
+                }
+                if (otherKey.contains(key) && clone.containsKey(key)){
+                    clone.put(otherKey,getMax(map.get(key),map.get(otherKey)));
+                    clone.remove(key);
+                    key=otherKey;
+                }
+                if (key.contains(otherKey) && clone.containsKey(otherKey)){
+                    clone.put(key, getMax(map.get(key),map.get(otherKey)));
+                    clone.remove(otherKey);
+                }
+            }
+
+        }
+        clone= (HashMap<String, Double>) SortByComparator(clone);
+
+        for (String s : clone.keySet()) {
+            System.out.println(s);
+        }
+
+        return clone;
+    }
+
+    private Double getMax(Double a, Double b) {
+        if (a>b){
+            return a;
+        }
+        else {
+            return b;
+        }
+    }
+
+
 }

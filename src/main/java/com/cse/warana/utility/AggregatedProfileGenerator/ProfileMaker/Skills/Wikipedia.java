@@ -59,7 +59,8 @@ public class Wikipedia {
     public void GetTermsGoogle(String searchTerm){
 
         boolean b = new File(filePath+"/"+searchTerm).mkdirs();
-        if (b) {
+        File file = new File(filePath + "/" + searchTerm);
+        if (file.list().length==0) {
             ArrayList<String> links = google.FindOnWikipedia(searchTerm);
             for (int i = 0; i < links.size(); i++) {
                 String link = links.get(i);
@@ -110,11 +111,11 @@ public class Wikipedia {
 
     }
     public static void main(String[] args){
-//        Wikipedia wiki=new Wikipedia();
-//        wiki.GetTermsGoogle("image processing");
+        Wikipedia wiki=new Wikipedia();
+        wiki.GetTermsGoogle("unity 3D");
 
         PhraseAnalyzer ph=new PhraseAnalyzer();
-        ph.RecognizeTerms("D:\\Projects\\Repositories\\Final Year Project\\SigmaCV finder 2\\src\\com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker\\Skills\\SkillDocs\\image processing","D:\\Projects\\Repositories\\Final Year Project\\SigmaCV finder 2\\src\\com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker\\Skills\\SkillDocs\\image processing_out");
+//        ph.RecognizeTerms("D:\\Projects\\Repositories\\Final Year Project\\SigmaCV finder 2\\src\\com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker\\Skills\\SkillDocs\\image processing","D:\\Projects\\Repositories\\Final Year Project\\SigmaCV finder 2\\src\\com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker\\Skills\\SkillDocs\\image processing_out");
     }
 
 }

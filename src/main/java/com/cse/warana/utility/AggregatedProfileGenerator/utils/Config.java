@@ -15,6 +15,8 @@ public class Config {
     public static final String aggregatedProfilesPath="src/main/resources/Docs/Aggregated/UserDocs/";
     public static final String processedProfilesPath ="src/main/resources/Docs/Processed/UserDocs/";
     public static final String processedSkillsPath   ="src/main/resources/Docs/Processed/SkillDocs/";
+    public static final String goldenStandardPath   ="src/main/resources/Golden Standard/";
+    public static final String statsOutPath   ="src/main/resources/StatsOut/";
 
     public static final int user_max_docs=10;
 
@@ -29,25 +31,39 @@ public class Config {
 //    public static String processedSkillsPath    ="src/com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker/Skills/Processed/SkillDocs/";
 
 
-    public static final String averageCorpusTF ="AverageCorpusTF_ALGORITHM.csv";
-    public static final String c_value ="CValue_ALGORITHM.csv";
-    public static final String IBMglossEx ="IBM_GlossEx_ALGORITHM.csv";
-    public static final String RIDF ="RIDF_ALGORITHM.csv";
-    public static final String simpleTF ="Simple_term_frequency_ALGORITHM.csv";
-    public static final String termex ="TermEx_ALGORITHM.csv";
-    public static final String TFIDF ="TfIdf_ALGORITHM.csv";
-    public static final String weirdness ="Weirdness_ALGORITHM.csv";
+    public static final String averageCorpusTF  ="AverageCorpusTF_ALGORITHM.csv";
+    public static final String c_value          ="CValue_ALGORITHM.csv";
+    public static final String IBMglossEx       ="IBM_GlossEx_ALGORITHM.csv";
+    public static final String RIDF             ="RIDF_ALGORITHM.csv";
+    public static final String simpleTF         ="Simple_term_frequency_ALGORITHM.csv";
+    public static final String termex           ="TermEx_ALGORITHM.csv";
+    public static final String TFIDF            ="TfIdf_ALGORITHM.csv";
+    public static final String weirdness        ="Weirdness_ALGORITHM.csv";
+
+    public static boolean enable_averageCorpusTF  =true;
+    public static boolean enable_c_value          =true;
+    public static boolean enable_IBMglossEx       =true;
+    public static boolean enable_RIDF             =true;
+    public static boolean enable_simpleTF         =true;
+    public static boolean enable_termex           =true;
+    public static boolean enable_TFIDF            =true;
+    public static boolean enable_weirdness        =true;
+
+
+    public static boolean enable_filter        =true;
 
     public static int maxEntries=50;
+    public static int statEvaluationDepth=10;
+    public static boolean removeDuplications=true;
 
 //    jate properties
     public static final String NLP_PATH="src/main/java/com/cse/warana/utility/AggregatedProfileGenerator/PhraseExtractor/nlp_resources";
     public static final String TEST_PATH="src/main/java/com/cse/warana/utility/AggregatedProfileGenerator/PhraseExtractor/test";
-    public static final int TERM_MAX_WORDS=5;
+    public static int TERM_MAX_WORDS=3;
     public static final int MULTITHREAD_COUNTER_NUMBERS=5;
     public static final Boolean TERM_IGNORE_DIGITS=true;
 
     public static int minTextLength=100;
     public static int maxReloadTimes=3;
-    public static int skillDosLimit=3;
+    public static int skillDocsLimit =3;
 }

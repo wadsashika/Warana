@@ -81,7 +81,7 @@ public class JATEProperties {
 
     public boolean isIgnoringDigits() {
         try {
-            return Boolean.valueOf(getProperty(TERM_IGNORE_DIGITS));
+            return Config.TERM_IGNORE_DIGITS;
         } catch (Exception e) {
             return true;
         }

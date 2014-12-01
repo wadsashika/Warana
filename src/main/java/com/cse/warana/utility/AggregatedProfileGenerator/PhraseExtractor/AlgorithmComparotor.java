@@ -45,9 +45,7 @@ public class AlgorithmComparotor {
         directories=new File(normalizedFilesPath);
         directoryNames=directories.list();
         for (String name : directoryNames) {
-//            if (name.contains("_out")){
                 CompareTerms(normalizedFilesPath+"/"+name,aggregatedFilesPath);
-//            }
         }
 
     }
@@ -70,14 +68,30 @@ public class AlgorithmComparotor {
 //        }
 //        root=new File("src/com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker/Skills/Normalized");
         ArrayList<File> fileList=new ArrayList<File>();
-//        fileList.add(new File(path+"/"+Config.averageCorpusTF));
+        if(Config.enable_averageCorpusTF)
+        fileList.add(new File(path+"/"+Config.averageCorpusTF));
+
+        if (Config.enable_c_value)
         fileList.add(new File(path+"/"+Config.c_value));
+
+        if (Config.enable_IBMglossEx)
         fileList.add(new File(path+"/"+Config.IBMglossEx));
+
+        if (Config.enable_RIDF)
         fileList.add(new File(path+"/"+Config.RIDF));
-//        fileList.add(new File(path+"/"+Config.simpleTF));
+
+        if (Config.enable_simpleTF)
+        fileList.add(new File(path+"/"+Config.simpleTF));
+
+        if (Config.enable_termex)
         fileList.add(new File(path+"/"+Config.termex));
+
+        if (Config.enable_TFIDF)
         fileList.add(new File(path+"/"+Config.TFIDF));
+
+        if (Config.enable_weirdness)
         fileList.add(new File(path+"/"+Config.weirdness));
+
         for (File file : fileList) {
             aggregateTerms(termsMap, file);
         }
@@ -85,12 +99,7 @@ public class AlgorithmComparotor {
             aggregateValues(termsMap, file);
         }
         termsMap= (HashMap<String, Double>) fileManager.NormalizeMap(termsMap);
-//        for (File file : root.listFiles()) {
-//            aggregateTerms(termsMap, file);
-//        }
-//        for (File file : root.listFiles()) {
-//            aggregateValues(termsMap, file);
-//        }
+
 //        for (Map.Entry<String, Double> entry : termsMap.entrySet()) {
 //            System.out.println(entry.getKey()+" , "+entry.getValue());
 //        }
