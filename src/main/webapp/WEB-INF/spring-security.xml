@@ -26,9 +26,11 @@
 
     <authentication-manager alias="authenticationManager">
         <authentication-provider>
-            <user-service>
-                <user name="admin@warana" password="admin@warana" authorities="ROLE_USER"/>
-            </user-service>
+            <jdbc-user-service data-source-ref="dataSource"
+                               users-by-username-query="SELECT username, password, 1 AS enabled
+                               FROM warana.user WHERE username=?"
+                    authorities-by-username-query="SELECT username, 'ROLE_USER' AS authority
+                               FROM warana.user WHERE username=?"/>
         </authentication-provider>
     </authentication-manager>
 
