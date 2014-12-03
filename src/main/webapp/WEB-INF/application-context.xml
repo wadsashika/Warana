@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:util="http://www.springframework.org/schema/util" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
-       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd
+
        http://www.springframework.org/schema/context
-       http://www.springframework.org/schema/context/spring-context-3.0.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd">
+       http://www.springframework.org/schema/context/spring-context-3.0.xsd http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <jee:jndi-lookup id="dataSource" jndi-name="java:/waranaDS"/>
     <context:annotation-config/>
@@ -25,13 +25,16 @@
             <props>
                 <prop key="hibernate.listeners.envers.autoRegister">false</prop>
                 <prop key="hibernate.transaction.manager_lookup_class">
-                    org.hibernate.transaction.JBossTransactionManagerLookup</prop>
+                    org.hibernate.transaction.JBossTransactionManagerLookup
+                </prop>
             </props>
         </property>
     </bean>
 
-    <util:properties id="nodeProperty" location="classpath:warana.properties" />
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+    <bean id="transactionManager" class="org.springframework.transaction.jta.JtaTransactionManager"/>
 
+    <context:property-placeholder location="classpath*:warana.properties"/>
     <context:component-scan base-package="com.cse.warana.service,com.cse.warana.dao"/>
 
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
