@@ -27,10 +27,10 @@
     <authentication-manager alias="authenticationManager">
         <authentication-provider>
             <jdbc-user-service data-source-ref="dataSource"
-                               users-by-username-query="SELECT username, password, 1 AS enabled
-                               FROM warana.user WHERE username=?"
-                    authorities-by-username-query="SELECT username, 'ROLE_USER' AS authority
-                               FROM warana.user WHERE username=?"/>
+                               users-by-username-query="SELECT user_name, password, 1 AS enabled
+                               FROM warana.user WHERE user_name=?"
+                    authorities-by-username-query="SELECT user_name, 'ROLE_USER' AS authority
+                               FROM warana.user WHERE user_name=?"/>
         </authentication-provider>
     </authentication-manager>
 

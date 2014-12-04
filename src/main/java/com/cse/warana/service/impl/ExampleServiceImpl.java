@@ -1,6 +1,8 @@
 package com.cse.warana.service.impl;
 
 import com.cse.warana.dao.ExampleDao;
+import com.cse.warana.dao.UserDao;
+import com.cse.warana.dto.CredentialsDTO;
 import com.cse.warana.model.User;
 import com.cse.warana.service.ExampleService;
 import org.slf4j.Logger;
@@ -21,23 +23,15 @@ public class ExampleServiceImpl implements ExampleService {
     private static final Logger LOG = LoggerFactory.getLogger(ExampleServiceImpl.class);
 
     @Autowired
-    @Qualifier("exampleDao")
-    private ExampleDao exampleDao;
+    @Qualifier("userDao")
+    private UserDao userDao;
 
-    @Value("${GAZETEER.LIST.PATH}")
-    private static String listPath;
 
     @Override
     @TransactionAttribute(TransactionAttributeType.REQUIRED)
-    public String thisIsExample(String example) {
+    public String thisIsExample(String example, long id) {
         LOG.info("Accessing example service started");
-        User user = new User();
-        user.setUserId(3);
-        user.setUserName("test@warana");
-        user.setPassword("password");
-
-        exampleDao.saveEntity(user);
-        user = exampleDao.getEntity(User.class,1L);
-        return example + ". This is an example. New User Successfully Created "+user.getUserName();
+        CredentialsDTO credentialsDTO = userDao.getUser(id);
+        return example + ". This is an example. New User Successfully Created "+credentialsDTO.getFirstName()+" "+credentialsDTO.getLastName();
     }
 }
