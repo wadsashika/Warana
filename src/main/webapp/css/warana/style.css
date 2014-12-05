@@ -241,3 +241,15 @@ footer .footer-content .social {
     margin-top: 5px;
     width: 100%;
 }
+
+.not-bold{
+    font-weight: normal !important;
+}
+
+.float-right{
+    float: right;
+}
+
+.float-left{
+    float: left;
+}

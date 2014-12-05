@@ -39,7 +39,7 @@ public class ExampleController {
         LOG.info("Example Controller Started");
 
         String EXAMPLE_VIEW = "example";
-        String exampleServiceString = exampleService.thisIsExample("Hi all");
+        String exampleServiceString = exampleService.thisIsExample("Hi all",1);
         modelMap.addAttribute("message", exampleServiceString);
 
         return EXAMPLE_VIEW;

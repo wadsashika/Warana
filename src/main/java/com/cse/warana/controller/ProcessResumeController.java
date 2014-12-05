@@ -1,10 +1,16 @@
 package com.cse.warana.controller;
 
+import com.cse.warana.dto.ResumesToProcessDto;
+import com.cse.warana.service.ResumesToProcessService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.io.File;
@@ -19,20 +25,21 @@ public class ProcessResumeController {
 
     private static final Logger LOG = LoggerFactory.getLogger(ProcessResumeController.class);
 
+    @Autowired
+    @Qualifier("resumesToProcessService")
+    private ResumesToProcessService resumesToProcessService;
+
     @RequestMapping(value = "/process", method = RequestMethod.GET)
     public ModelAndView loadProcessView() {
 
         String PROCESS_VIEW = "process-resume";
 
-        /**
-         * TODO ENTER THE FOLDER PATH
-         */
-        File directory = new File("F:\\Accademic\\Semister 7\\Final_Year_Project\\CareersDay2013_CVs\\CareersDay2013_CVs\\pdfs");
-        File[] fileList = directory.listFiles();
+        List<ResumesToProcessDto> resumesToProcessDtoList = resumesToProcessService.getResumesToProcess("NOT PROCESSED");
+
         List<String> filesNames = new ArrayList<String>();
 
-        for (int a = 0; a < fileList.length; a++){
-            filesNames.add(fileList[a].getName());
+        for (int a = 0; a < resumesToProcessDtoList.size(); a++){
+            filesNames.add(resumesToProcessDtoList.get(a).getFileName());
         }
 
         ModelAndView model = new ModelAndView();
@@ -42,5 +49,23 @@ public class ProcessResumeController {
         LOG.info("Loading Process Resume Page");
 
         return model;
+    }
+
+    @RequestMapping(value = "/process/delete", method = RequestMethod.POST)
+    @ResponseBody
+    public Boolean deleteResume(@RequestParam("fileName") String fileName){
+
+        String baseDirectory = "F:\\Accademic\\Semister 7\\Final_Year_Project\\CareersDay2013_CVs\\CareersDay2013_CVs\\pdfs";
+        File resumeFile = new File(baseDirectory + "\\" + fileName);
+        boolean status = false;
+
+        resumesToProcessService.uploadedResumeStatusUpdate(fileName,"DELETED");
+
+        if (resumeFile.exists()){
+            resumeFile.delete();
+            status = true;
+        }
+
+        return status;
     }
 }

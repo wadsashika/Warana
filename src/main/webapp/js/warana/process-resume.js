@@ -29,11 +29,40 @@ WARANA.processResume = function () {
         );
     };
 
+    var deleteResumeRow = function(){
+        var fileName = $(this).closest('tr').children('td:eq(1)').text();
+        var row = $(this).closest('tr').first();
+        var nRow = row[0];
+
+        $.ajax({
+            type : 'POST',
+            url : 'process/delete',
+            data : {fileName:fileName},
+            success: function(data){
+                var fileDeleted = data;
+
+                alert(data);
+                if (fileDeleted == true){
+                    $("#unprocessed-resume-list").dataTable().fnDeleteRow(nRow);
+                }
+                else{
+                    alert("Cannot find the File");
+                }
+            },
+            error: function (e) {
+                alert('Error: ' + e);
+            }
+        });
+
+
+    };
+
     return {
         init: function(){
             setFileListDataTable();
             $(document).on("click", "#select-all", selectAll);
-            $(document).on("click","#clear-selection",clearSelection());
+            $(document).on("click","#clear-selection",clearSelection);
+            $(document).on("click",".delete-resume", deleteResumeRow);
         }
     }
 }();
