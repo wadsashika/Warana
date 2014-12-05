@@ -35,4 +35,14 @@ public class ResumesToProcessServiceImpl implements ResumesToProcessService {
 
         return resumesToProcessDtoList;
     }
+
+    @Override
+    public int uploadedResumeStatusUpdate(String fileName, String status) {
+        LOG.info("updating resume status");
+        int returnVal = 0;
+
+        returnVal = resumesToProcessDao.updateResumeStatus(fileName,status);
+
+        return returnVal;
+    }
 }

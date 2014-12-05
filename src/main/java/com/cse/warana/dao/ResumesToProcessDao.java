@@ -10,4 +10,5 @@ import java.util.List;
 
 public interface ResumesToProcessDao {
     public List<ResumesToProcessDto> getUploadedResumes(String status);
+    public int updateResumeStatus(String fileName, String status);
 }

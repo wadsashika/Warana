@@ -23,7 +23,6 @@ import java.util.Map;
 public class ResumesToProcessDaoImpl extends BaseJDBCDaoImpl implements ResumesToProcessDao {
     private Logger LOG = LoggerFactory.getLogger(ResumesToProcessDaoImpl.class);
 
-
     @Override
     @TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
     public List<ResumesToProcessDto> getUploadedResumes(String status) {
@@ -51,5 +50,23 @@ public class ResumesToProcessDaoImpl extends BaseJDBCDaoImpl implements ResumesT
         returnDtoList = getNamedParameterJdbcTemplate().query(query.toString(),paramMap,mapper);
 
         return returnDtoList;
+    }
+
+    @Override
+    @TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
+    public int updateResumeStatus(String fileName, String status) {
+        int returnVal = 0;
+
+        StringBuilder query = new StringBuilder("");
+        query.append("UPDATE uploaded_resumes \n");
+        query.append("SET status = :status \n");
+        query.append("WHERE file_name = :fileName");
+
+        Map<String,Object> paramMap = new HashMap<String,Object>();
+        paramMap.put("status",status);
+        paramMap.put("fileName",fileName);
+
+        returnVal = getNamedParameterJdbcTemplate().update(query.toString(),paramMap);
+        return returnVal;
     }
 }
