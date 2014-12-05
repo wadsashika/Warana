@@ -44,7 +44,7 @@
                                             <td><input type="checkbox" class="files-checkbox"></td>
                                             <td>${file}</td>
                                             <td>
-                                                <button type="button" class="btn btn-danger">
+                                                <button type="button" class="btn btn-danger delete-resume">
                                                     <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete
                                                 </button>
                                             </td>

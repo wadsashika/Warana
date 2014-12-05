@@ -9,4 +9,5 @@ import java.util.List;
  */
 public interface ResumesToProcessService {
     public List<ResumesToProcessDto> getResumesToProcess(String status);
+    public int uploadedResumeStatusUpdate(String fileName, String status);
 }
