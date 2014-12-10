@@ -34,29 +34,22 @@
                                 <thead>
                                 <tr>
                                     <th>Select</th>
-                                    <th>User Name</th>
-                                    <th>Last Analyzed</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                    <%--Need to add the list of users loaded from the database--%>
-                                    <tr>
-                                        <td><input type="checkbox" class="files-checkbox"></td>
-                                        <td>Nadeeshaan Gunasinghe</td>
-                                        <td>20014-03-03</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><input type="checkbox" class="files-checkbox"></td>
-                                        <td>Dulanga Sashika</td>
-                                        <td>20014-03-03</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td><input type="checkbox" class="files-checkbox"></td>
-                                        <td>Anushka Mahesk</td>
-                                        <td>20014-03-03</td>
-                                    </tr>
+                                    <c:forEach items="${resumesToProcess}" var="result">
+                                        <tr>
+                                            <td><input type="checkbox" class="files-checkbox"></td>
+                                            <td>
+                                                <div style="margin-left: 75px"><c:out value="${result.name}"></c:out></div>
+                                            </td>
+                                            <td>
+                                                <div style="margin-left: 75px"><c:out value="${result.email}"></c:out></div>
+                                            </td>
+                                        </tr>
+                                    </c:forEach>
                                 </tbody>
                             </table>
                         </div>

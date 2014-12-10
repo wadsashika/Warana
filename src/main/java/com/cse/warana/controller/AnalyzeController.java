@@ -1,8 +1,13 @@
 package com.cse.warana.controller;
 
 import com.cse.warana.dto.AnalyticResultsDTO;
+import com.cse.warana.dto.ResumesToAnalyseDto;
+import com.cse.warana.service.AnalyzeResumeService;
+import com.cse.warana.service.impl.AnalyzeResumeServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -21,13 +26,20 @@ import java.util.Map;
 public class AnalyzeController {
     private static final Logger LOG = LoggerFactory.getLogger(AnalyzeController.class);
 
+    @Autowired
+    @Qualifier("analyzeResumeService")
+    private AnalyzeResumeService analyzeResumeService;
+
     @RequestMapping(value = "/analyze", method = RequestMethod.GET)
     public ModelAndView analyzeResumes() {
         String ANALYZE_VIEW = "analyze";
         LOG.info("Loading Analyze page");
 
+        List<ResumesToAnalyseDto> resumesToAnalyseDtoList = analyzeResumeService.getResumesToAnalyze();
+
         ModelAndView model = new ModelAndView();
         model.setViewName(ANALYZE_VIEW);
+        model.addObject("resumesToProcess", resumesToAnalyseDtoList);
 
         return model;
     }
