@@ -3,6 +3,7 @@ package com.cse.warana.controller;
 import com.cse.warana.dto.AnalyticResultsDTO;
 import com.cse.warana.dto.ResumesToAnalyseDto;
 import com.cse.warana.service.AnalyzeResumeService;
+import com.cse.warana.service.AnalyzedResultsService;
 import com.cse.warana.service.impl.AnalyzeResumeServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -30,6 +31,10 @@ public class AnalyzeController {
     @Qualifier("analyzeResumeService")
     private AnalyzeResumeService analyzeResumeService;
 
+    @Autowired
+    @Qualifier("analyzedResultsService")
+    private AnalyzedResultsService analyzedResultsService;
+
     @RequestMapping(value = "/analyze", method = RequestMethod.GET)
     public ModelAndView analyzeResumes() {
         String ANALYZE_VIEW = "analyze";
@@ -49,28 +54,11 @@ public class AnalyzeController {
         String AN_RESULTS_VIEW = "analyzed-results";
         LOG.info("loading Analyzed results page");
 
-        AnalyticResultsDTO res1 = new AnalyticResultsDTO();
-        res1.setName("Nadeeshaan Gunasinghe");
-        res1.setScore("79%");
-        res1.setEmail("default");
-        AnalyticResultsDTO res2 = new AnalyticResultsDTO();
-        res2.setName("Dulanga Sashika");
-        res2.setScore("89%");
-        res2.setEmail("default");
-        AnalyticResultsDTO res3 = new AnalyticResultsDTO();
-        res3.setName("Anushka Mahesh");
-        res3.setScore("99%");
-        res3.setEmail("default");
-
-        List<AnalyticResultsDTO> resultsDTOList = new ArrayList<AnalyticResultsDTO>();
-        resultsDTOList.add(res1);
-        resultsDTOList.add(res2);
-        resultsDTOList.add(res3);
-
+        List<AnalyticResultsDTO> analyticResultsDTOs = analyzedResultsService.getAnalyzedResults();
 
         ModelAndView model = new ModelAndView();
         model.setViewName(AN_RESULTS_VIEW);
-        model.addObject("results",resultsDTOList);
+        model.addObject("results",analyticResultsDTOs);
 
         return model;
     }

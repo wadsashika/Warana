@@ -55,8 +55,9 @@
                                             <div style="margin-left: 75px"><c:out value="${result.name}"></c:out></div>
                                         </td>
                                         <td>
-                                            <div style="margin-left: 75px"><c:out value="${result.score}"></div>
-                                            </c:out></td>
+                                            <div style="margin-left: 75px"><c:out value="${result.score}"></c:out></div>
+
+                                        </td>
                                         <td>
                                             <button type="button" class="btn btn-primary btn-md view-prof btn-center">
                                                 <span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
