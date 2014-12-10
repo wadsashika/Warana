@@ -8,6 +8,7 @@ public class AnalyticResultsDTO {
     private String email;
     private String name;
     private String score;
+    private Long Id;
 
 
     public void setName(String name) {
@@ -32,5 +33,13 @@ public class AnalyticResultsDTO {
 
     public String getEmail() {
         return email;
+    }
+
+    public Long getId() {
+        return Id;
+    }
+
+    public void setId(Long id) {
+        Id = id;
     }
 }
