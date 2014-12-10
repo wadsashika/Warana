@@ -5,6 +5,7 @@
 
 <script src='<c:url value="/js/bootstrap-modal.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/bootstrap-modalmanager.js" />' type="text/javascript"></script>
+<script src='<c:url value="/js/warana/home.js" />' type="text/javascript"></script>
 
 <div class="body-container col-sm-12 col-md-12">
     <c:if test="${not empty error}">
@@ -72,118 +73,127 @@
         <div class="row">
             <div class="col-md-3 col-sm-6">
                 <div class="feature-item">
-                    <span class="glyphicon glyphicon-ok green"></span>
+                    <span class="glyphicon glyphicon-book green"></span>
 
-                    <h3><strong>Feature 1</strong></h3>
+                    <h3><strong>IR from Resumes</strong></h3>
 
-                    <p>This is a test</p>
+                    <p>We analyze candidates' resume and extract important information</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="feature-item">
-                    <span class="glyphicon glyphicon-user red"></span>
+                    <span class="glyphicon glyphicon-globe red"></span>
 
-                    <h3><strong>Feature 2</strong></h3>
+                    <h3><strong>IR from Online</strong></h3>
 
-                    <p>This is a test</p>
+                    <p>We extract important information of candidates' from the web</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="feature-item">
-                    <span class="glyphicon glyphicon-eye-open blue"></span>
+                    <span class="glyphicon glyphicon-user blue"></span>
 
-                    <h3><strong>Feature 3</strong></h3>
+                    <h3><strong>Aggregate Profiles</strong></h3>
 
-                    <p>This is a test</p>
+                    <p>Create aggregated profiles including both information extracted from the resume and web</p>
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
                 <div class="feature-item">
-                    <span class="glyphicon glyphicon-plane orange"></span>
+                    <span class="glyphicon glyphicon-th-list orange"></span>
 
-                    <h3><strong>Feature 4</strong></h3>
+                    <h3><strong>Detailed Analytics</strong></h3>
 
-                    <p>This is a test</p>
+                    <p>Produce detailed analytics of the candidates comparing with company knowledge base</p>
                 </div>
             </div>
-            <span id="signup-form"/>
         </div>
     </div>
 </div>
 
-<div class="signup">
-    <div class="container">
-        <div class="head">
-            <h2><strong>Sign Up</strong></h2>
-        </div>
+<sec:authorize ifNotGranted="ROLE_USER">
+    <div class="signup" id="signup-form">
+        <div class="container">
+            <div class="head">
+                <h2><strong>Sign Up</strong></h2>
+            </div>
 
-        <div class="col-sm-12">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <div id="signup-form-body" class="form-horizontal">
-                        <div class="form-group">
-                            <div class="col-sm-12 col-md-3">
-                                <label for="firstName" class="text-left">First Name</label>
+            <div class="col-sm-12">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div id="signup-form-body" class="form-horizontal">
+                            <div class="form-group">
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-2">
+                                    <label for="firstName" class="not-bold">First Name</label>
+                                </div>
+                                <div class="col-sm-8 col-md-5">
+                                    <input type="text" class="form-control" name="firstName" id="firstName"
+                                           data-valid="required">
+                                </div>
                             </div>
-                            <div class="col-sm-8 col-md-5">
-                                <input type="text" class="form-control" name="firstName" id="firstName"
-                                       data-valid="required">
+                            <div class="form-group">
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-2">
+                                    <label for="lastName" class="not-bold">Last Name</label>
+                                </div>
+                                <div class="col-sm-8 col-md-5">
+                                    <input type="text" class="form-control" name="firstName" id="lastName"
+                                           data-valid="required">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12 col-md-3">
-                                <label for="lastName" class="text-left">Last Name</label>
+                            <div class="form-group">
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-2">
+                                    <label for="email" class="not-bold">E-mail</label>
+                                </div>
+                                <div class="col-sm-8 col-md-5">
+                                    <input type="email" class="form-control" name="firstName" id="email"
+                                           data-valid="required">
+                                </div>
                             </div>
-                            <div class="col-sm-8 col-md-5">
-                                <input type="text" class="form-control" name="firstName" id="lastName"
-                                       data-valid="required">
+                            <div class="form-group">
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-2">
+                                    <label for="password" class="not-bold">Password</label>
+                                </div>
+                                <div class="col-sm-8 col-md-5">
+                                    <input type="password" class="form-control" name="firstName" id="password"
+                                           data-valid="required">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12 col-md-3">
-                                <label for="email" class="text-left">E-mail</label>
+                            <div class="form-group">
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-2">
+                                    <label for="reEnterPassword" class="not-bold">Re-Enter Password</label>
+                                </div>
+                                <div class="col-sm-8 col-md-5">
+                                    <input type="password" class="form-control" name="firstName" id="reEnterPassword"
+                                           data-valid="required">
+                                </div>
                             </div>
-                            <div class="col-sm-8 col-md-5">
-                                <input type="email" class="form-control" name="firstName" id="email"
-                                       data-valid="required">
+                            <div class="form-group">
+                                <div class="col-sm-12 col-md-2"></div>
+                                <div class="col-sm-12 col-md-2">
+                                </div>
+                                <div class="col-sm-8 col-md-5">
+                                    <button type="reset" class="btn btn-primary"><span
+                                            class="glyphicon glyphicon-refresh"></span>
+                                        Reset
+                                    </button>
+                                    <button type="submit" class="btn btn-primary"><span
+                                            class="glyphicon glyphicon-save"></span>
+                                        Save
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12 col-md-3">
-                                <label for="password" class="text-left">Password</label>
-                            </div>
-                            <div class="col-sm-8 col-md-5">
-                                <input type="password" class="form-control" name="firstName" id="password"
-                                       data-valid="required">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12 col-md-3">
-                                <label for="reEnterPassword" class="text-left">Re-Enter Password</label>
-                            </div>
-                            <div class="col-sm-8 col-md-5">
-                                <input type="password" class="form-control" name="firstName" id="reEnterPassword"
-                                       data-valid="required">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12 col-md-3">
-                            </div>
-                            <div class="col-sm-8 col-md-5">
-                                <button type="reset" class="btn btn-primary"><span class="glyphicon glyphicon-refresh"/>
-                                    Reset
-                                </button>
-                                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-save"/>
-                                    Save
-                                </button>
-                            </div>
-                        </div>
 
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+</sec:authorize>
 
 <%@include file="footer.jsp" %>

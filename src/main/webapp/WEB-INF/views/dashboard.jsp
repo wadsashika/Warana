@@ -20,7 +20,7 @@
         <div class="row">
             <div class="col-lg-6" id="tiles">
                 <div class="col-lg-6 col-md-6">
-                    <a href="#">
+                    <a href="upload">
                         <div class="tile panel-darkPurple">
                             <div class="panel-heading">
                                 <div class="row">
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="col-lg-6 col-md-6">
-                    <a href="#">
+                    <a href="process">
                         <div class="tile panel-red">
                             <div class="panel-heading">
                                 <div class="row">
@@ -54,7 +54,7 @@
                 </div>
 
                 <div class="col-lg-6 col-md-6">
-                    <a href="#">
+                    <a href="analyze">
                         <div class="tile panel-darkGreen">
                             <div class="panel-heading">
                                 <div class="row">
@@ -71,7 +71,7 @@
                 </div>
 
                 <div class="col-lg-6 col-md-6">
-                    <a href="#">
+                    <a href="viewstat">
                         <div class="tile panel-darkBlue">
                             <div class="panel-heading">
                                 <div class="row">

@@ -5,5 +5,5 @@ package com.cse.warana.service;
  */
 public interface ExampleService {
 
-    public String thisIsExample(String example);
+    public String thisIsExample(String example, long id);
 }

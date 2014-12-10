@@ -6,23 +6,31 @@
 	http://www.springframework.org/schema/security
 	http://www.springframework.org/schema/security/spring-security-3.2.xsd">
 
-    <http auto-config="true" authentication-manager-ref="authenticationManager">
+    <http use-expressions="true" authentication-manager-ref="authenticationManager">
 
-        <intercept-url pattern="/**"/>
+        <intercept-url pattern="/home" access="permitAll"/>
+        <intercept-url pattern="/loginfailed" access="permitAll"/>
+        <intercept-url pattern="/css/**" access="permitAll"/>
+        <intercept-url pattern="/js/**" access="permitAll"/>
+        <intercept-url pattern="/fonts/**" access="permitAll"/>
+        <intercept-url pattern="/images/**" access="permitAll"/>
+        <intercept-url pattern="/**" access="hasRole('ROLE_USER')"/>
 
         <form-login login-page="/home"
                     login-processing-url="/j_spring_security_check"
                     default-target-url="/dashboard"
                     authentication-failure-url="/loginfailed"
                 />
-        <logout logout-success-url="/j_spring_security_logout"/>
+        <logout logout-success-url="/home"/>
     </http>
 
     <authentication-manager alias="authenticationManager">
         <authentication-provider>
-            <user-service>
-                <user name="admin@warana" password="admin@warana" authorities="ROLE_ADMIN"/>
-            </user-service>
+            <jdbc-user-service data-source-ref="dataSource"
+                               users-by-username-query="SELECT user_name, password, 1 AS enabled
+                               FROM warana.user WHERE user_name=?"
+                    authorities-by-username-query="SELECT user_name, 'ROLE_USER' AS authority
+                               FROM warana.user WHERE user_name=?"/>
         </authentication-provider>
     </authentication-manager>
 
