@@ -2,7 +2,8 @@ package com.cse.warana.utility.AggregatedProfileGenerator.jate.core.feature;
 
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.JATEException;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.core.feature.indexer.GlobalIndex;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -19,7 +20,7 @@ import java.io.FileReader;
 
 public class FeatureBuilderRefCorpusTermFrequency extends AbstractFeatureBuilder {
 
-	private static Logger _logger = Logger.getLogger(FeatureBuilderRefCorpusTermFrequency.class);
+    private static final Logger LOG = LoggerFactory.getLogger(FeatureBuilderRefCorpusTermFrequency.class);
 
 	private final String _refStatsPath;
 

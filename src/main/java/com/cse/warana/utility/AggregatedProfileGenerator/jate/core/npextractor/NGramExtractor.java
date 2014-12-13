@@ -7,7 +7,8 @@ import com.cse.warana.utility.AggregatedProfileGenerator.jate.model.Corpus;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.model.Document;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.util.control.Normalizer;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.util.control.StopList;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.util.*;
@@ -18,7 +19,7 @@ import java.util.*;
  */
 public class NGramExtractor extends CandidateTermExtractor {
 
-    private static Logger _logger = Logger.getLogger(NGramExtractor.class);
+    private static final Logger LOG = LoggerFactory.getLogger(NGramExtractor.class);
 
 
     public NGramExtractor(StopList stop, Normalizer normaliser) throws IOException {
@@ -30,7 +31,7 @@ public class NGramExtractor extends CandidateTermExtractor {
     public Map<String, Set<String>> extract(Corpus c) throws JATEException {
         Map<String, Set<String>> res = new HashMap<String, Set<String>>();
         for (Document d : c) {
-            _logger.info("Extracting candidate NGram... From Document " + d);
+            LOG.info("Extracting candidate NGram... From Document " + d);
             for (Map.Entry<String, Set<String>> e : extract(d).entrySet()) {
                 Set<String> variants = res.get(e.getKey());
                 variants = variants == null ? new HashSet<String>() : variants;
@@ -70,7 +71,7 @@ public class NGramExtractor extends CandidateTermExtractor {
                 String[] e = applySplitList(c);
 
                 for (String str : e) {
-                    String stopremoved = applyTrimStopwords(str, _stoplist,_normaliser);
+                    String stopremoved = applyTrimStopwords(str, _stoplist, _normaliser);
                     if (stopremoved == null) continue;
                     String original = stopremoved;
                     str = _normaliser.normalize(stopremoved.toLowerCase()).trim();
@@ -105,7 +106,7 @@ public class NGramExtractor extends CandidateTermExtractor {
         List<Integer[]> ng = new ArrayList<Integer[]>();
 
         int begin = 0;
-        int end = begin + n - 1>=tokens.length?tokens.length-1:begin + n - 1;
+        int end = begin + n - 1 >= tokens.length ? tokens.length - 1 : begin + n - 1;
         Integer positions[] = new Integer[2];
 
         while (end < tokens.length) {
@@ -130,7 +131,7 @@ public class NGramExtractor extends CandidateTermExtractor {
         if (includeSmaller) {
             while (begin != end) {
                 int smallEnd = end - 1;
-                while (smallEnd >= begin &&smallEnd<tokens.length) {
+                while (smallEnd >= begin && smallEnd < tokens.length) {
                     positions = new Integer[2];
                     positions[0] = begin;
                     positions[1] = smallEnd;
@@ -143,10 +144,10 @@ public class NGramExtractor extends CandidateTermExtractor {
         }
 
         List<String> ngrams = new ArrayList<String>();
-        for(Integer[] offsets: ng){
+        for (Integer[] offsets : ng) {
             String ngram = "";
-            for(int i = offsets[0]; i<=offsets[1]; i++){
-                ngram = ngram+tokens[i]+" ";
+            for (int i = offsets[0]; i <= offsets[1]; i++) {
+                ngram = ngram + tokens[i] + " ";
             }
             ngrams.add(ngram.trim());
         }

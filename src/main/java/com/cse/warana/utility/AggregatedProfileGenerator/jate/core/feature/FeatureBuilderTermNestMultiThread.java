@@ -3,7 +3,8 @@ package com.cse.warana.utility.AggregatedProfileGenerator.jate.core.feature;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.JATEException;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.JATEProperties;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.core.feature.indexer.GlobalIndex;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.*;
 
@@ -11,7 +12,7 @@ import java.util.*;
  * Serves the same goal as FeatureBuilderTermNest. Uses multiple threads for counting
  */
 public class FeatureBuilderTermNestMultiThread extends AbstractFeatureBuilder {
-    private static Logger _logger = Logger.getLogger(FeatureBuilderTermNestMultiThread.class);
+    private static final Logger LOG = LoggerFactory.getLogger(FeatureBuilderTermNestMultiThread.class);
 
     /**
      * Default constructor
@@ -26,14 +27,13 @@ public class FeatureBuilderTermNestMultiThread extends AbstractFeatureBuilder {
      * @param index
      * @return
      * @throws com.cse.warana.utility.AggregatedProfileGenerator.jate.JATEException
-     *
      */
     public FeatureTermNest build(GlobalIndex index) throws JATEException {
         FeatureTermNest _feature = new FeatureTermNest(index);
         if (index.getTermsCanonical().size() == 0 || index.getDocuments().size() == 0) throw new
                 JATEException("No resource indexed!");
 
-        _logger.info("About to build FeatureTermNest...");
+        LOG.info("About to build FeatureTermNest...");
         startMutiThreadChecking(index.getTermsCanonical(), _feature, JATEProperties.getInstance().getMultithreadCounterNumbers());
         return _feature;
     }
@@ -105,7 +105,7 @@ public class FeatureBuilderTermNestMultiThread extends AbstractFeatureBuilder {
             int counter = 0;
 
 
-            _logger.info("Total in batch:" + nps.size());
+            LOG.info("Total in batch:" + nps.size());
             for (String np : nps) {
                 for (String anp : allnps) {
                     if (anp.length() <= np.length()) continue;
@@ -113,7 +113,7 @@ public class FeatureBuilderTermNestMultiThread extends AbstractFeatureBuilder {
                         feature.termNestIn(np, anp);
                 }
                 counter++;
-                if (counter % 500 == 0) _logger.info("Batch done" + counter + " end: " + np);
+                if (counter % 500 == 0) LOG.info("Batch done" + counter + " end: " + np);
             }
         }
     }

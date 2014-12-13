@@ -7,7 +7,8 @@ import com.cse.warana.utility.AggregatedProfileGenerator.jate.model.Corpus;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.model.Document;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.util.control.Normalizer;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.util.control.StopList;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.util.*;
@@ -29,7 +30,7 @@ import java.util.*;
 
 public class NounPhraseExtractorOpenNLP extends CandidateTermExtractor {
 
-    private static Logger _logger = Logger.getLogger(NounPhraseExtractorOpenNLP.class);
+    private static final Logger LOG = LoggerFactory.getLogger(NounPhraseExtractorOpenNLP.class);
 
     /**
      * Creates an instance with specified stopwords list and norm
@@ -46,7 +47,7 @@ public class NounPhraseExtractorOpenNLP extends CandidateTermExtractor {
     public Map<String, Set<String>> extract(Corpus c) throws JATEException {
         Map<String, Set<String>> res = new HashMap<String, Set<String>>();
         for (Document d : c) {
-            _logger.info("Extracting candidate NP... From Document " + d);
+            LOG.info("Extracting candidate NP... From Document " + d);
             for (Map.Entry<String, Set<String>> e : extract(d).entrySet()) {
                 Set<String> variants = res.get(e.getKey());
                 variants = variants == null ? new HashSet<String>() : variants;

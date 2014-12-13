@@ -1,6 +1,5 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor;
 
-import org.apache.log4j.Logger;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.JATEException;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.JATEProperties;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.core.algorithm.*;
@@ -17,6 +16,8 @@ import com.cse.warana.utility.AggregatedProfileGenerator.jate.model.Term;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.util.control.Lemmatizer;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.util.control.StopList;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.util.counter.WordCounter;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
@@ -30,20 +31,21 @@ import java.util.Map;
 public class PhraseAnalyzer {
 
     private Map<Algorithm, AbstractFeatureWrapper> _algregistry = new HashMap<Algorithm, AbstractFeatureWrapper>();
-    private static Logger _logger = Logger.getLogger(PhraseAnalyzer.class);
+    private static final Logger LOG = LoggerFactory.getLogger(PhraseAnalyzer.class);
 
     public void registerAlgorithm(Algorithm a, AbstractFeatureWrapper f) {
         _algregistry.put(a, f);
     }
+
     public void execute(GlobalIndex index, String outFolder) throws JATEException, IOException {
         ResultWriter2File writer = new ResultWriter2File(index);
         if (_algregistry.size() == 0) throw new JATEException("No algorithm registered!");
-        _logger.info("Running NP recognition...");
+        LOG.info("Running NP recognition...");
 
         /*.extractNP(c);*/
-        int i=0;
+        int i = 0;
         for (Map.Entry<Algorithm, AbstractFeatureWrapper> en : _algregistry.entrySet()) {
-            _logger.info("Running feature store builder and ATR..." + en.getKey().toString());
+            LOG.info("Running feature store builder and ATR..." + en.getKey().toString());
             Term[] result = en.getKey().execute(en.getValue());
             new File(outFolder).mkdirs();
             writer.output(result, outFolder + File.separator + en.getKey().toString() + ".csv");
@@ -54,7 +56,8 @@ public class PhraseAnalyzer {
 
     public void RecognizeTerms(String srcPath, String destPath) {
 //		if (args.length < 3) System.out.println("Usage: java PhraseAnalyzer [corpus_path] [reference_corpus_path] [output_folder]");
-        if (false) System.out.println("Usage: java PhraseAnalyzer [corpus_path] [reference_corpus_path] [output_folder]");
+        if (false)
+            System.out.println("Usage: java PhraseAnalyzer [corpus_path] [reference_corpus_path] [output_folder]");
         else {
             try {
                 System.out.println(new Date());
@@ -113,7 +116,7 @@ public class PhraseAnalyzer {
                 FeatureCorpusTermFrequency wordFreq = new FeatureBuilderCorpusTermFrequencyMultiThread(wordcounter, lemmatizer).build(wordDocIndex);
                 FeatureDocumentTermFrequency termDocFreq = new FeatureBuilderDocumentTermFrequencyMultiThread(wordcounter, lemmatizer).build(termDocIndex);
                 FeatureTermNest termNest = new FeatureBuilderTermNestMultiThread().build(termDocIndex);
-                FeatureRefCorpusTermFrequency bncRef = new FeatureBuilderRefCorpusTermFrequency(JATEProperties.getInstance().getTestPath()+"/out/refStat.txt").build(null);
+                FeatureRefCorpusTermFrequency bncRef = new FeatureBuilderRefCorpusTermFrequency(JATEProperties.getInstance().getTestPath() + "/out/refStat.txt").build(null);
                 FeatureCorpusTermFrequency termCorpusFreq = new FeatureBuilderCorpusTermFrequencyMultiThread(wordcounter, lemmatizer).build(termDocIndex);
 
                 /* #2 */
@@ -150,8 +153,7 @@ public class PhraseAnalyzer {
                 tester.execute(termDocIndex, destPath);
                 System.out.println(new Date());
 
-            }
-            catch (Exception e) {
+            } catch (Exception e) {
                 e.printStackTrace();
             }
         }

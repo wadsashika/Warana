@@ -8,7 +8,8 @@ import com.cse.warana.utility.AggregatedProfileGenerator.jate.model.Document;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.util.control.Normalizer;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.util.counter.TermFreqCounter;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.util.counter.WordCounter;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.*;
 
@@ -19,7 +20,7 @@ import java.util.*;
  * @author <a href="mailto:z.zhang@dcs.shef.ac.uk">Ziqi Zhang</a>
  */
 public class FeatureBuilderCorpusTermFrequencyMultiThread extends AbstractFeatureBuilder {
-    private static Logger _logger = Logger.getLogger(FeatureBuilderCorpusTermFrequencyMultiThread.class);
+    private static final Logger LOG = LoggerFactory.getLogger(FeatureBuilderCorpusTermFrequencyMultiThread.class);
 
     /**
      * Creates an instance
@@ -38,14 +39,13 @@ public class FeatureBuilderCorpusTermFrequencyMultiThread extends AbstractFeatur
      * @param index the global resource index
      * @return
      * @throws com.cse.warana.utility.AggregatedProfileGenerator.jate.JATEException
-     *
      */
     public FeatureCorpusTermFrequency build(GlobalIndex index) throws JATEException {
         FeatureCorpusTermFrequency _feature = new FeatureCorpusTermFrequency(index);
         if (index.getTermsCanonical().size() == 0 || index.getDocuments().size() == 0) throw new
                 JATEException("No resource indexed!");
 
-        _logger.info("About to build FeatureCorpusTermFrequency...");
+        LOG.info("About to build FeatureCorpusTermFrequency...");
         int totalCorpusTermFreq = 0;
         startCounting(index.getDocuments(), _feature, index, JATEProperties.getInstance().getMultithreadCounterNumbers());
         for (Document d : index.getDocuments()) {
@@ -125,7 +125,7 @@ public class FeatureBuilderCorpusTermFrequencyMultiThread extends AbstractFeatur
 
         private void count() {
             for (Document d : docs) {
-                _logger.info("For Document " + d);
+                LOG.info("For Document " + d);
                 String context = CandidateTermExtractor.applyCharacterReplacement(
                         d.getContent(), JATEProperties.TERM_CLEAN_PATTERN
                 );

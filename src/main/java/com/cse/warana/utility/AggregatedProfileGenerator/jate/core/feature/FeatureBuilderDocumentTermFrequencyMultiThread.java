@@ -8,16 +8,17 @@ import com.cse.warana.utility.AggregatedProfileGenerator.jate.model.Document;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.util.control.Normalizer;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.util.counter.TermFreqCounter;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.util.counter.WordCounter;
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.*;
 
 /**
  * serves the same goal as FeatureBuilderDocumentTermFrequency but uses multi-thread in counting. Ues more memory and
- *  CPU but faster on large corpus
+ * CPU but faster on large corpus
  */
 public class FeatureBuilderDocumentTermFrequencyMultiThread extends AbstractFeatureBuilder {
-    private static Logger _logger = Logger.getLogger(FeatureBuilderDocumentTermFrequencyMultiThread.class);
+    private static final Logger LOG = LoggerFactory.getLogger(FeatureBuilderDocumentTermFrequencyMultiThread.class);
 
     /**
      * Creates an instance
@@ -36,16 +37,15 @@ public class FeatureBuilderDocumentTermFrequencyMultiThread extends AbstractFeat
      * @param index the global resource index
      * @return
      * @throws com.cse.warana.utility.AggregatedProfileGenerator.jate.JATEException
-     *
      */
     public FeatureDocumentTermFrequency build(GlobalIndex index) throws JATEException {
         FeatureDocumentTermFrequency _feature = new FeatureDocumentTermFrequency(index);
         if (index.getTermsCanonical().size() == 0 || index.getDocuments().size() == 0) throw new
                 JATEException("No resource indexed!");
 
-        _logger.info("About to build FeatureDocumentTermFrequency...");
+        LOG.info("About to build FeatureDocumentTermFrequency...");
 
-        startCounting(index.getDocuments(),_feature, index, JATEProperties.getInstance().getMultithreadCounterNumbers());
+        startCounting(index.getDocuments(), _feature, index, JATEProperties.getInstance().getMultithreadCounterNumbers());
         int totalTermFreq = 0;
         for (Document d : index.getDocuments()) {
             totalTermFreq += _wordCounter.countWords(d);
@@ -124,7 +124,7 @@ public class FeatureBuilderDocumentTermFrequencyMultiThread extends AbstractFeat
 
         private void count() {
             for (Document d : docs) {
-                _logger.info("For document " + d);
+                LOG.info("For document " + d);
 
                 String context = CandidateTermExtractor.applyCharacterReplacement(
                         d.getContent(), JATEProperties.TERM_CLEAN_PATTERN
