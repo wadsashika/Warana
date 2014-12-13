@@ -1,5 +1,6 @@
 package com.cse.warana.utility.infoExtractors;
 
+import com.cse.warana.utility.infoHolders.Education;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,12 +22,14 @@ public class EducationalInfoExtract {
     /**
      * Extract educational information
      *
+     * TODO find the specialized area, duration
+     *
      * @param lines
      * @param headingLines
      * @param allHeadings
      * @param linesCopy
      */
-    public void extractEduInformation(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy) {
+    public void extractEduInformation(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy, ArrayList<Education> educations) {
 
         BufferedReader br = null;
         String indexWord = "";
@@ -69,7 +72,13 @@ public class EducationalInfoExtract {
                         matcher = pattern.matcher(lineText.toLowerCase());
 
                         if (matcher.matches()) {
+                            Education edu = new Education();
+                            edu.setInstitution(lineText);
                             LOG.info(lineText + "--------THIS IS EDUCATIONAL INFORMATION");
+
+                            // Add the new education institute object
+                            educations.add(edu);
+
                             // Remove the line from the array list.
                             linesCopy.remove(lineText);
                         }

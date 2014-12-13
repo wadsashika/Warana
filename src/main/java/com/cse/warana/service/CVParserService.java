@@ -1,6 +1,7 @@
 package com.cse.warana.service;
 
 import java.io.File;
+import java.util.HashMap;
 
 /**
  * Created by Nadeeshaan on 11/7/2014.
@@ -25,7 +26,7 @@ public interface CVParserService {
      * This method is used to classify the lines under the headings and extract the
      * required information
      */
-    public void parseLines();
+    public void parseLines(HashMap<String,Object> infoCategoryTypes);
 
 
     /**

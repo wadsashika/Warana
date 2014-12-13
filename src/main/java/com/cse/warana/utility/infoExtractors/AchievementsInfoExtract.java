@@ -1,5 +1,6 @@
 package com.cse.warana.utility.infoExtractors;
 
+import com.cse.warana.utility.infoHolders.Achievement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,12 +22,16 @@ public class AchievementsInfoExtract {
 
     /**
      * Extract the Achievement information
+     *
+     * TODO find the year of the achievement
+     *
      * @param lines
      * @param headingLines
      * @param allHeadings
      * @param linesCopy
+     * @param achievements
      */
-    public void extractAchievementInformation(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy) {
+    public void extractAchievementInformation(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy, ArrayList<Achievement> achievements) {
 
         /**
          * TODO NEED MORE REFINED HEURISTIC FOR THE CHECK
@@ -71,6 +76,9 @@ public class AchievementsInfoExtract {
                             matcher = pattern.matcher(lineText.toLowerCase());
 
                             if (matcher.matches()) {
+                                Achievement achievement = new Achievement();
+                                achievement.setAchievement(lineText);
+                                achievements.add(achievement);
                                 LOG.info(lineText + "----- THIS IS AN ACHIEVEMENT");
                                 // Remove the line from the array list.
                                 linesCopy.remove(lineText);
