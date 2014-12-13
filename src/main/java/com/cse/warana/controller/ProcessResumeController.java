@@ -2,15 +2,14 @@ package com.cse.warana.controller;
 
 import com.cse.warana.dto.ResumesToProcessDto;
 import com.cse.warana.service.ResumesToProcessService;
+import com.cse.warana.service.StoreProcessedResumeService;
+import com.cse.warana.service.impl.StoreProcessedResumeServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.io.File;
@@ -28,6 +27,10 @@ public class ProcessResumeController {
     @Autowired
     @Qualifier("resumesToProcessService")
     private ResumesToProcessService resumesToProcessService;
+
+    @Autowired
+    @Qualifier("storeProcessedResume")
+    private StoreProcessedResumeService storeProcessedResumeService;
 
     @RequestMapping(value = "/process", method = RequestMethod.GET)
     public ModelAndView loadProcessView() {
@@ -53,7 +56,7 @@ public class ProcessResumeController {
 
     @RequestMapping(value = "/process/delete", method = RequestMethod.POST)
     @ResponseBody
-    public Boolean deleteResume(@RequestParam("fileName") String fileName){
+    public boolean deleteResume(@RequestParam("fileName") String fileName){
 
         String baseDirectory = "F:\\Accademic\\Semister 7\\Final_Year_Project\\CareersDay2013_CVs\\CareersDay2013_CVs\\pdfs";
         File resumeFile = new File(baseDirectory + "\\" + fileName);
@@ -67,5 +70,24 @@ public class ProcessResumeController {
         }
 
         return status;
+    }
+
+    @RequestMapping(value = "/process/processlist", method = RequestMethod.POST)
+    @ResponseBody
+    public boolean processSelectedResumes(@RequestBody String[] fileNames){
+
+        String baseDirectory = "F:\\Accademic\\Semister 7\\Final_Year_Project\\CareersDay2013_CVs\\CareersDay2013_CVs\\pdfs";
+        for (int a = 0; a < fileNames.length; a++){
+            System.out.println(fileNames[a]);
+        }
+
+        /**
+         * TODO Process the Resumes
+         */
+
+        storeProcessedResumeService.storeCandidateTableData();
+
+
+        return true;
     }
 }

@@ -59,8 +59,8 @@
                             <button type="button" id="clear-selection" class="btn btn-warning" style="margin-right: 10px;">
                                 <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Clear
                             </button>
-                            <button type="button" class="btn btn-success">
-                                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Analyze
+                            <button type="button" class="btn btn-success" id="process-resume">
+                                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Process
                             </button>
                         </div>
                     </div>
