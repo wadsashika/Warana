@@ -1,6 +1,8 @@
 package com.cse.warana.controller;
 
 import com.cse.warana.dto.ResumesToProcessDto;
+import com.cse.warana.service.CVParserService;
+import com.cse.warana.service.CandidateProfileGeneratorService;
 import com.cse.warana.service.ResumesToProcessService;
 import com.cse.warana.service.StoreProcessedResumeService;
 import com.cse.warana.service.impl.StoreProcessedResumeServiceImpl;
@@ -31,6 +33,14 @@ public class ProcessResumeController {
     @Autowired
     @Qualifier("storeProcessedResume")
     private StoreProcessedResumeService storeProcessedResumeService;
+
+    @Autowired
+    @Qualifier("cvParser")
+    private CVParserService cvParserService;
+
+    @Autowired
+    @Qualifier("generateCandidateProfile")
+    private CandidateProfileGeneratorService candidateProfileGeneratorService;
 
     @RequestMapping(value = "/process", method = RequestMethod.GET)
     public ModelAndView loadProcessView() {
@@ -79,6 +89,9 @@ public class ProcessResumeController {
         String baseDirectory = "F:\\Accademic\\Semister 7\\Final_Year_Project\\CareersDay2013_CVs\\CareersDay2013_CVs\\pdfs";
         for (int a = 0; a < fileNames.length; a++){
             System.out.println(fileNames[a]);
+
+            candidateProfileGeneratorService.extractCVInformation(cvParserService,new File(baseDirectory+"\\"+fileNames[a]));
+
         }
 
         /**

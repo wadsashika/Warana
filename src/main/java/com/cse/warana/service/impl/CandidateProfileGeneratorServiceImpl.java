@@ -3,6 +3,7 @@ package com.cse.warana.service.impl;
 import com.cse.warana.service.CVParserService;
 import com.cse.warana.service.CandidateProfileGeneratorService;
 import com.cse.warana.utility.infoHolders.*;
+import org.springframework.stereotype.Service;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -11,6 +12,8 @@ import java.util.HashMap;
 /**
  * Created by Nadeeshaan on 11/23/2014.
  */
+
+@Service("generateCandidateProfile")
 public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGeneratorService {
 
     private static Candidate candidate;
@@ -54,10 +57,10 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
     }
 
     @Override
-    public void extractCVInformation(CVParserServiceImpl cvParser) {
+    public void extractCVInformation(CVParserService cvParser,File resumeFile) {
         cvParser.initializeHeadingTokens();
         cvParser.identifyHeadings();
-        cvParser.readPdfDocument(new File("F:\\Accademic\\Semister 7\\Final_Year_Project\\CareersDay2013_CVs\\CareersDay2013_CVs\\pdfs\\090067P_CHATHURANGA R.G.pdf"));
+        cvParser.readPdfDocument(resumeFile);
         cvParser.identifyHeadings();
         cvParser.parseLines(infoCategoryTypes);
     }
@@ -78,11 +81,11 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
         candidate.setWorksList(worksList);
     }
 
-    public static void main(String[] args){
-        CandidateProfileGeneratorServiceImpl test = new CandidateProfileGeneratorServiceImpl();
-        test.extractCVInformation(new CVParserServiceImpl());
-        test.generateCandidateProfile();
-    }
+//    public static void main(String[] args){
+//        CandidateProfileGeneratorServiceImpl test = new CandidateProfileGeneratorServiceImpl();
+//        test.extractCVInformation(new CVParserServiceImpl());
+//        test.generateCandidateProfile();
+//    }
 
 
 }
