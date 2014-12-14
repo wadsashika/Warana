@@ -3,7 +3,6 @@ package com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor;
 import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.PhraseAnalyzer;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.FileManager;
-import weka.core.pmml.jaxbbindings.False;
 
 import java.io.File;
 import java.util.Comparator;
