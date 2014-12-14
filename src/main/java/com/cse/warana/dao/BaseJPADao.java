@@ -17,4 +17,6 @@ public interface BaseJPADao<T> {
     public void deleteEntity(Class<T> t, Object primaryKey);
 
     public void deleteEntity(T t);
+
+    public void persistEntity(T t);
 }

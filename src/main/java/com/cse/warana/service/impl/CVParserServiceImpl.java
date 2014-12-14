@@ -353,7 +353,7 @@ public class CVParserServiceImpl implements CVParserService {
                 interestsInfo.extractInterestsInformation(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy);
             }
         }
-        missedInfo.findProfileInfo(linesCopy);
+        missedInfo.findProfileInfo(linesCopy,(Profile) infoCategoryTypes.get("PROFILE"));
 
         /**
          * String technologies is used to store the technologies of the candidate as a comma separated string

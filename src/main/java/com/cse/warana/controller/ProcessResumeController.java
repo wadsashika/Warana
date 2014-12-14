@@ -5,7 +5,10 @@ import com.cse.warana.service.CVParserService;
 import com.cse.warana.service.CandidateProfileGeneratorService;
 import com.cse.warana.service.ResumesToProcessService;
 import com.cse.warana.service.StoreProcessedResumeService;
+import com.cse.warana.service.impl.CVParserServiceImpl;
+import com.cse.warana.service.impl.CandidateProfileGeneratorServiceImpl;
 import com.cse.warana.service.impl.StoreProcessedResumeServiceImpl;
+import com.cse.warana.utility.infoHolders.Candidate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,9 +37,9 @@ public class ProcessResumeController {
     @Qualifier("storeProcessedResume")
     private StoreProcessedResumeService storeProcessedResumeService;
 
-    @Autowired
-    @Qualifier("cvParser")
-    private CVParserService cvParserService;
+//    @Autowired
+//    @Qualifier("cvParser")
+//    private CVParserService cvParserService;
 
     @Autowired
     @Qualifier("generateCandidateProfile")
@@ -87,19 +90,24 @@ public class ProcessResumeController {
     public boolean processSelectedResumes(@RequestBody String[] fileNames){
 
         String baseDirectory = "F:\\Accademic\\Semister 7\\Final_Year_Project\\CareersDay2013_CVs\\CareersDay2013_CVs\\pdfs";
+        ArrayList<Candidate> candidateArrayList = new ArrayList<>();
         for (int a = 0; a < fileNames.length; a++){
             System.out.println(fileNames[a]);
 
-            candidateProfileGeneratorService.extractCVInformation(cvParserService,new File(baseDirectory+"\\"+fileNames[a]));
+            CandidateProfileGeneratorService profileGeneratorService = new CandidateProfileGeneratorServiceImpl();
+            CVParserService cvParserService = new CVParserServiceImpl();
 
+            Candidate candidate = new Candidate();
+            profileGeneratorService.extractCVInformation(cvParserService,new File(baseDirectory+"\\"+fileNames[a]));
+            candidateArrayList.add(profileGeneratorService.generateCandidateProfile(candidate));
+            long candidate_id = storeProcessedResumeService.storeCandidateTableData(candidate);
+
+            storeProcessedResumeService.storeEducationalTableData(candidate,candidate_id);
+            storeProcessedResumeService.storeAchievementTableData(candidate,candidate_id);
+            storeProcessedResumeService.storeProjectTableData(candidate,candidate_id);
+            storeProcessedResumeService.storeRefereeTableData(candidate,candidate_id);
+            storeProcessedResumeService.storeWorkTableData(candidate,candidate_id);
         }
-
-        /**
-         * TODO Process the Resumes
-         */
-
-        storeProcessedResumeService.storeCandidateTableData();
-
 
         return true;
     }

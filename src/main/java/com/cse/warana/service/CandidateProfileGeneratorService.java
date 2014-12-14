@@ -1,6 +1,7 @@
 package com.cse.warana.service;
 
 import com.cse.warana.service.impl.CVParserServiceImpl;
+import com.cse.warana.utility.infoHolders.Candidate;
 
 import java.io.File;
 
@@ -20,5 +21,5 @@ public interface CandidateProfileGeneratorService {
      */
     public void extractOnlineProfileInformation();
 
-    public void generateCandidateProfile();
+    public Candidate generateCandidateProfile(Candidate candidate);
 }

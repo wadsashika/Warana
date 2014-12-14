@@ -1,6 +1,7 @@
 package com.cse.warana.dao.impl;
 
 import com.cse.warana.dao.BaseJPADao;
+import com.cse.warana.dao.StoreCandidateDao;
 import com.cse.warana.model.CandidateTbl;
 import org.springframework.stereotype.Repository;
 
@@ -9,5 +10,5 @@ import org.springframework.stereotype.Repository;
  */
 
 @Repository("storeCandidate")
-public class StoreCandidateDaoImpl extends BaseJPADaoImpl<CandidateTbl> {
+public class StoreCandidateDaoImpl extends BaseJPADaoImpl<CandidateTbl> implements StoreCandidateDao {
 }

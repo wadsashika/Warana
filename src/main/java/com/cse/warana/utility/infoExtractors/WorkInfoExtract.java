@@ -128,6 +128,9 @@ public class WorkInfoExtract {
                         LOG.info("");
                         LOG.info("found");
                         LOG.info(lineText);
+                        if (work == null){
+                            work = new Work();
+                        }
                         findDuration(lineText, lines.get(b + 1), work);
 
                         linesCopy.remove(lineText);

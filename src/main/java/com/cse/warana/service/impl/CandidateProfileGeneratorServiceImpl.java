@@ -16,7 +16,7 @@ import java.util.HashMap;
 @Service("generateCandidateProfile")
 public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGeneratorService {
 
-    private static Candidate candidate;
+//    private static Candidate candidate;
     private static Profile profile;
     private static ArrayList<Education> educationList;
     private static ArrayList<Achievement> achievementsList;
@@ -32,7 +32,7 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
     public CandidateProfileGeneratorServiceImpl(){
         infoCategoryTypes = new HashMap<>();
 
-        candidate = new Candidate();
+//        candidate = new Candidate();
 
         profile = new Profile();
         infoCategoryTypes.put("PROFILE",profile);
@@ -71,7 +71,7 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
     }
 
     @Override
-    public void generateCandidateProfile() {
+    public Candidate generateCandidateProfile(Candidate candidate) {
         candidate.setProfile(profile);
         candidate.setAchievementsList(achievementsList);
         candidate.setEducationsList(educationList);
@@ -79,6 +79,8 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
         candidate.setRefereesList(refereesList);
         candidate.setTechnologiesList(technologiesList);
         candidate.setWorksList(worksList);
+
+        return candidate;
     }
 
 //    public static void main(String[] args){
