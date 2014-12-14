@@ -1,5 +1,6 @@
 package com.cse.warana.utility.infoExtractors;
 
+import com.cse.warana.utility.infoHolders.Work;
 import edu.stanford.nlp.ie.AbstractSequenceClassifier;
 import edu.stanford.nlp.ling.CoreLabel;
 import org.slf4j.Logger;
@@ -38,15 +39,19 @@ public class WorkInfoExtract {
 
     /**
      * Extract the Work Information
+     *
      * @param lines
      * @param headingLines
      * @param allHeadings
      * @param linesCopy
      */
-    public void extractWorkInfo(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy) {
+    public void extractWorkInfo(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy, ArrayList<Work> worksList) {
 
         String lineText = "";
+        String companyName = "";
         boolean foundCompany = false;
+        boolean newCompany = false;
+        Work work = null;
 
         LOG.info("----Beginning Work Information----");
         for (int a = 0; a < headingLines.size(); a++) {
@@ -60,16 +65,27 @@ public class WorkInfoExtract {
                      * ex: Trainee Software Engineer at WSO2 Lanka (Pvt) Ltd
                      * Need to mention the "at" before the company name
                      */
+
+                    if (newCompany && work != null) {
+                        worksList.add(work);
+                        newCompany = false;
+                    }
+                    else
+
                     if (lineText.contains("at")) {
 
                         String classifierText = "";
                         classifierText = classifier.classifyWithInlineXML(lineText);
 
                         if (classifierText.contains("<ORGANIZATION>")) {
+                            work = new Work();
+                            newCompany = true;
                             Pattern pattern = Pattern.compile("<ORGANIZATION>(.*?)</ORGANIZATION>");
                             Matcher matcher = pattern.matcher(classifierText);
                             while (matcher.find()) {
-                                LOG.info(matcher.group(1));
+                                companyName = matcher.group(1);
+                                work.setCompanyName(companyName);
+                                LOG.info(companyName);
                             }
                         }
                     }
@@ -85,8 +101,14 @@ public class WorkInfoExtract {
                         String tokens[] = lineText.split(" ");
                         for (int x = 0; x < tokens.length; x++) {
                             if (companies.contains(tokens[x].toLowerCase())) {
-                                LOG.info(findFullCompanyName(tokens, x));
-                                findDuration(lineText, lines.get(b + 1));
+                                work = new Work();
+                                newCompany = true;
+                                companyName = findFullCompanyName(tokens, x);
+                                LOG.info(companyName);
+
+                                work.setCompanyName(companyName);
+
+                                findDuration(lineText, lines.get(b + 1), work);
                                 LOG.info("Found");
                                 linesCopy.remove(lineText);
                                 foundCompany = true;
@@ -106,7 +128,11 @@ public class WorkInfoExtract {
                         LOG.info("");
                         LOG.info("found");
                         LOG.info(lineText);
-                        findDuration(lineText,lines.get(b + 1));
+                        if (work == null){
+                            work = new Work();
+                        }
+                        findDuration(lineText, lines.get(b + 1), work);
+
                         linesCopy.remove(lineText);
                     }
 
@@ -122,6 +148,7 @@ public class WorkInfoExtract {
 
     /**
      * Find the full name of the company
+     *
      * @param lineTokens
      * @param start
      * @return
@@ -140,10 +167,11 @@ public class WorkInfoExtract {
 
     /**
      * Find the work time period of a particular company
+     *
      * @param line1
      * @param line2
      */
-    public void findDuration(String line1, String line2) {
+    public void findDuration(String line1, String line2, Work work) {
 
         String classifierText = "";
         String classifierText2 = "";
@@ -157,9 +185,11 @@ public class WorkInfoExtract {
             while (matcher.find()) {
                 if (x == 0) {
                     LOG.info("From:" + matcher.group(1));
+                    work.setFrom(matcher.group(1));
                     x++;
                 } else {
                     LOG.info("To:" + matcher.group(1));
+                    work.setTo(matcher.group(1));
                 }
             }
         } else if (classifierText2.contains("<DATE>")) {
@@ -169,9 +199,11 @@ public class WorkInfoExtract {
             while (matcher.find()) {
                 if (x == 0) {
                     LOG.info("From:" + matcher.group(1));
+                    work.setFrom(matcher.group(1));
                     x++;
                 } else {
                     LOG.info("To:" + matcher.group(1));
+                    work.setTo(matcher.group(1));
                 }
             }
         }
@@ -180,6 +212,7 @@ public class WorkInfoExtract {
 
     /**
      * Load the Gazeteer list
+     *
      * @param path
      * @param list
      */

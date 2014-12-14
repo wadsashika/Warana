@@ -1,5 +1,6 @@
 package com.cse.warana.utility.infoExtractors;
 
+import com.cse.warana.utility.infoHolders.Referee;
 import edu.stanford.nlp.ie.AbstractSequenceClassifier;
 import edu.stanford.nlp.ling.CoreLabel;
 import org.slf4j.Logger;
@@ -33,7 +34,7 @@ public class RefereeInfoExtract {
      * @param allHeadings
      * @param linesCopy
      */
-    public void getRefereeInfo(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy) {
+    public void getRefereeInfo(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy, ArrayList<Referee> referees) {
         String lineText = "";
         String classifierText = "";
         String personTitle = "";

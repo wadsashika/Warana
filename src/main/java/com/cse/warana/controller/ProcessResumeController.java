@@ -1,16 +1,20 @@
 package com.cse.warana.controller;
 
 import com.cse.warana.dto.ResumesToProcessDto;
+import com.cse.warana.service.CVParserService;
+import com.cse.warana.service.CandidateProfileGeneratorService;
 import com.cse.warana.service.ResumesToProcessService;
+import com.cse.warana.service.StoreProcessedResumeService;
+import com.cse.warana.service.impl.CVParserServiceImpl;
+import com.cse.warana.service.impl.CandidateProfileGeneratorServiceImpl;
+import com.cse.warana.service.impl.StoreProcessedResumeServiceImpl;
+import com.cse.warana.utility.infoHolders.Candidate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.io.File;
@@ -28,6 +32,18 @@ public class ProcessResumeController {
     @Autowired
     @Qualifier("resumesToProcessService")
     private ResumesToProcessService resumesToProcessService;
+
+    @Autowired
+    @Qualifier("storeProcessedResume")
+    private StoreProcessedResumeService storeProcessedResumeService;
+
+//    @Autowired
+//    @Qualifier("cvParser")
+//    private CVParserService cvParserService;
+
+    @Autowired
+    @Qualifier("generateCandidateProfile")
+    private CandidateProfileGeneratorService candidateProfileGeneratorService;
 
     @RequestMapping(value = "/process", method = RequestMethod.GET)
     public ModelAndView loadProcessView() {
@@ -53,7 +69,7 @@ public class ProcessResumeController {
 
     @RequestMapping(value = "/process/delete", method = RequestMethod.POST)
     @ResponseBody
-    public Boolean deleteResume(@RequestParam("fileName") String fileName){
+    public boolean deleteResume(@RequestParam("fileName") String fileName){
 
         String baseDirectory = "F:\\Accademic\\Semister 7\\Final_Year_Project\\CareersDay2013_CVs\\CareersDay2013_CVs\\pdfs";
         File resumeFile = new File(baseDirectory + "\\" + fileName);
@@ -67,5 +83,32 @@ public class ProcessResumeController {
         }
 
         return status;
+    }
+
+    @RequestMapping(value = "/process/processlist", method = RequestMethod.POST)
+    @ResponseBody
+    public boolean processSelectedResumes(@RequestBody String[] fileNames){
+
+        String baseDirectory = "F:\\Accademic\\Semister 7\\Final_Year_Project\\CareersDay2013_CVs\\CareersDay2013_CVs\\pdfs";
+        ArrayList<Candidate> candidateArrayList = new ArrayList<>();
+        for (int a = 0; a < fileNames.length; a++){
+            System.out.println(fileNames[a]);
+
+            CandidateProfileGeneratorService profileGeneratorService = new CandidateProfileGeneratorServiceImpl();
+            CVParserService cvParserService = new CVParserServiceImpl();
+
+            Candidate candidate = new Candidate();
+            profileGeneratorService.extractCVInformation(cvParserService,new File(baseDirectory+"\\"+fileNames[a]));
+            candidateArrayList.add(profileGeneratorService.generateCandidateProfile(candidate));
+            long candidate_id = storeProcessedResumeService.storeCandidateTableData(candidate);
+
+            storeProcessedResumeService.storeEducationalTableData(candidate,candidate_id);
+            storeProcessedResumeService.storeAchievementTableData(candidate,candidate_id);
+            storeProcessedResumeService.storeProjectTableData(candidate,candidate_id);
+            storeProcessedResumeService.storeRefereeTableData(candidate,candidate_id);
+            storeProcessedResumeService.storeWorkTableData(candidate,candidate_id);
+        }
+
+        return true;
     }
 }

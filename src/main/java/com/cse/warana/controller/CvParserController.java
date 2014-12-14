@@ -32,7 +32,7 @@ public class CvParserController {
         cvParserService.readPdfDocument(new File("F:\\Accademic\\Semister 7\\Final_Year_Project\\CareersDay2013_CVs\\CareersDay2013_CVs\\pdfs\\090074J_DARSHANA K.U.G.pdf"));
         cvParserService.initializeHeadingTokens();
         cvParserService.identifyHeadings();
-        cvParserService.parseLines();
+//        cvParserService.parseLines();
         String exampleServiceString = cvParserService.test();
         modelMap.addAttribute("message", exampleServiceString);
 

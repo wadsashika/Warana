@@ -1,5 +1,6 @@
 package com.cse.warana.utility.infoExtractors;
 
+import com.cse.warana.utility.infoHolders.Profile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,7 +21,7 @@ public class FindMissedInfo {
      * and within first 10 - 15 lines
      * Heuristic is we can find the email of a person most of the time around the name
      */
-    public void findProfileInfo(ArrayList<String> lines) {
+    public void findProfileInfo(ArrayList<String> lines,Profile profile) {
         int terminatingLine = 0;
         if (lines.size() < 15) {
             terminatingLine = lines.size();
@@ -37,8 +38,11 @@ public class FindMissedInfo {
             matcher = pattern.matcher(lines.get(a));
             if (matcher.matches()) {
                 for (int b = a + 1; b < terminatingLine; b++) {
-                    if (getEmail(lines.get(b))) {
+                    String email = getEmail(lines.get(b));
+                    if (email!=null) {
                         LOG.info("Suggested as name: " + matcher.group(1));
+                        profile.setName(matcher.group(1));
+                        profile.setEmail(email);
                         break;
                     }
                 }
@@ -52,7 +56,7 @@ public class FindMissedInfo {
      * @param para
      * @return
      */
-    public boolean getEmail(String para) {
+    public String getEmail(String para) {
         String tokens[] = para.split(" ");
         String email = "";
 
@@ -62,9 +66,9 @@ public class FindMissedInfo {
 
             if (matcher.find()) {
                 LOG.info(matcher.group(1));
-                return true;
+                return matcher.group(1);
             }
         }
-        return false;
+        return null;
     }
 }

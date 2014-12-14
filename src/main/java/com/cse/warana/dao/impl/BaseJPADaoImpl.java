@@ -44,4 +44,9 @@ public class BaseJPADaoImpl<T> implements BaseJPADao<T> {
     public void deleteEntity(T t) {
         this.entityManager.remove(t);
     }
+
+    @Override
+    public void persistEntity(T t) {
+        this.entityManager.persist(t);
+    }
 }

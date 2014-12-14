@@ -57,12 +57,33 @@ WARANA.processResume = function () {
 
     };
 
+    var processResumes = function(){
+        var selected = [];
+        $('.files-checkbox:checked').each(function() {
+            selected.push($(this).closest('tr').children('td:eq(1)').text());
+        });
+
+        $.ajax({
+            type : 'POST',
+            url : 'process/processlist',
+            data : JSON.stringify(selected),
+            contentType: "application/json",
+            success: function(data){
+                alert(data);
+            },
+            error: function (e) {
+                alert('Error: ' + e);
+            }
+        });
+    };
+
     return {
         init: function(){
             setFileListDataTable();
             $(document).on("click", "#select-all", selectAll);
             $(document).on("click","#clear-selection",clearSelection);
             $(document).on("click",".delete-resume", deleteResumeRow);
+            $(document).on("click","#process-resume", processResumes);
         }
     }
 }();
