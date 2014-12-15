@@ -1,0 +1,1539 @@
+ruby |RUBY |ruby |Ruby ,107.28571428571429
+rail |Rails |rails |RAILS ,64.6
+ruby on rail |Ruby on Rails ,57.0
+method |methods |Methods |method ,43.0
+language |languages |language ,36.0
+wiki |wiki |Wikis ,32.0
+object |object |objects ,30.5
+matsumoto |Matsumoto ,29.5
+put |puts ,24.0
+block |block |blocks |Blocks ,24.0
+edit |edit ,23.0
+statement |statement |statements ,23.0
+programming |programming ,22.0
+exception |Exception |exceptions |exception ,21.0
+implementation |implementation |implementations ,20.5
+variable |Variables |variable |variables ,20.0
+source |source |sources ,19.0
+expression |expression |expressions ,19.0
+string |string |strings ,18.0
+code |code |Code ,17.0
+python |Python ,16.5
+class |classes |Class |class ,16.333333333333332
+perl |Perl ,16.0
+end |end ,15.5
+yukihiro |Yukihiro ,15.5
+software |software ,14.5
+closure |closures |closure |Closures ,14.0
+yukihiro matsumoto |Yukihiro Matsumoto ,14.0
+isbn |ISBN ,13.0
+model |models |model ,12.5
+world |World |world ,12.0
+machine |machine |machines ,12.0
+ruby-talk |ruby-talk ,12.0
+hash |Hash |hash ,12.0
+hansson |Hansson ,11.5
+array |arrays |array ,11.0
+hello |Hello ,11.0
+line |line ,11.0
+application |application |Application |applications ,11.0
+function |functions |function ,10.0
+example |Example |Examples |example ,10.0
+design |design ,10.0
+server |server ,10.0
+surprise |surprise |surprises ,10.0
+return |return |returns ,10.0
+ruby and rail |Ruby and rails |Ruby and Rails ,10.0
+support |support ,9.0
+release |releases |release ,9.0
+standard |standards |standard ,9.0
+argument |argument |arguments ,9.0
+age |age ,9.0
+def |def ,9.0
+view |views |view ,8.5
+configuration |configurations |Configuration |configuration ,8.5
+number |numbers |number ,8.333333333333334
+developer |developer |Developers |developers ,8.0
+syntax |syntax |Syntax |syntaxes ,8.0
+controller |controller ,8.0
+linux |Linux ,8.0
+database |database ,8.0
+color |COLORS |color |colors ,8.0
+principle |principle |principles ,8.0
+rescue |rescue ,8.0
+list |list |Lists |lists ,7.6
+ironruby |IronRuby ,7.5
+use |use ,7.5
+rubiniu |Rubinius ,7.5
+merb |Merb ,7.0
+open-source |open-source ,7.0
+equivalent |equivalent ,7.0
+programmer |programmer ,7.0
+web server |web server ,7.0
+riding rail |Riding Rails ,7.0
+smalltalk |Smalltalk ,7.0
+reference |references |reference ,7.0
+begin |begin ,7.0
+hello world |Hello World ,7.0
+instance variable |instance variable |instance variables ,7.0
+japanese |Japanese ,7.0
+feature |features |feature |Features ,6.8
+framework |frameworks |framework ,6.75
+category |Category |category ,6.5
+jruby |JRuby ,6.5
+file |files |file ,6.5
+bsd |BSD ,6.5
+version |versions |Versions |version ,6.5
+behavior |behavior |behaviors ,6.0
+metaprogramming |metaprogramming ,6.0
+java |Java ,6.0
+scala |Scala ,6.0
+proc |Proc |proc ,6.0
+print |prints ,6.0
+index |index ,6.0
+article |articles |article |Articles ,6.0
+person |Person ,6.0
+engine |Engines |engine |engines ,6.0
+instiki |Instiki ,6.0
+route |routes |route ,6.0
+lisp |Lisp |LISP ,6.0
+point |point ,6.0
+david |David ,5.75
+web |Web |web ,5.666666666666667
+ruby-lang org |ruby-lang org |Ruby-lang org ,5.5
+rubyonrails org |Rubyonrails org |RubyonRails org |rubyonrails org ,5.5
+fire |fire ,5.5
+history |history |History ,5.5
+macruby |MacRuby ,5.5
+david heinemeier hansson |David Heinemeier Hansson ,5.5
+clause |clause ,5.5
+mri |MRI ,5.5
+water |water ,5.0
+action |action |actions ,5.0
+system |systems ,5.0
+sort |sort ,5.0
+irb |irb ,5.0
+get |get ,5.0
+scope |scopes |scope ,5.0
+getter |getter ,5.0
+rails logo |Rails Logo |Rails logo ,5.0
+rack |Rack ,5.0
+window |Windows ,5.0
+constant |constant |constants ,5.0
+pass |passes |pass ,5.0
+inheritance |inheritance ,5.0
+true |true ,5.0
+markup |markup ,5.0
+iterator |iterators ,5.0
+app |Apps ,5.0
+simple |simple ,4.666666666666667
+year |years ,4.5
+work |work ,4.5
+difference |difference |Differences |differences ,4.5
+table |tables |Tables |table ,4.333333333333333
+interactive ruby shell |Interactive Ruby Shell ,4.0
+mruby |mruby ,4.0
+span |span ,4.0
+element |element ,4.0
+git repository |Git repository ,4.0
+sigil |sigils |sigil ,4.0
+plugin |Plugins |plugins |plugin ,4.0
+blade nagaokaut |blade nagaokaut ,4.0
+mixin |mixins ,4.0
+olelo |Olelo ,4.0
+ruby-talk mailing list |Ruby-Talk mailing list |ruby-talk mailing list ,4.0
+double-quoted string n |double-quoted string n ,4.0
+key |key ,4.0
+gem |gems |gem ,4.0
+set |set ,4.0
+message |message |messages ,4.0
+wiki engine app |Wiki Engine apps ,4.0
+jquery |jQuery ,4.0
+runtime |runtime ,4.0
+sum |sum ,4.0
+prototype |Prototype ,4.0
+git-wiki |Git-wiki ,4.0
+book |books |book ,4.0
+member |member |members ,4.0
+creator |Creator |creator ,4.0
+preceding |preceding ,4.0
+nthi |nThis ,4.0
+inject |inject ,4.0
+web service |web services ,4.0
+attr reader |attr reader ,4.0
+e-mail |E-mail |e-mail ,4.0
+template |templates |Templates ,4.0
+blade |blade ,4.0
+site |site ,4.0
+module |module |modules |Module ,4.0
+user |user ,4.0
+runtimeerror |RuntimeError ,4.0
+operator |operators ,4.0
+development |development ,4.0
+value |values ,4.0
+section |section ,4.0
+uspto |USPTO ,4.0
+local |local ,4.0
+pair |pair ,4.0
+ruby programming language |Ruby Programming Language |Ruby programming language ,3.8333333333333335
+default |default ,3.8
+help |help ,3.6666666666666665
+git |Git ,3.6666666666666665
+rubyonrail |rubyonrails ,3.5
+chri |Chris ,3.5
+ruby programming |Ruby Programming ,3.5
+maglev |MagLev ,3.5
+japan |Japan ,3.5
+hot |Hot |hot ,3.5
+yarv |YARV ,3.5
+error |errors |error |Error ,3.5
+page |Pages |page |pages ,3.4
+convention |Convention |convention ,3.25
+notation |notation ,3.0
+ishitsuka |Ishitsuka ,3.0
+rescue runtimeerror |rescue RuntimeError ,3.0
+discussion |discussion ,3.0
+phusion passenger |Phusion Passenger ,3.0
+default configuration |default configuration ,3.0
+issue |issues ,3.0
+nil |nil ,3.0
+payne |Payne ,3.0
+digit |digit |digits ,3.0
+statement end |statement end ,3.0
+wet fire |wet fire ,3.0
+interview |interview |Interview ,3.0
+mongrel |Mongrel ,3.0
+familiar |familiar ,3.0
+lattner |Lattner ,3.0
+information |information ,3.0
+create set |create set ,3.0
+trademark status |Trademark Status ,3.0
+programming ruby |Programming Ruby ,3.0
+literal |literal ,3.0
+project |project ,3.0
+public |public ,3.0
+initialize |initialize ,3.0
+accessor method |accessor methods ,3.0
+rails based project management software |Rails based project management software ,3.0
+expression statement |expression statement ,3.0
+package |packages ,3.0
+create set and get |create set and get ,3.0
+ruby license |Ruby License ,3.0
+gpl |GPL ,3.0
+metal |Metal ,3.0
+decimal point |decimal point ,3.0
+water wet |water wet ,3.0
+focus |focus ,3.0
+citation |citations ,3.0
+output |output ,3.0
+keyword |keywords ,3.0
+remember |remember ,3.0
+ruby implementation |Ruby implementations ,3.0
+item |item ,3.0
+ruby official source repository |Ruby official source repository ,3.0
+spring |Spring ,3.0
+initial |initial ,3.0
+session cookie |session cookie ,3.0
+api |API ,3.0
+change |change |changes ,2.8
+professional |Professional ,2.5
+ruby mri |Ruby MRI ,2.5
+hotruby |HotRuby ,2.5
+clu |CLU ,2.5
+rubymotion |RubyMotion ,2.5
+idea |ideas |idea ,2.5
+ioke |Ioke ,2.5
+novice |Novice ,2.5
+code block |code block |code blocks ,2.3333333333333335
+style |style ,2.3333333333333335
+webrick |WEBrick ,2.3333333333333335
+html |HTML ,2.3333333333333335
+rule |rule |rules ,2.3333333333333335
+matz |Matz ,2.25
+open source |open source ,2.2
+end def |end def ,2.0
+rubygem |RubyGems ,2.0
+anonymous function |anonymous function |anonymous functions ,2.0
+tool |tools ,2.0
+c programming |C programming ,2.0
+renovate |Renovate ,2.0
+criticism |criticisms |criticism ,2.0
+output number |output number ,2.0
+colleague |colleague |colleagues ,2.0
+jon |Jon ,2.0
+warning |warning ,2.0
+llvm |LLVM ,2.0
+philosophy |Philosophy ,2.0
+enum |Enums ,2.0
+problem |problems ,2.0
+default javascript library |default JavaScript library ,2.0
+mailer |Mailer ,2.0
+official ruby interpreter |official Ruby interpreter ,2.0
+run |runs ,2.0
+mailer preview |Mailer previews ,2.0
+num |num ,2.0
+associative array |associative array ,2.0
+x closure |x closure ,2.0
+case |cases ,2.0
+mac os |Mac OS ,2.0
+performance |performance ,2.0
+content management system |Content management system |content management system ,2.0
+revision |revision ,2.0
+confusion |confusion ,2.0
+astonishment |astonishment ,2.0
+comparison operator |comparison operator ,2.0
+link |links ,2.0
+rescue clause |rescue clause ,2.0
+ruby language |Ruby language ,2.0
+ruby faq |Ruby FAQ ,2.0
+digital mar |Digital Mars ,2.0
+single line |single line ,2.0
+class and method definition |class and method definitions |Class and method definitions ,2.0
+wrox |Wrox ,2.0
+standarderror |StandardError ,2.0
+def create set |def create set ,2.0
+illegal argument |Illegal arguments ,2.0
+further |further ,2.0
+preceding method |preceding method ,2.0
+computer |computer ,2.0
+suno |SunOS ,2.0
+streaming |Streaming ,2.0
+integer |integers ,2.0
+personal standard |personal standard ,2.0
+pola |POLA ,2.0
+use hello |use hello ,2.0
+fragment |fragment ,2.0
+rails trademark status |Rails Trademark Status ,2.0
+objective-c |Objective-C ,2.0
+begin statement end |begin statement end ,2.0
+structure |structure ,2.0
+enumeration |enumeration |enumerations ,2.0
+open source ide |open source IDE ,2.0
+open source ruby |open source Ruby ,2.0
+variant |Variants ,2.0
+middleware |middleware ,2.0
+restful web service |RESTful web services ,2.0
+steve |Steve ,2.0
+sass |Sass ,2.0
+japanese-language ruby-list |Japanese-language ruby-list ,2.0
+constructor |constructor ,2.0
+scaffolding |scaffolding ,2.0
+alex payne |Alex Payne ,2.0
+windows phone |Windows Phone ,2.0
+single-quoted string |single-quoted string ,2.0
+fact |fact ,2.0
+rake |Rake ,2.0
+existing class |existing class ,2.0
+unsourced statement |unsourced statements ,2.0
+controller action |controller actions |controller action ,2.0
+brace |braces ,2.0
+unicode |Unicode ,2.0
+false |false ,2.0
+zlib |zlib ,2.0
+coffeescript |CoffeeScript ,2.0
+ola |Ola ,2.0
+point literal |point literals ,2.0
+markup language |markup languages ,2.0
+subclass |subclass |subclasses ,2.0
+file txt |file txt ,2.0
+berkeley |Berkeley ,2.0
+object-oriented language |object-oriented language ,2.0
+semantics |semantics ,2.0
+markdown |Markdown ,2.0
+aspect |aspects ,2.0
+meaning |meaning ,2.0
+apres |Apress |APress ,2.0
+bob |Bob ,2.0
+bini |Bini ,2.0
+hal |Hal ,2.0
+apache |Apache ,2.0
+component |component |components ,2.0
+var |var ,2.0
+name |names ,2.0
+potentially dated statement |potentially dated statements ,2.0
+keiju ishitsuka |Keiju Ishitsuka ,2.0
+argumenterror |ArgumentError ,2.0
+olelo wiki |Olelo Wiki ,2.0
+standard library |standard library ,2.0
+home |home ,2.0
+fiber |fibers ,2.0
+green |green ,2.0
+unsourced material |Unsourced material ,2.0
+type |types ,2.0
+related |related ,2.0
+beo |BeOS ,2.0
+sum element |sum element ,2.0
+beginning ruby |Beginning Ruby ,2.0
+interest |interest ,2.0
+command line |command line ,2.0
+chris lattner |Chris Lattner ,2.0
+revision control |Revision Control ,2.0
+stat counter |stat counter ,2.0
+joomla stat |joomla stats ,2.0
+number to i |number to i ,2.0
+reliable source |reliable sources ,2.0
+core |core ,2.0
+goal |goal ,2.0
+basecamp |Basecamp ,2.0
+active resource |Active Resource ,2.0
+open class |Open classes ,2.0
+rails ruby |Rails Ruby ,2.0
+greeting |Greeting ,2.0
+following assignment |following assignments ,2.0
+evaluation |evaluation ,2.0
+endoh |Endoh ,2.0
+mod ruby |mod ruby ,2.0
+ruby language faq |Ruby Language FAQ ,2.0
+aix |AIX ,2.0
+ibm |IBM ,2.0
+caching |caching ,2.0
+speedy renaming |speedy renaming ,2.0
+adoption |adoption |Adoption ,2.0
+additional reference |additional references ,2.0
+invocation |invocation ,2.0
+perl and python |Perl and Python ,2.0
+programmer productivity |programmer productivity ,2.0
+collect |collect ,2.0
+eiffel |Eiffel ,2.0
+yusuke |Yusuke ,2.0
+manning publication |Manning Publications ,2.0
+series |series ,2.0
+lenz |Lenz ,2.0
+method definition |method definitions ,2.0
+human |humans ,2.0
+ada |Ada ,2.0
+activerecord |ActiveRecord ,2.0
+addison-wesley |Addison-Wesley ,2.0
+content |content |contents |Contents ,2.0
+google tech talk |Google Tech Talks |Google Tech Talk ,2.0
+continuation |continuations ,2.0
+part |part ,2.0
+logic |logic ,2.0
+e handling |e handling ,2.0
+ruby matsumoto |Ruby Matsumoto ,2.0
+functional programming |functional programming ,2.0
+operating system |operating systems ,2.0
+news-o |NEWS-OS ,2.0
+symbol |symbols ,2.0
+sinatra |Sinatra ,2.0
+secret |secrets ,2.0
+solaris |Solaris ,2.0
+web page |web page |web pages ,1.6666666666666667
+mysql |MySQL ,1.6666666666666667
+semantic versioning |Semantic Versioning |semantic versioning ,1.6666666666666667
+text |text ,1.6666666666666667
+fancy |Fancy ,1.5
+dylan |Dylan ,1.5
+ibm i |IBM i ,1.5
+pragmatic bookshelf |Pragmatic Bookshelf ,1.5
+technique |technique |techniques ,1.5
+configuration coc |Configuration CoC |configuration CoC ,1.5
+model view controller mvc |model view controller MVC ,1.5
+light |light |Lights ,1.5
+stack |stack ,1.5
+s poignant |s poignant ,1.5
+early release |Early releases ,1.5
+lua |Lua ,1.5
+mapping |mappings |mapping ,1.5
+functionality |functionality ,1.5
+product |product |products ,1.5
+phrase |phrase ,1.5
+multi-paradigm |multi-paradigm ,1.5
+variety |variety ,1.3333333333333333
+author |author |authors ,1.3333333333333333
+wikibook |Wikibooks ,1.25
+web application framework |web application framework ,1.2
+rails community |Rails community ,1.0
+asset pipeline |Asset Pipeline ,1.0
+line line position po |line line position pos ,1.0
+lisp perl |Lisp Perl ,1.0
+instiki instiki |Instiki Instiki ,1.0
+systems matz |systems Matz ,1.0
+small blog yet simple wiki engine |small blog yet simple wiki engine ,1.0
+file open file txt |File open file txt ,1.0
+item map |item map ,1.0
+method keyword argument |method keyword arguments ,1.0
+common idiom |common idioms ,1.0
+rails official website |Rails official website ,1.0
+source enterprise wiki and content-oriented application platformradrail |Source Enterprise Wiki and Content-Oriented Application PlatformRadRails ,1.0
+simple git repository |simple Git repository ,1.0
+compatibility |compatibility ,1.0
+class definition |class definition |class definitions ,1.0
+fat model |Fat models ,1.0
+japanese domestic newsgroup |Japanese domestic newsgroups ,1.0
+net |net ,1.0
+blade nagaokaut ac jp |Blade nagaokaut ac jp ,1.0
+lovefest |lovefest ,1.0
+first english language book programming ruby |first English language book Programming Ruby ,1.0
+languages ruby forum gateway |Languages Ruby Forum gateway ,1.0
+conversation |Conversation ,1.0
+core class |core classes ,1.0
+foundation |foundation ,1.0
+file upload |file uploads ,1.0
+rails applicationspbworks online collaboration workspace |Rails applicationsPBworks Online Collaboration Workspace ,1.0
+braces i e |braces i e ,1.0
+radicalbehavior |radicalbehavior ,1.0
+bliki bliki |bliki bliki ,1.0
+zone |zones ,1.0
+root |root ,1.0
+open-source software general alternative term |open-source software General Alternative terms ,1.0
+dmoz link |DMOZ links ,1.0
+height |height ,1.0
+image captcha |image captchas ,1.0
+ajax |Ajax ,1.0
+false and nil |false and nil ,1.0
+related topic |Related topics ,1.0
+gartner research |Gartner Research ,1.0
+rubygems implemented |RubyGems Implemented ,1.0
+text formatting rule |Text Formatting Rules ,1.0
+unconventional aspect |unconventional aspects ,1.0
+modern language |modern languages ,1.0
+assaf |Assaf ,1.0
+spam |spam ,1.0
+learning rail |Learning Rails ,1.0
+powerruby brings enterprise ruby |PowerRuby Brings Enterprise Ruby ,1.0
+variable interpolation |variable interpolation ,1.0
+chaplin j |Chaplin js ,1.0
+lang-ruby-general |lang-ruby-general ,1.0
+ruby programming wikiversity |Ruby Programming Wikiversity ,1.0
+drawings scm integration |Drawings SCM integration ,1.0
+internal link |Internal Links ,1.0
+ascii code |ASCII code ,1.0
+example ruby code |example Ruby code ,1.0
+expected |expected ,1.0
+inheritance model |inheritance models ,1.0
+corresponding route |corresponding route ,1.0
+passenger web server |Passenger web server ,1.0
+html erb |html erb ,1.0
+proc closure |proc closure ,1.0
+functional programming language |functional programming languages ,1.0
+scriptaculous javascript control |Scriptaculous JavaScript controls ,1.0
+youtube |YouTube ,1.0
+net framework ruby |NET Framework Ruby ,1.0
+hampton |Hampton ,1.0
+border |border ,1.0
+ror |RoR ,1.0
+do-while |do-while ,1.0
+declarations succinct |declarations Succinct ,1.0
+object orientation |object orientation ,1.0
+engine software wiki software |engine software wiki software ,1.0
+language syntax |language syntax ,1.0
+pixel quantserve |pixel quantserve ,1.0
+verification |verification ,1.0
+yammer |Yammer ,1.0
+pdf export |PDF export ,1.0
+development process |development process ,1.0
+additional citation |additional citations ,1.0
+logical code block |logical code blocks ,1.0
+maturity |maturity ,1.0
+open-source android application |open-source Android applications ,1.0
+deviate |deviates ,1.0
+garbage collection first-class continuations strict boolean coercion rule |Garbage collection First-class continuations Strict boolean coercion rules ,1.0
+raise call |raise call ,1.0
+haskell |Haskell ,1.0
+corresponding table |corresponding table ,1.0
+bibliography edit ruby |Bibliography edit Ruby ,1.0
+current version |current versions ,1.0
+mustache |Mustache ,1.0
+major alternate implementation |major alternate implementations ,1.0
+hibbs |Hibbs ,1.0
+industry-wide move |industry-wide move ,1.0
+b c d e f bini |b c d e f Bini ,1.0
+rails irwi |Rails IRWI ,1.0
+traditional fashion |traditional fashion ,1.0
+sample session |sample session ,1.0
+defunct ruby implementation |defunct Ruby implementations ,1.0
+apple |Apple ,1.0
+rails based wiki |Rails based wiki s ,1.0
+www ruby-toolbox com categories wiki apps thursday |Www Ruby-Toolbox Com Categories Wiki Apps Thursday ,1.0
+coral |Coral ,1.0
+international organization |International Organization ,1.0
+application piece |application pieces ,1.0
+simple rail |simple Rails ,1.0
+email management software |email management software ,1.0
+asynchronous processing type |asynchronous processing type ,1.0
+brook |Brook ,1.0
+ipro developer |iPro Developer ,1.0
+platform support edit |Platform support edit ,1.0
+popular third party gem |popular third party gems ,1.0
+routes configuration file |routes configuration file ,1.0
+sitepoint |SitePoint ,1.0
+wiki system management tool |wiki system management tool ,1.0
+authoritative community member |authoritative community members ,1.0
+tags editor |tags Editor ,1.0
+feedback |feedback ,1.0
+substring |substring ,1.0
+entire session hash |entire session hash ,1.0
+boolean |booleans ,1.0
+public site wiki |public site wikis ,1.0
+syntactic sugar |syntactic sugar ,1.0
+multiple markup language |Multiple markup languages ,1.0
+database server |database server ,1.0
+dumbill |Dumbill ,1.0
+homeimprovement |HomeImprovement ,1.0
+experiences hard-won |experiences hard-won ,1.0
+business insider |Business Insider ,1.0
+neighbors painting permits planning remodel |neighbors Painting Permits Planning remodel ,1.0
+favor |favor ,1.0
+dollars jane |dollars Jane ,1.0
+high performance |high performance ,1.0
+built-in string class |built-in String class ,1.0
+- a b |- a b ,1.0
+method in black |method in black ,1.0
+source comparison |source Comparison ,1.0
+bsdl |BSDL ,1.0
+c programmer |C programmer ,1.0
+view file |view file ,1.0
+topaz |Topaz ,1.0
+game design |game design ,1.0
+activerecord module |ActiveRecord module ,1.0
+dyi energy efficiency energy efficient faucet |DYI energy efficiency energy efficient Faucets ,1.0
+integer literal |integer literals ,1.0
+method and method |method and methods ,1.0
+procedural programming |procedural programming ,1.0
+expression operator |expression operators ,1.0
+cooperative fiber |cooperative fibers ,1.0
+swift language |Swift language ,1.0
+fowler |Fowler ,1.0
+progress |progress ,1.0
+special case |special case ,1.0
+static page |static pages ,1.0
+rpg maker series |RPG Maker series ,1.0
+cgi fastcgi or mod ruby |CGI FastCGI or mod ruby ,1.0
+rails rails framework |Rails Rails framework ,1.0
+rails application |Rails application ,1.0
+rails-related trademark application |Rails-related trademark applications ,1.0
+code demonstrating ruby syntax |code demonstrating Ruby syntax ,1.0
+s method |s method ,1.0
+weblog |weblog ,1.0
+regular expressions and symbols embedding code |regular expressions and symbols Embedding code ,1.0
+ruby http blade nagaokaut |Ruby http blade nagaokaut ,1.0
+json |JSON ,1.0
+rails cm |Rails CMS ,1.0
+complex number |complex numbers ,1.0
+question |question ,1.0
+standard library documentation |Standard Library Documentation ,1.0
+additional references article |additional references Articles ,1.0
+newsgroup comp lang ruby |newsgroup comp lang ruby ,1.0
+rss feed pinterest google |RSS Feed Pinterest Google ,1.0
+semicolon |semicolon ,1.0
+pages section editing |pages Section editing ,1.0
+blocks and iterators edit |Blocks and iterators edit ,1.0
+reverse age order |reverse age order ,1.0
+normal rule |normal rules ,1.0
+bringing ruby |Bringing Ruby ,1.0
+sam |Sam ,1.0
+prototype javascript framework |Prototype JavaScript framework ,1.0
+tomdoc |TomDoc ,1.0
+ruby method |Ruby methods ,1.0
+topic |topic ,1.0
+code internal |code internal ,1.0
+automatic query explain |Automatic Query Explain ,1.0
+b c cooper |b c Cooper ,1.0
+experienced user |experienced users ,1.0
+simple rescue clause |simple rescue clause ,1.0
+class parseerror exception def initialize input |class ParseError Exception def initialize input ,1.0
+modern ruby version |Modern Ruby versions ,1.0
+ruby and rails applicationspbworks online collaboration workspace |Ruby and Rails applicationsPBworks Online Collaboration Workspace ,1.0
+olelo wiki feature |olelo Wiki Features ,1.0
+syntax edit |Syntax edit ,1.0
+following code define |following code defines ,1.0
+standard output format |standard output formats ,1.0
+ruby shell |Ruby shell ,1.0
+first english language mailing list ruby-talk |first English language mailing list ruby-talk ,1.0
+examples edit |examples edit ,1.0
+validator |validators ,1.0
+neon design technology |Neon Design Technology ,1.0
+iterators edit |iterators edit ,1.0
+queueing system |queueing system ,1.0
+normal steady state |normal steady state ,1.0
+database access |database access ,1.0
+mind |Mind ,1.0
+ruby application archive |Ruby Application Archive ,1.0
+ruby dynamic productivity |Ruby Dynamic Productivity ,1.0
+raw string |raw strings ,1.0
+application programming |application programming ,1.0
+garbage collection |garbage collection ,1.0
+following ruby code |following Ruby code ,1.0
+bluecloth |BlueCloth ,1.0
+contrast |contrast ,1.0
+lazy evaluation |lazy evaluation ,1.0
+active record observer |Active Record Observer ,1.0
+outage |outages ,1.0
+rigid language |rigid languages ,1.0
+permission |permission ,1.0
+raise method |raise method ,1.0
+genuine object-oriented easy-to-use scripting language |genuine object-oriented easy-to-use scripting language ,1.0
+inline documentation |inline documentation ,1.0
+per-string character encoding |per-string character encodings ,1.0
+journey engine |Journey engine ,1.0
+simple lisp language |simple Lisp language ,1.0
+further reading edit metz |Further reading edit Metz ,1.0
+cultural works free license |Cultural Works Free license ,1.0
+refactoring |refactoring ,1.0
+repetition |repetition ,1.0
+slave |slaves ,1.0
+instiki wiki |Instiki Wiki ,1.0
+slower virtual machine |slower virtual machine ,1.0
+view paths and model |view paths and models ,1.0
+nextstep |NeXTSTEP ,1.0
+oracle |Oracle ,1.0
+objective-c runtime cardinal |Objective-C runtime Cardinal ,1.0
+primary purpose |primary purpose ,1.0
+sqlite |SQLite ,1.0
+creole and markdown markup |Creole and Markdown markup ,1.0
+java application developerssubstruct |java application developerssubstruct ,1.0
+nginx |nginx ,1.0
+good user interface design |good user interface design ,1.0
+addition |addition ,1.0
+extensive use |extensive use ,1.0
+nec up-ux |NEC UP-UX ,1.0
+object instance variable |object instance variable ,1.0
+kernel put |Kernel puts ,1.0
+benefit |benefits ,1.0
+green thread |Green threads ,1.0
+scope resolution operator |scope resolution operators ,1.0
+hal fulton |Hal Fulton ,1.0
+search |Search ,1.0
+handling exception |handling exceptions ,1.0
+session cookie persistence security flaw |session cookie persistence security flaw ,1.0
+collision |collisions ,1.0
+ruby cookbook |Ruby Cookbook ,1.0
+closure dojo toolkit ember |Closure Dojo Toolkit Ember ,1.0
+symbian os |Symbian OS ,1.0
+ruby compared |Ruby compared ,1.0
+multi-paradigm programming language |multi-paradigm programming language ,1.0
+wikidata article |Wikidata Articles ,1.0
+gollum rail |Gollum Rails ,1.0
+png jpeg conversion auto-generated table |PNG JPEG conversion Auto-generated table ,1.0
+unobtrusive javascript |Unobtrusive JavaScript ,1.0
+adhere |adhere ,1.0
+method missing |method missing ,1.0
+execution |execution ,1.0
+openssl |OpenSSL ,1.0
+quantcast |Quantcast ,1.0
+class object |Class object ,1.0
+official rails logo |official Rails logo ,1.0
+parameter-passing |Parameter-passing ,1.0
+sinatra stone |Sinatra Stone ,1.0
+systems design |systems design ,1.0
+deprecated |deprecated ,1.0
+extensible hackable architecture |extensible hackable architecture ,1.0
+model class user |model class User ,1.0
+ruby initial development |Ruby initial development ,1.0
+vendor plugin |vendor plugins ,1.0
+construct |construct ,1.0
+four level |Four levels ,1.0
+model view controller mvc pattern |model view controller MVC pattern ,1.0
+operator overloading built-in support |Operator overloading Built-in support ,1.0
+growing interest |growing interest ,1.0
+ahead-of-time compilation |ahead-of-time compilation ,1.0
+source job boardxwiki |source job boardXWiki ,1.0
+libraries edit rubygem |libraries edit RubyGems ,1.0
+jquery plugin project mgmt tool web tool |jQuery Plugin Project Mgmt tool web tools ,1.0
+devarticle |Devarticles ,1.0
+sale |sales ,1.0
+usual operator |usual operators ,1.0
+action web service package |Action Web Service package ,1.0
+wiki or pages section editing |wiki or pages Section editing ,1.0
+open-source software package |open-source software packages ,1.0
+thing |things ,1.0
+reference tracker |Reference tracker ,1.0
+language specification |language specifications ,1.0
+final variable |final variables ,1.0
+rails core team profile |Rails core team profiles ,1.0
+hiroshi sugihara |Hiroshi Sugihara ,1.0
+interactive command-line interpreter |interactive command-line interpreter ,1.0
+older version |older version ,1.0
+publicly exposed instance variable |publicly exposed instance variable ,1.0
+design philosophy |design philosophy ,1.0
+huge difference |huge difference ,1.0
+first article |first article ,1.0
+accessor methods attr writer |accessor methods attr writer ,1.0
+end setter |end setter ,1.0
+heavy lifting |heavy lifting ,1.0
+creole |Creole ,1.0
+empty list |empty list ,1.0
+andy |Andy ,1.0
+engine softwarerails project management |engine softwarerails project management ,1.0
+irb irb main |irb irb main ,1.0
+practical purpose |practical purposes ,1.0
+britt |Britt ,1.0
+reference rs |reference RSS ,1.0
+world span |World span ,1.0
+html or markup |HTML or markup ,1.0
+lucas |Lucas ,1.0
+yield |yield ,1.0
+concern |concerns ,1.0
+pure ruby |pure Ruby ,1.0
+official deployment instruction |Official deployment instructions ,1.0
+custom gems and configuration |custom gems and configurations ,1.0
+standardized |standardized ,1.0
+curt |Curt ,1.0
+output number to |output number to s ,1.0
+framework structure edit |Framework structure edit ,1.0
+age def initialize |age def initialize ,1.0
+cgi fastcgi |CGI FastCGI ,1.0
+reference implementation mri |reference implementation MRI ,1.0
+non-false value |non-false values ,1.0
+subject |subject ,1.0
+ruby and rails based project management tool |Ruby and Rails based project management tool ,1.0
+uniq sort |uniq sort ,1.0
+lesser extent |lesser extent ,1.0
+alternate implementations edit |Alternate implementations edit ,1.0
+algorithm |algorithms ,1.0
+open classes edit |Open classes edit ,1.0
+similar programming language |similar programming languages ,1.0
+error or warning |error or warning ,1.0
+security edit |Security edit ,1.0
+language c programming language family free software |language C programming language family Free software ,1.0
+explicit return statement |explicit return statement ,1.0
+rails front end |Rails front ends ,1.0
+web services actionpack activesupport |web services ActionPack ActiveSupport ,1.0
+line end |line end ,1.0
+rack web server interface |Rack web server interface ,1.0
+catalyst mvc web framework |Catalyst MVC web framework ,1.0
+wikipedia |Wikipedia ,1.0
+rational number |rational numbers ,1.0
+replacement |replacement ,1.0
+first character |first character ,1.0
+developer alex payne |Developer Alex Payne ,1.0
+pair water |pair water ,1.0
+different aspect |different aspects ,1.0
+trabb pardo-knuth algorithm implementations edit |Trabb Pardo-Knuth algorithm Implementations edit ,1.0
+oo fan |OO fan ,1.0
+standard package |standard packages ,1.0
+ruby and python |Ruby and Python ,1.0
+def remember a block block |def remember a block block ,1.0
+chad |Chad ,1.0
+built-in class |built-in classes ,1.0
+table user |table users ,1.0
+machine code |machine code ,1.0
+external web request |external web requests ,1.0
+dynamic dispatch |dynamic dispatch ,1.0
+comparison |comparisons ,1.0
+class and module |Class and Module ,1.0
+text markup |Text Markup ,1.0
+textile |Textile ,1.0
+ruby jis ji |Ruby JIS JIS ,1.0
+stuff |stuff ,1.0
+functionality or logic |functionality or logic ,1.0
+concept |Concepts ,1.0
+language maniac |language maniac ,1.0
+allan hardy |Allan Hardy ,1.0
+high-profile consumer web firm |high-profile consumer web firms ,1.0
+stage |stage ,1.0
+rise |rise ,1.0
+online chat session |online chat session ,1.0
+international standard |international standard ,1.0
+generator |generators ,1.0
+built-in method |built-in methods ,1.0
+c and vb net property member |C and VB NET property members ,1.0
+version control repository hosting |version control repository hosting ,1.0
+bruce |Bruce ,1.0
+evaluated statement |evaluated statement ,1.0
+following article |following articles ,1.0
+artima |artima ,1.0
+rails usage trend |Rails Usage Trends ,1.0
+production environment |production environment ,1.0
+top level scope |top level scope ,1.0
+installation |installation ,1.0
+imperative |imperative ,1.0
+forward |Forward ,1.0
+preceding code print |preceding code prints ,1.0
+rescue runtimeerror timeout |rescue RuntimeError Timeout ,1.0
+macruby and mruby |MacRuby and mruby ,1.0
+application logic |application logic ,1.0
+design choice |design choice ,1.0
+fyi |FYI ,1.0
+const pointer |const pointer ,1.0
+object or functional programming |object or functional programming ,1.0
+slideshow rubyforge org |Slideshow rubyforge org ,1.0
+lisp perl and python |Lisp Perl and Python ,1.0
+archeolinguistic |archeolinguistics ,1.0
+compiler optimization ninja |compiler optimization ninjas ,1.0
+ruby-specific feature |Ruby-specific features ,1.0
+java virtual machine |Java Virtual Machine |Java virtual machine ,1.0
+japanese industrial standards committee |Japanese Industrial Standards Committee ,1.0
+ruby game scripting system |Ruby Game Scripting System ,1.0
+notation statement |notation statement ,1.0
+ioke org |Ioke org ,1.0
+ruby feature |Ruby features ,1.0
+local link |local link ,1.0
+factor |factor ,1.0
+jilts ruby |jilts Ruby ,1.0
+object class |Object class ,1.0
+latex |LaTeX ,1.0
+internationalization color diff |Internationalization Color diffs ,1.0
+examples section |Examples section ,1.0
+catlin |Catlin ,1.0
+robey pointer interview |Robey Pointer interview ,1.0
+boolean context |boolean contexts ,1.0
+native package management system |native package management system ,1.0
+commit |commit ,1.0
+alternative implementation |alternative implementations ,1.0
+different operating system |different operating systems ,1.0
+conference |conferences ,1.0
+instance |instances ,1.0
+ruby repl ruby draft specification |Ruby REPL Ruby Draft Specification ,1.0
+external link |External Links ,1.0
+philosophy edit yukihiro matsumoto |Philosophy edit Yukihiro Matsumoto ,1.0
+classic hello world example |Classic Hello world example ,1.0
+jeffrey |Jeffrey ,1.0
+irwi wiki signal-wiki signal-wiki |irwi Wiki Signal-wiki Signal-wiki ,1.0
+fun |fun ,1.0
+major new development |major new developments ,1.0
+ann ruby |ANN ruby ,1.0
+mover recent comment |Mover Recent Comments ,1.0
+ftp |FTP ,1.0
+external links edit |External links edit ,1.0
+slicing string |slicing strings ,1.0
+embedded system |embedded system ,1.0
+non-const object |non-const object ,1.0
+facility |facility ,1.0
+sikachu |sikachu ,1.0
+references or source |references or sources ,1.0
+rust |Rust ,1.0
+ancestor |ancestor ,1.0
+repl centralized package management |REPL Centralized package management ,1.0
+svg |SVG ,1.0
+c and c |C and C ,1.0
+models and view |models and views ,1.0
+novice user |novice users ,1.0
+simple example |simple example ,1.0
+first book |first book ,1.0
+html tag |HTML tag ,1.0
+service |service ,1.0
+age name age end def person |age name age end def person ,1.0
+object-oriented design |object-oriented design ,1.0
+edit move or delete pages page |Edit move or delete pages Page ,1.0
+polite protest |polite protest ,1.0
+cover |cover ,1.0
+acme media property contact us div class stat counter |Acme Media Property Contact Us div class stat counter ,1.0
+authenticated session |authenticated session ,1.0
+methods wrap |methods wrap ,1.0
+two-clause bsd license |two-clause BSD license ,1.0
+ruby file |Ruby file ,1.0
+clove |Cloves ,1.0
+indentation |indentation ,1.0
+basic website |basic website ,1.0
+database column name |database column names ,1.0
+beginning rail |Beginning Rails ,1.0
+previous line redundant |previous line redundant ,1.0
+usual constructor |usual constructor ,1.0
+javascript libraries prototype and script aculo |JavaScript libraries Prototype and Script aculo ,1.0
+episode |episode ,1.0
+ruby s design force |Ruby s design forces ,1.0
+lighttpd |Lighttpd ,1.0
+effective |Effective ,1.0
+global procedure |global procedures ,1.0
+title |title ,1.0
+standard css templating |standard CSS templating ,1.0
+richardson |Richardson ,1.0
+simplest wiki setup |simplest wiki setup ,1.0
+simon st |Simon St ,1.0
+sybase irwi |Sybase IRWI ,1.0
+visitor |visitor ,1.0
+phusion passenger module |Phusion Passenger module ,1.0
+recent exception |recent exception ,1.0
+language name ruby |language name Ruby ,1.0
+statement modifier |statement modifiers ,1.0
+html view |HTML views ,1.0
+additional lambda syntax |additional lambda syntax ,1.0
+clark |Clark ,1.0
+coffeescript and sass |CoffeeScript and Sass ,1.0
+ruby martinfowler |Ruby martinfowler ,1.0
+basic development environment |basic development environment ,1.0
+item print |item prints ,1.0
+individual background |individual background ,1.0
+single unambiguous place |single unambiguous place ,1.0
+reception edit scalability edit |Reception edit Scalability edit ,1.0
+re-open ruby |re-open Ruby ,1.0
+simple ruby web server |simple Ruby web server ,1.0
+activerecordstore |ActiveRecordStore ,1.0
+web framework |web frameworks ,1.0
+design tool dev-tool |Design tool dev-tools ,1.0
+word |word ,1.0
+rest admiration |REST admiration ,1.0
+jeremy |Jeremy ,1.0
+content-oriented application platformradrail |Content-Oriented Application PlatformRadRails ,1.0
+precedence |precedence ,1.0
+pragmatic programmer |Pragmatic Programmers ,1.0
+fully backward compatible |fully backward compatible ,1.0
+intercepting and modifying method |intercepting and modifying method ,1.0
+graph |graphs ,1.0
+rails based project management software rails project management |Rails based project management software rails project management ,1.0
+desire |desire ,1.0
+website |website ,1.0
+const missing native thread |const missing Native threads ,1.0
+minimize confusion |minimize confusion ,1.0
+private instance variable |private instance variable ,1.0
+native plug-in api |Native plug-in API ,1.0
+plugins rail |plugins Rails ,1.0
+programming nu |Programming Nu ,1.0
+view page |View pages ,1.0
+routing engine |routing engine ,1.0
+python and ruby perl |Python and Ruby Perl ,1.0
+information-technology promotion agency |Information-Technology Promotion Agency ,1.0
+sdtime |sdtimes ,1.0
+following code fragment |following code fragment ,1.0
+ruby-doc org |Ruby-Doc org ,1.0
+web application company |web application company ,1.0
+ext js jquery meteor prototype rico script aculo |Ext JS jQuery Meteor Prototype Rico script aculo ,1.0
+en wikipedia |en wikipedia ,1.0
+class and module name |Class and module names ,1.0
+revisions run |revisions Runs ,1.0
+basic wiki clone |basic Wiki clone ,1.0
+file name or database table |file name or database table ,1.0
+modern ruby versions and implementation |Modern Ruby versions and implementations ,1.0
+rubygems org |RubyGems org ,1.0
+tagged logging |Tagged Logging ,1.0
+japanese-language ruby-list mailing list |Japanese-language ruby-list mailing list ,1.0
+create separate wiki |Create separate wikis ,1.0
+multiple character encoding |multiple character encodings ,1.0
+first pass |first pass ,1.0
+agile web development |Agile Web Development ,1.0
+side |sides ,1.0
+english-language ruby-talk mailing list |English-language ruby-talk mailing list ,1.0
+enumerable |Enumerables ,1.0
+gemtalk system |GemTalk Systems ,1.0
+openbase |Openbase ,1.0
+first public release |first public release ,1.0
+no exception |no exception ,1.0
+arkin |Arkin ,1.0
+deployment edit ruby |Deployment edit Ruby ,1.0
+rails test case |Rails test cases ,1.0
+custom gem |custom gems ,1.0
+embed dot graphic |Embed Dot Graphics ,1.0
+workaround |workaround ,1.0
+boolean non-boolean datatype |Boolean non-boolean datatypes ,1.0
+build system |build system ,1.0
+documentation guru |documentation gurus ,1.0
+revision control software |revision control software ,1.0
+script aculo |Script aculo ,1.0
+railscast |Railscasts ,1.0
+practice first |Practice First ,1.0
+recently revised pages multiple web |recently revised pages Multiple webs ,1.0
+day |days ,1.0
+bytecode compiler and most core class |bytecode compiler and most core classes ,1.0
+rawiki ruse ruse |RaWiki Ruse Ruse ,1.0
+existing content |existing contents ,1.0
+released |Released ,1.0
+response |response ,1.0
+regular expression search revision control export |Regular expression search Revision Control Export ,1.0
+git-wiki olelo |Git-wiki Olelo ,1.0
+object-relational mapping system |object-relational mapping system ,1.0
+project management tool |project management tool ,1.0
+simple english-language homepage |simple English-language homepage ,1.0
+view path |view paths ,1.0
+box |box ,1.0
+appeal diy |appeal diy ,1.0
+christmas day |Christmas Day ,1.0
+coral and ruby |Coral and Ruby ,1.0
+open standards promotion center |Open Standards Promotion Center ,1.0
+historic |historic ,1.0
+returns wet |returns wet ,1.0
+respond |responds ,1.0
+color code define method in color |color code define method in color ,1.0
+ryan king |ryan king ,1.0
+uncle sam |Uncle Sam ,1.0
+ruby filename |ruby filename ,1.0
+following year |following years ,1.0
+startup |startup ,1.0
+foldl function |foldl function ,1.0
+front end |front end ,1.0
+different kind collaborative software |different kind collaborative software ,1.0
+largest site |largest sites ,1.0
+higher-order function |higher-order functions ,1.0
+firebird |Firebird ,1.0
+intercepting |intercepting ,1.0
+similar functionality |similar functionality ,1.0
+primitive |primitives ,1.0
+markdown markup |Markdown markup ,1.0
+entire wiki |entire wiki ,1.0
+common mistake |common mistake ,1.0
+master |masters ,1.0
+singleton method |singleton methods ,1.0
+arithmetic custom dispatch behavior |arithmetic Custom dispatch behavior ,1.0
+omission |omission ,1.0
+special behavior |special behavior ,1.0
+respective color |respective color ,1.0
+scalability |scalability ,1.0
+property descriptor |property descriptor ,1.0
+fff class string color |fff class String COLORS ,1.0
+rails support |Rails Support ,1.0
+single-quoted string collections edit constructing |single-quoted string Collections edit Constructing ,1.0
+diff view multilingual support |diff view multilingual Support ,1.0
+editor support |editor Support ,1.0
+copying |COPYING ,1.0
+source enterprise wiki |Source Enterprise Wiki ,1.0
+tradeoff |tradeoff ,1.0
+team |team ,1.0
+maya stodte |Maya Stodte ,1.0
+cooper |Cooper ,1.0
+line break |Line breaks ,1.0
+growing site |growing site ,1.0
+code v t e ruby programming language implementation |code v t e Ruby programming language Implementations ,1.0
+steve jenson |Steve Jenson ,1.0
+table product |table products ,1.0
+live streaming |Live Streaming ,1.0
+restful route |RESTful routes ,1.0
+trademarks edit |Trademarks edit ,1.0
+values differ |values differs ,1.0
+zip |zip ,1.0
+hd video conferencing |HD Video conferencing ,1.0
+single character |single characters ,1.0
+templating system |templating systems ,1.0
+handler clause |handler clause ,1.0
+ruby perl |Ruby Perl ,1.0
+tate |Tate ,1.0
+hierarchical wikis directory structure file upload history |hierarchical wikis directory structure File upload History ,1.0
+step |steps ,1.0
+smalltalk implementation |Smalltalk implementation ,1.0
+comparison operator so array sort |comparison operator so Array sort ,1.0
+empty e g |empty e g ,1.0
+code scalability |code scalability ,1.0
+yellow |yellow ,1.0
+simple wiki plugin |Simple wiki plugin ,1.0
+python and perl |Python and Perl ,1.0
+unix-like system |Unix-like systems ,1.0
+target user |target user ,1.0
+namespace password-protected pages author |namespace Password-protected Pages Authors ,1.0
+hunt |Hunt ,1.0
+vb net property member |VB NET property members ,1.0
+bertel |Bertels ,1.0
+c and perl |C and Perl ,1.0
+previous release |previous releases ,1.0
+custom exception class |custom exception class ,1.0
+rails based project management tool |Rails based project management tool ,1.0
+private wiki |Private wiki ,1.0
+external request |external requests ,1.0
+critic |critics ,1.0
+skinny controller |skinny controllers ,1.0
+graphic |graphic ,1.0
+disable wiki formatting |disable wiki formatting ,1.0
+program control |program control ,1.0
+ruby unicode support |Ruby Unicode support ,1.0
+game design and modification |game design and modification ,1.0
+multiple user |multiple users ,1.0
+online ruby textbook |online ruby textbook ,1.0
+instiki wiki feature |instiki Wiki Features ,1.0
+so-called gotcha |so-called gotchas ,1.0
+private variable |private variable ,1.0
+software comparison |software Comparison ,1.0
+practice |practice ,1.0
+wiki git-wiki git-wiki |Wiki Git-wiki Git-wiki ,1.0
+track change |Track changes ,1.0
+reversible database migration |Reversible Database Migrations ,1.0
+os x implementation |OS X implementation ,1.0
+synonym |synonym ,1.0
+sal caruso |Sal Caruso ,1.0
+features edit |Features edit ,1.0
+faster development mode |faster development mode ,1.0
+common development task |common development tasks ,1.0
+download |Download ,1.0
+postgresql |PostgreSQL ,1.0
+default javascript language |default Javascript language ,1.0
+meantime |meantime ,1.0
+sql server |SQL Server ,1.0
+common practice |common practice ,1.0
+exponential-format |exponential-format ,1.0
+wiki features text formatting anti spam measures diagram |Wiki Features Text Formatting Anti Spam Measures Diagrams ,1.0
+possibility |possibility ,1.0
+scribd |Scribd ,1.0
+failure |failure ,1.0
+professional first |Professional First ,1.0
+tech android app |Tech Android Apps ,1.0
+identifier |identifiers ,1.0
+burk |Burks ,1.0
+windows ce |Windows CE ,1.0
+rubinius blog |Rubinius blog ,1.0
+crash behavior |crash behavior ,1.0
+stability |stability ,1.0
+smalltalk and java |Smalltalk and Java ,1.0
+julia readthedoc |julia readthedocs ,1.0
+speed-up |speed-ups ,1.0
+programmer work |programmer work ,1.0
+format ruby code |format Ruby code ,1.0
+hulu |Hulu ,1.0
+exception object |exception object ,1.0
+similar list |similar list ,1.0
+monkey-patching |monkey-patching ,1.0
+potentially dated statements commons category |potentially dated statements Commons category ,1.0
+most-used web server |most-used web server ,1.0
+birthstone |birthstone ,1.0
+major platforms large standard library |major platforms Large standard library ,1.0
+search form |search form ,1.0
+recent posts understanding pavement installation |Recent Posts Understanding pavement installation ,1.0
+full function |full function ,1.0
+wikimedia common |Wikimedia Commons ,1.0
+video collaboration tool postbox |video Collaboration tool Postbox ,1.0
+app models directory |app models directory ,1.0
+faster development mode and routing engine |faster development mode and routing engine ,1.0
+initial year |initial years ,1.0
+people |people ,1.0
+portability and stability |portability and stability ,1.0
+optional block argument |optional block argument ,1.0
+holzner ph d |Holzner Ph D ,1.0
+ruby web development |Ruby Web Development ,1.0
+activeresource |ActiveResource ,1.0
+www ruby-lang org thursday |Www Ruby-Lang Org Thursday ,1.0
+recent post |Recent Posts ,1.0
+rdoc |RDoc ,1.0
+raise parseerror new foo |raise ParseError new Foo ,1.0
+symbols embedding code |symbols Embedding code ,1.0
+write mode file |write mode file ,1.0
+ruby weekly news |Ruby Weekly News ,1.0
+rpg maker engine |RPG Maker engine ,1.0
+signal wiki rail |Signal Wiki rails ,1.0
+single instance |single instance ,1.0
+gollum wiki |Gollum Wiki ,1.0
+scaling issue |scaling issues ,1.0
+double-quoted string block string |double-quoted string BLOCK Strings ,1.0
+object-oriented scripting language ruby ruby |Object-oriented Scripting Language Ruby Ruby ,1.0
+wiki engine |Wiki engine ,1.0
+nested model form |nested model forms ,1.0
+duck typing |duck typing ,1.0
+return number |return numbers ,1.0
+visual effects library |visual effects library ,1.0
+class-based programming language |Class-based programming languages ,1.0
+leonard |Leonard ,1.0
+method missing and const missing native thread |method missing and const missing Native threads ,1.0
+curse |curses ,1.0
+requests route |requests routes ,1.0
+optional message |optional message ,1.0
+index u |index u ,1.0
+submission |submission ,1.0
+advanced rails recipe |Advanced Rails Recipes ,1.0
+commit right |commit rights ,1.0
+cgi |CGI ,1.0
+totally |totally ,1.0
+cms ruby |CMS Ruby ,1.0
+majority |majority ,1.0
+patrick |Patrick ,1.0
+format |formats ,1.0
+skeleton application |skeleton application ,1.0
+argument e g |argument e g ,1.0
+embedded webserver |embedded webserver ,1.0
+method invocation |method invocation ,1.0
+ruby package |Ruby package ,1.0
+runtime block |runtime Blocks ,1.0
+password protection |password protection ,1.0
+b forde |b Forde ,1.0
+conditional expression |conditional expressions ,1.0
+practical object-oriented design |Practical Object-Oriented Design ,1.0
+languages tag |languages tags ,1.0
+demanding |demanding ,1.0
+class person |class Person ,1.0
+hd video conferencing and video collaboration tool postbox |HD Video conferencing and video Collaboration tool Postbox ,1.0
+packaged gem |packaged gems ,1.0
+class method |class methods ,1.0
+agile scalable web application |agile scalable web applications ,1.0
+carneiro jr |Carneiro Jr ,1.0
+actionmailer |ActionMailer ,1.0
+semenatic |semenatics ,1.0
+downcase split |downcase split ,1.0
+programmer productivity and fun |programmer productivity and fun ,1.0
+significant change |significant changes ,1.0
+full-time developer |full-time developer ,1.0
+binding |binding ,1.0
+variable scope global class instance |variable scope global class instance ,1.0
+introduction |Introduction ,1.0
+classes and instance |classes and instances ,1.0
+evaluating surprise |evaluating surprise ,1.0
+modification |modification ,1.0
+block call jon |block call Jon ,1.0
+map |maps ,1.0
+front-end web server |front-end web server ,1.0
+modifying method |modifying method ,1.0
+readline |readlines ,1.0
+english-speaking world |English-speaking world ,1.0
+c or perl |C or Perl ,1.0
+apis |APIs ,1.0
+import security |import security ,1.0
+chomp |chomp ,1.0
+standardization |Standardization ,1.0
+capitalized variable |capitalized variables ,1.0
+nagachika |nagachika ,1.0
+intro |Intro ,1.0
+grimmer |Grimmer ,1.0
+erb file |erb file ,1.0
+metasploit project |Metasploit Project ,1.0
+long |long ,1.0
+security issue |Security Issue ,1.0
+mongel |Mongel ,1.0
+screencast |screencasts ,1.0
+run-time |run-time ,1.0
+philosophy and design edit |Philosophy and design edit ,1.0
+future |future ,1.0
+edit move |Edit move ,1.0
+ios counterpart |iOS counterpart ,1.0
+e end metaprogramming edit |e end Metaprogramming edit ,1.0
+getter method |getter methods ,1.0
+consequence |consequence ,1.0
+no starch press |No Starch Press ,1.0
+opal |Opal ,1.0
+web services actionpack activesupport and actionmailer |web services ActionPack ActiveSupport and ActionMailer ,1.0
+no distinction |no distinction ,1.0
+c interactive ruby shell |C Interactive Ruby Shell ,1.0
+ironruby and rail |IronRuby and Rails ,1.0
+languages edit |languages edit ,1.0
+internet |Internet ,1.0
+early idea |early ideas ,1.0
+edd |Edd ,1.0
+tireless effort |tireless effort ,1.0
+gollum page |Gollum pages ,1.0
+language expert |language experts ,1.0
+milestone |milestone ,1.0
+alt |alt ,1.0
+group sort reverse |group sort reverse ,1.0
+sample |samples ,1.0
+ironruby rails question |IronRuby Rails Question ,1.0
+delete pages page |delete pages Page ,1.0
+exceptions edit |Exceptions edit ,1.0
+end file |end file ,1.0
+michael |Michael ,1.0
+merb project |Merb project ,1.0
+github |Github ,1.0
+wiki functionality |wiki functionality ,1.0
+tandem |tandem ,1.0
+basic ruby code |basic Ruby code ,1.0
+exception instance |exception instance ,1.0
+cherokee |Cherokee ,1.0
+move |Move ,1.0
+c exclusively |C exclusively ,1.0
+c or java |C or Java ,1.0
+parrot virtual machine |Parrot virtual machine ,1.0
+lightweight soap |lightweight SOAP ,1.0
+class sale |class Sale ,1.0
+java implementation |Java implementation ,1.0
+functions variable |functions variables ,1.0
+concise code |concise code ,1.0
+usemod compatible rendering engine |UseMod compatible rendering engine ,1.0
+enumerations and array |enumerations and arrays ,1.0
+minimiz |minimizes ,1.0
+parametric polymorphism |parametric polymorphism ,1.0
+open-source graphics device driver comparison |open-source graphics device driver Comparison ,1.0
+laurent |Laurent ,1.0
+thread safety |thread safety ,1.0
+early day |early days ,1.0
+null |null ,1.0
+separate hash object |separate hash object ,1.0
+existing package |existing packages ,1.0
+public property |public property ,1.0
+b c d e f http blog |b c d e f http blog ,1.0
+extension |extension ,1.0
+incredibly important internal dogfooding group |incredibly important internal dogfooding group ,1.0
+multiple inheritance |multiple inheritance ,1.0
+retry |retry ,1.0
+criticisms and comparison |criticisms and comparisons ,1.0
+mysql or postgresql |MySQL or PostgreSQL ,1.0
+mac os x |Mac OS X ,1.0
+proc new x closure value x proc new closure |Proc new x closure value x Proc new closure ,1.0
+ruby-specific virtual machine |Ruby-specific virtual machine ,1.0
+flow control keyword |flow control keywords ,1.0
+ruby-based queuing system |Ruby-based queuing system ,1.0
+bath understanding |Bath Understanding ,1.0
+bigger number |bigger number ,1.0
+iron ruby |Iron Ruby ,1.0
+interaction edit |Interaction edit ,1.0
+alteration |alteration ,1.0
+lucky stiff other application archives document |lucky stiff Other Application Archives Document ,1.0
+increasing awareness |increasing awareness ,1.0
+no icu support |no ICU support ,1.0
+c bytecode virtual machine |C bytecode virtual machine ,1.0
+bliki rails wiki rawiki rawiki |bliki Rails Wiki RaWiki RaWiki ,1.0
+exception handling and garbage collection |exception handling and garbage collection ,1.0
+actioncontroller |ActionController ,1.0
+regular-expression search |regular-expression searches ,1.0
+cookiestore |CookieStore ,1.0
+tighter |tighter ,1.0
+unnecessary duplication |unnecessary duplication ,1.0
+-block |-BLOCK ,1.0
+subsequent unexpected result |subsequent unexpected results ,1.0
+basic unit |basic unit ,1.0
+ruby vm |Ruby VM ,1.0
+ruby help |Ruby help ,1.0
+dave |Dave ,1.0
+pair fire |pair fire ,1.0
+end yielding |end Yielding ,1.0
+javascript libraries prototype |JavaScript libraries Prototype ,1.0
+introspection reflection |introspection reflection ,1.0
+html and xml |HTML and XML ,1.0
+c programming language |C Programming languages ,1.0
+nice day |Nice Day ,1.0
+specific external web-browser request |specific external web-browser request ,1.0
+russian doll caching |Russian Doll Caching ,1.0
+module prepend |Module prepend ,1.0
+trademark |trademarks ,1.0
+metric |metrics ,1.0
+commit and diff view multilingual support |commit and diff view multilingual Support ,1.0
+well-grounded rubyist |Well-Grounded Rubyist ,1.0
+yaml |YAML ,1.0
+github wiki |GitHub Wikis ,1.0
+rights reserved |Rights Reserved ,1.0
+reply |reply ,1.0
+ability |ability ,1.0
+bugfix |bugfixes ,1.0
+hiawatha |Hiawatha ,1.0
+threat post |Threat Post ,1.0
+unearthing proto-ruby |unearthing proto-Ruby ,1.0
+field |field ,1.0
+entire middleware infrastructure |entire middleware infrastructure ,1.0
+stable version |stable versions ,1.0
+variety mark |variety mark ,1.0
+doc |docs ,1.0
+turbolink |Turbolinks ,1.0
+builtwith trend |BuiltWith Trends ,1.0
+introspection reflection and metaprogramming |introspection reflection and metaprogramming ,1.0
+library update |library updates ,1.0
+japanese government agency |Japanese government agency ,1.0
+regular expression |regular expressions ,1.0
+similar language |similar languages ,1.0
+variable data type |variable data type ,1.0
+dmoz v t e ruby programming language implementation |DMOZ v t e Ruby programming language Implementations ,1.0
+login |login ,1.0
+ruby syntax highlighting |Ruby Syntax Highlighting ,1.0
+database table |database table ,1.0
+gratis versus libre long-term support open-source software outline spdx |Gratis versus libre Long-term support Open-source software Outline SPDX ,1.0
+capitalization |capitalization ,1.0
+restoration safety seasonal security systems vapor barriers walls window |Restoration Safety Seasonal Security Systems Vapor Barriers Walls windows ,1.0
+width |width ,1.0
+xml |XML ,1.0
+james |James ,1.0
+single-pass interpreted language |single-pass interpreted language ,1.0
+computer engineer |computer engineers ,1.0
+practical jruby |Practical JRuby ,1.0
+open-source software hosting facilities formerly proprietary software |open-source software hosting facilities Formerly proprietary software ,1.0
+module name |module names ,1.0
+portability |portability ,1.0
+redcloth |RedCloth ,1.0
+assigning hash |assigning hash ,1.0
+ruby author yukihiro matsumoto |Ruby author Yukihiro Matsumoto ,1.0
+group person new bob |group Person new Bob ,1.0
+toy language |toy language ,1.0
+just-in-time compilation |just-in-time compilation ,1.0
+top |top ,1.0
+haml |HAML ,1.0
+design edit |design edit ,1.0
+internal member |internal members ,1.0
+ruby development |Ruby development ,1.0
+person age |person age ,1.0
+valid floating point literal |valid floating point literals ,1.0
+daemon |daemons ,1.0
+success |success ,1.0
+tutorial ruby |TUTORIAL ruby ,1.0
+aggregate |aggregate ,1.0
+references edit |References edit ,1.0
+rails e-commerce |Rails E-Commerce ,1.0
+industry standard |industry standards ,1.0
+tim |Tim ,1.0
+bytecode compiler |bytecode compiler ,1.0
+course |course ,1.0
+object system |object system ,1.0
+de facto reference interpreter |de facto reference interpreter ,1.0
+true object-oriented language oo feature |true object-oriented language OO features ,1.0
+shopify |Shopify ,1.0
+earlier version |earlier versions ,1.0
+bill venner |Bill Venners ,1.0
+file user rb |file user rb ,1.0
+smell |smell ,1.0
+multiple assignment |multiple assignment ,1.0
+expressions and statement |expressions and statements ,1.0
+evan weaver |evan weaver ,1.0
+launch |launch ,1.0
+practical utility |practical utility ,1.0
+learning material |learning materials ,1.0
+contact |Contact ,1.0
+passenger maxcer |Passenger Maxcer ,1.0
+first mailing list |first mailing list ,1.0
+exception handling |exception handling ,1.0
+magic global |magic global ,1.0
+promotional use |promotional use ,1.0
+thomas |Thomas ,1.0
+ruby metaprogramming |Ruby metaprogramming ,1.0
+step-by-step process lifestyle question |step-by-step process Lifestyle Questions ,1.0
+rails logo trademark status |Rails Logo Trademark Status ,1.0
+kaspersky lab security news service |Kaspersky Lab Security News Service ,1.0
+mysql ab |MySQL AB ,1.0
+biggest rails site |biggest Rails site ,1.0
+inject method iterate |inject method iterates ,1.0
+sample ruby code |sample Ruby code ,1.0
+attr accessor define |attr accessor defines ,1.0
+object-oriented scripting language |object-oriented scripting language ,1.0
+specific format |specific format ,1.0
+optimized piece |optimized pieces ,1.0
+power |power ,1.0
+different approach |different approach ,1.0
+english speaker |English speakers ,1.0
+access control list |Access control lists ,1.0
+haml and mustache |HAML and Mustache ,1.0
+lack |lack ,1.0
+server using mechanism |server using mechanisms ,1.0
+tex |TeX ,1.0
+c and java |C and Java ,1.0
+wiki engine gollum gollum |Wiki Engine Gollum Gollum ,1.0
+rails master |Rails master ,1.0
+following example |following examples ,1.0
+primary design goal |primary design goal ,1.0
+parameter variable |Parameter variables ,1.0
+ruby on rails guide |Ruby on Rails Guides ,1.0
+block local variables variable |block local variables variables ,1.0
+initially two name |Initially two names ,1.0
+parameter |parameters ,1.0
+swapping-in alternative templating language |swapping-in alternative templating languages ,1.0
+user interface aspect |user interface aspects ,1.0
+ruby subversion source repository |Ruby Subversion source repository ,1.0
+summer |summer ,1.0
+reason |reason |Reason ,0.75
+administrator |Administrators |administrators ,0.75
+encyclopedia jump |encyclopedia Jump ,0.6666666666666666
+navigation |navigation ,0.6666666666666666
+add entry |Add entry ,0.5
+well-known software engineering pattern |well-known software engineering patterns ,0.5
+paradigm |paradigms ,0.5
+rbw |rbw ,0.5
+typing discipline duck |Typing discipline duck ,0.5
+dynamic major implementations ruby mri |dynamic Major implementations Ruby MRI ,0.5
+david heinemeier hansson developer |David Heinemeier Hansson Developer ,0.5
+functional object-oriented and imperative |functional object-oriented and imperative ,0.5
+accordance |accordance ,0.5
+deleted |deleted ,0.5
+dynamic scope lexical |dynamic Scope lexical ,0.5
+development status active written |Development status Active Written ,0.5
+active record pattern |active record pattern ,0.5
+falcon |Falcon ,0.5
+notice |notice ,0.5
+dynamic reflective object-oriented general-purpose programming language |dynamic reflective object-oriented general-purpose programming language ,0.5
+reia |Reia ,0.5
+well-known software engineering patterns and paradigm |well-known software engineering patterns and paradigms ,0.5
+ruby paradigm |Ruby Paradigm ,0.5
+software portal free software |software portal Free software ,0.5
+discussion page |discussion page ,0.5
+move tab |Move tab ,0.5
+bot |bot ,0.5
+object-oriented imperative functional reflective designed |object-oriented imperative functional reflective Designed ,0.5
+mruby influenced |Mruby Influenced ,0.5
+full-stack framework |full-stack framework ,0.5
+redmine refinery cms r cont |Redmine Refinery CMS R cont ,0.5
+potion |potion ,0.5
+rubinius ruby |Rubinius Ruby ,0.5
+wikibooks ruby |Wikibooks Ruby ,0.5
+ruby on rails original author |Ruby on Rails Original author ,0.5
+open source web application framework |open source web application framework ,0.5
+yukihiro matz matsumoto |Yukihiro Matz Matsumoto ,0.5
+recent change |recent changes ,0.5
+yukihiro matsumoto developer yukihiro matsumoto |Yukihiro Matsumoto Developer Yukihiro Matsumoto ,0.5
+website www ruby-lang |Website www ruby-lang ,0.5
+dynamic type system |dynamic type system ,0.5
+rename |rename ,0.5
+rails rubygems rubyspec s shoes gui toolkit |Rails RubyGems RubySpec S Shoes GUI toolkit ,0.5
+speedy renaming section |speedy renaming section ,0.5
+functional object-oriented |functional object-oriented ,0.5
+en wikipedia org w index php title category |en wikipedia org w index php title Category ,0.5
+multiple programming paradigm |multiple programming paradigms ,0.5
+category page |category page ,0.5
+automatic memory management |automatic memory management ,0.5
+rails core team initial release |Rails Core Team Initial release ,0.5
+j jekyll software j cont |J Jekyll software J cont ,0.5
+git hub |Git Hub ,0.25

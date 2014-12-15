@@ -101,10 +101,10 @@ public class FileManager {
 //                System.out.println(ary[1]);
 //                System.out.println(ary[0].split("\\|")[0]);
                 if(ary.length>1) {
-                    map.put(ary[0].split("\\|")[0], Double.parseDouble(ary[1]));
+                    map.put(ary[0].split("\\|")[0].trim(), Double.parseDouble(ary[1]));
                 }
                 else {
-                    map.put(ary[0].split("\\|")[0],0.0);
+                    map.put(ary[0].split("\\|")[0].trim(),0.0);
                 }
 
             }
@@ -178,28 +178,25 @@ public class FileManager {
     public HashMap<String, Double> RemoveDuplications(HashMap<String, Double> map) {
         String shortKey;
         HashMap<String, Double> clone = (HashMap<String, Double>) map.clone();
+        double score=0;
         for (String key : map.keySet()) {
+            score=map.get(key);
             for (String otherKey : map.keySet()) {
-                if (key.equals(otherKey)){
-                    break;
-                }
-                if (otherKey.contains(key) && clone.containsKey(key)){
-                    clone.put(otherKey,getMax(map.get(key),map.get(otherKey)));
-                    clone.remove(key);
-                    key=otherKey;
-                }
-                if (key.contains(otherKey) && clone.containsKey(otherKey)){
-                    clone.put(key, getMax(map.get(key),map.get(otherKey)));
+                if (key.toLowerCase().contains(otherKey.toLowerCase()) && !key.equals(otherKey)){
+
+                    score+=map.get(otherKey);
                     clone.remove(otherKey);
                 }
             }
-
+            if(clone.containsKey(key)) {
+                clone.put(key, score);
+            }
         }
         clone= (HashMap<String, Double>) SortByComparator(clone);
 
-        for (String s : clone.keySet()) {
-            System.out.println(s);
-        }
+//        for (String s : clone.keySet()) {
+//            System.out.println(s);
+//        }
 
         return clone;
     }
@@ -214,4 +211,31 @@ public class FileManager {
     }
 
 
+    public HashMap<String, Double> GetWeightMap(String weightMapPath) {
+        File file=new File(weightMapPath);
+        HashMap<String, Double> weightsMap=new HashMap<String,Double>();
+        if (file.exists()){
+            weightsMap = FileToMap(file);
+        }
+        return weightsMap;
+    }
+
+    public void WriteFile(String destinationPath, HashMap<String, Double> weightMap) {
+        boolean f = new File(destinationPath).mkdirs();
+        File file=new File(destinationPath);
+        // creates the file
+        try {
+            if(!file.exists())
+                file.createNewFile();
+            FileWriter writer = new FileWriter(file);
+            for (Map.Entry<String, Double> entry : weightMap.entrySet()) {
+                writer.write(entry.getKey()+","+entry.getValue().toString()+"\n");
+            }
+            writer.flush();
+            writer.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

@@ -1,0 +1,2132 @@
+sql |SQL ,276.0
+mysql |MySQL |Mysql ,116.8
+standard |standards |standard |Standards ,59.0
+iso |ISO ,50.0
+oracle |Oracle ,43.0
+database |Databases |databases |database ,39.666666666666664
+language |languages |language ,39.0
+iec |IEC ,39.0
+sun |Sun ,38.0
+null |Nulls |NULLs |nulls |NULL |Null ,37.0
+iso iec |ISO IEC ,36.0
+ibm |IBM |ibm ,30.0
+unknown |Unknown ,26.0
+release |release ,24.0
+query |query ,21.0
+row |row |rows ,20.0
+system |systems |system ,20.0
+innodb |InnoDB ,20.0
+select |SELECT ,20.0
+server |servers |server ,19.0
+book |Book |books |book ,19.0
+clause |clauses |Clauses |clause ,19.0
+true |True ,19.0
+table |tables |table ,18.5
+false |False ,18.0
+mysql ab |MySQL AB ,18.0
+column |column |columns ,17.0
+postgresql |PostgreSQL ,17.0
+xml |XML ,17.0
+support |support |Support ,16.5
+storage engine |storage engine |storage engines ,16.0
+edit |edit ,15.5
+replication |replication |Replication ,15.0
+date |dates |DATE |date ,15.0
+statement |Statements |statements ,14.0
+expression |expression |Expressions |expressions ,14.0
+front |front ,14.0
+management |Management |management ,13.5
+sun microsystem |Sun Microsystems ,13.0
+open source |Open Source |open source ,13.0
+type |Types |type ,13.0
+proprietary |proprietary ,13.0
+example |Example |example ,12.0
+set |SET |set ,12.0
+application |application |Applications |applications ,12.0
+percona |Percona ,12.0
+available |available ,11.5
+dbms |DBMSs |DBMS ,11.0
+model |model ,11.0
+feature |features |Features ,10.666666666666666
+java |Java ,10.5
+mysql database |MySQL database |MySQL databases |MySQL Database ,10.333333333333334
+title |title |Title ,10.333333333333334
+update |UPDATE ,10.0
+following |following ,10.0
+sql psm |SQL PSM ,10.0
+relational model |Relational Model |relational model ,10.0
+comparison |comparisons |Comparisons |Comparison ,10.0
+vendor |vendor |vendors |Vendors ,10.0
+relational database |relational database |relational databases ,10.0
+definition |definition |Definition ,10.0
+backup |backups |backup ,10.0
+object |object |objects ,10.0
+result |result |results ,9.5
+information |Information |information ,9.5
+software |software ,9.5
+developer |developer |developers |Developer ,9.0
+sql standard |SQL standard |SQL standards ,9.0
+data type |Data types |Data Types |data types ,9.0
+press release |Press release |press release ,9.0
+cloud |cloud ,9.0
+dev mysql |Dev mysql |dev mysql ,9.0
+mariadb |MariaDB |Mariadb ,9.0
+sql server |SQL Server ,9.0
+mysql workbench |MySQL Workbench ,9.0
+user |Users |users |user ,9.0
+development |development ,9.0
+value |values ,9.0
+part |parts |part ,9.0
+chamberlin |Chamberlin ,9.0
+number |number |Numbers ,8.5
+tool |tools |Tools ,8.0
+implementation |implementations ,8.0
+group |GROUP |group ,8.0
+operation |operation |operations ,8.0
+ansi |ANSI ,8.0
+service |services |Service |service ,8.0
+linux |Linux ,8.0
+front end |front end ,8.0
+master |master ,8.0
+use |use ,8.0
+original |original ,8.0
+control |control ,8.0
+google |Google ,7.666666666666667
+case |cases |case |CASE ,7.5
+source |source |sources ,7.333333333333333
+syntax |syntax ,7.0
+function |functions |function ,7.0
+database language |Database languages |database language ,7.0
+optional feature |optional features ,7.0
+facebook |Facebook ,7.0
+window |Windows ,7.0
+semantics |semantics |Semantics ,7.0
+codd |Codd ,7.0
+return |returns ,7.0
+michael |Michael ,7.0
+monty |Monty ,7.0
+version |version ,6.5
+scale |scale S |scale ,6.0
+rollback |ROLLBACK |rollback ,6.0
+production release |production release ,6.0
+performance |performance ,6.0
+slave |slave |slaves ,6.0
+mysql server |MySQL servers |MySQL server ,6.0
+guide |guide |Guide ,6.0
+beta |beta ,6.0
+archived |Archived ,6.0
+database administrator |Database administrators |database administrator |database administrators ,6.0
+arora |Arora ,6.0
+sql code |SQL code ,6.0
+microsoft |Microsoft ,5.5
+extension |extensions ,5.5
+transaction |transactions |transaction ,5.333333333333333
+application developer |application developer |Application developers |application developers ,5.0
+isbn |isbn ,5.0
+datalog |Datalog ,5.0
+three-valued logic |three-valued logic ,5.0
+full |full ,5.0
+monty wideniu |Monty Widenius ,5.0
+history |history |History ,5.0
+price |price ,5.0
+android |Android ,5.0
+distinct |DISTINCT ,5.0
+article |article |Articles ,5.0
+aggregation |aggregation ,5.0
+base |Base ,5.0
+heidisql |HeidiSQL ,5.0
+precision |precision ,5.0
+percona toolkit |Percona Toolkit ,5.0
+php |PHP ,5.0
+mysql enterprise |MySQL Enterprise ,5.0
+procedural |procedural ,5.0
+sql-based |SQL-based ,5.0
+manipulation |manipulation ,5.0
+informix |Informix ,5.0
+merger |Mergers |merger ,5.0
+database management system |Database management systems |database management system ,5.0
+boyce |Boyce ,5.0
+list |list |lists ,5.0
+mysql fabric |MySQL Fabric ,5.0
+innodb storage engine |InnoDB Storage Engine |InnoDB storage engine ,5.0
+needed |needed ,5.0
+fork |fork ,5.0
+subquery |subquery ,5.0
+acquisition |acquisition |acquisitions ,4.5
+relational database management system |relational database management systems |relational database management system ,4.5
+oracle corporation |Oracle Corporation ,4.2
+sequel |SEQUEL |Sequel ,4.0
+zone |ZONE |zone ,4.0
+change |Changes |changes ,4.0
+os x |OS X ,4.0
+improvement |improvements ,4.0
+truth |truth ,4.0
+world |World |world ,4.0
+michael wideniu |Michael Widenius ,4.0
+sybase |Sybase ,4.0
+lifecycle support |Lifecycle Support ,4.0
+donald d |Donald D ,4.0
+sql cli |SQL CLI ,4.0
+sqlite |SQLite ,4.0
+addition |addition ,4.0
+row value expression |row value expression ,4.0
+predicate |predicate ,4.0
+integer |integer ,4.0
+edition |editions ,4.0
+sql foundation |SQL Foundation ,4.0
+count |count |COUNT ,4.0
+official |official ,4.0
+way |ways ,4.0
+variable |variables ,4.0
+unsourced statement |unsourced statements ,4.0
+commit |COMMIT |commits ,4.0
+information technology |Information Technology |Information technology ,4.0
+create |CREATE ,4.0
+innodb storage |InnoDB storage ,4.0
+grant |grant |GRANT ,4.0
+company |company ,4.0
+project |projects ,4.0
+drizzle |Drizzle ,4.0
+phpmyadmin |phpMyAdmin ,4.0
+commission |Commission ,4.0
+license |license ,4.0
+approval |approval ,4.0
+msql |mSQL ,4.0
+group by clause |GROUP BY clause ,4.0
+mysql customer |MySQL Customers |MySQL Customer ,4.0
+insert |INSERT ,4.0
+timestamp |TIMESTAMP ,4.0
+american national standards institute |American National Standards Institute ,4.0
+rackspace |Rackspace ,4.0
+lamp |LAMP ,4.0
+default |default ,4.0
+div |div ,4.0
+order |order ,4.0
+view |views |view ,3.6666666666666665
+compliance |compliance ,3.5
+structured query language |Structured Query Language ,3.5
+rdbm |RDBMS ,3.5
+programming language |programming languages |programming language ,3.5
+trigger |trigger |triggers ,3.5
+event |event ,3.0
+mysqlperformanceblog |Mysqlperformanceblog |mysqlperformanceblog ,3.0
+lorentz |Lorentz ,3.0
+structured query language sql |Structured Query Language SQL ,3.0
+hermann |Hermann ,3.0
+drop |DROP ,3.0
+roeser |Roeser ,3.0
+youtube |YouTube ,3.0
+mysql reference manual |MySQL Reference Manual ,3.0
+contract |contract |contracts ,3.0
+apple |Apple ,3.0
+sundeep amor |Sundeep Amor ,3.0
+sql statement |SQL statements ,3.0
+angela |Angela ,3.0
+informationweek |InformationWeek ,3.0
+redwood city |Redwood City ,3.0
+european commission |European Commission ,3.0
+david axmark |David Axmark ,3.0
+java programming language |Java Programming Language ,3.0
+procedure |procedures ,3.0
+alter |ALTER ,3.0
+community |community ,3.0
+webscalesql |WebScaleSQL ,3.0
+oracle sql |Oracle SQL ,3.0
+sql implementation |SQL implementation |SQL implementations ,3.0
+terremark |Terremark ,3.0
+mary beth |Mary Beth ,3.0
+administration |administration ,3.0
+ashdown |Ashdown ,3.0
+web |Web ,3.0
+sql database |SQL database |SQL databases ,3.0
+raymond f boyce |Raymond F Boyce ,3.0
+geeta |Geeta ,3.0
+alpha |Alpha |alpha ,3.0
+open-source |open-source ,3.0
+structure |structure ,3.0
+source code |source code ,3.0
+partitioning |partitioning ,3.0
+donald d chamberlin |Donald D Chamberlin ,3.0
+concept |concept |concepts ,3.0
+conjunction |conjunction ,3.0
+vika |Vikas ,3.0
+copyright |copyright ,3.0
+universal quantification |Universal quantification |universal quantification ,3.0
+application sql |application sql ,3.0
+work |work |WORK ,3.0
+varying n |VARYING n ,3.0
+xtradb |XtraDB ,3.0
+xquery |XQuery ,3.0
+abraham |Abraham ,3.0
+start transaction |START TRANSACTION ,3.0
+oracle database documentation library |Oracle Database Documentation Library ,3.0
+desktop |Desktop ,3.0
+foundation sql foundation |Foundation SQL Foundation ,3.0
+libreoffice base |LibreOffice Base ,3.0
+dba |DBAs ,3.0
+mandatory |mandatory ,3.0
+code |code ,3.0
+potentially dated statement |potentially dated statements ,3.0
+owner |owners ,3.0
+gpl version |GPL versions |GPL version ,3.0
+step |Step ,3.0
+percona server |Percona Server ,3.0
+low |low ,3.0
+community edition |Community Edition |community edition ,3.0
+iso standard |ISO standards ,3.0
+site |site ,3.0
+existing table |existing table ,3.0
+condition |conditions |condition ,3.0
+failure |failure ,3.0
+iphone |iPhone ,3.0
+sql programming tool |SQL programming tools ,3.0
+usage |usage ,3.0
+single server |single server ,3.0
+delete |DELETE ,3.0
+basic element |Basic Elements ,3.0
+baer |Baer ,3.0
+standard sql |Standard SQL ,3.0
+storage |storage ,3.0
+operator |operators ,3.0
+configuration |configuration ,3.0
+berkeley db |Berkeley DB ,3.0
+application owner |application owner |application owners ,3.0
+progress software |Progress Software ,3.0
+routine |routines ,3.0
+bellamkonda |Bellamkonda ,3.0
+functionality |functionality ,3.0
+system r |System R ,3.0
+high availability |high availability ,3.0
+product |product |products ,3.0
+database system |database systems ,3.0
+account |account ,3.0
+large shared data bank |Large Shared Data Banks ,3.0
+features include |features include ,3.0
+persistent effect |persistent effect |persistent effects ,3.0
+sql language |SQL language ,3.0
+perl |Perl ,3.0
+alternative |alternatives |alternative ,3.0
+nosql |NoSQL ,3.0
+ship |ships ,3.0
+api |API ,3.0
+mysql front end |MySQL front end ,3.0
+diana |Diana ,3.0
+sql routine |SQL Routines ,3.0
+following example |following example ,3.0
+run |runs |run |Run ,2.5
+progress |progress |Progress ,2.5
+effect |effect |effects ,2.5
+citation |citation |citations ,2.5
+collection |collection |collections ,2.5
+question |questions |question ,2.3333333333333335
+package |packages ,2.3333333333333335
+definition schemas sql schema |Definition Schemas SQL Schemata ,2.0
+query language |query language ,2.0
+array |array ,2.0
+compatibility |compatibility ,2.0
+comparing |comparing ,2.0
+integrity constraint |integrity constraints ,2.0
+aggregation function |aggregation function ,2.0
+data definition |Data definition ,2.0
+join |joins ,2.0
+gnu gpl |GNU GPL ,2.0
+xml query language |XML query languages |XML Query Language ,2.0
+oracle solaris |Oracle Solaris ,2.0
+renovate |Renovate ,2.0
+mysql command-line tool |MySQL command-line tool |MySQL Command-Line Tool ,2.0
+iec standard |IEC standards ,2.0
+equal |Equal ,2.0
+object language binding |Object Language Bindings ,2.0
+report |reports |report ,2.0
+odbc interface |ODBC interface ,2.0
+redundancy |redundancy ,2.0
+mandatory and optional feature |mandatory and optional features ,2.0
+prepared statement |prepared statements ,2.0
+patch |patches ,2.0
+clarification |clarification ,2.0
+sql dialect |SQL dialect ,2.0
+structured english query language |Structured English Query Language ,2.0
+international organization |International Organization ,2.0
+interface |interfaces ,2.0
+treatment |treatment ,2.0
+multiple table |multiple tables ,2.0
+sort |sort ,2.0
+mysql performance blog |MySQL Performance Blog ,2.0
+order by clause |ORDER BY clause ,2.0
+removal |removal ,2.0
+direct comparison |direct comparisons ,2.0
+book table |Book table ,2.0
+opensolari |OpenSolaris ,2.0
+quarter |quarter ,2.0
+legal |Legal ,2.0
+development project |development projects ,2.0
+tuple |tuples ,2.0
+significant digit |significant digits ,2.0
+acquisition impact |acquisition impacts ,2.0
+freebsd |FreeBSD ,2.0
+sql ds |SQL DS ,2.0
+information and definition schemas sql schema |Information and Definition Schemas SQL Schemata ,2.0
+hearing |hearing ,2.0
+decimal |decimal ,2.0
+command line tool |command line tools ,2.0
+partner |Partners |partners ,2.0
+capttofu |Capttofu ,2.0
+suno |SunOS ,2.0
+antitrust |antitrust |Antitrust ,2.0
+postgresql contributor |PostgreSQL contributors ,2.0
+microsoft access |Microsoft Access ,2.0
+mysqlmusings blogspot |mysqlmusings blogspot ,2.0
+fragment |fragment ,2.0
+communication |Communications ,2.0
+xtradb storage engine |XtraDB storage engine ,2.0
+data record |data records ,2.0
+subject |subject ,2.0
+merge |MERGE ,2.0
+constraint |constraints |constraint ,2.0
+wikipedia |Wikipedia ,2.0
+standards compliance |standards compliance ,2.0
+replacement |replacement ,2.0
+stream processing |stream processing ,2.0
+international standard |international standard ,2.0
+asterisk |asterisk ,2.0
+standardization iso |Standardization ISO ,2.0
+application package |Application Packages ,2.0
+relational calculus |relational calculus ,2.0
+database workbench |Database Workbench ,2.0
+instance |instance ,2.0
+update account set amount |UPDATE Account SET amount ,2.0
+following feature |following features ,2.0
+commons category |Commons category ,2.0
+size |size ,2.0
+ryan |Ryan ,2.0
+pronouncing sql |Pronouncing SQL ,2.0
+information system |Information Systems ,2.0
+file |file |File ,2.0
+deployment |deployments ,2.0
+director |directors ,2.0
+positive |positive ,2.0
+class |class ,2.0
+affordable |affordable ,2.0
+si kw l |si kw l ,2.0
+including detail |including details ,2.0
+width string |width string ,2.0
+multi-master |Multi-Master ,2.0
+big |Big ,2.0
+member |member ,2.0
+mysql gui tool |MySQL GUI Tools ,2.0
+truncate statement |TRUNCATE statement |TRUNCATE statements ,2.0
+author |authors ,2.0
+acid |ACID ,2.0
+lance |Lance ,2.0
+career |Careers ,2.0
+maatkit |Maatkit ,2.0
+select statement |SELECT statements ,2.0
+mysql community server |MySQL Community Server ,2.0
+urlocker |Urlocker ,2.0
+revoke |REVOKE ,2.0
+relational software |Relational Software ,2.0
+computing machinery |Computing Machinery ,2.0
+framework sql framework |Framework SQL Framework ,2.0
+agreement |agreement ,2.0
+select isbn |SELECT isbn ,2.0
+youtube google |YouTube Google ,2.0
+innobase oy |Innobase OY ,2.0
+data mining |data mining |Data mining ,2.0
+flickr |Flickr ,2.0
+critic |critics |Critics ,2.0
+missing information |missing information ,2.0
+distinct from row value expression |DISTINCT FROM row value expression ,2.0
+download |Downloads ,2.0
+linux distribution |Linux distributions ,2.0
+oreillynet |Oreillynet ,2.0
+stat counter |stat counter ,2.0
+joomla stat |joomla stats ,2.0
+comparison predicate |comparison predicate ,2.0
+openvm |OpenVMS ,2.0
+swedish company mysql ab |Swedish company MySQL AB ,2.0
+web-based front end |Web-based front end ,2.0
+navicat |Navicat ,2.0
+sqlj |SQLJ ,2.0
+platform |platform |platforms ,2.0
+american national standards institute ansi |American National Standards Institute ANSI ,2.0
+pixel |pixel ,2.0
+n bit |n bits ,2.0
+preprint |preprint ,2.0
+alan |Alan ,2.0
+s-q-l or sequel |S-Q-L or Sequel ,2.0
+status |status ,2.0
+stable |Stable ,2.0
+first |First ,2.0
+swedish company |Swedish company ,2.0
+interfaces and package |interfaces and packages ,2.0
+mac |Mac ,2.0
+sql multimedia |SQL Multimedia ,2.0
+modification |modification |modifications ,2.0
+machine image |machine image ,2.0
+dbms implementation |DBMS implementations ,2.0
+mysql version |MySQL versions |MySQL version ,2.0
+queries e g |queries e g ,2.0
+memory |memory ,2.0
+mysql development |MySQL development ,2.0
+draft |draft ,2.0
+ms sql server |MS SQL Server ,2.0
+reality |reality ,2.0
+xml-related specification |XML-Related Specifications ,2.0
+committee |committee ,2.0
+web application |web applications ,2.0
+series |series ,2.0
+hardware |Hardware ,2.0
+interpretation |interpretation ,2.0
+techrepublic |TechRepublic ,2.0
+item |items ,2.0
+sql table |SQL tables |SQL table ,2.0
+www mysql |www mysql ,2.0
+data change |data changes ,2.0
+acronym |acronym ,2.0
+ada |Ada ,2.0
+greater |Greater ,2.0
+federated storage engine |Federated Storage Engine ,2.0
+database object |database objects ,2.0
+virginia |Virginia ,2.0
+option |options ,2.0
+table e g |table e g ,2.0
+language construct |language constructs ,2.0
+floss license exception |FLOSS License Exception ,2.0
+toad |Toad ,2.0
+eben moglen |Eben Moglen ,2.0
+related project |Related projects ,2.0
+front-end |front-end ,2.0
+chrome |Chrome ,2.0
+development and administration |development and administration ,2.0
+program flow |program flow ,2.0
+ability |ability ,2.0
+pattern |pattern ,2.0
+documentation |Documentation |documentation ,2.0
+text |text ,2.0
+maintenance |maintenance ,2.0
+select list |select list ,2.0
+portability |portability ,2.0
+separate |separate ,2.0
+set operation |set operations ,2.0
+jpql |JPQL ,2.0
+form |form |forms ,2.0
+database language sql |Database Language SQL ,2.0
+language element |language elements ,2.0
+xtrabackup |XtraBackup ,2.0
+judge sari |Judge Saris ,2.0
+operating system |operating system ,2.0
+s-q-l |S-Q-L ,2.0
+database management |database management ,2.0
+shard |shards ,2.0
+code base |code base ,2.0
+term |terms ,2.0
+negative |negative ,2.0
+michael monty wideniu |Michael Monty Widenius ,1.6666666666666667
+secure |secure |Secure ,1.6666666666666667
+bug |bugs ,1.6666666666666667
+page |page |Page ,1.6666666666666667
+dispute |disputes |Dispute ,1.5
+component |component |components ,1.5
+ddl |DDL ,1.5
+savepoint |savepoints |SAVEPOINT ,1.5
+introduction |Introduction |introduction ,1.5
+trademark |trademark ,1.5
+stored procedure |stored procedures ,1.5
+log |logs |log ,1.3333333333333333
+settlement talk |settlement talks ,1.0
+following chart |following chart ,1.0
+additional support |additional support ,1.0
+mysql skip navigation link |MySQL Skip navigation links ,1.0
+tpcc-mysql benchmark |tpcc-mysql benchmark ,1.0
+audio pronunciation english |audio pronunciation English ,1.0
+clause eliminate |clause eliminates ,1.0
+center detailed answer |Center Detailed answers ,1.0
+movement |movement ,1.0
+db-engines ranking |DB-Engines Ranking ,1.0
+role |roles ,1.0
+klint |Klint ,1.0
+date and time syntax |date and time syntax ,1.0
+usage summary |usage summary ,1.0
+distinction |distinction ,1.0
+ab developer |AB Developer ,1.0
+jyoti clarification |Jyoti clarification ,1.0
+java package |Java packages ,1.0
+j r opel |J R Opel ,1.0
+full-featured database management system |full-featured database management system ,1.0
+optional keywords and clause |optional keywords and clauses ,1.0
+home-brewed lexical analyzer |home-brewed lexical analyzer ,1.0
+feature set |feature set ,1.0
+auto-generated value |auto-generated values ,1.0
+mary e treseler |Mary E Treseler ,1.0
+logical approach |Logical approaches ,1.0
+null-specific comparison |Null-specific comparison ,1.0
+mathematics |Mathematics ,1.0
+procedural and object-oriented programmability |procedural and object-oriented programmability ,1.0
+sql development |SQL development ,1.0
+licensing agreement |licensing agreement ,1.0
+sleepycat software |Sleepycat Software ,1.0
+trial |Trial ,1.0
+sweden |Sweden ,1.0
+aj blk |aj blk ,1.0
+important element |important element ,1.0
+gnu general public license |GNU General Public License ,1.0
+entire suite |entire suite ,1.0
+abbreviation |abbreviation ,1.0
+classic transfer |classic transfer ,1.0
+column naming convention |column naming conventions ,1.0
+european commission eventually |European Commission eventually ,1.0
+mysql developers review |MySQL Developers Review ,1.0
+gigaomnimedia |GigaOmniMedia ,1.0
+adword |AdWords ,1.0
+ascending order |ascending order ,1.0
+internet engineering task force |Internet Engineering Task Force ,1.0
+basis |basis ,1.0
+exception |Exception |exception ,1.0
+mysql server approximately every two month |MySQL Server approximately every two months ,1.0
+basil |Basil ,1.0
+sco unixware |SCO UnixWare ,1.0
+mysql front-end tool |MySQL front-end tools ,1.0
+sql-based dbms implementation |SQL-based DBMS implementations ,1.0
+interchange |interchange ,1.0
+basic |BASIC ,1.0
+sqlbuddy |SQLBuddy ,1.0
+jan |Jan ,1.0
+non-negative integer |non-negative integer ,1.0
+object type |object types ,1.0
+example sql code request |example SQL code Requests ,1.0
+first commercially available implementation |first commercially available implementation ,1.0
+tpc-h run |TPC-H Run ,1.0
+ipod touch |iPod touch ,1.0
+ndl |NDL ,1.0
+faq |FAQ ,1.0
+offers native innodb hot backup |Offers native InnoDB hot backup ,1.0
+criticism |criticism ,1.0
+n or nvarchar n |n or NVARCHAR n ,1.0
+procedural and control-of-flow statement |procedural and control-of-flow statements ,1.0
+dev community |Dev Community ,1.0
+conforming database system |conforming database system ,1.0
+major cloud provider |major cloud providers ,1.0
+single statement |single statement ,1.0
+object query language ottoql qbe query |Object Query Language OttoQL QBE Query ,1.0
+jan wildeboer |Jan Wildeboer ,1.0
+meta discus |Meta Discuss ,1.0
+justice |Justice ,1.0
+java persistence api |Java Persistence API ,1.0
+education |education ,1.0
+matsunobu |Matsunobu ,1.0
+cursor definition |cursor definitions ,1.0
+structured type |structured types ,1.0
+tour help tour start |tour help Tour Start ,1.0
+original developer |Original Developer ,1.0
+finkle |Finkle ,1.0
+coldfusion |ColdFusion ,1.0
+books table |Books table ,1.0
+null sql |Null SQL ,1.0
+booking |Booking ,1.0
+monitoring tool |Monitoring tools ,1.0
+table and index structure |table and index structure ,1.0
+advantage |advantages ,1.0
+n characters national character n |n characters NATIONAL CHARACTER n ,1.0
+administration front end |administration front end ,1.0
+final result |final result ,1.0
+openbsd |OpenBSD ,1.0
+b ron van der meyden |b Ron van der Meyden ,1.0
+mysql enterprise subscription |MySQL Enterprise subscription ,1.0
+pl i |PL I ,1.0
+timestamp with time zone or timestamptz |TIMESTAMP WITH TIME ZONE or TIMESTAMPTZ ,1.0
+radix binary or decimal |radix binary or decimal ,1.0
+help |help ,1.0
+sql functions programmer |SQL Functions Programmer ,1.0
+enforceable |enforceable ,1.0
+strong major implementation |strong Major implementations ,1.0
+dbas and application developer |DBAs and application developers ,1.0
+css skin |CSS skins ,1.0
+boolean null |BOOLEAN NULL ,1.0
+sales tax from book where price |sales tax FROM Book WHERE price ,1.0
+referential integrity constraint |referential integrity constraints ,1.0
+preparation |preparation ,1.0
+multi-year extension |multi-year extension ,1.0
+lamp linux apache mysql php perl python |LAMP Linux Apache MySQL PHP Perl Python ,1.0
+monty program |Monty Program ,1.0
+milestones edit notable milestone |Milestones edit Notable milestones ,1.0
+primary server |primary server ,1.0
+health |health ,1.0
+needed character varying n |needed CHARACTER VARYING n ,1.0
+positive integer |positive integer ,1.0
+personal usage |personal usage ,1.0
+kanaracu |Kanaracus ,1.0
+session |sessions ,1.0
+daily task |daily tasks ,1.0
+tuple calculus |tuple calculus ,1.0
+querying |querying ,1.0
+condition handling |condition handling ,1.0
+innodb i o |InnoDB I O ,1.0
+assistance |assistance ,1.0
+datalog influenced cql |Datalog Influenced CQL ,1.0
+features edit mysql |Features edit MySQL ,1.0
+common value |common values ,1.0
+space |spaces ,1.0
+common mysql feature |common MySQL features ,1.0
+minor update |minor updates ,1.0
+acid compliance |ACID compliance ,1.0
+ps preprint note |PS preprint note ,1.0
+important areas e g |important areas e g ,1.0
+snapshot |snapshots ,1.0
+inclusive range cost |inclusive range Cost ,1.0
+xml form |XML form ,1.0
+enhancement |Enhancements ,1.0
+mysql federated table |MySQL Federated Tables ,1.0
+request or proposal |request or proposal ,1.0
+i si kw l |i si kw l ,1.0
+hierarchical model list |Hierarchical model List ,1.0
+os x mysql |OS X MySQL ,1.0
+common sequel |common sequel ,1.0
+remote mysql server |remote MySQL servers ,1.0
+cloud platform |cloud platforms ,1.0
+truth table |truth tables ,1.0
+official pronunciation |official pronunciation ,1.0
+exact numeric |exact numeric ,1.0
+pre-ga release |pre-GA release ,1.0
+language-specific apis |language-specific APIs ,1.0
+fraction function |FRACTION functions ,1.0
+jim |Jim ,1.0
+action |action ,1.0
+tortious interference |tortious interference ,1.0
+select decode |SELECT DECODE ,1.0
+categories iso standard |Categories ISO standards ,1.0
+database objects enable |database objects enable ,1.0
+persistent database language routine |persistent database language routines ,1.0
+tutorial |tutorial ,1.0
+table row |table rows ,1.0
+trunc |TRUNC ,1.0
+single query |single query ,1.0
+constituent component |constituent components ,1.0
+lamp-based web application |LAMP-based web application ,1.0
+hire date |Hire Date ,1.0
+cascon deep |CASCON Deep ,1.0
+oracle store |Oracle stores ,1.0
+aspiration |aspirations ,1.0
+average case |average case ,1.0
+breakpoints view set variable |Breakpoints View Set Variables ,1.0
+notable employee |notable employees ,1.0
+operators and function |operators and functions ,1.0
+third-party innodb storage engine |third-party InnoDB storage engine ,1.0
+outer query |outer query ,1.0
+unclustered configuration |unclustered configurations ,1.0
+current development status |current development statuses ,1.0
+proprietary sql extension |proprietary SQL extensions ,1.0
+security |security ,1.0
+relational algebra and tuple relational calculus |relational algebra and tuple relational calculus ,1.0
+additional sales tax column |additional sales tax column ,1.0
+circular replication |Circular Replication ,1.0
+fixpoint computation |fixpoint computations ,1.0
+iso iec initial release |ISO IEC Initial release ,1.0
+uppercase lowercase keyword |uppercase lowercase keyword ,1.0
+san francisco |San Francisco ,1.0
+preliminary hearing |preliminary hearing ,1.0
+precision numeric precision |PRECISION NUMERIC precision ,1.0
+subsequent commit operation |subsequent COMMIT operation ,1.0
+sql-based extension |SQL-based extensions ,1.0
+ibm san jose research laboratory |IBM San Jose Research Laboratory ,1.0
+code future |Code Futures ,1.0
+technique |Technique |techniques ,1.0
+iphone device |iPhone device ,1.0
+discussion |Discussion ,1.0
+regular expression matching |regular expression matching ,1.0
+c respectively c cobol fortran mumps pascal |C respectively C COBOL Fortran MUMPS Pascal ,1.0
+production |production ,1.0
+feedback |feedback ,1.0
+obvious such example |obvious such examples ,1.0
+different database system |different database systems ,1.0
+hot backup utility |hot backup utility ,1.0
+o reilly |O Reilly ,1.0
+hibernate |Hibernate ,1.0
+revoke select |REVOKE SELECT ,1.0
+system r research team |System R research team ,1.0
+javascript enabled img src |JavaScript enabled img src ,1.0
+vmsmysql org |vmsmysql org ,1.0
+gnu gpl question |GNU GPL Questions ,1.0
+california |California ,1.0
+database server |database server ,1.0
+relative simplicity |relative simplicity ,1.0
+homeimprovement |HomeImprovement ,1.0
+aperture |Aperture ,1.0
+future release |future releases ,1.0
+whitemarsh information systems corporation |Whitemarsh Information Systems Corporation ,1.0
+neighbors painting permits planning remodel |neighbors Painting Permits Planning remodel ,1.0
+sql example |SQL Examples ,1.0
+dollars jane |dollars Jane ,1.0
+alphabetical order |alphabetical order ,1.0
+called upsert |called upsert ,1.0
+bsdi |BSDi ,1.0
+following form |following form ,1.0
+sql tables and query result |SQL tables and query results ,1.0
+direct interaction |direct interaction ,1.0
+sun microsystems announces agreement |Sun Microsystems Announces Agreement ,1.0
+sql e g |SQL e g ,1.0
+charles |Charles ,1.0
+variable e g |variable e g ,1.0
+select from book where price |SELECT FROM Book WHERE price ,1.0
+pamela jones |Pamela Jones ,1.0
+g pelagatti |G Pelagatti ,1.0
+data domain |data domain ,1.0
+amazon web service |Amazon Web Services ,1.0
+signal and resignal statement |SIGNAL and RESIGNAL statement ,1.0
+boolean unknown |BOOLEAN Unknown ,1.0
+reuter |Reuters ,1.0
+dyi energy efficiency energy efficient faucet |DYI energy efficiency energy efficient Faucets ,1.0
+yahoo |Yahoo ,1.0
+national institute |National Institute ,1.0
+mozilla |Mozilla ,1.0
+iso romanization |ISO romanizations ,1.0
+xa transaction |XA transactions ,1.0
+u s navy |U S Navy ,1.0
+website www mysql |Website www mysql ,1.0
+assignment |assignment ,1.0
+shelley |Shelley ,1.0
+transitive closure triggers support |transitive closure triggers support ,1.0
+mysql open source license |MySQL Open Source License ,1.0
+monitoring instance |monitoring instance ,1.0
+system r prototype |System R prototype ,1.0
+true and false |True and False ,1.0
+data insert |data insert ,1.0
+wamp software bundle installer |WAMP software bundle installers ,1.0
+c postgresql |C PostgreSQL ,1.0
+recent appearance |recent appearance ,1.0
+sql cli procedure call |SQL CLI procedure calls ,1.0
+managed mysql cloud |Managed MySQL cloud ,1.0
+mysql founder |MySQL founders ,1.0
+irix |IRIX ,1.0
+sql-based dbms implementation information |SQL-based DBMS implementation information ,1.0
+english type rdbms license gpl version |English Type RDBMS License GPL version ,1.0
+mysql storage engine |MySQL storage engine ,1.0
+germany |Germany ,1.0
+access ordinary sql-data |access ordinary SQL-data ,1.0
+dual-licensing distribution |dual-licensing distribution ,1.0
+wikipedia our continued mysql value |Wikipedia Our Continued MySQL Values ,1.0
+declaration |declaration ,1.0
+access databases jet |Access databases JET ,1.0
+soql |SOQL ,1.0
+heidisql grid editing feature |HeidiSQL Grid editing features ,1.0
+word null |word NULL ,1.0
+security and authorization specification |security and authorization specifications ,1.0
+encyclopedia jump |encyclopedia Jump ,1.0
+commit grouping |Commit grouping ,1.0
+foreign key |foreign keys ,1.0
+navigation |navigation ,1.0
+unix timestamp |UNIX TIMESTAMP ,1.0
+larger scale |larger scales ,1.0
+oxford english dictionary |Oxford English Dictionary ,1.0
+major feature |Major features ,1.0
+expensive proprietary software stack |expensive proprietary software stacks ,1.0
+english-speaking database professional |English-speaking database professionals ,1.0
+including trigger |including triggers ,1.0
+negated existential quantification |negated existential quantification ,1.0
+ebs elastic block store |EBS Elastic Block Store ,1.0
+medium scale single-server deployment |medium scale single-server deployments ,1.0
+progress software corporation |Progress Software Corporation ,1.0
+breach |breach ,1.0
+central element |central elements ,1.0
+multiple cpu core |multiple CPU cores ,1.0
+nvarchar n |NVARCHAR n ,1.0
+optional keyword |optional keywords ,1.0
+multi-threaded sql database server |multi-threaded sql database server ,1.0
+mysql adapter |MySQL adapter ,1.0
+database resource |database resources ,1.0
+early life |early life ,1.0
+delete disable |delete disable ,1.0
+premium support service |premium support services ,1.0
+bigint float |BIGINT FLOAT ,1.0
+null e g |NULL e g ,1.0
+myth |Myths ,1.0
+first version |first version ,1.0
+semicolon |semicolon ,1.0
+merger regulation procedure |merger regulation procedure ,1.0
+commit and rollback |COMMIT and ROLLBACK ,1.0
+smallint |SMALLINT ,1.0
+novell netware |Novell NetWare ,1.0
+common deployment model |common deployment models ,1.0
+comparison case sensitivity |comparison case sensitivity ,1.0
+create alter rename drop |CREATE ALTER RENAME DROP ,1.0
+resilient execution |resilient execution ,1.0
+incremental backup |incremental backups ,1.0
+eyewitness account |Eyewitness account ,1.0
+revision |revisions ,1.0
+legitimate business model |Legitimate Business Model ,1.0
+tour help blog chat data legal privacy policy work |tour help blog chat data legal privacy policy work ,1.0
+access ordinary sql-data and xml document |access ordinary SQL-data and XML documents ,1.0
+topic |topic ,1.0
+published version |published version ,1.0
+dates article |dates Articles ,1.0
+no gui tool |no GUI tools ,1.0
+string to date |string TO DATE ,1.0
+calculating value |calculating values ,1.0
+java sql olb |Java SQL OLB ,1.0
+fabric-aware version |Fabric-aware versions ,1.0
+data management standard |data management standards ,1.0
+start |start ,1.0
+data manipulation language dml |Data Manipulation Language DML ,1.0
+database vendor |database vendors ,1.0
+sql standard mirror |SQL standard mirrors ,1.0
+database tracking |database tracking ,1.0
+mysql life mailing list |MySQL Life mailing list ,1.0
+mysql support manual |MySQL Support Manual ,1.0
+virtual machine image cloud user |Virtual Machine Image cloud users ,1.0
+complexity |complexity ,1.0
+dell software chive |Dell Software Chive ,1.0
+line |line ,1.0
+data management |Data management ,1.0
+web host |web hosts ,1.0
+basic feature |basic features ,1.0
+variable-width nchar string bit string |variable-width NCHAR string Bit strings ,1.0
+diplomica verlag |Diplomica Verlag ,1.0
+transactional relational database |transactional relational databases ,1.0
+non-scalar type |non-scalar types ,1.0
+mamp |MAMP ,1.0
+end |End ,1.0
+ohloh |Ohloh ,1.0
+placeholder |placeholder ,1.0
+statement condition signals and resignals cursors and local variable |statement condition signals and resignals cursors and local variables ,1.0
+database structure |database structure ,1.0
+embedded database library unicode support c |Embedded database library Unicode support c ,1.0
+view object definition |view object definitions ,1.0
+sql specification |SQL specification ,1.0
+book order by title |Book ORDER BY title ,1.0
+callaghan |Callaghan ,1.0
+accessing mysql database |accessing MySQL databases ,1.0
+typical database application |typical database applications ,1.0
+mysql reference manual mysql client program |MySQL Reference Manual MySQL Client Programs ,1.0
+different edition |different editions ,1.0
+programming edit mysql |Programming edit MySQL ,1.0
+community-developed fork |community-developed fork ,1.0
+mass |Mass ,1.0
+open source tool |open source tools ,1.0
+drop table example |DROP TABLE example ,1.0
+define foreign-data wrappers and datalink type |define foreign-data wrappers and datalink types ,1.0
+mysql innodb zfs best practice |MySQL Innodb ZFS Best Practices ,1.0
+creation and management |creation and management ,1.0
+correctly stores millisecond |correctly stores milliseconds ,1.0
+integrated system |integrated system ,1.0
+mark |mark ,1.0
+sqlmaestro group mysql gui tool |SQLMaestro Group MySQL GUI Tools ,1.0
+current use |current use ,1.0
+mysql copyright and trademark |MySQL copyright and trademark ,1.0
+commercial product |commercial products ,1.0
+technology nist |Technology NIST ,1.0
+graphical administration application |graphical administration applications ,1.0
+original development |Original development ,1.0
+full-text indexing |Full-text indexing ,1.0
+wikileak |WikiLeaks ,1.0
+super subtype |super subtypes ,1.0
+policy |policy ,1.0
+multiple connection |multiple connections ,1.0
+higher-scale |higher-scale ,1.0
+help edit |help edit ,1.0
+paper |Papers ,1.0
+state |state ,1.0
+create alter rename drop and truncate statement |CREATE ALTER RENAME DROP and TRUNCATE statements ,1.0
+mariadb knowledge base |MariaDB Knowledge Base ,1.0
+market share |Market Share ,1.0
+null special marker |Null special marker ,1.0
+timestamp column type |TIMESTAMP column type ,1.0
+epictetus |Epictetus ,1.0
+queried table |queried tables ,1.0
+judge patti sari |Judge Patti Saris ,1.0
+secure and reliable fun |secure and reliable Fun ,1.0
+production-tested software |production-tested software ,1.0
+no new release |no new releases ,1.0
+data warehousing |data warehousing ,1.0
+duplicate row |duplicate rows ,1.0
+addison wesley |Addison Wesley ,1.0
+linux apache mysql perl php python |Linux Apache MySQL Perl PHP Python ,1.0
+key part |key part ,1.0
+sql grammar |SQL grammar ,1.0
+good citizen |good citizens ,1.0
+end user |end users ,1.0
+address |Address ,1.0
+web site |Web sites ,1.0
+multiple possible value |multiple possible values ,1.0
+san carlos airport |San Carlos Airport ,1.0
+database design modeling |database design modeling ,1.0
+finding aid |Finding Aid ,1.0
+sql default |SQL defaults ,1.0
+connector j |Connector J ,1.0
+google chrome web browser |Google Chrome Web Browser ,1.0
+select into syntax |SELECT INTO syntax ,1.0
+ibm fellow pulse conference |IBM Fellow Pulse conference ,1.0
+freedom |freedom ,1.0
+quick overview |quick overview ,1.0
+local variable |local variables ,1.0
+android cell-phone operating system |Android cell-phone operating system ,1.0
+wiktionary textbook |Wiktionary Textbooks ,1.0
+nested query |nested query ,1.0
+search |searches ,1.0
+acm association |ACM Association ,1.0
+promote new open source db engine |Promote New Open Source DB Engines ,1.0
+default storage engine |default storage engine ,1.0
+sql operator |SQL operators ,1.0
+partitioned table |Partitioned tables ,1.0
+proprietary extension |proprietary extensions ,1.0
+partial rewrite |partial rewrite ,1.0
+cloud computing market |cloud computing markets ,1.0
+basic item |basic items ,1.0
+recursive queries e g |recursive queries e g ,1.0
+delete disable or enable user-account |delete disable or enable user-accounts ,1.0
+full unicode support |full unicode support ,1.0
+vax computer |VAX computers ,1.0
+critical business system |critical business systems ,1.0
+mysql apis |MySQL APIs ,1.0
+book isbn |Book isbn ,1.0
+administrative task |administrative tasks ,1.0
+computer |Computers ,1.0
+insert join merge null order |Insert Join Merge Null Order ,1.0
+wikidata article |Wikidata Articles ,1.0
+n bits numbers integer |n bits Numbers INTEGER ,1.0
+program understanding and maintenance |program understanding and maintenance ,1.0
+cwiki apache org confluence display drill sql functions thursday |Cwiki Apache Org Confluence Display Drill Sql Functions Thursday ,1.0
+adhere |adhere ,1.0
+large table |large tables ,1.0
+execution |execution ,1.0
+hugh darwen |Hugh Darwen ,1.0
+disable trigger |disable triggers ,1.0
+rdsm |RDSMS ,1.0
+guy harrison |Guy Harrison ,1.0
+france |France ,1.0
+prepare select truncate union update |Prepare Select Truncate Union Update ,1.0
+sql based interfaces and package |SQL based interfaces and packages ,1.0
+acquire mysql |Acquire MySQL ,1.0
+google releases improved mysql code |Google Releases Improved MySQL Code ,1.0
+gpl-only fork |GPL-only fork ,1.0
+boolean type variable |BOOLEAN type variables ,1.0
+sano |Sanos ,1.0
+babcock |Babcock ,1.0
+jooq os cross-platform file format |jOOQ OS Cross-platform File format ,1.0
+mysql official website mysql site |MySQL Official website MySQL site ,1.0
+oracle corporation initial release |Oracle Corporation Initial release ,1.0
+chomicki |Chomicki ,1.0
+relational operator |relational operator ,1.0
+arjen |Arjen ,1.0
+failover |failover ,1.0
+date help |date help ,1.0
+donald d chamberlin charles babbage institute |Donald D Chamberlin Charles Babbage Institute ,1.0
+mike |Mike ,1.0
+reserved keyword |reserved keyword ,1.0
+varchar n |VARCHAR n ,1.0
+date time field |date time fields ,1.0
+broad subset |broad subset ,1.0
+light |Lights ,1.0
+primary meta-data storage format |primary meta-data storage format ,1.0
+melton |Melton ,1.0
+complete guide |Complete Guide ,1.0
+sale |Sales ,1.0
+desktop software |desktop software ,1.0
+docs oracle |Docs oracle ,1.0
+improved performance and reliability |improved performance and reliability ,1.0
+user-defined partitioning |user-defined partitioning ,1.0
+diagnostics |diagnostics ,1.0
+ryan k stephen |Ryan K Stephens ,1.0
+different syntax |different syntax ,1.0
+department |Department ,1.0
+search mysql screenshot |search MySQL Screenshot ,1.0
+table operation |table operations ,1.0
+columns and row |columns and rows ,1.0
+organization |organizations ,1.0
+database engine |database engine ,1.0
+application-performance problem |application-performance problems ,1.0
+release model |Release Model ,1.0
+superior speed |superior speed ,1.0
+implemented functionality |implemented functionality ,1.0
+employee |employee ,1.0
+existing object |existing object ,1.0
+binary portability |binary portability ,1.0
+popular commercial and proprietary sql dbms |popular commercial and proprietary SQL DBMSs ,1.0
+thunderbird email reader |Thunderbird Email Reader ,1.0
+higher transactional throughput |higher transactional throughput ,1.0
+references edit change |References edit Changes ,1.0
+operand |operands ,1.0
+xampp |XAMPP ,1.0
+andy |Andy ,1.0
+standalone database server |standalone database server ,1.0
+downtime |downtime ,1.0
+procedural extensions sql |Procedural extensions SQL ,1.0
+open source platform |Open Source Platform ,1.0
+evaluierung |Evaluierung ,1.0
+master server synchroniz |master server synchronizes ,1.0
+recorded pronunciation |recorded pronunciations ,1.0
+mysql reference manual mysql tools family |MySQL Reference Manual MySQL Tools Family ,1.0
+confirmed |confirmed ,1.0
+correlated subquery |correlated subquery ,1.0
+common maintenance and administrative task |common maintenance and administrative tasks ,1.0
+design database structure |design database structures ,1.0
+computer science professor ron van der meyden |computer science professor Ron van der Meyden ,1.0
+implementor |implementors ,1.0
+variables and parameter |variables and parameters ,1.0
+full-text indexing and searching b |Full-text indexing and searching b ,1.0
+postgresql server programming |PostgreSQL server programming ,1.0
+dbstudio |DBStudio ,1.0
+ibm archive |IBM Archives ,1.0
+xml and conventional sql-data |XML and conventional SQL-data ,1.0
+mysql ship |MySQL ships ,1.0
+hdd raid |HDD RAID ,1.0
+negotiation |negotiations ,1.0
+creation |creation ,1.0
+dynamic infrastructure guide international ibm |Dynamic infrastructure GUIDE International IBM ,1.0
+hp converged cloud |HP Converged Cloud ,1.0
+service time summary |service time summary ,1.0
+multi-master replication |Multi-master replication ,1.0
+direct equality comparison |direct equality comparisons ,1.0
+wrong result bug |wrong result bugs ,1.0
+recent research |recent research ,1.0
+arie jones |Arie Jones ,1.0
+date value |date values ,1.0
+commit statement complete |COMMIT statement completes ,1.0
+including flow |including flow ,1.0
+define foreign-data wrapper |define foreign-data wrappers ,1.0
+sql paradigm |SQL Paradigm ,1.0
+data description |Data Description ,1.0
+additional feature |additional features ,1.0
+call-level interface sql cli |Call-Level Interface SQL CLI ,1.0
+numerics or date |numerics or dates ,1.0
+runtime behavior |runtime behavior ,1.0
+interview |Interview ,1.0
+openoffice org openoffice |OpenOffice org OpenOffice ,1.0
+proposal |proposal ,1.0
+databases demystified |Databases Demystified ,1.0
+accuracy |accuracy ,1.0
+original standard |original standard ,1.0
+desktop software and web application |desktop software and web applications ,1.0
+software application |software application ,1.0
+reliability |reliability ,1.0
+finley |Finley ,1.0
+zero mechanical latency |zero mechanical latency ,1.0
+unified access |unified access ,1.0
+forward-thinking corporate it manager |forward-thinking corporate IT Managers ,1.0
+timestamp with time zone |TIMESTAMP WITH TIME ZONE ,1.0
+different irc channels and forum |different IRC channels and forums ,1.0
+partition |partitions ,1.0
+well-known front end |well-known front ends ,1.0
+zip archive |zip archive ,1.0
+imperative language |imperative language ,1.0
+mysql mysql |MySQL MySQL ,1.0
+dbforge studio |dbForge Studio ,1.0
+smaller slimmer |smaller slimmer ,1.0
+sebastapol |Sebastapol ,1.0
+downloads documentation developer zone products services partners customer |Downloads Documentation Developer Zone Products Services Partners Customers ,1.0
+default innodb storage engine |default InnoDB Storage Engine ,1.0
+relational algebra |relational algebra ,1.0
+michael widenius founder |Michael Widenius Founder ,1.0
+data definition language |data definition language ,1.0
+select book title |SELECT Book title ,1.0
+objects query |objects query ,1.0
+scope |scope ,1.0
+external data object language bindings information |External Data Object Language Bindings Information ,1.0
+timetz |TIMETZ ,1.0
+optional join subclaus |optional JOIN subclauses ,1.0
+binary package |binary package ,1.0
+select avg price |SELECT AVG price ,1.0
+real |REAL ,1.0
+affiliate |affiliate |affiliates ,1.0
+program-unit |program-unit ,1.0
+placeholder or mark |placeholder or mark ,1.0
+morgan kaufmann |Morgan Kaufmann ,1.0
+century year month date |century year month date ,1.0
+multiple slave |multiple slaves ,1.0
+database administration |Database administration ,1.0
+news event |News Events ,1.0
+iata code |IATA code ,1.0
+fast flash card virident tachion |Fast Flash card Virident tachIOn ,1.0
+intent |intent ,1.0
+print |print ,1.0
+cloud computing platform |cloud computing platforms ,1.0
+heroku and jelastic |Heroku and Jelastic ,1.0
+systems e g |systems e g ,1.0
+internet assigned numbers authority |Internet Assigned Numbers Authority ,1.0
+xml document |XML documents ,1.0
+select query |SELECT query ,1.0
+individual data record |individual data records ,1.0
+itunes software |iTunes software ,1.0
+larger set |larger set ,1.0
+stored value |stored values ,1.0
+respective member |respective members ,1.0
+free-software-open source project |Free-software-open source projects ,1.0
+external tool |external tool ,1.0
+case when then else end expression |case when then else end expression ,1.0
+handle |handle ,1.0
+begin transaction |BEGIN TRANSACTION ,1.0
+official set |official set ,1.0
+viewing result |viewing results ,1.0
+musing |Musings ,1.0
+faster version |faster version ,1.0
+schema |schemata ,1.0
+managed hosting terremark |Managed Hosting Terremark ,1.0
+resource-usage |resource-usage ,1.0
+co-founder michael wideniu |co-founder Michael Widenius ,1.0
+nusphere gemini table |NuSphere Gemini table ,1.0
+www tcx se |www tcx se ,1.0
+storage device |storage device ,1.0
+sqlpro sql client |SQLPro SQL Client ,1.0
+sqlj application |SQLJ applications ,1.0
+release data lock |release data locks ,1.0
+proceeding |Proceedings ,1.0
+thomasch |Thomasch ,1.0
+windows phone |Windows Phone ,1.0
+affordable annual subscription |affordable annual subscription ,1.0
+cut paper object browsing edit |cut paper Object browsing edit ,1.0
+instance equality |instance equality ,1.0
+noscript-warning stack overflow |noscript-warning Stack Overflow ,1.0
+wikipedia semi-protected page |Wikipedia semi-protected pages ,1.0
+supports backup |Supports backup ,1.0
+user-defined type |user-defined types ,1.0
+scalar value |scalar values ,1.0
+multiple relational database |multiple relational databases ,1.0
+tcx datakonsult ab |TcX DataKonsult AB ,1.0
+original foundation |original foundation ,1.0
+master-slave replication |Master-slave replication ,1.0
+radix binary |radix binary ,1.0
+absence |absence ,1.0
+unknown truth |Unknown truth ,1.0
+fast stable |fast stable ,1.0
+factor |factors ,1.0
+third-party proprietary |Third-party proprietary ,1.0
+structure and integrity constraint |structure and integrity constraints ,1.0
+available proprietary mysql front end |available proprietary MySQL front ends ,1.0
+multi-paradigm designed |Multi-paradigm Designed ,1.0
+overview |overview ,1.0
+real world |real world ,1.0
+high-profile large-scale website |high-profile large-scale websites ,1.0
+single for-profit firm |single for-profit firm ,1.0
+chrome and firefox browser |Chrome and Firefox browsers ,1.0
+detail |detail ,1.0
+proactive monitoring tool |proactive monitoring tools ,1.0
+group by book title |GROUP BY Book title ,1.0
+page title |page title ,1.0
+reliable fun |reliable Fun ,1.0
+sql language element |SQL language elements ,1.0
+session browsing edit |Session browsing edit ,1.0
+alcatel-lucent |Alcatel-Lucent ,1.0
+unknown value |Unknown values ,1.0
+timing |timing ,1.0
+sql standards document |SQL standards documents ,1.0
+query optimizer |query optimizer ,1.0
+index |indexes ,1.0
+duplicate argument |duplicate arguments ,1.0
+unconditional approval |unconditional approval ,1.0
+relation |relations ,1.0
+notable cloud-based mysql service |Notable cloud-based MySQL services ,1.0
+mysql download |MySQL Downloads ,1.0
+database service provider |database service provider ,1.0
+sub-second precision |sub-second precision ,1.0
+languages including perl python tcl |languages including Perl Python Tcl ,1.0
+mover recent comment |Mover Recent Comments ,1.0
+main distribution |main distributions ,1.0
+joining table |joining tables ,1.0
+user contribution |user contributions ,1.0
+external links edit |External links edit ,1.0
+rollback discard |ROLLBACK discards ,1.0
+prior version |prior versions ,1.0
+international business machine |International Business Machines ,1.0
+low-end alternative |low-end alternative ,1.0
+wikileaks cable offers new insights into oracle-sun deal |Wikileaks Cable Offers New Insights Into Oracle-Sun Deal ,1.0
+scale or decimal precision |scale or DECIMAL precision ,1.0
+optimization setting |optimization settings ,1.0
+lower level |lower level ,1.0
+party organisation |party organisations ,1.0
+facility |facility ,1.0
+closely related but separate standard |closely related but separate standard ,1.0
+joomla |Joomla ,1.0
+references or source |references or sources ,1.0
+c and c |C and C ,1.0
+microsoft window |Microsoft Windows ,1.0
+iphone languish |iPhone languishes ,1.0
+easy-to-read graph |easy-to-read graphs ,1.0
+sql query |SQL query ,1.0
+transact-sql reference |Transact-SQL Reference ,1.0
+fsf |FSF ,1.0
+myodbc |MyODBC ,1.0
+variety |variety ,1.0
+minimal effort |minimal effort ,1.0
+b chapple |b Chapple ,1.0
+subquery factoring |subquery factoring ,1.0
+community common development |Community Common Development ,1.0
+searching b |searching b ,1.0
+mysql university |MySQL University ,1.0
+legal and acquisition impacts edit |Legal and acquisition impacts edit ,1.0
+included command line tool |included command line tools ,1.0
+mandatory feature |mandatory features ,1.0
+acme media property contact us div class stat counter |Acme Media Property Contact Us div class stat counter ,1.0
+popular choice |popular choice ,1.0
+positive review |positive reviews ,1.0
+grouping |grouping ,1.0
+date or time data type |DATE or TIME data types ,1.0
+central intelligence agency |Central Intelligence Agency ,1.0
+no category |no category ,1.0
+phase commit |phase commit ,1.0
+backup software |backup software ,1.0
+compare |Compare ,1.0
+different sql implementation |Different SQL Implementations ,1.0
+dbedit |DBEdit ,1.0
+glass education |Glass Education ,1.0
+view call stack |View Call Stack ,1.0
+sql editor |SQL editors ,1.0
+major problem |major problems ,1.0
+relational operator or aggregation function |relational operator or aggregation function ,1.0
+motto |motto ,1.0
+url-based query method |URL-based query method ,1.0
+enforceable and binding license |enforceable and binding license ,1.0
+terremark and rackspace offer |Terremark and Rackspace offer ,1.0
+resignal statement |RESIGNAL statement ,1.0
+equivalent decode |equivalent DECODE ,1.0
+science teaching |Science Teaching ,1.0
+software foundation |Software Foundation ,1.0
+comprehensive set |comprehensive set ,1.0
+correspond |correspond ,1.0
+uk-based hawker siddeley aircraft company |UK-based Hawker Siddeley aircraft company ,1.0
+fedora and ubuntu |Fedora and Ubuntu ,1.0
+further improvement |Further improvements ,1.0
+windows macintosh |Windows Macintosh ,1.0
+original author |original authors ,1.0
+boston |Boston ,1.0
+performance monitoring edit |Performance monitoring edit ,1.0
+union |UNION ,1.0
+blogs oracle |Blogs oracle ,1.0
+access |Access ,1.0
+sqlite consortium |SQLite Consortium ,1.0
+truncate table example |TRUNCATE TABLE example ,1.0
+international character set national character |international character set NATIONAL CHARACTER ,1.0
+site stack overflow careers stack |site stack overflow careers Stack ,1.0
+oral history interview |Oral history interview ,1.0
+technology center |Technology Centers ,1.0
+persistent stored modules sql psm |Persistent Stored Modules SQL PSM ,1.0
+drupal |Drupal ,1.0
+info mobile contact |info mobile contact ,1.0
+authorization specification |authorization specifications ,1.0
+database transaction |database transaction ,1.0
+sql olb jdbc |SQL OLB JDBC ,1.0
+proprietary agreement |proprietary agreements ,1.0
+sql server language reference |SQL Server Language Reference ,1.0
+safari |Safari ,1.0
+zone or timetz |ZONE or TIMETZ ,1.0
+multi-server mysql |multi-server MySQL ,1.0
+finn |Finn ,1.0
+implication |implication ,1.0
+widely used database language |widely used database language ,1.0
+google gear |Google Gears ,1.0
+authoritative mysql front end |authoritative MySQL front end ,1.0
+java code |Java code ,1.0
+improved group commit performance |improved group commit performance ,1.0
+environment |environments ,1.0
+mysql apis and command |MySQL APIs and commands ,1.0
+program |program ,1.0
+jbos |JBoss ,1.0
+c innodb glossary |C InnoDB Glossary ,1.0
+retrieval operation |retrieval operations ,1.0
+galera cluster |Galera Cluster ,1.0
+database administrator or application developer |database administrator or application developer ,1.0
+jeremy |Jeremy ,1.0
+xml-to-sql data type mapping |XML-to-SQL data type mappings ,1.0
+wikibooks learning resource |Wikibooks Learning resources ,1.0
+stand-alone download |stand-alone download ,1.0
+rule |rules ,1.0
+forms and report |forms and reports ,1.0
+media type registration |Media Type registration ,1.0
+archives oop |Archives Oops ,1.0
+sequel structured english query language |SEQUEL Structured English Query Language ,1.0
+disputed statement |disputed statements ,1.0
+graphical edit |Graphical edit ,1.0
+research firm strategy analytic |research firm Strategy Analytics ,1.0
+squid |Squid ,1.0
+java programming language sql jrt |Java Programming Language SQL JRT ,1.0
+j f aker |J F Akers ,1.0
+triggers cursors updatable |Triggers Cursors Updatable ,1.0
+author alcott |Author Alcott ,1.0
+cbs interactive |CBS Interactive ,1.0
+sql multimedia and application packages sql mm |SQL Multimedia and Application Packages SQL MM ,1.0
+declarative select statement |declarative SELECT statement ,1.0
+ansi sql |ANSI SQL ,1.0
+title author |Title Authors ,1.0
+poor performance |poor performance ,1.0
+c or basic |C or BASIC ,1.0
+en wikipedia |en wikipedia ,1.0
+receivables |Receivables ,1.0
+timestamptz |TIMESTAMPTZ ,1.0
+centos and debian |CentOS and Debian ,1.0
+performance monitoring |performance monitoring ,1.0
+relative simplicity and ease |relative simplicity and ease ,1.0
+edit comparison |edit Comparison ,1.0
+duplicate |duplicates ,1.0
+community and enterprise edition |community and enterprise editions ,1.0
+data management and interchange |Data management and interchange ,1.0
+approved iso international standard |approved ISO international standard ,1.0
+commit or rollback |COMMIT or ROLLBACK ,1.0
+continuous improvement |continuous improvement ,1.0
+saake |Saake ,1.0
+string concatenation |string concatenation ,1.0
+prefix |prefix ,1.0
+m negri |M Negri ,1.0
+software opinion leader |Software opinion leaders ,1.0
+example output |Example output ,1.0
+datetime data type |datetime data types ,1.0
+java class |Java classes ,1.0
+nosql-style memcached apis |NoSQL-style memcached APIs ,1.0
+interested |interested ,1.0
+missing manual |Missing Manual ,1.0
+practicality |practicality ,1.0
+different irc channel |different IRC channels ,1.0
+powerful proprietary database |powerful proprietary databases ,1.0
+l sbattella |L Sbattella ,1.0
+ronald r plew |Ronald R Plew ,1.0
+oracle-sql dialect |Oracle-SQL dialect ,1.0
+wikibook |Wikibooks ,1.0
+mysql client |mysql client ,1.0
+definition schemas sql routine |Definition Schemas SQL Routines ,1.0
+great extent |great extent ,1.0
+cloud database mysql |Cloud database MySQL ,1.0
+sequence |sequences ,1.0
+ourdelta |OurDelta ,1.0
+low-level language isam |low-level language ISAM ,1.0
+local or remote mysql server |local or remote MySQL servers ,1.0
+standard anymore |Standard Anymore ,1.0
+debugging edit |Debugging edit ,1.0
+high from some table |high FROM some table ,1.0
+sql mode option |SQL Mode options ,1.0
+pdf |PDF ,1.0
+integrated environment |integrated environment ,1.0
+malik |Malik ,1.0
+foreign key reference |foreign key references ,1.0
+yoshinori |Yoshinori ,1.0
+high end |high END ,1.0
+wordpres |WordPress ,1.0
+oxford university press |Oxford University Press ,1.0
+gpl license |GPL license ,1.0
+nested selects built-in replication support |nested SELECTs Built-in Replication support ,1.0
+character strings character n or char n |Character strings CHARACTER n or CHAR n ,1.0
+usefulness and practicality |usefulness and practicality ,1.0
+justice and antitrust |Justice and Antitrust ,1.0
+xml-related feature |XML-related features ,1.0
+open source mysql community server |open source MySQL Community Server ,1.0
+party contract |party contracts ,1.0
+mysql enterprise backup |MySQL Enterprise Backup ,1.0
+bmp |BMP ,1.0
+execution model |execution model ,1.0
+mysql enterprise product |MySQL Enterprise products ,1.0
+no persistent effect |no persistent effects ,1.0
+co-counsel |co-counsel ,1.0
+equal dependent |equal Dependents ,1.0
+fast |fast ,1.0
+ibm mergers and acquisition |IBM Mergers and acquisitions ,1.0
+kleene and lukasiewicz three-valued logic |Kleene and Lukasiewicz three-valued logic ,1.0
+system privilege |system privileges ,1.0
+backup edit filesystem |Backup edit Filesystem ,1.0
+reunion meeting |reunion meeting ,1.0
+multiple database |multiple databases ,1.0
+analysis |analysis ,1.0
+farm |farm ,1.0
+standards and technology nist |Standards and Technology NIST ,1.0
+resignals cursor |resignals cursors ,1.0
+chapter |chapter ,1.0
+fixed-width n-character string |fixed-width n-character string ,1.0
+mysql cluster replication |MySQL Cluster Replication ,1.0
+skysql ab |SkySQL Ab ,1.0
+stack overflow div |Stack Overflow div ,1.0
+runs sql statement |Runs SQL statements ,1.0
+supplementary unicode character |supplementary Unicode character ,1.0
+community edit |Community edit ,1.0
+appeal diy |appeal diy ,1.0
+reason |reasons ,1.0
+command line original author |command line Original author ,1.0
+decimal number |decimal number ,1.0
+intersect operator |INTERSECT operators ,1.0
+people project |People Projects ,1.0
+ansi iso iec international standard |ANSI ISO IEC International Standard ,1.0
+details filename extension |details Filename extension ,1.0
+web-infrastructure |web-infrastructure ,1.0
+heidisql mysql gui mysql workbench |HeidiSQL MySQL GUI MySQL Workbench ,1.0
+fast-growing open source enterprise software stack |fast-growing open source enterprise software stack ,1.0
+contacts page |contacts page ,1.0
+listed |Listed ,1.0
+uncle sam |Uncle Sam ,1.0
+cleaner semantics |cleaner semantics ,1.0
+nokia |Nokia ,1.0
+u s government |U S government ,1.0
+msql system |mSQL system ,1.0
+cte |CTEs ,1.0
+personal history |personal history ,1.0
+following sql ds |following SQL DS ,1.0
+gui feature |GUI features ,1.0
+performance and usage |performance and usage ,1.0
+web client |web client ,1.0
+ars technica |Ars Technica ,1.0
+mysql list |MySQL Lists ,1.0
+debian |Debian ,1.0
+fedora |Fedora ,1.0
+home |Home ,1.0
+packagers |packagers ,1.0
+newer version |newer version ,1.0
+federated storage engine state |Federated Storage Engine states ,1.0
+subscribe |Subscribe ,1.0
+similar functionality |similar functionality ,1.0
+default innodb storage engine transaction |default InnoDB storage engine Transactions ,1.0
+conventional sql-data |conventional SQL-data ,1.0
+hierarchy |hierarchy ,1.0
+insert and update element |INSERT and UPDATE elements ,1.0
+existing table e g |existing table e g ,1.0
+equality testing |equality testing ,1.0
+b wagner |b Wagner ,1.0
+default grant |default grant ,1.0
+central component |central component ,1.0
+auto-completion access |auto-completion access ,1.0
+unsourced material |Unsourced material ,1.0
+oracle press release |Oracle press release ,1.0
+phpbb |phpBB ,1.0
+hibernate and doctrine |Hibernate and Doctrine ,1.0
+rackspace offer |Rackspace offer ,1.0
+mysql administrator |MySQL Administrator ,1.0
+ecosystem |ecosystem ,1.0
+p and q p |p AND q p ,1.0
+backward compatibility |backward compatibility ,1.0
+objects query or edit tables and view |objects query or edit tables and views ,1.0
+b dev mysql |b dev mysql ,1.0
+hot non-locking backup |hot non-locking backups ,1.0
+request |request ,1.0
+char n |CHAR n ,1.0
+pave |Paves ,1.0
+transaction processing dtp support |transaction processing DTP support ,1.0
+european union |European Union ,1.0
+proprietary graphical database management application |proprietary graphical database management applications ,1.0
+initialism |initialism ,1.0
+object-oriented feature |object-oriented features ,1.0
+team |teams ,1.0
+history edit mysql |History edit MySQL ,1.0
+mysql goes gpl |MySQL GOES GPL ,1.0
+internet media type |Internet media type ,1.0
+paul |Paul ,1.0
+references codd |References Codd ,1.0
+mysql users conference |MySQL Users Conference ,1.0
+proof-of-concept storage engine |proof-of-concept storage engine ,1.0
+sql-based rdbm |SQL-based RDBMS ,1.0
+data manipulation language |data manipulation language ,1.0
+mysql and innobase oy |MySQL and Innobase OY ,1.0
+build database structure |build database structures ,1.0
+program understanding |program understanding ,1.0
+ease |ease ,1.0
+subset |subset ,1.0
+resulting mechanism |resulting mechanism ,1.0
+encyclopedia britannica |Encyclopedia Britannica ,1.0
+facebook blog |Facebook Blog ,1.0
+previous four year |previous four years ,1.0
+sql i s kju |SQL i s kju ,1.0
+zip |Zip ,1.0
+query result editing query-result |query result editing query-results ,1.0
+mysql copyright |MySQL copyright ,1.0
+control-of-flow statement |control-of-flow statements ,1.0
+library binary equivalency |library binary equivalency ,1.0
+system platform |system platforms ,1.0
+optimizing |optimizing ,1.0
+merge into table name using table reference |MERGE INTO TABLE NAME USING table reference ,1.0
+oral history |oral history ,1.0
+ada postgresql pl pgsql procedural language postgresql |Ada PostgreSQL PL pgSQL Procedural Language PostgreSQL ,1.0
+schema creation |schema creation ,1.0
+special-purpose programming language |special-purpose programming language ,1.0
+similar statement |similar statement ,1.0
+current running sql |current running SQL ,1.0
+ambiguity |ambiguity ,1.0
+paid edition |paid editions ,1.0
+customer |customers ,1.0
+lvm or storage device |LVM or storage device ,1.0
+preferred choice |preferred choice ,1.0
+information schema performance schema |Information schema Performance Schema ,1.0
+five question |Five Questions ,1.0
+supplier |suppliers ,1.0
+responsibility |responsibility ,1.0
+ready-made machine image |ready-made machine image ,1.0
+template |template ,1.0
+integrate |integrate ,1.0
+example from some user |example FROM some user ,1.0
+acronym-like pronunciation |acronym-like pronunciation ,1.0
+consistency |consistency ,1.0
+session browsing tool |session browsing tools ,1.0
+rdbms product |RDBMS products ,1.0
+lamp stack |LAMP stack ,1.0
+disable triggers and constraint |disable triggers and constraints ,1.0
+decimal precision |DECIMAL precision ,1.0
+official manual |official manual ,1.0
+lower cost |lower cost ,1.0
+proprietary enterprise server |proprietary Enterprise Server ,1.0
+mysql query browser and database administration |MySQL Query Browser and Database administration ,1.0
+cmu |CMU ,1.0
+graph nosql newsql v t e query language |Graph NoSQL NewSQL v t e Query languages ,1.0
+informationweek informationweek |InformationWeek InformationWeek ,1.0
+procedural element |procedural elements ,1.0
+binding license |binding license ,1.0
+software downloaded |software downloaded ,1.0
+historical information |historical information ,1.0
+sun pick |Sun Picks ,1.0
+sql phrase |SQL phrase ,1.0
+current point |current point ,1.0
+proprietary and gpl version |proprietary and GPL versions ,1.0
+searched case |searched case ,1.0
+wide variety |wide variety ,1.0
+trademark infringement |trademark infringement ,1.0
+presence |presence ,1.0
+u s district court |U S District Court ,1.0
+incomplete information |incomplete information ,1.0
+practice |practice ,1.0
+c and vb |C and VB ,1.0
+object privilege |object privileges ,1.0
+swede |Swedes ,1.0
+bookmarks block indent |bookmarks block indent ,1.0
+sal caruso |Sal Caruso ,1.0
+mysql database engine |MySQL database engines ,1.0
+case n |CASE n ,1.0
+linuxmint |LinuxMint ,1.0
+beaulieu |Beaulieu ,1.0
+robin |Robin ,1.0
+static java method |static Java methods ,1.0
+adminer |Adminer ,1.0
+enterprise edition |enterprise editions ,1.0
+progress software vs mysql ab preliminary injunction hearing |Progress Software vs MySQL AB Preliminary Injunction Hearing ,1.0
+abbreviated syntax called simple case |abbreviated syntax called simple case ,1.0
+i o operation |I O operations ,1.0
+server failure |server failure ,1.0
+criticism sql |Criticism SQL ,1.0
+record market share |record market share ,1.0
+mysql server review |MySQL Server Review ,1.0
+cross-platform toolkit |cross-platform toolkit ,1.0
+url |URL ,1.0
+google runs mysql |Google Runs MySQL ,1.0
+enable user-account |enable user-accounts ,1.0
+statement condition signal |statement condition signals ,1.0
+reference table |reference tables ,1.0
+heroku |Heroku ,1.0
+eight drive raid array |eight drive RAID array ,1.0
+command line edit |Command line edit ,1.0
+sql guide |SQL Guide ,1.0
+cut copy paste |cut copy paste ,1.0
+information schema and definition schema |Information Schema and Definition Schema ,1.0
+files output |files output ,1.0
+definition schema |Definition Schema ,1.0
+petition |petition ,1.0
+manipulation and storage |manipulation and storage ,1.0
+mysql server support |MySQL Server Support ,1.0
+database connectivity |Database Connectivity ,1.0
+regular |regular ,1.0
+sql object identifier |SQL object identifier ,1.0
+finnish company |Finnish company ,1.0
+edit tables and view |edit tables and views ,1.0
+reference |references ,1.0
+internal internal domain-specific language java persistence query language jpql |internal internal domain-specific language Java Persistence Query Language JPQL ,1.0
+mysql cluster multiple storage engine |MySQL Cluster Multiple storage engines ,1.0
+planet mysql |Planet MySQL ,1.0
+additional programming language |additional programming languages ,1.0
+logical backup tool |logical backup tool ,1.0
+reliable source |reliable sources ,1.0
+clause predicate |clause predicate ,1.0
+schema creation and modification |schema creation and modification ,1.0
+search form |search form ,1.0
+recent posts understanding pavement installation |Recent Posts Understanding pavement installation ,1.0
+renewal |renewal ,1.0
+relational dbms relational model object-relational database transaction |Relational DBMS Relational model Object-relational database Transaction ,1.0
+wikimedia common |Wikimedia Commons ,1.0
+objects query or edit table |objects query or edit tables ,1.0
+toad data modeler |Toad Data Modeler ,1.0
+questions tags users badges unanswered ask question page |Questions Tags Users Badges Unanswered Ask Question Page ,1.0
+column structure |column structure ,1.0
+sun microsystems announces completion |Sun Microsystems Announces Completion ,1.0
+mechanism |mechanisms ,1.0
+people |people ,1.0
+limitations edit |Limitations edit ,1.0
+existence |existence ,1.0
+end sql |END SQL ,1.0
+alex kriegel |Alex Kriegel ,1.0
+current transaction |current transaction ,1.0
+mysql developer zone |MySQL Developer Zone ,1.0
+features edit sql programming tool |Features edit SQL programming tools ,1.0
+tree |tree ,1.0
+innobase press release |Innobase Press release ,1.0
+calling application |calling application ,1.0
+entire standard |entire standard ,1.0
+project summary |Project Summary ,1.0
+common table expression |common table expression ,1.0
+goal |goal ,1.0
+mysql stored procedure programming |MySQL Stored Procedure Programming ,1.0
+www opensourcereleasefeed |www opensourcereleasefeed ,1.0
+syntax language element |Syntax Language elements ,1.0
+port |port ,1.0
+improved performance |improved performance ,1.0
+notable feature |notable features ,1.0
+expected result |expected result ,1.0
+cento |CentOS ,1.0
+write latency |write latency ,1.0
+insert operation |INSERT operation ,1.0
+interfacing components structures procedures variable binding |interfacing components structures procedures variable bindings ,1.0
+top sql |top SQL ,1.0
+ibm merger |IBM Mergers ,1.0
+graph traversal |graph traversals ,1.0
+multi-master support |multi-master support ,1.0
+cache |cache ,1.0
+standard sql psm extension |standard SQL PSM extensions ,1.0
+reference view |reference views ,1.0
+framework |framework ,1.0
+dual-licensing strategy |dual-licensing strategy ,1.0
+connector python |Connector Python ,1.0
+web-infrastructure and cloud computing market |web-infrastructure and cloud computing markets ,1.0
+microsoft command shell |Microsoft Command Shell ,1.0
+downtime maintenance and administration |downtime maintenance and administration ,1.0
+mysql enterprise server |MySQL Enterprise Server ,1.0
+expressions sql |expressions SQL ,1.0
+vice-versa sql jrt |vice-versa SQL JRT ,1.0
+common maintenance |common maintenance ,1.0
+monty widenius and david axmark |Monty Widenius and David Axmark ,1.0
+online ddl |Online DDL ,1.0
+enhancements and features include |Enhancements and features include ,1.0
+set-based declarative query language |set-based declarative query language ,1.0
+b mysqladmin |b mysqladmin ,1.0
+medium range |medium range ,1.0
+cole |Cole ,1.0
+further configuration |further configuration ,1.0
+acquisition impacts edit |acquisition impacts edit ,1.0
+mysql front-end |MySQL front-ends ,1.0
+granularity |granularity ,1.0
+survey |survey ,1.0
+sql based interface |SQL based interfaces ,1.0
+additional instrumentation |additional instrumentation ,1.0
+syntax and semantics |syntax and semantics ,1.0
+connection |connections ,1.0
+special customization |special customizations ,1.0
+patrick |Patrick ,1.0
+plugin api row-based replication |plugin API row-based replication ,1.0
+following data type |following data types ,1.0
+merger citation |merger citation ,1.0
+character strings character n |Character strings CHARACTER n ,1.0
+proprietary standard edition |proprietary Standard Edition ,1.0
+picture |pictures ,1.0
+precondition |precondition ,1.0
+common set |common set ,1.0
+distributed server cluster |distributed server clusters ,1.0
+data language specification |data language specification ,1.0
+mindset answer email |mindset Answer email ,1.0
+schemabank |SchemaBank ,1.0
+match |Match ,1.0
+relational database technology |relational database technology ,1.0
+smaller chunk |smaller chunks ,1.0
+theoretical foundation |theoretical foundation ,1.0
+evaluation |evaluation ,1.0
+shortcut |shortcut ,1.0
+thefreelibrary |Thefreelibrary ,1.0
+mysql website |MySQL website ,1.0
+optimized installation |optimized installation ,1.0
+declarative language |declarative language ,1.0
+mysql co-founder video mysql |MySQL co-founder Video MySQL ,1.0
+non-standard implementation |non-standard implementations ,1.0
+existing code |existing code ,1.0
+development and administration front end |development and administration front end ,1.0
+potential |potential ,1.0
+object-relational database management system |object-relational database management systems ,1.0
+parallel-compressed backup |parallel-compressed backups ,1.0
+select title |SELECT title ,1.0
+lists mysql |Lists mysql ,1.0
+maximum size |maximum size ,1.0
+mosh zloof |Mosh Zloof ,1.0
+xml data type |XML data type ,1.0
+common fragment |common fragment ,1.0
+insignificant whitespace |Insignificant whitespace ,1.0
+server plugin |server plugins ,1.0
+odbc data source |ODBC data sources ,1.0
+united states district court |United States district court ,1.0
+open source philosophy aim |Open Source philosophy Aim ,1.0
+display-authors page |display-authors Pages ,1.0
+politics |Politics ,1.0
+jelastic |Jelastic ,1.0
+oracle-provided version |Oracle-provided versions ,1.0
+facebook s insatiable hunger |Facebook s Insatiable Hunger ,1.0
+rudimentary support |rudimentary support ,1.0
+ibm informix implementation |IBM Informix implementation ,1.0
+aix |AIX ,1.0
+capttofu livejournal |Capttofu livejournal ,1.0
+amazon relational database service |Amazon Relational Database Service ,1.0
+datalink type |datalink types ,1.0
+jdbc driver |JDBC driver ,1.0
+kawash |Kawash ,1.0
+structured url |structured URLs ,1.0
+similar question |similar questions ,1.0
+groklaw |Groklaw ,1.0
+launchpad net |Launchpad net ,1.0
+procedural language |procedural language ,1.0
+unmanaged extended stored procedure |unmanaged extended stored procedures ,1.0
+fratarcangeli |Fratarcangeli ,1.0
+aim |aim ,1.0
+keeping |Keeping ,1.0
+complex statement |complex statement ,1.0
+usual caveat |usual caveats ,1.0
+international fugitive |International Fugitive ,1.0
+automate repetitive task |automate repetitive tasks ,1.0
+u c berkeley ingres project |U C Berkeley Ingres project ,1.0
+first commercial language |first commercial languages ,1.0
+downtime maintenance |downtime maintenance ,1.0
+individual session |individual session ,1.0
+limit clause |LIMIT clause ,1.0
+quality code-deployment practice |quality code-deployment practices ,1.0
+debate |debate ,1.0
+web-based database management tool |web-based database management tool ,1.0
+user-security management edit |User-security management edit ,1.0
+api citation |API citation ,1.0
+current transaction and release data lock |current transaction and release data locks ,1.0
+lukasiewicz three-valued logic |Lukasiewicz three-valued logic ,1.0
+contained class |contained classes ,1.0
+php script |PHP script ,1.0
+webyog heidisql |WebYog HeidiSQL ,1.0
+virtual organization |virtual organization ,1.0
+hard disk performance |hard disk performance ,1.0
+standard number list |standard number List ,1.0
+entire transaction |entire transaction ,1.0
+including identity-column |including identity-columns ,1.0
+online applications available |online applications Available ,1.0
+innodb sobel |InnoDB Sobel ,1.0
+complexity and size |complexity and size ,1.0
+deployment edit lamp software bundle |Deployment edit LAMP software bundle ,1.0
+deal |deal ,1.0
+reviewer |reviewers ,1.0
+general form |general form ,1.0
+specific purpose |specific purpose ,1.0
+tree or graph traversal |tree or graph traversals ,1.0
+sql standard conflict |SQL standard conflicts ,1.0
+well-known superset |well-known superset ,1.0
+proprietary use |proprietary use ,1.0
+web-based management utility |Web-based management utility ,1.0
+cloud provider |cloud provider ,1.0
+general availability stage |general availability stage ,1.0
+offer additional functionality |offer additional functionality ,1.0
+true multi-user |true multi-user ,1.0
+bonus |Bonus ,1.0
+amp |AMP ,1.0
+developer interface |developer interfaces ,1.0
+online applications available and affordable |online applications Available and affordable ,1.0
+alt |alt ,1.0
+integration |integration ,1.0
+short-coming |short-comings ,1.0
+maker |makers ,1.0
+gunter ed |Gunter Eds ,1.0
+open source software company |Open Source Software Company ,1.0
+standard select statement |Standard SELECT statements ,1.0
+relational database management systems notes edit |relational database management systems Notes edit ,1.0
+android and iphone device |Android and iPhone device ,1.0
+interoperationality |interoperationality ,1.0
+mobilebeat |MobileBeat ,1.0
+standardization sql |Standardization SQL ,1.0
+approach |approach ,1.0
+high-volume web site |high-volume Web sites ,1.0
+harvey mudd college |Harvey Mudd College ,1.0
+operators operator description example |Operators Operator Description Example ,1.0
+guided tour |guided tour ,1.0
+authors from book join book author |Authors FROM Book JOIN Book author ,1.0
+needed character varying n or varchar n |needed CHARACTER VARYING n or VARCHAR n ,1.0
+control-of-flow construct |control-of-flow constructs ,1.0
+data control language dcl |Data Control Language DCL ,1.0
+sco openserver |SCO OpenServer ,1.0
+move |Move ,1.0
+implicit equality comparison |implicit equality comparisons ,1.0
+limit |limits ,1.0
+no such operation |no such operation ,1.0
+sql dbms compliance |SQL DBMS compliance ,1.0
+boolean truth value |Boolean truth values ,1.0
+dmoz links use dmy date |DMOZ links Use dmy dates ,1.0
+expensive book |expensive books ,1.0
+lvm |LVM ,1.0
+security-management tool |security-management tools ,1.0
+equal rate |equal Rate ,1.0
+sql fundamental |SQL Fundamentals ,1.0
+standard part |standard part ,1.0
+ndl and sql standard |NDL and SQL standards ,1.0
+database manipulation |database manipulation ,1.0
+small |small ,1.0
+sql database language |SQL database language ,1.0
+truncate delete |TRUNCATE deletes ,1.0
+data debt |data Debt ,1.0
+continuous sql |continuous SQL ,1.0
+open source community edition |open source Community Edition ,1.0
+principle |principle ,1.0
+mysql development project |MySQL development project ,1.0
+adjustment |adjustments ,1.0
+netbsd |NetBSD ,1.0
+object-oriented programmability |object-oriented programmability ,1.0
+common column |common column ,1.0
+no corresponding oracle data type |no corresponding Oracle data type ,1.0
+ajoeblk blogspot |Ajoeblk blogspot ,1.0
+database behavior |database behavior ,1.0
+page numbering differ |page numbering differs ,1.0
+full sql standard |full SQL standard ,1.0
+support and service |support and services ,1.0
+database supplier |database suppliers ,1.0
+proprietary license |proprietary license ,1.0
+regular free and open source community edition |regular free and open source Community Edition ,1.0
+computationally superior |computationally superior ,1.0
+pc world |PC World ,1.0
+sql interface |SQL interface ,1.0
+recognition scps list |recognition SCPs List ,1.0
+gillespie |Gillespie ,1.0
+n characters national character n or nchar n |n characters NATIONAL CHARACTER n or NCHAR n ,1.0
+black duck software |Black Duck Software ,1.0
+supported platform |Supported Platforms ,1.0
+application packages sql mm |Application Packages SQL MM ,1.0
+index structure |index structure ,1.0
+mac os x |Mac OS X ,1.0
+smaller set |smaller set ,1.0
+proprietarily |proprietarily ,1.0
+variable-width string |variable-width string ,1.0
+large existing customer base |large existing customer bases ,1.0
+typical high-end configuration |typical high-end configuration ,1.0
+dadabik |DaDaBIK ,1.0
+optimizer shared-nothing |optimizer Shared-nothing ,1.0
+current system date |current system date ,1.0
+affidavit |Affidavit ,1.0
+ndb cluster storage engine |NDB Cluster Storage Engine ,1.0
+bath understanding |Bath Understanding ,1.0
+relational data stream management system |relational data stream management system ,1.0
+recognition oracle certification program category commons retrieved |recognition Oracle Certification Program Category Commons Retrieved ,1.0
+m zack urlocker |M Zack Urlocker ,1.0
+main statement |main statements ,1.0
+mariadb versus mysql compatibility |MariaDB versus MySQL Compatibility ,1.0
+affordable consumer grade sata interface solid-state drive |affordable consumer grade SATA interface solid-state drives ,1.0
+yacc |yacc ,1.0
+kleene |Kleene ,1.0
+s kju l es queue el |s kju l es queue el ,1.0
+gigabyte |gigabytes ,1.0
+multiple time |multiple times ,1.0
+japan |Japan ,1.0
+inability |inability ,1.0
+qnx |QNX ,1.0
+top session |top sessions ,1.0
+manifesto |Manifesto ,1.0
+explicit comparison |explicit comparisons ,1.0
+values and mindset answer email |values and mindset Answer email ,1.0
+doll |Doll ,1.0
+extend |EXTEND ,1.0
+unfair competition |unfair competition ,1.0
+b mysql |b mysql ,1.0
+oracle announce |Oracle Announces ,1.0
+smaller investment |smaller investment ,1.0
+recent questions browse popular tag |recent questions Browse popular tags ,1.0
+multiple-value field |multiple-value fields ,1.0
+prior behavior |prior behavior ,1.0
+mysql database source code |MySQL database source code ,1.0
+video audio |video audio ,1.0
+local |local ,1.0
+file storage |file storage ,1.0
+commercial incentive |commercial incentive ,1.0
+sql jrt extension |SQL JRT extensions ,1.0
+flagship mysql offering |flagship MySQL offering ,1.0
+query result |query results ,1.0
+statement terminator |statement terminator ,1.0
+case create delete |Case Create Delete ,1.0
+sqlclr sql server common language runtime |SQLCLR SQL Server Common Language Runtime ,1.0
+database software |database software ,1.0
+semantic inconsistency |semantic inconsistency ,1.0
+customer test site |customer test sites ,1.0
+windows macintosh and linux |Windows Macintosh and Linux ,1.0
+navigational database |navigational database ,1.0
+physical operation |physical operations ,1.0
+firefox web browser |Firefox Web Browser ,1.0
+master-master replication master-slave replication |Master-Master Replication Master-Slave Replication ,1.0
+partners and dev community |Partners and Dev Community ,1.0
+mysql connector net |MySQL Connector Net ,1.0
+no trigger |No triggers ,1.0
+content |Contents ,1.0
+renegotiation |renegotiation ,1.0
+federatedx pluggable storage engine released |FederatedX Pluggable Storage Engine Released ,1.0
+drop-in replacement capability |drop-in replacement capability ,1.0
+control association |Control Association ,1.0
+similar manner |similar manner ,1.0
+save transaction |SAVE TRANSACTION ,1.0
+ess que ell not my sequel |Ess Que Ell not my sequel ,1.0
+ubuntu |Ubuntu ,1.0
+funds transaction |funds transaction ,1.0
+security and optimization setting |security and optimization settings ,1.0
+improve sql server performance |improve SQL server performance ,1.0
+b oppel |b Oppel ,1.0
+standard database language sql |standard database language SQL ,1.0
+procedural programming language functionality |procedural programming language functionality ,1.0
+sales tax figure |sales tax figure ,1.0
+powerful master database |powerful master database ,1.0
+create table example |CREATE TABLE example ,1.0
+faster alternative |faster alternatives ,1.0
+rights reserved |Rights Reserved ,1.0
+easy |Easy ,1.0
+language ddl |Language DDL ,1.0
+libreoffice base libreoffice base |LibreOffice Base LibreOffice Base ,1.0
+packaged software including industry leader |packaged software including industry leaders ,1.0
+debugging |debugging ,1.0
+osi protocol |OSI protocols ,1.0
+edgar f codd |Edgar F Codd ,1.0
+oracle sql developer |Oracle SQL Developer ,1.0
+lecture note |Lecture Notes ,1.0
+mysqldump |mysqldump ,1.0
+relationship |relationships ,1.0
+field |field ,1.0
+global smartphone shipment |Global smartphone shipments ,1.0
+standards conformance |standards conformance ,1.0
+fivefold speedup |fivefold speedup ,1.0
+high fidelity |high fidelity ,1.0
+nchar n |NCHAR n ,1.0
+lower cost and freedom |lower cost and freedom ,1.0
+real-time processing |real-time processing ,1.0
+strict mode |strict mode ,1.0
+round |ROUND ,1.0
+grant select |GRANT SELECT ,1.0
+amount |amount ,1.0
+open force |Open Force ,1.0
+data predicate |data Predicates ,1.0
+sharded database |sharded database ,1.0
+window function |window functions ,1.0
+dept |Dept ,1.0
+myisam-only feature |MyISAM-only feature ,1.0
+symbian |Symbian ,1.0
+database tool |database tools ,1.0
+no spam ee tonu mysql tombasil txt |no spam ee tonu mysql tombasil txt ,1.0
+vendor lock-in |vendor lock-in ,1.0
+whitney |Whitney ,1.0
+restoration safety seasonal security systems vapor barriers walls window |Restoration Safety Seasonal Security Systems Vapor Barriers Walls windows ,1.0
+common practical concern |common practical concern ,1.0
+price from book where price |price FROM Book WHERE price ,1.0
+allan larsson |Allan Larsson ,1.0
+data access control |data access control ,1.0
+distribution license java community process netbeans openoffice |Distribution License Java Community Process NetBeans OpenOffice ,1.0
+logic |Logics ,1.0
+copyright and trademark infringement |copyright and trademark infringement ,1.0
+input |input ,1.0
+previous package |previous package ,1.0
+system windows linux solaris os x |system Windows Linux Solaris OS X ,1.0
+askmonty knowledgebase |AskMonty Knowledgebase ,1.0
+tuple relational calculus |tuple relational calculus ,1.0
+donald chamberlin |Donald Chamberlin ,1.0
+mybb |MyBB ,1.0
+first fully relational database management system |first fully relational database management systems ,1.0
+natural |natural ,1.0
+mysql contact |MySQL Contact ,1.0
+forum |forums ,1.0
+third-party package |third-party packages ,1.0
+dependent object |dependent objects ,1.0
+lentz |Lentz ,1.0
+signal |SIGNAL ,1.0
+venturebeat |VentureBeat ,1.0
+update example |UPDATE example ,1.0
+journal |Journal ,1.0
+reach |reach ,1.0
+firefox browser |Firefox browsers ,1.0
+hp-ux |HP-UX ,1.0
+schumacher |Schumacher ,1.0
+dbms integration |DBMS integration ,1.0
+msql antecedent citation |mSQL antecedent citation ,1.0
+top |top ,1.0
+mysql galera multi-master replication |MySQL Galera Multi-Master Replication ,1.0
+sun press release |Sun Press release ,1.0
+bigger database |Bigger Database ,1.0
+mysql server team |MySQL Server Team ,1.0
+sql wikibook sql comparison |SQL Wikibook SQL Comparison ,1.0
+performance improvement |performance improvements ,1.0
+following sqlite |Following SQLite ,1.0
+mysql ma |MySQL ma ,1.0
+numeric |numerics ,1.0
+mysql internals manual |MySQL Internals Manual ,1.0
+infixed comparison operator |infixed comparison operator ,1.0
+htsql |HTSQL ,1.0
+database sharding |Database Sharding ,1.0
+class dno |class dno ,1.0
+usefulness |usefulness ,1.0
+apple mail |Apple Mail ,1.0
+pruning |pruning ,1.0
+event stream processing |Event stream processing ,1.0
+mdr work |MDR work ,1.0
+statistics information |statistics information ,1.0
+procedural extension |procedural extensions ,1.0
+select keyword |SELECT keyword ,1.0
+versions edit |Versions edit ,1.0
+robert f garrett |Robert F Garrett ,1.0
+mysql acquisition |MySQL Acquisition ,1.0
+sql aggregation function |SQL aggregation functions ,1.0
+sql applications java-in-the-database |SQL applications Java-in-the-database ,1.0
+future mysql server development |Future MySQL Server development ,1.0
+fast stable and true multi-user |fast stable and true multi-user ,1.0
+asp |ASP ,1.0
+oracle buys sleepycat |Oracle Buys Sleepycat ,1.0
+multiple transaction |multiple transactions ,1.0
+session history |session history ,1.0
+asp or coldfusion |ASP or ColdFusion ,1.0
+exact matching |exact matching ,1.0
+most-used database |most-used database ,1.0
+command |commands ,1.0
+money |money ,1.0
+primary fail |primary fails ,1.0
+java sql olb and vice-versa sql jrt |Java SQL OLB and vice-versa SQL JRT ,1.0
+modx |MODx ,1.0
+relational alternative |relational alternatives ,1.0
+readability |readability ,1.0
+logo |logo ,1.0
+step-by-step process lifestyle question |step-by-step process Lifestyle Questions ,1.0
+paul mcjone |Paul McJones ,1.0
+information schema |Information Schema ,1.0
+union and intersect operator |UNION and INTERSECT operators ,1.0
+u s approval |U S approval ,1.0
+tutorial d xquery |Tutorial D XQuery ,1.0
+webmin |Webmin ,1.0
+sql platform |SQL platforms ,1.0
+net code |Net code ,1.0
+transcript |transcript ,1.0
+widely used lamp open source web application software stack |widely used LAMP open source web application software stack ,1.0
+proprietary sql dbms |proprietary SQL DBMSs ,1.0
+theoretical computer science physics mathoverflow |Theoretical Computer Science Physics MathOverflow ,1.0
+procedure execution |procedure execution ,1.0
+multi-processor server |multi-processor server ,1.0
+b hans-joachim |b Hans-Joachim ,1.0
+update element |UPDATE elements ,1.0
+power |Power ,1.0
+intuitive logical semantics |intuitive logical semantics ,1.0
+platform lock-in |platform lock-in ,1.0
+volume manager |volume manager ,1.0
+sql parser |SQL parser ,1.0
+postgresql global development group |PostgreSQL Global Development Group ,1.0
+ess cue ell |ess cue ell ,1.0
+iso retrieved |ISO Retrieved ,1.0
+mysql commercial license |MySQL Commercial License ,1.0
+koetsier |Koetsier ,1.0
+lack |lack ,1.0
+sqlyog proprietary |SQLyog proprietary ,1.0
+dml operation |DML operations ,1.0
+mysql query browser |MySQL Query Browser ,1.0
+modern online application |modern online applications ,1.0
+stanford university |Stanford University ,1.0
+ecomstation |eComStation ,1.0
+doctrine |Doctrine ,1.0
+b c chamberlin |b c Chamberlin ,1.0
+logical concept |logical concepts ,1.0
+null test |NULL test ,1.0
+cloud deployment edit main article |Cloud deployment edit Main article ,1.0
+declaration and maintenance |declaration and maintenance ,1.0
+attribution required rev |attribution required rev ,1.0
+direction |direction ,1.0
+popular implementation |Popular implementations ,1.0
+acm org |ACM org ,1.0
+co-worker |co-workers ,1.0
+sql editing edit |SQL editing edit ,1.0
+server log table |server log tables ,1.0
+use trademark policy contributor agreement |Use Trademark Policy Contributor Agreement ,1.0
+semantic interpretation |semantic interpretation ,1.0
+connector php |Connector PHP ,1.0
+share |shares ,1.0
+postgresql org |postgresql org ,1.0
+parameter |parameters ,1.0
+powerful hardware |powerful hardware ,1.0
+well-known user |Well-Known Users ,1.0
+wiley |Wiley ,1.0
+carlo piana |Carlo Piana ,1.0
+date lorentz |DATE Lorentz ,1.0
+error |error ,1.0
+popular commercial |popular commercial ,1.0
+full text search |full text search ,1.0
+international workshop dagstuhl castle |International Workshop Dagstuhl Castle ,1.0
+individual user |individual users ,1.0
+linked in google |Linked In Google ,0.5
+lin q |LIN Q ,0.5
+hibernate persistence library lin q |Hibernate persistence library LIN Q ,0.5
+java persistence api and hibernate persistence library lin q |Java Persistence API and Hibernate persistence library LIN Q ,0.5
+windows power shell |Windows Power Shell ,0.5
+decod e |DECOD E ,0.5

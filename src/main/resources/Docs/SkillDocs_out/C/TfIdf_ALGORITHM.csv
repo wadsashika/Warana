@@ -1,0 +1,2315 @@
+function |Functions |functions |Function |function ,0.008339841015535062
+standard |standards |Standard |standard ,0.006759086836119919
+type |types |type ,0.005013226743701479
+object |Objects |object |objects ,0.0044152099494009145
+software |Software |software ,0.004408185327342907
+pointer |pointers |pointer |Pointers ,0.004251683654978658
+class |classes |Classes |class ,0.0038855621747032076
+array |Array |arrays |array ,0.0034885609476747966
+iso |ISO ,0.003270525888445122
+bjarne |Bjarne ,0.0030313164880711283
+program |programs |Programs |program |Program ,0.0027827656924783633
+code |code ,0.0027799470051783535
+memory |memory ,0.0027557422618828442
+compiler |Compiler |compiler |Compilers |compilers ,0.0026977957476698633
+feature |features |feature ,0.0026709294755635164
+operator |Operators |Operator |operators |operator ,0.002616420710756097
+programming language |Programming Languages |Programming languages |programming languages |programming language ,0.002549098344254989
+stroustrup |stroustrup |Stroustrup ,0.00250740318114126
+programming |programming ,0.0024801680356945593
+edit |edit ,0.0024153494599506425
+member |member |members ,0.0023883099602984644
+allocation |allocation ,0.0021127357341101803
+isbn |ISBN ,0.0020180361892018664
+template |template |templates |Template |Templates ,0.0020180361892018664
+iso iec |ISO IEC ,0.0020168242978744915
+duration |duration ,0.0019290195833179906
+c programming |C Programming |C programming ,0.0018371615079218959
+ritchie |Ritchie ,0.0018371615079218959
+system |systems |system |Systems |System ,0.0018265961301144648
+exception |Exception |exceptions |exception ,0.001798789238644817
+language |languages |Language |language ,0.001751685355220977
+ansi |ANSI ,0.0017453034325258011
+virtual |virtual ,0.0017453034325258011
+use |use ,0.0016897717090299798
+inheritance |Inheritance |inheritance ,0.0016534453571297064
+source |source |sources ,0.0016452380379373944
+implementation |Implementations |implementation |implementations ,0.001580754179415142
+c standard |C standard ,0.001580754179415142
+variable |variable |variables ,0.001571943978957243
+unix |Unix |unix ,0.0014697292063375169
+size |size ,0.0013778711309414221
+static |static ,0.0013778711309414221
+library |library ,0.001371754384780734
+computer |computer |computers ,0.0013651975208416674
+address |address ,0.0012860130555453271
+support |support |Support ,0.0011991928257632112
+c compiler |C compilers |C Compiler |C compiler ,0.0011991928257632112
+polymorphism |polymorphism |Polymorphism ,0.0011941549801492322
+objective-c |Objective-C ,0.0011941549801492322
+include |includes |include ,0.0011941549801492322
+std |std ,0.0011941549801492322
+member function |member functions |member function ,0.0011941549801492322
+c programming language |C programming language |C Programming Language ,0.0011757894726692004
+addison-wesley |Addison-Wesley ,0.001147094254914745
+main |main ,0.0011446840609557927
+compile |compile ,0.0011446840609557927
+run |runs |run ,0.0011046092825104954
+syntax |syntax ,0.0011022969047531374
+argument |argument |arguments ,0.0011022969047531374
+sizeof |sizeof ,0.0011022969047531374
+value |values ,0.0011022969047531374
+ansi c |ANSI C ,0.0011022969047531374
+run-time |run-time ,0.001090175296148374
+version |versions |version ,0.001090175296148374
+example |Example |example |examples ,0.0010833667963083705
+keyword |keywords |keyword |Keywords ,0.0010356665313409551
+point |point |points ,0.0010356665313409551
+base class |base classes |Base classes |base class ,0.0010104388293570427
+line |line ,0.0010104388293570427
+character |characters ,0.0010104388293570427
+memory allocation |memory allocation ,0.0010104388293570427
+k r c |K R C ,0.0010104388293570427
+parameter |parameters ,0.0010104388293570427
+statement |statement |statements ,9.983968514998707E-4
+return |return ,9.811577665335366E-4
+computer program |computer programs |Computer programs |computer program |Computer Program ,9.451367451980775E-4
+declaration |declaration |Declarations |declarations ,9.34669392893496E-4
+expression |expression |Expressions |expressions ,9.34669392893496E-4
+edition |Edition ,9.044517018933962E-4
+category |Category |category ,8.818421045019004E-4
+number |number ,8.721402369186992E-4
+standard library |standard library ,8.721402369186992E-4
+bjarne stroustrup |Bjarne Stroustrup ,8.721402369186992E-4
+order |order ,8.721402369186992E-4
+article |articles |article ,8.496994480849964E-4
+initialization |initialization ,8.267226785648532E-4
+arithmetic |arithmetic ,8.267226785648532E-4
+algol |Algol |ALGOL ,8.267226785648532E-4
+virtual function |virtual function |virtual functions ,8.267226785648532E-4
+struct |struct |structs ,8.267226785648532E-4
+element |element |elements ,7.701114220132483E-4
+tool |tools |tool |Tools ,7.631227073038617E-4
+data type |data type |data types ,7.631227073038617E-4
+set |set ,7.631227073038617E-4
+access |access ,7.631227073038617E-4
+platform |platform |platforms ,7.631227073038617E-4
+standardization |Standardization |standardization ,7.631227073038617E-4
+source code |Source code |source code ,7.351063573762826E-4
+public |public ,7.348646031687584E-4
+derived class |derived classes |derived class ,7.348646031687584E-4
+printf |printf ,7.348646031687584E-4
+pure |pure ,7.348646031687584E-4
+string |Strings |string ,7.348646031687584E-4
+programmer |Programmers |programmer |programmers ,7.222445308722469E-4
+reference |references |Reference |reference ,7.222445308722469E-4
+part |parts |part ,7.01002044670122E-4
+comparison |comparisons |comparison |Comparison ,6.85877192390367E-4
+java |Java ,6.797595584679972E-4
+error |errors |error ,6.797595584679972E-4
+c standard library |C Standard Library |C standard library ,6.541051776890243E-4
+file |files |file ,6.541051776890243E-4
+compile-time |compile-time ,6.541051776890243E-4
+standard c |Standard C |standard C ,6.541051776890243E-4
+definition |definition |definitions ,6.541051776890243E-4
+development |development |Development ,6.541051776890243E-4
+extension |extension |extensions ,6.541051776890243E-4
+application software |application software |Application software ,6.460369299238545E-4
+dynamic |Dynamic ,6.430065277726636E-4
+automatic |automatic ,6.430065277726636E-4
+help |help ,6.430065277726636E-4
+creation |creation ,6.430065277726636E-4
+union |unions |union ,6.430065277726636E-4
+kernighan |Kernighan ,6.430065277726636E-4
+storage |storage ,6.430065277726636E-4
+specification |specification ,6.430065277726636E-4
+form |form |forms ,6.160320998616223E-4
+interface |interfaces |interface ,5.995964128816056E-4
+end |end ,5.995964128816056E-4
+void |void ,5.995964128816056E-4
+control |control ,5.995964128816056E-4
+block |block |blocks ,5.995964128816056E-4
+world |World |world ,5.950860988284192E-4
+section |sections |Sections |section ,5.950860988284192E-4
+system software |system software |System software ,5.81433236931469E-4
+case |cases |case ,5.735471274573726E-4
+execution |Execution |execution ,5.735471274573726E-4
+including |including ,5.511484523765687E-4
+static storage duration object |Static Storage duration objects |Static storage duration objects ,5.511484523765687E-4
+discussion |discussion ,5.511484523765687E-4
+performance |performance ,5.511484523765687E-4
+bound |bounds ,5.511484523765687E-4
+stdio h |stdio h ,5.511484523765687E-4
+dennis ritchie |Dennis Ritchie ,5.511484523765687E-4
+rule |rule |Rules |rules ,5.511484523765687E-4
+intermediate language |intermediate language |Intermediate Language |intermediate languages ,5.511484523765687E-4
+sutter |Sutter ,5.511484523765687E-4
+null pointer |null pointer ,5.511484523765687E-4
+pure virtual |pure virtual ,5.511484523765687E-4
+virtual member function |Virtual member functions |virtual member function ,5.511484523765687E-4
+embedded c |Embedded C ,5.511484523765687E-4
+contain |contains |Contains ,5.511484523765687E-4
+compatibility |compatibility |Compatibility ,5.45087648074187E-4
+compilation |compilation ,5.45087648074187E-4
+assignment |assignment ,5.45087648074187E-4
+scope |scope ,5.45087648074187E-4
+result |result |results ,5.45087648074187E-4
+c and c |C and C ,5.45087648074187E-4
+type system |type systems |type system ,5.45087648074187E-4
+python |Python ,5.250759695544875E-4
+process |processes |process ,5.168295439390836E-4
+issue |issue |issues ,4.905788832667683E-4
+design |design |Design ,4.905788832667683E-4
+main function |main function ,4.905788832667683E-4
+c language |C language |C Language ,4.905788832667683E-4
+space |space ,4.5929037698047397E-4
+thompson |Thompson ,4.5929037698047397E-4
+herb |Herb ,4.5929037698047397E-4
+assembly |assembly ,4.5929037698047397E-4
+pointer arithmetic |Pointer arithmetic |pointer arithmetic ,4.5929037698047397E-4
+addison wesley |Addison Wesley ,4.5929037698047397E-4
+release |releases |release ,4.5929037698047397E-4
+constructor |constructors |constructor ,4.5929037698047397E-4
+pointer value |pointer values ,4.5929037698047397E-4
+stl |STL ,4.5929037698047397E-4
+container |containers |container ,4.5929037698047397E-4
+unsigned |unsigned ,4.5929037698047397E-4
+publication |publication ,4.5929037698047397E-4
+pascal |Pascal ,4.5929037698047397E-4
+dennis m |Dennis M ,4.5929037698047397E-4
+cil |CIL ,4.5929037698047397E-4
+header |headers ,4.5929037698047397E-4
+checking |checking ,4.5929037698047397E-4
+verilog |Verilog ,4.5929037698047397E-4
+portability |Portability |portability ,4.5929037698047397E-4
+exception handling |exception handling |Exception handling ,4.5929037698047397E-4
+signed |signed ,4.5929037698047397E-4
+compiled |compiled ,4.522258509466981E-4
+operating system |operating systems |operating system |Operating systems |Operating Systems ,4.5056037876156787E-4
+problem |problems |problem ,4.4609221024462313E-4
+context |context |contexts ,4.4609221024462313E-4
+international organization |International Organization ,4.360701184593496E-4
+call |call ,4.360701184593496E-4
+c program |C Programs |C program |C programs ,4.360701184593496E-4
+identifier |identifiers ,4.360701184593496E-4
+citation |citations ,4.360701184593496E-4
+evaluation |evaluations |evaluation ,4.360701184593496E-4
+superset |superset |supersets ,4.360701184593496E-4
+integer |integers |integer ,4.2006077564359E-4
+application |applications ,4.2006077564359E-4
+perl |Perl ,4.2006077564359E-4
+user |users |user ,4.0360723784037326E-4
+system concept |System Concepts ,3.8762215795431267E-4
+fourth edition |Fourth Edition ,3.8762215795431267E-4
+silberschatz |Silberschatz ,3.8762215795431267E-4
+operation |operation |operations ,3.8505571100662416E-4
+attempt |attempt |attempts ,3.8156135365193086E-4
+function call |function calls |function call ,3.8156135365193086E-4
+gcc |gcc |GCC ,3.8156135365193086E-4
+php |PHP ,3.8156135365193086E-4
+first |first ,3.8156135365193086E-4
+default |defaults |default ,3.8156135365193086E-4
+evolution |evolution |Evolution ,3.674323015843792E-4
+enum |enum ,3.674323015843792E-4
+major |major ,3.674323015843792E-4
+destructor |destructors |destructor ,3.674323015843792E-4
+c feature |C feature |C features ,3.674323015843792E-4
+heap |heap ,3.674323015843792E-4
+dynamic memory allocation |dynamic memory allocation |Dynamic memory allocation ,3.674323015843792E-4
+construct |constructs ,3.674323015843792E-4
+pointer variable |pointer variable |pointer variables ,3.674323015843792E-4
+dynamic allocation |dynamic allocation ,3.674323015843792E-4
+organization |organization |organizations ,3.674323015843792E-4
+char |char ,3.674323015843792E-4
+clang |Clang ,3.674323015843792E-4
+variety |variety ,3.674323015843792E-4
+vec |vec ,3.674323015843792E-4
+brian w |Brian W ,3.674323015843792E-4
+overhead |overhead ,3.674323015843792E-4
+unsourced material |Unsourced material ,3.674323015843792E-4
+automatic allocation |automatic allocations |automatic allocation ,3.674323015843792E-4
+automatically |automatically ,3.674323015843792E-4
+copy |copy ,3.674323015843792E-4
+october |October ,3.674323015843792E-4
+reliable source |reliable sources ,3.674323015843792E-4
+malloc |malloc ,3.674323015843792E-4
+thread |thread ,3.674323015843792E-4
+simula |Simula ,3.674323015843792E-4
+limbo |Limbo ,3.674323015843792E-4
+current |current ,3.674323015843792E-4
+speedy renaming |speedy renaming ,3.674323015843792E-4
+c template |C templates |C Templates ,3.674323015843792E-4
+c and java |C and Java ,3.674323015843792E-4
+addition |additions |addition ,3.6112226543612346E-4
+algorithm |Algorithms |Algorithm |algorithms |algorithm ,3.6112226543612346E-4
+main article |Main article |main article ,3.6112226543612346E-4
+interpreter |interpreter |interpreters ,3.5005064636965834E-4
+programming tool |programming tools ,3.5005064636965834E-4
+javascript |JavaScript ,3.5005064636965834E-4
+change |changes ,3.2705258884451214E-4
+year |years ,3.2705258884451214E-4
+c programmer |C programmers ,3.2705258884451214E-4
+cast |cast |casts ,3.2705258884451214E-4
+generic programming |generic programming |Generic Programming ,3.2705258884451214E-4
+runtime |runtime ,3.2705258884451214E-4
+work |work ,3.2705258884451214E-4
+book |book ,3.2705258884451214E-4
+constant |constant |constants ,3.2705258884451214E-4
+standard header |standard headers |standard header ,3.2705258884451214E-4
+c code |C code ,3.2705258884451214E-4
+conversion |conversion ,3.2705258884451214E-4
+history |History ,3.266081868525557E-4
+computer programming |computer programming |Computer Programming ,3.2301846496192725E-4
+hardware |hardware ,3.2301846496192725E-4
+switch |switches |switch ,3.150455817326925E-4
+output |output ,3.150455817326925E-4
+effect |effect |effects ,2.7615232062762384E-4
+prentice hall |Prentice Hall ,2.7615232062762384E-4
+jel |JEL ,2.7557422618828436E-4
+string literal |string literal |string literals ,2.7557422618828436E-4
+reverse order |reverse order ,2.7557422618828436E-4
+andrei |Andrei ,2.7557422618828436E-4
+pl i |PL I ,2.7557422618828436E-4
+verification |verification ,2.7557422618828436E-4
+additional citation |additional citations ,2.7557422618828436E-4
+strict superset |strict superset ,2.7557422618828436E-4
+ansi c standard |ANSI C standard |ANSI C standards ,2.7557422618828436E-4
+limited |limited ,2.7557422618828436E-4
+englewood cliff |Englewood Cliffs ,2.7557422618828436E-4
+valid |valid ,2.7557422618828436E-4
+posix |POSIX ,2.7557422618828436E-4
+c and objective-c |C and Objective-C ,2.7557422618828436E-4
+question |Questions ,2.7557422618828436E-4
+general |general ,2.7557422618828436E-4
+designate |designates ,2.7557422618828436E-4
+revision |revision ,2.7557422618828436E-4
+operator overloading |operator overloading ,2.7557422618828436E-4
+range |range ,2.7557422618828436E-4
+link |links ,2.7557422618828436E-4
+garbage collection |garbage collection ,2.7557422618828436E-4
+recursion |recursion ,2.7557422618828436E-4
+equality |equality ,2.7557422618828436E-4
+local variable |Local variables |local variables ,2.7557422618828436E-4
+parent |parent ,2.7557422618828436E-4
+preprocessor |preprocessor ,2.7557422618828436E-4
+function overloading |function overloading |Function overloading ,2.7557422618828436E-4
+johnson |Johnson ,2.7557422618828436E-4
+ken |Ken ,2.7557422618828436E-4
+sequence point |Sequence points |sequence point |sequence points ,2.7557422618828436E-4
+world example |world example ,2.7557422618828436E-4
+library function |library functions ,2.7557422618828436E-4
+way |ways ,2.7557422618828436E-4
+printf function |printf function ,2.7557422618828436E-4
+enumerated type |enumerated types |Enumerated types ,2.7557422618828436E-4
+static allocation |Static allocation |static allocations |static allocation ,2.7557422618828436E-4
+false |false ,2.7557422618828436E-4
+oop |OOP ,2.7557422618828436E-4
+bounds checking |bounds checking ,2.7557422618828436E-4
+continue |continue ,2.7557422618828436E-4
+b stroustrup |b Stroustrup ,2.7557422618828436E-4
+virtual inheritance |virtual inheritance |Virtual inheritance ,2.7557422618828436E-4
+default argument |default arguments ,2.7557422618828436E-4
+portion |portions |portion ,2.7557422618828436E-4
+static initialization |static initialization |Static initialization ,2.7557422618828436E-4
+feuer |Feuer ,2.7557422618828436E-4
+subroutine |subroutine |subroutines ,2.7557422618828436E-4
+smalltalk |Smalltalk ,2.7557422618828436E-4
+encapsulation |encapsulation ,2.7557422618828436E-4
+iso standard |ISO standards ,2.7557422618828436E-4
+wide variety |wide variety ,2.7557422618828436E-4
+pelles c |Pelles C ,2.7557422618828436E-4
+alexandrescu |Alexandrescu ,2.7557422618828436E-4
+bug |bug ,2.7557422618828436E-4
+function definition |function definitions |function definition |Function definitions ,2.7557422618828436E-4
+null pointer value |null pointer values |Null pointer values ,2.7557422618828436E-4
+beginning |beginning ,2.7557422618828436E-4
+additional reference |additional references ,2.7557422618828436E-4
+lifespan |lifespan ,2.7557422618828436E-4
+phase |phases |phase ,2.7557422618828436E-4
+approach |approach |approaches ,2.7557422618828436E-4
+macro |macros |Macros ,2.7557422618828436E-4
+committee |committee ,2.7557422618828436E-4
+structured programming |Structured programming |structured programming ,2.7557422618828436E-4
+cerr |cerr ,2.7557422618828436E-4
+true |true ,2.7557422618828436E-4
+multiple inheritance |Multiple inheritance |multiple inheritance ,2.7557422618828436E-4
+lint |Lint ,2.7557422618828436E-4
+acm |ACM ,2.7557422618828436E-4
+ada |Ada ,2.7557422618828436E-4
+local |local ,2.7557422618828436E-4
+protected member |protected members |protected member ,2.7557422618828436E-4
+generic algorithm |generic algorithms ,2.7557422618828436E-4
+pure virtual function |pure virtual functions |pure virtual function ,2.7557422618828436E-4
+first element |first element ,2.7557422618828436E-4
+separate |separate ,2.7557422618828436E-4
+needed |needed ,2.7557422618828436E-4
+intel |Intel ,2.7557422618828436E-4
+arr |arr ,2.7557422618828436E-4
+david |David ,2.7557422618828436E-4
+comp lang c |comp lang c ,2.7557422618828436E-4
+instantiation |instantiation ,2.7557422618828436E-4
+representation |representation |representations ,2.725438240370935E-4
+bcpl |BCPL ,2.725438240370935E-4
+standardization iso |Standardization ISO ,2.725438240370935E-4
+embedded system |embedded systems |embedded system ,2.725438240370935E-4
+information |information ,2.725438240370935E-4
+guideline |guidelines |Guidelines ,2.725438240370935E-4
+manipulation |manipulations |manipulation ,2.725438240370935E-4
+pointer type |pointer types |pointer type ,2.725438240370935E-4
+termination |termination |Termination ,2.584147719695418E-4
+input |input ,2.584147719695418E-4
+assembly language |assembly language ,2.33667348223374E-4
+variable-length array |variable-length arrays ,2.180350592296748E-4
+world n |world n ,2.180350592296748E-4
+function declaration |function declarations |function declaration ,2.180350592296748E-4
+semicolon |semicolon ,2.180350592296748E-4
+zero |zeros |zero ,2.180350592296748E-4
+thing |things |thing ,2.180350592296748E-4
+operand |operands |operand ,2.180350592296748E-4
+c implementation |C implementations |C implementation ,2.180350592296748E-4
+semantics |semantics ,2.180350592296748E-4
+lpc |LPC ,2.180350592296748E-4
+c comparison |C Comparison ,2.180350592296748E-4
+university |University ,2.180350592296748E-4
+map |maps |map ,2.180350592296748E-4
+page |Pages |pages ,2.180350592296748E-4
+sequence |sequence |sequences ,2.124248620212491E-4
+imperative language |imperative language |imperative languages ,2.10030387821795E-4
+firmware |firmware |Firmware ,1.9381107897715634E-4
+donald e |Donald E ,1.9381107897715634E-4
+boston |Boston ,1.9381107897715634E-4
+knuth |Knuth ,1.9381107897715634E-4
+wilson |Wilson ,1.9381107897715634E-4
+central processor |central processor ,1.9381107897715634E-4
+comparative programming language |Comparative Programming Languages ,1.9381107897715634E-4
+instruction |instructions |instruction ,1.9381107897715634E-4
+art |Art ,1.9381107897715634E-4
+style |style ,1.911823758191242E-4
+abstract base class |abstract base class ,1.837161507921896E-4
+decrement |decrement ,1.837161507921896E-4
+reinitialization |reinitialization ,1.837161507921896E-4
+mathematics |mathematics ,1.837161507921896E-4
+misra c |MISRA C ,1.837161507921896E-4
+object type |object type ,1.837161507921896E-4
+iec standard |IEC standards ,1.837161507921896E-4
+single statement |single statement ,1.837161507921896E-4
+indication |indication ,1.837161507921896E-4
+hello |Hello ,1.837161507921896E-4
+advantage |advantage ,1.837161507921896E-4
+c bjarne stroustrup |C Bjarne Stroustrup ,1.837161507921896E-4
+obvious |obvious ,1.837161507921896E-4
+decision |decision ,1.837161507921896E-4
+sizeof x |sizeof x ,1.837161507921896E-4
+implicit return |implicit return ,1.837161507921896E-4
+informal specification |informal specification ,1.837161507921896E-4
+solaris studio |Solaris Studio ,1.837161507921896E-4
+action |actions ,1.837161507921896E-4
+tutorial |Tutorial ,1.837161507921896E-4
+large software development |large software development ,1.837161507921896E-4
+ken thompson |Ken Thompson ,1.837161507921896E-4
+type specifier |type specifier ,1.837161507921896E-4
+flow |flow ,1.837161507921896E-4
+programming style |programming style |Programming Styles ,1.837161507921896E-4
+exception handler |exception handler ,1.837161507921896E-4
+template code |template code ,1.837161507921896E-4
+compiler vendor |compiler vendors ,1.837161507921896E-4
+progress |progress ,1.837161507921896E-4
+special case |special case |special cases ,1.837161507921896E-4
+c design |C Design ,1.837161507921896E-4
+number or type |number or types |number or type ,1.837161507921896E-4
+subscription |subscription ,1.837161507921896E-4
+sizeof arr |sizeof arr ,1.837161507921896E-4
+low-level access |low-level access |Low-level access ,1.837161507921896E-4
+typing |Typing ,1.837161507921896E-4
+topic |topic ,1.837161507921896E-4
+delimiter |delimiters ,1.837161507921896E-4
+stanley b |Stanley B ,1.837161507921896E-4
+large number |large number ,1.837161507921896E-4
+access specifier |access specifier ,1.837161507921896E-4
+early version |early version |early versions ,1.837161507921896E-4
+dynamic initialization |dynamic initialization ,1.837161507921896E-4
+automatic garbage collection |automatic garbage collection ,1.837161507921896E-4
+check |checks ,1.837161507921896E-4
+data pointer |data pointers ,1.837161507921896E-4
+further |further ,1.837161507921896E-4
+exception catch std |exception catch std ,1.837161507921896E-4
+unix operating system |Unix operating system ,1.837161507921896E-4
+algol tradition |ALGOL tradition ,1.837161507921896E-4
+class inherit |class inherits ,1.837161507921896E-4
+proper compiler |proper compiler ,1.837161507921896E-4
+jel classification code |JEL classification codes ,1.837161507921896E-4
+c johnson |C Johnson ,1.837161507921896E-4
+c library |C library ,1.837161507921896E-4
+lexical variable scope |lexical variable scope ,1.837161507921896E-4
+terminate |terminates ,1.837161507921896E-4
+message |message ,1.837161507921896E-4
+verilog hdl |Verilog HDL ,1.837161507921896E-4
+unintended operation |unintended operations ,1.837161507921896E-4
+break |break ,1.837161507921896E-4
+convenience |convenience ,1.837161507921896E-4
+interview |Interview ,1.837161507921896E-4
+parent object |parent object ,1.837161507921896E-4
+expression context |expression contexts ,1.837161507921896E-4
+steve |Steve ,1.837161507921896E-4
+arbitrary size |arbitrary size ,1.837161507921896E-4
+blemish |blemishes ,1.837161507921896E-4
+c class |C classes ,1.837161507921896E-4
+member variable |Member variables ,1.837161507921896E-4
+type int |type int ,1.837161507921896E-4
+exceptional c |Exceptional C ,1.837161507921896E-4
+user-defined type |user-defined types ,1.837161507921896E-4
+fact |fact ,1.837161507921896E-4
+real world |real world ,1.837161507921896E-4
+form op |form op ,1.837161507921896E-4
+multidimensional array |Multidimensional arrays |multidimensional arrays ,1.837161507921896E-4
+brace |braces ,1.837161507921896E-4
+popularity |popularity ,1.837161507921896E-4
+modern compiler |modern compilers ,1.837161507921896E-4
+conditional operator |conditional operator |Conditional operator ,1.837161507921896E-4
+smart pointer |smart pointers ,1.837161507921896E-4
+summit |Summit ,1.837161507921896E-4
+unsafe |unsafe ,1.837161507921896E-4
+letter |letter ,1.837161507921896E-4
+friend |friends ,1.837161507921896E-4
+code size |code size ,1.837161507921896E-4
+vector |vectors ,1.837161507921896E-4
+pure virtual member function |pure virtual member function ,1.837161507921896E-4
+entry |entry ,1.837161507921896E-4
+brian kernighan |Brian Kernighan ,1.837161507921896E-4
+wikibook |Wikibooks ,1.837161507921896E-4
+register |register ,1.837161507921896E-4
+pdf |PDF ,1.837161507921896E-4
+static polymorphism |static polymorphism ,1.837161507921896E-4
+void pointer |void pointers ,1.837161507921896E-4
+expression statement |expression statement ,1.837161507921896E-4
+static memory allocation |static memory allocation |Static memory allocation ,1.837161507921896E-4
+c exception |C exceptions ,1.837161507921896E-4
+static memory |static memory ,1.837161507921896E-4
+inheritance edit |Inheritance edit ,1.837161507921896E-4
+header file |header file ,1.837161507921896E-4
+line comment |line comments ,1.837161507921896E-4
+alan r |Alan R ,1.837161507921896E-4
+efficiency |efficiency ,1.837161507921896E-4
+compiled code |compiled code ,1.837161507921896E-4
+exception catch |exception catch ,1.837161507921896E-4
+machine instruction |machine instructions ,1.837161507921896E-4
+reuse |reuse ,1.837161507921896E-4
+unexpected result |unexpected results ,1.837161507921896E-4
+mangling |mangling ,1.837161507921896E-4
+ambiguity |ambiguity ,1.837161507921896E-4
+bell lab |Bell Labs ,1.837161507921896E-4
+int main |int main ,1.837161507921896E-4
+josutti |Josuttis ,1.837161507921896E-4
+major revision |major revision ,1.837161507921896E-4
+clu |CLU ,1.837161507921896E-4
+thin layer |thin layer ,1.837161507921896E-4
+fortran |Fortran ,1.837161507921896E-4
+practice |Practices |Practice ,1.837161507921896E-4
+temporary variable |temporary variables |Temporary variables ,1.837161507921896E-4
+cpp |cpp ,1.837161507921896E-4
+heap memory allocation |heap memory allocation ,1.837161507921896E-4
+failure |failure ,1.837161507921896E-4
+cat |Cat ,1.837161507921896E-4
+reserved word |reserved word |reserved words ,1.837161507921896E-4
+naming |naming ,1.837161507921896E-4
+mascitti |Mascitti ,1.837161507921896E-4
+goto |goto ,1.837161507921896E-4
+unified parallel c |Unified Parallel C ,1.837161507921896E-4
+constexpr |constexpr ,1.837161507921896E-4
+kernel |kernel ,1.837161507921896E-4
+inlining |inlining ,1.837161507921896E-4
+cgi |CGI ,1.837161507921896E-4
+format |format ,1.837161507921896E-4
+c edit main article |C edit Main article ,1.837161507921896E-4
+specific argument |specific arguments ,1.837161507921896E-4
+tutorial and reference |Tutorial and Reference ,1.837161507921896E-4
+adoption |adoption ,1.837161507921896E-4
+overloadable operator |overloadable operators |Overloadable operators ,1.837161507921896E-4
+lexical variable scope and recursion |lexical variable scope and recursion ,1.837161507921896E-4
+built-in operator |built-in operators ,1.837161507921896E-4
+destruction |destruction ,1.837161507921896E-4
+data model |data models ,1.837161507921896E-4
+routine |routines ,1.837161507921896E-4
+requirement |requirements ,1.837161507921896E-4
+template version |template version ,1.837161507921896E-4
+manner |manner ,1.837161507921896E-4
+idiom |Idioms ,1.837161507921896E-4
+comment |Comments ,1.837161507921896E-4
+iterator |iterators ,1.837161507921896E-4
+inherit |inherit ,1.837161507921896E-4
+dynamic polymorphism |Dynamic polymorphism ,1.837161507921896E-4
+standard-conforming |standard-conforming ,1.837161507921896E-4
+static type system |static type system ,1.837161507921896E-4
+lippman |Lippman ,1.837161507921896E-4
+coding standard |Coding Standards ,1.837161507921896E-4
+system programming |system programming ,1.837161507921896E-4
+run-time environment |run-time environment ,1.837161507921896E-4
+include iostream |include iostream ,1.837161507921896E-4
+questionable code |questionable code ,1.837161507921896E-4
+static object |static objects ,1.837161507921896E-4
+compilation unit |compilation units |compilation unit ,1.837161507921896E-4
+cilk |Cilk ,1.837161507921896E-4
+option |option |options ,1.837161507921896E-4
+object-oriented programming |object-oriented programming ,1.837161507921896E-4
+moo |Moo ,1.837161507921896E-4
+k r c-based compiler |K R C-based compilers |K R C-based compiler ,1.837161507921896E-4
+para |para ,1.837161507921896E-4
+file archiver |File archivers |file archivers ,1.837161507921896E-4
+amount |amount ,1.837161507921896E-4
+standards committee |standards committee ,1.837161507921896E-4
+computer programming tool |Computer programming tools ,1.837161507921896E-4
+catch |catches |Catch ,1.837161507921896E-4
+base address |base address ,1.837161507921896E-4
+journal |Journal ,1.837161507921896E-4
+hand |hand ,1.837161507921896E-4
+control structure |control structures ,1.837161507921896E-4
+international character set |international character sets ,1.837161507921896E-4
+handler |handlers ,1.837161507921896E-4
+initial |initial ,1.837161507921896E-4
+record |records ,1.837161507921896E-4
+abstract data type |abstract data types |abstract data type ,1.837161507921896E-4
+memory management |memory management ,1.837161507921896E-4
+symbol |symbols ,1.837161507921896E-4
+template metaprogramming |template metaprogramming ,1.837161507921896E-4
+functions and class |functions and classes ,1.837161507921896E-4
+prototype |prototypes ,1.7502532318482917E-4
+aspect |aspects ,1.7502532318482917E-4
+testing |testing ,1.7502532318482917E-4
+software development |software development |Software development ,1.7502532318482917E-4
+detail |details ,1.699398896169993E-4
+basis |basis ,1.6352629442225607E-4
+data structure |data structures ,1.6352629442225607E-4
+dr dobb |Dr Dobb |Dr Dobbs ,1.6352629442225607E-4
+stack |stacks |stack ,1.6352629442225607E-4
+international standard |international standard ,1.6352629442225607E-4
+turn |turn ,1.6352629442225607E-4
+instance |instance ,1.6352629442225607E-4
+analysis |Analysis |analysis ,1.6352629442225607E-4
+abstraction |abstraction ,1.6352629442225607E-4
+t bell lab |T Bell Labs ,1.6352629442225607E-4
+built-in type |built-in types ,1.6352629442225607E-4
+situation |situations |situation ,1.6352629442225607E-4
+ability |ability ,1.6352629442225607E-4
+first edition |first edition ,1.6352629442225607E-4
+c standards committee |C Standards Committee |C standards committee ,1.6352629442225607E-4
+kind |kinds |kind ,1.6352629442225607E-4
+binary |binary ,1.4002025854786335E-4
+solution |Solutions |solution ,1.4002025854786335E-4
+side effect |side effects |side effect ,1.4002025854786335E-4
+initial computer program |initial computer program ,1.292073859847709E-4
+basic |BASIC ,1.292073859847709E-4
+clarification |clarification ,1.292073859847709E-4
+execute button |execute button ,1.292073859847709E-4
+disadvantage |disadvantage ,1.292073859847709E-4
+information system |Information Systems ,1.292073859847709E-4
+environment |environment ,1.292073859847709E-4
+en wikipedia |en wikipedia ,1.292073859847709E-4
+wiki |Wiki |Wikis ,1.292073859847709E-4
+request |request ,1.292073859847709E-4
+purpose |purpose ,1.292073859847709E-4
+configuration |configuration ,1.292073859847709E-4
+button |button ,1.292073859847709E-4
+application server |Application servers |application server ,1.292073859847709E-4
+manually input |manually input ,1.292073859847709E-4
+utility program |utility programs ,1.292073859847709E-4
+multiple program |multiple programs ,1.292073859847709E-4
+embedded firmware |embedded firmware ,1.292073859847709E-4
+development environment |Development environments |development environments ,1.292073859847709E-4
+term |term |terms ,1.2745491721274945E-4
+content |contents |Contents ,1.0959576780686787E-4
+developer |developer |developers ,1.090175296148374E-4
+blocks codelite eclipse geany microsoft visual studio netbeans c |Blocks CodeLite Eclipse Geany Microsoft Visual Studio NetBeans C ,1.090175296148374E-4
+different number |different numbers ,1.090175296148374E-4
+pike |Pike ,1.090175296148374E-4
+technical report |technical report ,1.090175296148374E-4
+notable exception |notable exceptions |notable exception ,1.090175296148374E-4
+languages compatibility |languages Compatibility ,1.090175296148374E-4
+c ides anjuta code |C IDEs Anjuta Code ,1.090175296148374E-4
+standard output |standard output ,1.090175296148374E-4
+unix kernel |UNIX kernel |Unix kernel ,1.090175296148374E-4
+external links edit |External links edit ,1.090175296148374E-4
+conditional compilation |conditional compilation ,1.090175296148374E-4
+server |servers |server ,1.090175296148374E-4
+wikibooks learning resource |Wikibooks Learning resources ,1.090175296148374E-4
+function pointer |function pointers ,1.090175296148374E-4
+rich |rich ,1.090175296148374E-4
+creator |creators |creator ,1.090175296148374E-4
+reason |reasons |Reason ,1.090175296148374E-4
+microsoft visual c |Microsoft Visual C ,1.090175296148374E-4
+official standard |official standard ,1.090175296148374E-4
+wikiquote textbook |Wikiquote Textbooks ,1.090175296148374E-4
+implicit conversion |implicit conversion |implicit conversions ,1.090175296148374E-4
+namespace |namespaces |namespace ,1.090175296148374E-4
+en wikipedia org w index php title category |en wikipedia org w index php title Category ,1.090175296148374E-4
+parameter list |parameter list ,1.090175296148374E-4
+good practice |good practice ,1.090175296148374E-4
+distinction |distinction ,1.050151939108975E-4
+specific type |specific type ,1.050151939108975E-4
+contrast |contrast ,1.050151939108975E-4
+existence |existence ,1.050151939108975E-4
+sorting |sorting ,1.050151939108975E-4
+interpreted language |interpreted languages |interpreted language ,1.050151939108975E-4
+pattern |patterns |pattern ,1.050151939108975E-4
+power |power ,1.050151939108975E-4
+recent change |recent changes ,9.79824560557667E-5
+extensive support |extensive support ,9.18580753960948E-5
+add entry |Add entry ,9.18580753960948E-5
+cgi programming |CGI Programming ,9.18580753960948E-5
+dereferenced element |dereferenced element ,9.18580753960948E-5
+auto break case char const |auto break case char const ,9.18580753960948E-5
+ambiguity problem |ambiguity problems ,9.18580753960948E-5
+joke |joke ,9.18580753960948E-5
+slightly more overhead |slightly more overhead ,9.18580753960948E-5
+possibly |possibly ,9.18580753960948E-5
+generic polymorphic code |generic polymorphic code ,9.18580753960948E-5
+use or definition |use or definition ,9.18580753960948E-5
+overloaded |Overloaded ,9.18580753960948E-5
+compile-time error message |compile-time error message ,9.18580753960948E-5
+function block |function block ,9.18580753960948E-5
+numerical algorithm |numerical algorithms ,9.18580753960948E-5
+symptom |symptoms ,9.18580753960948E-5
+machine address |machine addresses ,9.18580753960948E-5
+conditional control |conditional control ,9.18580753960948E-5
+multinational unicode character |multinational Unicode characters ,9.18580753960948E-5
+type composition |type composition ,9.18580753960948E-5
+common c library |common C library ,9.18580753960948E-5
+system library |system library ,9.18580753960948E-5
+no function keyword |no function keyword ,9.18580753960948E-5
+extern c block |extern C block ,9.18580753960948E-5
+object-oriented strict superset |object-oriented strict superset ,9.18580753960948E-5
+performance penalty |performance penalty ,9.18580753960948E-5
+recognizable expression |recognizable expression ,9.18580753960948E-5
+legal standard c |legal Standard C ,9.18580753960948E-5
+syntax edit main article |Syntax edit Main article ,9.18580753960948E-5
+mathematica |Mathematica ,9.18580753960948E-5
+object orientation and garbage collection |object orientation and garbage collection ,9.18580753960948E-5
+x point |x points ,9.18580753960948E-5
+recurse |recurse ,9.18580753960948E-5
+general call |general calls ,9.18580753960948E-5
+imperative procedural language |imperative procedural language ,9.18580753960948E-5
+no runtime |no runtime ,9.18580753960948E-5
+dynamic memory stdlib h |Dynamic memory stdlib h ,9.18580753960948E-5
+c application |C Applications ,9.18580753960948E-5
+false negative |false negatives ,9.18580753960948E-5
+single argument |single argument ,9.18580753960948E-5
+run-time phenomenon |run-time phenomenon ,9.18580753960948E-5
+precedent |precedent ,9.18580753960948E-5
+c abstract syntax tree |C abstract syntax tree ,9.18580753960948E-5
+c standard library stream facility |C Standard Library stream facility ,9.18580753960948E-5
+official part |official part ,9.18580753960948E-5
+data element |data elements ,9.18580753960948E-5
+detected problem |detected problem ,9.18580753960948E-5
+processing |Processing ,9.18580753960948E-5
+input output facilities iostream |input output facilities iostream ,9.18580753960948E-5
+national adoption |National adoption ,9.18580753960948E-5
+variable name |variable names ,9.18580753960948E-5
+c library function |C library functions ,9.18580753960948E-5
+koenig |Koenig ,9.18580753960948E-5
+separate initialization |separate initialization ,9.18580753960948E-5
+template metaprogram |template metaprogram ,9.18580753960948E-5
+column |columns ,9.18580753960948E-5
+update |update ,9.18580753960948E-5
+keyword void |keyword void ,9.18580753960948E-5
+otsego |Otsego ,9.18580753960948E-5
+declarations and function definition |declarations and function definitions ,9.18580753960948E-5
+fortran and pl i |Fortran and PL I ,9.18580753960948E-5
+occasion |occasion ,9.18580753960948E-5
+iterative execution looping |iterative execution looping ,9.18580753960948E-5
+conditional context |conditional contexts ,9.18580753960948E-5
+careless use |Careless use ,9.18580753960948E-5
+hacker |Hacker ,9.18580753960948E-5
+static storage duration objects thread storage duration |Static storage duration objects Thread storage duration ,9.18580753960948E-5
+atomic |atomics ,9.18580753960948E-5
+following |following ,9.18580753960948E-5
+programming languages references edit stroustrup |programming languages References edit Stroustrup ,9.18580753960948E-5
+secondary notation |secondary notation ,9.18580753960948E-5
+technical reason |technical reasons ,9.18580753960948E-5
+low overhead |low overhead ,9.18580753960948E-5
+arithmetical and logical operator |arithmetical and logical operators ,9.18580753960948E-5
+andrew |Andrew ,9.18580753960948E-5
+ieee working group |IEEE working group ,9.18580753960948E-5
+space probe |space probes ,9.18580753960948E-5
+lexical substitution |lexical substitution ,9.18580753960948E-5
+boolean logic |boolean logic ,9.18580753960948E-5
+constructor or function call |constructor or function call ,9.18580753960948E-5
+unrelated |unrelated ,9.18580753960948E-5
+colleague |colleagues ,9.18580753960948E-5
+boolean datatype |boolean datatype ,9.18580753960948E-5
+basic c execution character |basic C execution character ,9.18580753960948E-5
+differing type |differing types ,9.18580753960948E-5
+std cout hello |std cout Hello ,9.18580753960948E-5
+single archive file |single archive file ,9.18580753960948E-5
+c abi summary |C ABI Summary ,9.18580753960948E-5
+corrupt pointer |corrupt pointer ,9.18580753960948E-5
+dynamic initialization order |dynamic initialization order ,9.18580753960948E-5
+allocation and deallocation |allocation and deallocation ,9.18580753960948E-5
+weak manifest nominal major implementations gcc clang intel c |weak manifest nominal Major implementations GCC Clang Intel C ,9.18580753960948E-5
+atomic operation |atomic operations ,9.18580753960948E-5
+generated code |generated code ,9.18580753960948E-5
+dramatic exception |dramatic exception ,9.18580753960948E-5
+pointers edit c |Pointers edit C ,9.18580753960948E-5
+no array keyword |no array keyword ,9.18580753960948E-5
+increment |increment ,9.18580753960948E-5
+type cast |type cast ,9.18580753960948E-5
+do-while |do-while ,9.18580753960948E-5
+searching |searching ,9.18580753960948E-5
+c template metaprogramming |C Template Metaprogramming ,9.18580753960948E-5
+annotated c reference manual |Annotated C Reference Manual ,9.18580753960948E-5
+hardware-dependent assumption |hardware-dependent assumptions ,9.18580753960948E-5
+fedoraproject org |fedoraproject org ,9.18580753960948E-5
+object orientation |object orientation ,9.18580753960948E-5
+static compile-time |static compile-time ,9.18580753960948E-5
+device driver |device drivers ,9.18580753960948E-5
+alexander stepanov |Alexander Stepanov ,9.18580753960948E-5
+reserve storage |reserve storage ,9.18580753960948E-5
+j journal |J Journal ,9.18580753960948E-5
+enum keyword |enum keyword ,9.18580753960948E-5
+aleksey |Aleksey ,9.18580753960948E-5
+fsf llvm microsoft |FSF LLVM Microsoft ,9.18580753960948E-5
+offset-within-word field |offset-within-word field ,9.18580753960948E-5
+microcomputer |microcomputers ,9.18580753960948E-5
+user-defined name |user-defined names ,9.18580753960948E-5
+standard member function |standard member functions ,9.18580753960948E-5
+ordinary c array |ordinary C arrays ,9.18580753960948E-5
+industrial strength c |Industrial Strength C ,9.18580753960948E-5
+web software |Web software ,9.18580753960948E-5
+run-time system |run-time system ,9.18580753960948E-5
+equal width |equal width ,9.18580753960948E-5
+compiler flag |compiler flags ,9.18580753960948E-5
+browser |browser ,9.18580753960948E-5
+website programming |website programming ,9.18580753960948E-5
+public inheritance correspond |public inheritance corresponds ,9.18580753960948E-5
+kalev |Kalev ,9.18580753960948E-5
+bug fix |bug fixes ,9.18580753960948E-5
+newline character |newline character ,9.18580753960948E-5
+c list |C List ,9.18580753960948E-5
+current scope |current scope ,9.18580753960948E-5
+arrays and pointer |arrays and pointers ,9.18580753960948E-5
+undesirable effect |undesirable effects ,9.18580753960948E-5
+c and c code |C and C code ,9.18580753960948E-5
+different argument |different arguments ,9.18580753960948E-5
+standard-conforming or k r c-based compiler |standard-conforming or K R C-based compilers ,9.18580753960948E-5
+current version |current version ,9.18580753960948E-5
+warning |warnings ,9.18580753960948E-5
+algol descendent |Algol descendent ,9.18580753960948E-5
+equal support and performance |equal support and performance ,9.18580753960948E-5
+geoclue gforth gift gimp gio software |GeoClue Gforth GiFT GIMP GIO software ,9.18580753960948E-5
+first-class object |first-class objects ,9.18580753960948E-5
+flexibility |flexibility ,9.18580753960948E-5
+categories iso standard |Categories ISO standards ,9.18580753960948E-5
+restrictive reference type |restrictive reference types ,9.18580753960948E-5
+indeterminate value |indeterminate values ,9.18580753960948E-5
+common naming convention |common naming convention ,9.18580753960948E-5
+e g stl sort |e g STL sort ,9.18580753960948E-5
+return statement |return statement ,9.18580753960948E-5
+console |console ,9.18580753960948E-5
+apple |apple ,9.18580753960948E-5
+cfront |Cfront ,9.18580753960948E-5
+aligna |Alignas ,9.18580753960948E-5
+cat and flying mammal |Cat and Flying Mammal ,9.18580753960948E-5
+true array variable |true array variables ,9.18580753960948E-5
+mario |Mario ,9.18580753960948E-5
+byte endiannes |byte endianness ,9.18580753960948E-5
+local or project-specific header file |local or project-specific header files ,9.18580753960948E-5
+one-line comment |one-line comments ,9.18580753960948E-5
+no tool |no tools ,9.18580753960948E-5
+devx quinstreet |DevX QuinStreet ,9.18580753960948E-5
+embedded system application |embedded system applications ,9.18580753960948E-5
+inheritance graph |inheritance graph ,9.18580753960948E-5
+code fighter |Code Fighter ,9.18580753960948E-5
+c program source text |C program source text ,9.18580753960948E-5
+unicode support |Unicode support ,9.18580753960948E-5
+compiled language |compiled language ,9.18580753960948E-5
+c disambiguation |C disambiguation ,9.18580753960948E-5
+newer main function |newer main function ,9.18580753960948E-5
+range indexing |range indexing ,9.18580753960948E-5
+array name argument |array name arguments ,9.18580753960948E-5
+becker |Becker ,9.18580753960948E-5
+sigil |sigil ,9.18580753960948E-5
+special provision |special provision ,9.18580753960948E-5
+technique |Techniques ,9.18580753960948E-5
+e g -lm shorthand |e g -lm shorthand ,9.18580753960948E-5
+common example |common example ,9.18580753960948E-5
+compound literal |compound literals ,9.18580753960948E-5
+k r c edit |K R C edit ,9.18580753960948E-5
+c virtual inheritance exhibit |C virtual inheritance exhibits ,9.18580753960948E-5
+statement syntax |statement syntax ,9.18580753960948E-5
+c primer |C Primer ,9.18580753960948E-5
+resource limit |resource limits ,9.18580753960948E-5
+pointed-to data type |pointed-to data type ,9.18580753960948E-5
+increment and decrement |increment and decrement ,9.18580753960948E-5
+generic algorithms and container |generic algorithms and containers ,9.18580753960948E-5
+polymorphism edit |Polymorphism edit ,9.18580753960948E-5
+syntactic sugar |syntactic sugar ,9.18580753960948E-5
+non-portable portion |non-portable portion ,9.18580753960948E-5
+extent or lifetime |extent or lifetime ,9.18580753960948E-5
+loader |loader ,9.18580753960948E-5
+california |California ,9.18580753960948E-5
+java programmer |Java programmer ,9.18580753960948E-5
+diverts execution |diverts execution ,9.18580753960948E-5
+mcp master control program |MCP Master Control Program ,9.18580753960948E-5
+undefined behavior |undefined behavior ,9.18580753960948E-5
+verilog hardware description language |Verilog hardware description language ,9.18580753960948E-5
+misuse |misuse ,9.18580753960948E-5
+small improvement |small improvements ,9.18580753960948E-5
+false positive |false positives ,9.18580753960948E-5
+fsf llvm microsoft and intel |FSF LLVM Microsoft and Intel ,9.18580753960948E-5
+potentially error-prone chore |potentially error-prone chore ,9.18580753960948E-5
+searching and sorting |searching and sorting ,9.18580753960948E-5
+similar aim |similar aims ,9.18580753960948E-5
+minimum |minimum ,9.18580753960948E-5
+accordance |accordance ,9.18580753960948E-5
+space probes and entertainment software |space probes and entertainment software ,9.18580753960948E-5
+l-value |l-value ,9.18580753960948E-5
+heap space |heap space ,9.18580753960948E-5
+procedure |Procedures ,9.18580753960948E-5
+scripting |scripting ,9.18580753960948E-5
+iso romanization |ISO romanizations ,9.18580753960948E-5
+library routine |library routines ,9.18580753960948E-5
+naugler |Naugler ,9.18580753960948E-5
+reliance |reliance ,9.18580753960948E-5
+syntax preprocessor data type |Syntax Preprocessor Data types ,9.18580753960948E-5
+code bloat |code bloat ,9.18580753960948E-5
+effective c |Effective C ,9.18580753960948E-5
+dynamic allocation malloc |dynamic allocation malloc ,9.18580753960948E-5
+no define keyword |no define keyword ,9.18580753960948E-5
+array access |array accesses ,9.18580753960948E-5
+c annotation |C Annotations ,9.18580753960948E-5
+struct inherit |struct inherits ,9.18580753960948E-5
+gnd identifiers wikipedia article |GND identifiers Wikipedia articles ,9.18580753960948E-5
+general purpose programming language |general purpose programming language ,9.18580753960948E-5
+function parameter type check |function parameter type checks ,9.18580753960948E-5
+uninitialized |uninitialized ,9.18580753960948E-5
+b language |B language ,9.18580753960948E-5
+derivative |derivatives ,9.18580753960948E-5
+standard library exception |standard library exceptions ,9.18580753960948E-5
+outer scope propagation |outer scope propagation ,9.18580753960948E-5
+care |care ,9.18580753960948E-5
+c translate |C translates ,9.18580753960948E-5
+recently added keyword |recently added keywords ,9.18580753960948E-5
+updated second edition |updated second edition ,9.18580753960948E-5
+syntactically valid construct |syntactically valid constructs ,9.18580753960948E-5
+left-to-right order |left-to-right order ,9.18580753960948E-5
+general type |general type ,9.18580753960948E-5
+explicit argument |explicit arguments ,9.18580753960948E-5
+dot operator |dot operator ,9.18580753960948E-5
+standard input |standard input ,9.18580753960948E-5
+thumb |thumb ,9.18580753960948E-5
+dominance |dominance ,9.18580753960948E-5
+recent release |Recent releases ,9.18580753960948E-5
+further reading edit abraham |Further reading edit Abrahams ,9.18580753960948E-5
+automated source code checking and auditing |Automated source code checking and auditing ,9.18580753960948E-5
+suitable handler |suitable handler ,9.18580753960948E-5
+basic i o hardware addressing |basic I O hardware addressing ,9.18580753960948E-5
+use and understanding |use and understanding ,9.18580753960948E-5
+lowercase |Lowercase ,9.18580753960948E-5
+efficient implementation |efficient implementations ,9.18580753960948E-5
+program organization |program organization ,9.18580753960948E-5
+complex number |complex numbers ,9.18580753960948E-5
+modern c design |Modern C Design ,9.18580753960948E-5
+invoker |invoker ,9.18580753960948E-5
+user-defined typedef |User-defined typedef ,9.18580753960948E-5
+sibling rivalry |Sibling rivalry ,9.18580753960948E-5
+array member |Array members ,9.18580753960948E-5
+additional references article |additional references Articles ,9.18580753960948E-5
+performance critical applications e g |performance critical applications e g ,9.18580753960948E-5
+z a z decimal digit |z A Z Decimal digits ,9.18580753960948E-5
+earlier instance |Earlier instances ,9.18580753960948E-5
+convenient synonym |convenient synonyms ,9.18580753960948E-5
+process termination function |Process termination functions ,9.18580753960948E-5
+narain h |Narain H ,9.18580753960948E-5
+low level memory manipulation |low level memory manipulation ,9.18580753960948E-5
+gurtovoy |Gurtovoy ,9.18580753960948E-5
+core language |core language ,9.18580753960948E-5
+tuple |tuples ,9.18580753960948E-5
+c programming language family class-based programming language |C programming language family Class-based programming languages ,9.18580753960948E-5
+variable type |variable type ,9.18580753960948E-5
+compile-time constant |compile-time constants ,9.18580753960948E-5
+int argc |int argc ,9.18580753960948E-5
+original version |original version ,9.18580753960948E-5
+simula-like feature |Simula-like features ,9.18580753960948E-5
+source-to-source compiler |source-to-source compilers ,9.18580753960948E-5
+memory leak |memory leak ,9.18580753960948E-5
+stalling |Stallings ,9.18580753960948E-5
+separate standard header |separate standard headers ,9.18580753960948E-5
+technique faq c faq lite |Technique FAQ C FAQ Lite ,9.18580753960948E-5
+uniform manner |uniform manner ,9.18580753960948E-5
+exotic feature |exotic features ,9.18580753960948E-5
+combination |combination ,9.18580753960948E-5
+pearson education |Pearson Education ,9.18580753960948E-5
+text-line-based restriction |text-line-based restrictions ,9.18580753960948E-5
+dereference |dereference ,9.18580753960948E-5
+standard library edit |Standard library edit ,9.18580753960948E-5
+wikidata |Wikidata ,9.18580753960948E-5
+general-purpose programming language |general-purpose programming language ,9.18580753960948E-5
+terminal or screen display |terminal or screen display ,9.18580753960948E-5
+dynamic storage duration objects edit |Dynamic storage duration objects edit ,9.18580753960948E-5
+escape |escapes ,9.18580753960948E-5
+parameter declaration |parameter declarations ,9.18580753960948E-5
+precaution |precautions ,9.18580753960948E-5
+performance efficiency |performance efficiency ,9.18580753960948E-5
+non-profit organization |non-profit organization ,9.18580753960948E-5
+basic feature |basic features ,9.18580753960948E-5
+function and class template |function and class templates ,9.18580753960948E-5
+underlying array size |underlying array size ,9.18580753960948E-5
+actual usage |actual usage ,9.18580753960948E-5
+standard input and output function |standard input and output functions ,9.18580753960948E-5
+virtual function table |virtual function tables ,9.18580753960948E-5
+end-user application |end-user applications ,9.18580753960948E-5
+subsequent version |subsequent version ,9.18580753960948E-5
+philosophy edit |Philosophy edit ,9.18580753960948E-5
+void main |void main ,9.18580753960948E-5
+computer memory |computer memory ,9.18580753960948E-5
+overloaded and operator |Overloaded and operators ,9.18580753960948E-5
+valgrind |Valgrind ,9.18580753960948E-5
+resulting multidimensional array |resulting multidimensional array ,9.18580753960948E-5
+constant initialization phase |constant initialization phase ,9.18580753960948E-5
+function result |function results ,9.18580753960948E-5
+four feature |four features ,9.18580753960948E-5
+program startup |program startup ,9.18580753960948E-5
+local block |local block ,9.18580753960948E-5
+newer language |newer languages ,9.18580753960948E-5
+persistent nature |persistent nature ,9.18580753960948E-5
+bjarne stroustrup inventor |Bjarne Stroustrup Inventor ,9.18580753960948E-5
+curly bracket |curly brackets ,9.18580753960948E-5
+undefined behavior or statement |undefined behavior or statements ,9.18580753960948E-5
+range e |range e ,9.18580753960948E-5
+stream input |stream input ,9.18580753960948E-5
+efficient object code |efficient object code ,9.18580753960948E-5
+run-time support |Run-time support ,9.18580753960948E-5
+array name |array names ,9.18580753960948E-5
+sizeof x or n |sizeof x or n ,9.18580753960948E-5
+improved type checking |improved type checking ,9.18580753960948E-5
+higher-level language |higher-level languages ,9.18580753960948E-5
+convenience c |convenience C ,9.18580753960948E-5
+deleted |deleted ,9.18580753960948E-5
+usage model |usage model ,9.18580753960948E-5
+desktop environment |desktop environments ,9.18580753960948E-5
+high-level operation |high-level operations ,9.18580753960948E-5
+single unix specification |Single UNIX Specification ,9.18580753960948E-5
+telephone switch |telephone switches ,9.18580753960948E-5
+recognizable expression and statement syntax |recognizable expression and statement syntax ,9.18580753960948E-5
+special version |special versions ,9.18580753960948E-5
+declared array |declared array ,9.18580753960948E-5
+administration |administration ,9.18580753960948E-5
+paper |paper ,9.18580753960948E-5
+memory usage |memory usage ,9.18580753960948E-5
+extern attribute |extern attributes ,9.18580753960948E-5
+state |State ,9.18580753960948E-5
+ampl awk |AMPL AWK ,9.18580753960948E-5
+uncontrolled consequence |uncontrolled consequences ,9.18580753960948E-5
+fixed size |fixed size ,9.18580753960948E-5
+object-oriented programming oop feature |object-oriented programming OOP features ,9.18580753960948E-5
+raymond |Raymond ,9.18580753960948E-5
+distributed computing |distributed computing ,9.18580753960948E-5
+standards-compliant and portably written c program |standards-compliant and portably written C program ,9.18580753960948E-5
+binding more tightly |binding more tightly ,9.18580753960948E-5
+web search |web search ,9.18580753960948E-5
+external synchronisation |external synchronisation ,9.18580753960948E-5
+-else conditional execution |-else conditional execution ,9.18580753960948E-5
+carriage return |carriage return ,9.18580753960948E-5
+internationalization |internationalization ,9.18580753960948E-5
+extensive use |extensive use ,9.18580753960948E-5
+array pointer |array pointers ,9.18580753960948E-5
+array indexing |Array indexing ,9.18580753960948E-5
+binary search |binary search ,9.18580753960948E-5
+independently instantiate new symbol |independently instantiate new symbols ,9.18580753960948E-5
+templates edit |Templates edit ,9.18580753960948E-5
+array-like access |array-like access ,9.18580753960948E-5
+watcom c dialects cyclone |Watcom C Dialects Cyclone ,9.18580753960948E-5
+clone |clone ,9.18580753960948E-5
+man page |Man Page ,9.18580753960948E-5
+int type specifier |int type specifiers ,9.18580753960948E-5
+boolean type |boolean type ,9.18580753960948E-5
+c syntax c |C syntax C ,9.18580753960948E-5
+external function |external function ,9.18580753960948E-5
+dewhurst |Dewhurst ,9.18580753960948E-5
+actual problem |actual problems ,9.18580753960948E-5
+libraries edit |Libraries edit ,9.18580753960948E-5
+programming principles and practice |Programming Principles and Practice ,9.18580753960948E-5
+struct data type |struct data types ,9.18580753960948E-5
+event handler |event handlers ,9.18580753960948E-5
+large-scale program structure |large-scale program structures ,9.18580753960948E-5
+valid c code |valid C code ,9.18580753960948E-5
+design requirement |design requirements ,9.18580753960948E-5
+siz |sizes ,9.18580753960948E-5
+formal grammar |formal grammar ,9.18580753960948E-5
+compound type |compound types ,9.18580753960948E-5
+characteristics edit |Characteristics edit ,9.18580753960948E-5
+bell system tech |Bell System Tech ,9.18580753960948E-5
+katdare |Katdare ,9.18580753960948E-5
+history edit early developments edit |History edit Early developments edit ,9.18580753960948E-5
+void function |void functions ,9.18580753960948E-5
+bool complex |Bool Complex ,9.18580753960948E-5
+minicomputer |minicomputers ,9.18580753960948E-5
+unsigned floating-point number |unsigned floating-point numbers ,9.18580753960948E-5
+fatal error |fatal error ,9.18580753960948E-5
+- object size |- object size ,9.18580753960948E-5
+c coding standard |C Coding Standards ,9.18580753960948E-5
+c algol programming language |C Algol programming language ,9.18580753960948E-5
+compile-time type definition |compile-time type definitions ,9.18580753960948E-5
+dynamic lifespan |dynamic lifespan ,9.18580753960948E-5
+underscored identifier |underscored identifiers ,9.18580753960948E-5
+pre-defined symbol |pre-defined symbols ,9.18580753960948E-5
+c object model |C Object Model ,9.18580753960948E-5
+lasting use |lasting use ,9.18580753960948E-5
+declaration point |declaration point ,9.18580753960948E-5
+form feed |form feed ,9.18580753960948E-5
+grouping block |grouping blocks ,9.18580753960948E-5
+os cross-platform multi-platform filename extension |OS Cross-platform multi-platform Filename extension ,9.18580753960948E-5
+reserved keyword |reserved keywords ,9.18580753960948E-5
+program prints hello |program prints hello ,9.18580753960948E-5
+frequent maintenance |frequent maintenance ,9.18580753960948E-5
+opinion |opinion ,9.18580753960948E-5
+multiple function |multiple functions ,9.18580753960948E-5
+static cast |static cast ,9.18580753960948E-5
+standard c c programming |Standard C C Programming ,9.18580753960948E-5
+available computer architecture |available computer architectures ,9.18580753960948E-5
+column-based or text-line-based restriction |column-based or text-line-based restrictions ,9.18580753960948E-5
+exact size |exact size ,9.18580753960948E-5
+related languages edit |Related languages edit ,9.18580753960948E-5
+complete guide |complete Guide ,9.18580753960948E-5
+int other function |int other function ,9.18580753960948E-5
+numerous new feature |numerous new features ,9.18580753960948E-5
+- bitwise logic |- bitwise logic ,9.18580753960948E-5
+similarity |similarity ,9.18580753960948E-5
+first line |first line ,9.18580753960948E-5
+k r c code |K R C code ,9.18580753960948E-5
+screen display |screen display ,9.18580753960948E-5
+diagnostics |diagnostics ,9.18580753960948E-5
+fundamental type |fundamental type ,9.18580753960948E-5
+compcert |Compcert ,9.18580753960948E-5
+desktop application |desktop applications ,9.18580753960948E-5
+understanding |understanding ,9.18580753960948E-5
+type correctness |type correctness ,9.18580753960948E-5
+bcpl or c |BCPL or C ,9.18580753960948E-5
+multi-threading |multi-threading ,9.18580753960948E-5
+compile-time parameterized function |compile-time parameterized function ,9.18580753960948E-5
+area |areas ,9.18580753960948E-5
+word processor |word processors ,9.18580753960948E-5
+forward slash |forward slashes ,9.18580753960948E-5
+practical use |practical use ,9.18580753960948E-5
+blog emptycrate |blog emptycrate ,9.18580753960948E-5
+brokken |Brokken ,9.18580753960948E-5
+constructor or initializer |constructor or initializer ,9.18580753960948E-5
+enhanced computer program |enhanced computer program ,9.18580753960948E-5
+bnf identifier |BNF identifiers ,9.18580753960948E-5
+data partition |data partition ,9.18580753960948E-5
+uxxxx |uXXXX ,9.18580753960948E-5
+native complex-number type |native complex-number types ,9.18580753960948E-5
+c common knowledge |C Common Knowledge ,9.18580753960948E-5
+no difference |no difference ,9.18580753960948E-5
+abstraction encapsulation inheritance |abstraction encapsulation inheritance ,9.18580753960948E-5
+william |William ,9.18580753960948E-5
+comment delimiter |comment delimiters ,9.18580753960948E-5
+different c compiler |different C compilers ,9.18580753960948E-5
+essential part |essential part ,9.18580753960948E-5
+line-number preprocessor directive |line-number preprocessor directives ,9.18580753960948E-5
+given function |given function ,9.18580753960948E-5
+c linkage |C linkage ,9.18580753960948E-5
+c idiom |C Idioms ,9.18580753960948E-5
+java comparison |Java Comparison ,9.18580753960948E-5
+implementor |implementors ,9.18580753960948E-5
+sizeof static struct switch typedef union |sizeof static struct switch typedef union ,9.18580753960948E-5
+structure |structure ,9.18580753960948E-5
+son |Sons ,9.18580753960948E-5
+type definition |type definition ,9.18580753960948E-5
+harbison |Harbison ,9.18580753960948E-5
+raised |raised ,9.18580753960948E-5
+stephen c johnson |Stephen C Johnson ,9.18580753960948E-5
+c open source anjuta code |C Open source Anjuta Code ,9.18580753960948E-5
+common standard |common standard ,9.18580753960948E-5
+primary method |primary method ,9.18580753960948E-5
+date value |date values ,9.18580753960948E-5
+repercussion |repercussions ,9.18580753960948E-5
+well-defined separate part |well-defined separate parts ,9.18580753960948E-5
+embedded microcontroller |embedded microcontrollers ,9.18580753960948E-5
+additional feature |additional features ,9.18580753960948E-5
+assignment or pointer arithmetic |assignment or pointer arithmetic ,9.18580753960948E-5
+decouple generic broadly |decouple generic broadly ,9.18580753960948E-5
+sql |SQL ,9.18580753960948E-5
+examining objective-c |Examining Objective-C ,9.18580753960948E-5
+callback |callbacks ,9.18580753960948E-5
+member selection operator |Member selection operator ,9.18580753960948E-5
+double indexing |double indexing ,9.18580753960948E-5
+unspecified type |unspecified type ,9.18580753960948E-5
+externally imposed data access requirement |externally imposed data access requirements ,9.18580753960948E-5
+first character |first character ,9.18580753960948E-5
+character set edit |Character set edit ,9.18580753960948E-5
+straightforward compiler |straightforward compiler ,9.18580753960948E-5
+powerful tool |powerful tool ,9.18580753960948E-5
+sequencing |sequencing ,9.18580753960948E-5
+computing |computing ,9.18580753960948E-5
+website news |Website News ,9.18580753960948E-5
+different function |different functions ,9.18580753960948E-5
+level |levels ,9.18580753960948E-5
+existing source code |existing source code ,9.18580753960948E-5
+operator overload |operator overloads ,9.18580753960948E-5
+languages e g |languages e g ,9.18580753960948E-5
+c use pass-by-value semantics |C use pass-by-value semantics ,9.18580753960948E-5
+official |Official ,9.18580753960948E-5
+non-void return type |non-void return type ,9.18580753960948E-5
+mycroft |Mycroft ,9.18580753960948E-5
+null macro |NULL macro ,9.18580753960948E-5
+opening curly brace |opening curly brace ,9.18580753960948E-5
+great deal |great deal ,9.18580753960948E-5
+four type |four types ,9.18580753960948E-5
+thread creation and destruction |thread creation and destruction ,9.18580753960948E-5
+portably written c program |portably written C program ,9.18580753960948E-5
+dynamic dispatch |dynamic dispatch ,9.18580753960948E-5
+reference second ed |Reference Second ed ,9.18580753960948E-5
+machine |machines ,9.18580753960948E-5
+stuff |Stuff ,9.18580753960948E-5
+en wikipedia org w index php title c |en wikipedia org w index php title C ,9.18580753960948E-5
+escape sequence |escape sequence ,9.18580753960948E-5
+automatic variable |automatic variables ,9.18580753960948E-5
+concept |Concepts ,9.18580753960948E-5
+nyquist |Nyquist ,9.18580753960948E-5
+bsearch |bsearch ,9.18580753960948E-5
+wrong precedence |wrong precedence ,9.18580753960948E-5
+url help |url help ,9.18580753960948E-5
+bulk code |bulk code ,9.18580753960948E-5
+compatibility edit |Compatibility edit ,9.18580753960948E-5
+wide range |wide range ,9.18580753960948E-5
+actual run-time type |actual run-time type ,9.18580753960948E-5
+first place |first place ,9.18580753960948E-5
+custom software project |Custom software projects ,9.18580753960948E-5
+compiled code size |compiled code size ,9.18580753960948E-5
+macro symbol |macro symbols ,9.18580753960948E-5
+compile-time parameterized function or class |compile-time parameterized function or class ,9.18580753960948E-5
+lexical scope |lexical scope ,9.18580753960948E-5
+main difference |main difference ,9.18580753960948E-5
+object or function |object or function ,9.18580753960948E-5
+functions and operand |functions and operands ,9.18580753960948E-5
+herb sutter |Herb Sutter ,9.18580753960948E-5
+main code |main code ,9.18580753960948E-5
+low run-time demand |low run-time demand ,9.18580753960948E-5
+data implementation |data implementation ,9.18580753960948E-5
+logical operator |logical operators ,9.18580753960948E-5
+stroustrup com sibling rivalry pdf |stroustrup com sibling rivalry pdf ,9.18580753960948E-5
+c or near-c interpreter |C or near-C interpreters ,9.18580753960948E-5
+australian national university |Australian National University ,9.18580753960948E-5
+further change |further changes ,9.18580753960948E-5
+flying mammal |Flying Mammal ,9.18580753960948E-5
+sfinae |SFINAE ,9.18580753960948E-5
+phenomenon |phenomenon ,9.18580753960948E-5
+apparent equivalence |apparent equivalence ,9.18580753960948E-5
+scheme |scheme ,9.18580753960948E-5
+text line |text line ,9.18580753960948E-5
+no url use dmy date |no URL Use dmy dates ,9.18580753960948E-5
+run-time exception |run-time exceptions ,9.18580753960948E-5
+software sw |software SW ,9.18580753960948E-5
+long long int |long long int ,9.18580753960948E-5
+john wiley |John Wiley ,9.18580753960948E-5
+static polymorphism edit |Static polymorphism edit ,9.18580753960948E-5
+endl |endl ,9.18580753960948E-5
+languages category retrieved |languages Category Retrieved ,9.18580753960948E-5
+temporary object |temporary objects ,9.18580753960948E-5
+failure reporting |Failure reporting ,9.18580753960948E-5
+users and implementor |users and implementors ,9.18580753960948E-5
+serialization |serialization ,9.18580753960948E-5
+state information |state information ,9.18580753960948E-5
+first operating system |first operating system ,9.18580753960948E-5
+defer |defers ,9.18580753960948E-5
+standards-compliant |standards-compliant ,9.18580753960948E-5
+document |documents ,9.18580753960948E-5
+marshall cline hamilton |Marshall Cline Hamilton ,9.18580753960948E-5
+ansi iso standardization process |ANSI ISO standardization process ,9.18580753960948E-5
+function return value |Function return values ,9.18580753960948E-5
+operating system level mechanism |operating system level mechanisms ,9.18580753960948E-5
+char ctype h |Char ctype h ,9.18580753960948E-5
+notice |notice ,9.18580753960948E-5
+gnu multi-precision library |GNU Multi-Precision Library ,9.18580753960948E-5
+nearest suitable exception handler |nearest suitable exception handler ,9.18580753960948E-5
+lowest common denominator |lowest common denominator ,9.18580753960948E-5
+local link |local link ,9.18580753960948E-5
+k r specification |K R specification ,9.18580753960948E-5
+purify |Purify ,9.18580753960948E-5
+imperative object-oriented and generic programming feature |imperative object-oriented and generic programming features ,9.18580753960948E-5
+revised standard |revised standard ,9.18580753960948E-5
+normal c |normal C ,9.18580753960948E-5
+regular expression support |regular expression support ,9.18580753960948E-5
+int argc and char argv |int argc and char argv ,9.18580753960948E-5
+allocation overhead |allocation overhead ,9.18580753960948E-5
+platform-specific attribute |platform-specific attributes ,9.18580753960948E-5
+correct function |correct function ,9.18580753960948E-5
+language feature |language features ,9.18580753960948E-5
+microsoft run-time library |Microsoft Run-time Library ,9.18580753960948E-5
+declarations and statement |declarations and statements ,9.18580753960948E-5
+final node |final node ,9.18580753960948E-5
+queue |queues ,9.18580753960948E-5
+five more keyword |five more keywords ,9.18580753960948E-5
+brady |Brady ,9.18580753960948E-5
+no implicit violation |No implicit violations ,9.18580753960948E-5
+signed and unsigned integer |signed and unsigned integers ,9.18580753960948E-5
+analysis and transformation |Analysis and Transformation ,9.18580753960948E-5
+multic |Multics ,9.18580753960948E-5
+internationalization support |internationalization support ,9.18580753960948E-5
+c intermediate language |C intermediate language ,9.18580753960948E-5
+search strategy |search strategy ,9.18580753960948E-5
+linuxjournal |linuxjournal ,9.18580753960948E-5
+purely compile-time construct |purely compile-time construct ,9.18580753960948E-5
+random number generator |random number generator ,9.18580753960948E-5
+spreadsheet |spreadsheets ,9.18580753960948E-5
+automatic memory allocation |Automatic memory allocation ,9.18580753960948E-5
+c string array pointer interchangeability edit |C string Array pointer interchangeability edit ,9.18580753960948E-5
+k r section |K R sections ,9.18580753960948E-5
+unix system |UNIX System ,9.18580753960948E-5
+groningen |Groningen ,9.18580753960948E-5
+basic form |basic form ,9.18580753960948E-5
+type conversion |type conversion ,9.18580753960948E-5
+strong typing |strong typing ,9.18580753960948E-5
+c si |C si ,9.18580753960948E-5
+model |model ,9.18580753960948E-5
+software project |Software projects ,9.18580753960948E-5
+operator overloads and destructor |operator overloads and destructors ,9.18580753960948E-5
+exception handling edit |Exception handling edit ,9.18580753960948E-5
+function argument |function arguments ,9.18580753960948E-5
+current standard |current standard ,9.18580753960948E-5
+conference workshop |conference workshop ,9.18580753960948E-5
+backspace |backspace ,9.18580753960948E-5
+actual single character |actual single character ,9.18580753960948E-5
+newlib uclibc bsd libc compiler |Newlib uClibc BSD libc Compilers ,9.18580753960948E-5
+vertical tab |vertical tab ,9.18580753960948E-5
+c-- c |C-- C ,9.18580753960948E-5
+references or source |references or sources ,9.18580753960948E-5
+typeid operator typeid |typeid operator typeid ,9.18580753960948E-5
+base object |base object ,9.18580753960948E-5
+following subcategory |following subcategory ,9.18580753960948E-5
+conforming c implementation |conforming C implementation ,9.18580753960948E-5
+project-specific header file |project-specific header files ,9.18580753960948E-5
+nest |nest ,9.18580753960948E-5
+library function realloc |library function realloc ,9.18580753960948E-5
+non-int |non-int ,9.18580753960948E-5
+wikinews quotation |Wikinews Quotations ,9.18580753960948E-5
+exception-causing code |exception-causing code ,9.18580753960948E-5
+no implementation |no implementation ,9.18580753960948E-5
+resulting code |resulting code ,9.18580753960948E-5
+scott mcpeak |Scott McPeak ,9.18580753960948E-5
+template use |Template use ,9.18580753960948E-5
+motivation |motivation ,9.18580753960948E-5
+latest major revision |latest major revision ,9.18580753960948E-5
+unmatched parameter |unmatched parameters ,9.18580753960948E-5
+multiple interface |multiple interfaces ,9.18580753960948E-5
+cover |cover ,9.18580753960948E-5
+declarations c |declarations C ,9.18580753960948E-5
+extension copy constructor |extension copy constructors ,9.18580753960948E-5
+example c abi |example C ABI ,9.18580753960948E-5
+run-time generic |run-time generics ,9.18580753960948E-5
+different numbers or type |different numbers or types ,9.18580753960948E-5
+programming textbook |programming textbooks ,9.18580753960948E-5
+code portability and efficiency |code portability and efficiency ,9.18580753960948E-5
+important function |important functions ,9.18580753960948E-5
+friend function |friend functions ,9.18580753960948E-5
+flying cat class |Flying Cat class ,9.18580753960948E-5
+table |Table ,9.18580753960948E-5
+cs berkeley |cs berkeley ,9.18580753960948E-5
+director |director ,9.18580753960948E-5
+video game |video games ,9.18580753960948E-5
+angle bracket |angle brackets ,9.18580753960948E-5
+computation |computations ,9.18580753960948E-5
+greater typing strength |greater typing strength ,9.18580753960948E-5
+int calling function |int calling function ,9.18580753960948E-5
+search c |search C ,9.18580753960948E-5
+timeline |timeline ,9.18580753960948E-5
+concrete function |concrete function ,9.18580753960948E-5
+distinguishing feature |distinguishing feature ,9.18580753960948E-5
+assemblers compilers linker |assemblers compilers linkers ,9.18580753960948E-5
+common statement |common statement ,9.18580753960948E-5
+integer expression |integer expression ,9.18580753960948E-5
+ph d thesis |Ph D thesis ,9.18580753960948E-5
+function and data pointer |Function and data pointers ,9.18580753960948E-5
+pre-existing programming language |pre-existing programming languages ,9.18580753960948E-5
+dennis ritchie developer dennis ritchie bell lab |Dennis Ritchie Developer Dennis Ritchie Bell Labs ,9.18580753960948E-5
+system resource |system resources ,9.18580753960948E-5
+tutorial and reference second ed |Tutorial and Reference Second ed ,9.18580753960948E-5
+post-increment |post-increment ,9.18580753960948E-5
+std complex class |std complex class ,9.18580753960948E-5
+control primitive |control primitives ,9.18580753960948E-5
+template compiler |template compilers ,9.18580753960948E-5
+unpredictable result |unpredictable results ,9.18580753960948E-5
+portal information technology portal notes edit |portal Information technology portal Notes edit ,9.18580753960948E-5
+declaration syntax mimics usage context |Declaration syntax mimics usage context ,9.18580753960948E-5
+vandevoorde |Vandevoorde ,9.18580753960948E-5
+compliance |compliance ,9.18580753960948E-5
+supercomputer |supercomputers ,9.18580753960948E-5
+manual control |manual control ,9.18580753960948E-5
+type specifier int |type specifier int ,9.18580753960948E-5
+python cpython |Python CPython ,9.18580753960948E-5
+implementation-specific feature |implementation-specific features ,9.18580753960948E-5
+index value |index values ,9.18580753960948E-5
+separate tool |Separate tools ,9.18580753960948E-5
+linker |linker ,9.18580753960948E-5
+purify or valgrind |Purify or Valgrind ,9.18580753960948E-5
+dynamically allocated simulated array |dynamically allocated simulated arrays ,9.18580753960948E-5
+ad hoc run-time polymorphism |ad hoc run-time polymorphism ,9.18580753960948E-5
+v t e iso standard |v t e ISO standards ,9.18580753960948E-5
+company |company ,9.18580753960948E-5
+word |words ,9.18580753960948E-5
+rest |rest ,9.18580753960948E-5
+low-level system |low-level systems ,9.18580753960948E-5
+local function |local function ,9.18580753960948E-5
+different compiler |different compilers ,9.18580753960948E-5
+guy l |Guy L ,9.18580753960948E-5
+precedence |precedence ,9.18580753960948E-5
+bjarne stroustrup appeared |Bjarne Stroustrup Appeared ,9.18580753960948E-5
+generic programming c template |Generic programming C templates ,9.18580753960948E-5
+console and file |console and files ,9.18580753960948E-5
+resource acquisition |Resource Acquisition ,9.18580753960948E-5
+different situation |different situations ,9.18580753960948E-5
+mean |means ,9.18580753960948E-5
+different circumstance |different circumstances ,9.18580753960948E-5
+c-based language |C-based languages ,9.18580753960948E-5
+raw memory address |raw memory address ,9.18580753960948E-5
+older compiler |older compilers ,9.18580753960948E-5
+berkeley |Berkeley ,9.18580753960948E-5
+math math h |Math math h ,9.18580753960948E-5
+non-existent element |non-existent element ,9.18580753960948E-5
+primary encapsulation mechanism |primary encapsulation mechanisms ,9.18580753960948E-5
+cpre |Cpre ,9.18580753960948E-5
+automatic object |automatic object ,9.18580753960948E-5
+pro objective-c |Pro Objective-C ,9.18580753960948E-5
+auditing |auditing ,9.18580753960948E-5
+private member |private member ,9.18580753960948E-5
+literal |literal ,9.18580753960948E-5
+incorrect protection templates page |incorrect protection templates Pages ,9.18580753960948E-5
+object-oriented language |object-oriented languages ,9.18580753960948E-5
+typed pointer |typed pointers ,9.18580753960948E-5
+compile-time polymorphism |Compile-time polymorphism ,9.18580753960948E-5
+separate catch block |separate catch blocks ,9.18580753960948E-5
+objects edit main article |Objects edit Main article ,9.18580753960948E-5
+time |times ,9.18580753960948E-5
+c standard library extension |C Standard Library Extensions ,9.18580753960948E-5
+source code file inclusion |source code file inclusion ,9.18580753960948E-5
+compiler resolve recursive conditional |compiler resolve recursive conditionals ,9.18580753960948E-5
+c array |C array ,9.18580753960948E-5
+variadic stdarg h |Variadic stdarg h ,9.18580753960948E-5
+unix compiler |Unix compilers ,9.18580753960948E-5
+edit comparison |edit Comparison ,9.18580753960948E-5
+no language |no language ,9.18580753960948E-5
+inherited public and protected member |inherited public and protected members ,9.18580753960948E-5
+specific hardware address |specific hardware addresses ,9.18580753960948E-5
+sizeof issue |sizeof issues ,9.18580753960948E-5
+unofficial feature |unofficial features ,9.18580753960948E-5
+prefix |prefix ,9.18580753960948E-5
+dynamically allocated array |dynamically allocated arrays ,9.18580753960948E-5
+bitc |BitC ,9.18580753960948E-5
+reliable result |reliable results ,9.18580753960948E-5
+system software system software |System software system software ,9.18580753960948E-5
+knowledge |knowledge ,9.18580753960948E-5
+software categories list |software categories List ,9.18580753960948E-5
+strict sense |strict sense ,9.18580753960948E-5
+assign type |assign types ,9.18580753960948E-5
+c text string |C Text strings ,9.18580753960948E-5
+object-oriented programming polymorphism |object-oriented programming Polymorphism ,9.18580753960948E-5
+const member function |const member functions ,9.18580753960948E-5
+exception e |exception e ,9.18580753960948E-5
+runtime problem or error |runtime problem or error ,9.18580753960948E-5
+c exceptions template |C Exceptions Templates ,9.18580753960948E-5
+general rule |general rule ,9.18580753960948E-5
+function parameter |Function parameters ,9.18580753960948E-5
+workaround |workaround ,9.18580753960948E-5
+iso iec c standard working group |ISO IEC C Standard Working Group ,9.18580753960948E-5
+abstract class |abstract classes ,9.18580753960948E-5
+software portal free software |software portal Free software ,9.18580753960948E-5
+b bcpl cpl |B BCPL CPL ,9.18580753960948E-5
+gateway |gateway ,9.18580753960948E-5
+proprietary set |proprietary set ,9.18580753960948E-5
+thread storage duration objects edit variable |Thread storage duration objects edit Variables ,9.18580753960948E-5
+specific object type |specific object type ,9.18580753960948E-5
+macro definition |macro definition ,9.18580753960948E-5
+future standard |future standard ,9.18580753960948E-5
+terminal |terminal ,9.18580753960948E-5
+split-c |Split-C ,9.18580753960948E-5
+fixed-point arithmetic named address space |fixed-point arithmetic named address spaces ,9.18580753960948E-5
+latest c standard |latest C standard ,9.18580753960948E-5
+row-major order |row-major order ,9.18580753960948E-5
+ch and cint |Ch and CINT ,9.18580753960948E-5
+nonstandard extension |nonstandard extensions ,9.18580753960948E-5
+c second ed |C Second ed ,9.18580753960948E-5
+discussion page |discussion page ,9.18580753960948E-5
+complex functionality |Complex functionality ,9.18580753960948E-5
+hexadecimal character |hexadecimal character ,9.18580753960948E-5
+common feature |common feature ,9.18580753960948E-5
+complex type |complex type ,9.18580753960948E-5
+ritchie and thompson |Ritchie and Thompson ,9.18580753960948E-5
+subscript notation x i |subscript notation x i ,9.18580753960948E-5
+john wiley and son |John Wiley and Sons ,9.18580753960948E-5
+c standardization process |C standardization process ,9.18580753960948E-5
+move tab |Move tab ,9.18580753960948E-5
+draft international standard ballot procedure |Draft International Standard ballot procedures ,9.18580753960948E-5
+dynamically allocated object |dynamically allocated objects ,9.18580753960948E-5
+program execution |program execution ,9.18580753960948E-5
+matlab |MATLAB ,9.18580753960948E-5
+additional row vector |additional row vector ,9.18580753960948E-5
+international character sets and locale |international character sets and locales ,9.18580753960948E-5
+common solution |common solution ,9.18580753960948E-5
+equal support |equal support ,9.18580753960948E-5
+transformation |Transformation ,9.18580753960948E-5
+wikibooks c pronounced cee |Wikibooks C pronounced cee ,9.18580753960948E-5
+software software portal software list |software Software Portal Software List ,9.18580753960948E-5
+bot |bot ,9.18580753960948E-5
+including storage |including storage ,9.18580753960948E-5
+increment operator |increment operator ,9.18580753960948E-5
+sizeof order relation |sizeof order relations ,9.18580753960948E-5
+horizontal tab |horizontal tab ,9.18580753960948E-5
+void pointers void point |Void pointers void point ,9.18580753960948E-5
+substitution |substitutions ,9.18580753960948E-5
+calculation |calculations ,9.18580753960948E-5
+performance efficiency and flexibility |performance efficiency and flexibility ,9.18580753960948E-5
+unintended behavior |unintended behavior ,9.18580753960948E-5
+dynamic polymorphism edit |Dynamic polymorphism edit ,9.18580753960948E-5
+standard-conforming hello |standard-conforming hello ,9.18580753960948E-5
+diagnostic |diagnostic ,9.18580753960948E-5
+final |final ,9.18580753960948E-5
+properly used pointers point |properly used pointers point ,9.18580753960948E-5
+c variable type |C variable types ,9.18580753960948E-5
+fully qualified class |fully qualified class ,9.18580753960948E-5
+exited scope |exited scopes ,9.18580753960948E-5
+compile-time language feature |compile-time language features ,9.18580753960948E-5
+text-substitution |text-substitution ,9.18580753960948E-5
+arrays edit array type |Arrays edit Array types ,9.18580753960948E-5
+command line argument |command line arguments ,9.18580753960948E-5
+strictly type-checked parameter |strictly type-checked parameters ,9.18580753960948E-5
+class instance |class instance ,9.18580753960948E-5
+home page |Home page ,9.18580753960948E-5
+keith lee |Keith Lee ,9.18580753960948E-5
+short-circuit evaluation property |short-circuit evaluation property ,9.18580753960948E-5
+bigger |bigger ,9.18580753960948E-5
+newer version |newer versions ,9.18580753960948E-5
+higher-order function |higher-order functions ,9.18580753960948E-5
+ada information clearinghouse |Ada Information Clearinghouse ,9.18580753960948E-5
+c many such tool |C many such tools ,9.18580753960948E-5
+fortran influenced numerous |FORTRAN Influenced Numerous ,9.18580753960948E-5
+equality testing |equality testing ,9.18580753960948E-5
+special purpose |special purpose ,9.18580753960948E-5
+portability or convenience |portability or convenience ,9.18580753960948E-5
+vendor |vendors ,9.18580753960948E-5
+clang llvm org |Clang llvm org ,9.18580753960948E-5
+c source text |C source text ,9.18580753960948E-5
+error reporting |error reporting ,9.18580753960948E-5
+boolean typedef |boolean typedef ,9.18580753960948E-5
+method |method ,9.18580753960948E-5
+crazyengineer |CrazyEngineers ,9.18580753960948E-5
+pass-by-reference |Pass-by-reference ,9.18580753960948E-5
+closing |closing ,9.18580753960948E-5
+cxx |cxx ,9.18580753960948E-5
+member access |member access ,9.18580753960948E-5
+int i vec |int i vec ,9.18580753960948E-5
+elaborate inheritance relationship |elaborate inheritance relationships ,9.18580753960948E-5
+object-oriented feature |object-oriented features ,9.18580753960948E-5
+danish computer scientist |Danish computer scientist ,9.18580753960948E-5
+tradeoff |tradeoffs ,9.18580753960948E-5
+commons quotation |Commons Quotations ,9.18580753960948E-5
+weaker decomposition paradigm |weaker decomposition paradigms ,9.18580753960948E-5
+individual element |individual elements ,9.18580753960948E-5
+free-form |free-form ,9.18580753960948E-5
+late feature addition |Late feature additions ,9.18580753960948E-5
+output function |output functions ,9.18580753960948E-5
+locale |locales ,9.18580753960948E-5
+double else enum extern float |double else enum extern float ,9.18580753960948E-5
+successful execution |successful execution ,9.18580753960948E-5
+overflow detection |overflow detection ,9.18580753960948E-5
+entire size |entire size ,9.18580753960948E-5
+subset |subset ,9.18580753960948E-5
+existing implementation |existing implementations ,9.18580753960948E-5
+embedded c historically |Embedded C Historically ,9.18580753960948E-5
+publicly available committee draft |publicly available Committee Draft ,9.18580753960948E-5
+operators and operator overloading edit |Operators and operator overloading edit ,9.18580753960948E-5
+pointed-to function |pointed-to function ,9.18580753960948E-5
+oo principle |OO principle ,9.18580753960948E-5
+agreement |agreement ,9.18580753960948E-5
+function named printf |function named printf ,9.18580753960948E-5
+generic programming feature |generic programming features ,9.18580753960948E-5
+existing software |existing software ,9.18580753960948E-5
+language popularity |language popularity ,9.18580753960948E-5
+character literal |character literals ,9.18580753960948E-5
+programmatic flow control |programmatic flow control ,9.18580753960948E-5
+inheritance edit inheritance |Inheritance edit Inheritance ,9.18580753960948E-5
+security feature |Security Features ,9.18580753960948E-5
+null pointer constant |null pointer constant ,9.18580753960948E-5
+data structures and operator |data structures and operators ,9.18580753960948E-5
+unix-like system |Unix-like systems ,9.18580753960948E-5
+gehani |Gehani ,9.18580753960948E-5
+iso and ansi c standard |ISO and ANSI C standards ,9.18580753960948E-5
+modularity |modularity ,9.18580753960948E-5
+initializer list |initializer lists ,9.18580753960948E-5
+c language specification |C language specification ,9.18580753960948E-5
+development and evolution |development and evolution ,9.18580753960948E-5
+arbitrary location |arbitrary location ,9.18580753960948E-5
+no guarantee |No guarantees ,9.18580753960948E-5
+base class type |base class type ,9.18580753960948E-5
+arbitrary use |arbitrary use ,9.18580753960948E-5
+constant expression |constant expression ,9.18580753960948E-5
+whitespace |whitespace ,9.18580753960948E-5
+consistency |consistency ,9.18580753960948E-5
+entire text |entire text ,9.18580753960948E-5
+reinitialization expression |reinitialization expressions ,9.18580753960948E-5
+compile-time binding |compile-time binding ,9.18580753960948E-5
+imperative object-oriented |imperative object-oriented ,9.18580753960948E-5
+text-substitution and text-inclusion exclusion |text-substitution and text-inclusion exclusion ,9.18580753960948E-5
+runtime error |runtime errors ,9.18580753960948E-5
+stephen c |Stephen C ,9.18580753960948E-5
+exact order |exact order ,9.18580753960948E-5
+companion language |companion language ,9.18580753960948E-5
+kernighan and ritchie |Kernighan and Ritchie ,9.18580753960948E-5
+c software free software |C software Free software ,9.18580753960948E-5
+unsigned integer |unsigned integers ,9.18580753960948E-5
+maximum portability |maximum portability ,9.18580753960948E-5
+machine-specific code generator |machine-specific code generators ,9.18580753960948E-5
+memory management edit |Memory management edit ,9.18580753960948E-5
+non-pure definition |non-pure definition ,9.18580753960948E-5
+general-purpose fast portable |general-purpose fast portable ,9.18580753960948E-5
+world program |world program ,9.18580753960948E-5
+linked list |linked list ,9.18580753960948E-5
+virtual member functions edit |Virtual member functions edit ,9.18580753960948E-5
+license |license ,9.18580753960948E-5
+tiobe programming community index |TIOBE Programming Community Index ,9.18580753960948E-5
+function declaration or definition |function declaration or definition ,9.18580753960948E-5
+machines or operating system |machines or operating systems ,9.18580753960948E-5
+object code optimization |object code optimization ,9.18580753960948E-5
+lifetime |lifetime ,9.18580753960948E-5
+wild pointer |wild pointers ,9.18580753960948E-5
+designer |designer ,9.18580753960948E-5
+gnu scientific library |GNU Scientific Library ,9.18580753960948E-5
+software comparison |Software comparisons ,9.18580753960948E-5
+default argument feature |default argument features ,9.18580753960948E-5
+generic data pointer |generic data pointers ,9.18580753960948E-5
+high degree |high degree ,9.18580753960948E-5
+application software application software |Application software application software ,9.18580753960948E-5
+coq |Coq ,9.18580753960948E-5
+t lab |T Labs ,9.18580753960948E-5
+c evolution |C evolution ,9.18580753960948E-5
+designated label |designated label ,9.18580753960948E-5
+template code bloat |Template Code Bloat ,9.18580753960948E-5
+c type system |C type system ,9.18580753960948E-5
+common practice |common practice ,9.18580753960948E-5
+ph d experience |Ph D experience ,9.18580753960948E-5
+lua |Lua ,9.18580753960948E-5
+efficient code |efficient code ,9.18580753960948E-5
+evolutionary nature |evolutionary nature ,9.18580753960948E-5
+design patterns applied |Design Patterns Applied ,9.18580753960948E-5
+text-inclusion exclusion |text-inclusion exclusion ,9.18580753960948E-5
+pervasive influence |pervasive influence ,9.18580753960948E-5
+explanation |explanation ,9.18580753960948E-5
+cil c intermediate language |CIL C Intermediate Language ,9.18580753960948E-5
+iso c edit |ISO C edit ,9.18580753960948E-5
+lawli |Lawlis ,9.18580753960948E-5
+evolving |Evolving ,9.18580753960948E-5
+safe place |safe places ,9.18580753960948E-5
+cost |cost ,9.18580753960948E-5
+difference |differences ,9.18580753960948E-5
+doran |Doran ,9.18580753960948E-5
+george c necula |George C Necula ,9.18580753960948E-5
+data object |data object ,9.18580753960948E-5
+literal or constexpr |literal or constexpr ,9.18580753960948E-5
+ibm pc |IBM PC ,9.18580753960948E-5
+unix computer operating system |Unix computer operating system ,9.18580753960948E-5
+b kernighan |b Kernighan ,9.18580753960948E-5
+special treatment |special treatment ,9.18580753960948E-5
+stability |stability ,9.18580753960948E-5
+type char |type char ,9.18580753960948E-5
+bounds-checked function |bounds-checked functions ,9.18580753960948E-5
+systems programming e g |systems programming e g ,9.18580753960948E-5
+multiple exception handler |multiple exception handlers ,9.18580753960948E-5
+f free software |F Free software ,9.18580753960948E-5
+program source code |program source code ,9.18580753960948E-5
+sole exception |sole exception ,9.18580753960948E-5
+miller freeman |Miller Freeman ,9.18580753960948E-5
+generic programming template metaprogramming |generic programming template metaprogramming ,9.18580753960948E-5
+thread creation |thread creation ,9.18580753960948E-5
+formal parameter |formal parameters ,9.18580753960948E-5
+object storage edit |Object storage edit ,9.18580753960948E-5
+separately developed part |separately developed parts ,9.18580753960948E-5
+undefined behaviour |undefined behaviour ,9.18580753960948E-5
+math library |math library ,9.18580753960948E-5
+c compilers computer |C compilers Computer ,9.18580753960948E-5
+hossein |Hossein ,9.18580753960948E-5
+qsort or bsearch |qsort or bsearch ,9.18580753960948E-5
+untyped return type void |untyped return type void ,9.18580753960948E-5
+code optimization |code optimization ,9.18580753960948E-5
+unit |unit ,9.18580753960948E-5
+large part |large part ,9.18580753960948E-5
+null-terminated array |null-terminated arrays ,9.18580753960948E-5
+separate and incompatible programming environment |separate and incompatible programming environment ,9.18580753960948E-5
+initialization raii concept |Initialization RAII concept ,9.18580753960948E-5
+csh |csh ,9.18580753960948E-5
+standardization outline |Standardization Outline ,9.18580753960948E-5
+c and java programmer |C and Java programmer ,9.18580753960948E-5
+user-defined typedef and compound type |User-defined typedef and compound types ,9.18580753960948E-5
+mit press |MIT Press ,9.18580753960948E-5
+multi-threading library |multi-threading library ,9.18580753960948E-5
+programming language popularity |Programming Language Popularity ,9.18580753960948E-5
+tree |trees ,9.18580753960948E-5
+intel c compiler influenced |Intel C Compiler Influenced ,9.18580753960948E-5
+explicit casting |explicit casting ,9.18580753960948E-5
+international c standard |international C standard ,9.18580753960948E-5
+addressability |addressability ,9.18580753960948E-5
+preprocessing directive |preprocessing directive ,9.18580753960948E-5
+american national standards institute ansi |American National Standards Institute ANSI ,9.18580753960948E-5
+computer language |Computer Language ,9.18580753960948E-5
+local block or function |local block or function ,9.18580753960948E-5
+subscript |subscripts ,9.18580753960948E-5
+run-time polymorphism |run-time polymorphism ,9.18580753960948E-5
+object pointer type |object pointer type ,9.18580753960948E-5
+ml influenced perl |ML Influenced Perl ,9.18580753960948E-5
+expression evaluation |expression evaluation ,9.18580753960948E-5
+port |port ,9.18580753960948E-5
+embedded c comparison |Embedded C Comparison ,9.18580753960948E-5
+c lee |C Lee ,9.18580753960948E-5
+static member function |static member functions ,9.18580753960948E-5
+array printf |array printf ,9.18580753960948E-5
+function use |function use ,9.18580753960948E-5
+example vector |example vectors ,9.18580753960948E-5
+fifth |Fifth ,9.18580753960948E-5
+kde techbase |KDE Techbase ,9.18580753960948E-5
+pointers assignment |pointers assignment ,9.18580753960948E-5
+advanced c programming technique |advanced C programming techniques ,9.18580753960948E-5
+iso c standard |ISO C standard ,9.18580753960948E-5
+command g |command g ,9.18580753960948E-5
+stdc macro |STDC macro ,9.18580753960948E-5
+partial template specialization |partial template specialization ,9.18580753960948E-5
+static compile-time and dynamic run-time polymorphism |static compile-time and dynamic run-time polymorphisms ,9.18580753960948E-5
+initializer |initializer ,9.18580753960948E-5
+designated initializer |designated initializers ,9.18580753960948E-5
+nominative major |Nominative Major ,9.18580753960948E-5
+pointers or union |pointers or unions ,9.18580753960948E-5
+rename |rename ,9.18580753960948E-5
+language tools edit |Language tools edit ,9.18580753960948E-5
+seminal book |seminal book ,9.18580753960948E-5
+travel |Travel ,9.18580753960948E-5
+computer science |Computer Science ,9.18580753960948E-5
+static memory or heap space |static memory or heap space ,9.18580753960948E-5
+minimal run-time support |minimal run-time support ,9.18580753960948E-5
+exception std |exception std ,9.18580753960948E-5
+run-time decision |run-time decisions ,9.18580753960948E-5
+cosmological computation software list |cosmological computation software List ,9.18580753960948E-5
+whitespace character |Whitespace characters ,9.18580753960948E-5
+function prototype |function prototypes ,9.18580753960948E-5
+string h |string h ,9.18580753960948E-5
+decision-making software |Decision-making software ,9.18580753960948E-5
+computerworld |Computerworld ,9.18580753960948E-5
+status |status ,9.18580753960948E-5
+majority |majority ,9.18580753960948E-5
+dynamic allocation function |dynamic allocation functions ,9.18580753960948E-5
+status discussion |status discussion ,9.18580753960948E-5
+array and pointer variable |array and pointer variables ,9.18580753960948E-5
+common set |common set ,9.18580753960948E-5
+c source file |C source files ,9.18580753960948E-5
+speedy renaming section |speedy renaming section ,9.18580753960948E-5
+hiding |hiding ,9.18580753960948E-5
+bcpl style |BCPL style ,9.18580753960948E-5
+template instantiation |template instantiation ,9.18580753960948E-5
+illegal memory access |illegal memory accesses ,9.18580753960948E-5
+research school |Research School ,9.18580753960948E-5
+original example code |original example code ,9.18580753960948E-5
+underlying bit |underlying bits ,9.18580753960948E-5
+derived object |derived object ,9.18580753960948E-5
+previous declaration |previous declaration ,9.18580753960948E-5
+classes and function |classes and functions ,9.18580753960948E-5
+proper compiler setting |proper compiler settings ,9.18580753960948E-5
+recognizably expression syntax |recognizably expression syntax ,9.18580753960948E-5
+software appliance |Software appliances ,9.18580753960948E-5
+widely used programming language |widely used programming languages ,9.18580753960948E-5
+function name and operator overloading |function name and operator overloading ,9.18580753960948E-5
+iso working group |ISO working group ,9.18580753960948E-5
+lccn identifiers wikipedia article |LCCN identifiers Wikipedia articles ,9.18580753960948E-5
+murray hill |Murray Hill ,9.18580753960948E-5
+conditional expression |conditional expression ,9.18580753960948E-5
+double quote |double quotes ,9.18580753960948E-5
+visionary organization |Visionary Organization ,9.18580753960948E-5
+newline newline |newline Newline ,9.18580753960948E-5
+reference and dereference |reference and dereference ,9.18580753960948E-5
+include directive |include directive ,9.18580753960948E-5
+multiple call |multiple calls ,9.18580753960948E-5
+msvc |MSVC ,9.18580753960948E-5
+first draft |First draft ,9.18580753960948E-5
+dates wikipedia page |dates Wikipedia pages ,9.18580753960948E-5
+diagnostic message |diagnostic message ,9.18580753960948E-5
+small fixed number |small fixed number ,9.18580753960948E-5
+template argument |template arguments ,9.18580753960948E-5
+run-time error |run-time errors ,9.18580753960948E-5
+c kernighan |C Kernighan ,9.18580753960948E-5
+public member |public member ,9.18580753960948E-5
+struct type |struct types ,9.18580753960948E-5
+ucr |ucr ,9.18580753960948E-5
+creative period |creative period ,9.18580753960948E-5
+careful program |careful program ,9.18580753960948E-5
+near-universal availability |near-universal availability ,9.18580753960948E-5
+memory allocation function |memory allocation functions ,9.18580753960948E-5
+e-commerce |e-commerce ,9.18580753960948E-5
+wikiversity wikibook |Wikiversity Wikibooks ,9.18580753960948E-5
+bitwise shift |bitwise shifts ,9.18580753960948E-5
+scoping |scoping ,9.18580753960948E-5
+software license |software licenses ,9.18580753960948E-5
+fixed-point arithmetic multiple distinct memory bank |fixed-point arithmetic multiple distinct memory banks ,9.18580753960948E-5
+compile time buffer checks fortify source |Compile Time Buffer Checks FORTIFY SOURCE ,9.18580753960948E-5
+deterministic destructor |deterministic destructors ,9.18580753960948E-5
+unsafe place |unsafe places ,9.18580753960948E-5
+dangling pointer |dangling pointers ,9.18580753960948E-5
+aim |aims ,9.18580753960948E-5
+dynamically allocated struct object |dynamically allocated struct objects ,9.18580753960948E-5
+programming languages c and pascal |Programming Languages C and Pascal ,9.18580753960948E-5
+file i o stdio h |File I O stdio h ,9.18580753960948E-5
+k r function declaration |K R function declarations ,9.18580753960948E-5
+introduction |Introduction ,9.18580753960948E-5
+run-time type information rtti |run-time type information RTTI ,9.18580753960948E-5
+basic c source character |basic C source character ,9.18580753960948E-5
+operator symbol scope resolution operator |Operator Symbol Scope resolution operator ,9.18580753960948E-5
+t tor anonymity network |T Tor anonymity network ,9.18580753960948E-5
+make user |Make user ,9.18580753960948E-5
+steele |Steele ,9.18580753960948E-5
+binary compatibility |binary compatibility ,9.18580753960948E-5
+left |left ,9.18580753960948E-5
+qsort |qsort ,9.18580753960948E-5
+exit code |exit code ,9.18580753960948E-5
+c influenced |C Influenced ,9.18580753960948E-5
+substitution failure |Substitution failure ,9.18580753960948E-5
+mat |Mats ,9.18580753960948E-5
+geneva |Geneva ,9.18580753960948E-5
+automatic or static allocation |automatic or static allocation ,9.18580753960948E-5
+enlarged standard library |enlarged standard library ,9.18580753960948E-5
+overloaded function definition |overloaded function definitions ,9.18580753960948E-5
+mainframe computer |mainframe computers ,9.18580753960948E-5
+small extension |small extension ,9.18580753960948E-5
+wrong number |wrong number ,9.18580753960948E-5
+standard number list |standard number List ,9.18580753960948E-5
+type-safe free-store memory allocation new delete |type-safe free-store memory allocation new delete ,9.18580753960948E-5
+compilation flow |compilation flow ,9.18580753960948E-5
+applied linear algebra |applied linear algebra ,9.18580753960948E-5
+additional multibyte encoded character |Additional multibyte encoded characters ,9.18580753960948E-5
+union type |union types ,9.18580753960948E-5
+access permission |access permission ,9.18580753960948E-5
+c-based programming languages list |C-based programming languages List ,9.18580753960948E-5
+future |Future ,9.18580753960948E-5
+control-flow statement |control-flow statements ,9.18580753960948E-5
+capital letter |capital letter ,9.18580753960948E-5
+database management system |Database management systems ,9.18580753960948E-5
+non-oop language |non-OOP languages ,9.18580753960948E-5
+consequence |consequence ,9.18580753960948E-5
+non-structured goto statement |non-structured goto statement ,9.18580753960948E-5
+linker or loader |linker or loader ,9.18580753960948E-5
+essential intermediate programming |Essential Intermediate Programming ,9.18580753960948E-5
+special data type |special data types ,9.18580753960948E-5
+anonymous structure |anonymous structures ,9.18580753960948E-5
+henricson |Henricson ,9.18580753960948E-5
+single template body |single template body ,9.18580753960948E-5
+basic arithmetic |basic arithmetic ,9.18580753960948E-5
+internet |Internet ,9.18580753960948E-5
+c and smalltalk |C and Smalltalk ,9.18580753960948E-5
+bcpl programming language |BCPL programming language ,9.18580753960948E-5
+variadic macros macro |variadic macros macros ,9.18580753960948E-5
+inherited public |inherited public ,9.18580753960948E-5
+correction |corrections ,9.18580753960948E-5
+c-like syntax |C-like syntax ,9.18580753960948E-5
+s p rahul |S P Rahul ,9.18580753960948E-5
+passed argument |passed arguments ,9.18580753960948E-5
+atomic generic noreturn static assert thread local |Atomic Generic Noreturn Static assert Thread local ,9.18580753960948E-5
+type evaluation |type evaluation ,9.18580753960948E-5
+common interface |common interface ,9.18580753960948E-5
+stripped-down version |stripped-down version ,9.18580753960948E-5
+unincremented |unincremented ,9.18580753960948E-5
+speed |speed ,9.18580753960948E-5
+multiple source file |multiple source files ,9.18580753960948E-5
+untagged union |untagged unions ,9.18580753960948E-5
+string or character literal |string or character literals ,9.18580753960948E-5
+actual error |actual error ,9.18580753960948E-5
+break and continue |break and continue ,9.18580753960948E-5
+edit further reading edit banahan |edit Further reading edit Banahan ,9.18580753960948E-5
+efficient flexible language |efficient flexible language ,9.18580753960948E-5
+common type |common type ,9.18580753960948E-5
+overload resolution policy |overload resolution policy ,9.18580753960948E-5
+fewer argument |fewer arguments ,9.18580753960948E-5
+unix and unix-like system |Unix and Unix-like systems ,9.18580753960948E-5
+no return |no return ,9.18580753960948E-5
+abc |ABC ,9.18580753960948E-5
+cambridge computer laboratory |Cambridge Computer Laboratory ,9.18580753960948E-5
+i byte |i bytes ,9.18580753960948E-5
+formatting change |formatting changes ,9.18580753960948E-5
+computation expressible |computation expressible ,9.18580753960948E-5
+pagefree publishing |PageFree Publishing ,9.18580753960948E-5
+hybrid dynamic static typing paradigm |hybrid dynamic static typing paradigm ,9.18580753960948E-5
+popular c compilers support |popular C compilers support ,9.18580753960948E-5
+pointed-to object |pointed-to object ,9.18580753960948E-5
+uxxxx or uxxxxxxxx encoding |uXXXX or UXXXXXXXX encoding ,9.18580753960948E-5
+compile time mechanism |compile time mechanism ,9.18580753960948E-5
+c or java |C or Java ,9.18580753960948E-5
+single function declaration |single function declaration ,9.18580753960948E-5
+cases exception |cases exceptions ,9.18580753960948E-5
+non-template version |Non-template version ,9.18580753960948E-5
+c standard informal |C Standard Informal ,9.18580753960948E-5
+b c d e f g klemen |b c d e f g Klemens ,9.18580753960948E-5
+standard specification |standard specification ,9.18580753960948E-5
+substantial program |substantial programs ,9.18580753960948E-5
+automated source code checking |Automated source code checking ,9.18580753960948E-5
+standard part |standard part ,9.18580753960948E-5
+web application |Web application ,9.18580753960948E-5
+closing parenthesis |closing parenthesis ,9.18580753960948E-5
+iostream int main |iostream int main ,9.18580753960948E-5
+closely mimic |closely mimics ,9.18580753960948E-5
+variable-sized array |variable-sized arrays ,9.18580753960948E-5
+region |region ,9.18580753960948E-5
+necessity |necessity ,9.18580753960948E-5
+data types edit |Data types edit ,9.18580753960948E-5
+carelessly written code |carelessly written code ,9.18580753960948E-5
+comma operator |comma operator ,9.18580753960948E-5
+optional superfluous comma |optional superfluous commas ,9.18580753960948E-5
+programming principle |Programming Principles ,9.18580753960948E-5
+internal |Internals ,9.18580753960948E-5
+tongue-in-cheek spirit |tongue-in-cheek spirit ,9.18580753960948E-5
+string manipulation |string manipulation ,9.18580753960948E-5
+specific aspect |specific aspects ,9.18580753960948E-5
+in-house software |In-house software ,9.18580753960948E-5
+initial state |initial state ,9.18580753960948E-5
+runtime problem |runtime problem ,9.18580753960948E-5
+reserved keyword called entry |reserved keyword called entry ,9.18580753960948E-5
+major implementation |major implementation ,9.18580753960948E-5
+typename c |typename C ,9.18580753960948E-5
+invalid pointer arithmetic |invalid pointer arithmetic ,9.18580753960948E-5
+operator overloading edit |operator overloading edit ,9.18580753960948E-5
+coplien |Coplien ,9.18580753960948E-5
+unix c library |Unix C library ,9.18580753960948E-5
+newer more modern high-level language |newer more modern high-level languages ,9.18580753960948E-5
+computer platform |computer platforms ,9.18580753960948E-5
+statement and more or less recognizably expression syntax |statement and more or less recognizably expression syntax ,9.18580753960948E-5
+unrelated and derived class |unrelated and derived classes ,9.18580753960948E-5
+frama-c |Frama-C ,9.18580753960948E-5
+phrase |phrase ,9.18580753960948E-5
+unix implementation |Unix implementation ,9.18580753960948E-5
+columbia university |Columbia University ,9.18580753960948E-5
+derived type |derived types ,9.18580753960948E-5
+calling function |calling functions ,9.18580753960948E-5
+exceptional c style |Exceptional C Style ,9.18580753960948E-5
+c library subset |C library subset ,9.18580753960948E-5
+notably system software |notably system software ,9.18580753960948E-5
+segmentation fault |segmentation fault ,9.18580753960948E-5
+write objective-c code |Write Objective-C Code ,9.18580753960948E-5
+search page |search Pages ,9.18580753960948E-5
+applicable |applicable ,9.18580753960948E-5
+introductory program |introductory program ,9.18580753960948E-5
+critical component |critical component ,9.18580753960948E-5
+type safety reason |type safety reasons ,9.18580753960948E-5
+extent |extent ,9.18580753960948E-5
+curly brace |curly braces ,9.18580753960948E-5
+fixed static size |fixed static size ,9.18580753960948E-5
+violation |violations ,9.18580753960948E-5
+imperative procedural |Imperative procedural ,9.18580753960948E-5
+audacious software audacity |Audacious software Audacity ,9.18580753960948E-5
+inlining and compile-time binding |inlining and compile-time binding ,9.18580753960948E-5
+rules and guideline |Rules and Guidelines ,9.18580753960948E-5
+multi maps associative array |multi maps associative arrays ,9.18580753960948E-5
+summary |summary ,9.18580753960948E-5
+compiler- |compiler- ,9.18580753960948E-5
+statement terminator |statement terminator ,9.18580753960948E-5
+norton |Norton ,9.18580753960948E-5
+modular programming |modular programming ,9.18580753960948E-5
+mathematica and matlab |Mathematica and MATLAB ,9.18580753960948E-5
+uxxxxxxxx encoding |UXXXXXXXX encoding ,9.18580753960948E-5
+category page |category page ,9.18580753960948E-5
+bias |bias ,9.18580753960948E-5
+hpp |hpp ,9.18580753960948E-5
+compilation error |compilation error ,9.18580753960948E-5
+different level |different levels ,9.18580753960948E-5
+variable pointer |Variable pointers ,9.18580753960948E-5
+basic i o operation |basic I O operations ,9.18580753960948E-5
+language construct |language constructs ,9.18580753960948E-5
+size and type |size and type ,9.18580753960948E-5
+acm sigplan history |ACM SIGPLAN History ,9.18580753960948E-5
+high level feature |high level features ,9.18580753960948E-5
+corruption |corruption ,9.18580753960948E-5
+authoritative reference |authoritative reference ,9.18580753960948E-5
+current line |current line ,9.18580753960948E-5
+semantics and type system |semantics and type system ,9.18580753960948E-5
+error indication |error indication ,9.18580753960948E-5
+int long register return short |int long register return short ,9.18580753960948E-5
+pre-increment c form |pre-increment C form ,9.18580753960948E-5
+c edit |C edit ,9.18580753960948E-5
+downside |downside ,9.18580753960948E-5
+osi protocol |OSI protocols ,9.18580753960948E-5
+innermost enclosing loop statement |innermost enclosing loop statement ,9.18580753960948E-5
+design and evolution |Design and Evolution ,9.18580753960948E-5
+convenient allocation |convenient allocation ,9.18580753960948E-5
+etymology edit |Etymology edit ,9.18580753960948E-5
+github io |github io ,9.18580753960948E-5
+conditional evaluation |conditional evaluation ,9.18580753960948E-5
+unnamed array |unnamed array ,9.18580753960948E-5
+selection |selection ,9.18580753960948E-5
+algol descendant |ALGOL descendants ,9.18580753960948E-5
+uppercase letter |uppercase letters ,9.18580753960948E-5
+respect |respect ,9.18580753960948E-5
+class template |class templates ,9.18580753960948E-5
+explicit call |explicit call ,9.18580753960948E-5
+static and extern attribute |static and extern attributes ,9.18580753960948E-5
+office suite |office suites ,9.18580753960948E-5
+samuel p |Samuel P ,9.18580753960948E-5
+limited environment |limited environments ,9.18580753960948E-5
+taking advantage |Taking advantage ,9.18580753960948E-5
+logical operation |logical operations ,9.18580753960948E-5
+variable arity |variable arity ,9.18580753960948E-5
+considerable debt |considerable debt ,9.18580753960948E-5
+c conformance roundup |C Conformance Roundup ,9.18580753960948E-5
+lajoie |Lajoie ,9.18580753960948E-5
+iso publication |ISO publication ,9.18580753960948E-5
+no next pointer |no next pointer ,9.18580753960948E-5
+different purpose |different purposes ,9.18580753960948E-5
+signed and unsigned floating-point number |signed and unsigned floating-point numbers ,9.18580753960948E-5
+meyer |Meyers ,9.18580753960948E-5
+object initialization |object initialization ,9.18580753960948E-5
+warning message |warning message ,9.18580753960948E-5
+semantic ambiguity |semantic ambiguity ,9.18580753960948E-5
+bidgoli |Bidgoli ,9.18580753960948E-5
+heterogeneous aggregate data type |Heterogeneous aggregate data types ,9.18580753960948E-5
+effort |effort ,9.18580753960948E-5
+incompatible programming environment |incompatible programming environment ,9.18580753960948E-5
+argument list |argument list ,9.18580753960948E-5
+intended |intended ,9.18580753960948E-5
+real world program |real world programs ,9.18580753960948E-5
+indirection |indirection ,9.18580753960948E-5
+strict standard compliance mode |strict standard compliance mode ,9.18580753960948E-5
+object-oriented functionality |object-oriented functionality ,9.18580753960948E-5
+programming languages c |Programming Languages C ,9.18580753960948E-5
+stream input and output |stream input and output ,9.18580753960948E-5
+overloaded function |overloaded functions ,9.18580753960948E-5
+computing science |Computing Sciences ,9.18580753960948E-5
+automatic memory management |automatic memory management ,9.18580753960948E-5
+static weak typing type system |static weak typing type system ,9.18580753960948E-5
+char argv |char argv ,9.18580753960948E-5
+console application |Console applications ,9.18580753960948E-5
+slightly modified version |slightly modified version ,9.18580753960948E-5
+code practice |Code practices ,9.18580753960948E-5
+cint |CINT ,9.18580753960948E-5
+c report |C Report ,9.18580753960948E-5
+top |top ,9.18580753960948E-5
+dynamic run-time polymorphism |dynamic run-time polymorphisms ,9.18580753960948E-5
+standard c foundation |Standard C Foundation ,9.18580753960948E-5
+minimal interface |minimal interface ,9.18580753960948E-5
+c paradigm |C Paradigm ,9.18580753960948E-5
+definitive reference |definitive reference ,9.18580753960948E-5
+similar virtual function |similar virtual function ,9.18580753960948E-5
+library cataloging |Library cataloging ,9.18580753960948E-5
+preprocessor enhancement |preprocessor enhancements ,9.18580753960948E-5
+advanced c |Advanced C ,9.18580753960948E-5
+buffer overrun |buffer overruns ,9.18580753960948E-5
+references edit |References edit ,9.18580753960948E-5
+functional programming |functional programming ,9.18580753960948E-5
+pascal comparison |Pascal Comparison ,9.18580753960948E-5
+subscription-only content article |subscription-only content Articles ,9.18580753960948E-5
+hxx |hxx ,9.18580753960948E-5
+base class pointer |base class pointer ,9.18580753960948E-5
+operators edit main article |Operators edit Main article ,9.18580753960948E-5
+difficult task |difficult task ,9.18580753960948E-5
+c standard library qsort |C standard library qsort ,9.18580753960948E-5
+character string |character strings ,9.18580753960948E-5
+jos e |Jos e ,9.18580753960948E-5
+current c compiler |current C compilers ,9.18580753960948E-5
+alert |alert ,9.18580753960948E-5
+square bracket |square brackets ,9.18580753960948E-5
+explicit violation |explicit violations ,9.18580753960948E-5
+distinct way |distinct ways ,9.18580753960948E-5
+giannini |Giannini ,9.18580753960948E-5
+entertainment software |entertainment software ,9.18580753960948E-5
+run-time representation |run-time representation ,9.18580753960948E-5
+cross-platform programming |cross-platform programming ,9.18580753960948E-5
+type generic macro |type generic macros ,9.18580753960948E-5
+boost |Boost ,9.18580753960948E-5
+programming problem |Programming Problems ,9.18580753960948E-5
+special meaning |special meaning ,9.18580753960948E-5
+separate data type |separate data type ,9.18580753960948E-5
+king |King ,9.18580753960948E-5
+subexpression grouping |subexpression grouping ,9.18580753960948E-5
+augmented assignment |augmented assignment ,9.18580753960948E-5
+incorporating several idea |incorporating several ideas ,9.18580753960948E-5
+deallocation |deallocation ,9.18580753960948E-5
+single built-in operator |single built-in operators ,9.18580753960948E-5
+official publication |official publication ,9.18580753960948E-5
+encapsulation edit encapsulation |Encapsulation edit Encapsulation ,9.18580753960948E-5
+multi set |multi sets ,9.18580753960948E-5
+struct or union type |struct or union types ,9.18580753960948E-5
+int main void printf hello |int main void printf hello ,9.18580753960948E-5
+full set |full set ,9.18580753960948E-5
+language edit c |Language edit C ,9.18580753960948E-5
+inline function |inline functions ,9.18580753960948E-5
+array content |Array contents ,9.18580753960948E-5
+jersey |Jersey ,9.18580753960948E-5
+code portability |code portability ,9.18580753960948E-5
+impact |impact ,9.18580753960948E-5
+required storage |required storage ,9.18580753960948E-5
+no valid location |no valid location ,9.18580753960948E-5
+random shuffle |random shuffle ,9.18580753960948E-5
+template parameter |template parameters ,9.18580753960948E-5
+accelerated c practical programming |Accelerated C Practical Programming ,9.18580753960948E-5
+specific implementation |specific implementation ,9.18580753960948E-5
+memcpy function |memcpy function ,9.18580753960948E-5
+k r interface |K R interface ,9.18580753960948E-5
+standards-compliant c compiler |standards-compliant C compiler ,9.18580753960948E-5
+sophisticated mechanism |sophisticated mechanism ,9.18580753960948E-5
+column-based |column-based ,9.18580753960948E-5
+normal sequential execution |normal sequential execution ,9.18580753960948E-5
+hello world example |hello world example ,9.18580753960948E-5
+lack |lack ,9.18580753960948E-5
+automatic storage duration objects edit |Automatic storage duration objects edit ,9.18580753960948E-5
+near-c interpreter |near-C interpreters ,9.18580753960948E-5
+curiously recurring template pattern |Curiously Recurring Template Pattern ,9.18580753960948E-5
+emptycrate software |EmptyCrate Software ,9.18580753960948E-5
+stricter |stricter ,9.18580753960948E-5
+example vectors and list |example vectors and lists ,9.18580753960948E-5
+standard library input output stream |standard library input output streams ,9.18580753960948E-5
+c source code |C source code ,9.18580753960948E-5
+instantiate new type |instantiate new types ,9.18580753960948E-5
+different extension |different extensions ,9.18580753960948E-5
+arithmetical |arithmetical ,9.18580753960948E-5
+typical machine instruction |typical machine instructions ,9.18580753960948E-5
+languages international obfuscated c code contest list |languages International Obfuscated C Code Contest List ,9.18580753960948E-5
+descendant |descendant ,9.18580753960948E-5
+entry to and return |entry to and return ,9.18580753960948E-5
+origin |origin ,9.18580753960948E-5
+extended character set |extended character sets ,9.18580753960948E-5
+inventor |inventors ,9.18580753960948E-5
+no argument |no arguments ,9.18580753960948E-5
+first commercial implementation |first commercial implementation ,9.18580753960948E-5
+following characteristic |following characteristics ,9.18580753960948E-5
+llvm clang |LLVM Clang ,9.18580753960948E-5
+long some function |long some function ,9.18580753960948E-5
+standard macro stdc version |standard macro STDC VERSION ,9.18580753960948E-5
+administrator |Administrators ,9.18580753960948E-5
+dynamic cast operator |dynamic cast operator ,9.18580753960948E-5
+desirable characteristic |desirable characteristics ,9.18580753960948E-5
+list |list |lists ,7.028367166010093E-5
+executable |executable |executables ,7.001012927393168E-5
+object code |object code |Object code ,7.001012927393168E-5
+executable code |executable code ,7.001012927393168E-5
+hello world program |Hello world program |Hello World program ,7.001012927393168E-5
+task |task ,7.001012927393168E-5
+mathematical function |mathematical functions ,7.001012927393168E-5
+refining |refining ,6.460369299238545E-5
+manual input |manual input ,6.460369299238545E-5
+template processor |template processor ,6.460369299238545E-5
+engineering discipline |engineering discipline ,6.460369299238545E-5
+coder |coder ,6.460369299238545E-5
+future execution |future execution ,6.460369299238545E-5
+simple rule |simple rules ,6.460369299238545E-5
+simplest form |simplest form ,6.460369299238545E-5
+b wilson |b Wilson ,6.460369299238545E-5
+computer program execution |computer program execution ,6.460369299238545E-5
+algorithms data structure goat file |algorithms Data structure Goat file ,6.460369299238545E-5
+criticism |criticism ,6.460369299238545E-5
+object-oriented style |object-oriented style ,6.460369299238545E-5
+ralph m |Ralph M ,6.460369299238545E-5
+multi-core programming |Multi-Core Programming ,6.460369299238545E-5
+c programming language computer programming |C programming language Computer programming ,6.460369299238545E-5
+non-local variable |non-local variables ,6.460369299238545E-5
+hardware error |hardware error ,6.460369299238545E-5
+client computer |client computers ,6.460369299238545E-5
+computer programmer |computer programmer |computer programmers ,6.460369299238545E-5
+executable form |executable form ,6.460369299238545E-5
+batch or interactive session |batch or interactive session ,6.460369299238545E-5
+software code |Software code ,6.460369299238545E-5
+haskell |Haskell ,6.460369299238545E-5
+var x |var x ,6.460369299238545E-5
+non-volatile memory |non-volatile memory ,6.460369299238545E-5
+program counter |program counter ,6.460369299238545E-5
+structured computer organization |Structured Computer Organization ,6.460369299238545E-5
+main disadvantage |main disadvantage ,6.460369299238545E-5
+normal operation |normal operations ,6.460369299238545E-5
+central processing unit |central processing unit ,6.460369299238545E-5
+imperative or declarative programming |imperative or declarative programming ,6.460369299238545E-5
+tv programme |TV programme ,6.460369299238545E-5
+macro processor |macro processor ,6.460369299238545E-5
+java programming language |Java programming language ,6.460369299238545E-5
+medium |medium ,6.460369299238545E-5
+operation using thread |operation using threads ,6.460369299238545E-5
+lengthy process |lengthy process ,6.460369299238545E-5
+storage edit |storage edit ,6.460369299238545E-5
+just-in-time compilation jit |just-in-time compilation JIT ,6.460369299238545E-5
+programming language design clarification |programming language design clarification ,6.460369299238545E-5
+software developer |software developer ,6.460369299238545E-5
+further providing |further providing ,6.460369299238545E-5
+computer programme |Computer Programme ,6.460369299238545E-5
+object code or machine code |object code or machine code ,6.460369299238545E-5
+code generator |code generators ,6.460369299238545E-5
+popular method |popular method ,6.460369299238545E-5
+embedded programs edit |Embedded programs edit ,6.460369299238545E-5
+machine independent code |machine independent code ,6.460369299238545E-5
+human interaction |human interaction ,6.460369299238545E-5
+generative programming |Generative programming ,6.460369299238545E-5
+batch |batch ,6.460369299238545E-5
+read-only memory |read-only memory ,6.460369299238545E-5
+compiled computer program |compiled computer programs |Compiled computer programs ,6.460369299238545E-5
+detailed solution |detailed solution ,6.460369299238545E-5
+interpreting edit |interpreting edit ,6.460369299238545E-5
+generic class |generic classes ,6.460369299238545E-5
+boot process |boot process ,6.460369299238545E-5
+software engines output source code |Software engines output source code ,6.460369299238545E-5
+self-modifying code |Self-modifying code ,6.460369299238545E-5
+computer virus |computer viruses ,6.460369299238545E-5
+basic compiler |BASIC compilers ,6.460369299238545E-5
+categorization |categorization ,6.460369299238545E-5
+computer hardware |computer hardware ,6.460369299238545E-5
+class program static void main string args |class Program static void Main string args ,6.460369299238545E-5
+efficient intermediate representation |efficient intermediate representation ,6.460369299238545E-5
+machine-executable code |machine-executable code ,6.460369299238545E-5
+navigation search computer program code |navigation search Computer program code ,6.460369299238545E-5
+compiling step |compiling step ,6.460369299238545E-5
+bytecode |Bytecode ,6.460369299238545E-5
+punched card |punched cards ,6.460369299238545E-5
+c interpreter |C interpreters ,6.460369299238545E-5
+tanenbaum |Tanenbaum ,6.460369299238545E-5
+skill |skill ,6.460369299238545E-5
+multicore processor |multicore processors ,6.460369299238545E-5
+system out println |System out println ,6.460369299238545E-5
+eval feature |eval feature ,6.460369299238545E-5
+middleware |middleware ,6.460369299238545E-5
+interpreting code |Interpreting code ,6.460369299238545E-5
+software application |software application ,6.460369299238545E-5
+human-readable computer programming language |human-readable computer programming language ,6.460369299238545E-5
+machine code |machine code ,6.460369299238545E-5
+mathematical relation |mathematical relations ,6.460369299238545E-5
+webopedia definition |Webopedia Definition ,6.460369299238545E-5
+paradigms edit computer program |Paradigms edit Computer programs ,6.460369299238545E-5
+execution and storage edit |Execution and storage edit ,6.460369299238545E-5
+algorithms and computer programming |Algorithms and Computer Programming ,6.460369299238545E-5
+stored-program computer |stored-program computer ,6.460369299238545E-5
+imperative |imperative ,6.460369299238545E-5
+usb flash drive |USB flash drive ,6.460369299238545E-5
+java computer program |Java computer programs ,6.460369299238545E-5
+separate command |separate commands ,6.460369299238545E-5
+normal self-termination |normal self-termination ,6.460369299238545E-5
+subsequent execution |subsequent executions ,6.460369299238545E-5
+source form |source form ,6.460369299238545E-5
+html |HTML ,6.460369299238545E-5
+paper tape |paper tape ,6.460369299238545E-5
+executable file |executable file ,6.460369299238545E-5
+b silberschatz |b Silberschatz ,6.460369299238545E-5
+web browser |web browser ,6.460369299238545E-5
+software or hardware error |software or hardware error ,6.460369299238545E-5
+functional categories edit computer program |Functional categories edit Computer programs ,6.460369299238545E-5
+immediately executed computer program |immediately executed computer programs ,6.460369299238545E-5
+fly |fly ,6.460369299238545E-5
+desired action |desired action ,6.460369299238545E-5
+external links edit definition |External links edit Definition ,6.460369299238545E-5
+initialization process |initialization process ,6.460369299238545E-5
+further processing |further processing ,6.460369299238545E-5
+application problem |application problems ,6.460369299238545E-5
+executing machine |executing machine ,6.460369299238545E-5
+markup code |markup code ,6.460369299238545E-5
+cobol |COBOL ,6.460369299238545E-5
+modern day multiprocessor computer |modern day multiprocessor computers ,6.460369299238545E-5
+physical |physical ,6.460369299238545E-5
+perspective |perspective ,6.460369299238545E-5
+memory content |memory contents ,6.460369299238545E-5
+functional language |functional languages ,6.460369299238545E-5
+functional line |functional lines ,6.460369299238545E-5
+software engine |software engines ,6.460369299238545E-5
+public static void main string args |public static void main String args ,6.460369299238545E-5
+assignment statement |assignment statement ,6.460369299238545E-5
+language execution |language execution ,6.460369299238545E-5
+random access memory |random access memory ,6.460369299238545E-5
+executable program |executable program ,6.460369299238545E-5
+multitasking |multitasking ,6.460369299238545E-5
+console writeline |Console WriteLine ,6.460369299238545E-5
+datatype |datatype ,6.460369299238545E-5
+process scheduling |process scheduling ,6.460369299238545E-5
+separate process |separate processes ,6.460369299238545E-5
+writing |writing ,6.460369299238545E-5
+textually |textually ,6.460369299238545E-5
+path |path ,6.460369299238545E-5
+virtual machine |virtual machine ,6.460369299238545E-5
+starting address |starting address ,6.460369299238545E-5
+convenient |convenient ,6.460369299238545E-5
+device controller |device controllers ,6.460369299238545E-5
+software mechanism |software mechanism ,6.460369299238545E-5
+integrated development environment |integrated development environment ,6.460369299238545E-5
+host computer |host computer ,6.460369299238545E-5
+multiprocessing many operating systems support multitasking |Multiprocessing Many operating systems support multitasking ,6.460369299238545E-5
+multiple thread |multiple threads ,6.460369299238545E-5
+declaration couple |declaration couples ,6.460369299238545E-5
+declarative programming |declarative programming ,6.460369299238545E-5
+visual language program |visual language program ,6.460369299238545E-5
+cpu |CPU ,6.460369299238545E-5
+prolog |Prolog ,6.460369299238545E-5
+human-computer interaction |human-computer interaction ,6.460369299238545E-5
+process computing and multiprocessing many operating systems support multitasking |Process computing and Multiprocessing Many operating systems support multitasking ,6.460369299238545E-5
+setting |settings ,6.460369299238545E-5
+no compiler present |no compiler present ,6.460369299238545E-5
+processor register |processor registers ,6.460369299238545E-5
+self-modifying programs edit |Self-modifying programs edit ,6.460369299238545E-5
+compiled version |compiled version ,6.460369299238545E-5
+compiling or interpreting edit |Compiling or interpreting edit ,6.460369299238545E-5
+hello world n |Hello world n ,6.460369299238545E-5
+person |person ,6.460369299238545E-5
+programming language paradigm |programming language paradigm ,6.460369299238545E-5
+goal |goal ,6.460369299238545E-5
+jointly developed program |jointly developed program ,6.460369299238545E-5
+command-line interface |command-line interface ,6.460369299238545E-5
+dynamic content |dynamic content ,6.460369299238545E-5
+compiled or interpreted program |compiled or interpreted programs ,6.460369299238545E-5
+system software and application software |system software and application software ,6.460369299238545E-5
+microcontroller |microcontroller ,6.460369299238545E-5
+akhter |Akhter ,6.460369299238545E-5
+interpreted program |interpreted programs ,6.460369299238545E-5
+further reading edit knuth |Further reading edit Knuth ,6.460369299238545E-5
+computer programming include |Computer programming include ,6.460369299238545E-5
+declarative language |declarative language |declarative languages ,6.460369299238545E-5
+human-readable source code form |human-readable source code form ,6.460369299238545E-5
+computer user |computer user ,6.460369299238545E-5
+thomson learning |Thomson Learning ,6.460369299238545E-5
+aid |aid ,6.460369299238545E-5
+unix shell |Unix shell ,6.460369299238545E-5
+faster |faster ,6.460369299238545E-5
+independent |Independent ,6.460369299238545E-5
+efficient manner |efficient manner ,6.460369299238545E-5
+control flow |control flow ,6.460369299238545E-5
+intel press |Intel Press ,6.460369299238545E-5
+interpreted computer program |Interpreted computer programs ,6.460369299238545E-5
+specific purpose |specific purpose ,6.460369299238545E-5
+hello world |Hello World ,6.460369299238545E-5
+programmer productivity |programmer productivity ,6.460369299238545E-5
+wikipedia article |Wikipedia articles ,6.460369299238545E-5
+batch process |batch process ,6.460369299238545E-5
+interactive session |interactive session ,6.460369299238545E-5
+computer source code |Computer source code ,6.460369299238545E-5
+scripting language |scripting language ,6.460369299238545E-5
+convenient and efficient manner |convenient and efficient manner ,6.460369299238545E-5
+principle |principle |Principles ,6.460369299238545E-5
+richard bowle |Richard Bowles ,6.460369299238545E-5
+c preprocessor |C preprocessor ,6.460369299238545E-5
+c programming language public class helloworld |C programming language public class HelloWorld ,6.460369299238545E-5
+ides |IDEs ,6.460369299238545E-5
+main paradigm |main paradigms ,6.460369299238545E-5
+prolog system |Prolog system ,6.460369299238545E-5
+lisp |Lisp ,6.460369299238545E-5
+unix shell or other command-line interface |Unix shell or other command-line interface ,6.460369299238545E-5
+computer process |computer process ,6.460369299238545E-5
+automatic program generation edit |Automatic program generation edit ,6.460369299238545E-5
+modified computer program |modified computer program ,6.460369299238545E-5
+initial computer program load |initial computer program loads ,6.460369299238545E-5
+collection |collection ,6.460369299238545E-5
+declared object |declared objects ,6.460369299238545E-5
+compiling |Compiling ,6.460369299238545E-5
+relationship |relationship ,6.460369299238545E-5
+binary image |binary images ,6.460369299238545E-5
+term software engineering |term software engineering ,6.460369299238545E-5
+human-computer interaction and programming language design clarification |human-computer interaction and programming language design clarification ,6.460369299238545E-5
+executable image |executable image ,6.460369299238545E-5
+source code generator |source code generator ,6.460369299238545E-5
+writing or editing source code |writing or editing source code ,6.460369299238545E-5
+simultaneous execution edit |Simultaneous execution edit ,6.460369299238545E-5
+subgoal |subgoal |subgoals ,6.460369299238545E-5
+sixth edition |Sixth Edition ,6.460369299238545E-5
+multithreading processor |Multithreading processors ,6.460369299238545E-5
+hardware device |hardware device ,6.460369299238545E-5
+command |commands ,6.460369299238545E-5
+functional category |functional category ,6.460369299238545E-5
+dictionary |dictionary ,6.460369299238545E-5
+manual programming edit switch |Manual programming edit Switches ,6.460369299238545E-5
+process computing |Process computing ,6.460369299238545E-5
+int main void printf |int main void printf ,6.460369299238545E-5
+user interface |user interface ,6.460369299238545E-5
+binary file format |binary file format ,6.460369299238545E-5
+editing source code |Editing source code |editing source code ,6.460369299238545E-5
+logical language |logical languages ,6.460369299238545E-5
+ansi c standard an |ANSI C Standard ANS ,4.59290376980474E-5
+public review ansi c rationale an |Public Review ANSI C Rationale ANS ,4.59290376980474E-5
+navigation |navigation ,2.5678309077868615E-5
+encyclopedia jump |encyclopedia Jump ,0.0
+wikipedia |Wikipedia ,0.0

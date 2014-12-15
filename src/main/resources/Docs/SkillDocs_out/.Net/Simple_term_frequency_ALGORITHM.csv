@@ -1,0 +1,826 @@
+net |NET |net ,288.0
+framework |Frameworks |Framework |framework ,200.0
+window |Windows ,195.0
+microsoft |Microsoft ,160.0
+net framework |NET Framework ,118.0
+software |Software |software ,104.0
+object |Objects |object |objects ,76.0
+source |Source |source ,73.0
+platform |platform |platforms |Platform ,56.0
+cli |CLI ,50.0
+application |application |Applications |applications ,46.0
+visual studio |Visual Studio ,46.0
+implementation |implementation |implementations ,44.0
+ecma |ECMA ,42.0
+system |system |System ,40.0
+version |versions |version ,38.0
+fcl |FCL ,36.0
+security |Security |security ,36.0
+clr |CLR ,36.0
+service |services |Services |service ,34.0
+code |code ,31.0
+open source |Open Source |open source ,30.0
+iso |ISO ,28.0
+language |languages |language ,28.0
+wiki |wikis |Wiki |wiki |Wikis ,25.0
+garbage |garbage ,24.0
+common language infrastructure |Common Language Infrastructure ,24.0
+core |Core |core ,24.0
+mono |Mono ,24.0
+memory |memory ,24.0
+standard |standards |standard ,23.0
+msdn |MSDN ,22.0
+assembly |assembly ,22.0
+part |parts |part ,22.0
+article |articles |article |Articles ,22.0
+feature |features |feature ,21.0
+tool |tools |Tools ,20.0
+collection |collection ,20.0
+library |library ,18.0
+development |development ,18.0
+environment |environment ,18.0
+project |project |projects ,17.0
+support |support ,16.0
+common language infrastructure cli |Common Language Infrastructure CLI ,16.0
+specification |specification |specifications ,16.0
+functionality |functionality ,15.0
+archived |Archived ,14.0
+original |original ,14.0
+reference |references |reference ,14.0
+garbage collection |Garbage Collection |garbage collection ,14.0
+ado net |ADO NET ,14.0
+source code |source code ,14.0
+asp net |ASP NET ,14.0
+management |management ,14.0
+developer |developer |developers ,13.0
+net core |NET Core ,12.0
+factory |factory ,12.0
+windows form |Windows Forms ,12.0
+use |use ,12.0
+attention |attention |Attention ,12.0
+number |number ,12.0
+expert |expert ,12.0
+scope |scope ,12.0
+windows presentation foundation |Windows Presentation Foundation ,12.0
+silverlight |Silverlight ,12.0
+visual studio net |Visual Studio NET ,12.0
+class |classes ,12.0
+type |type |types ,10.0
+class library |class library ,10.0
+cross-platform |cross-platform ,10.0
+internet |Internet ,10.0
+pattern |Patterns ,10.0
+alternative implementation |alternative implementations |Alternative implementations ,10.0
+extension |extensions ,9.0
+icaza |Icaza ,8.0
+garbage collector |garbage collector ,8.0
+bcl |BCL ,8.0
+microsoft net framework |Microsoft NET Framework ,8.0
+mediawiki |MediaWiki ,8.0
+miguel de icaza |Miguel de Icaza ,8.0
+patent |Patents |patents ,8.0
+permission |permissions |permission ,8.0
+standardization |Standardization ,8.0
+set |set ,8.0
+efx factory |EFx Factory ,8.0
+document |document |documents ,8.0
+older |older ,8.0
+net micro framework |NET Micro Framework ,8.0
+microsoft window |Microsoft Windows ,8.0
+visual basic |Visual Basic ,8.0
+expression blend |Expression Blend ,8.0
+expert attention |expert attention ,8.0
+access |access ,8.0
+linux |Linux ,8.0
+page |page |Page |pages ,7.0
+generation |generation ,6.0
+common language runtime clr |Common Language Runtime CLR ,6.0
+common intermediate language |Common Intermediate Language ,6.0
+root |root |roots ,6.0
+private key |private key ,6.0
+evidence |evidence ,6.0
+creator |creator ,6.0
+entire |entire ,6.0
+java |Java ,6.0
+main article |Main article ,6.0
+method |method ,6.0
+restriction |restrictions |restriction ,6.0
+windows communication foundation |Windows Communication Foundation ,6.0
+subset |subset ,6.0
+net framework developer |NET Framework Developer ,6.0
+iso standard |ISO standards ,6.0
+site |sites |site ,6.0
+guthrie |Guthrie ,6.0
+framework class library fcl |Framework Class Library FCL ,6.0
+reachable |reachable ,6.0
+vb net |VB NET ,6.0
+programming language |Programming languages |programming languages ,6.0
+namespace |namespaces ,6.0
+function |functions ,6.0
+heap |heap ,6.0
+simd extension |SIMD Extensions ,6.0
+language integrated query |Language Integrated Query ,6.0
+execution |execution ,6.0
+gc run |GC runs ,6.0
+newer |newer ,6.0
+reflection |reflection ,6.0
+software factory |Software factory |software factory ,6.0
+design |Design ,6.0
+technology |technology ,6.0
+microsoft reference license |Microsoft Reference License ,6.0
+windows xp |Windows XP ,6.0
+net compact framework |NET Compact Framework ,6.0
+debugging |debugging ,6.0
+interoperability |Interoperability |interoperability ,6.0
+model |Models ,6.0
+file |files ,6.0
+mit license |MIT License ,6.0
+interaction |interaction ,6.0
+exception handling |exception handling ,6.0
+operating system |operating systems ,6.0
+memory management |memory management ,6.0
+base class library |Base Class Library ,6.0
+dll |DLL ,6.0
+php |PHP ,5.0
+sourceforge |SourceForge ,5.0
+behavior |behaviors |behavior ,4.0
+full framework |full framework ,4.0
+architecture |architectures ,4.0
+framework developer center |Framework Developer Center ,4.0
+component |components ,4.0
+call stack |call stack ,4.0
+reason |reason ,4.0
+space |space ,4.0
+visual c |Visual C ,4.0
+portable net |Portable NET ,4.0
+portion |portions ,4.0
+vendor |vendors ,4.0
+common function |common functions ,4.0
+strong |strong ,4.0
+language integrated query linq |Language Integrated Query LINQ ,4.0
+international organization |International Organization ,4.0
+interface |interfaces ,4.0
+cli and c |CLI and C ,4.0
+plugin |plugins ,4.0
+c language specification |C Language Specification ,4.0
+template |template |templates ,4.0
+strong naming |Strong naming |strong naming ,4.0
+ecma-international org |ecma-international org ,4.0
+demand |demand ,4.0
+cpu |CPUs ,4.0
+encyclopedia jump |encyclopedia Jump ,4.0
+managed heap |managed heap ,4.0
+entire class library |entire class library ,4.0
+database interaction |database interaction ,4.0
+file reading and writing graphic rendering |file reading and writing graphic rendering ,4.0
+metadata |metadata ,4.0
+crossnet |CrossNet ,4.0
+purpose |purpose ,4.0
+ecma and iso |ECMA and ISO ,4.0
+talk parameter |talk parameter ,4.0
+writing graphic rendering |writing graphic rendering ,4.0
+introduction |Introduction |introduction ,4.0
+long |long ,4.0
+version number |version number ,4.0
+control panel |Control Panel ,4.0
+mobile |mobile ,4.0
+area |areas ,4.0
+hardware |hardware ,4.0
+subject |subject ,4.0
+common type system |Common Type System ,4.0
+application development |application development ,4.0
+wikipedia |Wikipedia ,4.0
+dotfuscator community edition |Dotfuscator Community Edition ,4.0
+landwerth |Landwerth ,4.0
+windows communication foundation wcf |Windows Communication Foundation WCF ,4.0
+installation |installation ,4.0
+wcf accessibility active accessibility ui automation text |WCF Accessibility Active Accessibility UI Automation Text ,4.0
+base class library bcl |Base Class Library BCL ,4.0
+content |Contents ,4.0
+jack greenfield |Jack Greenfield ,4.0
+overview |Overview ,4.0
+xml document manipulation |XML document manipulation ,4.0
+unsourced statement |unsourced statements ,4.0
+amount |amount ,4.0
+windows workflow foundation wf |Windows Workflow Foundation WF ,4.0
+microsoft silverlight |Microsoft Silverlight ,4.0
+automatic memory management |Automatic Memory Management ,4.0
+file reading |file reading ,4.0
+complete |complete ,4.0
+windows platform |Windows platform ,4.0
+instruction |instructions ,4.0
+scott guthrie |Scott Guthrie ,4.0
+patent right |patent rights ,4.0
+public key token |public key token ,4.0
+ship |ships ,4.0
+net framework class library |NET Framework Class Library |NET Framework class library ,4.0
+cli specification |CLI specification ,4.0
+keith short |Keith Short ,4.0
+term |terms ,4.0
+tiki |Tiki ,3.0
+updated |Updated ,3.0
+cosyne |CoSyne |cosyne ,3.0
+job |Jobs ,3.0
+knowledge base |knowledge base ,3.0
+foswiki |Foswiki ,3.0
+user |Users |users |user ,3.0
+intranet |intranet |intranets ,3.0
+forum |forums |Forums ,3.0
+portal |Portal |portals ,3.0
+graph |graph |graphs ,3.0
+design features and tool |design features and tools ,2.0
+en wikipedia |en wikipedia ,2.0
+higher generation object |Higher generation objects ,2.0
+lower generation object |lower generation objects ,2.0
+architecture edit |Architecture edit ,2.0
+multi |multi ,2.0
+application development and execution |application development and execution ,2.0
+mysql |MySQL ,2.0
+direct reference |direct reference ,2.0
+core aspect |core aspects ,2.0
+software framework |software framework ,2.0
+project glidepath blog project glidepath forums nconstruct |Project Glidepath Blog Project Glidepath Forums NConstruct ,2.0
+isbn |ISBN ,2.0
+cli and c ecma and iso |CLI and C ECMA and ISO ,2.0
+foundation |foundation ,2.0
+separate thread |separate thread ,2.0
+legal grey area |legal grey area ,2.0
+wikibook |Wikibooks ,2.0
+web rapid enterprise application development tool |Web rapid enterprise application development tool ,2.0
+version number clr version release date |Version number CLR version Release date ,2.0
+framework version |Framework Versions ,2.0
+first beta version |first beta versions ,2.0
+bypassing |bypassing ,2.0
+large application |large applications ,2.0
+codeplex |Codeplex ,2.0
+derived |Derived ,2.0
+mark phase |mark phase ,2.0
+parameter article |parameter Articles ,2.0
+portable executable pe format |Portable Executable PE format ,2.0
+java c |Java C ,2.0
+hope |hope ,2.0
+update |update ,2.0
+cross-platform clr |Cross-Platform CLR ,2.0
+hewlett-packard |Hewlett-Packard ,2.0
+properties and behavior |properties and behaviors ,2.0
+lab |Labs ,2.0
+partition iv xml file |Partition IV XML File ,2.0
+standardization and licensing edit |Standardization and licensing edit ,2.0
+older application |older applications ,2.0
+simplified deployment net framework |Simplified deployment NET Framework ,2.0
+integrated debugging |integrated debugging ,2.0
+alternative implementations edit |Alternative implementations edit ,2.0
+managed code |managed code ,2.0
+common security model |common security model ,2.0
+cil bytecode |CIL bytecode ,2.0
+programmer |Programmers ,2.0
+mary jo |Mary Jo ,2.0
+open source mit license |open source MIT License ,2.0
+net framework delivery channel |NET Framework delivery channel ,2.0
+security requirement |security requirements ,2.0
+minimum compliance |minimum compliance ,2.0
+microsoft patent promise |Microsoft Patent Promise ,2.0
+visual basic net v t e microsoft apis |Visual Basic NET v t e Microsoft APIs ,2.0
+fully open source server-side net stack |fully open source server-side NET stack ,2.0
+silverlight and alternative implementation |Silverlight and Alternative implementations ,2.0
+element |elements ,2.0
+class library edit |Class library edit ,2.0
+microsoft visual studio |Microsoft Visual Studio ,2.0
+local variables or method parameter |local variables or method parameters ,2.0
+cryptography |cryptography ,2.0
+foley |Foley ,2.0
+exe file |EXE files ,2.0
+microsoft open |Microsoft Open ,2.0
+verification |verification ,2.0
+personal blog |Personal blog ,2.0
+pointer |pointers ,2.0
+development process |development process ,2.0
+microsoft patterns practices software factories external |Microsoft patterns practices Software Factories External ,2.0
+official standard |official standards ,2.0
+vb net compiler |VB NET compilers ,2.0
+hierarchy |hierarchy ,2.0
+note |Notes ,2.0
+dll exe |DLL EXE ,2.0
+managed heap managed object |managed heap managed objects ,2.0
+small version |small version ,2.0
+microsoft reference source license |Microsoft Reference Source License ,2.0
+osi-approved license |OSI-approved license ,2.0
+application virtual machine |application virtual machine ,2.0
+computer software |computer software ,2.0
+execution engine |execution engine ,2.0
+datatype |datatypes ,2.0
+efficiency |efficiency ,2.0
+current version |current version ,2.0
+safenet |SafeNet ,2.0
+net garbage collector gc |NET Garbage Collector GC ,2.0
+disk |disk ,2.0
+cli and fcl |CLI and FCL ,2.0
+reusable type |reusable types ,2.0
+conforming net language |conforming NET language ,2.0
+net disambiguation |NET disambiguation ,2.0
+standards iso org |Standards iso org ,2.0
+software framework license proprietary |Software framework License Proprietary ,2.0
+gaming |Gaming ,2.0
+native code |native code ,2.0
+source release |source release ,2.0
+required permission |required permission ,2.0
+simd support |SIMD support ,2.0
+non-discriminatory term |non-discriminatory terms ,2.0
+ecma iso standard |ECMA ISO standards ,2.0
+computer system |computer systems ,2.0
+john crupi |John Crupi ,2.0
+call stack walk |call stack walk ,2.0
+system runtime interopservice |System Runtime InteropServices ,2.0
+ecma group |ECMA group ,2.0
+specific assembly |specific assembly ,2.0
+validation |validation ,2.0
+emulator |emulator ,2.0
+newer object |newer objects ,2.0
+needed security edit |needed Security edit ,2.0
+tomboy |Tomboy ,2.0
+reasonable and non-discriminatory term |reasonable and non-discriminatory terms ,2.0
+c compiler |C compiler ,2.0
+net micro framework dev mobile |NET Micro Framework dev mobile ,2.0
+net framework framework class library |NET Framework Framework Class Library ,2.0
+integrated development environment configuration |Integrated development environment configurations ,2.0
+collection object |collection objects ,2.0
+integrate |integrates ,2.0
+integrated development environment |integrated development environment ,2.0
+previously selected shared source license |previously selected shared source license ,2.0
+future release |future releases ,2.0
+logical disk manager lsass minwin ntldr ntoskrnl |Logical Disk Manager LSASS MinWin NTLDR Ntoskrnl ,2.0
+fcl class |FCL classes ,2.0
+proprietary software license |proprietary software licenses ,2.0
+no ceiling |no ceiling ,2.0
+memory management edit |Memory management edit ,2.0
+steve cook |Steve Cook ,2.0
+wikiproject software |WikiProject Software ,2.0
+lesser general public license version |Lesser General Public License version ,2.0
+data access |data access ,2.0
+b c d e f |b c d e f ,2.0
+condition |conditions ,2.0
+specific type |specific types ,2.0
+microsoft shared source common language infrastructure |Microsoft Shared Source Common Language Infrastructure ,2.0
+possibility |possibility ,2.0
+cross-platform support |cross-platform support ,2.0
+global assembly cache |Global Assembly Cache ,2.0
+navigation |navigation ,2.0
+net core project |NET Core project ,2.0
+case |case ,2.0
+programming construct |programming constructs ,2.0
+covered specification |covered specifications ,2.0
+software citation |software citation ,2.0
+scott gu |Scott Gu ,2.0
+ecma standard |ECMA standards ,2.0
+database connectivity |database connectivity ,2.0
+visual overview |Visual overview ,2.0
+microsoft keith short |Microsoft Keith Short ,2.0
+patent issue |patent issues ,2.0
+basic api |basic API ,2.0
+net open source and cross-platform |NET open source and cross-platform ,2.0
+rotor |Rotor ,2.0
+memory contiguous |memory contiguous ,2.0
+revision |revision ,2.0
+non-windows platform |non-Windows platforms ,2.0
+exchange |exchange ,2.0
+topic |topic ,2.0
+unique combination |unique combination ,2.0
+older object |older objects ,2.0
+net framework version history microsoft |NET Framework version history Microsoft ,2.0
+culture |culture ,2.0
+modern net feature |modern NET features ,2.0
+large class library |large class library ,2.0
+net platform |NET platform ,2.0
+visual basic net java |Visual Basic NET Java ,2.0
+patent grant |patent grants ,2.0
+end |end ,2.0
+hype cycle |Hype Cycle ,2.0
+buffer overflow |buffer overflows ,2.0
+streaming simd extensions sse |Streaming SIMD Extensions SSE ,2.0
+process |processes ,2.0
+large number |large number ,2.0
+tirania org |Tirania org ,2.0
+zdnet |ZDNet ,2.0
+unusable object |unusable objects ,2.0
+method parameter |method parameters ,2.0
+common language runtime engine common language runtime clr |Common Language Runtime engine Common Language Runtime CLR ,2.0
+contrast |contrast ,2.0
+licensing edit |licensing edit ,2.0
+performance edit |Performance edit ,2.0
+mips |MIPS ,2.0
+predominant implementation |predominant implementation ,2.0
+stewardship |stewardship ,2.0
+no reference |no reference ,2.0
+technical report |Technical Report ,2.0
+security edit net |Security edit NET ,2.0
+code access security ca |Code Access Security CAS ,2.0
+specification version |specification version ,2.0
+issue |issue ,2.0
+initial release |initial release ,2.0
+expanded set |expanded set ,2.0
+disadvantage |disadvantages ,2.0
+mobile or embedded device use |mobile or embedded device use ,2.0
+pool |pool ,2.0
+dll and exe file |DLL and EXE files ,2.0
+common functionality programmer |common functionality programmers ,2.0
+microsoft service |Microsoft Services ,2.0
+enterprise wiki |Enterprise wiki |enterprise wiki ,2.0
+system enterpriseservices namespace |System EnterpriseServices namespaces ,2.0
+net framework pronounced dot net |NET Framework pronounced dot net ,2.0
+microsoft referencesource |Microsoft referencesource ,2.0
+addition |addition ,2.0
+net type |NET types ,2.0
+feature parity |feature parity ,2.0
+tools microsoft |Tools Microsoft ,2.0
+local variable |local variables ,2.0
+runtime engine |runtime engine ,2.0
+cyberthreat |Cyberthreats ,2.0
+network communication |network communications ,2.0
+design feature |design features ,2.0
+partner |partners ,2.0
+datatypes and programming construct |datatypes and programming constructs ,2.0
+root object |root objects ,2.0
+general feature |general features ,2.0
+language independence net framework |Language independence NET Framework ,2.0
+additional functionality |additional functionality ,2.0
+c and vb net compiler |C and VB NET compilers ,2.0
+cpu register |CPU registers ,2.0
+design pattern |Design Patterns ,2.0
+net decompiler program |NET decompiler programs ,2.0
+intranet or internet |intranet or Internet ,2.0
+p invoke feature |P Invoke feature ,2.0
+view |views ,2.0
+conventional bazaar -like open source development model |conventional bazaar -like open source development model ,2.0
+neil macdonald |Neil MacDonald ,2.0
+adoption |adoption ,2.0
+windows ce platform |Windows CE platforms ,2.0
+announcement |announcement ,2.0
+severely resource-constrained device |severely resource-constrained devices ,2.0
+previous pledge |previous pledges ,2.0
+microsoft net framework sdk version |Microsoft NET Framework SDK version ,2.0
+net environment |NET environment ,2.0
+final release |final release ,2.0
+net framework blog |NET Framework Blog ,2.0
+possession |possession ,2.0
+gnu general public license version |GNU General Public License version ,2.0
+hacking |hacking ,2.0
+embedded device use |embedded device use ,2.0
+open standard |open standard ,2.0
+unanticipated delay |unanticipated delays ,2.0
+consequence |consequence ,2.0
+fcl and clr |FCL and CLR ,2.0
+wiki cms groupware |Wiki CMS Groupware ,2.0
+microsoft reference implementation |Microsoft reference implementation ,2.0
+copyright restriction |copyright restrictions ,2.0
+service-oriented enterprise application |Service-Oriented Enterprise Applications ,2.0
+mono safe |Mono safe ,2.0
+simple text |simple text ,2.0
+alpha |Alpha ,2.0
+news center |News Center ,2.0
+patent promise |patent promise ,2.0
+built-in apis |built-in APIs ,2.0
+previously installed software |previously installed software ,2.0
+mac os platform |Mac OS platforms ,2.0
+edit |edit ,2.0
+cli metadata |CLI metadata ,2.0
+amrit williams |Amrit Williams ,2.0
+wikiwikiweb |WikiWikiWeb ,2.0
+keypair |keypair ,2.0
+efx factory blog microsoft pattern |EFx Factory Blog Microsoft Patterns ,2.0
+system namespace |System namespace ,2.0
+windows vista |Windows Vista ,2.0
+enterprise framework factory |Enterprise Framework Factory ,2.0
+concern |concern ,2.0
+chen |Chen ,2.0
+micro isv-oriented software factory |Micro ISV-oriented Software Factory ,2.0
+extremely resource-constrained device |extremely resource-constrained devices ,2.0
+visual studio online |Visual Studio Online ,2.0
+cross-platform commitment |cross-platform commitment ,2.0
+source net core |source NET Core ,2.0
+efx factory blog microsoft patterns and practices team |EFx Factory Blog Microsoft Patterns and Practices Team ,2.0
+frequently asked question |Frequently Asked Questions ,2.0
+integrated development environment configurations and view |Integrated development environment configurations and views ,2.0
+manifest |manifest ,2.0
+dotnet corefx |dotnet corefx ,2.0
+system core dll |System core dll ,2.0
+gartner |Gartner ,2.0
+cross-platform implementation |cross-platform implementations ,2.0
+libraries and application |libraries and applications ,2.0
+windows mobile device |Windows Mobile devices ,2.0
+net framework environment |NET Framework environment ,2.0
+patent litigation |patent litigation ,2.0
+location |location ,2.0
+c ecma |C ECMA ,2.0
+mac os x |Mac OS X ,2.0
+community-developed open source project |community-developed open source project ,2.0
+cil code |CIL code ,2.0
+net open source |NET open source ,2.0
+collection run |collection run ,2.0
+compiler optimization |compiler optimizations ,2.0
+managing memory |managing memory ,2.0
+microsoft silverlight and mono |Microsoft Silverlight and Mono ,2.0
+non-starter |non-starter ,2.0
+reduced version |reduced version ,2.0
+modern programming language |modern programming languages ,2.0
+expert attention software article |expert attention Software articles ,2.0
+shared source microsoft reference license |shared source Microsoft Reference License ,2.0
+reflection citation |reflection citation ,2.0
+numeric algorithm |numeric algorithms ,2.0
+loss |loss ,2.0
+cts specification |CTS specification ,2.0
+stuart kent |Stuart Kent ,2.0
+msdn library net framework index overview |MSDN Library NET Framework Index Overview ,2.0
+unobfuscated |Unobfuscated ,2.0
+risk |risk ,2.0
+objects reachable |objects reachable ,2.0
+read |Read ,2.0
+wide range |wide range ,2.0
+inkball |InkBall ,2.0
+service factory |Service Factory ,2.0
+non-free implementation |non-free implementation ,2.0
+b c garbage collection |b c Garbage collection ,2.0
+relicensing |relicensing ,2.0
+modeling edition version |Modeling Edition version ,2.0
+use and application |use and application ,2.0
+factory software product line references edit jack greenfield |factory Software Product Line References edit Jack Greenfield ,2.0
+foreword |Foreword ,2.0
+simplified version |simplified version ,2.0
+static object |static objects ,2.0
+method-level encryption tool |Method-level encryption tools ,2.0
+newly created object |newly created objects ,2.0
+newer and older program |newer and older programs ,2.0
+b scott guthrie |b Scott Guthrie ,2.0
+common language infrastructure cli specification |Common Language Infrastructure CLI specification ,2.0
+red gate software |Red Gate Software ,2.0
+simple |simple ,2.0
+xenocode |Xenocode ,2.0
+easy |easy ,2.0
+local machine |local machine ,2.0
+chinnathambi |Chinnathambi ,2.0
+small subset |small subset ,2.0
+previous version assembly |previous version assembly ,2.0
+third-party obfuscation tool |Third-party obfuscation tools ,2.0
+language interoperability |language interoperability ,2.0
+previous |previous ,2.0
+news |news ,2.0
+unix posix subsystem interix virtual dos machine window |UNIX POSIX subsystem Interix Virtual DOS machine Windows ,2.0
+assembly cli common intermediate language |Assembly CLI Common Intermediate Language ,2.0
+reasonable |reasonable ,2.0
+library stack |library stack ,2.0
+mscorlib dll |mscorlib dll ,2.0
+fewer object |fewer objects ,2.0
+instance |instances ,2.0
+compatible implementation |compatible implementations ,2.0
+association |association ,2.0
+edit efx factory net |edit EFx Factory net ,2.0
+alternative |alternatives ,2.0
+effort |effort ,2.0
+net application |NET application ,2.0
+net foundation |NET Foundation ,2.0
+mandatory part |mandatory parts ,2.0
+system dll |System dll ,2.0
+ecma iso specification |ECMA ISO specification ,2.0
+portability |Portability ,2.0
+vmware |vmware ,2.0
+windows winhelp winsat write retrieved |Windows WinHelp WinSAT Write Retrieved ,2.0
+trade secret |trade secrets ,2.0
+runtime component |Runtime Components ,2.0
+direct control |direct control ,2.0
+variety |variety ,2.0
+reverse engineering risk assessment |Reverse Engineering Risk Assessment ,2.0
+dokuwiki |Dokuwiki ,2.0
+practices team |Practices Team ,2.0
+microsoft net official website net framework developer center |Microsoft NET Official website NET Framework Developer Center ,2.0
+intel |Intel ,2.0
+framework class library framework class library fcl |Framework Class Library Framework Class Library FCL ,2.0
+non-microsoft implementation |non-Microsoft implementations ,2.0
+generation windows services ngw |Generation Windows Services NGWS ,2.0
+net program |NET programs ,2.0
+older program |older programs ,2.0
+chunk |chunks ,2.0
+christec co nz |Christec co nz ,2.0
+disclaimer |disclaimer ,2.0
+references edit |References edit ,2.0
+net development foundation wikiversity |NET Development Foundation Wikiversity ,2.0
+supervision |supervision ,2.0
+cli compliant language |CLI compliant languages ,2.0
+cli and portion |CLI and portions ,2.0
+no reverse-engineering skill |no reverse-engineering skills ,2.0
+gui framework |GUI framework ,2.0
+hardware environment |hardware environment ,2.0
+burden |burden ,2.0
+security mechanism |security mechanism ,2.0
+arm |ARM ,2.0
+windows-specific functionality and behavior |Windows-specific functionality and behavior ,2.0
+redesigned version |redesigned version ,2.0
+information |information ,2.0
+shared-source microsoft reference license |shared-source Microsoft Reference License ,2.0
+software environment |software environment ,2.0
+customer success |customer success ,2.0
+dotgnu |DotGNU ,2.0
+expression blend and design |Expression Blend and Design ,2.0
+sharepoint software factory |SharePoint Software Factory ,2.0
+edit smart-microsoft software factory |edit SMART-Microsoft Software Factory ,2.0
+single language |single language ,2.0
+harder |harder ,2.0
+term software factory |term software factory ,2.0
+software foundation |Software Foundation ,2.0
+windows presentation foundation or windows form |Windows Presentation Foundation or Windows Forms ,2.0
+learning material |learning materials ,2.0
+contact |Contact ,2.0
+navigation search |navigation search ,2.0
+longer lifetime |longer lifetime ,2.0
+superset |superset ,2.0
+enough pressure |enough pressure ,2.0
+no reason |no reason ,2.0
+smartphone |smartphones ,2.0
+non-deterministic compacting mark-and-sweep garbage collector |non-deterministic compacting mark-and-sweep garbage collector ,2.0
+malicious software |malicious software ,2.0
+validation and verification |validation and verification ,2.0
+net code |NET code ,2.0
+grant |grant ,2.0
+web application development |web application development ,2.0
+net software |NET software ,2.0
+integrated runtime environment tool |integrated runtime environment tools ,2.0
+mono simd namespace |Mono Simd namespace ,2.0
+future net platform |future NET platforms ,2.0
+net framework release |NET Framework release ,2.0
+user interface |user interface ,2.0
+lack |lack ,2.0
+program |Programs ,2.0
+net framework family |NET Framework family ,2.0
+pinball chess titans freecell hearts hover |Pinball Chess Titans FreeCell Hearts Hover ,2.0
+windows-specific functionality |Windows-specific functionality ,2.0
+view talk edit design edit |view talk edit Design edit ,2.0
+instantiation |Instantiations ,2.0
+windows presentation foundation part |Windows Presentation Foundation part ,2.0
+language-neutral platform |language-neutral platform ,2.0
+model driven development |model driven development ,2.0
+en wikipedia org w index php title software factory |en wikipedia org w index php title Software Factory ,2.0
+pentium iii |Pentium III ,2.0
+microsoft initial release |Microsoft Initial release ,2.0
+top-level internet domain |top-level Internet domain ,2.0
+license control mechanism |license control mechanisms ,2.0
+administrator |Administrators ,2.0
+book |book ,2.0
+filename |filename ,2.0
+selectable sql backend |selectable SQL backend ,1.0
+right |rights ,1.0
+cygwin-derived software distro |Cygwin-derived software distro ,1.0
+wiki application |wiki applications ,1.0
+extensible |extensible ,1.0
+topic markup language |Topic Markup Language ,1.0
+facebook microsoft feedback |Facebook Microsoft Feedback ,1.0
+title web analytic |title Web Analytics ,1.0
+amazing design |amazing design ,1.0
+software create |Software Create ,1.0
+height |height ,1.0
+html form |HTML form ,1.0
+wiki asp net |Wiki asp net ,1.0
+wiki net |Wiki net ,1.0
+calendar |calendars ,1.0
+customer support |customer support ,1.0
+minimalist gnu |Minimalist GNU ,1.0
+source software |Source software ,1.0
+staff picks gnucash personal |Staff Picks GnuCash Personal ,1.0
+windows wiki software |Windows Wiki Software ,1.0
+home |home ,1.0
+iis ms-sql |IIS MS-SQL ,1.0
+engine running |engine running ,1.0
+firebird |Firebird ,1.0
+itjb job |ITJB jobs ,1.0
+information and feature |information and features ,1.0
+robot |robots ,1.0
+wikiwikiweb clone |WikiWikiWeb clone ,1.0
+img src |img src ,1.0
+customer success center |customer success center ,1.0
+mediawiki enterprise distribution |MediaWiki Enterprise Distribution ,1.0
+key term |key terms ,1.0
+european union |European Union ,1.0
+windows or linux |Windows or Linux ,1.0
+database |Databases ,1.0
+tv broadcast program money manager |TV broadcast program Money Manager ,1.0
+mindtouch platform and core |MindTouch Platform and Core ,1.0
+hosted |Hosted ,1.0
+full authentication |full authentication ,1.0
+interest |interest ,1.0
+href |href ,1.0
+blank img border |blank img border ,1.0
+light and easy |light and easy ,1.0
+mindtouch--software |MindTouch--software ,1.0
+multilingual wiki-engine |multilingual Wiki-engine ,1.0
+mozilla |Mozilla ,1.0
+site status |Site Status ,1.0
+enterprise twiki collaboration platform open source enterprise wiki |Enterprise TWiki Collaboration Platform Open Source Enterprise Wiki ,1.0
+www mindtouch |www MindTouch ,1.0
+mediawiki skin |MediaWiki skin ,1.0
+simple and open source |simple and open source ,1.0
+world |world ,1.0
+choices advertise source forge jp performance img |Choices Advertise Source Forge JP Performance img ,1.0
+resources blogs forum |Resources Blogs Forums ,1.0
+open source web application |Open Source Web Application ,1.0
+openlayersmap |openlayersmap ,1.0
+url |URL ,1.0
+sourceforge browse enterprise blog help jobs log |SourceForge Browse Enterprise Blog Help Jobs Log ,1.0
+dokuwiki plugin |Dokuwiki plugins ,1.0
+workspace |workspaces ,1.0
+question |Question ,1.0
+rich collaboration feature |Rich collaboration features ,1.0
+community |community ,1.0
+graphical categories browser |Graphical Categories Browser ,1.0
+project homepage |project homepage ,1.0
+info |info ,1.0
+extensione |extensiones ,1.0
+planning |Planning ,1.0
+open-source social-collaboration software |open-source social-collaboration software ,1.0
+dice holding |Dice Holdings ,1.0
+core and platform |Core and Platform ,1.0
+postgre |Postgres ,1.0
+link |link ,1.0
+research and technological development project |Research and Technological Development project ,1.0
+arch linux |Arch Linux ,1.0
+open-source offline wikipedia application |open-source offline Wikipedia application ,1.0
+llc |LLC ,1.0
+neudesic |Neudesic ,1.0
+enterprise |enterprises ,1.0
+powered |Powered ,1.0
+date version |date version ,1.0
+oracle |Oracle ,1.0
+blog |Blogs ,1.0
+source software gnu lgpl |Source Software GNU LGPL ,1.0
+mindtouch open source |MindTouch open source ,1.0
+target |target ,1.0
+microsoft azure follow |Microsoft Azure Follow ,1.0
+external js file |external js files ,1.0
+iis powered |IIS Powered ,1.0
+highly modular cms framework |Highly Modular CMS framework ,1.0
+mediawiki graphical category browser |MediaWiki Graphical Category Browser ,1.0
+source wiki |Source wiki ,1.0
+mindtouch platform |MindTouch Platform ,1.0
+truetype core font |TrueType core fonts ,1.0
+knowledge base or document management system |knowledge base or document management system ,1.0
+light |light ,1.0
+collaboration platform |collaboration platform ,1.0
+image photo gallery |Image Photo Gallery ,1.0
+portable software collection |Portable Software Collection ,1.0
+extranets |extranets ,1.0
+solution center |Solution Centers ,1.0
+service support |service support ,1.0
+tikiwiki upgrader |TikiWiki upgrader ,1.0
+commitment |commitment ,1.0
+web application |Web applications ,1.0
+small-business finance manager gnuplot development |small-business finance manager gnuplot development ,1.0
+themeable |themeable ,1.0
+help center |help center ,1.0
+activity stream |activity streams ,1.0
+jquery |jQuery ,1.0
+portable software usb job |Portable Software USB jobs ,1.0
+latest tech job |Latest Tech Jobs ,1.0
+spelling |spelling ,1.0
+dynamic hyperlinking |dynamic hyperlinking ,1.0
+tiki wiki cms groupware |Tiki Wiki CMS Groupware ,1.0
+knowledge creation |knowledge creation ,1.0
+network diagram |network diagram ,1.0
+acl |ACL ,1.0
+articles news |Articles News ,1.0
+pre-alpha |Pre-Alpha ,1.0
+category page |category pages ,1.0
+tiddlywiki core javascript |TiddlyWiki core javascript ,1.0
+multiple storage backend |Multiple storage backends ,1.0
+smarty |Smarty ,1.0
+rights reserved |Rights Reserved ,1.0
+forumsgo learngo phpgo referencego |Forumsgo Learngo PHPgo Referencego ,1.0
+social networking and workspace |social networking and workspaces ,1.0
+bsd platform |BSD Platforms ,1.0
+relationship |relationships ,1.0
+detail |Details ,1.0
+mediawiki software |MediaWiki software ,1.0
+hub |Hub ,1.0
+database table |database table ,1.0
+width |width ,1.0
+windows freshness |Windows Freshness ,1.0
+fun |fun ,1.0
+social collaboration |Social Collaboration ,1.0
+use contact us advertise |Use Contact Us Advertise ,1.0
+privacy statement term |Privacy Statement Terms ,1.0
+open source webmail software simutran |open source webmail software simutrans ,1.0
+terms privacy |Terms Privacy ,1.0
+official microsoft iis site sign |Official Microsoft IIS Site Sign ,1.0
+social networking |social networking ,1.0
+geotag way |geotag ways ,1.0
+mature |Mature ,1.0
+zend framework |Zend Framework ,1.0
+kind |kinds ,1.0
+refine |Refine ,1.0
+research |Research ,1.0
+wiki mediawiki site management |wiki MediaWiki site management ,1.0
+built-in feature |built-in features ,1.0
+tiddlywiki adaptation |TiddlyWiki Adaptation ,1.0
+technological development project |Technological Development project ,1.0
+money management application |money management application ,1.0
+special page |special page ,1.0
+mndt ch oss-dep |mndt ch oss-dep ,1.0
+document management system |document management system ,1.0
+popular most popular last updated name rating showing page |Popular Most Popular Last Updated Name Rating Showing page ,1.0
+error |Error ,1.0
+phpbb forum bulletin board |phpBB Forum Bulletin Board ,1.0

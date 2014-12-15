@@ -1,7 +1,8 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker;
 
+import com.cse.warana.utility.infoHolders.Candidate;
 import com.cse.warana.utility.infoHolders.Profile;
-import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Profile.Project;
+import com.cse.warana.utility.infoHolders.Project;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.NetworkManager;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -25,7 +26,7 @@ public class GitHubExtractor {
         new GitHubExtractor("69e07dde89a8a0a6713f810cfd4c461f04f47e85").Extract("thilina premasiri", null);
     }
 
-    public void Extract(String name, Profile profile) {
+    public void Extract(String name, Candidate candidate) {
         System.out.println("\nSearching " + name + " on GitHub");
         name = name.replaceAll(" ", "%20");
         String url = "https://api.github.com/search/users?q=" + name + "&order=desc&access_token=" + token;
@@ -33,7 +34,7 @@ public class GitHubExtractor {
         try {
             JSONObject json = new JSONObject(result);
             if (json.getInt("total_count") != 0) {
-                GetInfo(json.getJSONArray("items").getJSONObject(0).getString("url"), profile);
+                GetInfo(json.getJSONArray("items").getJSONObject(0).getString("url"), candidate);
             } else {
                 System.out.println("No GitHub profiles found");
             }
@@ -42,16 +43,16 @@ public class GitHubExtractor {
         }
     }
 
-    public String GetInfo(String profileUrl, Profile profile) {
+    public String GetInfo(String profileUrl, /*Profile profile*/ Candidate candidate) {
         String urlString = profileUrl + "/repos?access_token=" + token;
         String info = networkManager.Get(urlString);
-        ShowInfo(info, profile);
+        ShowInfo(info, candidate);
 
 //        System.out.println();
         return info;
     }
 
-    public void ShowInfo(String jsonString, Profile profile) {
+    public void ShowInfo(String jsonString, /*Profile profile*/ Candidate candidate) {
         try {
 //            JSONObject json=new JSONObject(jsonString);
             JSONArray ary = new JSONArray(jsonString);
@@ -67,10 +68,17 @@ public class GitHubExtractor {
 //                System.out.println("Technology : " + json.get("language") + "\n");
 
                 proj = new Project();
-                proj.name = GetNotNull("name",json);
-                proj.summary = GetNotNull("description",json);
-                proj.technology = GetNotNull("language",json);
-                profile.addProject(proj);
+//                proj.name = GetNotNull("name",json);
+                proj.setName(GetNotNull("name",json));
+//                proj.summary = GetNotNull("description",json);
+                proj.setDescription(GetNotNull("description",json));
+
+                /**
+                 * TODO set technologies
+                 */
+//                proj.technology = GetNotNull("language",json);
+                candidate.getProjectsLists().add(proj);
+//                profile.addProject(proj);
             }
 
         } catch (JSONException e) {

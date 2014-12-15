@@ -19,23 +19,40 @@ public class TestPhraseAnalyser {
 //        String name="Thilina Premasiri";
 
 //        ApplyAlgorithms(3, true);
-        Config.statEvaluationDepth=10;
-        GenerateStats(true,false,false,false,false,false,false,false);
-        GenerateStats(false,true,false,false,false,false,false,false);
-        GenerateStats(false,false,true,false,false,false,false,false);
-        GenerateStats(false,false,false,true,false,false,false,false);
-        GenerateStats(false,false,false,false,true,false,false,false);
-        GenerateStats(false,false,false,false,false,true,false,false);
-        GenerateStats(false,false,false,false,false,false,true,false);
-        GenerateStats(false,false,false,false,false,false,false,true);
-//        GenerateStats(false,false,false,false,false,false,false,false);
+//
 
-//        GenerateStats(false,true,true,true,true,false,false,false,false );
+        AlgorithmComparotor comparotor=new AlgorithmComparotor();
+
+        for(int i=1;i<10;i++) {
+            Config.TERM_MAX_WORDS=i;
+
+//            comparotor.ExtractTerms(Config.skillsPath,Config.skillsOutputPath);
+//        Config.enable_weights_learning=true;
+//            GenerateStats(true, false, false, false, false, false, false, false);
+//            GenerateStats(false, true, false, false, false, false, false, false);
+//            GenerateStats(false, false, true, false, false, false, false, false);
+//            GenerateStats(false, false, false, true, false, false, false, false);
+//            GenerateStats(false, false, false, false, true, false, false, false);
+//            GenerateStats(false, false, false, false, false, true, false, false);
+//            GenerateStats(false, false, false, false, false, false, true, false);
+//            GenerateStats(false, false, false, false, false, false, false, true);
+
+            Config.enable_weights_learning=false;
+            GenerateStats(true,true,true,true,true,true,true,true );
+        }
+
+
+
+//        Config.enable_weights_learning=false;
+//        GenerateStats(true,true,true,true,true,true,true,true );
+
+
+//        GenerateStats(false,true,true,true,true,false,false,false );
 //        GenerateStats(true,true,false,true,true,false,false,false,false );
-        GenerateStats(true,true,true,true,true,true,true,true);
+//        GenerateStats(true,true,true,true,true,true,true,true);
 //        GenerateStats(true,true,true,true,true,true,true,true,false);
 
-        GenerateStats(true,true,true,true,true,true,false,true);
+//        GenerateStats(true,true,true,true,true,true,false,true);
 
 
 //        GenerateStats(false,true,true,true,true,true,true,true,true);
@@ -158,70 +175,97 @@ public class TestPhraseAnalyser {
 //        }
 
         AlgorithmComparotor comparotor=new AlgorithmComparotor();
-//        comparotor.ExtractTerms(Config.skillsPath,Config.skillsOutputPath);
         comparotor.Compare(Config.skillsOutputPath,Config.normalizedSkillsPath,Config.aggregatedSkillsPath);
 //        comparotor.Compare(Config.profilesOutputPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath);
 //        comparotor.Compare(Config);
 //        System.out.println(Integer.MIN_VALUE);
         HashMap<String, Double> allDocs = fileManager.FileToMap(new File(Config.aggregatedAllDocsPath + "/SkillDocs.csv"));
+
         GetStats(Config.goldenStandardPath, Config.aggregatedSkillsPath, Config.statsOutPath,allDocs);
     }
 
     public static void GetStats(String goldenStandardPath,String algorithmgeneratedPath, String statOutPath,HashMap<String,Double> allDocs){
         File goldenRoot=new File(goldenStandardPath);
-        HashMap<String,Integer> stats=new HashMap<String,Integer>();
+        HashMap<String,Double> stats=new HashMap<String,Double>();
+        double weight=0;
         FileManager fileManager=new FileManager();
         for (String fileName : goldenRoot.list()) {
             HashMap<String, Double> goldenMap = fileManager.FileToMap(new File(goldenRoot + "/" + fileName));
             HashMap<String, Double> algoMap = fileManager.FileToMap(new File(algorithmgeneratedPath + "/" + fileName));
             algoMap= (HashMap<String, Double>) fileManager.SortByComparator(algoMap);
-            int score = CompareMaps(goldenMap, algoMap, stats,allDocs);
+            double score = CompareMaps(goldenMap, algoMap, stats,allDocs)/goldenMap.size();
+            weight+=(score-Config.average_precision);
+
+//            System.out.println("weight ==================== "+score/10.0);
             stats.put(fileName.split(",")[0],score);
         }
-        for (Map.Entry<String, Integer> entry : stats.entrySet()) {
+        for (Map.Entry<String, Double> entry : stats.entrySet()) {
             System.out.println(entry.getKey()+"\t"+entry.getValue());
         }
-        WriteOutput(stats);
+        weight=weight/goldenRoot.list().length;
+        WriteOutput(stats,weight);
 
 //        fileManager.WriteFile();
 
     }
 
-    private static void WriteOutput(HashMap<String, Integer> stats) {
+    private static void WriteOutput(HashMap<String, Double> stats,double weight) {
         String fileName=""+Config.TERM_MAX_WORDS;
-        if(Config.enable_averageCorpusTF)
-            fileName+="_AvgCorpusTF";
-
-        if (Config.enable_c_value)
-            fileName+="_Cvalue";
-
-        if (Config.enable_IBMglossEx)
-            fileName+="_GlossEx";
-
-        if (Config.enable_RIDF)
-            fileName+="_RIDF";
-
-        if (Config.enable_simpleTF)
-            fileName+="_SimpleTF";
-
-        if (Config.enable_termex)
-            fileName+="_Termex";
-
-        if (Config.enable_TFIDF)
-            fileName+="_TFIDF";
-
-        if (Config.enable_weirdness)
-            fileName+="_Weirdness";
-        fileName+=".csv";
-
         FileManager fileManager=new FileManager();
+        HashMap<String, Double> weightMap = fileManager.GetWeightMap(Config.weightMapPath);
 
+        if(Config.enable_averageCorpusTF) {
+            fileName += "_AvgCorpusTF";
+            weightMap.put(Config.averageCorpusTF,weight+weightMap.get(Config.averageCorpusTF));
+        }
+
+        if (Config.enable_c_value) {
+            fileName += "_Cvalue";
+            weightMap.put(Config.c_value,weight+weightMap.get(Config.c_value));
+        }
+
+        if (Config.enable_IBMglossEx) {
+            fileName += "_GlossEx";
+            weightMap.put(Config.IBMglossEx,weight+weightMap.get(Config.IBMglossEx));
+        }
+
+        if (Config.enable_RIDF) {
+            fileName += "_RIDF";
+            weightMap.put(Config.RIDF,weight+weightMap.get(Config.RIDF));
+        }
+
+        if (Config.enable_simpleTF) {
+            fileName += "_SimpleTF";
+            weightMap.put(Config.simpleTF,weight+weightMap.get(Config.simpleTF));
+        }
+
+        if (Config.enable_termex) {
+            fileName += "_Termex";
+            weightMap.put(Config.termex,weight+weightMap.get(Config.termex));
+        }
+
+        if (Config.enable_TFIDF) {
+            fileName += "_TFIDF";
+            weightMap.put(Config.TFIDF,weight+weightMap.get(Config.TFIDF));
+        }
+
+        if (Config.enable_weirdness) {
+            fileName += "_Weirdness";
+            weightMap.put(Config.weirdness,weight+weightMap.get(Config.weirdness));
+        }
+        fileName+=".csv";
+//        System.out.println("hereeeeeeeeeee");
+        for (Map.Entry<String, Double> entry : weightMap.entrySet()) {
+            System.out.println(entry.getKey()+"==================="+entry.getValue());
+        }
+        if (Config.enable_weights_learning)
+            fileManager.WriteFile(Config.weightMapPath,  weightMap);              // uncomment to enable learning
         fileManager.WriteFile(fileName,stats,Config.statsOutPath);
     }
 
-    private static int CompareMaps(HashMap<String, Double> goldenMap, HashMap<String, Double> algoMap, HashMap<String, Integer> stats,HashMap<String, Double> allDocs) {
+    private static double CompareMaps(HashMap<String, Double> goldenMap, HashMap<String, Double> algoMap, HashMap<String, Double> stats,HashMap<String, Double> allDocs) {
         int i=0;
-        int score=0;
+        double score=0;
         if (Config.removeDuplications){
             FileManager fileManager=new FileManager();
             algoMap=fileManager.RemoveDuplications(algoMap);
@@ -233,13 +277,52 @@ public class TestPhraseAnalyser {
 //                System.out.println(algoKey);
                 if (i>Config.statEvaluationDepth)
                     break;
-                if (algoKey.toLowerCase().contains(goldenKey.toLowerCase())|| goldenKey.toLowerCase().contains(algoKey.toLowerCase())){
-                        if (allDocs.get(algoKey)>50 && Config.enable_filter){
-                            continue;
-                        }
+//                if (i>goldenMap.size())
+//                    break;
+
+//                System.out.println(algoKey.toLowerCase());
+//                System.out.println(goldenKey.toLowerCase());
+//                System.out.println("==============");
+                // =============  Absolute similarity
+                if (algoKey.toLowerCase().trim().equals(goldenKey.toLowerCase().trim())){
+
+
                     score++;
                     break;
                 }
+
+                // =============  Contains similarity
+//                if (algoKey.toLowerCase().contains(goldenKey.toLowerCase())|| goldenKey.toLowerCase().contains(algoKey.toLowerCase())){
+//                    if (allDocs.get(algoKey)>50 && Config.enable_filter){
+//                        continue;
+//                    }
+//
+//                    score++;
+//                    break;
+//                }
+
+
+                // =============  Contains weight similarity
+//                if (algoKey.toLowerCase().contains(goldenKey.toLowerCase())){
+//                    if (allDocs.get(algoKey)>50 && Config.enable_filter){
+//                        continue;
+//                    }
+//
+//                    score+=1.0*goldenKey.length()/algoKey.length();
+//                    break;
+//                }
+//                else {
+//                    if ( goldenKey.toLowerCase().contains(algoKey.toLowerCase())){
+//                        if (allDocs.get(algoKey)>50 && Config.enable_filter){
+//                            continue;
+//                        }
+//
+//                        score+=1.0*algoKey.length()/goldenKey.length();
+//                        break;
+//                    }
+//                }
+
+
                 i++;
             }
 

@@ -1,0 +1,2132 @@
+sql |SQL ,0.03073337695588001
+mysql |MySQL |Mysql ,0.01400345775926274
+standard |standards |standard |Standards ,0.006569816088394639
+iso |ISO ,0.0055676407528768125
+oracle |Oracle ,0.005452036042562517
+language |languages |language ,0.004342759787243914
+iec |IEC ,0.004342759787243914
+sun |Sun ,0.0042314069721863775
+database |Databases |databases |database ,0.004205780553371356
+null |Nulls |NULLs |nulls |NULL |Null ,0.004120054157128841
+iso iec |ISO IEC ,0.004008701342071305
+ibm |IBM |ibm ,0.0033405844517260877
+unknown |Unknown ,0.0028951731914959424
+release |release ,0.00267246756138087
+system |systems |system ,0.002535830717470938
+server |servers |server ,0.0023740426141273174
+table |tables |table ,0.0023456434136606176
+query |query ,0.0023384091162082614
+row |row |rows ,0.0022270563011507253
+innodb |InnoDB ,0.0022270563011507253
+select |SELECT ,0.0022270563011507253
+book |Book |books |book ,0.0021157034860931887
+clause |clauses |Clauses |clause ,0.0021157034860931887
+true |True ,0.0021157034860931887
+support |support |Support ,0.002092060341913524
+false |False ,0.0020043506710356526
+mysql ab |MySQL AB ,0.0020043506710356526
+edit |edit ,0.001965268806039977
+column |column |columns ,0.0018929978559781165
+postgresql |PostgreSQL ,0.0018929978559781165
+xml |XML ,0.0018929978559781165
+storage engine |storage engine |storage engines ,0.0017816450409205802
+statement |Statements |statements ,0.0017750815022296567
+management |Management |management ,0.0017116857342928831
+replication |replication |Replication ,0.0016702922258630439
+date |dates |DATE |date ,0.0016702922258630439
+expression |expression |Expressions |expressions ,0.0015589394108055075
+front |front ,0.0015589394108055075
+example |Example |example ,0.001521498430482563
+set |SET |set ,0.001521498430482563
+application |application |Applications |applications ,0.001521498430482563
+available |available ,0.0014581026625457895
+sun microsystem |Sun Microsystems ,0.0014475865957479712
+open source |Open Source |open source ,0.0014475865957479712
+type |Types |type ,0.0014475865957479712
+proprietary |proprietary ,0.0014475865957479712
+percona |Percona ,0.001336233780690435
+java |Java ,0.0013313111266722425
+mysql database |MySQL database |MySQL databases |MySQL Database ,0.0012911459831218743
+title |title |Title ,0.0012911459831218743
+object |object |objects ,0.001267915358735469
+dbms |DBMSs |DBMS ,0.0012248809656328988
+model |model ,0.0012248809656328988
+result |result |results ,0.0012045195907986956
+information |Information |information ,0.0012045195907986956
+software |software ,0.0012045195907986956
+developer |developer |developers |Developer ,0.001141123822861922
+sql standard |SQL standard |SQL standards ,0.001141123822861922
+part |parts |part ,0.001141123822861922
+feature |features |Features ,0.001130966199225911
+value |values ,0.0011245465014287292
+update |UPDATE ,0.0011135281505753626
+following |following ,0.0011135281505753626
+sql psm |SQL PSM ,0.0011135281505753626
+relational model |Relational Model |relational model ,0.0011135281505753626
+comparison |comparisons |Comparisons |Comparison ,0.0011135281505753626
+vendor |vendor |vendors |Vendors ,0.0011135281505753626
+relational database |relational database |relational databases ,0.0011135281505753626
+definition |definition |Definition ,0.0011135281505753626
+backup |backups |backup ,0.0011135281505753626
+number |number |Numbers ,0.0010777280549251489
+operation |operation |operations ,0.0010143322869883753
+original |original ,0.0010143322869883753
+data type |Data types |Data Types |data types ,0.0010021753355178263
+press release |Press release |press release ,0.0010021753355178263
+cloud |cloud ,0.0010021753355178263
+dev mysql |Dev mysql |dev mysql ,0.0010021753355178263
+mariadb |MariaDB |Mariadb ,0.0010021753355178263
+sql server |SQL Server ,0.0010021753355178263
+mysql workbench |MySQL Workbench ,0.0010021753355178263
+development |development ,0.0010021753355178263
+chamberlin |Chamberlin ,0.0010021753355178263
+google |Google ,9.579470197355842E-4
+case |cases |case |CASE ,9.509365190516018E-4
+implementation |implementations ,8.908225204602901E-4
+group |GROUP |group ,8.908225204602901E-4
+ansi |ANSI ,8.908225204602901E-4
+service |services |Service |service ,8.908225204602901E-4
+linux |Linux ,8.908225204602901E-4
+front end |front end ,8.908225204602901E-4
+master |master ,8.908225204602901E-4
+control |control ,8.908225204602901E-4
+function |functions |function ,8.875407511148284E-4
+tool |tools |Tools ,8.482246494194332E-4
+version |version ,8.241449831780549E-4
+syntax |syntax ,7.794697054027538E-4
+database language |Database languages |database language ,7.794697054027538E-4
+optional feature |optional features ,7.794697054027538E-4
+facebook |Facebook ,7.794697054027538E-4
+window |Windows ,7.794697054027538E-4
+semantics |semantics |Semantics ,7.794697054027538E-4
+codd |Codd ,7.794697054027538E-4
+return |returns ,7.794697054027538E-4
+michael |Michael ,7.794697054027538E-4
+monty |Monty ,7.794697054027538E-4
+source |source |sources ,7.775392619678137E-4
+user |Users |users |user ,7.7733841173903E-4
+performance |performance ,7.607492152412815E-4
+archived |Archived ,7.607492152412815E-4
+microsoft |Microsoft ,6.973534473045079E-4
+extension |extensions ,6.973534473045079E-4
+use |use ,6.909674771013601E-4
+scale |scale S |scale ,6.681168903452175E-4
+rollback |ROLLBACK |rollback ,6.681168903452175E-4
+production release |production release ,6.681168903452175E-4
+slave |slave |slaves ,6.681168903452175E-4
+mysql server |MySQL servers |MySQL server ,6.681168903452175E-4
+guide |guide |Guide ,6.681168903452175E-4
+beta |beta ,6.681168903452175E-4
+database administrator |Database administrators |database administrator |database administrators ,6.681168903452175E-4
+arora |Arora ,6.681168903452175E-4
+sql code |SQL code ,6.681168903452175E-4
+price |price ,6.339576793677345E-4
+article |article |Articles ,6.339576793677345E-4
+mysql enterprise |MySQL Enterprise ,6.24748056349294E-4
+list |list |lists ,6.24748056349294E-4
+history |history |History ,5.994630890095352E-4
+acquisition |acquisition |acquisitions ,5.70561911430961E-4
+relational database management system |relational database management systems |relational database management system ,5.70561911430961E-4
+transaction |transactions |transaction ,5.654830996129555E-4
+application developer |application developer |Application developers |application developers ,5.567640752876813E-4
+isbn |isbn ,5.567640752876813E-4
+datalog |Datalog ,5.567640752876813E-4
+three-valued logic |three-valued logic ,5.567640752876813E-4
+full |full ,5.567640752876813E-4
+monty wideniu |Monty Widenius ,5.567640752876813E-4
+android |Android ,5.567640752876813E-4
+distinct |DISTINCT ,5.567640752876813E-4
+aggregation |aggregation ,5.567640752876813E-4
+base |Base ,5.567640752876813E-4
+heidisql |HeidiSQL ,5.567640752876813E-4
+precision |precision ,5.567640752876813E-4
+percona toolkit |Percona Toolkit ,5.567640752876813E-4
+php |PHP ,5.567640752876813E-4
+procedural |procedural ,5.567640752876813E-4
+sql-based |SQL-based ,5.567640752876813E-4
+manipulation |manipulation ,5.567640752876813E-4
+informix |Informix ,5.567640752876813E-4
+merger |Mergers |merger ,5.567640752876813E-4
+database management system |Database management systems |database management system ,5.567640752876813E-4
+boyce |Boyce ,5.567640752876813E-4
+mysql fabric |MySQL Fabric ,5.567640752876813E-4
+innodb storage engine |InnoDB Storage Engine |InnoDB storage engine ,5.567640752876813E-4
+needed |needed ,5.567640752876813E-4
+fork |fork ,5.567640752876813E-4
+subquery |subquery ,5.567640752876813E-4
+sequel |SEQUEL |Sequel ,5.071661434941876E-4
+sqlite |SQLite ,5.071661434941876E-4
+addition |addition ,5.071661434941876E-4
+unsourced statement |unsourced statements ,5.071661434941876E-4
+commit |COMMIT |commits ,5.071661434941876E-4
+insert |INSERT ,5.071661434941876E-4
+default |default ,5.071661434941876E-4
+oracle corporation |Oracle Corporation ,5.035489947680095E-4
+world |World |world ,4.997984450794352E-4
+lamp |LAMP ,4.997984450794352E-4
+zone |ZONE |zone ,4.4541126023014504E-4
+os x |OS X ,4.4541126023014504E-4
+improvement |improvements ,4.4541126023014504E-4
+truth |truth ,4.4541126023014504E-4
+michael wideniu |Michael Widenius ,4.4541126023014504E-4
+sybase |Sybase ,4.4541126023014504E-4
+lifecycle support |Lifecycle Support ,4.4541126023014504E-4
+donald d |Donald D ,4.4541126023014504E-4
+sql cli |SQL CLI ,4.4541126023014504E-4
+row value expression |row value expression ,4.4541126023014504E-4
+predicate |predicate ,4.4541126023014504E-4
+integer |integer ,4.4541126023014504E-4
+edition |editions ,4.4541126023014504E-4
+sql foundation |SQL Foundation ,4.4541126023014504E-4
+count |count |COUNT ,4.4541126023014504E-4
+official |official ,4.4541126023014504E-4
+way |ways ,4.4541126023014504E-4
+variable |variables ,4.4541126023014504E-4
+information technology |Information Technology |Information technology ,4.4541126023014504E-4
+create |CREATE ,4.4541126023014504E-4
+innodb storage |InnoDB storage ,4.4541126023014504E-4
+grant |grant |GRANT ,4.4541126023014504E-4
+company |company ,4.4541126023014504E-4
+project |projects ,4.4541126023014504E-4
+drizzle |Drizzle ,4.4541126023014504E-4
+phpmyadmin |phpMyAdmin ,4.4541126023014504E-4
+commission |Commission ,4.4541126023014504E-4
+license |license ,4.4541126023014504E-4
+approval |approval ,4.4541126023014504E-4
+msql |mSQL ,4.4541126023014504E-4
+group by clause |GROUP BY clause ,4.4541126023014504E-4
+mysql customer |MySQL Customers |MySQL Customer ,4.4541126023014504E-4
+timestamp |TIMESTAMP ,4.4541126023014504E-4
+american national standards institute |American National Standards Institute ,4.4541126023014504E-4
+rackspace |Rackspace ,4.4541126023014504E-4
+order |order ,4.4541126023014504E-4
+compliance |compliance ,4.437703755574142E-4
+structured query language |Structured Query Language ,4.437703755574142E-4
+rdbm |RDBMS ,4.437703755574142E-4
+programming language |programming languages |programming language ,4.437703755574142E-4
+trigger |trigger |triggers ,4.437703755574142E-4
+change |Changes |changes ,4.241123247097166E-4
+view |views |view ,3.8876963098390685E-4
+sql statement |SQL statements ,3.8037460762064076E-4
+sql database |SQL database |SQL databases ,3.8037460762064076E-4
+work |work |WORK ,3.8037460762064076E-4
+condition |conditions |condition ,3.8037460762064076E-4
+product |product |products ,3.8037460762064076E-4
+database system |database systems ,3.8037460762064076E-4
+youtube |YouTube ,3.748488338095764E-4
+david axmark |David Axmark ,3.748488338095764E-4
+administration |administration ,3.748488338095764E-4
+alternative |alternatives |alternative ,3.5967785340572107E-4
+event |event ,3.3405844517260877E-4
+mysqlperformanceblog |Mysqlperformanceblog |mysqlperformanceblog ,3.3405844517260877E-4
+lorentz |Lorentz ,3.3405844517260877E-4
+structured query language sql |Structured Query Language SQL ,3.3405844517260877E-4
+hermann |Hermann ,3.3405844517260877E-4
+drop |DROP ,3.3405844517260877E-4
+roeser |Roeser ,3.3405844517260877E-4
+mysql reference manual |MySQL Reference Manual ,3.3405844517260877E-4
+contract |contract |contracts ,3.3405844517260877E-4
+apple |Apple ,3.3405844517260877E-4
+sundeep amor |Sundeep Amor ,3.3405844517260877E-4
+angela |Angela ,3.3405844517260877E-4
+informationweek |InformationWeek ,3.3405844517260877E-4
+redwood city |Redwood City ,3.3405844517260877E-4
+european commission |European Commission ,3.3405844517260877E-4
+java programming language |Java Programming Language ,3.3405844517260877E-4
+procedure |procedures ,3.3405844517260877E-4
+alter |ALTER ,3.3405844517260877E-4
+community |community ,3.3405844517260877E-4
+webscalesql |WebScaleSQL ,3.3405844517260877E-4
+oracle sql |Oracle SQL ,3.3405844517260877E-4
+sql implementation |SQL implementation |SQL implementations ,3.3405844517260877E-4
+terremark |Terremark ,3.3405844517260877E-4
+mary beth |Mary Beth ,3.3405844517260877E-4
+ashdown |Ashdown ,3.3405844517260877E-4
+raymond f boyce |Raymond F Boyce ,3.3405844517260877E-4
+geeta |Geeta ,3.3405844517260877E-4
+alpha |Alpha |alpha ,3.3405844517260877E-4
+open-source |open-source ,3.3405844517260877E-4
+structure |structure ,3.3405844517260877E-4
+source code |source code ,3.3405844517260877E-4
+partitioning |partitioning ,3.3405844517260877E-4
+donald d chamberlin |Donald D Chamberlin ,3.3405844517260877E-4
+concept |concept |concepts ,3.3405844517260877E-4
+conjunction |conjunction ,3.3405844517260877E-4
+vika |Vikas ,3.3405844517260877E-4
+copyright |copyright ,3.3405844517260877E-4
+universal quantification |Universal quantification |universal quantification ,3.3405844517260877E-4
+application sql |application sql ,3.3405844517260877E-4
+varying n |VARYING n ,3.3405844517260877E-4
+xtradb |XtraDB ,3.3405844517260877E-4
+xquery |XQuery ,3.3405844517260877E-4
+abraham |Abraham ,3.3405844517260877E-4
+start transaction |START TRANSACTION ,3.3405844517260877E-4
+oracle database documentation library |Oracle Database Documentation Library ,3.3405844517260877E-4
+desktop |Desktop ,3.3405844517260877E-4
+foundation sql foundation |Foundation SQL Foundation ,3.3405844517260877E-4
+libreoffice base |LibreOffice Base ,3.3405844517260877E-4
+dba |DBAs ,3.3405844517260877E-4
+mandatory |mandatory ,3.3405844517260877E-4
+code |code ,3.3405844517260877E-4
+potentially dated statement |potentially dated statements ,3.3405844517260877E-4
+owner |owners ,3.3405844517260877E-4
+gpl version |GPL versions |GPL version ,3.3405844517260877E-4
+step |Step ,3.3405844517260877E-4
+percona server |Percona Server ,3.3405844517260877E-4
+low |low ,3.3405844517260877E-4
+community edition |Community Edition |community edition ,3.3405844517260877E-4
+iso standard |ISO standards ,3.3405844517260877E-4
+existing table |existing table ,3.3405844517260877E-4
+failure |failure ,3.3405844517260877E-4
+iphone |iPhone ,3.3405844517260877E-4
+sql programming tool |SQL programming tools ,3.3405844517260877E-4
+usage |usage ,3.3405844517260877E-4
+single server |single server ,3.3405844517260877E-4
+delete |DELETE ,3.3405844517260877E-4
+basic element |Basic Elements ,3.3405844517260877E-4
+baer |Baer ,3.3405844517260877E-4
+standard sql |Standard SQL ,3.3405844517260877E-4
+storage |storage ,3.3405844517260877E-4
+operator |operators ,3.3405844517260877E-4
+configuration |configuration ,3.3405844517260877E-4
+berkeley db |Berkeley DB ,3.3405844517260877E-4
+application owner |application owner |application owners ,3.3405844517260877E-4
+progress software |Progress Software ,3.3405844517260877E-4
+routine |routines ,3.3405844517260877E-4
+bellamkonda |Bellamkonda ,3.3405844517260877E-4
+functionality |functionality ,3.3405844517260877E-4
+system r |System R ,3.3405844517260877E-4
+high availability |high availability ,3.3405844517260877E-4
+account |account ,3.3405844517260877E-4
+large shared data bank |Large Shared Data Banks ,3.3405844517260877E-4
+features include |features include ,3.3405844517260877E-4
+persistent effect |persistent effect |persistent effects ,3.3405844517260877E-4
+sql language |SQL language ,3.3405844517260877E-4
+perl |Perl ,3.3405844517260877E-4
+nosql |NoSQL ,3.3405844517260877E-4
+ship |ships ,3.3405844517260877E-4
+api |API ,3.3405844517260877E-4
+mysql front end |MySQL front end ,3.3405844517260877E-4
+diana |Diana ,3.3405844517260877E-4
+sql routine |SQL Routines ,3.3405844517260877E-4
+following example |following example ,3.3405844517260877E-4
+div |div ,3.186197243565982E-4
+run |runs |run |Run ,3.1697883968386724E-4
+progress |progress |Progress ,3.1697883968386724E-4
+effect |effect |effects ,3.1697883968386724E-4
+citation |citation |citations ,3.1697883968386724E-4
+collection |collection |collections ,3.1697883968386724E-4
+question |questions |question ,2.915490929630039E-4
+constraint |constraints |constraint ,2.535830717470938E-4
+file |file |File ,2.535830717470938E-4
+lance |Lance ,2.535830717470938E-4
+platform |platform |platforms ,2.535830717470938E-4
+modification |modification |modifications ,2.535830717470938E-4
+acronym |acronym ,2.535830717470938E-4
+partner |Partners |partners ,2.498992225397176E-4
+package |packages ,2.47398856080668E-4
+web |Web ,2.3896479326744865E-4
+site |site ,2.3896479326744865E-4
+definition schemas sql schema |Definition Schemas SQL Schemata ,2.2270563011507252E-4
+query language |query language ,2.2270563011507252E-4
+array |array ,2.2270563011507252E-4
+compatibility |compatibility ,2.2270563011507252E-4
+comparing |comparing ,2.2270563011507252E-4
+integrity constraint |integrity constraints ,2.2270563011507252E-4
+aggregation function |aggregation function ,2.2270563011507252E-4
+data definition |Data definition ,2.2270563011507252E-4
+join |joins ,2.2270563011507252E-4
+gnu gpl |GNU GPL ,2.2270563011507252E-4
+xml query language |XML query languages |XML Query Language ,2.2270563011507252E-4
+oracle solaris |Oracle Solaris ,2.2270563011507252E-4
+mysql command-line tool |MySQL command-line tool |MySQL Command-Line Tool ,2.2270563011507252E-4
+iec standard |IEC standards ,2.2270563011507252E-4
+equal |Equal ,2.2270563011507252E-4
+object language binding |Object Language Bindings ,2.2270563011507252E-4
+report |reports |report ,2.2270563011507252E-4
+odbc interface |ODBC interface ,2.2270563011507252E-4
+redundancy |redundancy ,2.2270563011507252E-4
+mandatory and optional feature |mandatory and optional features ,2.2270563011507252E-4
+prepared statement |prepared statements ,2.2270563011507252E-4
+patch |patches ,2.2270563011507252E-4
+clarification |clarification ,2.2270563011507252E-4
+sql dialect |SQL dialect ,2.2270563011507252E-4
+structured english query language |Structured English Query Language ,2.2270563011507252E-4
+international organization |International Organization ,2.2270563011507252E-4
+interface |interfaces ,2.2270563011507252E-4
+treatment |treatment ,2.2270563011507252E-4
+multiple table |multiple tables ,2.2270563011507252E-4
+sort |sort ,2.2270563011507252E-4
+mysql performance blog |MySQL Performance Blog ,2.2270563011507252E-4
+order by clause |ORDER BY clause ,2.2270563011507252E-4
+removal |removal ,2.2270563011507252E-4
+direct comparison |direct comparisons ,2.2270563011507252E-4
+book table |Book table ,2.2270563011507252E-4
+opensolari |OpenSolaris ,2.2270563011507252E-4
+quarter |quarter ,2.2270563011507252E-4
+legal |Legal ,2.2270563011507252E-4
+development project |development projects ,2.2270563011507252E-4
+tuple |tuples ,2.2270563011507252E-4
+significant digit |significant digits ,2.2270563011507252E-4
+acquisition impact |acquisition impacts ,2.2270563011507252E-4
+freebsd |FreeBSD ,2.2270563011507252E-4
+sql ds |SQL DS ,2.2270563011507252E-4
+information and definition schemas sql schema |Information and Definition Schemas SQL Schemata ,2.2270563011507252E-4
+hearing |hearing ,2.2270563011507252E-4
+decimal |decimal ,2.2270563011507252E-4
+command line tool |command line tools ,2.2270563011507252E-4
+capttofu |Capttofu ,2.2270563011507252E-4
+suno |SunOS ,2.2270563011507252E-4
+antitrust |antitrust |Antitrust ,2.2270563011507252E-4
+postgresql contributor |PostgreSQL contributors ,2.2270563011507252E-4
+microsoft access |Microsoft Access ,2.2270563011507252E-4
+mysqlmusings blogspot |mysqlmusings blogspot ,2.2270563011507252E-4
+fragment |fragment ,2.2270563011507252E-4
+communication |Communications ,2.2270563011507252E-4
+xtradb storage engine |XtraDB storage engine ,2.2270563011507252E-4
+data record |data records ,2.2270563011507252E-4
+subject |subject ,2.2270563011507252E-4
+merge |MERGE ,2.2270563011507252E-4
+standards compliance |standards compliance ,2.2270563011507252E-4
+replacement |replacement ,2.2270563011507252E-4
+stream processing |stream processing ,2.2270563011507252E-4
+international standard |international standard ,2.2270563011507252E-4
+asterisk |asterisk ,2.2270563011507252E-4
+standardization iso |Standardization ISO ,2.2270563011507252E-4
+application package |Application Packages ,2.2270563011507252E-4
+relational calculus |relational calculus ,2.2270563011507252E-4
+database workbench |Database Workbench ,2.2270563011507252E-4
+instance |instance ,2.2270563011507252E-4
+update account set amount |UPDATE Account SET amount ,2.2270563011507252E-4
+following feature |following features ,2.2270563011507252E-4
+commons category |Commons category ,2.2270563011507252E-4
+size |size ,2.2270563011507252E-4
+ryan |Ryan ,2.2270563011507252E-4
+pronouncing sql |Pronouncing SQL ,2.2270563011507252E-4
+information system |Information Systems ,2.2270563011507252E-4
+deployment |deployments ,2.2270563011507252E-4
+director |directors ,2.2270563011507252E-4
+positive |positive ,2.2270563011507252E-4
+si kw l |si kw l ,2.2270563011507252E-4
+including detail |including details ,2.2270563011507252E-4
+width string |width string ,2.2270563011507252E-4
+multi-master |Multi-Master ,2.2270563011507252E-4
+big |Big ,2.2270563011507252E-4
+member |member ,2.2270563011507252E-4
+mysql gui tool |MySQL GUI Tools ,2.2270563011507252E-4
+truncate statement |TRUNCATE statement |TRUNCATE statements ,2.2270563011507252E-4
+author |authors ,2.2270563011507252E-4
+acid |ACID ,2.2270563011507252E-4
+maatkit |Maatkit ,2.2270563011507252E-4
+select statement |SELECT statements ,2.2270563011507252E-4
+mysql community server |MySQL Community Server ,2.2270563011507252E-4
+urlocker |Urlocker ,2.2270563011507252E-4
+revoke |REVOKE ,2.2270563011507252E-4
+relational software |Relational Software ,2.2270563011507252E-4
+computing machinery |Computing Machinery ,2.2270563011507252E-4
+framework sql framework |Framework SQL Framework ,2.2270563011507252E-4
+agreement |agreement ,2.2270563011507252E-4
+select isbn |SELECT isbn ,2.2270563011507252E-4
+youtube google |YouTube Google ,2.2270563011507252E-4
+innobase oy |Innobase OY ,2.2270563011507252E-4
+data mining |data mining |Data mining ,2.2270563011507252E-4
+flickr |Flickr ,2.2270563011507252E-4
+critic |critics |Critics ,2.2270563011507252E-4
+missing information |missing information ,2.2270563011507252E-4
+distinct from row value expression |DISTINCT FROM row value expression ,2.2270563011507252E-4
+download |Downloads ,2.2270563011507252E-4
+linux distribution |Linux distributions ,2.2270563011507252E-4
+oreillynet |Oreillynet ,2.2270563011507252E-4
+comparison predicate |comparison predicate ,2.2270563011507252E-4
+openvm |OpenVMS ,2.2270563011507252E-4
+swedish company mysql ab |Swedish company MySQL AB ,2.2270563011507252E-4
+web-based front end |Web-based front end ,2.2270563011507252E-4
+navicat |Navicat ,2.2270563011507252E-4
+sqlj |SQLJ ,2.2270563011507252E-4
+american national standards institute ansi |American National Standards Institute ANSI ,2.2270563011507252E-4
+n bit |n bits ,2.2270563011507252E-4
+preprint |preprint ,2.2270563011507252E-4
+alan |Alan ,2.2270563011507252E-4
+s-q-l or sequel |S-Q-L or Sequel ,2.2270563011507252E-4
+status |status ,2.2270563011507252E-4
+stable |Stable ,2.2270563011507252E-4
+first |First ,2.2270563011507252E-4
+swedish company |Swedish company ,2.2270563011507252E-4
+interfaces and package |interfaces and packages ,2.2270563011507252E-4
+mac |Mac ,2.2270563011507252E-4
+sql multimedia |SQL Multimedia ,2.2270563011507252E-4
+machine image |machine image ,2.2270563011507252E-4
+dbms implementation |DBMS implementations ,2.2270563011507252E-4
+mysql version |MySQL versions |MySQL version ,2.2270563011507252E-4
+queries e g |queries e g ,2.2270563011507252E-4
+memory |memory ,2.2270563011507252E-4
+mysql development |MySQL development ,2.2270563011507252E-4
+draft |draft ,2.2270563011507252E-4
+ms sql server |MS SQL Server ,2.2270563011507252E-4
+reality |reality ,2.2270563011507252E-4
+xml-related specification |XML-Related Specifications ,2.2270563011507252E-4
+committee |committee ,2.2270563011507252E-4
+web application |web applications ,2.2270563011507252E-4
+series |series ,2.2270563011507252E-4
+hardware |Hardware ,2.2270563011507252E-4
+interpretation |interpretation ,2.2270563011507252E-4
+techrepublic |TechRepublic ,2.2270563011507252E-4
+item |items ,2.2270563011507252E-4
+sql table |SQL tables |SQL table ,2.2270563011507252E-4
+www mysql |www mysql ,2.2270563011507252E-4
+data change |data changes ,2.2270563011507252E-4
+ada |Ada ,2.2270563011507252E-4
+greater |Greater ,2.2270563011507252E-4
+federated storage engine |Federated Storage Engine ,2.2270563011507252E-4
+database object |database objects ,2.2270563011507252E-4
+virginia |Virginia ,2.2270563011507252E-4
+option |options ,2.2270563011507252E-4
+table e g |table e g ,2.2270563011507252E-4
+language construct |language constructs ,2.2270563011507252E-4
+floss license exception |FLOSS License Exception ,2.2270563011507252E-4
+toad |Toad ,2.2270563011507252E-4
+eben moglen |Eben Moglen ,2.2270563011507252E-4
+related project |Related projects ,2.2270563011507252E-4
+front-end |front-end ,2.2270563011507252E-4
+chrome |Chrome ,2.2270563011507252E-4
+development and administration |development and administration ,2.2270563011507252E-4
+program flow |program flow ,2.2270563011507252E-4
+ability |ability ,2.2270563011507252E-4
+pattern |pattern ,2.2270563011507252E-4
+documentation |Documentation |documentation ,2.2270563011507252E-4
+text |text ,2.2270563011507252E-4
+maintenance |maintenance ,2.2270563011507252E-4
+select list |select list ,2.2270563011507252E-4
+portability |portability ,2.2270563011507252E-4
+separate |separate ,2.2270563011507252E-4
+set operation |set operations ,2.2270563011507252E-4
+jpql |JPQL ,2.2270563011507252E-4
+form |form |forms ,2.2270563011507252E-4
+database language sql |Database Language SQL ,2.2270563011507252E-4
+language element |language elements ,2.2270563011507252E-4
+xtrabackup |XtraBackup ,2.2270563011507252E-4
+judge sari |Judge Saris ,2.2270563011507252E-4
+operating system |operating system ,2.2270563011507252E-4
+s-q-l |S-Q-L ,2.2270563011507252E-4
+database management |database management ,2.2270563011507252E-4
+shard |shards ,2.2270563011507252E-4
+code base |code base ,2.2270563011507252E-4
+term |terms ,2.2270563011507252E-4
+negative |negative ,2.2270563011507252E-4
+michael monty wideniu |Michael Monty Widenius ,2.0824935211643134E-4
+secure |secure |Secure ,2.0824935211643134E-4
+bug |bugs ,2.0824935211643134E-4
+page |page |Page ,2.0824935211643134E-4
+dispute |disputes |Dispute ,1.9018730381032038E-4
+component |component |components ,1.9018730381032038E-4
+ddl |DDL ,1.9018730381032038E-4
+savepoint |savepoints |SAVEPOINT ,1.9018730381032038E-4
+introduction |Introduction |introduction ,1.9018730381032038E-4
+trademark |trademark ,1.9018730381032038E-4
+stored procedure |stored procedures ,1.9018730381032038E-4
+wikipedia |Wikipedia ,1.7274186927534002E-4
+log |logs |log ,1.6659948169314508E-4
+renovate |Renovate ,1.593098621782991E-4
+class |class ,1.593098621782991E-4
+affordable |affordable ,1.593098621782991E-4
+career |Careers ,1.593098621782991E-4
+stat counter |stat counter ,1.593098621782991E-4
+joomla stat |joomla stats ,1.593098621782991E-4
+pixel |pixel ,1.593098621782991E-4
+exception |Exception |exception ,1.267915358735469E-4
+security |security ,1.267915358735469E-4
+different database system |different database systems ,1.267915358735469E-4
+data management |Data management ,1.267915358735469E-4
+date value |date values ,1.267915358735469E-4
+scope |scope ,1.267915358735469E-4
+field |field ,1.267915358735469E-4
+database tool |database tools ,1.267915358735469E-4
+lack |lack ,1.267915358735469E-4
+technique |Technique |techniques ,1.249496112698588E-4
+reliability |reliability ,1.249496112698588E-4
+affiliate |affiliate |affiliates ,1.249496112698588E-4
+request |request ,1.249496112698588E-4
+ease |ease ,1.249496112698588E-4
+allan larsson |Allan Larsson ,1.249496112698588E-4
+money |money ,1.249496112698588E-4
+settlement talk |settlement talks ,1.1135281505753626E-4
+following chart |following chart ,1.1135281505753626E-4
+additional support |additional support ,1.1135281505753626E-4
+tpcc-mysql benchmark |tpcc-mysql benchmark ,1.1135281505753626E-4
+audio pronunciation english |audio pronunciation English ,1.1135281505753626E-4
+clause eliminate |clause eliminates ,1.1135281505753626E-4
+movement |movement ,1.1135281505753626E-4
+db-engines ranking |DB-Engines Ranking ,1.1135281505753626E-4
+role |roles ,1.1135281505753626E-4
+klint |Klint ,1.1135281505753626E-4
+date and time syntax |date and time syntax ,1.1135281505753626E-4
+usage summary |usage summary ,1.1135281505753626E-4
+distinction |distinction ,1.1135281505753626E-4
+ab developer |AB Developer ,1.1135281505753626E-4
+jyoti clarification |Jyoti clarification ,1.1135281505753626E-4
+java package |Java packages ,1.1135281505753626E-4
+j r opel |J R Opel ,1.1135281505753626E-4
+full-featured database management system |full-featured database management system ,1.1135281505753626E-4
+optional keywords and clause |optional keywords and clauses ,1.1135281505753626E-4
+home-brewed lexical analyzer |home-brewed lexical analyzer ,1.1135281505753626E-4
+feature set |feature set ,1.1135281505753626E-4
+auto-generated value |auto-generated values ,1.1135281505753626E-4
+mary e treseler |Mary E Treseler ,1.1135281505753626E-4
+logical approach |Logical approaches ,1.1135281505753626E-4
+null-specific comparison |Null-specific comparison ,1.1135281505753626E-4
+mathematics |Mathematics ,1.1135281505753626E-4
+procedural and object-oriented programmability |procedural and object-oriented programmability ,1.1135281505753626E-4
+sql development |SQL development ,1.1135281505753626E-4
+licensing agreement |licensing agreement ,1.1135281505753626E-4
+sleepycat software |Sleepycat Software ,1.1135281505753626E-4
+trial |Trial ,1.1135281505753626E-4
+aj blk |aj blk ,1.1135281505753626E-4
+important element |important element ,1.1135281505753626E-4
+gnu general public license |GNU General Public License ,1.1135281505753626E-4
+entire suite |entire suite ,1.1135281505753626E-4
+abbreviation |abbreviation ,1.1135281505753626E-4
+classic transfer |classic transfer ,1.1135281505753626E-4
+column naming convention |column naming conventions ,1.1135281505753626E-4
+european commission eventually |European Commission eventually ,1.1135281505753626E-4
+mysql developers review |MySQL Developers Review ,1.1135281505753626E-4
+gigaomnimedia |GigaOmniMedia ,1.1135281505753626E-4
+adword |AdWords ,1.1135281505753626E-4
+ascending order |ascending order ,1.1135281505753626E-4
+internet engineering task force |Internet Engineering Task Force ,1.1135281505753626E-4
+basis |basis ,1.1135281505753626E-4
+mysql server approximately every two month |MySQL Server approximately every two months ,1.1135281505753626E-4
+basil |Basil ,1.1135281505753626E-4
+sco unixware |SCO UnixWare ,1.1135281505753626E-4
+mysql front-end tool |MySQL front-end tools ,1.1135281505753626E-4
+sql-based dbms implementation |SQL-based DBMS implementations ,1.1135281505753626E-4
+interchange |interchange ,1.1135281505753626E-4
+basic |BASIC ,1.1135281505753626E-4
+sqlbuddy |SQLBuddy ,1.1135281505753626E-4
+jan |Jan ,1.1135281505753626E-4
+non-negative integer |non-negative integer ,1.1135281505753626E-4
+object type |object types ,1.1135281505753626E-4
+example sql code request |example SQL code Requests ,1.1135281505753626E-4
+first commercially available implementation |first commercially available implementation ,1.1135281505753626E-4
+tpc-h run |TPC-H Run ,1.1135281505753626E-4
+ipod touch |iPod touch ,1.1135281505753626E-4
+ndl |NDL ,1.1135281505753626E-4
+faq |FAQ ,1.1135281505753626E-4
+offers native innodb hot backup |Offers native InnoDB hot backup ,1.1135281505753626E-4
+criticism |criticism ,1.1135281505753626E-4
+n or nvarchar n |n or NVARCHAR n ,1.1135281505753626E-4
+procedural and control-of-flow statement |procedural and control-of-flow statements ,1.1135281505753626E-4
+dev community |Dev Community ,1.1135281505753626E-4
+conforming database system |conforming database system ,1.1135281505753626E-4
+major cloud provider |major cloud providers ,1.1135281505753626E-4
+single statement |single statement ,1.1135281505753626E-4
+object query language ottoql qbe query |Object Query Language OttoQL QBE Query ,1.1135281505753626E-4
+jan wildeboer |Jan Wildeboer ,1.1135281505753626E-4
+justice |Justice ,1.1135281505753626E-4
+java persistence api |Java Persistence API ,1.1135281505753626E-4
+education |education ,1.1135281505753626E-4
+matsunobu |Matsunobu ,1.1135281505753626E-4
+cursor definition |cursor definitions ,1.1135281505753626E-4
+structured type |structured types ,1.1135281505753626E-4
+original developer |Original Developer ,1.1135281505753626E-4
+finkle |Finkle ,1.1135281505753626E-4
+coldfusion |ColdFusion ,1.1135281505753626E-4
+books table |Books table ,1.1135281505753626E-4
+null sql |Null SQL ,1.1135281505753626E-4
+monitoring tool |Monitoring tools ,1.1135281505753626E-4
+table and index structure |table and index structure ,1.1135281505753626E-4
+advantage |advantages ,1.1135281505753626E-4
+n characters national character n |n characters NATIONAL CHARACTER n ,1.1135281505753626E-4
+administration front end |administration front end ,1.1135281505753626E-4
+final result |final result ,1.1135281505753626E-4
+openbsd |OpenBSD ,1.1135281505753626E-4
+b ron van der meyden |b Ron van der Meyden ,1.1135281505753626E-4
+mysql enterprise subscription |MySQL Enterprise subscription ,1.1135281505753626E-4
+pl i |PL I ,1.1135281505753626E-4
+timestamp with time zone or timestamptz |TIMESTAMP WITH TIME ZONE or TIMESTAMPTZ ,1.1135281505753626E-4
+radix binary or decimal |radix binary or decimal ,1.1135281505753626E-4
+help |help ,1.1135281505753626E-4
+sql functions programmer |SQL Functions Programmer ,1.1135281505753626E-4
+enforceable |enforceable ,1.1135281505753626E-4
+strong major implementation |strong Major implementations ,1.1135281505753626E-4
+dbas and application developer |DBAs and application developers ,1.1135281505753626E-4
+css skin |CSS skins ,1.1135281505753626E-4
+boolean null |BOOLEAN NULL ,1.1135281505753626E-4
+sales tax from book where price |sales tax FROM Book WHERE price ,1.1135281505753626E-4
+referential integrity constraint |referential integrity constraints ,1.1135281505753626E-4
+preparation |preparation ,1.1135281505753626E-4
+multi-year extension |multi-year extension ,1.1135281505753626E-4
+monty program |Monty Program ,1.1135281505753626E-4
+milestones edit notable milestone |Milestones edit Notable milestones ,1.1135281505753626E-4
+primary server |primary server ,1.1135281505753626E-4
+health |health ,1.1135281505753626E-4
+needed character varying n |needed CHARACTER VARYING n ,1.1135281505753626E-4
+positive integer |positive integer ,1.1135281505753626E-4
+personal usage |personal usage ,1.1135281505753626E-4
+kanaracu |Kanaracus ,1.1135281505753626E-4
+session |sessions ,1.1135281505753626E-4
+daily task |daily tasks ,1.1135281505753626E-4
+tuple calculus |tuple calculus ,1.1135281505753626E-4
+querying |querying ,1.1135281505753626E-4
+condition handling |condition handling ,1.1135281505753626E-4
+innodb i o |InnoDB I O ,1.1135281505753626E-4
+datalog influenced cql |Datalog Influenced CQL ,1.1135281505753626E-4
+features edit mysql |Features edit MySQL ,1.1135281505753626E-4
+common value |common values ,1.1135281505753626E-4
+space |spaces ,1.1135281505753626E-4
+common mysql feature |common MySQL features ,1.1135281505753626E-4
+minor update |minor updates ,1.1135281505753626E-4
+acid compliance |ACID compliance ,1.1135281505753626E-4
+ps preprint note |PS preprint note ,1.1135281505753626E-4
+important areas e g |important areas e g ,1.1135281505753626E-4
+snapshot |snapshots ,1.1135281505753626E-4
+inclusive range cost |inclusive range Cost ,1.1135281505753626E-4
+xml form |XML form ,1.1135281505753626E-4
+enhancement |Enhancements ,1.1135281505753626E-4
+mysql federated table |MySQL Federated Tables ,1.1135281505753626E-4
+i si kw l |i si kw l ,1.1135281505753626E-4
+hierarchical model list |Hierarchical model List ,1.1135281505753626E-4
+os x mysql |OS X MySQL ,1.1135281505753626E-4
+common sequel |common sequel ,1.1135281505753626E-4
+remote mysql server |remote MySQL servers ,1.1135281505753626E-4
+cloud platform |cloud platforms ,1.1135281505753626E-4
+truth table |truth tables ,1.1135281505753626E-4
+official pronunciation |official pronunciation ,1.1135281505753626E-4
+exact numeric |exact numeric ,1.1135281505753626E-4
+pre-ga release |pre-GA release ,1.1135281505753626E-4
+language-specific apis |language-specific APIs ,1.1135281505753626E-4
+fraction function |FRACTION functions ,1.1135281505753626E-4
+jim |Jim ,1.1135281505753626E-4
+action |action ,1.1135281505753626E-4
+tortious interference |tortious interference ,1.1135281505753626E-4
+select decode |SELECT DECODE ,1.1135281505753626E-4
+categories iso standard |Categories ISO standards ,1.1135281505753626E-4
+database objects enable |database objects enable ,1.1135281505753626E-4
+persistent database language routine |persistent database language routines ,1.1135281505753626E-4
+tutorial |tutorial ,1.1135281505753626E-4
+table row |table rows ,1.1135281505753626E-4
+trunc |TRUNC ,1.1135281505753626E-4
+single query |single query ,1.1135281505753626E-4
+constituent component |constituent components ,1.1135281505753626E-4
+lamp-based web application |LAMP-based web application ,1.1135281505753626E-4
+hire date |Hire Date ,1.1135281505753626E-4
+cascon deep |CASCON Deep ,1.1135281505753626E-4
+oracle store |Oracle stores ,1.1135281505753626E-4
+aspiration |aspirations ,1.1135281505753626E-4
+average case |average case ,1.1135281505753626E-4
+breakpoints view set variable |Breakpoints View Set Variables ,1.1135281505753626E-4
+notable employee |notable employees ,1.1135281505753626E-4
+operators and function |operators and functions ,1.1135281505753626E-4
+third-party innodb storage engine |third-party InnoDB storage engine ,1.1135281505753626E-4
+outer query |outer query ,1.1135281505753626E-4
+unclustered configuration |unclustered configurations ,1.1135281505753626E-4
+current development status |current development statuses ,1.1135281505753626E-4
+proprietary sql extension |proprietary SQL extensions ,1.1135281505753626E-4
+relational algebra and tuple relational calculus |relational algebra and tuple relational calculus ,1.1135281505753626E-4
+additional sales tax column |additional sales tax column ,1.1135281505753626E-4
+circular replication |Circular Replication ,1.1135281505753626E-4
+fixpoint computation |fixpoint computations ,1.1135281505753626E-4
+iso iec initial release |ISO IEC Initial release ,1.1135281505753626E-4
+uppercase lowercase keyword |uppercase lowercase keyword ,1.1135281505753626E-4
+san francisco |San Francisco ,1.1135281505753626E-4
+preliminary hearing |preliminary hearing ,1.1135281505753626E-4
+precision numeric precision |PRECISION NUMERIC precision ,1.1135281505753626E-4
+subsequent commit operation |subsequent COMMIT operation ,1.1135281505753626E-4
+sql-based extension |SQL-based extensions ,1.1135281505753626E-4
+ibm san jose research laboratory |IBM San Jose Research Laboratory ,1.1135281505753626E-4
+code future |Code Futures ,1.1135281505753626E-4
+iphone device |iPhone device ,1.1135281505753626E-4
+discussion |Discussion ,1.1135281505753626E-4
+regular expression matching |regular expression matching ,1.1135281505753626E-4
+c respectively c cobol fortran mumps pascal |C respectively C COBOL Fortran MUMPS Pascal ,1.1135281505753626E-4
+production |production ,1.1135281505753626E-4
+feedback |feedback ,1.1135281505753626E-4
+obvious such example |obvious such examples ,1.1135281505753626E-4
+hot backup utility |hot backup utility ,1.1135281505753626E-4
+o reilly |O Reilly ,1.1135281505753626E-4
+hibernate |Hibernate ,1.1135281505753626E-4
+revoke select |REVOKE SELECT ,1.1135281505753626E-4
+system r research team |System R research team ,1.1135281505753626E-4
+vmsmysql org |vmsmysql org ,1.1135281505753626E-4
+gnu gpl question |GNU GPL Questions ,1.1135281505753626E-4
+california |California ,1.1135281505753626E-4
+database server |database server ,1.1135281505753626E-4
+relative simplicity |relative simplicity ,1.1135281505753626E-4
+aperture |Aperture ,1.1135281505753626E-4
+future release |future releases ,1.1135281505753626E-4
+whitemarsh information systems corporation |Whitemarsh Information Systems Corporation ,1.1135281505753626E-4
+sql example |SQL Examples ,1.1135281505753626E-4
+alphabetical order |alphabetical order ,1.1135281505753626E-4
+called upsert |called upsert ,1.1135281505753626E-4
+bsdi |BSDi ,1.1135281505753626E-4
+following form |following form ,1.1135281505753626E-4
+sql tables and query result |SQL tables and query results ,1.1135281505753626E-4
+direct interaction |direct interaction ,1.1135281505753626E-4
+sun microsystems announces agreement |Sun Microsystems Announces Agreement ,1.1135281505753626E-4
+sql e g |SQL e g ,1.1135281505753626E-4
+charles |Charles ,1.1135281505753626E-4
+variable e g |variable e g ,1.1135281505753626E-4
+select from book where price |SELECT FROM Book WHERE price ,1.1135281505753626E-4
+pamela jones |Pamela Jones ,1.1135281505753626E-4
+g pelagatti |G Pelagatti ,1.1135281505753626E-4
+data domain |data domain ,1.1135281505753626E-4
+amazon web service |Amazon Web Services ,1.1135281505753626E-4
+signal and resignal statement |SIGNAL and RESIGNAL statement ,1.1135281505753626E-4
+boolean unknown |BOOLEAN Unknown ,1.1135281505753626E-4
+reuter |Reuters ,1.1135281505753626E-4
+national institute |National Institute ,1.1135281505753626E-4
+mozilla |Mozilla ,1.1135281505753626E-4
+iso romanization |ISO romanizations ,1.1135281505753626E-4
+xa transaction |XA transactions ,1.1135281505753626E-4
+u s navy |U S Navy ,1.1135281505753626E-4
+website www mysql |Website www mysql ,1.1135281505753626E-4
+assignment |assignment ,1.1135281505753626E-4
+shelley |Shelley ,1.1135281505753626E-4
+transitive closure triggers support |transitive closure triggers support ,1.1135281505753626E-4
+mysql open source license |MySQL Open Source License ,1.1135281505753626E-4
+monitoring instance |monitoring instance ,1.1135281505753626E-4
+system r prototype |System R prototype ,1.1135281505753626E-4
+true and false |True and False ,1.1135281505753626E-4
+data insert |data insert ,1.1135281505753626E-4
+wamp software bundle installer |WAMP software bundle installers ,1.1135281505753626E-4
+c postgresql |C PostgreSQL ,1.1135281505753626E-4
+recent appearance |recent appearance ,1.1135281505753626E-4
+sql cli procedure call |SQL CLI procedure calls ,1.1135281505753626E-4
+managed mysql cloud |Managed MySQL cloud ,1.1135281505753626E-4
+mysql founder |MySQL founders ,1.1135281505753626E-4
+irix |IRIX ,1.1135281505753626E-4
+sql-based dbms implementation information |SQL-based DBMS implementation information ,1.1135281505753626E-4
+english type rdbms license gpl version |English Type RDBMS License GPL version ,1.1135281505753626E-4
+mysql storage engine |MySQL storage engine ,1.1135281505753626E-4
+germany |Germany ,1.1135281505753626E-4
+access ordinary sql-data |access ordinary SQL-data ,1.1135281505753626E-4
+dual-licensing distribution |dual-licensing distribution ,1.1135281505753626E-4
+declaration |declaration ,1.1135281505753626E-4
+access databases jet |Access databases JET ,1.1135281505753626E-4
+soql |SOQL ,1.1135281505753626E-4
+heidisql grid editing feature |HeidiSQL Grid editing features ,1.1135281505753626E-4
+word null |word NULL ,1.1135281505753626E-4
+security and authorization specification |security and authorization specifications ,1.1135281505753626E-4
+commit grouping |Commit grouping ,1.1135281505753626E-4
+foreign key |foreign keys ,1.1135281505753626E-4
+unix timestamp |UNIX TIMESTAMP ,1.1135281505753626E-4
+larger scale |larger scales ,1.1135281505753626E-4
+oxford english dictionary |Oxford English Dictionary ,1.1135281505753626E-4
+major feature |Major features ,1.1135281505753626E-4
+english-speaking database professional |English-speaking database professionals ,1.1135281505753626E-4
+including trigger |including triggers ,1.1135281505753626E-4
+negated existential quantification |negated existential quantification ,1.1135281505753626E-4
+ebs elastic block store |EBS Elastic Block Store ,1.1135281505753626E-4
+medium scale single-server deployment |medium scale single-server deployments ,1.1135281505753626E-4
+progress software corporation |Progress Software Corporation ,1.1135281505753626E-4
+breach |breach ,1.1135281505753626E-4
+central element |central elements ,1.1135281505753626E-4
+multiple cpu core |multiple CPU cores ,1.1135281505753626E-4
+nvarchar n |NVARCHAR n ,1.1135281505753626E-4
+optional keyword |optional keywords ,1.1135281505753626E-4
+multi-threaded sql database server |multi-threaded sql database server ,1.1135281505753626E-4
+mysql adapter |MySQL adapter ,1.1135281505753626E-4
+database resource |database resources ,1.1135281505753626E-4
+early life |early life ,1.1135281505753626E-4
+delete disable |delete disable ,1.1135281505753626E-4
+bigint float |BIGINT FLOAT ,1.1135281505753626E-4
+null e g |NULL e g ,1.1135281505753626E-4
+myth |Myths ,1.1135281505753626E-4
+first version |first version ,1.1135281505753626E-4
+semicolon |semicolon ,1.1135281505753626E-4
+merger regulation procedure |merger regulation procedure ,1.1135281505753626E-4
+commit and rollback |COMMIT and ROLLBACK ,1.1135281505753626E-4
+smallint |SMALLINT ,1.1135281505753626E-4
+novell netware |Novell NetWare ,1.1135281505753626E-4
+common deployment model |common deployment models ,1.1135281505753626E-4
+comparison case sensitivity |comparison case sensitivity ,1.1135281505753626E-4
+create alter rename drop |CREATE ALTER RENAME DROP ,1.1135281505753626E-4
+resilient execution |resilient execution ,1.1135281505753626E-4
+incremental backup |incremental backups ,1.1135281505753626E-4
+eyewitness account |Eyewitness account ,1.1135281505753626E-4
+revision |revisions ,1.1135281505753626E-4
+legitimate business model |Legitimate Business Model ,1.1135281505753626E-4
+access ordinary sql-data and xml document |access ordinary SQL-data and XML documents ,1.1135281505753626E-4
+topic |topic ,1.1135281505753626E-4
+published version |published version ,1.1135281505753626E-4
+dates article |dates Articles ,1.1135281505753626E-4
+no gui tool |no GUI tools ,1.1135281505753626E-4
+string to date |string TO DATE ,1.1135281505753626E-4
+calculating value |calculating values ,1.1135281505753626E-4
+java sql olb |Java SQL OLB ,1.1135281505753626E-4
+fabric-aware version |Fabric-aware versions ,1.1135281505753626E-4
+data management standard |data management standards ,1.1135281505753626E-4
+start |start ,1.1135281505753626E-4
+data manipulation language dml |Data Manipulation Language DML ,1.1135281505753626E-4
+database vendor |database vendors ,1.1135281505753626E-4
+sql standard mirror |SQL standard mirrors ,1.1135281505753626E-4
+database tracking |database tracking ,1.1135281505753626E-4
+mysql life mailing list |MySQL Life mailing list ,1.1135281505753626E-4
+mysql support manual |MySQL Support Manual ,1.1135281505753626E-4
+virtual machine image cloud user |Virtual Machine Image cloud users ,1.1135281505753626E-4
+complexity |complexity ,1.1135281505753626E-4
+dell software chive |Dell Software Chive ,1.1135281505753626E-4
+line |line ,1.1135281505753626E-4
+web host |web hosts ,1.1135281505753626E-4
+basic feature |basic features ,1.1135281505753626E-4
+variable-width nchar string bit string |variable-width NCHAR string Bit strings ,1.1135281505753626E-4
+diplomica verlag |Diplomica Verlag ,1.1135281505753626E-4
+transactional relational database |transactional relational databases ,1.1135281505753626E-4
+non-scalar type |non-scalar types ,1.1135281505753626E-4
+mamp |MAMP ,1.1135281505753626E-4
+end |End ,1.1135281505753626E-4
+ohloh |Ohloh ,1.1135281505753626E-4
+placeholder |placeholder ,1.1135281505753626E-4
+statement condition signals and resignals cursors and local variable |statement condition signals and resignals cursors and local variables ,1.1135281505753626E-4
+database structure |database structure ,1.1135281505753626E-4
+embedded database library unicode support c |Embedded database library Unicode support c ,1.1135281505753626E-4
+view object definition |view object definitions ,1.1135281505753626E-4
+sql specification |SQL specification ,1.1135281505753626E-4
+book order by title |Book ORDER BY title ,1.1135281505753626E-4
+callaghan |Callaghan ,1.1135281505753626E-4
+accessing mysql database |accessing MySQL databases ,1.1135281505753626E-4
+typical database application |typical database applications ,1.1135281505753626E-4
+mysql reference manual mysql client program |MySQL Reference Manual MySQL Client Programs ,1.1135281505753626E-4
+different edition |different editions ,1.1135281505753626E-4
+programming edit mysql |Programming edit MySQL ,1.1135281505753626E-4
+community-developed fork |community-developed fork ,1.1135281505753626E-4
+mass |Mass ,1.1135281505753626E-4
+open source tool |open source tools ,1.1135281505753626E-4
+drop table example |DROP TABLE example ,1.1135281505753626E-4
+define foreign-data wrappers and datalink type |define foreign-data wrappers and datalink types ,1.1135281505753626E-4
+mysql innodb zfs best practice |MySQL Innodb ZFS Best Practices ,1.1135281505753626E-4
+creation and management |creation and management ,1.1135281505753626E-4
+correctly stores millisecond |correctly stores milliseconds ,1.1135281505753626E-4
+integrated system |integrated system ,1.1135281505753626E-4
+mark |mark ,1.1135281505753626E-4
+sqlmaestro group mysql gui tool |SQLMaestro Group MySQL GUI Tools ,1.1135281505753626E-4
+current use |current use ,1.1135281505753626E-4
+mysql copyright and trademark |MySQL copyright and trademark ,1.1135281505753626E-4
+commercial product |commercial products ,1.1135281505753626E-4
+technology nist |Technology NIST ,1.1135281505753626E-4
+graphical administration application |graphical administration applications ,1.1135281505753626E-4
+original development |Original development ,1.1135281505753626E-4
+full-text indexing |Full-text indexing ,1.1135281505753626E-4
+wikileak |WikiLeaks ,1.1135281505753626E-4
+super subtype |super subtypes ,1.1135281505753626E-4
+policy |policy ,1.1135281505753626E-4
+multiple connection |multiple connections ,1.1135281505753626E-4
+higher-scale |higher-scale ,1.1135281505753626E-4
+help edit |help edit ,1.1135281505753626E-4
+paper |Papers ,1.1135281505753626E-4
+state |state ,1.1135281505753626E-4
+create alter rename drop and truncate statement |CREATE ALTER RENAME DROP and TRUNCATE statements ,1.1135281505753626E-4
+mariadb knowledge base |MariaDB Knowledge Base ,1.1135281505753626E-4
+market share |Market Share ,1.1135281505753626E-4
+null special marker |Null special marker ,1.1135281505753626E-4
+timestamp column type |TIMESTAMP column type ,1.1135281505753626E-4
+epictetus |Epictetus ,1.1135281505753626E-4
+queried table |queried tables ,1.1135281505753626E-4
+judge patti sari |Judge Patti Saris ,1.1135281505753626E-4
+no new release |no new releases ,1.1135281505753626E-4
+data warehousing |data warehousing ,1.1135281505753626E-4
+duplicate row |duplicate rows ,1.1135281505753626E-4
+addison wesley |Addison Wesley ,1.1135281505753626E-4
+linux apache mysql perl php python |Linux Apache MySQL Perl PHP Python ,1.1135281505753626E-4
+sql grammar |SQL grammar ,1.1135281505753626E-4
+end user |end users ,1.1135281505753626E-4
+address |Address ,1.1135281505753626E-4
+web site |Web sites ,1.1135281505753626E-4
+multiple possible value |multiple possible values ,1.1135281505753626E-4
+san carlos airport |San Carlos Airport ,1.1135281505753626E-4
+database design modeling |database design modeling ,1.1135281505753626E-4
+finding aid |Finding Aid ,1.1135281505753626E-4
+sql default |SQL defaults ,1.1135281505753626E-4
+connector j |Connector J ,1.1135281505753626E-4
+google chrome web browser |Google Chrome Web Browser ,1.1135281505753626E-4
+select into syntax |SELECT INTO syntax ,1.1135281505753626E-4
+ibm fellow pulse conference |IBM Fellow Pulse conference ,1.1135281505753626E-4
+local variable |local variables ,1.1135281505753626E-4
+android cell-phone operating system |Android cell-phone operating system ,1.1135281505753626E-4
+wiktionary textbook |Wiktionary Textbooks ,1.1135281505753626E-4
+nested query |nested query ,1.1135281505753626E-4
+search |searches ,1.1135281505753626E-4
+acm association |ACM Association ,1.1135281505753626E-4
+promote new open source db engine |Promote New Open Source DB Engines ,1.1135281505753626E-4
+default storage engine |default storage engine ,1.1135281505753626E-4
+sql operator |SQL operators ,1.1135281505753626E-4
+partitioned table |Partitioned tables ,1.1135281505753626E-4
+proprietary extension |proprietary extensions ,1.1135281505753626E-4
+partial rewrite |partial rewrite ,1.1135281505753626E-4
+cloud computing market |cloud computing markets ,1.1135281505753626E-4
+basic item |basic items ,1.1135281505753626E-4
+recursive queries e g |recursive queries e g ,1.1135281505753626E-4
+delete disable or enable user-account |delete disable or enable user-accounts ,1.1135281505753626E-4
+full unicode support |full unicode support ,1.1135281505753626E-4
+vax computer |VAX computers ,1.1135281505753626E-4
+mysql apis |MySQL APIs ,1.1135281505753626E-4
+book isbn |Book isbn ,1.1135281505753626E-4
+administrative task |administrative tasks ,1.1135281505753626E-4
+computer |Computers ,1.1135281505753626E-4
+insert join merge null order |Insert Join Merge Null Order ,1.1135281505753626E-4
+wikidata article |Wikidata Articles ,1.1135281505753626E-4
+n bits numbers integer |n bits Numbers INTEGER ,1.1135281505753626E-4
+program understanding and maintenance |program understanding and maintenance ,1.1135281505753626E-4
+adhere |adhere ,1.1135281505753626E-4
+large table |large tables ,1.1135281505753626E-4
+execution |execution ,1.1135281505753626E-4
+hugh darwen |Hugh Darwen ,1.1135281505753626E-4
+disable trigger |disable triggers ,1.1135281505753626E-4
+rdsm |RDSMS ,1.1135281505753626E-4
+guy harrison |Guy Harrison ,1.1135281505753626E-4
+prepare select truncate union update |Prepare Select Truncate Union Update ,1.1135281505753626E-4
+sql based interfaces and package |SQL based interfaces and packages ,1.1135281505753626E-4
+acquire mysql |Acquire MySQL ,1.1135281505753626E-4
+google releases improved mysql code |Google Releases Improved MySQL Code ,1.1135281505753626E-4
+gpl-only fork |GPL-only fork ,1.1135281505753626E-4
+boolean type variable |BOOLEAN type variables ,1.1135281505753626E-4
+sano |Sanos ,1.1135281505753626E-4
+babcock |Babcock ,1.1135281505753626E-4
+jooq os cross-platform file format |jOOQ OS Cross-platform File format ,1.1135281505753626E-4
+mysql official website mysql site |MySQL Official website MySQL site ,1.1135281505753626E-4
+oracle corporation initial release |Oracle Corporation Initial release ,1.1135281505753626E-4
+chomicki |Chomicki ,1.1135281505753626E-4
+relational operator |relational operator ,1.1135281505753626E-4
+arjen |Arjen ,1.1135281505753626E-4
+failover |failover ,1.1135281505753626E-4
+date help |date help ,1.1135281505753626E-4
+donald d chamberlin charles babbage institute |Donald D Chamberlin Charles Babbage Institute ,1.1135281505753626E-4
+mike |Mike ,1.1135281505753626E-4
+reserved keyword |reserved keyword ,1.1135281505753626E-4
+varchar n |VARCHAR n ,1.1135281505753626E-4
+date time field |date time fields ,1.1135281505753626E-4
+broad subset |broad subset ,1.1135281505753626E-4
+primary meta-data storage format |primary meta-data storage format ,1.1135281505753626E-4
+melton |Melton ,1.1135281505753626E-4
+complete guide |Complete Guide ,1.1135281505753626E-4
+sale |Sales ,1.1135281505753626E-4
+desktop software |desktop software ,1.1135281505753626E-4
+docs oracle |Docs oracle ,1.1135281505753626E-4
+improved performance and reliability |improved performance and reliability ,1.1135281505753626E-4
+user-defined partitioning |user-defined partitioning ,1.1135281505753626E-4
+diagnostics |diagnostics ,1.1135281505753626E-4
+ryan k stephen |Ryan K Stephens ,1.1135281505753626E-4
+different syntax |different syntax ,1.1135281505753626E-4
+department |Department ,1.1135281505753626E-4
+search mysql screenshot |search MySQL Screenshot ,1.1135281505753626E-4
+table operation |table operations ,1.1135281505753626E-4
+columns and row |columns and rows ,1.1135281505753626E-4
+organization |organizations ,1.1135281505753626E-4
+database engine |database engine ,1.1135281505753626E-4
+application-performance problem |application-performance problems ,1.1135281505753626E-4
+release model |Release Model ,1.1135281505753626E-4
+implemented functionality |implemented functionality ,1.1135281505753626E-4
+employee |employee ,1.1135281505753626E-4
+existing object |existing object ,1.1135281505753626E-4
+binary portability |binary portability ,1.1135281505753626E-4
+popular commercial and proprietary sql dbms |popular commercial and proprietary SQL DBMSs ,1.1135281505753626E-4
+thunderbird email reader |Thunderbird Email Reader ,1.1135281505753626E-4
+higher transactional throughput |higher transactional throughput ,1.1135281505753626E-4
+references edit change |References edit Changes ,1.1135281505753626E-4
+operand |operands ,1.1135281505753626E-4
+xampp |XAMPP ,1.1135281505753626E-4
+andy |Andy ,1.1135281505753626E-4
+standalone database server |standalone database server ,1.1135281505753626E-4
+downtime |downtime ,1.1135281505753626E-4
+procedural extensions sql |Procedural extensions SQL ,1.1135281505753626E-4
+open source platform |Open Source Platform ,1.1135281505753626E-4
+evaluierung |Evaluierung ,1.1135281505753626E-4
+master server synchroniz |master server synchronizes ,1.1135281505753626E-4
+recorded pronunciation |recorded pronunciations ,1.1135281505753626E-4
+mysql reference manual mysql tools family |MySQL Reference Manual MySQL Tools Family ,1.1135281505753626E-4
+confirmed |confirmed ,1.1135281505753626E-4
+correlated subquery |correlated subquery ,1.1135281505753626E-4
+common maintenance and administrative task |common maintenance and administrative tasks ,1.1135281505753626E-4
+design database structure |design database structures ,1.1135281505753626E-4
+computer science professor ron van der meyden |computer science professor Ron van der Meyden ,1.1135281505753626E-4
+implementor |implementors ,1.1135281505753626E-4
+variables and parameter |variables and parameters ,1.1135281505753626E-4
+full-text indexing and searching b |Full-text indexing and searching b ,1.1135281505753626E-4
+postgresql server programming |PostgreSQL server programming ,1.1135281505753626E-4
+dbstudio |DBStudio ,1.1135281505753626E-4
+ibm archive |IBM Archives ,1.1135281505753626E-4
+xml and conventional sql-data |XML and conventional SQL-data ,1.1135281505753626E-4
+mysql ship |MySQL ships ,1.1135281505753626E-4
+hdd raid |HDD RAID ,1.1135281505753626E-4
+negotiation |negotiations ,1.1135281505753626E-4
+creation |creation ,1.1135281505753626E-4
+dynamic infrastructure guide international ibm |Dynamic infrastructure GUIDE International IBM ,1.1135281505753626E-4
+hp converged cloud |HP Converged Cloud ,1.1135281505753626E-4
+service time summary |service time summary ,1.1135281505753626E-4
+multi-master replication |Multi-master replication ,1.1135281505753626E-4
+direct equality comparison |direct equality comparisons ,1.1135281505753626E-4
+wrong result bug |wrong result bugs ,1.1135281505753626E-4
+recent research |recent research ,1.1135281505753626E-4
+arie jones |Arie Jones ,1.1135281505753626E-4
+commit statement complete |COMMIT statement completes ,1.1135281505753626E-4
+including flow |including flow ,1.1135281505753626E-4
+define foreign-data wrapper |define foreign-data wrappers ,1.1135281505753626E-4
+sql paradigm |SQL Paradigm ,1.1135281505753626E-4
+data description |Data Description ,1.1135281505753626E-4
+additional feature |additional features ,1.1135281505753626E-4
+call-level interface sql cli |Call-Level Interface SQL CLI ,1.1135281505753626E-4
+numerics or date |numerics or dates ,1.1135281505753626E-4
+runtime behavior |runtime behavior ,1.1135281505753626E-4
+interview |Interview ,1.1135281505753626E-4
+openoffice org openoffice |OpenOffice org OpenOffice ,1.1135281505753626E-4
+databases demystified |Databases Demystified ,1.1135281505753626E-4
+accuracy |accuracy ,1.1135281505753626E-4
+original standard |original standard ,1.1135281505753626E-4
+desktop software and web application |desktop software and web applications ,1.1135281505753626E-4
+software application |software application ,1.1135281505753626E-4
+finley |Finley ,1.1135281505753626E-4
+zero mechanical latency |zero mechanical latency ,1.1135281505753626E-4
+unified access |unified access ,1.1135281505753626E-4
+timestamp with time zone |TIMESTAMP WITH TIME ZONE ,1.1135281505753626E-4
+different irc channels and forum |different IRC channels and forums ,1.1135281505753626E-4
+partition |partitions ,1.1135281505753626E-4
+well-known front end |well-known front ends ,1.1135281505753626E-4
+zip archive |zip archive ,1.1135281505753626E-4
+imperative language |imperative language ,1.1135281505753626E-4
+dbforge studio |dbForge Studio ,1.1135281505753626E-4
+smaller slimmer |smaller slimmer ,1.1135281505753626E-4
+sebastapol |Sebastapol ,1.1135281505753626E-4
+default innodb storage engine |default InnoDB Storage Engine ,1.1135281505753626E-4
+relational algebra |relational algebra ,1.1135281505753626E-4
+michael widenius founder |Michael Widenius Founder ,1.1135281505753626E-4
+data definition language |data definition language ,1.1135281505753626E-4
+select book title |SELECT Book title ,1.1135281505753626E-4
+objects query |objects query ,1.1135281505753626E-4
+external data object language bindings information |External Data Object Language Bindings Information ,1.1135281505753626E-4
+timetz |TIMETZ ,1.1135281505753626E-4
+optional join subclaus |optional JOIN subclauses ,1.1135281505753626E-4
+binary package |binary package ,1.1135281505753626E-4
+select avg price |SELECT AVG price ,1.1135281505753626E-4
+real |REAL ,1.1135281505753626E-4
+program-unit |program-unit ,1.1135281505753626E-4
+placeholder or mark |placeholder or mark ,1.1135281505753626E-4
+morgan kaufmann |Morgan Kaufmann ,1.1135281505753626E-4
+century year month date |century year month date ,1.1135281505753626E-4
+multiple slave |multiple slaves ,1.1135281505753626E-4
+database administration |Database administration ,1.1135281505753626E-4
+iata code |IATA code ,1.1135281505753626E-4
+fast flash card virident tachion |Fast Flash card Virident tachIOn ,1.1135281505753626E-4
+intent |intent ,1.1135281505753626E-4
+print |print ,1.1135281505753626E-4
+cloud computing platform |cloud computing platforms ,1.1135281505753626E-4
+heroku and jelastic |Heroku and Jelastic ,1.1135281505753626E-4
+systems e g |systems e g ,1.1135281505753626E-4
+internet assigned numbers authority |Internet Assigned Numbers Authority ,1.1135281505753626E-4
+xml document |XML documents ,1.1135281505753626E-4
+select query |SELECT query ,1.1135281505753626E-4
+individual data record |individual data records ,1.1135281505753626E-4
+itunes software |iTunes software ,1.1135281505753626E-4
+larger set |larger set ,1.1135281505753626E-4
+stored value |stored values ,1.1135281505753626E-4
+respective member |respective members ,1.1135281505753626E-4
+free-software-open source project |Free-software-open source projects ,1.1135281505753626E-4
+external tool |external tool ,1.1135281505753626E-4
+case when then else end expression |case when then else end expression ,1.1135281505753626E-4
+handle |handle ,1.1135281505753626E-4
+begin transaction |BEGIN TRANSACTION ,1.1135281505753626E-4
+official set |official set ,1.1135281505753626E-4
+viewing result |viewing results ,1.1135281505753626E-4
+musing |Musings ,1.1135281505753626E-4
+faster version |faster version ,1.1135281505753626E-4
+schema |schemata ,1.1135281505753626E-4
+managed hosting terremark |Managed Hosting Terremark ,1.1135281505753626E-4
+resource-usage |resource-usage ,1.1135281505753626E-4
+co-founder michael wideniu |co-founder Michael Widenius ,1.1135281505753626E-4
+nusphere gemini table |NuSphere Gemini table ,1.1135281505753626E-4
+www tcx se |www tcx se ,1.1135281505753626E-4
+storage device |storage device ,1.1135281505753626E-4
+sqlpro sql client |SQLPro SQL Client ,1.1135281505753626E-4
+sqlj application |SQLJ applications ,1.1135281505753626E-4
+release data lock |release data locks ,1.1135281505753626E-4
+proceeding |Proceedings ,1.1135281505753626E-4
+thomasch |Thomasch ,1.1135281505753626E-4
+windows phone |Windows Phone ,1.1135281505753626E-4
+cut paper object browsing edit |cut paper Object browsing edit ,1.1135281505753626E-4
+instance equality |instance equality ,1.1135281505753626E-4
+wikipedia semi-protected page |Wikipedia semi-protected pages ,1.1135281505753626E-4
+supports backup |Supports backup ,1.1135281505753626E-4
+user-defined type |user-defined types ,1.1135281505753626E-4
+scalar value |scalar values ,1.1135281505753626E-4
+multiple relational database |multiple relational databases ,1.1135281505753626E-4
+tcx datakonsult ab |TcX DataKonsult AB ,1.1135281505753626E-4
+original foundation |original foundation ,1.1135281505753626E-4
+master-slave replication |Master-slave replication ,1.1135281505753626E-4
+radix binary |radix binary ,1.1135281505753626E-4
+absence |absence ,1.1135281505753626E-4
+unknown truth |Unknown truth ,1.1135281505753626E-4
+fast stable |fast stable ,1.1135281505753626E-4
+factor |factors ,1.1135281505753626E-4
+third-party proprietary |Third-party proprietary ,1.1135281505753626E-4
+structure and integrity constraint |structure and integrity constraints ,1.1135281505753626E-4
+available proprietary mysql front end |available proprietary MySQL front ends ,1.1135281505753626E-4
+multi-paradigm designed |Multi-paradigm Designed ,1.1135281505753626E-4
+overview |overview ,1.1135281505753626E-4
+real world |real world ,1.1135281505753626E-4
+high-profile large-scale website |high-profile large-scale websites ,1.1135281505753626E-4
+single for-profit firm |single for-profit firm ,1.1135281505753626E-4
+chrome and firefox browser |Chrome and Firefox browsers ,1.1135281505753626E-4
+detail |detail ,1.1135281505753626E-4
+group by book title |GROUP BY Book title ,1.1135281505753626E-4
+page title |page title ,1.1135281505753626E-4
+sql language element |SQL language elements ,1.1135281505753626E-4
+session browsing edit |Session browsing edit ,1.1135281505753626E-4
+unknown value |Unknown values ,1.1135281505753626E-4
+timing |timing ,1.1135281505753626E-4
+sql standards document |SQL standards documents ,1.1135281505753626E-4
+query optimizer |query optimizer ,1.1135281505753626E-4
+index |indexes ,1.1135281505753626E-4
+duplicate argument |duplicate arguments ,1.1135281505753626E-4
+unconditional approval |unconditional approval ,1.1135281505753626E-4
+relation |relations ,1.1135281505753626E-4
+notable cloud-based mysql service |Notable cloud-based MySQL services ,1.1135281505753626E-4
+mysql download |MySQL Downloads ,1.1135281505753626E-4
+database service provider |database service provider ,1.1135281505753626E-4
+sub-second precision |sub-second precision ,1.1135281505753626E-4
+languages including perl python tcl |languages including Perl Python Tcl ,1.1135281505753626E-4
+main distribution |main distributions ,1.1135281505753626E-4
+joining table |joining tables ,1.1135281505753626E-4
+external links edit |External links edit ,1.1135281505753626E-4
+rollback discard |ROLLBACK discards ,1.1135281505753626E-4
+prior version |prior versions ,1.1135281505753626E-4
+international business machine |International Business Machines ,1.1135281505753626E-4
+low-end alternative |low-end alternative ,1.1135281505753626E-4
+wikileaks cable offers new insights into oracle-sun deal |Wikileaks Cable Offers New Insights Into Oracle-Sun Deal ,1.1135281505753626E-4
+scale or decimal precision |scale or DECIMAL precision ,1.1135281505753626E-4
+optimization setting |optimization settings ,1.1135281505753626E-4
+lower level |lower level ,1.1135281505753626E-4
+party organisation |party organisations ,1.1135281505753626E-4
+facility |facility ,1.1135281505753626E-4
+closely related but separate standard |closely related but separate standard ,1.1135281505753626E-4
+joomla |Joomla ,1.1135281505753626E-4
+references or source |references or sources ,1.1135281505753626E-4
+c and c |C and C ,1.1135281505753626E-4
+microsoft window |Microsoft Windows ,1.1135281505753626E-4
+iphone languish |iPhone languishes ,1.1135281505753626E-4
+easy-to-read graph |easy-to-read graphs ,1.1135281505753626E-4
+sql query |SQL query ,1.1135281505753626E-4
+transact-sql reference |Transact-SQL Reference ,1.1135281505753626E-4
+fsf |FSF ,1.1135281505753626E-4
+myodbc |MyODBC ,1.1135281505753626E-4
+variety |variety ,1.1135281505753626E-4
+minimal effort |minimal effort ,1.1135281505753626E-4
+b chapple |b Chapple ,1.1135281505753626E-4
+subquery factoring |subquery factoring ,1.1135281505753626E-4
+community common development |Community Common Development ,1.1135281505753626E-4
+searching b |searching b ,1.1135281505753626E-4
+mysql university |MySQL University ,1.1135281505753626E-4
+legal and acquisition impacts edit |Legal and acquisition impacts edit ,1.1135281505753626E-4
+included command line tool |included command line tools ,1.1135281505753626E-4
+mandatory feature |mandatory features ,1.1135281505753626E-4
+popular choice |popular choice ,1.1135281505753626E-4
+positive review |positive reviews ,1.1135281505753626E-4
+grouping |grouping ,1.1135281505753626E-4
+date or time data type |DATE or TIME data types ,1.1135281505753626E-4
+central intelligence agency |Central Intelligence Agency ,1.1135281505753626E-4
+no category |no category ,1.1135281505753626E-4
+phase commit |phase commit ,1.1135281505753626E-4
+backup software |backup software ,1.1135281505753626E-4
+compare |Compare ,1.1135281505753626E-4
+different sql implementation |Different SQL Implementations ,1.1135281505753626E-4
+dbedit |DBEdit ,1.1135281505753626E-4
+glass education |Glass Education ,1.1135281505753626E-4
+view call stack |View Call Stack ,1.1135281505753626E-4
+sql editor |SQL editors ,1.1135281505753626E-4
+relational operator or aggregation function |relational operator or aggregation function ,1.1135281505753626E-4
+motto |motto ,1.1135281505753626E-4
+url-based query method |URL-based query method ,1.1135281505753626E-4
+enforceable and binding license |enforceable and binding license ,1.1135281505753626E-4
+terremark and rackspace offer |Terremark and Rackspace offer ,1.1135281505753626E-4
+resignal statement |RESIGNAL statement ,1.1135281505753626E-4
+equivalent decode |equivalent DECODE ,1.1135281505753626E-4
+science teaching |Science Teaching ,1.1135281505753626E-4
+software foundation |Software Foundation ,1.1135281505753626E-4
+correspond |correspond ,1.1135281505753626E-4
+uk-based hawker siddeley aircraft company |UK-based Hawker Siddeley aircraft company ,1.1135281505753626E-4
+fedora and ubuntu |Fedora and Ubuntu ,1.1135281505753626E-4
+further improvement |Further improvements ,1.1135281505753626E-4
+windows macintosh |Windows Macintosh ,1.1135281505753626E-4
+original author |original authors ,1.1135281505753626E-4
+boston |Boston ,1.1135281505753626E-4
+performance monitoring edit |Performance monitoring edit ,1.1135281505753626E-4
+union |UNION ,1.1135281505753626E-4
+blogs oracle |Blogs oracle ,1.1135281505753626E-4
+access |Access ,1.1135281505753626E-4
+sqlite consortium |SQLite Consortium ,1.1135281505753626E-4
+truncate table example |TRUNCATE TABLE example ,1.1135281505753626E-4
+international character set national character |international character set NATIONAL CHARACTER ,1.1135281505753626E-4
+oral history interview |Oral history interview ,1.1135281505753626E-4
+technology center |Technology Centers ,1.1135281505753626E-4
+persistent stored modules sql psm |Persistent Stored Modules SQL PSM ,1.1135281505753626E-4
+drupal |Drupal ,1.1135281505753626E-4
+authorization specification |authorization specifications ,1.1135281505753626E-4
+database transaction |database transaction ,1.1135281505753626E-4
+sql olb jdbc |SQL OLB JDBC ,1.1135281505753626E-4
+proprietary agreement |proprietary agreements ,1.1135281505753626E-4
+sql server language reference |SQL Server Language Reference ,1.1135281505753626E-4
+safari |Safari ,1.1135281505753626E-4
+zone or timetz |ZONE or TIMETZ ,1.1135281505753626E-4
+multi-server mysql |multi-server MySQL ,1.1135281505753626E-4
+implication |implication ,1.1135281505753626E-4
+widely used database language |widely used database language ,1.1135281505753626E-4
+google gear |Google Gears ,1.1135281505753626E-4
+authoritative mysql front end |authoritative MySQL front end ,1.1135281505753626E-4
+java code |Java code ,1.1135281505753626E-4
+improved group commit performance |improved group commit performance ,1.1135281505753626E-4
+environment |environments ,1.1135281505753626E-4
+mysql apis and command |MySQL APIs and commands ,1.1135281505753626E-4
+jbos |JBoss ,1.1135281505753626E-4
+c innodb glossary |C InnoDB Glossary ,1.1135281505753626E-4
+retrieval operation |retrieval operations ,1.1135281505753626E-4
+galera cluster |Galera Cluster ,1.1135281505753626E-4
+database administrator or application developer |database administrator or application developer ,1.1135281505753626E-4
+jeremy |Jeremy ,1.1135281505753626E-4
+xml-to-sql data type mapping |XML-to-SQL data type mappings ,1.1135281505753626E-4
+wikibooks learning resource |Wikibooks Learning resources ,1.1135281505753626E-4
+stand-alone download |stand-alone download ,1.1135281505753626E-4
+rule |rules ,1.1135281505753626E-4
+forms and report |forms and reports ,1.1135281505753626E-4
+media type registration |Media Type registration ,1.1135281505753626E-4
+archives oop |Archives Oops ,1.1135281505753626E-4
+sequel structured english query language |SEQUEL Structured English Query Language ,1.1135281505753626E-4
+disputed statement |disputed statements ,1.1135281505753626E-4
+graphical edit |Graphical edit ,1.1135281505753626E-4
+research firm strategy analytic |research firm Strategy Analytics ,1.1135281505753626E-4
+squid |Squid ,1.1135281505753626E-4
+java programming language sql jrt |Java Programming Language SQL JRT ,1.1135281505753626E-4
+j f aker |J F Akers ,1.1135281505753626E-4
+triggers cursors updatable |Triggers Cursors Updatable ,1.1135281505753626E-4
+author alcott |Author Alcott ,1.1135281505753626E-4
+cbs interactive |CBS Interactive ,1.1135281505753626E-4
+sql multimedia and application packages sql mm |SQL Multimedia and Application Packages SQL MM ,1.1135281505753626E-4
+declarative select statement |declarative SELECT statement ,1.1135281505753626E-4
+ansi sql |ANSI SQL ,1.1135281505753626E-4
+title author |Title Authors ,1.1135281505753626E-4
+poor performance |poor performance ,1.1135281505753626E-4
+c or basic |C or BASIC ,1.1135281505753626E-4
+receivables |Receivables ,1.1135281505753626E-4
+timestamptz |TIMESTAMPTZ ,1.1135281505753626E-4
+centos and debian |CentOS and Debian ,1.1135281505753626E-4
+performance monitoring |performance monitoring ,1.1135281505753626E-4
+relative simplicity and ease |relative simplicity and ease ,1.1135281505753626E-4
+edit comparison |edit Comparison ,1.1135281505753626E-4
+duplicate |duplicates ,1.1135281505753626E-4
+community and enterprise edition |community and enterprise editions ,1.1135281505753626E-4
+data management and interchange |Data management and interchange ,1.1135281505753626E-4
+approved iso international standard |approved ISO international standard ,1.1135281505753626E-4
+commit or rollback |COMMIT or ROLLBACK ,1.1135281505753626E-4
+continuous improvement |continuous improvement ,1.1135281505753626E-4
+saake |Saake ,1.1135281505753626E-4
+string concatenation |string concatenation ,1.1135281505753626E-4
+prefix |prefix ,1.1135281505753626E-4
+m negri |M Negri ,1.1135281505753626E-4
+software opinion leader |Software opinion leaders ,1.1135281505753626E-4
+example output |Example output ,1.1135281505753626E-4
+datetime data type |datetime data types ,1.1135281505753626E-4
+java class |Java classes ,1.1135281505753626E-4
+nosql-style memcached apis |NoSQL-style memcached APIs ,1.1135281505753626E-4
+interested |interested ,1.1135281505753626E-4
+missing manual |Missing Manual ,1.1135281505753626E-4
+practicality |practicality ,1.1135281505753626E-4
+different irc channel |different IRC channels ,1.1135281505753626E-4
+powerful proprietary database |powerful proprietary databases ,1.1135281505753626E-4
+l sbattella |L Sbattella ,1.1135281505753626E-4
+ronald r plew |Ronald R Plew ,1.1135281505753626E-4
+oracle-sql dialect |Oracle-SQL dialect ,1.1135281505753626E-4
+wikibook |Wikibooks ,1.1135281505753626E-4
+mysql client |mysql client ,1.1135281505753626E-4
+definition schemas sql routine |Definition Schemas SQL Routines ,1.1135281505753626E-4
+great extent |great extent ,1.1135281505753626E-4
+cloud database mysql |Cloud database MySQL ,1.1135281505753626E-4
+sequence |sequences ,1.1135281505753626E-4
+ourdelta |OurDelta ,1.1135281505753626E-4
+low-level language isam |low-level language ISAM ,1.1135281505753626E-4
+local or remote mysql server |local or remote MySQL servers ,1.1135281505753626E-4
+standard anymore |Standard Anymore ,1.1135281505753626E-4
+debugging edit |Debugging edit ,1.1135281505753626E-4
+high from some table |high FROM some table ,1.1135281505753626E-4
+sql mode option |SQL Mode options ,1.1135281505753626E-4
+pdf |PDF ,1.1135281505753626E-4
+integrated environment |integrated environment ,1.1135281505753626E-4
+malik |Malik ,1.1135281505753626E-4
+foreign key reference |foreign key references ,1.1135281505753626E-4
+yoshinori |Yoshinori ,1.1135281505753626E-4
+high end |high END ,1.1135281505753626E-4
+wordpres |WordPress ,1.1135281505753626E-4
+oxford university press |Oxford University Press ,1.1135281505753626E-4
+gpl license |GPL license ,1.1135281505753626E-4
+nested selects built-in replication support |nested SELECTs Built-in Replication support ,1.1135281505753626E-4
+character strings character n or char n |Character strings CHARACTER n or CHAR n ,1.1135281505753626E-4
+usefulness and practicality |usefulness and practicality ,1.1135281505753626E-4
+justice and antitrust |Justice and Antitrust ,1.1135281505753626E-4
+xml-related feature |XML-related features ,1.1135281505753626E-4
+open source mysql community server |open source MySQL Community Server ,1.1135281505753626E-4
+party contract |party contracts ,1.1135281505753626E-4
+mysql enterprise backup |MySQL Enterprise Backup ,1.1135281505753626E-4
+bmp |BMP ,1.1135281505753626E-4
+execution model |execution model ,1.1135281505753626E-4
+mysql enterprise product |MySQL Enterprise products ,1.1135281505753626E-4
+no persistent effect |no persistent effects ,1.1135281505753626E-4
+co-counsel |co-counsel ,1.1135281505753626E-4
+equal dependent |equal Dependents ,1.1135281505753626E-4
+fast |fast ,1.1135281505753626E-4
+ibm mergers and acquisition |IBM Mergers and acquisitions ,1.1135281505753626E-4
+kleene and lukasiewicz three-valued logic |Kleene and Lukasiewicz three-valued logic ,1.1135281505753626E-4
+system privilege |system privileges ,1.1135281505753626E-4
+backup edit filesystem |Backup edit Filesystem ,1.1135281505753626E-4
+reunion meeting |reunion meeting ,1.1135281505753626E-4
+multiple database |multiple databases ,1.1135281505753626E-4
+analysis |analysis ,1.1135281505753626E-4
+farm |farm ,1.1135281505753626E-4
+standards and technology nist |Standards and Technology NIST ,1.1135281505753626E-4
+resignals cursor |resignals cursors ,1.1135281505753626E-4
+chapter |chapter ,1.1135281505753626E-4
+fixed-width n-character string |fixed-width n-character string ,1.1135281505753626E-4
+mysql cluster replication |MySQL Cluster Replication ,1.1135281505753626E-4
+skysql ab |SkySQL Ab ,1.1135281505753626E-4
+runs sql statement |Runs SQL statements ,1.1135281505753626E-4
+supplementary unicode character |supplementary Unicode character ,1.1135281505753626E-4
+community edit |Community edit ,1.1135281505753626E-4
+reason |reasons ,1.1135281505753626E-4
+command line original author |command line Original author ,1.1135281505753626E-4
+decimal number |decimal number ,1.1135281505753626E-4
+intersect operator |INTERSECT operators ,1.1135281505753626E-4
+people project |People Projects ,1.1135281505753626E-4
+ansi iso iec international standard |ANSI ISO IEC International Standard ,1.1135281505753626E-4
+details filename extension |details Filename extension ,1.1135281505753626E-4
+web-infrastructure |web-infrastructure ,1.1135281505753626E-4
+heidisql mysql gui mysql workbench |HeidiSQL MySQL GUI MySQL Workbench ,1.1135281505753626E-4
+listed |Listed ,1.1135281505753626E-4
+cleaner semantics |cleaner semantics ,1.1135281505753626E-4
+u s government |U S government ,1.1135281505753626E-4
+msql system |mSQL system ,1.1135281505753626E-4
+cte |CTEs ,1.1135281505753626E-4
+personal history |personal history ,1.1135281505753626E-4
+following sql ds |following SQL DS ,1.1135281505753626E-4
+gui feature |GUI features ,1.1135281505753626E-4
+performance and usage |performance and usage ,1.1135281505753626E-4
+web client |web client ,1.1135281505753626E-4
+ars technica |Ars Technica ,1.1135281505753626E-4
+mysql list |MySQL Lists ,1.1135281505753626E-4
+debian |Debian ,1.1135281505753626E-4
+fedora |Fedora ,1.1135281505753626E-4
+home |Home ,1.1135281505753626E-4
+packagers |packagers ,1.1135281505753626E-4
+newer version |newer version ,1.1135281505753626E-4
+federated storage engine state |Federated Storage Engine states ,1.1135281505753626E-4
+similar functionality |similar functionality ,1.1135281505753626E-4
+default innodb storage engine transaction |default InnoDB storage engine Transactions ,1.1135281505753626E-4
+conventional sql-data |conventional SQL-data ,1.1135281505753626E-4
+hierarchy |hierarchy ,1.1135281505753626E-4
+insert and update element |INSERT and UPDATE elements ,1.1135281505753626E-4
+existing table e g |existing table e g ,1.1135281505753626E-4
+equality testing |equality testing ,1.1135281505753626E-4
+b wagner |b Wagner ,1.1135281505753626E-4
+default grant |default grant ,1.1135281505753626E-4
+central component |central component ,1.1135281505753626E-4
+auto-completion access |auto-completion access ,1.1135281505753626E-4
+unsourced material |Unsourced material ,1.1135281505753626E-4
+oracle press release |Oracle press release ,1.1135281505753626E-4
+phpbb |phpBB ,1.1135281505753626E-4
+hibernate and doctrine |Hibernate and Doctrine ,1.1135281505753626E-4
+rackspace offer |Rackspace offer ,1.1135281505753626E-4
+mysql administrator |MySQL Administrator ,1.1135281505753626E-4
+ecosystem |ecosystem ,1.1135281505753626E-4
+p and q p |p AND q p ,1.1135281505753626E-4
+backward compatibility |backward compatibility ,1.1135281505753626E-4
+objects query or edit tables and view |objects query or edit tables and views ,1.1135281505753626E-4
+b dev mysql |b dev mysql ,1.1135281505753626E-4
+hot non-locking backup |hot non-locking backups ,1.1135281505753626E-4
+char n |CHAR n ,1.1135281505753626E-4
+pave |Paves ,1.1135281505753626E-4
+transaction processing dtp support |transaction processing DTP support ,1.1135281505753626E-4
+european union |European Union ,1.1135281505753626E-4
+proprietary graphical database management application |proprietary graphical database management applications ,1.1135281505753626E-4
+initialism |initialism ,1.1135281505753626E-4
+object-oriented feature |object-oriented features ,1.1135281505753626E-4
+team |teams ,1.1135281505753626E-4
+history edit mysql |History edit MySQL ,1.1135281505753626E-4
+mysql goes gpl |MySQL GOES GPL ,1.1135281505753626E-4
+internet media type |Internet media type ,1.1135281505753626E-4
+paul |Paul ,1.1135281505753626E-4
+references codd |References Codd ,1.1135281505753626E-4
+mysql users conference |MySQL Users Conference ,1.1135281505753626E-4
+proof-of-concept storage engine |proof-of-concept storage engine ,1.1135281505753626E-4
+sql-based rdbm |SQL-based RDBMS ,1.1135281505753626E-4
+data manipulation language |data manipulation language ,1.1135281505753626E-4
+mysql and innobase oy |MySQL and Innobase OY ,1.1135281505753626E-4
+build database structure |build database structures ,1.1135281505753626E-4
+program understanding |program understanding ,1.1135281505753626E-4
+subset |subset ,1.1135281505753626E-4
+resulting mechanism |resulting mechanism ,1.1135281505753626E-4
+encyclopedia britannica |Encyclopedia Britannica ,1.1135281505753626E-4
+facebook blog |Facebook Blog ,1.1135281505753626E-4
+previous four year |previous four years ,1.1135281505753626E-4
+sql i s kju |SQL i s kju ,1.1135281505753626E-4
+zip |Zip ,1.1135281505753626E-4
+query result editing query-result |query result editing query-results ,1.1135281505753626E-4
+mysql copyright |MySQL copyright ,1.1135281505753626E-4
+control-of-flow statement |control-of-flow statements ,1.1135281505753626E-4
+library binary equivalency |library binary equivalency ,1.1135281505753626E-4
+system platform |system platforms ,1.1135281505753626E-4
+optimizing |optimizing ,1.1135281505753626E-4
+merge into table name using table reference |MERGE INTO TABLE NAME USING table reference ,1.1135281505753626E-4
+oral history |oral history ,1.1135281505753626E-4
+ada postgresql pl pgsql procedural language postgresql |Ada PostgreSQL PL pgSQL Procedural Language PostgreSQL ,1.1135281505753626E-4
+schema creation |schema creation ,1.1135281505753626E-4
+special-purpose programming language |special-purpose programming language ,1.1135281505753626E-4
+similar statement |similar statement ,1.1135281505753626E-4
+current running sql |current running SQL ,1.1135281505753626E-4
+ambiguity |ambiguity ,1.1135281505753626E-4
+paid edition |paid editions ,1.1135281505753626E-4
+lvm or storage device |LVM or storage device ,1.1135281505753626E-4
+information schema performance schema |Information schema Performance Schema ,1.1135281505753626E-4
+five question |Five Questions ,1.1135281505753626E-4
+supplier |suppliers ,1.1135281505753626E-4
+responsibility |responsibility ,1.1135281505753626E-4
+ready-made machine image |ready-made machine image ,1.1135281505753626E-4
+template |template ,1.1135281505753626E-4
+integrate |integrate ,1.1135281505753626E-4
+example from some user |example FROM some user ,1.1135281505753626E-4
+acronym-like pronunciation |acronym-like pronunciation ,1.1135281505753626E-4
+consistency |consistency ,1.1135281505753626E-4
+session browsing tool |session browsing tools ,1.1135281505753626E-4
+rdbms product |RDBMS products ,1.1135281505753626E-4
+lamp stack |LAMP stack ,1.1135281505753626E-4
+disable triggers and constraint |disable triggers and constraints ,1.1135281505753626E-4
+decimal precision |DECIMAL precision ,1.1135281505753626E-4
+official manual |official manual ,1.1135281505753626E-4
+proprietary enterprise server |proprietary Enterprise Server ,1.1135281505753626E-4
+mysql query browser and database administration |MySQL Query Browser and Database administration ,1.1135281505753626E-4
+cmu |CMU ,1.1135281505753626E-4
+graph nosql newsql v t e query language |Graph NoSQL NewSQL v t e Query languages ,1.1135281505753626E-4
+informationweek informationweek |InformationWeek InformationWeek ,1.1135281505753626E-4
+procedural element |procedural elements ,1.1135281505753626E-4
+binding license |binding license ,1.1135281505753626E-4
+sun pick |Sun Picks ,1.1135281505753626E-4
+sql phrase |SQL phrase ,1.1135281505753626E-4
+current point |current point ,1.1135281505753626E-4
+proprietary and gpl version |proprietary and GPL versions ,1.1135281505753626E-4
+searched case |searched case ,1.1135281505753626E-4
+wide variety |wide variety ,1.1135281505753626E-4
+trademark infringement |trademark infringement ,1.1135281505753626E-4
+presence |presence ,1.1135281505753626E-4
+u s district court |U S District Court ,1.1135281505753626E-4
+incomplete information |incomplete information ,1.1135281505753626E-4
+practice |practice ,1.1135281505753626E-4
+c and vb |C and VB ,1.1135281505753626E-4
+object privilege |object privileges ,1.1135281505753626E-4
+bookmarks block indent |bookmarks block indent ,1.1135281505753626E-4
+mysql database engine |MySQL database engines ,1.1135281505753626E-4
+case n |CASE n ,1.1135281505753626E-4
+linuxmint |LinuxMint ,1.1135281505753626E-4
+beaulieu |Beaulieu ,1.1135281505753626E-4
+robin |Robin ,1.1135281505753626E-4
+static java method |static Java methods ,1.1135281505753626E-4
+adminer |Adminer ,1.1135281505753626E-4
+enterprise edition |enterprise editions ,1.1135281505753626E-4
+progress software vs mysql ab preliminary injunction hearing |Progress Software vs MySQL AB Preliminary Injunction Hearing ,1.1135281505753626E-4
+abbreviated syntax called simple case |abbreviated syntax called simple case ,1.1135281505753626E-4
+i o operation |I O operations ,1.1135281505753626E-4
+server failure |server failure ,1.1135281505753626E-4
+criticism sql |Criticism SQL ,1.1135281505753626E-4
+record market share |record market share ,1.1135281505753626E-4
+mysql server review |MySQL Server Review ,1.1135281505753626E-4
+cross-platform toolkit |cross-platform toolkit ,1.1135281505753626E-4
+google runs mysql |Google Runs MySQL ,1.1135281505753626E-4
+enable user-account |enable user-accounts ,1.1135281505753626E-4
+statement condition signal |statement condition signals ,1.1135281505753626E-4
+reference table |reference tables ,1.1135281505753626E-4
+heroku |Heroku ,1.1135281505753626E-4
+eight drive raid array |eight drive RAID array ,1.1135281505753626E-4
+command line edit |Command line edit ,1.1135281505753626E-4
+sql guide |SQL Guide ,1.1135281505753626E-4
+cut copy paste |cut copy paste ,1.1135281505753626E-4
+information schema and definition schema |Information Schema and Definition Schema ,1.1135281505753626E-4
+files output |files output ,1.1135281505753626E-4
+definition schema |Definition Schema ,1.1135281505753626E-4
+petition |petition ,1.1135281505753626E-4
+manipulation and storage |manipulation and storage ,1.1135281505753626E-4
+mysql server support |MySQL Server Support ,1.1135281505753626E-4
+database connectivity |Database Connectivity ,1.1135281505753626E-4
+regular |regular ,1.1135281505753626E-4
+sql object identifier |SQL object identifier ,1.1135281505753626E-4
+finnish company |Finnish company ,1.1135281505753626E-4
+edit tables and view |edit tables and views ,1.1135281505753626E-4
+reference |references ,1.1135281505753626E-4
+internal internal domain-specific language java persistence query language jpql |internal internal domain-specific language Java Persistence Query Language JPQL ,1.1135281505753626E-4
+mysql cluster multiple storage engine |MySQL Cluster Multiple storage engines ,1.1135281505753626E-4
+planet mysql |Planet MySQL ,1.1135281505753626E-4
+additional programming language |additional programming languages ,1.1135281505753626E-4
+logical backup tool |logical backup tool ,1.1135281505753626E-4
+reliable source |reliable sources ,1.1135281505753626E-4
+clause predicate |clause predicate ,1.1135281505753626E-4
+schema creation and modification |schema creation and modification ,1.1135281505753626E-4
+renewal |renewal ,1.1135281505753626E-4
+relational dbms relational model object-relational database transaction |Relational DBMS Relational model Object-relational database Transaction ,1.1135281505753626E-4
+wikimedia common |Wikimedia Commons ,1.1135281505753626E-4
+objects query or edit table |objects query or edit tables ,1.1135281505753626E-4
+toad data modeler |Toad Data Modeler ,1.1135281505753626E-4
+column structure |column structure ,1.1135281505753626E-4
+sun microsystems announces completion |Sun Microsystems Announces Completion ,1.1135281505753626E-4
+mechanism |mechanisms ,1.1135281505753626E-4
+limitations edit |Limitations edit ,1.1135281505753626E-4
+existence |existence ,1.1135281505753626E-4
+end sql |END SQL ,1.1135281505753626E-4
+alex kriegel |Alex Kriegel ,1.1135281505753626E-4
+current transaction |current transaction ,1.1135281505753626E-4
+mysql developer zone |MySQL Developer Zone ,1.1135281505753626E-4
+features edit sql programming tool |Features edit SQL programming tools ,1.1135281505753626E-4
+tree |tree ,1.1135281505753626E-4
+innobase press release |Innobase Press release ,1.1135281505753626E-4
+calling application |calling application ,1.1135281505753626E-4
+entire standard |entire standard ,1.1135281505753626E-4
+project summary |Project Summary ,1.1135281505753626E-4
+common table expression |common table expression ,1.1135281505753626E-4
+goal |goal ,1.1135281505753626E-4
+mysql stored procedure programming |MySQL Stored Procedure Programming ,1.1135281505753626E-4
+www opensourcereleasefeed |www opensourcereleasefeed ,1.1135281505753626E-4
+syntax language element |Syntax Language elements ,1.1135281505753626E-4
+port |port ,1.1135281505753626E-4
+improved performance |improved performance ,1.1135281505753626E-4
+notable feature |notable features ,1.1135281505753626E-4
+expected result |expected result ,1.1135281505753626E-4
+cento |CentOS ,1.1135281505753626E-4
+write latency |write latency ,1.1135281505753626E-4
+insert operation |INSERT operation ,1.1135281505753626E-4
+interfacing components structures procedures variable binding |interfacing components structures procedures variable bindings ,1.1135281505753626E-4
+top sql |top SQL ,1.1135281505753626E-4
+ibm merger |IBM Mergers ,1.1135281505753626E-4
+graph traversal |graph traversals ,1.1135281505753626E-4
+multi-master support |multi-master support ,1.1135281505753626E-4
+cache |cache ,1.1135281505753626E-4
+standard sql psm extension |standard SQL PSM extensions ,1.1135281505753626E-4
+reference view |reference views ,1.1135281505753626E-4
+framework |framework ,1.1135281505753626E-4
+dual-licensing strategy |dual-licensing strategy ,1.1135281505753626E-4
+connector python |Connector Python ,1.1135281505753626E-4
+web-infrastructure and cloud computing market |web-infrastructure and cloud computing markets ,1.1135281505753626E-4
+microsoft command shell |Microsoft Command Shell ,1.1135281505753626E-4
+mysql enterprise server |MySQL Enterprise Server ,1.1135281505753626E-4
+expressions sql |expressions SQL ,1.1135281505753626E-4
+vice-versa sql jrt |vice-versa SQL JRT ,1.1135281505753626E-4
+common maintenance |common maintenance ,1.1135281505753626E-4
+monty widenius and david axmark |Monty Widenius and David Axmark ,1.1135281505753626E-4
+online ddl |Online DDL ,1.1135281505753626E-4
+enhancements and features include |Enhancements and features include ,1.1135281505753626E-4
+set-based declarative query language |set-based declarative query language ,1.1135281505753626E-4
+b mysqladmin |b mysqladmin ,1.1135281505753626E-4
+medium range |medium range ,1.1135281505753626E-4
+cole |Cole ,1.1135281505753626E-4
+further configuration |further configuration ,1.1135281505753626E-4
+acquisition impacts edit |acquisition impacts edit ,1.1135281505753626E-4
+mysql front-end |MySQL front-ends ,1.1135281505753626E-4
+granularity |granularity ,1.1135281505753626E-4
+survey |survey ,1.1135281505753626E-4
+sql based interface |SQL based interfaces ,1.1135281505753626E-4
+additional instrumentation |additional instrumentation ,1.1135281505753626E-4
+syntax and semantics |syntax and semantics ,1.1135281505753626E-4
+connection |connections ,1.1135281505753626E-4
+special customization |special customizations ,1.1135281505753626E-4
+patrick |Patrick ,1.1135281505753626E-4
+plugin api row-based replication |plugin API row-based replication ,1.1135281505753626E-4
+following data type |following data types ,1.1135281505753626E-4
+merger citation |merger citation ,1.1135281505753626E-4
+character strings character n |Character strings CHARACTER n ,1.1135281505753626E-4
+proprietary standard edition |proprietary Standard Edition ,1.1135281505753626E-4
+picture |pictures ,1.1135281505753626E-4
+precondition |precondition ,1.1135281505753626E-4
+common set |common set ,1.1135281505753626E-4
+distributed server cluster |distributed server clusters ,1.1135281505753626E-4
+data language specification |data language specification ,1.1135281505753626E-4
+schemabank |SchemaBank ,1.1135281505753626E-4
+match |Match ,1.1135281505753626E-4
+relational database technology |relational database technology ,1.1135281505753626E-4
+smaller chunk |smaller chunks ,1.1135281505753626E-4
+theoretical foundation |theoretical foundation ,1.1135281505753626E-4
+evaluation |evaluation ,1.1135281505753626E-4
+shortcut |shortcut ,1.1135281505753626E-4
+thefreelibrary |Thefreelibrary ,1.1135281505753626E-4
+mysql website |MySQL website ,1.1135281505753626E-4
+optimized installation |optimized installation ,1.1135281505753626E-4
+declarative language |declarative language ,1.1135281505753626E-4
+mysql co-founder video mysql |MySQL co-founder Video MySQL ,1.1135281505753626E-4
+non-standard implementation |non-standard implementations ,1.1135281505753626E-4
+existing code |existing code ,1.1135281505753626E-4
+development and administration front end |development and administration front end ,1.1135281505753626E-4
+potential |potential ,1.1135281505753626E-4
+object-relational database management system |object-relational database management systems ,1.1135281505753626E-4
+parallel-compressed backup |parallel-compressed backups ,1.1135281505753626E-4
+select title |SELECT title ,1.1135281505753626E-4
+lists mysql |Lists mysql ,1.1135281505753626E-4
+maximum size |maximum size ,1.1135281505753626E-4
+mosh zloof |Mosh Zloof ,1.1135281505753626E-4
+xml data type |XML data type ,1.1135281505753626E-4
+common fragment |common fragment ,1.1135281505753626E-4
+insignificant whitespace |Insignificant whitespace ,1.1135281505753626E-4
+server plugin |server plugins ,1.1135281505753626E-4
+odbc data source |ODBC data sources ,1.1135281505753626E-4
+united states district court |United States district court ,1.1135281505753626E-4
+display-authors page |display-authors Pages ,1.1135281505753626E-4
+politics |Politics ,1.1135281505753626E-4
+jelastic |Jelastic ,1.1135281505753626E-4
+oracle-provided version |Oracle-provided versions ,1.1135281505753626E-4
+facebook s insatiable hunger |Facebook s Insatiable Hunger ,1.1135281505753626E-4
+rudimentary support |rudimentary support ,1.1135281505753626E-4
+ibm informix implementation |IBM Informix implementation ,1.1135281505753626E-4
+aix |AIX ,1.1135281505753626E-4
+capttofu livejournal |Capttofu livejournal ,1.1135281505753626E-4
+amazon relational database service |Amazon Relational Database Service ,1.1135281505753626E-4
+datalink type |datalink types ,1.1135281505753626E-4
+jdbc driver |JDBC driver ,1.1135281505753626E-4
+kawash |Kawash ,1.1135281505753626E-4
+structured url |structured URLs ,1.1135281505753626E-4
+groklaw |Groklaw ,1.1135281505753626E-4
+launchpad net |Launchpad net ,1.1135281505753626E-4
+procedural language |procedural language ,1.1135281505753626E-4
+unmanaged extended stored procedure |unmanaged extended stored procedures ,1.1135281505753626E-4
+fratarcangeli |Fratarcangeli ,1.1135281505753626E-4
+aim |aim ,1.1135281505753626E-4
+keeping |Keeping ,1.1135281505753626E-4
+complex statement |complex statement ,1.1135281505753626E-4
+usual caveat |usual caveats ,1.1135281505753626E-4
+international fugitive |International Fugitive ,1.1135281505753626E-4
+automate repetitive task |automate repetitive tasks ,1.1135281505753626E-4
+u c berkeley ingres project |U C Berkeley Ingres project ,1.1135281505753626E-4
+first commercial language |first commercial languages ,1.1135281505753626E-4
+individual session |individual session ,1.1135281505753626E-4
+limit clause |LIMIT clause ,1.1135281505753626E-4
+quality code-deployment practice |quality code-deployment practices ,1.1135281505753626E-4
+debate |debate ,1.1135281505753626E-4
+web-based database management tool |web-based database management tool ,1.1135281505753626E-4
+user-security management edit |User-security management edit ,1.1135281505753626E-4
+api citation |API citation ,1.1135281505753626E-4
+current transaction and release data lock |current transaction and release data locks ,1.1135281505753626E-4
+lukasiewicz three-valued logic |Lukasiewicz three-valued logic ,1.1135281505753626E-4
+contained class |contained classes ,1.1135281505753626E-4
+php script |PHP script ,1.1135281505753626E-4
+webyog heidisql |WebYog HeidiSQL ,1.1135281505753626E-4
+hard disk performance |hard disk performance ,1.1135281505753626E-4
+standard number list |standard number List ,1.1135281505753626E-4
+entire transaction |entire transaction ,1.1135281505753626E-4
+including identity-column |including identity-columns ,1.1135281505753626E-4
+innodb sobel |InnoDB Sobel ,1.1135281505753626E-4
+complexity and size |complexity and size ,1.1135281505753626E-4
+deployment edit lamp software bundle |Deployment edit LAMP software bundle ,1.1135281505753626E-4
+deal |deal ,1.1135281505753626E-4
+reviewer |reviewers ,1.1135281505753626E-4
+general form |general form ,1.1135281505753626E-4
+specific purpose |specific purpose ,1.1135281505753626E-4
+tree or graph traversal |tree or graph traversals ,1.1135281505753626E-4
+sql standard conflict |SQL standard conflicts ,1.1135281505753626E-4
+well-known superset |well-known superset ,1.1135281505753626E-4
+proprietary use |proprietary use ,1.1135281505753626E-4
+web-based management utility |Web-based management utility ,1.1135281505753626E-4
+cloud provider |cloud provider ,1.1135281505753626E-4
+general availability stage |general availability stage ,1.1135281505753626E-4
+offer additional functionality |offer additional functionality ,1.1135281505753626E-4
+true multi-user |true multi-user ,1.1135281505753626E-4
+bonus |Bonus ,1.1135281505753626E-4
+amp |AMP ,1.1135281505753626E-4
+developer interface |developer interfaces ,1.1135281505753626E-4
+alt |alt ,1.1135281505753626E-4
+integration |integration ,1.1135281505753626E-4
+short-coming |short-comings ,1.1135281505753626E-4
+maker |makers ,1.1135281505753626E-4
+gunter ed |Gunter Eds ,1.1135281505753626E-4
+open source software company |Open Source Software Company ,1.1135281505753626E-4
+standard select statement |Standard SELECT statements ,1.1135281505753626E-4
+relational database management systems notes edit |relational database management systems Notes edit ,1.1135281505753626E-4
+android and iphone device |Android and iPhone device ,1.1135281505753626E-4
+interoperationality |interoperationality ,1.1135281505753626E-4
+mobilebeat |MobileBeat ,1.1135281505753626E-4
+standardization sql |Standardization SQL ,1.1135281505753626E-4
+approach |approach ,1.1135281505753626E-4
+harvey mudd college |Harvey Mudd College ,1.1135281505753626E-4
+operators operator description example |Operators Operator Description Example ,1.1135281505753626E-4
+guided tour |guided tour ,1.1135281505753626E-4
+authors from book join book author |Authors FROM Book JOIN Book author ,1.1135281505753626E-4
+needed character varying n or varchar n |needed CHARACTER VARYING n or VARCHAR n ,1.1135281505753626E-4
+control-of-flow construct |control-of-flow constructs ,1.1135281505753626E-4
+data control language dcl |Data Control Language DCL ,1.1135281505753626E-4
+sco openserver |SCO OpenServer ,1.1135281505753626E-4
+implicit equality comparison |implicit equality comparisons ,1.1135281505753626E-4
+limit |limits ,1.1135281505753626E-4
+no such operation |no such operation ,1.1135281505753626E-4
+sql dbms compliance |SQL DBMS compliance ,1.1135281505753626E-4
+boolean truth value |Boolean truth values ,1.1135281505753626E-4
+dmoz links use dmy date |DMOZ links Use dmy dates ,1.1135281505753626E-4
+expensive book |expensive books ,1.1135281505753626E-4
+lvm |LVM ,1.1135281505753626E-4
+security-management tool |security-management tools ,1.1135281505753626E-4
+equal rate |equal Rate ,1.1135281505753626E-4
+sql fundamental |SQL Fundamentals ,1.1135281505753626E-4
+standard part |standard part ,1.1135281505753626E-4
+ndl and sql standard |NDL and SQL standards ,1.1135281505753626E-4
+database manipulation |database manipulation ,1.1135281505753626E-4
+small |small ,1.1135281505753626E-4
+sql database language |SQL database language ,1.1135281505753626E-4
+truncate delete |TRUNCATE deletes ,1.1135281505753626E-4
+data debt |data Debt ,1.1135281505753626E-4
+continuous sql |continuous SQL ,1.1135281505753626E-4
+open source community edition |open source Community Edition ,1.1135281505753626E-4
+principle |principle ,1.1135281505753626E-4
+mysql development project |MySQL development project ,1.1135281505753626E-4
+adjustment |adjustments ,1.1135281505753626E-4
+netbsd |NetBSD ,1.1135281505753626E-4
+object-oriented programmability |object-oriented programmability ,1.1135281505753626E-4
+common column |common column ,1.1135281505753626E-4
+no corresponding oracle data type |no corresponding Oracle data type ,1.1135281505753626E-4
+ajoeblk blogspot |Ajoeblk blogspot ,1.1135281505753626E-4
+database behavior |database behavior ,1.1135281505753626E-4
+page numbering differ |page numbering differs ,1.1135281505753626E-4
+full sql standard |full SQL standard ,1.1135281505753626E-4
+support and service |support and services ,1.1135281505753626E-4
+database supplier |database suppliers ,1.1135281505753626E-4
+proprietary license |proprietary license ,1.1135281505753626E-4
+regular free and open source community edition |regular free and open source Community Edition ,1.1135281505753626E-4
+computationally superior |computationally superior ,1.1135281505753626E-4
+pc world |PC World ,1.1135281505753626E-4
+sql interface |SQL interface ,1.1135281505753626E-4
+recognition scps list |recognition SCPs List ,1.1135281505753626E-4
+gillespie |Gillespie ,1.1135281505753626E-4
+n characters national character n or nchar n |n characters NATIONAL CHARACTER n or NCHAR n ,1.1135281505753626E-4
+black duck software |Black Duck Software ,1.1135281505753626E-4
+supported platform |Supported Platforms ,1.1135281505753626E-4
+application packages sql mm |Application Packages SQL MM ,1.1135281505753626E-4
+index structure |index structure ,1.1135281505753626E-4
+mac os x |Mac OS X ,1.1135281505753626E-4
+smaller set |smaller set ,1.1135281505753626E-4
+proprietarily |proprietarily ,1.1135281505753626E-4
+variable-width string |variable-width string ,1.1135281505753626E-4
+large existing customer base |large existing customer bases ,1.1135281505753626E-4
+typical high-end configuration |typical high-end configuration ,1.1135281505753626E-4
+dadabik |DaDaBIK ,1.1135281505753626E-4
+optimizer shared-nothing |optimizer Shared-nothing ,1.1135281505753626E-4
+current system date |current system date ,1.1135281505753626E-4
+affidavit |Affidavit ,1.1135281505753626E-4
+ndb cluster storage engine |NDB Cluster Storage Engine ,1.1135281505753626E-4
+relational data stream management system |relational data stream management system ,1.1135281505753626E-4
+recognition oracle certification program category commons retrieved |recognition Oracle Certification Program Category Commons Retrieved ,1.1135281505753626E-4
+m zack urlocker |M Zack Urlocker ,1.1135281505753626E-4
+main statement |main statements ,1.1135281505753626E-4
+mariadb versus mysql compatibility |MariaDB versus MySQL Compatibility ,1.1135281505753626E-4
+affordable consumer grade sata interface solid-state drive |affordable consumer grade SATA interface solid-state drives ,1.1135281505753626E-4
+yacc |yacc ,1.1135281505753626E-4
+kleene |Kleene ,1.1135281505753626E-4
+s kju l es queue el |s kju l es queue el ,1.1135281505753626E-4
+gigabyte |gigabytes ,1.1135281505753626E-4
+multiple time |multiple times ,1.1135281505753626E-4
+inability |inability ,1.1135281505753626E-4
+qnx |QNX ,1.1135281505753626E-4
+top session |top sessions ,1.1135281505753626E-4
+manifesto |Manifesto ,1.1135281505753626E-4
+explicit comparison |explicit comparisons ,1.1135281505753626E-4
+doll |Doll ,1.1135281505753626E-4
+extend |EXTEND ,1.1135281505753626E-4
+unfair competition |unfair competition ,1.1135281505753626E-4
+b mysql |b mysql ,1.1135281505753626E-4
+oracle announce |Oracle Announces ,1.1135281505753626E-4
+smaller investment |smaller investment ,1.1135281505753626E-4
+multiple-value field |multiple-value fields ,1.1135281505753626E-4
+prior behavior |prior behavior ,1.1135281505753626E-4
+mysql database source code |MySQL database source code ,1.1135281505753626E-4
+video audio |video audio ,1.1135281505753626E-4
+local |local ,1.1135281505753626E-4
+file storage |file storage ,1.1135281505753626E-4
+commercial incentive |commercial incentive ,1.1135281505753626E-4
+sql jrt extension |SQL JRT extensions ,1.1135281505753626E-4
+query result |query results ,1.1135281505753626E-4
+statement terminator |statement terminator ,1.1135281505753626E-4
+case create delete |Case Create Delete ,1.1135281505753626E-4
+sqlclr sql server common language runtime |SQLCLR SQL Server Common Language Runtime ,1.1135281505753626E-4
+database software |database software ,1.1135281505753626E-4
+semantic inconsistency |semantic inconsistency ,1.1135281505753626E-4
+customer test site |customer test sites ,1.1135281505753626E-4
+windows macintosh and linux |Windows Macintosh and Linux ,1.1135281505753626E-4
+navigational database |navigational database ,1.1135281505753626E-4
+physical operation |physical operations ,1.1135281505753626E-4
+firefox web browser |Firefox Web Browser ,1.1135281505753626E-4
+master-master replication master-slave replication |Master-Master Replication Master-Slave Replication ,1.1135281505753626E-4
+partners and dev community |Partners and Dev Community ,1.1135281505753626E-4
+mysql connector net |MySQL Connector Net ,1.1135281505753626E-4
+no trigger |No triggers ,1.1135281505753626E-4
+renegotiation |renegotiation ,1.1135281505753626E-4
+federatedx pluggable storage engine released |FederatedX Pluggable Storage Engine Released ,1.1135281505753626E-4
+drop-in replacement capability |drop-in replacement capability ,1.1135281505753626E-4
+control association |Control Association ,1.1135281505753626E-4
+similar manner |similar manner ,1.1135281505753626E-4
+save transaction |SAVE TRANSACTION ,1.1135281505753626E-4
+ess que ell not my sequel |Ess Que Ell not my sequel ,1.1135281505753626E-4
+ubuntu |Ubuntu ,1.1135281505753626E-4
+funds transaction |funds transaction ,1.1135281505753626E-4
+security and optimization setting |security and optimization settings ,1.1135281505753626E-4
+improve sql server performance |improve SQL server performance ,1.1135281505753626E-4
+b oppel |b Oppel ,1.1135281505753626E-4
+standard database language sql |standard database language SQL ,1.1135281505753626E-4
+procedural programming language functionality |procedural programming language functionality ,1.1135281505753626E-4
+sales tax figure |sales tax figure ,1.1135281505753626E-4
+powerful master database |powerful master database ,1.1135281505753626E-4
+create table example |CREATE TABLE example ,1.1135281505753626E-4
+faster alternative |faster alternatives ,1.1135281505753626E-4
+language ddl |Language DDL ,1.1135281505753626E-4
+libreoffice base libreoffice base |LibreOffice Base LibreOffice Base ,1.1135281505753626E-4
+debugging |debugging ,1.1135281505753626E-4
+osi protocol |OSI protocols ,1.1135281505753626E-4
+edgar f codd |Edgar F Codd ,1.1135281505753626E-4
+oracle sql developer |Oracle SQL Developer ,1.1135281505753626E-4
+lecture note |Lecture Notes ,1.1135281505753626E-4
+mysqldump |mysqldump ,1.1135281505753626E-4
+relationship |relationships ,1.1135281505753626E-4
+global smartphone shipment |Global smartphone shipments ,1.1135281505753626E-4
+standards conformance |standards conformance ,1.1135281505753626E-4
+fivefold speedup |fivefold speedup ,1.1135281505753626E-4
+high fidelity |high fidelity ,1.1135281505753626E-4
+nchar n |NCHAR n ,1.1135281505753626E-4
+real-time processing |real-time processing ,1.1135281505753626E-4
+strict mode |strict mode ,1.1135281505753626E-4
+round |ROUND ,1.1135281505753626E-4
+grant select |GRANT SELECT ,1.1135281505753626E-4
+amount |amount ,1.1135281505753626E-4
+open force |Open Force ,1.1135281505753626E-4
+data predicate |data Predicates ,1.1135281505753626E-4
+sharded database |sharded database ,1.1135281505753626E-4
+window function |window functions ,1.1135281505753626E-4
+dept |Dept ,1.1135281505753626E-4
+myisam-only feature |MyISAM-only feature ,1.1135281505753626E-4
+symbian |Symbian ,1.1135281505753626E-4
+no spam ee tonu mysql tombasil txt |no spam ee tonu mysql tombasil txt ,1.1135281505753626E-4
+vendor lock-in |vendor lock-in ,1.1135281505753626E-4
+whitney |Whitney ,1.1135281505753626E-4
+common practical concern |common practical concern ,1.1135281505753626E-4
+price from book where price |price FROM Book WHERE price ,1.1135281505753626E-4
+data access control |data access control ,1.1135281505753626E-4
+distribution license java community process netbeans openoffice |Distribution License Java Community Process NetBeans OpenOffice ,1.1135281505753626E-4
+logic |Logics ,1.1135281505753626E-4
+copyright and trademark infringement |copyright and trademark infringement ,1.1135281505753626E-4
+input |input ,1.1135281505753626E-4
+previous package |previous package ,1.1135281505753626E-4
+system windows linux solaris os x |system Windows Linux Solaris OS X ,1.1135281505753626E-4
+askmonty knowledgebase |AskMonty Knowledgebase ,1.1135281505753626E-4
+tuple relational calculus |tuple relational calculus ,1.1135281505753626E-4
+donald chamberlin |Donald Chamberlin ,1.1135281505753626E-4
+mybb |MyBB ,1.1135281505753626E-4
+first fully relational database management system |first fully relational database management systems ,1.1135281505753626E-4
+natural |natural ,1.1135281505753626E-4
+forum |forums ,1.1135281505753626E-4
+third-party package |third-party packages ,1.1135281505753626E-4
+dependent object |dependent objects ,1.1135281505753626E-4
+lentz |Lentz ,1.1135281505753626E-4
+signal |SIGNAL ,1.1135281505753626E-4
+venturebeat |VentureBeat ,1.1135281505753626E-4
+update example |UPDATE example ,1.1135281505753626E-4
+journal |Journal ,1.1135281505753626E-4
+firefox browser |Firefox browsers ,1.1135281505753626E-4
+hp-ux |HP-UX ,1.1135281505753626E-4
+schumacher |Schumacher ,1.1135281505753626E-4
+dbms integration |DBMS integration ,1.1135281505753626E-4
+msql antecedent citation |mSQL antecedent citation ,1.1135281505753626E-4
+top |top ,1.1135281505753626E-4
+mysql galera multi-master replication |MySQL Galera Multi-Master Replication ,1.1135281505753626E-4
+sun press release |Sun Press release ,1.1135281505753626E-4
+bigger database |Bigger Database ,1.1135281505753626E-4
+mysql server team |MySQL Server Team ,1.1135281505753626E-4
+sql wikibook sql comparison |SQL Wikibook SQL Comparison ,1.1135281505753626E-4
+performance improvement |performance improvements ,1.1135281505753626E-4
+following sqlite |Following SQLite ,1.1135281505753626E-4
+mysql ma |MySQL ma ,1.1135281505753626E-4
+numeric |numerics ,1.1135281505753626E-4
+mysql internals manual |MySQL Internals Manual ,1.1135281505753626E-4
+infixed comparison operator |infixed comparison operator ,1.1135281505753626E-4
+htsql |HTSQL ,1.1135281505753626E-4
+database sharding |Database Sharding ,1.1135281505753626E-4
+usefulness |usefulness ,1.1135281505753626E-4
+apple mail |Apple Mail ,1.1135281505753626E-4
+pruning |pruning ,1.1135281505753626E-4
+event stream processing |Event stream processing ,1.1135281505753626E-4
+mdr work |MDR work ,1.1135281505753626E-4
+statistics information |statistics information ,1.1135281505753626E-4
+procedural extension |procedural extensions ,1.1135281505753626E-4
+select keyword |SELECT keyword ,1.1135281505753626E-4
+versions edit |Versions edit ,1.1135281505753626E-4
+robert f garrett |Robert F Garrett ,1.1135281505753626E-4
+mysql acquisition |MySQL Acquisition ,1.1135281505753626E-4
+sql aggregation function |SQL aggregation functions ,1.1135281505753626E-4
+sql applications java-in-the-database |SQL applications Java-in-the-database ,1.1135281505753626E-4
+future mysql server development |Future MySQL Server development ,1.1135281505753626E-4
+fast stable and true multi-user |fast stable and true multi-user ,1.1135281505753626E-4
+asp |ASP ,1.1135281505753626E-4
+oracle buys sleepycat |Oracle Buys Sleepycat ,1.1135281505753626E-4
+multiple transaction |multiple transactions ,1.1135281505753626E-4
+session history |session history ,1.1135281505753626E-4
+asp or coldfusion |ASP or ColdFusion ,1.1135281505753626E-4
+exact matching |exact matching ,1.1135281505753626E-4
+command |commands ,1.1135281505753626E-4
+primary fail |primary fails ,1.1135281505753626E-4
+java sql olb and vice-versa sql jrt |Java SQL OLB and vice-versa SQL JRT ,1.1135281505753626E-4
+modx |MODx ,1.1135281505753626E-4
+relational alternative |relational alternatives ,1.1135281505753626E-4
+readability |readability ,1.1135281505753626E-4
+paul mcjone |Paul McJones ,1.1135281505753626E-4
+information schema |Information Schema ,1.1135281505753626E-4
+union and intersect operator |UNION and INTERSECT operators ,1.1135281505753626E-4
+u s approval |U S approval ,1.1135281505753626E-4
+tutorial d xquery |Tutorial D XQuery ,1.1135281505753626E-4
+webmin |Webmin ,1.1135281505753626E-4
+sql platform |SQL platforms ,1.1135281505753626E-4
+net code |Net code ,1.1135281505753626E-4
+transcript |transcript ,1.1135281505753626E-4
+widely used lamp open source web application software stack |widely used LAMP open source web application software stack ,1.1135281505753626E-4
+proprietary sql dbms |proprietary SQL DBMSs ,1.1135281505753626E-4
+procedure execution |procedure execution ,1.1135281505753626E-4
+multi-processor server |multi-processor server ,1.1135281505753626E-4
+b hans-joachim |b Hans-Joachim ,1.1135281505753626E-4
+update element |UPDATE elements ,1.1135281505753626E-4
+power |Power ,1.1135281505753626E-4
+intuitive logical semantics |intuitive logical semantics ,1.1135281505753626E-4
+volume manager |volume manager ,1.1135281505753626E-4
+sql parser |SQL parser ,1.1135281505753626E-4
+postgresql global development group |PostgreSQL Global Development Group ,1.1135281505753626E-4
+ess cue ell |ess cue ell ,1.1135281505753626E-4
+iso retrieved |ISO Retrieved ,1.1135281505753626E-4
+mysql commercial license |MySQL Commercial License ,1.1135281505753626E-4
+koetsier |Koetsier ,1.1135281505753626E-4
+sqlyog proprietary |SQLyog proprietary ,1.1135281505753626E-4
+dml operation |DML operations ,1.1135281505753626E-4
+mysql query browser |MySQL Query Browser ,1.1135281505753626E-4
+stanford university |Stanford University ,1.1135281505753626E-4
+ecomstation |eComStation ,1.1135281505753626E-4
+doctrine |Doctrine ,1.1135281505753626E-4
+b c chamberlin |b c Chamberlin ,1.1135281505753626E-4
+logical concept |logical concepts ,1.1135281505753626E-4
+null test |NULL test ,1.1135281505753626E-4
+cloud deployment edit main article |Cloud deployment edit Main article ,1.1135281505753626E-4
+declaration and maintenance |declaration and maintenance ,1.1135281505753626E-4
+direction |direction ,1.1135281505753626E-4
+popular implementation |Popular implementations ,1.1135281505753626E-4
+acm org |ACM org ,1.1135281505753626E-4
+sql editing edit |SQL editing edit ,1.1135281505753626E-4
+server log table |server log tables ,1.1135281505753626E-4
+semantic interpretation |semantic interpretation ,1.1135281505753626E-4
+connector php |Connector PHP ,1.1135281505753626E-4
+share |shares ,1.1135281505753626E-4
+postgresql org |postgresql org ,1.1135281505753626E-4
+parameter |parameters ,1.1135281505753626E-4
+powerful hardware |powerful hardware ,1.1135281505753626E-4
+well-known user |Well-Known Users ,1.1135281505753626E-4
+wiley |Wiley ,1.1135281505753626E-4
+carlo piana |Carlo Piana ,1.1135281505753626E-4
+date lorentz |DATE Lorentz ,1.1135281505753626E-4
+popular commercial |popular commercial ,1.1135281505753626E-4
+full text search |full text search ,1.1135281505753626E-4
+international workshop dagstuhl castle |International Workshop Dagstuhl Castle ,1.1135281505753626E-4
+individual user |individual users ,1.1135281505753626E-4
+encyclopedia jump |encyclopedia Jump ,1.0602808117742915E-4
+navigation |navigation ,1.0602808117742915E-4
+en wikipedia |en wikipedia ,1.0602808117742915E-4
+content |Contents ,1.0602808117742915E-4
+mysql skip navigation link |MySQL Skip navigation links ,7.965493108914955E-5
+center detailed answer |Center Detailed answers ,7.965493108914955E-5
+sweden |Sweden ,7.965493108914955E-5
+meta discus |Meta Discuss ,7.965493108914955E-5
+tour help tour start |tour help Tour Start ,7.965493108914955E-5
+booking |Booking ,7.965493108914955E-5
+lamp linux apache mysql php perl python |LAMP Linux Apache MySQL PHP Perl Python ,7.965493108914955E-5
+assistance |assistance ,7.965493108914955E-5
+request or proposal |request or proposal ,7.965493108914955E-5
+javascript enabled img src |JavaScript enabled img src ,7.965493108914955E-5
+homeimprovement |HomeImprovement ,7.965493108914955E-5
+neighbors painting permits planning remodel |neighbors Painting Permits Planning remodel ,7.965493108914955E-5
+dollars jane |dollars Jane ,7.965493108914955E-5
+dyi energy efficiency energy efficient faucet |DYI energy efficiency energy efficient Faucets ,7.965493108914955E-5
+yahoo |Yahoo ,7.965493108914955E-5
+wikipedia our continued mysql value |Wikipedia Our Continued MySQL Values ,7.965493108914955E-5
+expensive proprietary software stack |expensive proprietary software stacks ,7.965493108914955E-5
+premium support service |premium support services ,7.965493108914955E-5
+tour help blog chat data legal privacy policy work |tour help blog chat data legal privacy policy work ,7.965493108914955E-5
+secure and reliable fun |secure and reliable Fun ,7.965493108914955E-5
+production-tested software |production-tested software ,7.965493108914955E-5
+key part |key part ,7.965493108914955E-5
+good citizen |good citizens ,7.965493108914955E-5
+freedom |freedom ,7.965493108914955E-5
+quick overview |quick overview ,7.965493108914955E-5
+critical business system |critical business systems ,7.965493108914955E-5
+cwiki apache org confluence display drill sql functions thursday |Cwiki Apache Org Confluence Display Drill Sql Functions Thursday ,7.965493108914955E-5
+france |France ,7.965493108914955E-5
+light |Lights ,7.965493108914955E-5
+superior speed |superior speed ,7.965493108914955E-5
+proposal |proposal ,7.965493108914955E-5
+forward-thinking corporate it manager |forward-thinking corporate IT Managers ,7.965493108914955E-5
+mysql mysql |MySQL MySQL ,7.965493108914955E-5
+downloads documentation developer zone products services partners customer |Downloads Documentation Developer Zone Products Services Partners Customers ,7.965493108914955E-5
+news event |News Events ,7.965493108914955E-5
+affordable annual subscription |affordable annual subscription ,7.965493108914955E-5
+noscript-warning stack overflow |noscript-warning Stack Overflow ,7.965493108914955E-5
+proactive monitoring tool |proactive monitoring tools ,7.965493108914955E-5
+reliable fun |reliable Fun ,7.965493108914955E-5
+alcatel-lucent |Alcatel-Lucent ,7.965493108914955E-5
+mover recent comment |Mover Recent Comments ,7.965493108914955E-5
+user contribution |user contributions ,7.965493108914955E-5
+acme media property contact us div class stat counter |Acme Media Property Contact Us div class stat counter ,7.965493108914955E-5
+major problem |major problems ,7.965493108914955E-5
+comprehensive set |comprehensive set ,7.965493108914955E-5
+site stack overflow careers stack |site stack overflow careers Stack ,7.965493108914955E-5
+info mobile contact |info mobile contact ,7.965493108914955E-5
+finn |Finn ,7.965493108914955E-5
+program |program ,7.965493108914955E-5
+stack overflow div |Stack Overflow div ,7.965493108914955E-5
+appeal diy |appeal diy ,7.965493108914955E-5
+fast-growing open source enterprise software stack |fast-growing open source enterprise software stack ,7.965493108914955E-5
+contacts page |contacts page ,7.965493108914955E-5
+uncle sam |Uncle Sam ,7.965493108914955E-5
+nokia |Nokia ,7.965493108914955E-5
+subscribe |Subscribe ,7.965493108914955E-5
+customer |customers ,7.965493108914955E-5
+preferred choice |preferred choice ,7.965493108914955E-5
+lower cost |lower cost ,7.965493108914955E-5
+software downloaded |software downloaded ,7.965493108914955E-5
+historical information |historical information ,7.965493108914955E-5
+swede |Swedes ,7.965493108914955E-5
+sal caruso |Sal Caruso ,7.965493108914955E-5
+url |URL ,7.965493108914955E-5
+search form |search form ,7.965493108914955E-5
+recent posts understanding pavement installation |Recent Posts Understanding pavement installation ,7.965493108914955E-5
+questions tags users badges unanswered ask question page |Questions Tags Users Badges Unanswered Ask Question Page ,7.965493108914955E-5
+people |people ,7.965493108914955E-5
+downtime maintenance and administration |downtime maintenance and administration ,7.965493108914955E-5
+mindset answer email |mindset Answer email ,7.965493108914955E-5
+open source philosophy aim |Open Source philosophy Aim ,7.965493108914955E-5
+similar question |similar questions ,7.965493108914955E-5
+downtime maintenance |downtime maintenance ,7.965493108914955E-5
+virtual organization |virtual organization ,7.965493108914955E-5
+online applications available |online applications Available ,7.965493108914955E-5
+online applications available and affordable |online applications Available and affordable ,7.965493108914955E-5
+high-volume web site |high-volume Web sites ,7.965493108914955E-5
+move |Move ,7.965493108914955E-5
+bath understanding |Bath Understanding ,7.965493108914955E-5
+japan |Japan ,7.965493108914955E-5
+values and mindset answer email |values and mindset Answer email ,7.965493108914955E-5
+recent questions browse popular tag |recent questions Browse popular tags ,7.965493108914955E-5
+flagship mysql offering |flagship MySQL offering ,7.965493108914955E-5
+rights reserved |Rights Reserved ,7.965493108914955E-5
+easy |Easy ,7.965493108914955E-5
+packaged software including industry leader |packaged software including industry leaders ,7.965493108914955E-5
+lower cost and freedom |lower cost and freedom ,7.965493108914955E-5
+restoration safety seasonal security systems vapor barriers walls window |Restoration Safety Seasonal Security Systems Vapor Barriers Walls windows ,7.965493108914955E-5
+mysql contact |MySQL Contact ,7.965493108914955E-5
+reach |reach ,7.965493108914955E-5
+class dno |class dno ,7.965493108914955E-5
+most-used database |most-used database ,7.965493108914955E-5
+logo |logo ,7.965493108914955E-5
+step-by-step process lifestyle question |step-by-step process Lifestyle Questions ,7.965493108914955E-5
+theoretical computer science physics mathoverflow |Theoretical Computer Science Physics MathOverflow ,7.965493108914955E-5
+platform lock-in |platform lock-in ,7.965493108914955E-5
+modern online application |modern online applications ,7.965493108914955E-5
+attribution required rev |attribution required rev ,7.965493108914955E-5
+co-worker |co-workers ,7.965493108914955E-5
+use trademark policy contributor agreement |Use Trademark Policy Contributor Agreement ,7.965493108914955E-5
+error |error ,7.965493108914955E-5
+linked in google |Linked In Google ,5.567640752876813E-5
+lin q |LIN Q ,5.567640752876813E-5
+hibernate persistence library lin q |Hibernate persistence library LIN Q ,5.567640752876813E-5
+java persistence api and hibernate persistence library lin q |Java Persistence API and Hibernate persistence library LIN Q ,5.567640752876813E-5
+windows power shell |Windows Power Shell ,5.567640752876813E-5
+decod e |DECOD E ,5.567640752876813E-5
