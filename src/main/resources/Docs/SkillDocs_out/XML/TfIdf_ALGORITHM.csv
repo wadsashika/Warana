@@ -1,0 +1,2052 @@
+open xml |Open XML ,0.023598057143352807
+office open |Office Open ,0.02181175002891574
+office |Office ,0.021088385198646926
+office open xml |Office Open XML ,0.013222082783278627
+character |Characters |characters |character ,0.00752129311341922
+xml |xml |XML ,0.007337359497664761
+file |files |file ,0.007022521091897402
+document |document |documents |Documents ,0.005272017298864283
+format |format |formats ,0.0050222983660318885
+support |support |Support ,0.004674433544142234
+microsoft |Microsoft ,0.004646511881774375
+mac |Mac ,0.004606792031969273
+microsoft office |Microsoft Office ,0.004418759704133792
+window |Windows ,0.004370051824988785
+docx |Docx |DOCX |docx ,0.0039486788845450906
+office open xml file |Office Open XML files ,0.00357261422887413
+file format |file formats ,0.00357261422887413
+element |element |elements ,0.0034394365497450725
+markup |markup |Markup ,0.003290565737120909
+text |texts |text ,0.0030220756401663743
+no no |No No ,0.0030085172453676885
+mac os x |Mac OS X ,0.0029351094346939605
+office open xml text |Office Open XML text ,0.0029145010814499482
+translation |Translation |translation ,0.0028204849175322076
+unicode |Unicode ,0.0028204849175322076
+xml document |XML document |XML documents ,0.0027945421966678713
+word |Word ,0.002789468941619964
+use |use ,0.002789468941619964
+spreadsheet |spreadsheets |spreadsheet ,0.002507922484189115
+open xml file format |Open XML file formats ,0.0024444202618612468
+xml file format |XML file formats ,0.0024444202618612468
+schema |schema |schemas |Schema |Schemas ,0.002369829099123272
+office open xml file format |Office Open XML File Formats |Office Open XML file formats ,0.0023504040979435066
+oxygen |Oxygen |oXygen ,0.0023142516075539215
+xlsx |XLSX |xlsx ,0.0022563879340257663
+encoding |encodings |encoding |Encodings ,0.002162371770108026
+office open xml text document |Office Open XML text documents ,0.0020683556061902855
+openoffice |OpenOffice ,0.002064207016798773
+attribute |Attributes |attribute |attributes ,0.002006337987351292
+editor |editor |Editor |editors ,0.0019784811744974107
+net |NET ,0.0019743394422725453
+syntax |syntax |syntaxes ,0.0019743394422725453
+sgml |SGML ,0.0019743394422725453
+ibm |IBM |ibm |Ibm ,0.0019526282591339746
+editing |editing |Editing ,0.001934683059231603
+language |languages |language ,0.001891514969024997
+view |views |view ,0.0018514012860431372
+version |versions |version ,0.0018045487635525834
+oxygen xml |Oxygen XML |oXygen XML ,0.0017852798115415966
+text document |Text documents |text documents ,0.0017294707438043776
+application |application |applications |Applications ,0.001704835294751749
+example |Examples |example |examples ,0.0016122358826930027
+presentation document |presentation documents |Presentation documents ,0.0015982747866015844
+proprietary yes standalone |Proprietary Yes Standalone ,0.0015982747866015844
+office open xml format |Office Open XML formats |Office Open XML format ,0.0015982747866015844
+internet |Internet ,0.0015982747866015844
+office open xml document |Office Open XML documents ,0.0015982747866015844
+spreadsheet document |Spreadsheet documents |spreadsheet documents ,0.0015042586226838442
+linux |Linux ,0.0014566839416629287
+java |Java ,0.0014505238496423812
+iso |ISO ,0.0014102424587661038
+converter |converter |converters ,0.0014102424587661038
+openxml |OpenXML ,0.0014102424587661038
+product |product |Products |products ,0.0013614436342740913
+excel |Excel ,0.0013162262948483636
+sdk |SDK ,0.0013162262948483636
+google |Google ,0.0013162262948483636
+standalone yes no |Standalone Yes No ,0.0013162262948483636
+opening |opening ,0.0013162262948483636
+dtds |DTDs ,0.0013162262948483636
+processing |processing ,0.0012222101309306234
+define |defines ,0.0012222101309306234
+beta |beta ,0.0012222101309306234
+suite |suite ,0.0012222101309306234
+openoffice org |OpenOffice org ,0.001203413149236529
+xml schema |XML Schema |XML schema |XML Schemas ,0.001146478849915024
+apple |Apple ,0.0011365568631678327
+altova |Altova ,0.0011281939670128832
+office open xml spreadsheet document |Office Open XML spreadsheet documents ,0.0011281939670128832
+type |type |types ,0.0011157875766479855
+specification |specification |specifications ,0.0011157875766479855
+platform |platform ,0.0011106513858551797
+html |HTML ,0.0010870775684051707
+writer |Writer ,0.0010599981978155863
+code |code |Code ,0.0010599981978155863
+novell |Novell ,0.0010341778030951427
+open source |open source ,0.0010341778030951427
+extensible markup language |Extensible Markup Language ,0.0010341778030951427
+docx file |DOCX files |docx files ,0.0010341778030951427
+omegat |OmegaT ,0.0010341778030951427
+dtd |DTD ,9.673415296158016E-4
+unicode character |Unicode character |Unicode characters ,9.401616391774025E-4
+edition |editions |edition ,9.401616391774025E-4
+design |design ,9.401616391774025E-4
+standard |standard |Standards ,9.401616391774025E-4
+rule |rules ,9.401616391774025E-4
+wordprocessingml |WordprocessingML ,9.401616391774025E-4
+fifth edition |Fifth Edition |fifth edition ,9.401616391774025E-4
+writing |writing ,9.401616391774025E-4
+command line |command line ,9.401616391774025E-4
+pro |Pro ,9.401616391774025E-4
+softmaker |SoftMaker |Softmaker ,9.401616391774025E-4
+extensible markup language xml |Extensible Markup Language XML ,9.401616391774025E-4
+built-in support |built-in support ,9.401616391774025E-4
+www |www ,8.461454752596624E-4
+command line utility |command line utility ,8.461454752596624E-4
+proprietary yes standalone yes no |Proprietary Yes Standalone Yes No ,8.461454752596624E-4
+older version |older versions |Older versions ,8.461454752596624E-4
+parsing |parsing ,8.461454752596624E-4
+xpath |XPath ,8.461454752596624E-4
+reference |references |reference ,8.461454752596624E-4
+processor |processor |Processor ,8.461454752596624E-4
+proprietary yes standalone yes no no |Proprietary Yes Standalone Yes No No ,8.461454752596624E-4
+word processor |word processors |word processor |Word processors ,8.368406824859891E-4
+information |information ,8.368406824859891E-4
+dataviz |DataViz |Dataviz ,8.368406824859891E-4
+comment |Comments |comments ,7.523767452567345E-4
+relax |RELAX ,7.523767452567345E-4
+schema language |schema languages ,7.521293113419221E-4
+working group |working group |Working Group ,7.521293113419221E-4
+reading |reading ,7.521293113419221E-4
+edit |edit ,7.521293113419221E-4
+name |names ,7.521293113419221E-4
+office open xml presentation document |Office Open XML presentation documents ,7.521293113419221E-4
+xliff |XLIFF ,7.521293113419221E-4
+unix |Unix ,7.521293113419221E-4
+world wide web consortium |World Wide Web Consortium ,7.521293113419221E-4
+bray |Bray ,7.521293113419221E-4
+office open xml support |Office Open XML Support |Office Open XML support ,7.521293113419221E-4
+filter |filter ,7.521293113419221E-4
+set |set ,7.252619248211906E-4
+utility |utility ,7.252619248211906E-4
+pdf |PDFs |PDF ,7.174711951474127E-4
+compatibility |compatibility |Compatibility ,6.694725459887913E-4
+quickoffice |QuickOffice |Quickoffice ,6.694725459887913E-4
+reading and writing |reading and writing ,6.581131474241818E-4
+case |cases |case ,6.581131474241818E-4
+start |start ,6.581131474241818E-4
+saving |saving ,6.581131474241818E-4
+novell edition |Novell Edition ,6.581131474241818E-4
+service |service ,6.581131474241818E-4
+supports office open xml text document |supports Office Open XML text documents ,6.581131474241818E-4
+apache poi |Apache POI ,6.581131474241818E-4
+package |packages ,6.581131474241818E-4
+csv |CSV ,6.581131474241818E-4
+uof |UOF ,6.581131474241818E-4
+definition |definition |definitions ,6.581131474241818E-4
+apis |APIs ,6.581131474241818E-4
+xml specification |XML specification |XML Specification ,6.581131474241818E-4
+dom |DOM ,6.581131474241818E-4
+symbian |Symbian ,6.581131474241818E-4
+japanese |Japanese ,6.581131474241818E-4
+validation |validation |Validation ,6.522465410431023E-4
+xml editor |XML editors |XML editor |XML Editor |XML Editors ,6.356332913524311E-4
+part |parts |part |Part ,6.30504989674999E-4
+windows mobile |Windows Mobile ,6.13683167156392E-4
+end |end ,6.13683167156392E-4
+work |work |Works ,6.13683167156392E-4
+template |templates ,6.13683167156392E-4
+structure |structure |structures ,6.090668890173566E-4
+xhtml |XHTML ,6.090668890173566E-4
+xlsx file |XLSX files ,5.640969835064416E-4
+control character |control characters ,5.640969835064416E-4
+xml format sdk |XML Format SDK ,5.640969835064416E-4
+document type definition |Document Type Definition ,5.640969835064416E-4
+sax |SAX ,5.640969835064416E-4
+infoset |infoset ,5.640969835064416E-4
+compatibility pack |compatibility pack ,5.640969835064416E-4
+ocr |OCR ,5.640969835064416E-4
+microsoft excel |Microsoft Excel ,5.640969835064416E-4
+programmatic support |Programmatic support ,5.640969835064416E-4
+android |Android ,5.640969835064416E-4
+viewers filter |Viewers filters ,5.640969835064416E-4
+open xml format sdk |Open XML Format SDK ,5.640969835064416E-4
+lgpl yes import |LGPL Yes Import ,5.640969835064416E-4
+iwork |iWork ,5.640969835064416E-4
+planned |Planned ,5.640969835064416E-4
+code point |code point |code points ,5.640969835064416E-4
+mobile system |Mobile Systems ,5.640969835064416E-4
+translation support |Translation support ,5.640969835064416E-4
+kingsoft office |Kingsoft Office ,5.640969835064416E-4
+read-only support |read-only support ,5.640969835064416E-4
+namespace |namespaces |namespace ,5.640969835064416E-4
+spreadsheet and presentation document |spreadsheet and presentation documents ,5.640969835064416E-4
+viewers filters and converter |Viewers filters and converters ,5.640969835064416E-4
+export |export |Export ,5.640969835064416E-4
+transforming |transforming ,5.640969835064416E-4
+bosak |Bosak ,5.640969835064416E-4
+corruption |corruption ,5.640969835064416E-4
+xmlfilter |xmlfilter ,5.640969835064416E-4
+dsdl |DSDL ,5.640969835064416E-4
+tim |Tim ,5.640969835064416E-4
+object |objects ,5.640969835064416E-4
+office suite |office suite |office suites ,5.578937883239927E-4
+author |author |Author ,5.374119608976675E-4
+following |following ,4.7008081958870127E-4
+empty-element tag |empty-element tag |empty-element tags ,4.7008081958870127E-4
+jon |Jon ,4.7008081958870127E-4
+net and java |NET and Java ,4.7008081958870127E-4
+single |single ,4.7008081958870127E-4
+problem |problems |problem ,4.7008081958870127E-4
+declaration |declaration ,4.7008081958870127E-4
+eclipse |Eclipse ,4.7008081958870127E-4
+palm os |Palm OS ,4.7008081958870127E-4
+represent |represents ,4.7008081958870127E-4
+creation |creation ,4.7008081958870127E-4
+variant |variant ,4.7008081958870127E-4
+workshare |Workshare ,4.7008081958870127E-4
+method |methods ,4.7008081958870127E-4
+xml processor |XML processors |XML processor ,4.7008081958870127E-4
+iso iec |ISO IEC ,4.7008081958870127E-4
+programming language |programming languages |programming language ,4.7008081958870127E-4
+farpoint |FarPoint ,4.7008081958870127E-4
+docxconverter |docXConverter ,4.7008081958870127E-4
+tim bray |Tim Bray ,4.7008081958870127E-4
+supports office open xml spreadsheet document |supports Office Open XML spreadsheet documents ,4.7008081958870127E-4
+open xml standard |Open XML standard ,4.7008081958870127E-4
+section |section ,4.7008081958870127E-4
+string |Strings |string |strings ,4.7008081958870127E-4
+vice versa |vice versa ,4.7008081958870127E-4
+nextoffice |NextOffice ,4.7008081958870127E-4
+numeric character reference |numeric character reference |numeric character references ,4.7008081958870127E-4
+office open file |Office Open files ,4.7008081958870127E-4
+comparison |comparison |Comparison ,4.679940024808723E-4
+data type |Data types |data type ,4.6575703277797854E-4
+xml file |XML files |XML file ,4.628503215107843E-4
+xslt |xslt |XSLT |XSLTs ,4.6114572117725403E-4
+evermore software |Evermore Software ,4.4631503065919423E-4
+publishing |Publishing |publishing ,4.4631503065919423E-4
+officesuite |OfficeSuite ,4.4631503065919423E-4
+text spreadsheet |text spreadsheet ,4.4631503065919423E-4
+form |form |forms ,4.4631503065919423E-4
+schematron |Schematron ,4.2992956871813407E-4
+scenario |scenario ,3.967288470092437E-4
+completion |completion ,3.967288470092437E-4
+extension |extension |extensions ,3.9410210465828954E-4
+developer |developers |Developer ,3.905256518267949E-4
+parser |parser ,3.905256518267949E-4
+jarte |Jarte ,3.905256518267949E-4
+svg |SVG ,3.905256518267949E-4
+future |Future |future ,3.905256518267949E-4
+xsd |XSD |XSDs ,3.905256518267949E-4
+document object model |Document Object Model ,3.7606465567096106E-4
+tool |tools |tool ,3.7606465567096106E-4
+entity |entity ,3.7606465567096106E-4
+farpoint spread |FarPoint Spread ,3.7606465567096106E-4
+windows novell |Windows Novell ,3.7606465567096106E-4
+oxygenoffice |OxygenOffice ,3.7606465567096106E-4
+elements and attribute |elements and attributes ,3.7606465567096106E-4
+querying |querying ,3.7606465567096106E-4
+java library |Java library |Java Library ,3.7606465567096106E-4
+corel |Corel ,3.7606465567096106E-4
+pptx file |PPTX files ,3.7606465567096106E-4
+implementation |implementation |implementations ,3.7606465567096106E-4
+converted html view |converted HTML view ,3.7606465567096106E-4
+blog |Blogs |blogs ,3.7606465567096106E-4
+found file |Found files ,3.7606465567096106E-4
+zamzar |Zamzar ,3.7606465567096106E-4
+construct |constructs ,3.7606465567096106E-4
+mobile office suite |mobile office suite ,3.7606465567096106E-4
+constraint |constraints ,3.7606465567096106E-4
+import only office open xml support |import only Office Open XML support ,3.7606465567096106E-4
+character reference |character references ,3.7606465567096106E-4
+microsoft window |Microsoft Windows ,3.7606465567096106E-4
+based |based ,3.7606465567096106E-4
+mindmanager |MindManager ,3.7606465567096106E-4
+desktop |Desktop ,3.7606465567096106E-4
+supports office open xml presentation document |supports Office Open XML presentation documents ,3.7606465567096106E-4
+base |base ,3.7606465567096106E-4
+open xml package explorer |Open XML Package Explorer ,3.7606465567096106E-4
+main article |Main article ,3.7606465567096106E-4
+google search |Google search ,3.7606465567096106E-4
+ibm lotus quickr |IBM Lotus Quickr ,3.7606465567096106E-4
+open xml sdk |Open XML SDK ,3.7606465567096106E-4
+well-formednes |well-formedness |Well-formedness ,3.7606465567096106E-4
+windows and linux |Windows and Linux ,3.7606465567096106E-4
+office open xml spreadsheet |Office Open XML spreadsheets ,3.7606465567096106E-4
+open source command line utility |open source command line utility ,3.7606465567096106E-4
+memory |memory ,3.7606465567096106E-4
+element tag |element tags ,3.7606465567096106E-4
+office document |office documents ,3.7606465567096106E-4
+softmaker office |SoftMaker Office ,3.7606465567096106E-4
+jon bosak |Jon Bosak ,3.7606465567096106E-4
+conversion |conversion ,3.7606465567096106E-4
+datawatch |Datawatch ,3.7606465567096106E-4
+pptx |pptx ,3.7606465567096106E-4
+open |open ,3.7606465567096106E-4
+character set |character set ,3.7606465567096106E-4
+user |users |user ,3.6960637325775806E-4
+project |projects |project ,3.58274640598445E-4
+xquery |XQuery ,3.478648218896546E-4
+plugin |plugins |plugin ,3.3473627299439567E-4
+sun microsystem |Sun Microsystems ,3.3473627299439567E-4
+php |PHP ,3.3473627299439567E-4
+atlantis word processor |Atlantis Word Processor ,3.3473627299439567E-4
+input |input ,3.3473627299439567E-4
+cursor |cursor ,3.306073725077031E-4
+current |current ,3.306073725077031E-4
+number |number |Numbers ,3.2612327052155117E-4
+processing instruction |processing instructions |processing instruction ,2.86619712478756E-4
+generation |generation ,2.820484917532208E-4
+translation studio |Translation Studio ,2.820484917532208E-4
+xml information set |XML Information Set ,2.820484917532208E-4
+converters edit |converters edit ,2.820484917532208E-4
+office open xml packages and subpackage |Office Open XML packages and subpackages ,2.820484917532208E-4
+ibm lotus symphony |IBM Lotus Symphony ,2.820484917532208E-4
+source translator |Source Translator ,2.820484917532208E-4
+mac window |Mac Windows ,2.820484917532208E-4
+linux ibm lotus symphony ibm proprietary yes import |Linux IBM Lotus Symphony IBM Proprietary Yes Import ,2.820484917532208E-4
+oxygen xml editor |Oxygen XML Editor ,2.820484917532208E-4
+odfconverter |OdfConverter ,2.820484917532208E-4
+uof and vice versa |UOF and vice versa ,2.820484917532208E-4
+translation memory application |translation memory application ,2.820484917532208E-4
+solaris staroffice sun microsystems proprietary yes import |Solaris StarOffice Sun Microsystems Proprietary Yes Import ,2.820484917532208E-4
+category |category ,2.820484917532208E-4
+ascii |ASCII ,2.820484917532208E-4
+corel eula yes import |Corel EULA Yes Import ,2.820484917532208E-4
+valid character |Valid characters ,2.820484917532208E-4
+viewers filters and converters edit |Viewers filters and converters edit ,2.820484917532208E-4
+online thinkfree office |online Thinkfree Office ,2.820484917532208E-4
+discussion |discussion ,2.820484917532208E-4
+ooxml |OOXML ,2.820484917532208E-4
+batchpurifier batch metadata removal tool |BatchPurifier batch metadata removal tool ,2.820484917532208E-4
+world |world ,2.820484917532208E-4
+mac os x microsoft office microsoft proprietary |Mac OS X Microsoft Office Microsoft Proprietary ,2.820484917532208E-4
+office open xml attachment |Office Open XML attachments ,2.820484917532208E-4
+standalone converter |standalone converter ,2.820484917532208E-4
+mac os x neooffice patrick luby |Mac OS X NeoOffice Patrick Luby ,2.820484917532208E-4
+easyxl |EasyXLS |Easyxls ,2.820484917532208E-4
+iso dsdl |ISO DSDL ,2.820484917532208E-4
+beta software edit |beta software edit ,2.820484917532208E-4
+doug mahugh |Doug Mahugh ,2.820484917532208E-4
+symbian uiq |Symbian UIQ ,2.820484917532208E-4
+presentation file |presentation files ,2.820484917532208E-4
+ooxml openxml or msooxml document |OOXML OpenXML or MSOOXML documents ,2.820484917532208E-4
+representation |representation ,2.820484917532208E-4
+august |August ,2.820484917532208E-4
+direct html view |direct HTML view ,2.820484917532208E-4
+xml-based language |XML-based languages |XML-based language ,2.820484917532208E-4
+documents scanner |documents scanner ,2.820484917532208E-4
+document conversion software |Document Conversion Software ,2.820484917532208E-4
+newer operating system |newer operating systems ,2.820484917532208E-4
+swordfish translation editor |Swordfish Translation Editor ,2.820484917532208E-4
+packages and part |packages and parts ,2.820484917532208E-4
+validation and transformation |validation and transformations ,2.820484917532208E-4
+office open xml package |Office Open XML packages ,2.820484917532208E-4
+creation and manipulation |creation and manipulation ,2.820484917532208E-4
+python module |Python module ,2.820484917532208E-4
+butler office pro x |Butler Office Pro X ,2.820484917532208E-4
+highly structured |highly structured ,2.820484917532208E-4
+ooxml openxml |OOXML OpenXML ,2.820484917532208E-4
+ocr and document conversion software |OCR and Document Conversion Software ,2.820484917532208E-4
+native support |native support ,2.820484917532208E-4
+altova diffdog |Altova DiffDog ,2.820484917532208E-4
+validity |validity ,2.820484917532208E-4
+start-tag |start-tags |start-tag ,2.820484917532208E-4
+net application |NET applications |NET application ,2.820484917532208E-4
+add-in |add-in ,2.820484917532208E-4
+microsoft biztalk server |Microsoft BizTalk Server ,2.820484917532208E-4
+tag |Tags |Tag ,2.820484917532208E-4
+mac os x intel powerpc linux solaris freebsd bsd |Mac OS X Intel PowerPC Linux Solaris FreeBSD BSD ,2.820484917532208E-4
+access |access ,2.820484917532208E-4
+openoffice org version |OpenOffice org version ,2.820484917532208E-4
+separation |separation ,2.820484917532208E-4
+external relationship |external relationships ,2.820484917532208E-4
+document type definition dtd |Document Type Definition DTD ,2.820484917532208E-4
+silvercoders doctotext |SILVERCODERS DocToText ,2.820484917532208E-4
+web searching |web searching ,2.820484917532208E-4
+unified office format uof |Unified Office Format UOF ,2.820484917532208E-4
+software |software ,2.820484917532208E-4
+component |components ,2.820484917532208E-4
+mobile device |Mobile devices ,2.820484917532208E-4
+first desktop ocr application |first desktop OCR application ,2.820484917532208E-4
+linux eioffice evermore software proprietary yes import |Linux EIOffice Evermore Software Proprietary Yes Import ,2.820484917532208E-4
+day |day ,2.820484917532208E-4
+xml base |XML Base ,2.820484917532208E-4
+vat |VAT ,2.820484917532208E-4
+transformation |transformations ,2.820484917532208E-4
+programmer |programmers ,2.820484917532208E-4
+ms word |MS Word ,2.820484917532208E-4
+abiword |AbiWord ,2.820484917532208E-4
+wordprocessingml file |WordprocessingML files ,2.820484917532208E-4
+ibm lotus note |IBM Lotus Notes ,2.820484917532208E-4
+madcap flare |MadCap Flare ,2.820484917532208E-4
+family |family ,2.820484917532208E-4
+zip archive file pair |ZIP archive file pairs ,2.820484917532208E-4
+mac and microsoft office |Mac and Microsoft Office ,2.820484917532208E-4
+database |databases ,2.820484917532208E-4
+programmatic support edit |Programmatic support edit ,2.820484917532208E-4
+java-based cross-platform computer assisted translation tool |Java-based cross-platform Computer Assisted Translation tool ,2.820484917532208E-4
+tx text control |TX Text Control ,2.820484917532208E-4
+xml namespace |XML Namespaces ,2.820484917532208E-4
+download |Downloads ,2.820484917532208E-4
+simple api |Simple API ,2.820484917532208E-4
+ibm websphere portal |IBM WebSphere Portal ,2.820484917532208E-4
+profile |profile ,2.820484917532208E-4
+manipulation |manipulation ,2.820484917532208E-4
+built-in quick preview feature |built-in quick preview feature ,2.820484917532208E-4
+xpath expression |XPath expressions ,2.820484917532208E-4
+symbian os uiq |Symbian OS UIQ ,2.820484917532208E-4
+mechanism |mechanism ,2.820484917532208E-4
+tree |tree ,2.820484917532208E-4
+logical |logical ,2.820484917532208E-4
+text xml |text xml ,2.820484917532208E-4
+research application |research application ,2.820484917532208E-4
+subpackage |subpackages ,2.820484917532208E-4
+develop international limited |Develop International Limited ,2.820484917532208E-4
+msooxml document |MSOOXML documents ,2.820484917532208E-4
+php search engine |PHP search engine ,2.820484917532208E-4
+powerpoint |PowerPoint ,2.820484917532208E-4
+altova xmlspy |Altova XMLSpy ,2.820484917532208E-4
+microsoft word |Microsoft Word ,2.820484917532208E-4
+xml version |xml version ,2.820484917532208E-4
+panergy |panergy |Panergy ,2.820484917532208E-4
+detection |detection ,2.820484917532208E-4
+approach |approach ,2.820484917532208E-4
+mac os x go-oo free software community |Mac OS X Go-oo Free software community ,2.820484917532208E-4
+custom schema |custom schemas ,2.820484917532208E-4
+reporting |reporting ,2.820484917532208E-4
+accessing |accessing ,2.820484917532208E-4
+microsoft office open xml converter |Microsoft Office Open XML Converter ,2.820484917532208E-4
+edward peterlin |Edward Peterlin ,2.820484917532208E-4
+internal |internal ,2.820484917532208E-4
+spreadsheetml |SpreadsheetML ,2.820484917532208E-4
+opening editing |opening editing ,2.820484917532208E-4
+omegat free computer assisted translation tools platform cross-platform java |OmegaT Free computer assisted translation tools platform Cross-platform Java ,2.820484917532208E-4
+cdata |CDATA ,2.820484917532208E-4
+iterator |iterator ,2.820484917532208E-4
+mindjet mindmanager |Mindjet MindManager ,2.820484917532208E-4
+violation |violations |violation ,2.820484917532208E-4
+resource |resource ,2.820484917532208E-4
+corrupt docx file |corrupt DOCX files ,2.820484917532208E-4
+opening and saving |opening and saving ,2.820484917532208E-4
+translation support edit omegat omegat |Translation support edit OmegaT OmegaT ,2.820484917532208E-4
+beihang university |Beihang University ,2.820484917532208E-4
+validate package |validate package ,2.820484917532208E-4
+opc based document |OPC based documents ,2.820484917532208E-4
+online file conversion service |online file conversion service ,2.820484917532208E-4
+modeling |modeling ,2.820484917532208E-4
+doc |doc ,2.820484917532208E-4
+libreoffice |LibreOffice ,2.820484917532208E-4
+alternative |alternatives ,2.820484917532208E-4
+xps |XPS ,2.820484917532208E-4
+xml syntax |XML syntax ,2.820484917532208E-4
+mac os x-based neooffice office suite |Mac OS X-based NeoOffice office suite ,2.820484917532208E-4
+internal and external relationship |internal and external relationships ,2.820484917532208E-4
+former binary file format |former binary file formats ,2.820484917532208E-4
+windows standalone |Windows Standalone ,2.820484917532208E-4
+research |Research ,2.820484917532208E-4
+lack |lack ,2.820484917532208E-4
+office open xml and zip archive file pair |Office Open XML and ZIP archive file pairs ,2.820484917532208E-4
+xslt or xquery |XSLT or XQuery ,2.820484917532208E-4
+error |errors ,2.820484917532208E-4
+change |changes ,2.7894689416199637E-4
+office open xml standard |Office Open XML standard ,2.7894689416199637E-4
+butler software solution |Butler Software Solutions ,2.7894689416199637E-4
+web browser |Web browsers |web browsers |web browser ,2.7894689416199637E-4
+net framework |NET Framework ,2.7894689416199637E-4
+item |items |item ,2.7894689416199637E-4
+default |default ,2.7894689416199637E-4
+feature |features |feature |Features ,2.656057736711226E-4
+catalog |catalog |catalogs ,2.644858980061625E-4
+docbook |DocBook ,2.644858980061625E-4
+javascript |JavaScript ,2.507922484189115E-4
+xsl |xsl |XSL ,2.507922484189115E-4
+content |content |contents |Contents ,2.4347195919852902E-4
+xsl-fo |XSL-FO ,2.3915706504913753E-4
+original |original ,2.3399700124043614E-4
+page |Pages |page ,2.3399700124043614E-4
+program |programs |program ,2.2434116165379926E-4
+plain text |plain text ,2.2315751532959712E-4
+kingsoft research |Kingsoft Research ,2.2315751532959712E-4
+oasis |OASIS ,2.2315751532959712E-4
+online |Online ,2.2315751532959712E-4
+text editor |text editors |text editor ,2.2315751532959712E-4
+released |Released ,2.2315751532959712E-4
+keynote |Keynote ,2.2315751532959712E-4
+digital signature |digital signatures ,2.2315751532959712E-4
+xml parser |XML parser |XML parsers ,2.2315751532959712E-4
+development |development ,2.2315751532959712E-4
+xinclude |XInclude ,2.1496478435906703E-4
+xml format |XML format |XML formats ,2.1496478435906703E-4
+xml element |XML elements ,2.1496478435906703E-4
+ability |ability ,2.1496478435906703E-4
+article |articles |article |Articles ,2.102712374896387E-4
+transformation scenario |transformation scenario |Transformation scenarios ,1.9836442350462186E-4
+visual editing |visual editing ,1.9836442350462186E-4
+column |column ,1.9836442350462186E-4
+dita |DITA ,1.9836442350462186E-4
+web |web ,1.9836442350462186E-4
+operation |operation |operations ,1.9836442350462186E-4
+xslt file |XSLT file |XSLT files ,1.9836442350462186E-4
+content completion |content completion ,1.9836442350462186E-4
+license |license ,1.9836442350462186E-4
+xml tag |XML tags ,1.9836442350462186E-4
+parameter |parameters ,1.9836442350462186E-4
+query language |query language ,1.8803232783548053E-4
+metadatatouch |MetadataTouch ,1.8803232783548053E-4
+viewing |viewing ,1.8803232783548053E-4
+import-only support |import-only support ,1.8803232783548053E-4
+xml signature |XML Signature ,1.8803232783548053E-4
+xml database |XML databases ,1.8803232783548053E-4
+dead external link |dead external links ,1.8803232783548053E-4
+internet engineering task force |Internet Engineering Task Force ,1.8803232783548053E-4
+proprietary yes openoffice |Proprietary Yes OpenOffice ,1.8803232783548053E-4
+co-editor |co-editor |co-editors ,1.8803232783548053E-4
+xmlsh |xmlsh ,1.8803232783548053E-4
+xml content |XML content ,1.8803232783548053E-4
+rich text format rtf |Rich Text Format RTF ,1.8803232783548053E-4
+current version |current versions |current version ,1.8803232783548053E-4
+xml processing |XML processing ,1.8803232783548053E-4
+grammar |grammar ,1.8803232783548053E-4
+chinese character |Chinese character |Chinese characters ,1.8803232783548053E-4
+spread |SPREAD ,1.8803232783548053E-4
+google slide |Google Slides ,1.8803232783548053E-4
+notepad |Notepad ,1.8803232783548053E-4
+wordml file |WordML files ,1.8803232783548053E-4
+data serialization format |data serialization formats ,1.8803232783548053E-4
+files conformant |files conformant ,1.8803232783548053E-4
+initial publication |initial publication ,1.8803232783548053E-4
+windows kingsoft office kingsoft proprietary |Windows Kingsoft Office Kingsoft Proprietary ,1.8803232783548053E-4
+sgml dtds |SGML DTDs ,1.8803232783548053E-4
+workspace |Workspaces ,1.8803232783548053E-4
+indirect |indirect ,1.8803232783548053E-4
+json |JSON ,1.8803232783548053E-4
+ecmascript |ECMAScript ,1.8803232783548053E-4
+comma-separated value |Comma-separated values ,1.8803232783548053E-4
+ninja |Ninja ,1.8803232783548053E-4
+xml serialization |XML Serialization ,1.8803232783548053E-4
+michael sperberg-mcqueen |Michael Sperberg-McQueen ,1.8803232783548053E-4
+linux thinkfree office thinkfree corp proprietary yes version |Linux Thinkfree Office ThinkFree Corp Proprietary Yes Version ,1.8803232783548053E-4
+media type |media types ,1.8803232783548053E-4
+link |link ,1.8803232783548053E-4
+google doc |Google Docs ,1.8803232783548053E-4
+entire document |entire document ,1.8803232783548053E-4
+xpointer |XPointer ,1.8803232783548053E-4
+netscape |Netscape ,1.8803232783548053E-4
+contrast |contrast ,1.8803232783548053E-4
+open source tool |open source tool ,1.8803232783548053E-4
+metadata |metadata ,1.8803232783548053E-4
+policy |policy ,1.8803232783548053E-4
+proper rendering support |proper rendering support ,1.8803232783548053E-4
+toolkit |toolkit ,1.8803232783548053E-4
+extenxl |ExtenXLS ,1.8803232783548053E-4
+extended reference concrete syntax |Extended Reference Concrete Syntax ,1.8803232783548053E-4
+attribute value |attribute values ,1.8803232783548053E-4
+b c brian jones |b c Brian Jones ,1.8803232783548053E-4
+local variable |local variables ,1.8803232783548053E-4
+missing |missing ,1.8803232783548053E-4
+search |search ,1.8803232783548053E-4
+css class |CSS class ,1.8803232783548053E-4
+wordpad |Wordpad ,1.8803232783548053E-4
+office open xml word processing file |Office Open XML word processing files ,1.8803232783548053E-4
+serif |Serif ,1.8803232783548053E-4
+mathml |MathML ,1.8803232783548053E-4
+script |scripts ,1.8803232783548053E-4
+consensus |consensus ,1.8803232783548053E-4
+area |area ,1.8803232783548053E-4
+james clark |James Clark ,1.8803232783548053E-4
+experience |experience ,1.8803232783548053E-4
+plutext |Plutext ,1.8803232783548053E-4
+net and jvm |NET and JVM ,1.8803232783548053E-4
+postel |Postel ,1.8803232783548053E-4
+daisy xml |DAISY XML ,1.8803232783548053E-4
+src |src ,1.8803232783548053E-4
+multi-format metadata editor |multi-format metadata editor ,1.8803232783548053E-4
+cdata section |CDATA section ,1.8803232783548053E-4
+concept |Concepts |concept ,1.8803232783548053E-4
+scope |scope ,1.8803232783548053E-4
+markup and content |markup and content |Markup and content ,1.8803232783548053E-4
+xml data binding |XML data binding ,1.8803232783548053E-4
+end-tag |end-tags ,1.8803232783548053E-4
+phpexcel |PHPExcel ,1.8803232783548053E-4
+word counter |Word Counter ,1.8803232783548053E-4
+installation |installation ,1.8803232783548053E-4
+silverlight |Silverlight ,1.8803232783548053E-4
+cross-platform cat computer assisted translation tool |cross-platform CAT Computer Assisted Translation tool ,1.8803232783548053E-4
+corrupt office suite text data extracting service |Corrupt Office Suite Text Data Extracting Service ,1.8803232783548053E-4
+xml sig |XML SIG ,1.8803232783548053E-4
+windows nextoffice well develop international limited proprietary yes import |Windows NextOffice Well Develop International Limited Proprietary Yes Import ,1.8803232783548053E-4
+jvm |JVM ,1.8803232783548053E-4
+news |News ,1.8803232783548053E-4
+justsystem |Justsystems ,1.8803232783548053E-4
+instance |instance ,1.8803232783548053E-4
+madcap flare overview authoring |MadCap Flare Overview Authoring ,1.8803232783548053E-4
+external link |External links ,1.8803232783548053E-4
+claim |claim ,1.8803232783548053E-4
+processing rule |processing rules ,1.8803232783548053E-4
+websphere business modeler |WebSphere Business Modeler ,1.8803232783548053E-4
+stub |stub ,1.8803232783548053E-4
+net component |NET component ,1.8803232783548053E-4
+indexed searching |indexed searching ,1.8803232783548053E-4
+markup language |markup language ,1.8803232783548053E-4
+unicode character set |Unicode character set ,1.8803232783548053E-4
+abisource |abisource ,1.8803232783548053E-4
+draconian error |draconian error ,1.8803232783548053E-4
+xml encryption |XML Encryption ,1.8803232783548053E-4
+open xml format |Open XML formats ,1.8803232783548053E-4
+xml declaration |XML declaration ,1.8803232783548053E-4
+mac os x standalone |Mac OS X Standalone ,1.8803232783548053E-4
+google sheet |Google Sheets ,1.8803232783548053E-4
+windows wordperfect office corel proprietary |Windows WordPerfect Office Corel Proprietary ,1.8803232783548053E-4
+microsoft corporation |Microsoft Corporation ,1.8803232783548053E-4
+document character set |document character sets |document character set ,1.8803232783548053E-4
+non-character |non-characters ,1.8803232783548053E-4
+docx document |docx documents ,1.8803232783548053E-4
+tree-traversal |Tree-traversal ,1.8803232783548053E-4
+blaze |Blaze ,1.8803232783548053E-4
+potentially dated statement |potentially dated statements ,1.8803232783548053E-4
+madcapsoftware |Madcapsoftware ,1.8803232783548053E-4
+box |boxes ,1.8803232783548053E-4
+pull parser |pull parser |pull parsers ,1.8803232783548053E-4
+ms office |MS Office ,1.8803232783548053E-4
+stax |StAX ,1.8803232783548053E-4
+nisus software |Nisus Software ,1.8803232783548053E-4
+validating |validating ,1.8803232783548053E-4
+python-docx |python-docx ,1.8803232783548053E-4
+whitespace |whitespace ,1.8803232783548053E-4
+no partial dita map |No Partial DITA Map ,1.8803232783548053E-4
+openpack |openpack ,1.8803232783548053E-4
+presence |presence ,1.8803232783548053E-4
+xml attribute |XML attribute ,1.8803232783548053E-4
+basic viewer |basic viewer ,1.8803232783548053E-4
+design goal |design goals ,1.8803232783548053E-4
+design decision |design decisions ,1.8803232783548053E-4
+alt-soft |Alt-soft ,1.8803232783548053E-4
+vb net |VB NET ,1.8803232783548053E-4
+syntax and processing rule |syntax and processing rules ,1.8803232783548053E-4
+maxprogram |Maxprograms ,1.8803232783548053E-4
+graphical stylesheet design tool |graphical stylesheet design tool |Graphical Stylesheet Design Tool ,1.8803232783548053E-4
+chrome browser |Chrome browser ,1.8803232783548053E-4
+character and end |character and end ,1.8803232783548053E-4
+dtd xsd |DTD XSD ,1.8803232783548053E-4
+non-corrupt docx file |non-corrupt DOCX files ,1.8803232783548053E-4
+limitation |limitations ,1.8803232783548053E-4
+rudimentary editor |rudimentary editor ,1.8803232783548053E-4
+university |University ,1.8803232783548053E-4
+begin |begins ,1.8803232783548053E-4
+symbian and palm os |Symbian and Palm OS ,1.8803232783548053E-4
+normal processing |normal processing ,1.8803232783548053E-4
+storage |storage ,1.8803232783548053E-4
+symbian device |Symbian devices ,1.8803232783548053E-4
+introduction |Introduction |introduction ,1.8803232783548053E-4
+templater |Templater ,1.8803232783548053E-4
+gembox spreadsheet |GemBox Spreadsheet ,1.8803232783548053E-4
+xml-based format |XML-based format |XML-based formats ,1.8803232783548053E-4
+resource description framework |Resource Description Framework ,1.8803232783548053E-4
+alt |alt ,1.8803232783548053E-4
+draconian error handling |draconian error handling ,1.8803232783548053E-4
+requirement |requirements ,1.8803232783548053E-4
+online word processor |Online word processor |online word processor ,1.8803232783548053E-4
+mobile documentation |Mobile Documentation ,1.8803232783548053E-4
+volume pricing |volume pricing ,1.8803232783548053E-4
+aspose word |Aspose Words ,1.8803232783548053E-4
+spreadsheetgear |SpreadsheetGear ,1.8803232783548053E-4
+xml edit |XML edit ,1.8803232783548053E-4
+question mark |question marks ,1.8803232783548053E-4
+ekhagen |ekhagen ,1.8803232783548053E-4
+xml infoset |XML infoset ,1.8803232783548053E-4
+document generation |document generation ,1.8803232783548053E-4
+neooffice variant |NeoOffice variant ,1.8803232783548053E-4
+atom |Atom ,1.8803232783548053E-4
+technology |technology ,1.8803232783548053E-4
+non-corrupt office open |non-corrupt Office Open ,1.8803232783548053E-4
+www bean-osx |www bean-osx ,1.8803232783548053E-4
+txt |TXT ,1.8803232783548053E-4
+xml core |XML core |XML Core ,1.8803232783548053E-4
+inclusion |inclusion ,1.8803232783548053E-4
+gnumeric |Gnumeric ,1.8803232783548053E-4
+spreadsheet application |spreadsheet application ,1.8803232783548053E-4
+microsoft net |Microsoft NET ,1.8803232783548053E-4
+simple |simple ,1.8803232783548053E-4
+filetype |filetypes ,1.8803232783548053E-4
+line-break |line-break ,1.8803232783548053E-4
+xml media type |XML Media Types ,1.8803232783548053E-4
+non-corrupt docx |non-corrupt DOCX ,1.8803232783548053E-4
+first edition |first edition ,1.8803232783548053E-4
+legal unicode character |legal Unicode character |legal Unicode characters ,1.8803232783548053E-4
+xml language |XML languages ,1.8803232783548053E-4
+openxml writer |OpenXML Writer ,1.8803232783548053E-4
+xlink |XLink ,1.8803232783548053E-4
+second-generation web |Second-Generation Web ,1.8803232783548053E-4
+plutext pty |Plutext Pty ,1.8803232783548053E-4
+pdf format |PDF formats |PDF format ,1.8803232783548053E-4
+well-formed xml document |well-formed XML document ,1.8803232783548053E-4
+refwork |RefWorks ,1.8803232783548053E-4
+control code |control codes |Control Codes ,1.8803232783548053E-4
+order |order ,1.8803232783548053E-4
+multimedia |multimedia ,1.8803232783548053E-4
+notation |notation ,1.791373202992225E-4
+soap |SOAP ,1.6736813649719784E-4
+print |Print |print ,1.6736813649719784E-4
+variety |variety ,1.6736813649719784E-4
+source |Source |sources ,1.6736813649719784E-4
+people |peoples |people ,1.6736813649719784E-4
+adobe system |Adobe Systems ,1.6736813649719784E-4
+openxml biz |OpenXML biz ,1.6736813649719784E-4
+carolina road software |Carolina Road Software ,1.6736813649719784E-4
+nisus writer pro |Nisus Writer Pro ,1.6736813649719784E-4
+archived |Archived ,1.6714071517174008E-4
+addition |addition ,1.521908595767239E-4
+issue |issues ,1.43309856239378E-4
+compact |compact ,1.3224294900308125E-4
+promotional tone |promotional tone ,1.3224294900308125E-4
+help |help ,1.3224294900308125E-4
+specialized xml |specialized XML ,1.3224294900308125E-4
+nrl |NRL ,1.3224294900308125E-4
+talk page |talk page ,1.3224294900308125E-4
+annotation |annotations ,1.3224294900308125E-4
+text view |text view ,1.3224294900308125E-4
+transform scenario |transform scenario |Transform scenarios ,1.3224294900308125E-4
+neutral point |neutral point ,1.3224294900308125E-4
+full |full ,1.3224294900308125E-4
+address |address ,1.3224294900308125E-4
+root element |root elements |root element ,1.3224294900308125E-4
+oxygen xml author |Oxygen XML Author ,1.3224294900308125E-4
+fop |FOP ,1.3224294900308125E-4
+non-xml file |non-XML files ,1.3224294900308125E-4
+xml catalog |XML catalogs |XML catalog ,1.3224294900308125E-4
+tag completion |tag completion ,1.3224294900308125E-4
+author view |author view ,1.3224294900308125E-4
+xslt document |XSLT documents ,1.3224294900308125E-4
+editing xml document |editing XML documents ,1.3224294900308125E-4
+named user |named user ,1.3224294900308125E-4
+grid view |grid view ,1.3224294900308125E-4
+tei |TEI ,1.3224294900308125E-4
+mac office application |Mac office applications ,1.1157875766479856E-4
+java programming language |Java programming language ,1.1157875766479856E-4
+upgrade |Upgrade ,1.1157875766479856E-4
+bean change log |Bean Change Log ,1.1157875766479856E-4
+convention |Conventions ,1.1157875766479856E-4
+b c nextoffice |b c NextOffice ,1.1157875766479856E-4
+kingsoft research corporation |Kingsoft Research Corporation ,1.1157875766479856E-4
+trinity neooffice org |trinity neooffice org ,1.1157875766479856E-4
+editable office document |editable office documents ,1.1157875766479856E-4
+text spreadsheet and other mac office application |text spreadsheet and other Mac office applications ,1.1157875766479856E-4
+microsoft document support |Microsoft Document Support ,1.1157875766479856E-4
+mac office alternative |Mac office alternative ,1.1157875766479856E-4
+home |home ,1.1157875766479856E-4
+task |task |tasks ,1.1157875766479856E-4
+windows ce |Windows CE ,1.1157875766479856E-4
+word processors edit |Word processors edit ,1.1157875766479856E-4
+mac os x released |Mac OS X Released ,1.1157875766479856E-4
+generating docx |generating docx ,1.1157875766479856E-4
+solution |solutions |solution ,1.1157875766479856E-4
+idea |ideas |Ideas ,1.1157875766479856E-4
+docx support |DocX Support |docx support ,1.1157875766479856E-4
+burden |burden ,1.1157875766479856E-4
+document format |document formats ,1.1157875766479856E-4
+xml tool |XML tools |XML Tools ,1.1157875766479856E-4
+specification promise office open xml software comparison |Specification Promise Office Open XML software Comparison ,1.1157875766479856E-4
+space |spaces ,1.0748239217953352E-4
+python |Python ,1.0748239217953352E-4
+human-readable |human-readable ,1.0748239217953352E-4
+child |children ,1.0748239217953352E-4
+combination |combinations |combination ,1.0748239217953352E-4
+complexity |complexity ,1.0748239217953352E-4
+semantics |semantics ,1.0748239217953352E-4
+edit list |edit List ,1.0748239217953352E-4
+syncro soft |SyncRO Soft ,1.0748239217953352E-4
+term |terms ,1.0748239217953352E-4
+report |reports |Reports ,1.0028442910304406E-4
+native winds docx converter |Native Winds Docx Converter ,9.401616391774026E-5
+outermost element |outermost element ,9.401616391774026E-5
+xlsx edit |xlsx edit ,9.401616391774026E-5
+method return value |method return values ,9.401616391774026E-5
+premium edition |Premium Edition ,9.401616391774026E-5
+numeric code |numeric code ,9.401616391774026E-5
+angle bracket tax |Angle Bracket Tax ,9.401616391774026E-5
+individual value |individual values ,9.401616391774026E-5
+basic word processor |basic word processor ,9.401616391774026E-5
+line-break element |line-break Element ,9.401616391774026E-5
+quality |quality ,9.401616391774026E-5
+remaining character |remaining characters ,9.401616391774026E-5
+office open xml ooxml |Office Open XML OOXML ,9.401616391774026E-5
+editorial review board |Editorial Review Board ,9.401616391774026E-5
+behavior |behavior ,9.401616391774026E-5
+apple spotlight |Apple Spotlight ,9.401616391774026E-5
+xlsxcessive |XlsXcessive ,9.401616391774026E-5
+conversation |conversation ,9.401616391774026E-5
+attributes local |attributes local ,9.401616391774026E-5
+identifier name |identifier names ,9.401616391774026E-5
+question marks or box |question marks or boxes ,9.401616391774026E-5
+xml-oriented query language |XML-oriented query language ,9.401616391774026E-5
+java component |Java component ,9.401616391774026E-5
+definition text-based itu-t and iso |definition text-based ITU-T and ISO ,9.401616391774026E-5
+basis |basis ,9.401616391774026E-5
+designing |designing ,9.401616391774026E-5
+itu-t rec |ITU-T Rec ,9.401616391774026E-5
+dmoz link |DMOZ links ,9.401616391774026E-5
+lgpl cddl yes import only ibm lotus symphony |LGPL CDDL Yes Import only IBM Lotus Symphony ,9.401616391774026E-5
+extenxls office open xml support |ExtenXLS Office Open XML Support ,9.401616391774026E-5
+usability |usability ,9.401616391774026E-5
+phpexcel home |PHPExcel Home ,9.401616391774026E-5
+interchange |interchange ,9.401616391774026E-5
+xlsm |XLSM ,9.401616391774026E-5
+codeplex |Codeplex ,9.401616391774026E-5
+comma |comma ,9.401616391774026E-5
+xml name |XML names ,9.401616391774026E-5
+basic read |basic read ,9.401616391774026E-5
+criticism |criticisms ,9.401616391774026E-5
+wide adoption |wide adoption ,9.401616391774026E-5
+node |nodes ,9.401616391774026E-5
+email dataviz slideshow |email DataViz Slideshow ,9.401616391774026E-5
+unstructured content |unstructured content ,9.401616391774026E-5
+windows standalone openxml biz |Windows Standalone OpenXML biz ,9.401616391774026E-5
+base language |base language ,9.401616391774026E-5
+mentor graphics context |Mentor Graphics Context ,9.401616391774026E-5
+ms-eula yes neooffice impress |MS-EULA Yes NeoOffice Impress ,9.401616391774026E-5
+detailed constraint |detailed constraints ,9.401616391774026E-5
+xml manipulation |XML manipulation ,9.401616391774026E-5
+original developer |original developers ,9.401616391774026E-5
+commit tool |commit tools ,9.401616391774026E-5
+dynamic information display |dynamic information display ,9.401616391774026E-5
+assertion |assertions ,9.401616391774026E-5
+sgml extended |SGML Extended ,9.401616391774026E-5
+numeric digit |numeric digit ,9.401616391774026E-5
+word documents processing |Word Documents Processing ,9.401616391774026E-5
+original member |original members ,9.401616391774026E-5
+bob ducharme |Bob DuCharme ,9.401616391774026E-5
+ibm websphere business modeler |IBM WebSphere Business Modeler ,9.401616391774026E-5
+small community |small community ,9.401616391774026E-5
+datawatch announces availability |Datawatch Announces Availability ,9.401616391774026E-5
+collaborator |collaborators ,9.401616391774026E-5
+online service |online service ,9.401616391774026E-5
+character repertoire constraints renaming and entity expansion |character repertoire constraints renaming and entity expansion ,9.401616391774026E-5
+xml shell |XML Shell ,9.401616391774026E-5
+xmllist |XMLList ,9.401616391774026E-5
+small schema language |small schema languages ,9.401616391774026E-5
+u fffe |U FFFE ,9.401616391774026E-5
+microsoft visual studio |Microsoft Visual Studio ,9.401616391774026E-5
+searching |searching ,9.401616391774026E-5
+u ffff |U FFFF ,9.401616391774026E-5
+xpertdoc support |Xpertdoc support ,9.401616391774026E-5
+recursive-descent parser |recursive-descent parsers ,9.401616391774026E-5
+early digital media publisher |early digital media publishers ,9.401616391774026E-5
+evermore software eioffice presentation |Evermore Software EIOffice Presentation ,9.401616391774026E-5
+redundancy |redundancy ,9.401616391774026E-5
+editorship |editorship ,9.401616391774026E-5
+openxml translator |OpenXML Translator ,9.401616391774026E-5
+metadata element |metadata elements ,9.401616391774026E-5
+xerox publishing system |Xerox Publishing System ,9.401616391774026E-5
+media types application xml and text xml |media types application xml and text xml ,9.401616391774026E-5
+xml infoset specification |XML Infoset specification ,9.401616391774026E-5
+report mining tool monarch |report mining tool Monarch ,9.401616391774026E-5
+access office open xml document |Access Office Open XML documents ,9.401616391774026E-5
+world wide web consortium type |World Wide Web Consortium Type ,9.401616391774026E-5
+ubiquity |ubiquity ,9.401616391774026E-5
+fast infoset |Fast Infoset ,9.401616391774026E-5
+construction |construction ,9.401616391774026E-5
+augmented browsing bookmark |Augmented browsing Bookmarks ,9.401616391774026E-5
+intergen |Intergen ,9.401616391774026E-5
+native docx editing |Native Docx Editing ,9.401616391774026E-5
+xml-sw sw |XML-SW SW ,9.401616391774026E-5
+key point |key points ,9.401616391774026E-5
+valid characters edit main article |Valid characters edit Main article ,9.401616391774026E-5
+basic tree model |basic tree model ,9.401616391774026E-5
+simple syntax coloring |simple syntax coloring ,9.401616391774026E-5
+industrial publisher |industrial publishers ,9.401616391774026E-5
+spreadsheetml support |SpreadsheetML support ,9.401616391774026E-5
+further guideline |Further guidelines ,9.401616391774026E-5
+dtd technology |DTD technology ,9.401616391774026E-5
+fast word processor |fast word processor ,9.401616391774026E-5
+strong support |strong support ,9.401616391774026E-5
+alternative encoding mechanism |alternative encoding mechanism ,9.401616391774026E-5
+windows form |Windows Forms ,9.401616391774026E-5
+misplaced vowel |misplaced vowels ,9.401616391774026E-5
+b c oxygen |b c oXygen ,9.401616391774026E-5
+data-binding apis |data-binding APIs ,9.401616391774026E-5
+altova stylevision |Altova StyleVision ,9.401616391774026E-5
+no such claim |no such claim ,9.401616391774026E-5
+sax parsing code |SAX parsing code ,9.401616391774026E-5
+abstract syntax |Abstract Syntax ,9.401616391774026E-5
+further design work |Further design work ,9.401616391774026E-5
+shell script |shell scripts ,9.401616391774026E-5
+scala |Scala ,9.401616391774026E-5
+search xml filename extension |search XML Filename extension ,9.401616391774026E-5
+neowin |Neowin ,9.401616391774026E-5
+office open xml software v |Office Open XML software v ,9.401616391774026E-5
+amazon |Amazon ,9.401616391774026E-5
+contentiou |contentious ,9.401616391774026E-5
+dmoz list |DMOZ List ,9.401616391774026E-5
+ercs xml and html |ERCS XML and HTML ,9.401616391774026E-5
+biff format |BIFF format ,9.401616391774026E-5
+nextoffice writer |NextOffice Writer ,9.401616391774026E-5
+common example |common example ,9.401616391774026E-5
+ebcdic platform |EBCDIC platforms ,9.401616391774026E-5
+built-in word processing program |built-in word processing program ,9.401616391774026E-5
+email dataviz word |email DataViz Word ,9.401616391774026E-5
+key construct |key constructs ,9.401616391774026E-5
+charter |charter ,9.401616391774026E-5
+laugh |laughs ,9.401616391774026E-5
+small number |small number ,9.401616391774026E-5
+fixed delimiter set and adopts unicode |fixed delimiter set and adopts Unicode ,9.401616391774026E-5
+well-formed text |well-formed text ,9.401616391774026E-5
+iso iec international standard |ISO IEC International Standard ,9.401616391774026E-5
+academic version |Academic version ,9.401616391774026E-5
+intuitive object model |intuitive object model ,9.401616391774026E-5
+xml document and programming-language object |XML document and programming-language objects ,9.401616391774026E-5
+native python module |native python module ,9.401616391774026E-5
+common use |common use ,9.401616391774026E-5
+neowiki neooffice org |neowiki neooffice org ,9.401616391774026E-5
+elimination |elimination ,9.401616391774026E-5
+citation formatting |citation formatting ,9.401616391774026E-5
+populating xlsx and docx format |populating xlsx and docx formats ,9.401616391774026E-5
+b quickoffice |b QuickOffice ,9.401616391774026E-5
+fairly lengthy list |fairly lengthy list ,9.401616391774026E-5
+html file format |HTML file formats ,9.401616391774026E-5
+lexical event-driven interface |lexical event-driven interface ,9.401616391774026E-5
+detection edit |detection edit ,9.401616391774026E-5
+document generation and reporting toolkit |document generation and reporting toolkit ,9.401616391774026E-5
+adobe buzzword beta |Adobe Buzzword beta ,9.401616391774026E-5
+developers support reading |developers support reading ,9.401616391774026E-5
+deletion |deletion ,9.401616391774026E-5
+microsoft specializing |Microsoft specializing ,9.401616391774026E-5
+base standard |base standard ,9.401616391774026E-5
+msdn microsoft |Msdn microsoft ,9.401616391774026E-5
+b c d e f |b c d e f ,9.401616391774026E-5
+office-productivity tool |office-productivity tools ,9.401616391774026E-5
+google sheets app |Google Sheets app ,9.401616391774026E-5
+use case |use cases ,9.401616391774026E-5
+web archive org |Web archive org ,9.401616391774026E-5
+style sheet |Style Sheets ,9.401616391774026E-5
+editing word file |Editing Word Files ,9.401616391774026E-5
+comments edit comment |Comments edit Comments ,9.401616391774026E-5
+element-based syntax |element-based syntax ,9.401616391774026E-5
+xml protocol comparison |XML Protocol Comparison ,9.401616391774026E-5
+tree view editor |Tree View editor ,9.401616391774026E-5
+wordsdk |WordSDK ,9.401616391774026E-5
+unix abisource |Unix AbiSource ,9.401616391774026E-5
+rtf |RTF ,9.401616391774026E-5
+well-formed xml attribute note |well-formed XML attribute note ,9.401616391774026E-5
+email |email ,9.401616391774026E-5
+motion limited |Motion Limited ,9.401616391774026E-5
+single xml element |single XML element ,9.401616391774026E-5
+office open xml wordprocessingml format |Office Open XML WordprocessingML format ,9.401616391774026E-5
+newer schema language |newer schema language ,9.401616391774026E-5
+office open xml specification |Office Open XML specification ,9.401616391774026E-5
+programming interfaces edit |Programming interfaces edit ,9.401616391774026E-5
+net and java component |NET and Java component ,9.401616391774026E-5
+typed local variable |typed local variables ,9.401616391774026E-5
+xlsx format |xlsx formats ,9.401616391774026E-5
+dot-notation |dot-notation ,9.401616391774026E-5
+element name |element names ,9.401616391774026E-5
+appointment |appointment ,9.401616391774026E-5
+myth |Myth ,9.401616391774026E-5
+first version |first version ,9.401616391774026E-5
+encrypting xml content |encrypting XML content ,9.401616391774026E-5
+clarity |clarity ,9.401616391774026E-5
+simple word processor |simple word processor ,9.401616391774026E-5
+www atlantiswordprocessor |www AtlantisWordProcessor ,9.401616391774026E-5
+xml base attribute |xml base attribute ,9.401616391774026E-5
+usable alternative |usable alternatives ,9.401616391774026E-5
+birth |Birth ,9.401616391774026E-5
+web based presentation app |web based presentation app ,9.401616391774026E-5
+xlsx beta support |xlsx beta support ,9.401616391774026E-5
+sw xml-sw |SW XML-SW ,9.401616391774026E-5
+viewing and printing |viewing and printing ,9.401616391774026E-5
+ppsx et pptx |PPSx et PPTx ,9.401616391774026E-5
+confusion |confusion ,9.401616391774026E-5
+topic |topic ,9.401616391774026E-5
+corrupt pptx format file |corrupt PPTX format files ,9.401616391774026E-5
+glyph |glyphs ,9.401616391774026E-5
+microsoft net framework use |Microsoft NET Framework use ,9.401616391774026E-5
+random |random ,9.401616391774026E-5
+nextoffice calc |NextOffice Calc ,9.401616391774026E-5
+resource description framework rdf |Resource Description Framework RDF ,9.401616391774026E-5
+xls file |XLS files ,9.401616391774026E-5
+specifically excluded control character |specifically excluded control characters ,9.401616391774026E-5
+xml information set infoset |XML Information Set infoset ,9.401616391774026E-5
+www gnome org |www gnome org ,9.401616391774026E-5
+apple pro tips editing word file |Apple Pro Tips Editing Word Files ,9.401616391774026E-5
+text conversion |text conversion ,9.401616391774026E-5
+range |range ,9.401616391774026E-5
+null character |null character ,9.401616391774026E-5
+specific version |specific version ,9.401616391774026E-5
+b c http infocenters lotus com domino index |b c http infocenters lotus com domino index ,9.401616391774026E-5
+open standard format |open standard format ,9.401616391774026E-5
+xmpp |XMPP ,9.401616391774026E-5
+non-corrupt xlsx file worksheet |non-corrupt XLSX file worksheets ,9.401616391774026E-5
+reading writing |reading writing ,9.401616391774026E-5
+treewalker |TreeWalker ,9.401616391774026E-5
+microsoft excel xml spreadsheet document |Microsoft Excel XML spreadsheet documents ,9.401616391774026E-5
+curie eme inkml json-ld mse rif scxml smil timesheet |CURIE EME InkML JSON-LD MSE RIF SCXML SMIL Timesheets ,9.401616391774026E-5
+delimiter |delimiters ,9.401616391774026E-5
+following limitation |following limitations ,9.401616391774026E-5
+semi-colon delimited list |semi-colon delimited list ,9.401616391774026E-5
+notable contrast |notable contrast ,9.401616391774026E-5
+disabled people |disabled people ,9.401616391774026E-5
+annex |Annex ,9.401616391774026E-5
+office open xml spreadsheet file format |Office Open XML spreadsheet file formats ,9.401616391774026E-5
+web-based spreadsheet application |web-based spreadsheet application ,9.401616391774026E-5
+aspose words product family |Aspose Words product family ,9.401616391774026E-5
+mark |mark ,9.401616391774026E-5
+standard public entity set |standard public entity sets ,9.401616391774026E-5
+presentation |presentations ,9.401616391774026E-5
+gnome org |gnome org ,9.401616391774026E-5
+official release |official release ,9.401616391774026E-5
+unique identifier |unique identifiers ,9.401616391774026E-5
+comments-- international use edit |comments-- International use edit ,9.401616391774026E-5
+infoset augmentation facility |infoset augmentation facility ,9.401616391774026E-5
+mac os x standalone apple |Mac OS X Standalone Apple ,9.401616391774026E-5
+software support |software support ,9.401616391774026E-5
+wpf |WPF ,9.401616391774026E-5
+docx and xlsx file |DOCX and XLSX files ,9.401616391774026E-5
+sgml standard |SGML standard ,9.401616391774026E-5
+technical debate |Technical debate ,9.401616391774026E-5
+current indigo eclipse |current Indigo Eclipse ,9.401616391774026E-5
+java support |Java support ,9.401616391774026E-5
+sueann ambron |Sueann Ambron ,9.401616391774026E-5
+europe araya converter |Europe Araya Converter ,9.401616391774026E-5
+service pack release |service pack release ,9.401616391774026E-5
+web site |web sites ,9.401616391774026E-5
+xml unicode code point |XML Unicode code points ,9.401616391774026E-5
+document fragment |document fragments ,9.401616391774026E-5
+opensource editor |opensource editor ,9.401616391774026E-5
+grammar-based validation dtds |grammar-based validation DTDs ,9.401616391774026E-5
+interest group mailing list and issue |Interest Group mailing list and issues ,9.401616391774026E-5
+document type |document type ,9.401616391774026E-5
+microsoft excel compatible spreadsheet component |Microsoft Excel Compatible Spreadsheet Component ,9.401616391774026E-5
+sgml wg |SGML WG ,9.401616391774026E-5
+first working draft |first Working Draft ,9.401616391774026E-5
+github powertool |github PowerTools ,9.401616391774026E-5
+office file |Office files ,9.401616391774026E-5
+internal components element |internal components elements ,9.401616391774026E-5
+low-level detail |low-level detail ,9.401616391774026E-5
+computer |Computer ,9.401616391774026E-5
+text encoding initiative tei |Text Encoding Initiative TEI ,9.401616391774026E-5
+vendor support |vendor support ,9.401616391774026E-5
+google unveils slide |Google Unveils Slides ,9.401616391774026E-5
+php class |PHP classes ,9.401616391774026E-5
+native python module allowing creation |native Python module allowing creation ,9.401616391774026E-5
+then-new world wide web |then-new World Wide Web ,9.401616391774026E-5
+error-handling edit main article |error-handling edit Main article ,9.401616391774026E-5
+different human language |different human languages ,9.401616391774026E-5
+risp lisp sgml text processor |RISP LISP SGML text processor ,9.401616391774026E-5
+inside comment |inside comments ,9.401616391774026E-5
+computerworld interview |ComputerWorld interview ,9.401616391774026E-5
+software development engineer |software development engineer ,9.401616391774026E-5
+docx format |docx formats ,9.401616391774026E-5
+markup languages open formats presentation layer protocol |Markup languages Open formats Presentation layer protocols ,9.401616391774026E-5
+intermediate parsed result |intermediate parsed results ,9.401616391774026E-5
+large xml database |large XML databases ,9.401616391774026E-5
+history |history ,9.401616391774026E-5
+parent element |parent elements ,9.401616391774026E-5
+xml binding jaxb |XML Binding JAXB ,9.401616391774026E-5
+chinese armenian |Chinese Armenian ,9.401616391774026E-5
+end element |end element ,9.401616391774026E-5
+sending xml |sending XML ,9.401616391774026E-5
+docxfactory project |DocxFactory Project ,9.401616391774026E-5
+system xml xmlreader |System Xml XmlReader ,9.401616391774026E-5
+biztalk server supports office open xml |BizTalk Server Supports Office Open XML ,9.401616391774026E-5
+pptx filetype |PPTX filetypes ,9.401616391774026E-5
+syntax highlighting |Syntax highlighting ,9.401616391774026E-5
+apache openoffice |Apache OpenOffice ,9.401616391774026E-5
+xml application layer protocol |XML Application layer protocols ,9.401616391774026E-5
+document component |document components ,9.401616391774026E-5
+-- and end |-- and end ,9.401616391774026E-5
+media types application xml |media types application xml ,9.401616391774026E-5
+odt |odt ,9.401616391774026E-5
+uniscope |Uniscope ,9.401616391774026E-5
+office open xml word processing file format |Office Open XML word processing file formats ,9.401616391774026E-5
+allowable parent child relationship |allowable parent child relationships ,9.401616391774026E-5
+quark publishing platform |Quark Publishing Platform ,9.401616391774026E-5
+adobe actionscript |Adobe Actionscript ,9.401616391774026E-5
+generality and usability |generality and usability ,9.401616391774026E-5
+linear traversal |linear traversal ,9.401616391774026E-5
+go-oo impress |Go-oo Impress ,9.401616391774026E-5
+soap and rest |SOAP and REST ,9.401616391774026E-5
+iso-related china japan korea document processing expert group |ISO-related China Japan Korea Document Processing expert group ,9.401616391774026E-5
+dom node |DOM nodes ,9.401616391774026E-5
+additional xml development tool |Additional XML development tools ,9.401616391774026E-5
+peculiar feature |peculiar features ,9.401616391774026E-5
+unicode-defined encoding |Unicode-defined encodings ,9.401616391774026E-5
+microsoft office office open xml |Microsoft Office Office Open XML ,9.401616391774026E-5
+open xml edit powertool |Open XML edit PowerTools ,9.401616391774026E-5
+cyrillic letter |Cyrillic letters ,9.401616391774026E-5
+schema languages edit |schema languages edit ,9.401616391774026E-5
+xml schema edit |XML Schema edit ,9.401616391774026E-5
+recent event |recent events ,9.401616391774026E-5
+x xml database |X XML databases ,9.401616391774026E-5
+fennell |Fennell ,9.401616391774026E-5
+india news software iso |India News Software ISO ,9.401616391774026E-5
+libreoffice opendocument |LibreOffice OpenDocument ,9.401616391774026E-5
+definition text-based itu-t |definition text-based ITU-T ,9.401616391774026E-5
+extended reference concrete syntax ercs project |Extended Reference Concrete Syntax ERCS project ,9.401616391774026E-5
+assembly product |assembly product ,9.401616391774026E-5
+document object model parser |Document Object Model parser ,9.401616391774026E-5
+xml-based syntax |XML-based syntax ,9.401616391774026E-5
+defining datatype |defining datatypes ,9.401616391774026E-5
+b http www neowin |b http www neowin ,9.401616391774026E-5
+liquid xml editor editing |Liquid XML Editor editing ,9.401616391774026E-5
+convenience |convenience ,9.401616391774026E-5
+microsoft document file |Microsoft document file ,9.401616391774026E-5
+partner solution marketplace |Partner Solution MarketPlace ,9.401616391774026E-5
+import |imports ,9.401616391774026E-5
+xml document node |XML document nodes ,9.401616391774026E-5
+search office open xml office open xml file format |search Office Open XML Office Open XML file formats ,9.401616391774026E-5
+japanese-language source |Japanese-language sources ,9.401616391774026E-5
+xml format sdk edit |XML Format SDK edit ,9.401616391774026E-5
+python programming language |Python programming language ,9.401616391774026E-5
+trial period price |trial period Price ,9.401616391774026E-5
+interleaf |Interleaf ,9.401616391774026E-5
+b c oxygenoffice |b c OxygenOffice ,9.401616391774026E-5
+sun solutions proprietary yes bean |Sun Solutions Proprietary Yes Bean ,9.401616391774026E-5
+vice versa openxml document viewer |vice versa OpenXML Document Viewer ,9.401616391774026E-5
+individual xml file |individual XML files ,9.401616391774026E-5
+xml working group |XML Working Group ,9.401616391774026E-5
+minor revision |minor revisions ,9.401616391774026E-5
+xs schema element |xs schema element ,9.401616391774026E-5
+criticism edit xml |Criticism edit XML ,9.401616391774026E-5
+open and free document file |open and free document file ,9.401616391774026E-5
+human-readable and machine-readable |human-readable and machine-readable ,9.401616391774026E-5
+xml based syntax |XML based syntax ,9.401616391774026E-5
+algorithm |algorithm ,9.401616391774026E-5
+office compatibility pack review |Office Compatibility Pack Review ,9.401616391774026E-5
+b c iphone user |b c iPhone User ,9.401616391774026E-5
+document encoding |document encoding ,9.401616391774026E-5
+pierre geneve |Pierre Geneves ,9.401616391774026E-5
+similar notation |Similar notations ,9.401616391774026E-5
+encoding problem |encoding problems ,9.401616391774026E-5
+proposal |proposals ,9.401616391774026E-5
+microsoft office docx document |Microsoft Office Docx documents ,9.401616391774026E-5
+callback |callbacks ,9.401616391774026E-5
+markup-delineation role |markup-delineation roles ,9.401616391774026E-5
+educational user |Educational users ,9.401616391774026E-5
+chinese armenian and cyrillic character |Chinese Armenian and Cyrillic characters ,9.401616391774026E-5
+web-based word processor and spreadsheet application |web-based word processor and spreadsheet application ,9.401616391774026E-5
+nxml-mode current gnu gpl |nxml-mode current GNU GPL ,9.401616391774026E-5
+wordprocessingml support |WordprocessingML Support ,9.401616391774026E-5
+b c open xml package explorer release |b c Open XML Package Explorer Release ,9.401616391774026E-5
+pptx edit |pptx edit ,9.401616391774026E-5
+websgml adaptation |WebSGML Adaptations ,9.401616391774026E-5
+suitable name character |suitable name characters ,9.401616391774026E-5
+tokyo |Tokyo ,9.401616391774026E-5
+japanese-language script ja |Japanese-language script ja ,9.401616391774026E-5
+schema system |schema systems ,9.401616391774026E-5
+no explicit support |no explicit support ,9.401616391774026E-5
+neooffice file format |NeoOffice File Formats ,9.401616391774026E-5
+office open xml word document |Office Open XML Word documents ,9.401616391774026E-5
+office microsoft |office microsoft ,9.401616391774026E-5
+asp net |ASP NET ,9.401616391774026E-5
+specific object |specific objects ,9.401616391774026E-5
+information item |information items ,9.401616391774026E-5
+physical structures element |physical structures elements ,9.401616391774026E-5
+labs adobe |Labs adobe ,9.401616391774026E-5
+non-validating depending |non-validating depending ,9.401616391774026E-5
+b c neooffice |b c NeoOffice ,9.401616391774026E-5
+stack |stack ,9.401616391774026E-5
+space character |space character ,9.401616391774026E-5
+syntactic support |syntactic support ,9.401616391774026E-5
+limited office open xml support |limited Office Open XML support ,9.401616391774026E-5
+equivalent |equivalent ,9.401616391774026E-5
+mgml minimal generalized markup language |MGML Minimal Generalized Markup Language ,9.401616391774026E-5
+distinct object |distinct objects ,9.401616391774026E-5
+core-xml specification |core-XML specifications ,9.401616391774026E-5
+staff |staff ,9.401616391774026E-5
+java element |Java elements ,9.401616391774026E-5
+rise |rise ,9.401616391774026E-5
+encoding header |encoding header ,9.401616391774026E-5
+microsoft public license ms-pl |Microsoft Public License Ms-PL ,9.401616391774026E-5
+microsoft reciprocal license ms-rl |Microsoft Reciprocal License Ms-RL ,9.401616391774026E-5
+stricter requirement |stricter requirements ,9.401616391774026E-5
+special symbolic meaning |special symbolic meaning ,9.401616391774026E-5
+different way |different ways ,9.401616391774026E-5
+appleexaminer |appleexaminer ,9.401616391774026E-5
+xml com publicly available software |xml com Publicly Available Software ,9.401616391774026E-5
+perl based command line utility |perl based command line utility ,9.401616391774026E-5
+binary xml ebml wbxml category xml category xml-based standard |Binary XML EBML WBXML Category XML Category XML-based standards ,9.401616391774026E-5
+application programming interface |application programming interfaces ,9.401616391774026E-5
+string -- double-hyphen |string -- double-hyphen ,9.401616391774026E-5
+xslt and xquery |XSLT and XQuery ,9.401616391774026E-5
+pull-parsing code |Pull-parsing code ,9.401616391774026E-5
+xml com xml serialization |XML com XML Serialization ,9.401616391774026E-5
+foreword |foreword ,9.401616391774026E-5
+src and alt |src and alt ,9.401616391774026E-5
+processing instruction target |processing instruction target ,9.401616391774026E-5
+default angle-bracket syntax |default angle-bracket syntax ,9.401616391774026E-5
+special syntax character |special syntax characters ,9.401616391774026E-5
+category xml software |category XML software ,9.401616391774026E-5
+quark author web edition |Quark Author Web Edition ,9.401616391774026E-5
+validating or non-validating depending |validating or non-validating depending ,9.401616391774026E-5
+single root element |single root element ,9.401616391774026E-5
+xml schemas comparison |XML schemas Comparison ,9.401616391774026E-5
+parent-child relationship |parent-child relationships ,9.401616391774026E-5
+open source wordprocessor gpl license |open source wordprocessor GPL license ,9.401616391774026E-5
+elementtree iterparse |ElementTree iterparse ,9.401616391774026E-5
+intense dispute |intense dispute ,9.401616391774026E-5
+bean basic support |Bean basic support ,9.401616391774026E-5
+preliminary research |preliminary research ,9.401616391774026E-5
+substantial work |substantial work ,9.401616391774026E-5
+interface-oriented application programming interface |interface-oriented application programming interface ,9.401616391774026E-5
+java architecture |Java Architecture ,9.401616391774026E-5
+layout engine |layout engines ,9.401616391774026E-5
+valid comment |valid comment ,9.401616391774026E-5
+local link |local link ,9.401616391774026E-5
+absence |absence ,9.401616391774026E-5
+microsoft releasing ooxml sdk |Microsoft releasing OOXML SDK ,9.401616391774026E-5
+entity expansion |entity expansion ,9.401616391774026E-5
+overview |overview ,9.401616391774026E-5
+chinese text |Chinese text ,9.401616391774026E-5
+robustness |robustness ,9.401616391774026E-5
+report engine |report engine ,9.401616391774026E-5
+related specification |related specifications ,9.401616391774026E-5
+hold abiword |Hold AbiWord ,9.401616391774026E-5
+encounter |encounters ,9.401616391774026E-5
+dtd support |DTD support ,9.401616391774026E-5
+xml applications and initiative |XML Applications and Initiatives ,9.401616391774026E-5
+representation processing instruction |representation processing instructions ,9.401616391774026E-5
+sandeep kumar |Sandeep Kumar ,9.401616391774026E-5
+nuance communication |Nuance Communications ,9.401616391774026E-5
+association |Association ,9.401616391774026E-5
+tag name |Tag names ,9.401616391774026E-5
+higher-level method |higher-level methods ,9.401616391774026E-5
+core syntax |Core Syntax ,9.401616391774026E-5
+binary infoset |binary infoset ,9.401616391774026E-5
+no section |No Sections ,9.401616391774026E-5
+project bray |project Bray ,9.401616391774026E-5
+www aspose com community blogs aspose |www aspose com community blogs aspose ,9.401616391774026E-5
+formats data modeling |formats Data modeling ,9.401616391774026E-5
+aspose slide |Aspose Slides ,9.401616391774026E-5
+verbosity |verbosity ,9.401616391774026E-5
+regular expression syntax |regular expression syntax ,9.401616391774026E-5
+easily open |easily open ,9.401616391774026E-5
+subscription start |Subscription Starts ,9.401616391774026E-5
+openpyxl |openpyxl ,9.401616391774026E-5
+openxml sdk |OpenXML SDK ,9.401616391774026E-5
+phpdocx |PHPDocX ,9.401616391774026E-5
+office open xml software v t e |Office Open XML software v t e ,9.401616391774026E-5
+desktop publishing dtp |desktop publishing DTP ,9.401616391774026E-5
+bean creation |bean creation ,9.401616391774026E-5
+interactivity |interactivity ,9.401616391774026E-5
+cyrillic character |Cyrillic characters ,9.401616391774026E-5
+single collection |single collection ,9.401616391774026E-5
+madcap blaze |MadCap Blaze ,9.401616391774026E-5
+sources edit xml |Sources edit XML ,9.401616391774026E-5
+officeviewer |Officeviewers ,9.401616391774026E-5
+skunkwork |skunkworks ,9.401616391774026E-5
+unicode code point |Unicode code point ,9.401616391774026E-5
+server |server ,9.401616391774026E-5
+hundred |hundreds ,9.401616391774026E-5
+unix timeline usage share feature |Unix Timeline Usage share Features ,9.401616391774026E-5
+apple iwork number |Apple iWork Numbers ,9.401616391774026E-5
+supermagnu |Supermagnus ,9.401616391774026E-5
+document file |document file ,9.401616391774026E-5
+out-of-date information |out-of-date information ,9.401616391774026E-5
+automated translation |automated translation ,9.401616391774026E-5
+army missile command iads hypertext system |Army Missile Command IADS hypertext system ,9.401616391774026E-5
+xml sax |XML SAX ,9.401616391774026E-5
+wine |Wine ,9.401616391774026E-5
+gpl yes standalone yes yes yes no |GPL Yes Standalone Yes Yes Yes No ,9.401616391774026E-5
+office open xml presentation |Office Open XML presentations ,9.401616391774026E-5
+xml extensible markup language xml |XML Extensible Markup Language XML ,9.401616391774026E-5
+validation edit |validation edit ,9.401616391774026E-5
+b mobile system |b Mobile Systems ,9.401616391774026E-5
+schema type |schema types ,9.401616391774026E-5
+registry |registry ,9.401616391774026E-5
+software development consulting service |Software Development Consulting Services ,9.401616391774026E-5
+multiple value |multiple values ,9.401616391774026E-5
+html and pdf format |HTML and PDF formats ,9.401616391774026E-5
+comprehensive set |comprehensive set ,9.401616391774026E-5
+data and metadata element |data and metadata elements ,9.401616391774026E-5
+lower-level method |lower-level methods ,9.401616391774026E-5
+updating |updating ,9.401616391774026E-5
+limited support |limited support ,9.401616391774026E-5
+effective |Effective ,9.401616391774026E-5
+altova mapforce |Altova MapForce ,9.401616391774026E-5
+java classpath |java classpath ,9.401616391774026E-5
+wikidata articles prone |Wikidata Articles prone ,9.401616391774026E-5
+compile |compile ,9.401616391774026E-5
+well-formed |Well-formed ,9.401616391774026E-5
+multiple file |multiple files ,9.401616391774026E-5
+help authoring tool |Help authoring tool ,9.401616391774026E-5
+gpl yes incomplete support go-oo calc |GPL Yes Incomplete support Go-oo Calc ,9.401616391774026E-5
+iso dsdl document schema description language |ISO DSDL Document Schema Description Languages ,9.401616391774026E-5
+open xml community |open XML Community ,9.401616391774026E-5
+b kingsoft office |b Kingsoft Office ,9.401616391774026E-5
+u fffe and u ffff |U FFFE and U FFFF ,9.401616391774026E-5
+scientific american |Scientific American ,9.401616391774026E-5
+textedit starting |TextEdit starting ,9.401616391774026E-5
+poi apache org |Poi apache org ,9.401616391774026E-5
+custom |custom ,9.401616391774026E-5
+upgrade start |Upgrade Starts ,9.401616391774026E-5
+crl http http |CRL HTTP HTTPS ,9.401616391774026E-5
+letter |letters ,9.401616391774026E-5
+discover |discovers ,9.401616391774026E-5
+class |classes ,9.401616391774026E-5
+apple iwork page |Apple iWork Pages ,9.401616391774026E-5
+sense |sense ,9.401616391774026E-5
+dead external links article |dead external links Articles ,9.401616391774026E-5
+specific problem |specific problems ,9.401616391774026E-5
+dtd designer |DTD designers ,9.401616391774026E-5
+unstructured format |unstructured formats ,9.401616391774026E-5
+rest |REST ,9.401616391774026E-5
+xml schema datatype |XML Schema Datatypes ,9.401616391774026E-5
+docx and xlsx format |docx and xlsx formats ,9.401616391774026E-5
+xliff converts open xml |XLIFF converts Open XML ,9.401616391774026E-5
+example sax and stax |example SAX and StAX ,9.401616391774026E-5
+push pull |Push Pull ,9.401616391774026E-5
+words number |words numbers ,9.401616391774026E-5
+typical xml apis |Typical XML APIs ,9.401616391774026E-5
+paradocx |paradocx ,9.401616391774026E-5
+google support |Google support ,9.401616391774026E-5
+mistake |Mistakes ,9.401616391774026E-5
+machine-readable |machine-readable ,9.401616391774026E-5
+simpler definition |simpler definition ,9.401616391774026E-5
+odf word processing file |ODF word processing files ,9.401616391774026E-5
+atlantiswordprocessor |AtlantisWordProcessor ,9.401616391774026E-5
+video game console |video game console ,9.401616391774026E-5
+corrupt xlsx format file |corrupt XLSX format files ,9.401616391774026E-5
+book |book ,9.401616391774026E-5
+course slide |Course Slides ,9.401616391774026E-5
+dsdl schema language |DSDL schema languages ,9.401616391774026E-5
+office open xml text import filter |Office Open XML text import filter ,9.401616391774026E-5
+m murata |M Murata ,9.401616391774026E-5
+office open xml wordprocessingml file |Office Open XML WordprocessingML files ,9.401616391774026E-5
+xsl formatting object |XSL Formatting Objects ,9.401616391774026E-5
+mozilla foundation |Mozilla Foundation ,9.401616391774026E-5
+aspose cell |Aspose Cells ,9.401616391774026E-5
+notion |notion ,9.401616391774026E-5
+edit comparison |edit Comparison ,9.401616391774026E-5
+gpl yes adobe buzzword beta |GPL Yes Adobe Buzzword beta ,9.401616391774026E-5
+self-describing xml pdf |Self-Describing XML PDF ,9.401616391774026E-5
+aspect |aspects ,9.401616391774026E-5
+exhaustive list |exhaustive list ,9.401616391774026E-5
+rich datatyping system |rich datatyping system ,9.401616391774026E-5
+simple syntactic rule |simple syntactic rules ,9.401616391774026E-5
+open xml-bestandsindeling voor |Open XML-bestandsindeling voor ,9.401616391774026E-5
+xml processing api |XML processing API ,9.401616391774026E-5
+predate unicode |predate Unicode ,9.401616391774026E-5
+software product line |Software Product Line ,9.401616391774026E-5
+technical lead |Technical Lead ,9.401616391774026E-5
+spire xls http www e-iceblue com introduce excel-for-net-introduce html |Spire XLS http www e-iceblue com Introduce excel-for-net-introduce html ,9.401616391774026E-5
+future version |future versions ,9.401616391774026E-5
+no information |no information ,9.401616391774026E-5
+no exception |no exceptions ,9.401616391774026E-5
+sgml unchanged |SGML unchanged ,9.401616391774026E-5
+wikibook |Wikibooks ,9.401616391774026E-5
+v t e |v t e ,9.401616391774026E-5
+short burst |short burst ,9.401616391774026E-5
+complex grammar |complex grammars ,9.401616391774026E-5
+sequence |sequence ,9.401616391774026E-5
+html transformation |HTML transformation ,9.401616391774026E-5
+supplementary plane |supplementary planes ,9.401616391774026E-5
+format markup language |format Markup language ,9.401616391774026E-5
+office open xml schema |Office Open XML schema ,9.401616391774026E-5
+windows nextoffice well develop international ltd proprietary yes import |Windows NextOffice Well Develop International Ltd Proprietary Yes Import ,9.401616391774026E-5
+techtree |Techtree ,9.401616391774026E-5
+xml sdk roadmap |XML SDK roadmap ,9.401616391774026E-5
+office open-xml-sdk |Office Open-XML-SDK ,9.401616391774026E-5
+key terminology edit |Key terminology edit ,9.401616391774026E-5
+java excel component |Java Excel Components ,9.401616391774026E-5
+bmp |BMP ,9.401616391774026E-5
+totality content server |Totality Content Server ,9.401616391774026E-5
+iso hytime |ISO HyTime ,9.401616391774026E-5
+guidance |guidance ,9.401616391774026E-5
+office office suite |Office office suite ,9.401616391774026E-5
+line-ending character |line-ending characters ,9.401616391774026E-5
+sun microsystems engineer jon bosak |Sun Microsystems engineer Jon Bosak ,9.401616391774026E-5
+open source cmdlet |open source cmdlets ,9.401616391774026E-5
+john sculley |John Sculley ,9.401616391774026E-5
+word or pdf document |Word or PDF documents ,9.401616391774026E-5
+built-in |built-in ,9.401616391774026E-5
+dom implementation |DOM implementations ,9.401616391774026E-5
+beta status |beta status ,9.401616391774026E-5
+washington university law review |Washington University Law Review ,9.401616391774026E-5
+docx edit |docx edit ,9.401616391774026E-5
+xml processor insert |XML processor inserts ,9.401616391774026E-5
+office client interoperability |Office client interoperability ,9.401616391774026E-5
+end tag |end tags ,9.401616391774026E-5
+python api |Python API ,9.401616391774026E-5
+data binding edit |Data binding edit ,9.401616391774026E-5
+reason |reason ,9.401616391774026E-5
+character encoding |Character Encodings ,9.401616391774026E-5
+byte |bytes ,9.401616391774026E-5
+entity and character reference |entity and character references ,9.401616391774026E-5
+ibm wp zos doc wpf dc |ibm wp zos doc wpf dcs ,9.401616391774026E-5
+xml application |XML Applications ,9.401616391774026E-5
+listed |listed ,9.401616391774026E-5
+internet draft |Internet Drafts ,9.401616391774026E-5
+regular grammar |regular grammars ,9.401616391774026E-5
+reading writing and converting xlsx file |reading writing and converting XLSX files ,9.401616391774026E-5
+open source library apache license |open source library Apache license ,9.401616391774026E-5
+generalized markup applications slim structured language |Generalized Markup Applications SLIM Structured Language ,9.401616391774026E-5
+net library |NET library ,9.401616391774026E-5
+document type definition edit |Document Type Definition edit ,9.401616391774026E-5
+www textglow net |www textglow net ,9.401616391774026E-5
+hexadecimal numeric character reference |hexadecimal numeric character references ,9.401616391774026E-5
+palmos premium edition |PalmOS Premium Edition ,9.401616391774026E-5
+no matter |no matter ,9.401616391774026E-5
+binary encoding |binary encoding ,9.401616391774026E-5
+silverlight plugin |Silverlight plugin ,9.401616391774026E-5
+mozilla developer center |Mozilla Developer Center ,9.401616391774026E-5
+official standard |official standards ,9.401616391774026E-5
+naming collision |naming collisions ,9.401616391774026E-5
+main change |main changes ,9.401616391774026E-5
+hierarchy |hierarchy ,9.401616391774026E-5
+words numbers and idea |words numbers and ideas ,9.401616391774026E-5
+books spreadsheets chart |books spreadsheets charts ,9.401616391774026E-5
+vendor |vendors ,9.401616391774026E-5
+xml id function |xml id functions ,9.401616391774026E-5
+thesaurus |Thesaurus ,9.401616391774026E-5
+data serialization formats notes edit |data serialization formats Notes edit ,9.401616391774026E-5
+highly structured and relatively unstructured content |highly structured and relatively unstructured content ,9.401616391774026E-5
+cut |Cuts ,9.401616391774026E-5
+matching end-tag |matching end-tag ,9.401616391774026E-5
+ease adoption |Ease Adoption ,9.401616391774026E-5
+abstract data model |abstract data model ,9.401616391774026E-5
+available starting |available starting ,9.401616391774026E-5
+adobe buzzword online word processor |Adobe Buzzword online word processor ,9.401616391774026E-5
+microsoft net framework |Microsoft NET Framework ,9.401616391774026E-5
+initialism |initialism ,9.401616391774026E-5
+word processing format |word processing formats ,9.401616391774026E-5
+ja use mdy date |ja Use mdy dates ,9.401616391774026E-5
+xml dtds |XML DTDs ,9.401616391774026E-5
+restriction |restriction ,9.401616391774026E-5
+corrupt docx format file |corrupt DOCX format files ,9.401616391774026E-5
+permitted unicode character |permitted Unicode characters ,9.401616391774026E-5
+printing |printing ,9.401616391774026E-5
+google slides app |Google Slides app ,9.401616391774026E-5
+syntax rule |syntax rules ,9.401616391774026E-5
+internet media type |Internet Media Types ,9.401616391774026E-5
+web-based slideware application |web-based slideware application ,9.401616391774026E-5
+xml space attribute |xml space attribute ,9.401616391774026E-5
+converting reporting |Converting Reporting ,9.401616391774026E-5
+odf presentation file |ODF presentation files ,9.401616391774026E-5
+computing machinery |Computing Machinery ,9.401616391774026E-5
+resolution |resolution ,9.401616391774026E-5
+subset |subsets ,9.401616391774026E-5
+unique feature |unique features ,9.401616391774026E-5
+go-oo org |go-oo org ,9.401616391774026E-5
+xls document |XLS documents ,9.401616391774026E-5
+vocabulary |vocabulary ,9.401616391774026E-5
+comma or semi-colon delimited list |comma or semi-colon delimited list ,9.401616391774026E-5
+apple iwork keynote |Apple iWork Keynote ,9.401616391774026E-5
+attribute default |attribute defaults ,9.401616391774026E-5
+pdf document |PDF documents ,9.401616391774026E-5
+www copernic com en products desktop-search features-file-type |www copernic com en products desktop-search features-file-types ,9.401616391774026E-5
+plan |plans ,9.401616391774026E-5
+storage or transmission |storage or transmission ,9.401616391774026E-5
+interactive multimedia |Interactive multimedia ,9.401616391774026E-5
+web service |web services ,9.401616391774026E-5
+excel c vb net component |Excel C VB NET component ,9.401616391774026E-5
+start or end element |start or end element ,9.401616391774026E-5
+node object |node objects ,9.401616391774026E-5
+major design decision |major design decisions ,9.401616391774026E-5
+allowed character |allowed characters ,9.401616391774026E-5
+following table |following tables ,9.401616391774026E-5
+relative uri reference |relative URI references ,9.401616391774026E-5
+balinese cham |Balinese Cham ,9.401616391774026E-5
+acrobat |Acrobat ,9.401616391774026E-5
+textual macro |textual macros ,9.401616391774026E-5
+senior product |Senior Product ,9.401616391774026E-5
+communication protocol |communication protocols ,9.401616391774026E-5
+xml recommendation |XML Recommendation ,9.401616391774026E-5
+data type edit xml |data type edit XML ,9.401616391774026E-5
+built-in and free plugin |built-in and free plugins ,9.401616391774026E-5
+conjunct |conjuncts ,9.401616391774026E-5
+search tools edit |Search tools edit ,9.401616391774026E-5
+rudimentary datatype |rudimentary datatypes ,9.401616391774026E-5
+corrupted xlsx file |corrupted XLSX files ,9.401616391774026E-5
+balinese cham or phoenician script |Balinese Cham or Phoenician scripts ,9.401616391774026E-5
+declarative description |declarative description ,9.401616391774026E-5
+spread standardization project regarding east asian documents project |SPREAD Standardization Project Regarding East Asian Documents project ,9.401616391774026E-5
+long printed document |long printed documents ,9.401616391774026E-5
+material |material ,9.401616391774026E-5
+simon |Simon ,9.401616391774026E-5
+minimal architecture |Minimal Architecture ,9.401616391774026E-5
+xml header |XML header ,9.401616391774026E-5
+generic object |generic objects ,9.401616391774026E-5
+element img |element img ,9.401616391774026E-5
+open-source xmlsh application |open-source xmlsh application ,9.401616391774026E-5
+special add-in |special add-in ,9.401616391774026E-5
+wordprocessingml component |WordprocessingML component ,9.401616391774026E-5
+xls xlsx ods csv html pdf xps |XLS XLSX ODS CSV HTML PDF XPS ,9.401616391774026E-5
+softartisans excelwriter |SoftArtisans ExcelWriter ,9.401616391774026E-5
+non-corrupt xlsx file |non-corrupt XLSX files ,9.401616391774026E-5
+escaping edit xml |Escaping edit XML ,9.401616391774026E-5
+vociferous protest |vociferous protests ,9.401616391774026E-5
+standalone nisus software |Standalone Nisus Software ,9.401616391774026E-5
+daisy xml standard |DAISY XML Standards ,9.401616391774026E-5
+corel corporation |Corel Corporation ,9.401616391774026E-5
+microsoft powerpoint |Microsoft PowerPoint ,9.401616391774026E-5
+schema or grammar |schema or grammar ,9.401616391774026E-5
+current item |current item ,9.401616391774026E-5
+conversieprogramma |Conversieprogramma ,9.401616391774026E-5
+english |English ,9.401616391774026E-5
+b c omegat document filter |b c OmegaT Document Filters ,9.401616391774026E-5
+start- and end-tag |start- and end-tags ,9.401616391774026E-5
+programming languages or database |programming languages or databases ,9.401616391774026E-5
+arbitrary fragment |arbitrary fragments ,9.401616391774026E-5
+cam |CAM ,9.401616391774026E-5
+potentially dated statements commons category |potentially dated statements Commons category ,9.401616391774026E-5
+xml emphasize simplicity |XML emphasize simplicity ,9.401616391774026E-5
+softartisans wordwriter |SoftArtisans WordWriter ,9.401616391774026E-5
+colloquially |colloquially ,9.401616391774026E-5
+uniform type identifier |Uniform Type Identifier ,9.401616391774026E-5
+xml easier |XML easier ,9.401616391774026E-5
+apple examiner |Apple Examiner ,9.401616391774026E-5
+recent change |recent changes ,9.401616391774026E-5
+mac observer |Mac Observer ,9.401616391774026E-5
+wikimedia common |Wikimedia Commons ,9.401616391774026E-5
+tag folding intellisense auto completion using schema xsd |Tag Folding Intellisense Auto completion using schema xsd ,9.401616391774026E-5
+first conference |First conference ,9.401616391774026E-5
+d kohn |D Kohn ,9.401616391774026E-5
+heavy use |heavy use ,9.401616391774026E-5
+schemas and validation edit |Schemas and validation edit ,9.401616391774026E-5
+eleven member |eleven members ,9.401616391774026E-5
+iso standard sgml |ISO standard SGML ,9.401616391774026E-5
+day-to-day use |day-to-day use ,9.401616391774026E-5
+brm |BRM ,9.401616391774026E-5
+well-formedness and error-handling edit main article |Well-formedness and error-handling edit Main article ,9.401616391774026E-5
+expressiveness |expressiveness ,9.401616391774026E-5
+go-oo writer |Go-oo Writer ,9.401616391774026E-5
+goal |Goals ,9.401616391774026E-5
+rick jelliffe xml |Rick Jelliffe XML ,9.401616391774026E-5
+common encoding error |common encoding errors ,9.401616391774026E-5
+gpl yes limited support butler office pro x |GPL Yes Limited support Butler Office Pro X ,9.401616391774026E-5
+obsolete information |obsolete information ,9.401616391774026E-5
+ecmascript javascript language |ECMAScript JavaScript language ,9.401616391774026E-5
+evermore software eioffice word processor |Evermore Software EIOffice Word Processor ,9.401616391774026E-5
+gnu lgpl yes eclipse plugin |GNU LGPL Yes Eclipse Plugin ,9.401616391774026E-5
+docentric toolkit |Docentric Toolkit ,9.401616391774026E-5
+grammatical rule |grammatical rules ,9.401616391774026E-5
+rationale |rationales ,9.401616391774026E-5
+extreme |Extremes ,9.401616391774026E-5
+plist file |PLIST files ,9.401616391774026E-5
+fifth edition release |fifth edition release ,9.401616391774026E-5
+newly available information |newly available information ,9.401616391774026E-5
+ampersand |ampersand ,9.401616391774026E-5
+note edit spring tools suite |NOTE edit Spring Tools Suite ,9.401616391774026E-5
+team file sharing acrobat |Team File Sharing Acrobat ,9.401616391774026E-5
+fixed delimiter set |fixed delimiter set ,9.401616391774026E-5
+consulting engagement |consulting engagement ,9.401616391774026E-5
+resource encoding |resource encoding ,9.401616391774026E-5
+common situation |common situation ,9.401616391774026E-5
+text convertor |Text convertor ,9.401616391774026E-5
+method parameter |method parameters ,9.401616391774026E-5
+document generation class library |document generation class library ,9.401616391774026E-5
+group sharing |Group Sharing ,9.401616391774026E-5
+following benefit |following benefits ,9.401616391774026E-5
+pythonoffice |PythonOffice ,9.401616391774026E-5
+kelly |Kelly ,9.401616391774026E-5
+winsight |Winsight ,9.401616391774026E-5
+whitespace character |Whitespace characters ,9.401616391774026E-5
+gemboxsoftware |Gemboxsoftware ,9.401616391774026E-5
+dom document |DOM document ,9.401616391774026E-5
+xml lang attribute |xml lang attribute ,9.401616391774026E-5
+computerworld |Computerworld ,9.401616391774026E-5
+adopts unicode |adopts Unicode ,9.401616391774026E-5
+neooffice dataviz sheet |NeoOffice DataViz Sheet ,9.401616391774026E-5
+five year |Five years ,9.401616391774026E-5
+open xml powertools license |Open XML PowerTools license ,9.401616391774026E-5
+declarative retrieval |declarative retrieval ,9.401616391774026E-5
+processing xml |Processing XML ,9.401616391774026E-5
+output |output ,9.401616391774026E-5
+b docxconverter feature |b docXConverter Features ,9.401616391774026E-5
+start-tag or empty-element tag |start-tag or empty-element tag ,9.401616391774026E-5
+emacs mode |Emacs mode ,9.401616391774026E-5
+s-expression |S-Expressions ,9.401616391774026E-5
+evaluation |evaluation ,9.401616391774026E-5
+datatype framework plug-in |datatype framework plug-ins ,9.401616391774026E-5
+ooxml document |OOXML documents ,9.401616391774026E-5
+presentation software edit |Presentation software edit ,9.401616391774026E-5
+microsoft office compatibility pack |Microsoft Office Compatibility Pack ,9.401616391774026E-5
+powerful word processor |Powerful Word Processor ,9.401616391774026E-5
+availability |availability ,9.401616391774026E-5
+sgml xml dsssl |SGML XML DSSSL ,9.401616391774026E-5
+beginning |beginning ,9.401616391774026E-5
+xml construct |XML constructs ,9.401616391774026E-5
+unicode standard |Unicode standard ,9.401616391774026E-5
+office open xml spreadsheet data format |Office Open XML spreadsheet data format ,9.401616391774026E-5
+wysiwyg editor |WYSIWYG editors ,9.401616391774026E-5
+copernic desktop search |Copernic Desktop Search ,9.401616391774026E-5
+closing keynote |Closing Keynote ,9.401616391774026E-5
+completes tag |completes tags ,9.401616391774026E-5
+jquery xmleditor |jquery xmleditor ,9.401616391774026E-5
+evermore software eioffice spreadsheet |Evermore Software EIOffice Spreadsheet ,9.401616391774026E-5
+b c doctotext |b c DocToText ,9.401616391774026E-5
+tree-traversal apis accessible |Tree-traversal APIs accessible ,9.401616391774026E-5
+implementing interoperability principle |Implementing Interoperability Principles ,9.401616391774026E-5
+xml edit simple api |XML edit Simple API ,9.401616391774026E-5
+schema author |schema author ,9.401616391774026E-5
+characters vs byte |Characters vs Bytes ,9.401616391774026E-5
+image |images ,9.401616391774026E-5
+start- |start- ,9.401616391774026E-5
+transmission |transmission ,9.401616391774026E-5
+plugin support |plugin support ,9.401616391774026E-5
+well-known |well-known ,9.401616391774026E-5
+dtds and xsd |DTDs and XSDs ,9.401616391774026E-5
+example sax |example SAX ,9.401616391774026E-5
+numerous language |Numerous languages ,9.401616391774026E-5
+key syntax marker |key syntax markers ,9.401616391774026E-5
+well-formedness rule |well-formedness rules ,9.401616391774026E-5
+xml document transformation |XML document transformations ,9.401616391774026E-5
+proprietary yes standalone eclipse plugin |Proprietary Yes Standalone Eclipse Plugin ,9.401616391774026E-5
+java vm |Java VM ,9.401616391774026E-5
+compact syntax |compact syntax ,9.401616391774026E-5
+simpler definition and validation framework |simpler definition and validation framework ,9.401616391774026E-5
+general use |general use ,9.401616391774026E-5
+en wikipedia org w index php title category |en wikipedia org w index php title Category ,9.401616391774026E-5
+written element |written elements ,9.401616391774026E-5
+configuration |configuration ,9.401616391774026E-5
+presentation-graphics software |presentation-graphics software ,9.401616391774026E-5
+successor |successor ,9.401616391774026E-5
+open standard |open standards ,9.401616391774026E-5
+b c altova |b c Altova ,9.401616391774026E-5
+deal |Deals ,9.401616391774026E-5
+run-time |run-time ,9.401616391774026E-5
+dom traversal api nodeiterator |DOM traversal API NodeIterator ,9.401616391774026E-5
+presence or absence |presence or absence ,9.401616391774026E-5
+version number |version number ,9.401616391774026E-5
+zoho writer update |Zoho Writer Update ,9.401616391774026E-5
+input and export filter |input and export filters ,9.401616391774026E-5
+handler object |handler object ,9.401616391774026E-5
+hello world |hello world ,9.401616391774026E-5
+flavor |flavors ,9.401616391774026E-5
+msdn blog |MSDN Blogs ,9.401616391774026E-5
+escaped form |escaped form ,9.401616391774026E-5
+b c maxprogram |b c Maxprograms ,9.401616391774026E-5
+xml schema instance |XML Schema instances ,9.401616391774026E-5
+additional step |Additional Steps ,9.401616391774026E-5
+type system |type systems ,9.401616391774026E-5
+phoenician script |Phoenician scripts ,9.401616391774026E-5
+harold |Harold ,9.401616391774026E-5
+office open xml software network effect open |Office Open XML software Network effect Open ,9.401616391774026E-5
+declarative transformation language |Declarative transformation languages ,9.401616391774026E-5
+reasonable result |reasonable result ,9.401616391774026E-5
+editix xml editor |EditiX XML Editor ,9.401616391774026E-5
+verbosity and complexity |verbosity and complexity ,9.401616391774026E-5
+empty-element empty syntax |empty-element empty syntax ,9.401616391774026E-5
+integration |integration ,9.401616391774026E-5
+css class name |CSS class names ,9.401616391774026E-5
+extensible markup language xml current status |Extensible Markup Language XML Current status ,9.401616391774026E-5
+functionality |functionality ,9.401616391774026E-5
+web-based word processor |web-based word processor ,9.401616391774026E-5
+less-than sign |less-than sign ,9.401616391774026E-5
+relax ng |Relax NG ,9.401616391774026E-5
+sonata software |Sonata Software ,9.401616391774026E-5
+disabled person |disabled persons ,9.401616391774026E-5
+publib boulder ibm |Publib boulder ibm ,9.401616391774026E-5
+word processing application |word processing application ,9.401616391774026E-5
+dan connolly |Dan Connolly ,9.401616391774026E-5
+full version start |Full Version Starts ,9.401616391774026E-5
+networked context |networked context ,9.401616391774026E-5
+cyrillic text |Cyrillic text ,9.401616391774026E-5
+export filter |export filters ,9.401616391774026E-5
+character repertoire constraints renaming |character repertoire constraints renaming ,9.401616391774026E-5
+trang |Trang ,9.401616391774026E-5
+text and or markup |text and or markup ,9.401616391774026E-5
+character escape |character escapes ,9.401616391774026E-5
+validation framework |validation framework ,9.401616391774026E-5
+text full |text Full ,9.401616391774026E-5
+b c view topic |b c View topic ,9.401616391774026E-5
+supported file format |supported file formats ,9.401616391774026E-5
+silvercoder |silvercoders ,9.401616391774026E-5
+proprietary old version open source |Proprietary old version open source ,9.401616391774026E-5
+softartisans wiki documentation |SoftArtisans Wiki Documentation ,9.401616391774026E-5
+kikaku itscj ipsj |kikaku itscj ipsj ,9.401616391774026E-5
+haansoft |Haansoft ,9.401616391774026E-5
+b c doug mahugh |b c Doug Mahugh ,9.401616391774026E-5
+microsoft expands list |Microsoft Expands List ,9.401616391774026E-5
+microsoft office team |Microsoft Office team ,9.401616391774026E-5
+series |series ,9.401616391774026E-5
+text format |text format ,9.401616391774026E-5
+entire repertoire |entire repertoire ,9.401616391774026E-5
+laurent |Laurent ,9.401616391774026E-5
+publisher |Publishers ,9.401616391774026E-5
+mac os x iwork apple inc proprietary yes openoffice |Mac OS X iWork Apple Inc Proprietary Yes OpenOffice ,9.401616391774026E-5
+schematron edit schematron |Schematron edit Schematron ,9.401616391774026E-5
+backwards incompatibility |backwards incompatibility ,9.401616391774026E-5
+italics category commons internet portal software portal |italics Category Commons Internet portal Software portal ,9.401616391774026E-5
+translation memory tool |translation memory tool ,9.401616391774026E-5
+multiple output |multiple outputs ,9.401616391774026E-5
+situation |situations ,9.401616391774026E-5
+element-based schema language |element-based schema languages ,9.401616391774026E-5
+internet media type application xml text xml |Internet media type application xml text xml ,9.401616391774026E-5
+first-class data type |first-class data type ,9.401616391774026E-5
+office open xml text format |Office Open XML text format ,9.401616391774026E-5
+supported control character |supported control characters ,9.401616391774026E-5
+manual automatic validation |manual automatic validation ,9.401616391774026E-5
+office open xml computing-related |Office Open XML Computing-related ,9.401616391774026E-5
+uti conformation public text |UTI conformation public text ,9.401616391774026E-5
+n a xmlspy |N A XMLSpy ,9.401616391774026E-5
+denial-of-service attack |denial-of-service attack ,9.401616391774026E-5
+server-side package |server-side packages ,9.401616391774026E-5
+public xml |public xml ,9.401616391774026E-5
+xmlgrid net |XmlGrid net ,9.401616391774026E-5
+following range |following ranges ,9.401616391774026E-5
+spoken document |spoken document ,9.401616391774026E-5
+email and weekly teleconference |email and weekly teleconferences ,9.401616391774026E-5
+including memo |including memos ,9.401616391774026E-5
+windows powershell |Windows PowerShell ,9.401616391774026E-5
+valid xml document |valid XML document ,9.401616391774026E-5
+office open xml wordprocessing file |Office Open XML wordprocessing files ,9.401616391774026E-5
+processor and application |Processor and application ,9.401616391774026E-5
+equivalent text document |equivalent Text documents ,9.401616391774026E-5
+stackoverflow |Stackoverflow ,9.401616391774026E-5
+cross-platform standalone plutext pty |Cross-platform Standalone Plutext Pty ,9.401616391774026E-5
+xml schema editor |XML Schema Editor ,9.401616391774026E-5
+writing excel xml document |writing Excel XML documents ,9.401616391774026E-5
+mixed content |mixed content ,9.401616391774026E-5
+section end-tag |section end-tags ,9.401616391774026E-5
+sgml declaration xml |SGML declaration XML ,9.401616391774026E-5
+loss |loss ,9.401616391774026E-5
+plutext project |Plutext project ,9.401616391774026E-5
+extent |extent ,9.401616391774026E-5
+term xml |term XML ,9.401616391774026E-5
+id attribute |ID attribute ,9.401616391774026E-5
+formats supported |Formats Supported ,9.401616391774026E-5
+example image svg xml |example image svg xml ,9.401616391774026E-5
+xpertdoc studio |Xpertdoc Studio ,9.401616391774026E-5
+unicode repertoire |Unicode repertoire ,9.401616391774026E-5
+spreadsheet software edit |Spreadsheet software edit ,9.401616391774026E-5
+logical and physical structures element |logical and physical structures elements ,9.401616391774026E-5
+transfer syntax |transfer syntax ,9.401616391774026E-5
+removed |Removed ,9.401616391774026E-5
+interest group mailing list |Interest Group mailing list ,9.401616391774026E-5
+named user foxe |named user FOXE ,9.401616391774026E-5
+majority vote |majority vote ,9.401616391774026E-5
+child element |child elements ,9.401616391774026E-5
+supports microsoft windows vista |Supports Microsoft Windows Vista ,9.401616391774026E-5
+infoset augmentation facility and attribute default |infoset augmentation facility and attribute defaults ,9.401616391774026E-5
+extrememl |ExtremeML ,9.401616391774026E-5
+weekly teleconference |weekly teleconferences ,9.401616391774026E-5
+application profile |application profile ,9.401616391774026E-5
+place |place ,9.401616391774026E-5
+iso standard ooxml file |ISO standard OOXML files ,9.401616391774026E-5
+newer feature |newer features ,9.401616391774026E-5
+b plugin version |b Plugin version ,9.401616391774026E-5
+xml information set or xml infoset |XML Information Set or XML infoset ,9.401616391774026E-5
+addison-wesley |Addison-Wesley ,9.401616391774026E-5
+xmlreader |XMLReader ,9.401616391774026E-5
+paid version |paid versions ,9.401616391774026E-5
+cobb group |Cobb Group ,9.401616391774026E-5
+quote character |quote characters ,9.401616391774026E-5
+no organization |no organization ,9.401616391774026E-5
+special feature |special features ,9.401616391774026E-5
+lifehacker |LifeHacker ,9.401616391774026E-5
+yaml |YAML ,9.401616391774026E-5
+populating xlsx |populating xlsx ,9.401616391774026E-5
+reusable wordprocessing component |reusable wordprocessing components ,9.401616391774026E-5
+content assembly mechanism |Content Assembly Mechanism ,9.401616391774026E-5
+first four edition |first four editions ,9.401616391774026E-5
+office open xml presentation format |Office Open XML presentation format ,9.401616391774026E-5
+mobile software |Mobile Software ,9.401616391774026E-5
+equation |equations ,9.401616391774026E-5
+exports microsoft word |exports Microsoft Word ,9.401616391774026E-5
+initiative |Initiatives ,9.401616391774026E-5
+step number |step number ,9.401616391774026E-5
+kristina hooper |Kristina Hooper ,9.401616391774026E-5
+c c library framework sdk |C C library framework sdk ,9.401616391774026E-5
+maclinkplus deluxe first |MacLinkPlus Deluxe First ,9.401616391774026E-5
+schematron assertion language |Schematron assertion language ,9.401616391774026E-5
+expense |expense ,9.401616391774026E-5
+pattern |patterns ,9.401616391774026E-5
+spreadsheet and presentation-graphics software |spreadsheet and presentation-graphics software ,9.401616391774026E-5
+o reilly xml blog |O Reilly XML Blog ,9.401616391774026E-5
+converting xlsx file |converting XLSX files ,9.401616391774026E-5
+reading and writing excel xml document |reading and writing Excel XML documents ,9.401616391774026E-5
+example data binding system |Example data binding systems ,9.401616391774026E-5
+ercs xml |ERCS XML ,9.401616391774026E-5
+open source text editor |open source text editor ,9.401616391774026E-5
+modern office suite text data salvaging service |Modern Office Suite Text Data Salvaging Service ,9.401616391774026E-5
+ibm rational requisitepro linked requirements report plug-in |IBM Rational RequisitePro Linked Requirements Report Plug-in ,9.401616391774026E-5
+css class or identifier name |CSS class or identifier names ,9.401616391774026E-5
+xml binary characterization working group |XML Binary Characterization Working Group ,9.401616391774026E-5
+xml software |XML software ,9.401616391774026E-5
+potential source |potential source ,9.401616391774026E-5
+comparison history list |Comparison History List ,9.401616391774026E-5
+generality |generality ,9.401616391774026E-5
+alt foligno madonna |alt Foligno Madonna ,9.401616391774026E-5
+no special significance |no special significance ,9.401616391774026E-5
+developers support reading and writing |developers support reading and writing ,9.401616391774026E-5
+xmlblueprint |XMLBlueprint ,9.401616391774026E-5
+greeting hello world |Greeting Hello world ,9.401616391774026E-5
+raphael |Raphael ,9.401616391774026E-5
+prior knowledge |prior knowledge ,9.401616391774026E-5
+recursive-descent approach |recursive-descent approach ,9.401616391774026E-5
+beginning and end tag |beginning and end tags ,9.401616391774026E-5
+attribute class |attribute class ,9.401616391774026E-5
+oracle bi publisher p |Oracle BI Publisher P ,9.401616391774026E-5
+sequentially visit |sequentially visits ,9.401616391774026E-5
+edit integrated development environment |edit Integrated development environment ,9.401616391774026E-5
+track |track ,9.401616391774026E-5
+b c free online converter |b c free online converter ,9.401616391774026E-5
+essential xml editor |Essential XML Editor ,9.401616391774026E-5
+current iso iec standardization process |current ISO IEC standardization process ,9.401616391774026E-5
+namespace-based routing |namespace-based routing ,9.401616391774026E-5
+document viewer |document viewers ,9.401616391774026E-5
+class inner greeting-box |class inner greeting-box ,9.401616391774026E-5
+programming-language object |programming-language objects ,9.401616391774026E-5
+tip |Tips ,9.401616391774026E-5
+reporting toolkit |reporting toolkit ,9.401616391774026E-5
+severe markup error |severe markup errors ,9.401616391774026E-5
+intense work |intense work ,9.401616391774026E-5
+earlier version |earlier version ,9.401616391774026E-5
+auto-completion |auto-completion ,9.401616391774026E-5
+stream-oriented apis accessible |Stream-oriented APIs accessible ,9.401616391774026E-5
+versions edit |Versions edit ,9.401616391774026E-5
+silverdust |SilverDust ,9.401616391774026E-5
+record |record ,9.401616391774026E-5
+xml document formatting |XML document formatting ,9.401616391774026E-5
+openxmlcommunity org |openxmlcommunity org ,9.401616391774026E-5
+xml contract |XML Contracts ,9.401616391774026E-5
+b step |B step ,9.401616391774026E-5
+xsd xml schema definition |XSD XML Schema Definition ,9.401616391774026E-5
+linux-like shell |Linux-like shell ,9.401616391774026E-5
+internet markup |Internet Markup ,9.401616391774026E-5
+software program |software programs ,9.401616391774026E-5
+reaction |reaction ,9.401616391774026E-5
+line break code |line break codes ,9.401616391774026E-5
+pair |pair ,9.401616391774026E-5
+no method |no method ,9.401616391774026E-5
+document object model edit |Document Object Model edit ,9.401616391774026E-5
+compact non-xml syntax |compact non-XML syntax ,9.401616391774026E-5
+n a n a liquid xml studio |N A N A Liquid XML Studio ,9.401616391774026E-5
+readability |readability ,9.401616391774026E-5
+apo |apos ,9.401616391774026E-5
+bibliographic edit refworks web-based commercial citation manager |Bibliographic edit RefWorks Web-based commercial citation manager ,9.401616391774026E-5
+nextoffice impress |NextOffice Impress ,9.401616391774026E-5
+programming language-specific binding |programming language-specific bindings ,9.401616391774026E-5
+versatility |versatility ,9.401616391774026E-5
+requires microsoft |Requires Microsoft ,9.401616391774026E-5
+xml markup languages list |XML markup languages List ,9.401616391774026E-5
+autodetection |Autodetection ,9.401616391774026E-5
+native microsoft excel |native Microsoft Excel ,9.401616391774026E-5
+fifth edition substitute |fifth edition substitutes ,9.401616391774026E-5
+ecma formal publication |Ecma formal publications ,9.401616391774026E-5
+cover page |Cover Pages ,9.401616391774026E-5
+iterator design pattern |Iterator design pattern ,9.401616391774026E-5
+ten |Ten ,9.401616391774026E-5
+open xml community website |open XML Community website ,9.401616391774026E-5
+different validator |different validators ,9.401616391774026E-5
+xml entity value |XML entity values ,9.401616391774026E-5
+scripts and character |scripts and characters ,9.401616391774026E-5
+office open xml presentation file format |Office Open XML presentation file formats ,9.401616391774026E-5
+graphical editor |Graphical editor ,9.401616391774026E-5
+xps document |XPS documents ,9.401616391774026E-5
+symbol |symbols ,9.401616391774026E-5
+single screen |single screen ,9.401616391774026E-5
+consideration |consideration ,9.401616391774026E-5
+cross-platform cat tool |cross-platform CAT tool ,9.401616391774026E-5
+typed class |typed classes ,9.401616391774026E-5
+file corruption |file corruption ,9.401616391774026E-5
+xml node list |XML node lists ,9.401616391774026E-5
+following example |following example ,9.401616391774026E-5
+primary design goal |primary design goal ,9.401616391774026E-5
+leading microsoft excel compatible spreadsheet component |leading Microsoft Excel compatible spreadsheet component ,9.401616391774026E-5
+close delimiter |close delimiter ,9.401616391774026E-5
+related specifications edit |Related specifications edit ,9.401616391774026E-5
+office suite opendocument format references edit |Office suite OpenDocument Format References edit ,9.401616391774026E-5
+code development |code development ,9.401616391774026E-5
+img src madonna |img src madonna ,9.401616391774026E-5
+entityvalue definition |EntityValue definition ,9.401616391774026E-5
+bean-osx |bean-osx ,9.401616391774026E-5
+spreadsheet documents edit |Spreadsheet documents edit ,9.401616391774026E-5
+iso ooxml standard |ISO OOXML standard ,9.401616391774026E-5
+omegat org |Omegat org ,9.401616391774026E-5
+waterloo new oxford english dictionary project |Waterloo New Oxford English Dictionary Project ,9.401616391774026E-5
+commercial version exc |commercial version exc ,9.401616391774026E-5
+non-corrupt pptx |non-corrupt PPTX ,9.401616391774026E-5
+external links edit |External links edit ,8.72437850875886E-5
+references edit |References edit ,8.72437850875886E-5
+full xslt editing and debugging support |full XSLT editing and debugging support ,6.612147450154062E-5
+current element |current element ,6.612147450154062E-5
+basic syntax highlighting support |basic syntax highlighting support ,6.612147450154062E-5
+profiler |profiler ,6.612147450154062E-5
+general xml document editing |general XML document editing ,6.612147450154062E-5
+exception |exception ,6.612147450154062E-5
+text grid |text grid ,6.612147450154062E-5
+compact and full |compact and full ,6.612147450154062E-5
+indication |indication ,6.612147450154062E-5
+major contributor |major contributor ,6.612147450154062E-5
+common task |common tasks ,6.612147450154062E-5
+standard global transform scenario |standard global transform scenarios ,6.612147450154062E-5
+multiple schema |multiple schemas ,6.612147450154062E-5
+current context |current context ,6.612147450154062E-5
+additional schema type |additional schema types ,6.612147450154062E-5
+disk |disk ,6.612147450154062E-5
+click indentation collapse child fold |click indentation Collapse child fold ,6.612147450154062E-5
+xml editor developer |XML Editor Developer ,6.612147450154062E-5
+inserting element |Inserting elements ,6.612147450154062E-5
+root level |root level ,6.612147450154062E-5
+intermediate step |intermediate step ,6.612147450154062E-5
+unicode support |Unicode support ,6.612147450154062E-5
+non-xml textual format |non-XML textual formats ,6.612147450154062E-5
+full xslt editing |full XSLT editing ,6.612147450154062E-5
+non-xslt xml element |non-XSLT XML elements ,6.612147450154062E-5
+promotional content |promotional content ,6.612147450154062E-5
+entire structure |entire structure ,6.612147450154062E-5
+stable release |Stable release ,6.612147450154062E-5
+question |question ,6.612147450154062E-5
+xsl-fo processor |XSL-FO processor ,6.612147450154062E-5
+left-most column |left-most column ,6.612147450154062E-5
+comments and processing instruction |comments and processing instructions ,6.612147450154062E-5
+different output format |different output formats ,6.612147450154062E-5
+smaller version |smaller version ,6.612147450154062E-5
+xslt-based document transformation |XSLT-based document transformation ,6.612147450154062E-5
+common operation |common operation ,6.612147450154062E-5
+xslt element |XSLT elements ,6.612147450154062E-5
+xml editors office open xml software licensing edit |XML editors Office Open XML software Licensing edit ,6.612147450154062E-5
+xslt xquery debugger and profiler |XSLT XQuery debugger and profiler ,6.612147450154062E-5
+missing feature |missing features ,6.612147450154062E-5
+transforming docbook document |transforming DocBook documents ,6.612147450154062E-5
+further |further ,6.612147450154062E-5
+path and extension |path and extension ,6.612147450154062E-5
+oxygen xml editor german v t e eclipse |Oxygen XML Editor german v t e Eclipse ,6.612147450154062E-5
+uml zend studio retrieved |UML Zend Studio Retrieved ,6.612147450154062E-5
+xpath string |XPath string ,6.612147450154062E-5
+key |key ,6.612147450154062E-5
+default view |default view ,6.612147450154062E-5
+gdb |gdb ,6.612147450154062E-5
+included file |included files ,6.612147450154062E-5
+xml tree |XML tree ,6.612147450154062E-5
+popular xml format |popular XML formats ,6.612147450154062E-5
+subject |subject ,6.612147450154062E-5
+packed-in fop processor |packed-in FOP processor ,6.612147450154062E-5
+multi-platform xml editor |multi-platform XML editor ,6.612147450154062E-5
+different color |different color ,6.612147450154062E-5
+nesting and semantics |nesting and semantics ,6.612147450154062E-5
+text view edit |Text view edit ,6.612147450154062E-5
+arbitrary program |arbitrary programs ,6.612147450154062E-5
+standard mechanism |standard mechanism ,6.612147450154062E-5
+dialog |dialog ,6.612147450154062E-5
+nrl and nvdl routing language |NRL and NVDL routing languages ,6.612147450154062E-5
+content completion information |content completion information ,6.612147450154062E-5
+cleanup |cleanup ,6.612147450154062E-5
+editing document-like xml file |editing document-like XML files ,6.612147450154062E-5
+docbook xsl xslt transformation suite |DocBook XSL XSLT transformation suite ,6.612147450154062E-5
+schema binding |schema binding ,6.612147450154062E-5
+common action |common action ,6.612147450154062E-5
+debugging support or schema editing support |debugging support or schema editing support ,6.612147450154062E-5
+document smart paste |document Smart paste ,6.612147450154062E-5
+java application |Java application ,6.612147450154062E-5
+result |results ,6.612147450154062E-5
+final output filename |final output filename ,6.612147450154062E-5
+source code debugger |source code debuggers ,6.612147450154062E-5
+wrox press |Wrox Press ,6.612147450154062E-5
+kay |Kay ,6.612147450154062E-5
+regular text view |regular text view ,6.612147450154062E-5
+current cursor location |current cursor location ,6.612147450154062E-5
+schematron rule |Schematron rules ,6.612147450154062E-5
+document cs |document CSS ,6.612147450154062E-5
+tag competition |tag competition ,6.612147450154062E-5
+actual file |actual file ,6.612147450154062E-5
+dita open toolkit |DITA Open Toolkit ,6.612147450154062E-5
+true wysiwyg and editing |true WYSIWYG and editing ,6.612147450154062E-5
+tei format |TEI format ,6.612147450154062E-5
+specialized xml formats edit |specialized XML formats edit ,6.612147450154062E-5
+breakpoint |breakpoints ,6.612147450154062E-5
+promotional tone wikipedia article |promotional tone Wikipedia articles ,6.612147450154062E-5
+epub |EPUB ,6.612147450154062E-5
+multiple issue |multiple issues ,6.612147450154062E-5
+web address |web address ,6.612147450154062E-5
+document transformation edit |Document transformation edit ,6.612147450154062E-5
+different type |different types ,6.612147450154062E-5
+xsl-fo and fop |XSL-FO and FOP ,6.612147450154062E-5
+editing xsl-fo document |editing XSL-FO documents ,6.612147450154062E-5
+bill |Bill ,6.612147450154062E-5
+exslt extension |EXSLT extensions ,6.612147450154062E-5
+bind |bind ,6.612147450154062E-5
+xslt debugger edit |XSLT debugger edit ,6.612147450154062E-5
+kent |Kent ,6.612147450154062E-5
+distribution |distribution ,6.612147450154062E-5
+schema-less syntax |schema-less syntax ,6.612147450154062E-5
+bar |bar ,6.612147450154062E-5
+visual editing feature |visual editing features ,6.612147450154062E-5
+advertisement |advertisement ,6.612147450154062E-5
+nvdl routing language |NVDL routing languages ,6.612147450154062E-5
+iteration |iteration ,6.612147450154062E-5
+path |path ,6.612147450154062E-5
+command line parameter |Command line parameters ,6.612147450154062E-5
+nvdl schema |NVDL schemas ,6.612147450154062E-5
+xml text |XML text ,6.612147450154062E-5
+interest |interest ,6.612147450154062E-5
+syntax completion |syntax completion ,6.612147450154062E-5
+nesting |nesting ,6.612147450154062E-5
+schema format |schema formats ,6.612147450154062E-5
+transformation service |transformation services ,6.612147450154062E-5
+oxygen xml editor styled oxygen |Oxygen XML Editor styled oXygen ,6.612147450154062E-5
+features edit |features edit ,6.612147450154062E-5
+s xml form |s XML form ,6.612147450154062E-5
+publishing entire dita document structure |publishing entire DITA document structure ,6.612147450154062E-5
+schema editing feature |schema editing features ,6.612147450154062E-5
+eclipse plugin |Eclipse plugin ,6.612147450154062E-5
+author view edit |Author view edit ,6.612147450154062E-5
+tooltip |tooltips ,6.612147450154062E-5
+valid xpath |valid XPath ,6.612147450154062E-5
+professional xml |Professional XML ,6.612147450154062E-5
+different file |different files ,6.612147450154062E-5
+close connection |close connection ,6.612147450154062E-5
+validation purpose |validation purposes ,6.612147450154062E-5
+degree |degree ,6.612147450154062E-5
+xslt version |XSLT version ,6.612147450154062E-5
+current xml document |current XML document ,6.612147450154062E-5
+user press |user presses ,6.612147450154062E-5
+grid view edit |Grid view edit ,6.612147450154062E-5
+tool-tip window |tool-tip window ,6.612147450154062E-5
+document-like format |document-like formats ,6.612147450154062E-5
+xml schema language |XML schema languages ,6.612147450154062E-5
+recent version |recent version ,6.612147450154062E-5
+sharkey |Sharkey ,6.612147450154062E-5
+map |maps ,6.612147450154062E-5
+spreadsheet-like fashion |spreadsheet-like fashion ,6.612147450154062E-5
+visual editing support |visual editing support ,6.612147450154062E-5
+validation scenario |validation scenario ,6.612147450154062E-5
+schema editing support |schema editing support ,6.612147450154062E-5
+wysiwym view |WYSIWYM view ,6.612147450154062E-5
+michael |Michael ,6.612147450154062E-5
+html track |HTML Track ,6.612147450154062E-5
+root xml element |root XML element ,6.612147450154062E-5
+oxygen xml project workspace |Oxygen XML project workspace ,6.612147450154062E-5
+local view |local view ,6.612147450154062E-5
+section element |section element ,6.612147450154062E-5
+attribute panel |attribute panel ,6.612147450154062E-5
+unique first child |unique first child ,6.612147450154062E-5
+common web |common web ,6.612147450154062E-5
+inappropriate external link |inappropriate external links ,6.612147450154062E-5
+css file |CSS file ,6.612147450154062E-5
+conflict |conflicts ,6.612147450154062E-5
+perl |Perl ,6.612147450154062E-5
+webhelp |WebHelp ,6.612147450154062E-5
+document root |document root ,6.612147450154062E-5
+special validation service |special validation services ,6.612147450154062E-5
+generation e g |generation e g ,6.612147450154062E-5
+intuitive |intuitive ,6.612147450154062E-5
+file form |file form ,6.612147450154062E-5
+top |top ,6.612147450154062E-5
+docbook version |DocBook versions ,6.612147450154062E-5
+empty element |empty element ,6.612147450154062E-5
+true wysiwyg |true WYSIWYG ,6.612147450154062E-5
+license entitle |license entitles ,6.612147450154062E-5
+xslt xquery debugger |XSLT XQuery debugger ,6.612147450154062E-5
+proper xml form |proper XML form ,6.612147450154062E-5
+command |commands ,6.612147450154062E-5
+textual information |textual information ,6.612147450154062E-5
+validation and transformation service |validation and transformation services ,6.612147450154062E-5
+human-readable and intuitive |human-readable and intuitive ,6.612147450154062E-5
+specific format |specific format ,6.612147450154062E-5
+non-xml files edit |non-XML files edit ,6.612147450154062E-5
+memory single-stepping |memory single-stepping ,6.612147450154062E-5
+xinclude statement |XInclude statements ,6.612147450154062E-5
+oxygen license |Oxygen license ,6.612147450154062E-5
+en wikipedia |en wikipedia ,4.980108256333548E-5
+b c documents togo |b c Documents ToGo ,4.700808195887013E-5
+mikemaccana python-docx git hub |mikemaccana python-docx Git Hub ,4.700808195887013E-5
+openxml od f translator |OpenXML OD F Translator ,4.700808195887013E-5
+encyclopedia jump |encyclopedia Jump ,0.0
+navigation |navigation ,0.0
+wikipedia |Wikipedia ,0.0
+list |list |List ,0.0

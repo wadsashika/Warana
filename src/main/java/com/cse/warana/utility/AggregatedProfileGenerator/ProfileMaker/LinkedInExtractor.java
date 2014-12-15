@@ -1,8 +1,10 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker;
 
+import com.cse.warana.utility.infoHolders.Candidate;
+import com.cse.warana.utility.infoHolders.Education;
 import com.cse.warana.utility.infoHolders.Profile;
-import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Profile.Project;
-import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Profile.Publication;
+import com.cse.warana.utility.infoHolders.Project;
+import com.cse.warana.utility.infoHolders.Publication;
 import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Skills.SkillsExtractor;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -15,14 +17,17 @@ public class LinkedInExtractor {
 
     private String link;
     private SkillsExtractor skillsExtractor;
+//    private String education = "";
 
     public LinkedInExtractor() {
         skillsExtractor=new SkillsExtractor();
     }
 
-    public Profile ExtractInformation(String searchName, Profile profile) {
+    public Profile ExtractInformation(String searchName, /*Profile profile*/ Candidate candidate) {
 
-        com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Google g = new com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Google();
+        Profile profile = candidate.getProfile();
+
+        Google g = new Google();
         link = g.FindOnLinkedIn(searchName);
 
         System.out.println(link + "--------------------------");
@@ -42,35 +47,43 @@ public class LinkedInExtractor {
         Element profile_picture = doc != null ? doc.select("div[id=profile-picture] > img").first() : null;
         System.out.println(profile_picture);
         if (profile_picture != null) {
-            profile.pic_url = profile_picture.attr("src");
+            profile.setPic_url(profile_picture.attr("src"));
         } else {
             profile_picture = doc != null ? doc.select("div.profile-picture> a > img").first() : null;
             if (profile_picture != null) {
-                profile.pic_url = profile_picture.attr("src");
+                profile.setPic_url(profile_picture.attr("src"));
             }
         }
 
-        System.out.println("pic url " + profile.pic_url);
+        System.out.println("pic url " + profile.getPic_url());
 //        name
         Element nameDiv = doc != null ? doc.select("span.full-name").first() : null;
         System.out.println(nameDiv.text());
         profile.setName(nameDiv.text());
         name = nameDiv.text();
-        profile.name = nameDiv.text();
+//        profile.name = nameDiv.text();
+        profile.setName(nameDiv.text());
 
 //        title
         Element titleP = doc != null ? doc.select("p").first() : null;
         System.out.println(titleP.text());
         title = titleP.text();
-        profile.title = titleP.text();
+//        profile.title = titleP.text();
+        profile.setTitle(titleP.text());
 
         //        Education
         Elements eduTr = doc != null ? doc.select("dd.summary-education > ul > li") : null;
         if (eduTr != null) {
-            profile.education = "";
+//            education = "";
         }
         for (int i = 0; i < eduTr.size(); i++) {
-            profile.education += eduTr.get(i).text() + "\n";
+            Education education = new Education();
+            education.setInstitution(eduTr.get(i).text());
+
+            /**
+             * TODO set degree and date
+             */
+            candidate.getEducationsList().add(education);
         }
 
 //        publications
@@ -88,7 +101,8 @@ public class LinkedInExtractor {
                 pb.summary = pubSummary.get(i).text();
             }
 //            System.out.println("LinkedIn publication =============="+pb.name);
-            profile.addPublication(pb);
+            candidate.getPublicationList().add(pb);
+//            profile.addPublication(pb);
         }
 //projects type 1 documents
         Project project;
@@ -98,11 +112,15 @@ public class LinkedInExtractor {
         if (pro != null) {
             for (int i = 0; i < pro.size(); i++) {
                 project = new Project();
-                project.name = pro.get(i).text();
+//                project.name = pro.get(i).text();
+                project.setName(pro.get(i).text());
                 if (i < proSummary.size()) {
-                    project.summary = proSummary.get(i).text();
+//                    project.summary = proSummary.get(i).text();
+                    project.setDescription(proSummary.get(i).text());
                 }
-                profile.addProject(project);
+
+                candidate.getProjectsLists().add(project);
+//                profile.addProject(project);
             }
         }
 //projects type 2 documents
@@ -113,11 +131,14 @@ public class LinkedInExtractor {
         if (pro != null) {
             for (int i = 0; i < pro2.size(); i++) {
                 project2 = new Project();
-                project2.name = pro2.get(i).text();
+//                project2.name = pro2.get(i).text();
+                project2.setName(pro2.get(i).text());
                 if (i < proSummary2.size()) {
-                    project2.summary = proSummary2.get(i).text();
+//                    project2.summary = proSummary2.get(i).text();
+                    project2.setDescription(proSummary2.get(i).text());
                 }
-                profile.addProject(project2);
+//                profile.addProject(project2);
+                candidate.getProjectsLists().add(project2);
             }
         }
 
@@ -128,9 +149,9 @@ public class LinkedInExtractor {
         return profile;
     }
 
-    public Profile Extract2(String searchName, Profile profile) {
+    public Profile Extract2(String searchName, Profile profile, Candidate candidate) {
 
-        com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Google g = new com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Google();
+        Google g = new Google();
         String link = g.FindOnLinkedIn(searchName);
         System.out.println(link);
         if (link == "") {
@@ -150,29 +171,40 @@ public class LinkedInExtractor {
 //        System.out.println(profile_picture);
 //        System.out.println(profile_picture.attr("src"));
         if (profile_picture != null) {
-            profile.pic_url = profile_picture.attr("src");
-            System.out.println("pic url " + profile.pic_url);
+//            profile.pic_url = profile_picture.attr("src");
+            profile.setPic_url(profile_picture.attr("src"));
+            System.out.println("pic url " + profile.getPic_url());
         }
 //        name
         Element nameDiv = doc != null ? doc.select("span.full-name").first() : null;
         System.out.println(nameDiv.text());
         profile.setName(nameDiv.text());
         name = nameDiv.text();
-        profile.name = nameDiv.text();
+//        profile.name = nameDiv.text();
+        profile.setName(nameDiv.text());
+
 
 //        title
         Element titleP = doc != null ? doc.select("p").first() : null;
         System.out.println(titleP.text());
         title = titleP.text();
-        profile.title = titleP.text();
+//        profile.title = titleP.text();
+        profile.setTitle(titleP.text());
 
 //        Education
         Elements eduTr = doc != null ? doc.select("tr[id=overview-summary-education] > td> ol > li") : null;
         if (eduTr != null) {
-            profile.education = "";
+//            profile.education = "";
         }
         for (int i = 0; i < eduTr.size(); i++) {
-            profile.education += eduTr.get(i).text() + "\n";
+//            profile.education += eduTr.get(i).text() + "\n";
+            Education education = new Education();
+            education.setInstitution(eduTr.get(i).text());
+
+            /**
+             * TODO set degree and date
+             */
+            candidate.getEducationsList().add(education);
         }
 //        publications
         Publication pb;
@@ -184,7 +216,9 @@ public class LinkedInExtractor {
 
             pb = new Publication();
             pb.name = pub.get(i).text();
-            profile.addPublication(pb);
+
+            candidate.getPublicationList().add(pb);
+//            profile.addPublication(pb);
         }
         return profile;
     }

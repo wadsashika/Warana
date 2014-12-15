@@ -16,7 +16,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         String name = sc.nextLine();
         PhraseAnalyzer phraseAnalyzer =new PhraseAnalyzer();
-        Profile pr = new Profile(name, phraseAnalyzer);
+//        Profile pr = new Profile(name, phraseAnalyzer);
 
         CallName();
 

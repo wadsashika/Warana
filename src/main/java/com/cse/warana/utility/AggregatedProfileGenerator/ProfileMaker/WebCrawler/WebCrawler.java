@@ -1,5 +1,6 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.WebCrawler;
 
+import com.cse.warana.utility.infoExtractors.OnlineInfoExtractor;
 import com.cse.warana.utility.infoHolders.Profile;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.FileManager;
@@ -19,11 +20,12 @@ import java.util.concurrent.TimeUnit;
  */
 public class WebCrawler {
     private FirefoxDriver driver;
-    private Profile profile;
+    private OnlineInfoExtractor profile;
     private String baseUrl;
     FileManager fileManager;
     public static void main(String[] args){
-        Profile profile1=new Profile("dulanga sashika");
+//        Profile1 profile1=new Profile1("dulanga sashika");
+        OnlineInfoExtractor profile1 = new OnlineInfoExtractor("dulanga sashika");
 //        WebCrawler sel=new WebCrawler(profile1);
 //        sel.SavePage("http://wadsashika.wordpress.com/");
 
@@ -31,12 +33,12 @@ public class WebCrawler {
 //        sel=new WebCrawler(profile1);
 //        sel.SavePage("http://gamedevsl.blogspot.com/");
 
-        profile1=new Profile("Nisansa Dilushan de Silva");
+        profile1=new OnlineInfoExtractor("Nisansa Dilushan de Silva");
         WebCrawler sel=new WebCrawler(profile1);
         sel.SavePage("http://solibnis.blogspot.com/");
     }
 
-    public WebCrawler(Profile profile) {
+    public WebCrawler(OnlineInfoExtractor profile) {
         this.profile=profile;
         fileManager=new FileManager();
         FirefoxProfile fp=new FirefoxProfile();

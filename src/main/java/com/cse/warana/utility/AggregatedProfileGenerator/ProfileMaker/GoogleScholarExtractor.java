@@ -1,7 +1,8 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker;
 
+import com.cse.warana.utility.infoHolders.Candidate;
 import com.cse.warana.utility.infoHolders.Profile;
-import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Profile.Publication;
+import com.cse.warana.utility.infoHolders.Publication;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -11,15 +12,16 @@ import java.io.IOException;
 
 public class GoogleScholarExtractor {
 
-    public Profile Extract(String searchName, Profile profile) {
+    public boolean Extract(String searchName, /*Profile profile*/ Candidate candidate) {
 
         Google g = new Google();
         String link = g.FindOnGoogleScholar(searchName);
         if (link.equals("")) {
-            if (profile.getPublicationList().isEmpty()) {
-                profile.setPublicationList(null);
+            if (candidate.getPublicationList().isEmpty()) {
+                candidate.setPublicationList(null);
             }
-            return profile;
+//            return profile;
+            return true;
         }
         Document doc = null;
         String picUrl, name, title;
@@ -31,11 +33,12 @@ public class GoogleScholarExtractor {
         }
 
 // profile pic
-        if (profile.pic_url.equals("")) {
+        if (/*profile.pic_url.equals("")*/ candidate.getProfile().getPic_url().equals("")) {
             Element pic = doc != null ? doc.select("div[id=gsc_prf_pu]> a> img").first() : null;
             if (pic != null) {
                 String ulr_suffix = pic.attr("src");
-                profile.pic_url = "http://scholar.google.com/" + ulr_suffix;
+//                profile.pic_url = "http://scholar.google.com/" + ulr_suffix;
+                candidate.getProfile().setPic_url("http://scholar.google.com/" + ulr_suffix);
             }
         }
 //        publications
@@ -63,12 +66,14 @@ public class GoogleScholarExtractor {
                 pb.citations=0;
             }
             pb.year = pub.get(i).select("td.gsc_a_y").get(0).text();
-            profile.addPublication(pb);
+            candidate.getPublicationList().add(pb);
+//            profile.addPublication(pb);
 
 
 //            System.out.println("---------------------------------\n");
         }
-        return profile;
+//        return profile;
+        return true;
     }
 
     public String GetSummary(String link) {

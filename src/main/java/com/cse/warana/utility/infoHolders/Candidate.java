@@ -13,6 +13,15 @@ public class Candidate {
     ArrayList<Referee> refereesList;
     ArrayList<Technology> technologiesList;
     ArrayList<Work> worksList;
+    ArrayList<Publication> publicationList;
+
+    public ArrayList<Publication> getPublicationList() {
+        return publicationList;
+    }
+
+    public void setPublicationList(ArrayList<Publication> publicationList) {
+        this.publicationList = publicationList;
+    }
 
     public Profile getProfile() {
         return profile;
