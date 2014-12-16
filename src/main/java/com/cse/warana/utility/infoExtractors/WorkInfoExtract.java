@@ -33,7 +33,7 @@ public class WorkInfoExtract {
         /**
          * Load the companies gazeteer list
          */
-        populateByFile("F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\gazeteerLists\\companyNames", companies);
+        populateByFile("src\\main\\resources\\gazeteerLists\\companyNames", companies);
     }
 
 

@@ -21,12 +21,12 @@ public class GitHubExtractor {
         networkManager = new NetworkManager();
     }
 
-    public static void main(String[] args) {
-//        new GitHubExtractor("69e07dde89a8a0a6713f810cfd4c461f04f47e85").GetInfo("https://api.github.com/users/wadsashika");
-        new GitHubExtractor("69e07dde89a8a0a6713f810cfd4c461f04f47e85").Extract("thilina premasiri", null);
-    }
 
-    public void Extract(String name, Candidate candidate) {
+
+
+    public void Extract(Candidate candidate) {
+        Profile profile=candidate.getProfile();
+        String name=profile.getName();
         System.out.println("\nSearching " + name + " on GitHub");
         name = name.replaceAll(" ", "%20");
         String url = "https://api.github.com/search/users?q=" + name + "&order=desc&access_token=" + token;

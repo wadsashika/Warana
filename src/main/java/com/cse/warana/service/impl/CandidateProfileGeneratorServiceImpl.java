@@ -2,6 +2,7 @@ package com.cse.warana.service.impl;
 
 import com.cse.warana.service.CVParserService;
 import com.cse.warana.service.CandidateProfileGeneratorService;
+import com.cse.warana.utility.infoExtractors.OnlineInfoExtractor;
 import com.cse.warana.utility.infoHolders.*;
 import org.springframework.stereotype.Service;
 
@@ -23,6 +24,7 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
     private static ArrayList<Project> projectsList;
     private static ArrayList<Referee> refereesList;
     private static ArrayList<Technology> technologiesList;
+    private static ArrayList<Publication> publicationList;
     private static ArrayList<Work> worksList;
     private static HashMap<String,Object> infoCategoryTypes;
 
@@ -52,6 +54,9 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
         technologiesList = new ArrayList<>();
         infoCategoryTypes.put("TECHNOLOGIES_LIST",technologiesList);
 
+        publicationList = new ArrayList<>();
+        infoCategoryTypes.put("PUBLICATIONS_LIST",publicationList);
+
         worksList = new ArrayList<>();
         infoCategoryTypes.put("WORK_LIST",worksList);
     }
@@ -65,10 +70,6 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
         cvParser.parseLines(infoCategoryTypes);
     }
 
-    @Override
-    public void extractOnlineProfileInformation() {
-
-    }
 
     @Override
     public Candidate generateCandidateProfile(Candidate candidate) {
@@ -78,9 +79,15 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
         candidate.setProjectsLists(projectsList);
         candidate.setRefereesList(refereesList);
         candidate.setTechnologiesList(technologiesList);
+        candidate.setPublicationList(publicationList);
         candidate.setWorksList(worksList);
-
         return candidate;
+    }
+
+
+    @Override
+    public void extractOnlineProfileInformation(Candidate candidate) {                  // Candidate should be initalized with CV info before calling this method
+        OnlineInfoExtractor onlineInfoExtractor=new OnlineInfoExtractor(candidate);
     }
 
 //    public static void main(String[] args){

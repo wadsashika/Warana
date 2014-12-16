@@ -12,10 +12,10 @@ import java.io.IOException;
 
 public class GoogleScholarExtractor {
 
-    public boolean Extract(String searchName, /*Profile profile*/ Candidate candidate) {
+    public boolean Extract(/*Profile profile*/ Candidate candidate) {
 
         Google g = new Google();
-        String link = g.FindOnGoogleScholar(searchName);
+        String link = g.FindOnGoogleScholar(candidate.getProfile().getName());
         if (link.equals("")) {
             if (candidate.getPublicationList().isEmpty()) {
                 candidate.setPublicationList(null);

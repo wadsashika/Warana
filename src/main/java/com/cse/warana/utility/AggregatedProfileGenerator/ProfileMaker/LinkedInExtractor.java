@@ -23,12 +23,12 @@ public class LinkedInExtractor {
         skillsExtractor=new SkillsExtractor();
     }
 
-    public Profile ExtractInformation(String searchName, /*Profile profile*/ Candidate candidate) {
+    public Profile ExtractInformation( /*Profile profile*/ Candidate candidate) {
 
         Profile profile = candidate.getProfile();
 
         Google g = new Google();
-        link = g.FindOnLinkedIn(searchName);
+        link = g.FindOnLinkedIn(profile.getName());
 
         System.out.println(link + "--------------------------");
         if (link.equals("")) {

@@ -20,25 +20,11 @@ import java.util.concurrent.TimeUnit;
  */
 public class WebCrawler {
     private FirefoxDriver driver;
-    private OnlineInfoExtractor profile;
+    private Profile profile;
     private String baseUrl;
     FileManager fileManager;
-    public static void main(String[] args){
-//        Profile1 profile1=new Profile1("dulanga sashika");
-        OnlineInfoExtractor profile1 = new OnlineInfoExtractor("dulanga sashika");
-//        WebCrawler sel=new WebCrawler(profile1);
-//        sel.SavePage("http://wadsashika.wordpress.com/");
 
-//        profile1=new Profile("Thilina premasiri");
-//        sel=new WebCrawler(profile1);
-//        sel.SavePage("http://gamedevsl.blogspot.com/");
-
-        profile1=new OnlineInfoExtractor("Nisansa Dilushan de Silva");
-        WebCrawler sel=new WebCrawler(profile1);
-        sel.SavePage("http://solibnis.blogspot.com/");
-    }
-
-    public WebCrawler(OnlineInfoExtractor profile) {
+    public WebCrawler(Profile profile) {
         this.profile=profile;
         fileManager=new FileManager();
         FirefoxProfile fp=new FirefoxProfile();
@@ -110,7 +96,7 @@ public class WebCrawler {
 
         for (Map.Entry<String, String> entry : pageMap.entrySet()) {
 
-            fileManager.WriteFile(Config.profilesPath+"/"+profile.name,entry);
+            fileManager.WriteFile(Config.profilesPath+"/"+profile.getName(),entry);
         }
         driver.quit();
 

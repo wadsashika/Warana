@@ -34,7 +34,7 @@ public class EducationalInfoExtract {
         BufferedReader br = null;
         String indexWord = "";
         try {
-            br = new BufferedReader(new FileReader("F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\gazeteerLists\\eduIndex"));
+            br = new BufferedReader(new FileReader("src\\main\\resources\\gazeteerLists\\eduIndex"));
             indexWord = br.readLine();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
