@@ -1,6 +1,6 @@
 package com.cse.warana.dao;
 
-import com.cse.warana.dto.AnalyticResultsDTO;
+import com.cse.warana.dto.*;
 
 import java.util.List;
 
@@ -9,4 +9,11 @@ import java.util.List;
  */
 public interface AnalyzedResultsDao {
     public List<AnalyticResultsDTO> getAnalyzedResults();
+    public List<CandidateDTO> getCandidateProfileData(long id);
+    public List<AchievementDTO> getCandidateAchievementsData(long id);
+    public List<EducationDTO> getCandidateEducationData(long id);
+    public List<ProjectDTO> getCandidateProjectData(long id);
+    public List<PublicationsDTO> getCandidatePublicationsData(long id);
+    public List<WorkExpDTO> getCandidateWorkExperienceData(long id);
+
 }

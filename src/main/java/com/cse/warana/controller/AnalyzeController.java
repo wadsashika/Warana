@@ -5,15 +5,13 @@ import com.cse.warana.dto.ResumesToAnalyseDto;
 import com.cse.warana.service.AnalyzeResumeService;
 import com.cse.warana.service.AnalyzedResultsService;
 import com.cse.warana.service.impl.AnalyzeResumeServiceImpl;
+import com.cse.warana.utility.infoHolders.Candidate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
@@ -51,8 +49,8 @@ public class AnalyzeController {
         return model;
     }
 
-    @RequestMapping(value = "/analyzedresults",method = RequestMethod.GET)
-    public ModelAndView analyzedResluts(){
+    @RequestMapping(value = "/analyzedresults", method = RequestMethod.GET)
+    public ModelAndView analyzedResluts() {
         String AN_RESULTS_VIEW = "analyzed-results";
         LOG.info("loading Analyzed results page");
 
@@ -60,15 +58,24 @@ public class AnalyzeController {
 
         ModelAndView model = new ModelAndView();
         model.setViewName(AN_RESULTS_VIEW);
-        model.addObject("results",analyticResultsDTOs);
+        model.addObject("results", analyticResultsDTOs);
 
         return model;
     }
 
     @RequestMapping(value = "analyze/analyzelist", method = RequestMethod.POST)
     @ResponseBody
-    public boolean analyzeSelectedResumes(@RequestBody String[] idList){
+    public boolean analyzeSelectedResumes(@RequestBody String[] idList) {
         analyzeResumeService.analyzeSelectedListOfCandidates(idList);
         return true;
     }
+
+    @RequestMapping(value = "/analyze/profile", method = RequestMethod.POST)
+    @ResponseBody
+    public String deleteResume(@RequestParam("id") long id) {
+
+        String candidateJson = analyzedResultsService.getCandidateData(id);
+        return candidateJson;
+    }
+
 }

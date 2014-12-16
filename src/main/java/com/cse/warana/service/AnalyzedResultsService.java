@@ -9,4 +9,5 @@ import java.util.List;
  */
 public interface AnalyzedResultsService {
     public List<AnalyticResultsDTO> getAnalyzedResults();
+    public String getCandidateData(long id);
 }
