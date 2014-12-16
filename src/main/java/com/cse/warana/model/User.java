@@ -1,7 +1,5 @@
 package com.cse.warana.model;
 
-import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
-
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -11,7 +9,7 @@ import java.io.Serializable;
  */
 @Entity
 @Table(name = "user")
-public class User implements Serializable{
+public class User implements Serializable {
 
     private static final long serialVersionUID = 1960820966066484915L;
 
@@ -37,6 +35,9 @@ public class User implements Serializable{
 
     @Column(name = "PATH")
     private String imgPath;
+
+    @Column(name = "PREVILLAGE_LEVEL")
+    private int privilegeLvl;
 
     public long getUserId() {
         return userId;
@@ -92,5 +93,13 @@ public class User implements Serializable{
 
     public void setImgPath(String imgPath) {
         this.imgPath = imgPath;
+    }
+
+    public int getPrivilegeLvl() {
+        return privilegeLvl;
+    }
+
+    public void setPrivilegeLvl(int privilegeLvl) {
+        this.privilegeLvl = privilegeLvl;
     }
 }

@@ -54,7 +54,7 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <button  data-toggle="dropdown" class="top-buttons dropdown-toggle">Dulanga Sashika
+                            <button  data-toggle="dropdown" class="top-buttons dropdown-toggle">${sessionScope.firstName} ${sessionScope.lastName}
                             </button>
                             <ul class="dropdown-menu home-links" role="menu">
                                 <li><a href="<c:url value="/dashboard"/>"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
