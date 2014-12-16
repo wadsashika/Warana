@@ -1,12 +1,5 @@
 <%@include file="header.jsp" %>
 
-<link href='<c:url value="/css/bootstrap-modal.css" />' rel="stylesheet" type="text/css"/>
-<link href='<c:url value="/css/bootstrap-modal-bs3patch.css" />' rel="stylesheet" type="text/css"/>
-
-<script src='<c:url value="/js/bootstrap-modal.js" />' type="text/javascript"></script>
-<script src='<c:url value="/js/bootstrap-modalmanager.js" />' type="text/javascript"></script>
-<script src='<c:url value="/js/warana/home.js" />' type="text/javascript"></script>
-
 <div class="body-container col-sm-12 col-md-12">
     <c:if test="${not empty error}">
         <script type="text/javascript">
@@ -31,7 +24,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Email" name="j_username"
+                            <input type="email" class="mand form-control" placeholder="Email" name="j_username"
                                    id="inputEmail3">
                         </div>
                     </div>
@@ -124,8 +117,8 @@
                         <div id="signup-form-body" class="form-horizontal">
                             <div class="form-group">
                                 <div class="col-sm-12 col-md-2"></div>
-                                <div class="col-sm-12 col-md-2">
-                                    <label for="firstName" class="not-bold">First Name</label>
+                                <div class="col-sm-12 col-md-3">
+                                    <label for="firstName" class="mand not-bold">First Name</label>
                                 </div>
                                 <div class="col-sm-8 col-md-5">
                                     <input type="text" class="form-control" name="firstName" id="firstName"
@@ -134,54 +127,54 @@
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12 col-md-2"></div>
-                                <div class="col-sm-12 col-md-2">
-                                    <label for="lastName" class="not-bold">Last Name</label>
+                                <div class="col-sm-12 col-md-3">
+                                    <label for="lastName" class="mand not-bold">Last Name</label>
                                 </div>
                                 <div class="col-sm-8 col-md-5">
-                                    <input type="text" class="form-control" name="firstName" id="lastName"
+                                    <input type="text" class="form-control" name="lastName" id="lastName"
                                            data-valid="required">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12 col-md-2"></div>
-                                <div class="col-sm-12 col-md-2">
-                                    <label for="email" class="not-bold">E-mail</label>
+                                <div class="col-sm-12 col-md-3">
+                                    <label for="email" class="mand not-bold">E-mail</label>
                                 </div>
                                 <div class="col-sm-8 col-md-5">
-                                    <input type="email" class="form-control" name="firstName" id="email"
-                                           data-valid="required">
+                                    <input type="email" class="form-control" name="email" id="email"
+                                           data-valid="required email">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12 col-md-2"></div>
-                                <div class="col-sm-12 col-md-2">
-                                    <label for="password" class="not-bold">Password</label>
+                                <div class="col-sm-12 col-md-3">
+                                    <label for="password" class="mand not-bold">Password</label>
                                 </div>
                                 <div class="col-sm-8 col-md-5">
-                                    <input type="password" class="form-control" name="firstName" id="password"
-                                           data-valid="required">
+                                    <input type="password" class="form-control" name="password" id="password"
+                                           data-valid="required minlength" data-min=8>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12 col-md-2"></div>
-                                <div class="col-sm-12 col-md-2">
-                                    <label for="reEnterPassword" class="not-bold">Re-Enter Password</label>
+                                <div class="col-sm-12 col-md-3">
+                                    <label for="reEnterPassword" class="mand not-bold">Re-Enter Password</label>
                                 </div>
                                 <div class="col-sm-8 col-md-5">
-                                    <input type="password" class="form-control" name="firstName" id="reEnterPassword"
-                                           data-valid="required">
+                                    <input type="password" class="form-control" name="rePassword" id="reEnterPassword"
+                                           data-valid="required equalTo" data-ele="password">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12 col-md-2"></div>
-                                <div class="col-sm-12 col-md-2">
+                                <div class="col-sm-12 col-md-3">
                                 </div>
                                 <div class="col-sm-8 col-md-5">
-                                    <button type="reset" class="btn btn-primary"><span
+                                    <button type="reset" class="btn btn-primary" id="resetBtn"><span
                                             class="glyphicon glyphicon-refresh"></span>
                                         Reset
                                     </button>
-                                    <button type="submit" class="btn btn-primary"><span
+                                    <button type="submit" class="btn btn-primary" id="saveBtn"><span
                                             class="glyphicon glyphicon-save"></span>
                                         Save
                                     </button>
@@ -195,5 +188,10 @@
         </div>
     </div>
 </sec:authorize>
+<link href='<c:url value="/css/bootstrap-modal.css" />' rel="stylesheet" type="text/css"/>
+<link href='<c:url value="/css/bootstrap-modal-bs3patch.css" />' rel="stylesheet" type="text/css"/>
 
+<script src='<c:url value="/js/bootstrap-modal.js" />' type="text/javascript"></script>
+<script src='<c:url value="/js/bootstrap-modalmanager.js" />' type="text/javascript"></script>
+<script src='<c:url value="/js/warana/home.js" />' type="text/javascript"></script>
 <%@include file="footer.jsp" %>

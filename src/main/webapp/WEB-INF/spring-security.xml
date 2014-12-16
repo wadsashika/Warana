@@ -11,6 +11,7 @@
 
         <security:intercept-url pattern="/home" access="permitAll"/>
         <security:intercept-url pattern="/loginfailed" access="permitAll"/>
+        <security:intercept-url pattern="/signup" access="permitAll"/>
         <security:intercept-url pattern="/css/**" access="permitAll"/>
         <security:intercept-url pattern="/js/**" access="permitAll"/>
         <security:intercept-url pattern="/fonts/**" access="permitAll"/>
