@@ -80,7 +80,7 @@ public class CVParserServiceImpl implements CVParserService {
          * Load the 7 class classifier
          * Finds Time, Location, Organization, Person, Money, Percent, Date
          */
-        String serializedClassifier = "F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\classifiers\\english.muc.7class.distsim.crf.ser.gz";
+        String serializedClassifier = "src\\main\\resources\\classifiers\\english.muc.7class.distsim.crf.ser.gz";
         try {
             classifier = CRFClassifier.getClassifier(serializedClassifier);
         } catch (IOException e) {
@@ -102,11 +102,11 @@ public class CVParserServiceImpl implements CVParserService {
          */
         String token = "";
         try {
-            BufferedReader EduBr = new BufferedReader(new FileReader("F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\gazeteerLists\\eduTokens"));
-            BufferedReader ProfsBr = new BufferedReader(new FileReader("F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\gazeteerLists\\profTokens"));
-            BufferedReader WrkBr = new BufferedReader(new FileReader("F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\gazeteerLists\\wrkTokens"));
-            BufferedReader AwrdBr = new BufferedReader(new FileReader("F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\gazeteerLists\\awardsTokens"));
-            BufferedReader ProjBr = new BufferedReader(new FileReader("F:\\Accademic\\Semister 7\\Final_Year_Project\\Project Implementation\\Implementation_2\\Warana\\src\\main\\resources\\gazeteerLists\\projTokens"));
+            BufferedReader EduBr = new BufferedReader(new FileReader("src\\main\\resources\\gazeteerLists\\eduTokens"));
+            BufferedReader ProfsBr = new BufferedReader(new FileReader("src\\main\\resources\\gazeteerLists\\profTokens"));
+            BufferedReader WrkBr = new BufferedReader(new FileReader("src\\main\\resources\\gazeteerLists\\wrkTokens"));
+            BufferedReader AwrdBr = new BufferedReader(new FileReader("src\\main\\resources\\gazeteerLists\\awardsTokens"));
+            BufferedReader ProjBr = new BufferedReader(new FileReader("src\\main\\resources\\gazeteerLists\\projTokens"));
 
             token = EduBr.readLine();
 

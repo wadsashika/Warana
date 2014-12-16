@@ -17,33 +17,28 @@ public class  OnlineInfoExtractor {
     private String profileDocsPath = Config.profilesPath;
     private Candidate candidate;
     PhraseAnalyzer phraseAnalyzer;
-    public String name = "", title = "", summary = "", pic_url = "", education = "";
+    private String name = "", title = "", summary = "", pic_url = "", education = "";
 //    private ArrayList<Experience> experienceList = new ArrayList<Experience>();
 //    private ArrayList<Project> projectsList = new ArrayList<Project>();
 //    private ArrayList<Publication> publicationList = new ArrayList<Publication>();
 
-    public OnlineInfoExtractor(Candidate candidate){
-        this.candidate = candidate;
-    }
-
 
     private Calculate similarityCalculator;
 
-    public OnlineInfoExtractor(String name) {
-        this.name = name;
-    }
 
-    public OnlineInfoExtractor(String searchName, PhraseAnalyzer phraseAnalyzer) {
-        this.phraseAnalyzer = phraseAnalyzer;
+    public OnlineInfoExtractor(Candidate candidate){
+        this.candidate = candidate;
+        this.name=candidate.getProfile().getName();
+        this.phraseAnalyzer = new PhraseAnalyzer();
         LinkedInExtractor linkedIn = new LinkedInExtractor();
         GoogleScholarExtractor gscholar = new GoogleScholarExtractor();
         GitHubExtractor github = new GitHubExtractor("69e07dde89a8a0a6713f810cfd4c461f04f47e85");
 
         similarityCalculator = new Calculate();
 
-        linkedIn.ExtractInformation(searchName, candidate);
-        gscholar.Extract(searchName, candidate);
-        github.Extract(searchName, candidate);
+        linkedIn.ExtractInformation( candidate);
+        gscholar.Extract(candidate);
+        github.Extract(candidate);
         if (pic_url.equalsIgnoreCase("")) {
             pic_url = "http://ryonaitis.files.wordpress.com/2012/03/images.jpg";
         }

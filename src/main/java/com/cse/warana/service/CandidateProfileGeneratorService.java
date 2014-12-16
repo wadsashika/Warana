@@ -11,7 +11,7 @@ import java.io.File;
 public interface CandidateProfileGeneratorService {
 
     /**
-     * This methods is responsible for extracting the cv Information via the CV
+     * This methods is responsible for extracting the cv Information via the CVs
      * @param cvParser
      */
     public void extractCVInformation(CVParserService cvParser, File resume);

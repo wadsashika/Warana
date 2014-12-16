@@ -23,6 +23,7 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
     private static ArrayList<Project> projectsList;
     private static ArrayList<Referee> refereesList;
     private static ArrayList<Technology> technologiesList;
+    private static ArrayList<Publication> publicationList;
     private static ArrayList<Work> worksList;
     private static HashMap<String,Object> infoCategoryTypes;
 
@@ -52,6 +53,9 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
         technologiesList = new ArrayList<>();
         infoCategoryTypes.put("TECHNOLOGIES_LIST",technologiesList);
 
+        publicationList = new ArrayList<>();
+        infoCategoryTypes.put("PUBLICATIONS_LIST",publicationList);
+
         worksList = new ArrayList<>();
         infoCategoryTypes.put("WORK_LIST",worksList);
     }
@@ -78,8 +82,8 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
         candidate.setProjectsLists(projectsList);
         candidate.setRefereesList(refereesList);
         candidate.setTechnologiesList(technologiesList);
+        candidate.setPublicationList(publicationList);
         candidate.setWorksList(worksList);
-
         return candidate;
     }
 

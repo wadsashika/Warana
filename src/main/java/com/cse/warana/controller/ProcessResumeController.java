@@ -89,7 +89,7 @@ public class ProcessResumeController {
     @ResponseBody
     public boolean processSelectedResumes(@RequestBody String[] fileNames){
 
-        String baseDirectory = "F:\\Accademic\\Semister 7\\Final_Year_Project\\CareersDay2013_CVs\\CareersDay2013_CVs\\pdfs";
+        String baseDirectory = "src\\main\\resources\\Docs\\CVs";
         ArrayList<Candidate> candidateArrayList = new ArrayList<>();
         for (int a = 0; a < fileNames.length; a++){
             System.out.println(fileNames[a]);
@@ -100,6 +100,7 @@ public class ProcessResumeController {
             Candidate candidate = new Candidate();
             profileGeneratorService.extractCVInformation(cvParserService,new File(baseDirectory+"\\"+fileNames[a]));
             candidateArrayList.add(profileGeneratorService.generateCandidateProfile(candidate));
+
             long candidate_id = storeProcessedResumeService.storeCandidateTableData(candidate);
 
             storeProcessedResumeService.storeEducationalTableData(candidate,candidate_id);
