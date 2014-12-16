@@ -4,6 +4,8 @@
 
 WARANA.analyzeResume = function() {
 
+    var dataTbl;
+
     var setResultsDataTable = function () {
         $("#analyzed-results-table").dataTable(
             {
@@ -21,9 +23,15 @@ WARANA.analyzeResume = function() {
     };
 
     var setResumesToProcessDataTable = function () {
-        $("#resumes-to-process-table").dataTable(
+        dataTbl = $("#resumes-to-process-table").dataTable(
             {
-                "bSort": false
+                "bSort": false,
+                "columnDefs": [
+                    {
+                        "targets": [ 1 ],
+                        "visible": false
+                    }
+                ]
             }
         );
     };
@@ -54,16 +62,37 @@ WARANA.analyzeResume = function() {
             }
         );
     };
+
+    var analyzeResumes = function(){
+        var selected = [];
+        $('.files-checkbox:checked').each(function() {
+            selected.push(dataTbl.fnGetData($(this).closest("tr").get(0))[1]);
+        });
+
+        $.ajax({
+            type : 'POST',
+            url : 'analyze/analyzelist',
+            data : JSON.stringify(selected),
+            contentType: "application/json",
+            success: function(data){
+                alert(data);
+            },
+            error: function (e) {
+                alert('Error: ' + e);
+            }
+        });
+    };
     
     
     return {
         init: function () {
-            setResultsDataTable();
+            var tbl = setResultsDataTable();
             setResumesToProcessDataTable();
 
             $(document).on("click", "#select-all", selectAll);
             $(document).on("click", "#clear-selection", clearSelected);
             $(document).on("click", ".view-prof", viewProfileClick);
+            $(document).on("click", "#analyze-candidate-btn", analyzeResumes);
         }
     }
     

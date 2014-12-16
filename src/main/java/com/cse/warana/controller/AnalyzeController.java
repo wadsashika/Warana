@@ -10,8 +10,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.ArrayList;
@@ -61,5 +63,12 @@ public class AnalyzeController {
         model.addObject("results",analyticResultsDTOs);
 
         return model;
+    }
+
+    @RequestMapping(value = "analyze/analyzelist", method = RequestMethod.POST)
+    @ResponseBody
+    public boolean analyzeSelectedResumes(@RequestBody String[] idList){
+        analyzeResumeService.analyzeSelectedListOfCandidates(idList);
+        return true;
     }
 }
