@@ -1,8 +1,6 @@
-/**
- * Created by Nadeeshaan on 11/15/2014.
- */
+WARANA.namespace("module.analyzeResume");
 
-WARANA.analyzeResume = function() {
+WARANA.module.analyzeResume = function () {
 
     var dataTbl;
 
@@ -54,27 +52,27 @@ WARANA.analyzeResume = function() {
         });
     };
 
-    var viewProfileClick = function(){
+    var viewProfileClick = function () {
         var id = this.id;
         $("#profile-info").modal(
             {
-                show : true
+                show: true
             }
         );
     };
 
-    var analyzeResumes = function(){
+    var analyzeResumes = function () {
         var selected = [];
-        $('.files-checkbox:checked').each(function() {
+        $('.files-checkbox:checked').each(function () {
             selected.push(dataTbl.fnGetData($(this).closest("tr").get(0))[1]);
         });
 
         $.ajax({
-            type : 'POST',
-            url : 'analyze/analyzelist',
-            data : JSON.stringify(selected),
+            type: 'POST',
+            url: 'analyze/analyzelist',
+            data: JSON.stringify(selected),
             contentType: "application/json",
-            success: function(data){
+            success: function (data) {
                 alert(data);
             },
             error: function (e) {
@@ -82,8 +80,8 @@ WARANA.analyzeResume = function() {
             }
         });
     };
-    
-    
+
+
     return {
         init: function () {
             var tbl = setResultsDataTable();
@@ -95,11 +93,11 @@ WARANA.analyzeResume = function() {
             $(document).on("click", "#analyze-candidate-btn", analyzeResumes);
         }
     }
-    
+
 }();
 
-$(function(){
-    WARANA.analyzeResume.init();
+$(function () {
+    WARANA.module.analyzeResume.init();
 });
 
 
