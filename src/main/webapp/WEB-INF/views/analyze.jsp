@@ -34,6 +34,7 @@
                                 <thead>
                                 <tr>
                                     <th>Select</th>
+                                    <th>Id</th>
                                     <th>Name</th>
                                     <th>Email</th>
                                 </tr>
@@ -43,10 +44,13 @@
                                         <tr>
                                             <td><input type="checkbox" class="files-checkbox"></td>
                                             <td>
-                                                <div style="margin-left: 75px"><c:out value="${result.name}"></c:out></div>
+                                                <c:out value="${result.id}"></c:out>
                                             </td>
                                             <td>
-                                                <div style="margin-left: 75px"><c:out value="${result.email}"></c:out></div>
+                                                <div><c:out value="${result.name}"></c:out></div>
+                                            </td>
+                                            <td>
+                                                <div><c:out value="${result.email}"></c:out></div>
                                             </td>
                                         </tr>
                                     </c:forEach>
@@ -59,7 +63,7 @@
                             <button type="button" id="clear-selection" class="btn btn-warning" style="margin-right: 10px;">
                                 <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Clear
                             </button>
-                            <button type="button" class="btn btn-success">
+                            <button type="button" class="btn btn-success" id="analyze-candidate-btn">
                                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Analyze
                             </button>
                         </div>

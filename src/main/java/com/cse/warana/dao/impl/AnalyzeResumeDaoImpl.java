@@ -1,6 +1,7 @@
 package com.cse.warana.dao.impl;
 
 import com.cse.warana.dao.AnalyzeResumeDao;
+import com.cse.warana.dto.DataToGenerateMapDTO;
 import com.cse.warana.dto.ResumesToAnalyseDto;
 import com.cse.warana.dto.ResumesToProcessDto;
 import org.slf4j.Logger;
@@ -12,6 +13,7 @@ import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -32,7 +34,7 @@ public class AnalyzeResumeDaoImpl extends BaseJDBCDaoImpl implements AnalyzeResu
         StringBuilder query = new StringBuilder("");
         query.append("SELECT id,name,email \n");
         query.append("FROM candidate \n");
-        query.append("WHERE score = -1");
+        query.append("WHERE score = 0");
 
         RowMapper<ResumesToAnalyseDto> mapper = new RowMapper<ResumesToAnalyseDto>() {
             @Override
@@ -50,5 +52,19 @@ public class AnalyzeResumeDaoImpl extends BaseJDBCDaoImpl implements AnalyzeResu
         returnList = getNamedParameterJdbcTemplate().query(query.toString(),mapper);
 
         return returnList;
+    }
+
+    /**
+     * TODO Finish the query suitably
+     * @param idList
+     * @return
+     */
+    @Override
+    @TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
+    public List<DataToGenerateMapDTO> getDataForGraph(String[] idList){
+        List<DataToGenerateMapDTO> returnLst = new ArrayList<>();
+
+        return returnLst;
+
     }
 }

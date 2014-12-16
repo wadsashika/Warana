@@ -1,5 +1,6 @@
 package com.cse.warana.dao;
 
+import com.cse.warana.dto.DataToGenerateMapDTO;
 import com.cse.warana.dto.ResumesToAnalyseDto;
 
 import java.util.List;
@@ -9,4 +10,5 @@ import java.util.List;
  */
 public interface AnalyzeResumeDao {
     public List<ResumesToAnalyseDto> getResumesToBeAnalyzed();
+    public List<DataToGenerateMapDTO> getDataForGraph(String[] idList);
 }
