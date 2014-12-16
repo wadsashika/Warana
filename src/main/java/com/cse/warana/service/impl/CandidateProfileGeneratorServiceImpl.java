@@ -2,6 +2,7 @@ package com.cse.warana.service.impl;
 
 import com.cse.warana.service.CVParserService;
 import com.cse.warana.service.CandidateProfileGeneratorService;
+import com.cse.warana.utility.infoExtractors.OnlineInfoExtractor;
 import com.cse.warana.utility.infoHolders.*;
 import org.springframework.stereotype.Service;
 
@@ -69,10 +70,6 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
         cvParser.parseLines(infoCategoryTypes);
     }
 
-    @Override
-    public void extractOnlineProfileInformation() {
-
-    }
 
     @Override
     public Candidate generateCandidateProfile(Candidate candidate) {
@@ -85,6 +82,12 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
         candidate.setPublicationList(publicationList);
         candidate.setWorksList(worksList);
         return candidate;
+    }
+
+
+    @Override
+    public void extractOnlineProfileInformation(Candidate candidate) {                  // Candidate should be initalized with CV info before calling this method
+        OnlineInfoExtractor onlineInfoExtractor=new OnlineInfoExtractor(candidate);
     }
 
 //    public static void main(String[] args){

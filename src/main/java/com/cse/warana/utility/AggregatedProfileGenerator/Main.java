@@ -19,10 +19,14 @@ public class Main {
     }
 
     public void CallName() {
+        /**
+         * TODO implement methods to confirm whether online profiles exactly represent the desired candidate
+         */
+
         Candidate candidate=new Candidate();
         CandidateProfileGeneratorService generatorService=new CandidateProfileGeneratorServiceImpl();
         CVParserService cvParserService=new CVParserServiceImpl();
-        File cv=new File("D:\\Projects\\Repositories\\Final Year Project\\Warana New\\Warana\\src\\main\\resources\\Docs\\CVs\\100408J_Thilina.pdf");
+        File cv=new File("src\\main\\resources\\Docs\\CVs\\100408J_Thilina.pdf");
 
         generatorService.extractCVInformation(cvParserService,cv);
         generatorService.generateCandidateProfile(candidate);
