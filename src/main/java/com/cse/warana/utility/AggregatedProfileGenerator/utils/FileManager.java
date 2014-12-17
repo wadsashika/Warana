@@ -238,4 +238,23 @@ public class FileManager {
             e.printStackTrace();
         }
     }
+
+    public void WriteAbbrFile(String destinationPath,String fileName, HashMap<String, String> pairs) {
+        boolean f = new File(destinationPath).mkdirs();
+        File file=new File(destinationPath+"/"+fileName);
+        // creates the file
+        try {
+            if(!file.exists())
+                file.createNewFile();
+            FileWriter writer = new FileWriter(file);
+            for (Map.Entry<String, String> entry : pairs.entrySet()) {
+                writer.write(entry.getKey()+","+entry.getValue()+"\n");
+            }
+            writer.flush();
+            writer.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

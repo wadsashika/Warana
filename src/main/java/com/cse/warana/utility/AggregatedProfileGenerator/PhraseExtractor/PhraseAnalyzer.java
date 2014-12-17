@@ -153,6 +153,7 @@ public class PhraseAnalyzer {
                 tester.execute(termDocIndex, destPath);
                 System.out.println(new Date());
 
+
             } catch (Exception e) {
                 e.printStackTrace();
                 RecognizeTerms(srcPath,destPath);

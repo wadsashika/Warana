@@ -9,10 +9,6 @@ import java.net.*;
  * Created by Thilina on 8/22/2014.
  */
 public class NetworkManager {
-    public static void  main(String[] args) {
-        new NetworkManager().Testing("https://api.github.com/search/users?q=thilina%20premasiri");
-//        new NetworkManager().Testing("https://www.google.lk/search?q=thilina+premasiri+linkedin");
-    }
     public String Get(String urlString){
 
         String info="";

@@ -173,7 +173,17 @@ public class AlgorithmComparotor {
         for (String s : root.list()) {
             phraseAnalyzer.RecognizeTerms(rootPath+"/"+s,destPath+"/"+s);
         }
+    }
 
+    public void ExtractAbbreviations(String rootPath,String destPath){
+        File root=new File(rootPath);
+        ExtractAbbrev extractAbbrev=new ExtractAbbrev();
+        File file = new File(destPath);
+        if (!file.exists())
+            file.mkdirs();
+        for (String s : root.list()) {
+            extractAbbrev.Extract(rootPath+"/"+s,destPath);
+        }
     }
 
 

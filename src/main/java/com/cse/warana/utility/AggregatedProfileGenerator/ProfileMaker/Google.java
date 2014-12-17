@@ -82,10 +82,6 @@ public class Google {
         return "";
     }
 
-    public static void main(String[] args) {
-//        new Google().FindOnGoogleScholar("nisansa dilushan");
-        new Google().FindOnWikipedia("unity3d");
-    }
 
     public ArrayList<String> FindOnWikipedia(String searchTerm) {
         String link = "";

@@ -22,25 +22,26 @@ public class TestPhraseAnalyser {
 //
 
         AlgorithmComparotor comparotor=new AlgorithmComparotor();
+        comparotor.ExtractAbbreviations(Config.skillsPath,Config.abbreviationsSkillsPath);
 //        GenerateStats(true,true,true,true,true,true,true,true );
 
-        for(int i=1;i<10;i++) {
-            Config.TERM_MAX_WORDS=i;
-
-            comparotor.ExtractTerms(Config.skillsPath,Config.skillsOutputPath);
-//        Config.enable_weights_learning=true;
-            GenerateStats(true, false, false, false, false, false, false, false);
-            GenerateStats(false, true, false, false, false, false, false, false);
-            GenerateStats(false, false, true, false, false, false, false, false);
-            GenerateStats(false, false, false, true, false, false, false, false);
-            GenerateStats(false, false, false, false, true, false, false, false);
-            GenerateStats(false, false, false, false, false, true, false, false);
-            GenerateStats(false, false, false, false, false, false, true, false);
-            GenerateStats(false, false, false, false, false, false, false, true);
-
-            Config.enable_weights_learning=false;
-            GenerateStats(true,true,true,true,true,true,true,true );
-        }
+//        for(int i=1;i<10;i++) {
+//            Config.TERM_MAX_WORDS=i;
+//
+//            comparotor.ExtractTerms(Config.skillsPath,Config.skillsOutputPath);
+////        Config.enable_weights_learning=true;
+//            GenerateStats(true, false, false, false, false, false, false, false);
+//            GenerateStats(false, true, false, false, false, false, false, false);
+//            GenerateStats(false, false, true, false, false, false, false, false);
+//            GenerateStats(false, false, false, true, false, false, false, false);
+//            GenerateStats(false, false, false, false, true, false, false, false);
+//            GenerateStats(false, false, false, false, false, true, false, false);
+//            GenerateStats(false, false, false, false, false, false, true, false);
+//            GenerateStats(false, false, false, false, false, false, false, true);
+//
+//            Config.enable_weights_learning=false;
+//            GenerateStats(true,true,true,true,true,true,true,true );
+//        }
 
 
 
