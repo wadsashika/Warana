@@ -24,6 +24,7 @@
     <script src='<c:url value="/js/moment.min.js" />' type="text/javascript"></script>
     <script src='<c:url value="/js/warana.common.js" />' type="text/javascript"></script>
     <script src='<c:url value="/js/warana.validation.js" />' type="text/javascript"></script>
+    <script src='<c:url value="/js/warana.serializer.js" />' type="text/javascript"></script>
     <script src='<c:url value="/js/base.js" />' type="text/javascript"></script>
     <script src='<c:url value="/js/camera.js" />' type="text/javascript"></script>
     <script src='<c:url value="/js/jquery.easing.1.3.js" />' type="text/javascript"></script>
@@ -54,14 +55,18 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <button  data-toggle="dropdown" class="top-buttons dropdown-toggle">Dulanga Sashika
+                            <button data-toggle="dropdown"
+                                    class="top-buttons dropdown-toggle">${sessionScope.firstName} ${sessionScope.lastName}
                             </button>
                             <ul class="dropdown-menu home-links" role="menu">
-                                <li><a href="<c:url value="/dashboard"/>"><span class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+                                <li><a href="<c:url value="/dashboard"/>"><span
+                                        class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
                                 <li class="divider"></li>
-                                <li><a href="<c:url value="/viewstat"/>"><span class="glyphicon glyphicon-eye-open"></span> View Statics</a></li>
+                                <li><a href="<c:url value="/viewstat"/>"><span
+                                        class="glyphicon glyphicon-eye-open"></span> View Statics</a></li>
                                 <li class="divider"></li>
-                                <li><a href="<c:url value="/j_spring_security_logout" />"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                                <li><a href="<c:url value="/j_spring_security_logout" />"><span
+                                        class="glyphicon glyphicon-log-out"></span> Logout</a></li>
                             </ul>
                         </li>
 
