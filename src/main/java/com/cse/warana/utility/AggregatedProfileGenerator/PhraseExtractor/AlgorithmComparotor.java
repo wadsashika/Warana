@@ -33,7 +33,7 @@ public class AlgorithmComparotor {
 
     }
     public void Compare(String rootPath,String normalizedFilesPath,String aggregatedFilesPath){
-        System.out.println("Comparing "+rootPath);
+//        System.out.println("Comparing "+rootPath);
         File directories=new File(rootPath);
         String[] directoryNames=directories.list();
         for (String name : directoryNames) {

@@ -1,6 +1,7 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.jate.util.control;
 
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.JATEProperties;
+import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import dragon.nlp.tool.lemmatiser.EngLemmatiser;
 
 import java.util.HashMap;
@@ -66,7 +67,7 @@ public class Lemmatizer extends Normalizer {
 
 
 	private void init() {
-		lemmatizer = new EngLemmatiser(JATEProperties.getInstance().getNLPPath()+"/lemmatizer", false, true);
+		lemmatizer = new EngLemmatiser(Config.NLP_PATH+"/lemmatizer", false, true);
 		tagLookUp.put("NN", 1);
 		tagLookUp.put("NNS", 1);
 		tagLookUp.put("NNP", 1);

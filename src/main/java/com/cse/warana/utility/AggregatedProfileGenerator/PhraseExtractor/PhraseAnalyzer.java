@@ -155,6 +155,7 @@ public class PhraseAnalyzer {
 
             } catch (Exception e) {
                 e.printStackTrace();
+                RecognizeTerms(srcPath,destPath);
             }
         }
     }

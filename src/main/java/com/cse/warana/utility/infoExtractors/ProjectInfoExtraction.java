@@ -63,8 +63,7 @@ public class ProjectInfoExtraction {
 
         Pattern pattern = null;
         Matcher matcher = null;
-
-        populateByFile("F:\\Accademic\\Semister 7\\Final_Year_Project\\Codes\\SectionIdentifier2\\input\\technologies", technologies);
+        populateByFile("src\\main\\resources\\gazeteerLists\\technologies", technologies);
 
 
         /**

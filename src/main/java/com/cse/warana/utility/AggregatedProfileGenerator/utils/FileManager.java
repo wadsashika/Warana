@@ -21,7 +21,7 @@ public class FileManager {
             normalizedMap=FileToMap(file);
             while (sc.hasNextLine()){
                 line=sc.nextLine();
-                String s=line.split(",")[0].split("\\|")[0];
+                String s=line.split(",")[0].split("\\|")[0].trim();
                 val=Double.parseDouble(line.split(",")[1]);
                 normalizedMap.put(s,val);
                 if (val<min)
