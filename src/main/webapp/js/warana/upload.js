@@ -1,24 +1,48 @@
-$(document).ready(function(){
-    var previewNode = document.querySelector("#template");
-    previewNode.id = "";
-    var previewTemplate = previewNode.parentNode.innerHTML;
-    previewNode.parentNode.removeChild(previewNode);
+WARANA.namespace("module.uploadCv");
 
-    var myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
-        url: "fileupload", // Set the url
-        thumbnailWidth: 80,
-        thumbnailHeight: 80,
-        parallelUploads: 20,
-        previewTemplate: previewTemplate,
-        previewsContainer: "#previews", // Define the container to display the previews
-        autoProcessQueue:false,
-        clickable: "#add-files"
-    });
+WARANA.module.uploadCv = function () {
+    var previewNode = null;
+    var previewTemplate = null;
+    var myDropzone = null;
 
-    document.querySelector("#remove-all").addEventListener("click", function() {
+    var initialize = function () {
+        previewNode = document.querySelector("#template");
+        previewNode.id = "";
+        previewTemplate = previewNode.parentNode.innerHTML;
+        previewNode.parentNode.removeChild(previewNode);
+
+        myDropzone = new Dropzone(document.body, { // Make the whole body a dropzone
+            url: "fileupload", // Set the url
+            thumbnailWidth: 80,
+            thumbnailHeight: 80,
+            parallelUploads: 20,
+            previewTemplate: previewTemplate,
+            previewsContainer: "#previews", // Define the container to display the previews
+            autoProcessQueue: false,
+            clickable: "#add-files"
+        });
+    };
+
+    var removeAllFiles = function () {
         myDropzone.removeAllFiles();
-    });
-    document.querySelector("#upload-all").addEventListener("click", function() {
+    };
+
+    var uploadAllFiles = function () {
         myDropzone.processQueue();
-    });
+    };
+
+    return {
+        init: function () {
+            initialize();
+            $(document).on("click", "#remove-all", removeAllFiles);
+            $(document).on("click", "#upload-all", uploadAllFiles);
+        }
+    };
+
+}();
+
+$(function () {
+    WARANA.module.uploadCv.init();
 });
+
+

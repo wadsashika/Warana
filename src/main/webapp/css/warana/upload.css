@@ -1,4 +1,19 @@
-#upload-info-table td div{
-    margin-left: 50px;
-    margin-right: 50px;
+
+.file-drop-area{
+    padding: 50px;
+    background-color: #F5FAFF;
 }
+
+#add-files:hover{
+    cursor: pointer;
+}
+
+.action-btn-row{
+    height: 40px;
+}
+
+.action-btn{
+    float: right;
+    margin-left: 15px;
+}
+
