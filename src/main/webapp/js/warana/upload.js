@@ -19,7 +19,14 @@ WARANA.module.uploadCv = function () {
             previewTemplate: previewTemplate,
             previewsContainer: "#previews", // Define the container to display the previews
             autoProcessQueue: false,
-            clickable: "#add-files"
+            clickable: "#add-files",
+
+            init: function(){
+                this.on("queuecomplete", function (file) {
+                    alert("All files have uploaded ");
+                    document.getElementById("previews").innerHTML = "";
+                });
+            }
         });
     };
 
