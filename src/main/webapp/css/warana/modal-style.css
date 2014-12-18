@@ -1,0 +1,13 @@
+#prof-modal{
+    width: 75%;
+}
+
+#prof-img{
+    width: 100px;
+    height: 100px;
+}
+
+#myModalLabel{
+    font-size: large;
+    color: #FF8802;
+}

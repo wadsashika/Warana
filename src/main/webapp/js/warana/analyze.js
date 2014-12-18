@@ -4,22 +4,6 @@ WARANA.module.analyzeResume = function () {
 
     var dataTbl;
 
-    var setResultsDataTable = function () {
-        $("#analyzed-results-table").dataTable(
-            {
-
-                "bSort": false,
-                "columns": [
-                    {"width": "10%"},
-                    { "width": "60%" },
-                    {"width": "10%"},
-                    {"width": "10%"},
-                    {"width": "10%"}
-                ]
-            }
-        );
-    };
-
     var setResumesToProcessDataTable = function () {
         dataTbl = $("#resumes-to-process-table").dataTable(
             {
@@ -52,16 +36,7 @@ WARANA.module.analyzeResume = function () {
         });
     };
 
-    var viewProfileClick = function () {
-        var id = this.id;
-        $("#profile-info").modal(
-            {
-                show: true
-            }
-        );
-    };
-
-    var analyzeResumes = function () {
+    var analyzeResumes = function(){
         var selected = [];
         $('.files-checkbox:checked').each(function () {
             selected.push(dataTbl.fnGetData($(this).closest("tr").get(0))[1]);
@@ -84,12 +59,10 @@ WARANA.module.analyzeResume = function () {
 
     return {
         init: function () {
-            var tbl = setResultsDataTable();
             setResumesToProcessDataTable();
 
             $(document).on("click", "#select-all", selectAll);
             $(document).on("click", "#clear-selection", clearSelected);
-            $(document).on("click", ".view-prof", viewProfileClick);
             $(document).on("click", "#analyze-candidate-btn", analyzeResumes);
         }
     }
