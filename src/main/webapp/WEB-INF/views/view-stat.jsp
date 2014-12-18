@@ -4,6 +4,8 @@
 <link href='<c:url value="/css/warana/pages-commons.css" />' rel="stylesheet" type="text/css"/>
 <link href='<c:url value="/css/font-awesome.min.css" />' rel="stylesheet" type="text/css"/>
 <link href='<c:url value="/css/bootstrap-tagsinput.css" />' rel="stylesheet" type="text/css"/>
+<link href='<c:url value="/css/warana/modal-style.css" />' rel="stylesheet" type="text/css"/>
+<link href='<c:url value="/css/warana/view-stat.css" />' rel="stylesheet" type="text/css"/>
 
 <script src='<c:url value="/js/metisMenu.min.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/jquery.dataTables.js" />' type="text/javascript"></script>
@@ -62,6 +64,8 @@
                 <!-- /.col-lg-4 -->
             </div>
         </div>
+
+        <%@include file="view-profile-modal.jsp" %>
     </div>
 </div>
 
