@@ -7,10 +7,19 @@ import java.util.ArrayList;
  */
 public class ViewStatDTO {
 
+    private long id;
     private String name;
     private String email;
     private String score;
     private ArrayList<String> technologies;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;

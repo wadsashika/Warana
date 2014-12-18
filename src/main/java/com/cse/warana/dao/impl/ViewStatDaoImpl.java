@@ -20,7 +20,7 @@ public class ViewStatDaoImpl extends BaseJDBCDaoImpl implements ViewStatDao {
 
         List<ViewStatDTO> returnDtoList = null;
         StringBuilder query = new StringBuilder("");
-        query.append("SELECT name,email,score \n");
+        query.append("SELECT id,name,email,score \n");
         query.append("FROM candidate \n");
         query.append("WHERE score <> -1");
 
@@ -29,6 +29,7 @@ public class ViewStatDaoImpl extends BaseJDBCDaoImpl implements ViewStatDao {
             public ViewStatDTO mapRow(ResultSet resultSet, int i) throws SQLException {
                 ViewStatDTO viewStatDto = new ViewStatDTO();
 
+                viewStatDto.setId(resultSet.getLong("id"));
                 viewStatDto.setName(resultSet.getString("name"));
                 viewStatDto.setEmail(resultSet.getString("email"));
                 viewStatDto.setScore(resultSet.getString("score"));
