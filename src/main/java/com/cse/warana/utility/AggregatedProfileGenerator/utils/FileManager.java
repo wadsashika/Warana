@@ -21,7 +21,7 @@ public class FileManager {
             normalizedMap=FileToMap(file);
             while (sc.hasNextLine()){
                 line=sc.nextLine();
-                String s=line.split(",")[0].split("\\|")[0];
+                String s=line.split(",")[0].split("\\|")[0].trim();
                 val=Double.parseDouble(line.split(",")[1]);
                 normalizedMap.put(s,val);
                 if (val<min)
@@ -230,6 +230,25 @@ public class FileManager {
             FileWriter writer = new FileWriter(file);
             for (Map.Entry<String, Double> entry : weightMap.entrySet()) {
                 writer.write(entry.getKey()+","+entry.getValue().toString()+"\n");
+            }
+            writer.flush();
+            writer.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void WriteAbbrFile(String destinationPath,String fileName, HashMap<String, String> pairs) {
+        boolean f = new File(destinationPath).mkdirs();
+        File file=new File(destinationPath+"/"+fileName);
+        // creates the file
+        try {
+            if(!file.exists())
+                file.createNewFile();
+            FileWriter writer = new FileWriter(file);
+            for (Map.Entry<String, String> entry : pairs.entrySet()) {
+                writer.write(entry.getKey()+","+entry.getValue()+"\n");
             }
             writer.flush();
             writer.close();

@@ -18,6 +18,8 @@ public class Config {
     public static final String goldenStandardPath    ="src/main/resources/Golden Standard/";
     public static final String statsOutPath          ="src/main/resources/StatsOut/";
     public static final String weightMapPath         ="src/main/resources/Docs/WeightMap.csv";
+    public static final String abbreviationsSkillsPath   ="src/main/resources/Docs/Abbreviations/SkillDocs/";
+    public static final String abbreviationsProfilesPath   ="src/main/resources/Docs/Abbreviations/UserDocs/";
 
     public static final int user_max_docs=10;
 
