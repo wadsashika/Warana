@@ -25,14 +25,14 @@ public class AlgorithmComparotor {
     public static void main(String[] args){
         AlgorithmComparotor comparotor=new AlgorithmComparotor();
 //        comparotor.ExtractTerms(Config.skillsPath,Config.skillsOutputPath);
-        comparotor.Compare(Config.skillsOutputPath,Config.normalizedSkillsPath,Config.aggregatedSkillsPath);
+//        comparotor.Compare(Config.skillsOutputPath,Config.normalizedSkillsPath,Config.aggregatedSkillsPath, Config.abbreviationsSkillsPath);
 //        comparotor.Compare(Config.profilesOutputPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath);
 //        comparotor.Compare(Config);
         comparotor.AggregateAllSkills();
 //        System.out.println(Integer.MIN_VALUE);
 
     }
-    public void Compare(String rootPath,String normalizedFilesPath,String aggregatedFilesPath){
+    public void Compare(String rootPath,String normalizedFilesPath,String aggregatedFilesPath, String abbrFilesPath){
 //        System.out.println("Comparing "+rootPath);
         File directories=new File(rootPath);
         String[] directoryNames=directories.list();
@@ -45,7 +45,7 @@ public class AlgorithmComparotor {
         directories=new File(normalizedFilesPath);
         directoryNames=directories.list();
         for (String name : directoryNames) {
-                CompareTerms(normalizedFilesPath+"/"+name,aggregatedFilesPath);
+                CompareTerms(normalizedFilesPath+"/"+name,aggregatedFilesPath,abbrFilesPath+"/"+name+".csv");
         }
 
     }
@@ -59,8 +59,9 @@ public class AlgorithmComparotor {
         }
     }
 
-    public void CompareTerms(String path, String aggregatedDestination){
+    public void CompareTerms(String path, String aggregatedDestination, String abbrPath){
         File root=new File(path);
+        File abbrFile=new File(abbrPath);
         HashMap<String,Double> termsMap=new HashMap<String, Double>();
 //        termsMap.put("000","");
 //        for (File file : root.listFiles()) {
@@ -92,6 +93,8 @@ public class AlgorithmComparotor {
         if (Config.enable_weirdness)
         fileList.add(new File(path+"/"+Config.weirdness));
 
+
+
         for (File file : fileList) {
             aggregateTerms(termsMap, file);
         }
@@ -99,6 +102,8 @@ public class AlgorithmComparotor {
             aggregateValues(termsMap, file);
         }
         termsMap= (HashMap<String, Double>) fileManager.NormalizeMap(termsMap);
+
+        aggregateAbbreviations(termsMap,abbrFile);
 
 //        for (Map.Entry<String, Double> entry : termsMap.entrySet()) {
 //            System.out.println(entry.getKey()+" , "+entry.getValue());
@@ -120,6 +125,26 @@ public class AlgorithmComparotor {
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+    }
+
+    private void aggregateAbbreviations(HashMap<String, Double> termsMap, File abbrFile) {
+//        termsMap.put("000",termsMap.get("000")+","+file.getName());
+        HashMap<String, String> abbrMap= fileManager.FileToStrStrMap(abbrFile);
+        try {
+
+            for (Map.Entry<String, Double> entry : termsMap.entrySet()) {
+                if (abbrMap.get(entry.getKey())!=null){
+                    if(termsMap.containsKey(abbrMap.get(entry.getKey()))) {
+                        entry.setValue(entry.getValue() + termsMap.get(abbrMap.get(entry.getKey())));
+                        termsMap.put(abbrMap.get(entry.getKey()), entry.getValue());
+                    }
+                }
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
     private void aggregateValues(HashMap<String, Double> termsMap, File file) {
 //        termsMap.put("000",termsMap.get("000")+","+file.getName());

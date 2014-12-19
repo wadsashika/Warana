@@ -66,7 +66,7 @@ public class Config {
     //    jate properties
     public static final String NLP_PATH="src/main/java/com/cse/warana/utility/AggregatedProfileGenerator/PhraseExtractor/nlp_resources";
     public static final String TEST_PATH="src/main/java/com/cse/warana/utility/AggregatedProfileGenerator/PhraseExtractor/test";
-    public static int TERM_MAX_WORDS=2;
+    public static int TERM_MAX_WORDS=3;
     public static final int MULTITHREAD_COUNTER_NUMBERS=5;
     public static final Boolean TERM_IGNORE_DIGITS=true;
 

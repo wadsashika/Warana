@@ -10,11 +10,13 @@ import com.cse.warana.utility.infoHolders.Candidate;
 import com.cse.warana.utility.infoHolders.Profile;
 
 import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
+    static public  void  main(String[] args) {
         new Main().CallName();
     }
 
@@ -22,6 +24,17 @@ public class Main {
         /**
          * TODO implement methods to confirm whether online profiles exactly represent the desired candidate
          */
+
+        HashMap<String,Integer> map=new HashMap<String,Integer>();
+
+        map.put("one",1);
+        map.put("two",2);
+        map.put("three",3);
+
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            entry.setValue(5);
+        }
+        System.out.println(map.get("a"));
 
         Candidate candidate=new Candidate();
         CandidateProfileGeneratorService generatorService=new CandidateProfileGeneratorServiceImpl();
@@ -31,11 +44,6 @@ public class Main {
         generatorService.extractCVInformation(cvParserService,cv);
         generatorService.generateCandidateProfile(candidate);
         OnlineInfoExtractor onlineInfoExtractor=new OnlineInfoExtractor(candidate);
-
-
         CallName();
-
-
-
     }
 }

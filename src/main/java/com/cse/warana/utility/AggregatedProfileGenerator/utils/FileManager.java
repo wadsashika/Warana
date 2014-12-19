@@ -248,7 +248,7 @@ public class FileManager {
                 file.createNewFile();
             FileWriter writer = new FileWriter(file);
             for (Map.Entry<String, String> entry : pairs.entrySet()) {
-                writer.write(entry.getKey()+","+entry.getValue()+"\n");
+                writer.write(entry.getKey().toLowerCase()+","+entry.getValue().toLowerCase()+"\n");
             }
             writer.flush();
             writer.close();
@@ -256,5 +256,28 @@ public class FileManager {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public HashMap<String, String> FileToStrStrMap(File file) {
+        HashMap<String,String> map=new HashMap<String, String>();
+        try {
+            Scanner sc=new Scanner(file);
+            while (sc.hasNextLine()){
+                String line=sc.nextLine();
+                String[] ary= line.split(",");
+//                System.out.println(ary[1]);
+//                System.out.println(ary[0].split("\\|")[0]);
+                if(ary.length>1) {
+                    map.put(ary[0].split("\\|")[0].trim(), ary[1].trim());
+                }
+
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            System.out.println(file.getName()+" not found");
+            return map;
+        }
+
+        return map;
     }
 }
