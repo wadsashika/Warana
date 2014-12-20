@@ -53,8 +53,9 @@ public class Config {
     public static boolean enable_weirdness        = true;
 
 
-    public static final boolean enable_weights        =false;
+    public static final boolean enable_weights   = false;
     public static boolean enable_weights_learning= true;
+    public static final boolean enable_abbreviations= true;
 
 
     public static boolean enable_filter        =false;
@@ -62,6 +63,7 @@ public class Config {
     public static int maxEntries=50;
     public static final int statEvaluationDepth=60;
     public static boolean removeDuplications=false;
+
 
     //    jate properties
     public static final String NLP_PATH="src/main/java/com/cse/warana/utility/AggregatedProfileGenerator/PhraseExtractor/nlp_resources";

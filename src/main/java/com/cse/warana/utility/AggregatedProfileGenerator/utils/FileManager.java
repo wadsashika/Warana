@@ -69,7 +69,27 @@ public class FileManager {
         }
         return map;
     }
+    public void writeFile(String name,HashMap<String,Double> map, String destinationPath){
+//        boolean b = new File(filePath+"/"+name).mkdirs();
 
+        boolean f = new File(destinationPath).mkdirs();
+        File file=new File(destinationPath+name+".csv");
+        // creates the file
+        try {
+            if(!file.exists())
+                file.createNewFile();
+            FileWriter writer = new FileWriter(file);
+            for (Map.Entry<String, Double> entry : map.entrySet()) {
+                writer.write(entry.getKey()+","+entry.getValue().toString()+"\n");
+            }
+            writer.flush();
+            writer.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
     public Map<String, Double> SortByComparator(Map<String, Double> unsortMap) {
 
         // Convert Map to List
@@ -248,7 +268,7 @@ public class FileManager {
                 file.createNewFile();
             FileWriter writer = new FileWriter(file);
             for (Map.Entry<String, String> entry : pairs.entrySet()) {
-                writer.write(entry.getKey().toLowerCase()+","+entry.getValue().toLowerCase()+"\n");
+                writer.write(entry.getKey().toLowerCase().trim()+","+entry.getValue().toLowerCase().trim()+"\n");
             }
             writer.flush();
             writer.close();

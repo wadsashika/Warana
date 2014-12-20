@@ -1,11 +1,9 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor;
 
-import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.PhraseAnalyzer;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.FileManager;
 
 import java.io.File;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -178,17 +176,17 @@ public class TestPhraseAnalyser {
 
         AlgorithmComparotor comparotor=new AlgorithmComparotor();
 //        comparotor.ExtractTerms(Config.skillsPath,Config.skillsOutputPath);
-        comparotor.ExtractAbbreviations(Config.skillsPath,Config.abbreviationsSkillsPath);
+//        comparotor.ExtractAbbreviations(Config.skillsPath,Config.abbreviationsSkillsPath);
         comparotor.Compare(Config.skillsOutputPath,Config.normalizedSkillsPath,Config.aggregatedSkillsPath,Config.abbreviationsSkillsPath);
 //        comparotor.Compare(Config.profilesOutputPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath);
 //        comparotor.Compare(Config);
 //        System.out.println(Integer.MIN_VALUE);
         HashMap<String, Double> allDocs = fileManager.FileToMap(new File(Config.aggregatedAllDocsPath + "/SkillDocs.csv"));
 
-        GetStats(Config.goldenStandardPath, Config.aggregatedSkillsPath, Config.statsOutPath,allDocs);
+        GetStats(Config.goldenStandardPath, Config.aggregatedSkillsPath,Config.abbreviationsSkillsPath ,Config.statsOutPath,allDocs);
     }
 
-    public static void GetStats(String goldenStandardPath,String algorithmgeneratedPath, String statOutPath,HashMap<String,Double> allDocs){
+    public static void GetStats(String goldenStandardPath,String algorithmgeneratedPath,String abbrPath, String statOutPath,HashMap<String,Double> allDocs){
         File goldenRoot=new File(goldenStandardPath);
         HashMap<String,Double> stats=new HashMap<String,Double>();
         double weight=0;
@@ -196,8 +194,9 @@ public class TestPhraseAnalyser {
         for (String fileName : goldenRoot.list()) {
             HashMap<String, Double> goldenMap = fileManager.FileToMap(new File(goldenRoot + "/" + fileName));
             HashMap<String, Double> algoMap = fileManager.FileToMap(new File(algorithmgeneratedPath + "/" + fileName));
+            HashMap<String, String> abbrMap = fileManager.FileToStrStrMap(new File(algorithmgeneratedPath + "/" + fileName));
             algoMap= (HashMap<String, Double>) fileManager.SortByComparator(algoMap);
-            double score = CompareMaps(goldenMap, algoMap, stats,allDocs)/goldenMap.size();
+            double score = CompareMaps(goldenMap, algoMap,abbrMap ,stats,allDocs)/goldenMap.size();
             weight+=(score-Config.average_precision);
 
 //            System.out.println("weight ==================== "+score/10.0);
@@ -267,9 +266,11 @@ public class TestPhraseAnalyser {
         fileManager.WriteFile(fileName,stats,Config.statsOutPath);
     }
 
-    private static double CompareMaps(HashMap<String, Double> goldenMap, HashMap<String, Double> algoMap, HashMap<String, Double> stats,HashMap<String, Double> allDocs) {
+    private static double CompareMaps(HashMap<String, Double> goldenMap, HashMap<String, Double> algoMap,HashMap<String, String> abbrMap, HashMap<String, Double> stats,HashMap<String, Double> allDocs) {
         int i=0;
         double score=0;
+        AlgorithmComparotor comparotor=new AlgorithmComparotor();
+
         if (Config.removeDuplications){
             FileManager fileManager=new FileManager();
             algoMap=fileManager.RemoveDuplications(algoMap);
@@ -277,20 +278,17 @@ public class TestPhraseAnalyser {
         for (String goldenKey : goldenMap.keySet()) {
             i=0;
 //            System.out.println(goldenKey+"===================");
+            goldenKey=goldenKey.toLowerCase().trim();
             for (String algoKey : algoMap.keySet()) {
 //                System.out.println(algoKey);
-                if (i>Config.statEvaluationDepth)
-                    break;
-//                if (i>goldenMap.size())
+//                if (i>Config.statEvaluationDepth)
 //                    break;
+                if (i>goldenMap.size())
+                    break;
 
-//                System.out.println(algoKey.toLowerCase());
-//                System.out.println(goldenKey.toLowerCase());
-//                System.out.println("==============");
+
                 // =============  Absolute similarity
-                if (algoKey.toLowerCase().trim().equals(goldenKey.toLowerCase().trim())){
-
-
+                if (algoKey.equals(goldenKey) || comparotor.GetAbbrSimilarity(abbrMap, algoKey, goldenKey) ){
                     score++;
                     break;
                 }
@@ -333,4 +331,5 @@ public class TestPhraseAnalyser {
         }
         return score;
     }
+
 }
