@@ -13,21 +13,21 @@
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="dash-board-title">Dashboard</h1>
-                <hr style="margin-bottom:40px">
+                <hr class="pages-title-hr">
             </div>
         </div>
 
         <div class="row">
-            <div class="col-lg-6" id="tiles">
+            <div class="col-md-12 col-lg-6" id="tiles">
                 <div class="col-lg-6 col-md-6">
                     <a href="upload">
                         <div class="tile panel-darkPurple">
                             <div class="panel-heading">
                                 <div class="row">
-                                    <div class="col-xs-12 col-md-6">
-                                        <i class="glyphicon glyphicon-cloud-upload" style="font-size:60px"></i>
+                                    <div class="col-xs-12">
+                                        <i class="glyphicon glyphicon-cloud-upload dashboard-tile-icon"></i>
                                     </div>
-                                    <div class="col-xs-12 col-md-6 ">
+                                    <div class="col-xs-12">
                                         <p class="tile-text tile-text-align">Resume Upload</p>
                                     </div>
                                 </div>
@@ -41,10 +41,10 @@
                         <div class="tile panel-red">
                             <div class="panel-heading">
                                 <div class="row">
-                                    <div class="col-xs-12 col-md-6">
-                                        <i class="glyphicon glyphicon-cog" style="font-size:60px"></i>
+                                    <div class="col-xs-12">
+                                        <i class="glyphicon glyphicon-cog dashboard-tile-icon"></i>
                                     </div>
-                                    <div class="col-xs-12 col-md-6 ">
+                                    <div class="col-xs-12">
                                         <p class="tile-text tile-text-align">Process Resumes</p>
                                     </div>
                                 </div>
@@ -58,10 +58,10 @@
                         <div class="tile panel-darkGreen">
                             <div class="panel-heading">
                                 <div class="row">
-                                    <div class="col-xs-12 col-md-6">
-                                        <i class="glyphicon glyphicon-list" style="font-size:60px"></i>
+                                    <div class="col-xs-12">
+                                        <i class="glyphicon glyphicon-list dashboard-tile-icon"></i>
                                     </div>
-                                    <div class="col-xs-12 col-md-6 ">
+                                    <div class="col-xs-12">
                                         <p class="tile-text tile-text-align">Analyze</p>
                                     </div>
                                 </div>
@@ -75,10 +75,10 @@
                         <div class="tile panel-darkBlue">
                             <div class="panel-heading">
                                 <div class="row">
-                                    <div class="col-xs-12 col-md-6">
-                                        <i class=" glyphicon glyphicon-eye-open" style="font-size:60px"></i>
+                                    <div class="col-xs-12">
+                                        <i class=" glyphicon glyphicon-eye-open dashboard-tile-icon"></i>
                                     </div>
-                                    <div class="col-xs-12 col-md-6 ">
+                                    <div class="col-xs-12">
                                         <p class="tile-text tile-text-align">View Statistics</p>
                                     </div>
                                 </div>
@@ -92,10 +92,10 @@
                         <div class="tile panel-lightYellow">
                             <div class="panel-heading">
                                 <div class="row">
-                                    <div class="col-xs-12 col-md-6">
-                                        <i class="glyphicon glyphicon-home" style="font-size:60px"></i>
+                                    <div class="col-xs-12">
+                                        <i class="glyphicon glyphicon-home dashboard-tile-icon"></i>
                                     </div>
-                                    <div class="col-xs-12 col-md-6 ">
+                                    <div class="col-xs-12">
                                         <p class="tile-text tile-text-align">Admin Panel</p>
                                     </div>
                                 </div>
@@ -105,8 +105,8 @@
                 </div>
             </div>
 
-            <div class="col-lg-6" id="stats">
-                <div class="col-lg-12">
+            <div class="col-md-12 col-lg-6" id="stats">
+                <div class="col-xs-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             Area Chart Example

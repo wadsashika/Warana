@@ -15,7 +15,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="dash-board-title">Process Resume</h1><hr style="margin-bottom:40px">
+                <h1 class="dash-board-title">Process Resume</h1><hr class="pages-title-hr">
             </div>
         </div>
 
@@ -27,7 +27,7 @@
                     </div>
                     <div class="panel-body">
                         <div id = "select-all-row">
-                            <h4 style="margin-left: 10px"><input type="checkbox" id = "select-all" style="margin-right: 10px"/>Select All</h4>
+                            <h4><input type="checkbox" id = "select-all" class="pages-select-all"/>Select All</h4>
                         </div>
                         <div class="table-responsive">
                             <table class="table table-striped table-hover" id="unprocessed-resume-list">
@@ -55,12 +55,12 @@
                         </div>
                     </div>
                     <div class="panel-footer">
-                        <div id = "operation-buttons-row" class="process-btn-div">
-                            <button type="button" id="clear-selection" class="btn btn-warning" style="margin-right: 10px;">
-                                <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Clear
-                            </button>
-                            <button type="button" class="btn btn-success" id="process-resume">
+                        <div id = "operation-buttons-row" class="action-btn-row">
+                            <button type="button" class="btn btn-success action-btn" id="process-resume">
                                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Process
+                            </button>
+                            <button type="button" id="clear-selection" class="btn btn-warning action-btn">
+                                <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Clear
                             </button>
                         </div>
                     </div>
