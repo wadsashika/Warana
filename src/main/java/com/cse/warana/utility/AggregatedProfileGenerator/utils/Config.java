@@ -54,8 +54,13 @@ public class Config {
 
 
     public static final boolean enable_weights   = false;
-    public static boolean enable_weights_learning= true;
+    public static boolean enable_weights_learning= false;
     public static final boolean enable_abbreviations= true;
+
+
+    public static final double  average_precision= 0.164848341;
+    public static final double  learning_rate= .5;
+    public static int weightingIteration;
 
 
     public static boolean enable_filter        =false;
@@ -76,5 +81,4 @@ public class Config {
     public static int maxReloadTimes=3;
     public static int skillDocsLimit =10;
 
-    public static final double  average_precision= 0.164848341;
 }
