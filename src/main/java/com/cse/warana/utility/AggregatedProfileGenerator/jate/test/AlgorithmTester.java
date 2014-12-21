@@ -117,7 +117,7 @@ public class AlgorithmTester {
                 FeatureTermNest termNest =
                         new FeatureBuilderTermNestMultiThread().build(termDocIndex);
                 FeatureRefCorpusTermFrequency bncRef =
-                        new FeatureBuilderRefCorpusTermFrequency(JATEProperties.getInstance().getTestPath() + "/out/refStat.txt").build(null);
+                        new FeatureBuilderRefCorpusTermFrequency("src/main/resources/refStats.txt").build(null);
                 FeatureCorpusTermFrequency termCorpusFreq =
                         new FeatureBuilderCorpusTermFrequencyMultiThread(wordcounter, lemmatizer).build(termDocIndex);
 

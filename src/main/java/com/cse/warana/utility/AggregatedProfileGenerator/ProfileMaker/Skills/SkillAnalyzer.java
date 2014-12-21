@@ -33,7 +33,7 @@ public class SkillAnalyzer {
         String[] skillNames=skillDocs.list();
         double score=0;
         AlgorithmComparotor comparotor=new AlgorithmComparotor();
-        comparotor.Compare(Config.profilesOutputPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath);
+        comparotor.Compare(Config.profilesOutputPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath,Config.abbreviationsProfilesPath);
         File profileRoot=new File(Config.aggregatedProfilesPath);
         for (File file : profileRoot.listFiles()) {
             HashMap<String,Double> profileMap=fileManager.FileToMap(file);
@@ -55,7 +55,7 @@ public class SkillAnalyzer {
         String[] skillNames=skillDocs.list();
         double score=0;
         AlgorithmComparotor comparotor=new AlgorithmComparotor();
-        comparotor.Compare(Config.profilesPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath);
+        comparotor.Compare(Config.profilesPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath,Config.abbreviationsProfilesPath);
 //        File profileTermEx=new File("D:\\Projects\\Repositories\\Final Year Project\\SigmaCV finder 2\\src\\com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker\\Skills\\Aggregated\\UserDocs\\Thilina Premasiri_out.csv");
         File profileRoot=new File(Config.aggregatedSkillsPath);
         for (File file : profileRoot.listFiles()) {

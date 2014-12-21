@@ -69,7 +69,27 @@ public class FileManager {
         }
         return map;
     }
+    public void writeFile(String name,HashMap<String,Double> map, String destinationPath){
+//        boolean b = new File(filePath+"/"+name).mkdirs();
 
+        boolean f = new File(destinationPath).mkdirs();
+        File file=new File(destinationPath+name+".csv");
+        // creates the file
+        try {
+            if(!file.exists())
+                file.createNewFile();
+            FileWriter writer = new FileWriter(file);
+            for (Map.Entry<String, Double> entry : map.entrySet()) {
+                writer.write(entry.getKey()+","+entry.getValue().toString()+"\n");
+            }
+            writer.flush();
+            writer.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
     public Map<String, Double> SortByComparator(Map<String, Double> unsortMap) {
 
         // Convert Map to List
@@ -248,7 +268,7 @@ public class FileManager {
                 file.createNewFile();
             FileWriter writer = new FileWriter(file);
             for (Map.Entry<String, String> entry : pairs.entrySet()) {
-                writer.write(entry.getKey()+","+entry.getValue()+"\n");
+                writer.write(entry.getKey().toLowerCase().trim()+","+entry.getValue().toLowerCase().trim()+"\n");
             }
             writer.flush();
             writer.close();
@@ -256,5 +276,28 @@ public class FileManager {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public HashMap<String, String> FileToStrStrMap(File file) {
+        HashMap<String,String> map=new HashMap<String, String>();
+        try {
+            Scanner sc=new Scanner(file);
+            while (sc.hasNextLine()){
+                String line=sc.nextLine();
+                String[] ary= line.split(",");
+//                System.out.println(ary[1]);
+//                System.out.println(ary[0].split("\\|")[0]);
+                if(ary.length>1) {
+                    map.put(ary[0].split("\\|")[0].trim(), ary[1].trim());
+                }
+
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+            System.out.println(file.getName()+" not found");
+            return map;
+        }
+
+        return map;
     }
 }

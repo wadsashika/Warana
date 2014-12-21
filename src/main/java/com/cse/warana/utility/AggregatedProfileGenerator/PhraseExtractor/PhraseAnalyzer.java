@@ -116,7 +116,7 @@ public class PhraseAnalyzer {
                 FeatureCorpusTermFrequency wordFreq = new FeatureBuilderCorpusTermFrequencyMultiThread(wordcounter, lemmatizer).build(wordDocIndex);
                 FeatureDocumentTermFrequency termDocFreq = new FeatureBuilderDocumentTermFrequencyMultiThread(wordcounter, lemmatizer).build(termDocIndex);
                 FeatureTermNest termNest = new FeatureBuilderTermNestMultiThread().build(termDocIndex);
-                FeatureRefCorpusTermFrequency bncRef = new FeatureBuilderRefCorpusTermFrequency(JATEProperties.getInstance().getTestPath() + "/out/refStat.txt").build(null);
+                FeatureRefCorpusTermFrequency bncRef = new FeatureBuilderRefCorpusTermFrequency("src/main/resources/refStats.txt").build(null);
                 FeatureCorpusTermFrequency termCorpusFreq = new FeatureBuilderCorpusTermFrequencyMultiThread(wordcounter, lemmatizer).build(termDocIndex);
 
                 /* #2 */
