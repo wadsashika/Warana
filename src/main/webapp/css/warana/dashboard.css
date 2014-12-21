@@ -125,6 +125,10 @@
     margin-left: 15px;
 }
 
+.dashboard-tile-icon{
+    font-size: 60px;
+}
+
 a:link {
     text-decoration: none;
 }
