@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Nadeeshaan on 12/10/2014.
@@ -27,5 +28,28 @@ public class ViewStatServiceImpl implements ViewStatService {
         viewStatDTOs = viewStatDao.getViewStatDaoList();
 
         return viewStatDTOs;
+    }
+
+    @Override
+    public List<String> getTechnologies() {
+        List<String> technologies = null;
+        technologies = viewStatDao.getTechnologiesList();
+
+        return technologies;
+    }
+
+    @Override
+    public List<ViewStatDTO> getAdvancedSearchResults(String[] technologies) {
+        List<ViewStatDTO> advSearchResultDTOs = null;
+        advSearchResultDTOs = viewStatDao.getAdvSearchResults(technologies);
+        return advSearchResultDTOs;
+    }
+
+    @Override
+    public List<Map<String,Object>> getTechScoreMap(double id) {
+
+        List<Map<String,Object>> techScoreList = null;
+        techScoreList = viewStatDao.getTechnologiesScores(id);
+        return techScoreList;
     }
 }

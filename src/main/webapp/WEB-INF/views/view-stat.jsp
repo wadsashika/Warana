@@ -12,11 +12,12 @@
 <script src='<c:url value="/js/dataTables.bootstrap.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/sb-admin-2.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/warana/view-stat.js" />' type="text/javascript"></script>
+<script src='<c:url value="/js/highcharts.js" />' type="text/javascript"></script>
+<script src='<c:url value="/js/highcharts-3d.js" />' type="text/javascript"></script>
 
 
 <script src='<c:url value="/js/bootstrap-tagsinput.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/typeahead-new.js" />' type="text/javascript"></script>
-
 
 <div id="wrapper">
     <div id="page-wrapper">
@@ -68,6 +69,7 @@
         </div>
 
         <%@include file="view-profile-modal.jsp" %>
+        <%@include file="technology-graph.jsp" %>
     </div>
 </div>
 

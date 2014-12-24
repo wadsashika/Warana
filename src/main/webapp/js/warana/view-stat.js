@@ -9,23 +9,37 @@ WARANA.module.viewStat = function () {
     };
 
     var tagInput = function () {
-        var colors = ["red", "blue", "green", "yellow", "brown", "black"];
-        var elt = $('#tagged-search-field');
+        var technologies = [];
 
+        $.ajax({
+            type: "POST",
+            url: "gettechnologies",
+            success: function (data) {
+                var jsonObj = JSON.parse(data);
+                for (var i = 0; i < jsonObj.length; i++) {
+                    technologies.push(jsonObj[i]);
+                }
+            },
+            error: function (e) {
+                alert('Error: ' + e);
+            }
+        });
+
+        var elt = $('#tagged-search-field');
+        elt.val("");
         elt.typeahead();
 
         $('#tagged-search-field').tagsinput({
             typeahead: {
-                source: colors
+                source: technologies
             }
         });
     };
 
-    var loadDataTable = function (techs) {
+    var loadDataTable = function () {
         $.ajax({
             type: "POST",
             url: "getresult",
-            data: {technologies: techs},
             success: function (data) {
                 var userList = [];
                 var resultList = JSON.parse(data);
@@ -92,18 +106,130 @@ WARANA.module.viewStat = function () {
 
     var searchCandidates = function () {
         var technologies = $("#tagged-search-field").val();
-        alert(technologies);
-//        loadDataTable(technologies);
+
+        $('#stat-table-div').empty();
+
+        $.ajax({
+            type: "POST",
+            url: "advsearchresult",
+            data: {technologies: technologies},
+            success: function (data) {
+
+                alert(data);
+                var userList = [];
+                var resultList = JSON.parse(data);
+
+                for (var i = 0; i < resultList.length; i++) {
+                    var row = resultList[i];
+                    var dataTableRow = [];
+                    dataTableRow.push("<input type='checkbox' class='files-checkbox'>");
+                    dataTableRow.push(row.id);
+                    dataTableRow.push(row.name);
+                    dataTableRow.push(row.email);
+                    dataTableRow.push(row.score);
+                    dataTableRow.push('<button type="button" class="btn btn-primary btn-md view-prof btn-center"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> View</button>');
+                    dataTableRow.push('<button type="button" class="btn btn-primary btn-md view-tech btn-center"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> Stat</button>');
+                    dataTableRow.push('<button type="button" class="btn btn-primary btn-md send-email btn-center"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</button>');
+
+                    userList.push(dataTableRow);
+                }
+
+                $('#stat-table-div').html('<table class="table table-striped table-hover" id="stat-table"></table>');
+
+                dataTbl = $('#stat-table').dataTable({
+                    "bSort": false,
+                    "data": userList,
+                    "columns": [
+                        { "title": "Select" },
+                        { "title": "Id"},
+                        { "title": "Name"  },
+                        { "title": "Email" },
+                        { "title": "Score" },
+                        { "title": ""},
+                        { "title": ""},
+                        { "title": ""}
+
+                    ],
+                    "columnDefs": [
+                        {
+                            "targets": [ 1 ],
+                            "visible": false
+                        }
+                    ]
+                });
+            },
+            error: function (e) {
+                alert('Error: ' + e);
+            }
+        });
     };
 
-    var viewProfileClick = function(){
+
+    var drawChart = function (data) {
+
+        // Empty the div before loading chart
+        $('#chart-container').empty();
+        // Build the chart
+        $('#chart-container').highcharts({
+            chart: {
+                type: 'pie',
+                options3d: {
+                    enabled: true,
+                    alpha: 45,
+                    beta: 0
+                },
+                borderColor: '#A6A6A6',
+                borderWidth: 1,
+                borderRadius: 5,
+                backgroundColor: '#F8F8F8'
+            },
+            title: {
+                text: 'Technologies Expertise for the Candidate'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    depth: 35,
+                    dataLabels: {
+                        enabled: true,
+                        format: '{point.name}'
+                    }
+                }
+            },
+            credits: {
+                enabled: false
+            },
+            series: [
+                {
+                    type: 'pie',
+                    name: 'Expertise as Percentage',
+                    data: data
+                }
+            ]
+        });
+
+        $('#chart-modal').on('show.bs.modal', function () {
+            $('#chart-container').css('visibility', 'hidden');
+        });
+        $('#tech-chart').on('shown.bs.modal', function () {
+            $('#chart-container').css('visibility', 'initial');
+            $('#chart-container').highcharts().reflow();
+        });
+
+    }
+
+    var viewProfileClick = function () {
         var id = dataTbl.fnGetData($(this).closest("tr").get(0))[1];
 
         $.ajax({
-            type : 'POST',
-            url : 'analyze/profile',
-            data : {id:id},
-            success: function(data){
+            type: 'POST',
+            url: 'analyze/profile',
+            data: {id: id},
+            success: function (data) {
                 var json = JSON.parse(data);
                 var profile = JSON.parse(json.profile);
                 var projects = JSON.parse(json.projects);
@@ -175,7 +301,7 @@ WARANA.module.viewStat = function () {
                  * Setting the Educations Information tab data
                  */
 
-                for( var a = 0; a<education.length; a++){
+                for (var a = 0; a < education.length; a++) {
                     var div = document.createElement("div");
                     div.className = "prof-div";
 
@@ -211,7 +337,7 @@ WARANA.module.viewStat = function () {
                  * Setting the Achievements Information tab data
                  */
 
-                for( var a = 0; a<achievement.length; a++){
+                for (var a = 0; a < achievement.length; a++) {
                     var div = document.createElement("div");
                     div.className = "prof-div";
 
@@ -235,7 +361,7 @@ WARANA.module.viewStat = function () {
                  * Setting the Work Experience Information tab data
                  */
 
-                for( var a = 0; a<workexp.length; a++){
+                for (var a = 0; a < workexp.length; a++) {
                     var div = document.createElement("div");
                     div.className = "prof-div";
 
@@ -264,7 +390,7 @@ WARANA.module.viewStat = function () {
                  * Setting the Projects Information tab data
                  */
 
-                for( var a = 0; a<projects.length; a++){
+                for (var a = 0; a < projects.length; a++) {
                     var div = document.createElement("div");
                     div.className = "prof-div";
 
@@ -288,7 +414,7 @@ WARANA.module.viewStat = function () {
                  * Setting the Publications Information tab data
                  */
 
-                for( var a = 0; a<publications.length; a++){
+                for (var a = 0; a < publications.length; a++) {
                     var div = document.createElement("div");
                     div.className = "prof-div";
 
@@ -314,12 +440,49 @@ WARANA.module.viewStat = function () {
                 alert('Error: ' + e);
             }
         });
-//
+
         $("#profile-info").modal(
             {
-                show : true
+                show: true
             }
         );
+    };
+
+    var viewStatChart = function () {
+        var id = dataTbl.fnGetData($(this).closest("tr").get(0))[1];
+        var name = dataTbl.fnGetData($(this).closest("tr").get(0))[2];
+        var pieChartData = [];
+
+        document.getElementById('graph-modal-title').innerHTML = name;
+
+        $.ajax({
+            type: "POST",
+            url: "getstat",
+            data: {id: id},
+            success: function (data) {
+                var jsonObj = JSON.parse(data);
+
+                for (var i = 0; i < jsonObj.length; i++) {
+                    var pieSlice = [];
+                    pieSlice.push(jsonObj[i].technology);
+                    pieSlice.push(jsonObj[i].percentage);
+                    pieChartData.push(pieSlice);
+                }
+
+                /**
+                 * Drawing chart
+                 */
+                $("#tech-chart").modal(
+                    {
+                        show: true
+                    }
+                );
+                drawChart(pieChartData);
+            },
+            error: function (e) {
+                alert('Error: ' + e);
+            }
+        });
     };
 
     return {
@@ -330,8 +493,8 @@ WARANA.module.viewStat = function () {
             $(document).on("click", "#select-all", selectAll);
             $(document).on("click", "#clear-selection", clearSelected);
             $(document).on("click", "#search-submit", searchCandidates);
-            $(document).on("click", "#search-submit", searchCandidates);
             $(document).on("click", ".view-prof", viewProfileClick);
+            $(document).on("click", ".view-tech", viewStatChart);
         }
     }
 }();
