@@ -226,6 +226,25 @@
             <version>5.1.34</version>
         </dependency>
 
+        <!--External dependencies-->
+        <dependency>
+            <groupId>com.cse.warana</groupId>
+            <artifactId>dragontool</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.cse.warana</groupId>
+            <artifactId>mechaglot</artifactId>
+            <version>1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.cse.warana</groupId>
+            <artifactId>witcommons</artifactId>
+            <version>1.0</version>
+        </dependency>
+
     </dependencies>
 
     <build>
