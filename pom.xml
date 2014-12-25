@@ -250,38 +250,26 @@
     <repositories>
         <repository>
             <id>dragontool</id>
-            <releases>
-                <updatePolicy>never</updatePolicy>
-            </releases>
             <snapshots>
-                <updatePolicy>never</updatePolicy>
+                <enabled>false</enabled>
             </snapshots>
             <url>http://repo1.maven.org/maven2</url>
-            <layout>legacy</layout>
         </repository>
 
         <repository>
             <id>mechaglot</id>
-            <releases>
-                <updatePolicy>never</updatePolicy>
-            </releases>
             <snapshots>
-                <updatePolicy>never</updatePolicy>
+                <enabled>false</enabled>
             </snapshots>
             <url>http://repo1.maven.org/maven2</url>
-            <layout>legacy</layout>
         </repository>
 
         <repository>
             <id>witcommons</id>
-            <releases>
-                <updatePolicy>never</updatePolicy>
-            </releases>
             <snapshots>
-                <updatePolicy>never</updatePolicy>
+                <enabled>false</enabled>
             </snapshots>
             <url>http://repo1.maven.org/maven2</url>
-            <layout>legacy</layout>
         </repository>
     </repositories>
 
