@@ -249,27 +249,8 @@
 
     <repositories>
         <repository>
-            <id>dragontool</id>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <url>http://repo1.maven.org/maven2</url>
-        </repository>
-
-        <repository>
-            <id>mechaglot</id>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <url>http://repo1.maven.org/maven2</url>
-        </repository>
-
-        <repository>
-            <id>witcommons</id>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-            <url>http://repo1.maven.org/maven2</url>
+            <id>com.cse.warana</id>
+            <url>file:/home/dulanga/.m2/repository</url>
         </repository>
     </repositories>
 

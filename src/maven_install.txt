@@ -1,5 +1,5 @@
 //give the correct path to -Dfile//
 
-mvn install:install-file -Dfile=D:\Academic\Acadamic\FYP\Warana\src\main\Lib\dragontool.jar -DgroupId=com.cse.warana -DartifactId=dragontool -Dversion=1.0 -Dpackaging=jar
-mvn install:install-file -Dfile=D:\Academic\Acadamic\FYP\Warana\src\main\Lib\Mechaglot_Alpha2.jar -DgroupId=com.cse.warana -DartifactId=mechaglot -Dversion=1.0 -Dpackaging=jar
-mvn install:install-file -Dfile=D:\Academic\Acadamic\FYP\Warana\src\main\Lib\wit-commons.jar -DgroupId=com.cse.warana -DartifactId=witcommons -Dversion=1.0 -Dpackaging=jar
+mvn install:install-file -Dfile=D:\Academic\Acadamic\FYP\Warana\src\main\Lib\dragontool.jar -DgroupId=com.cse.warana -DartifactId=dragontool -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true
+mvn install:install-file -Dfile=D:\Academic\Acadamic\FYP\Warana\src\main\Lib\Mechaglot_Alpha2.jar -DgroupId=com.cse.warana -DartifactId=mechaglot -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true
+mvn install:install-file -Dfile=D:\Academic\Acadamic\FYP\Warana\src\main\Lib\wit-commons.jar -DgroupId=com.cse.warana -DartifactId=witcommons -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true
