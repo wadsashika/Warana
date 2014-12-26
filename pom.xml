@@ -13,6 +13,7 @@
     <properties>
         <spring.version>3.2.6.RELEASE</spring.version>
         <spring.security.version>3.2.0.RELEASE</spring.security.version>
+        <warana.root>${warana.resources.root}${file.separator}Warana</warana.root>
     </properties>
 
     <dependencies>
@@ -256,6 +257,11 @@
 
     <build>
         <finalName>warana</finalName>
+
+        <filters>
+            <filter>src/main/resources/warana.properties</filter>
+        </filters>
+
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -281,6 +287,48 @@
                     <execCommands/>
                     <execute-commands/>
                 </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>properties-maven-plugin</artifactId>
+                <version>1.0-alpha-2</version>
+                <executions>
+                    <execution>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>read-project-properties</goal>
+                        </goals>
+                        <configuration>
+                            <files>
+                                <file>src/main/resources/warana.properties</file>
+                            </files>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>2.6</version>
+                <executions>
+                    <execution>
+                        <id>copy-resources</id>
+                        <phase>initialize</phase>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${warana.root}</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>src/main/resources</directory>
+                                    <filtering>true</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
 
         </plugins>

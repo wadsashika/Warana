@@ -68,9 +68,9 @@
             </div>
         </div>
 
-        <%@include file="view-profile-modal.jsp" %>
-        <%@include file="technology-graph.jsp" %>
+
     </div>
 </div>
-
+<%@include file="view-profile-modal.jsp" %>
+<%@include file="technology-graph.jsp" %>
 <%@include file="footer.jsp" %>
