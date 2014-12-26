@@ -13,7 +13,7 @@
     <properties>
         <spring.version>3.2.6.RELEASE</spring.version>
         <spring.security.version>3.2.0.RELEASE</spring.security.version>
-        <warana.root>${warana.resources.root}${file.separator}Warana</warana.root>
+        <warana.root>${warana.resources.root}</warana.root>
     </properties>
 
     <dependencies>
