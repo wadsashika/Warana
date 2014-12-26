@@ -82,6 +82,8 @@
                             </div>
 
                         </div>
+
+                        <div id="notification-div"></div>
                     </div>
                     <div class="panel-footer">
                         <div class="action-btn-row">

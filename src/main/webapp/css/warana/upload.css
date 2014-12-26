@@ -8,4 +8,7 @@
     cursor: pointer;
 }
 
+#notification-div{
+    display: none;
+}
 

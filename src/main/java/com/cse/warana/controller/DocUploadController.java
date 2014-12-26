@@ -1,7 +1,12 @@
 package com.cse.warana.controller;
 
+import com.cse.warana.service.DocUploadService;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,6 +18,8 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 
 /**
@@ -22,6 +29,10 @@ import java.util.Iterator;
 @Controller
 public class DocUploadController {
     private static Logger LOG = LoggerFactory.getLogger(DocUploadController.class);
+
+    @Autowired
+    @Qualifier("storeUploadedResumeService")
+    DocUploadService docUploadService;
 
     @RequestMapping(value = "/upload", method = RequestMethod.GET)
     public ModelAndView uploadDocument(){
@@ -37,6 +48,14 @@ public class DocUploadController {
 
     @RequestMapping(value = "/fileupload",method = RequestMethod.POST)
     public @ResponseBody String uploadFilesToServer(MultipartHttpServletRequest request){
+
+        ArrayList<String> fileNamesList = new ArrayList<>();
+        ArrayList<String> missedFiles = new ArrayList<>();
+        HashMap<Object,Object> returnJson = new HashMap<>();
+        boolean success = true;
+        Gson gson = new GsonBuilder().serializeNulls().create();
+        String jsonString = "";
+
         Iterator<String> itr = request.getFileNames();
         MultipartFile multipartFile;
         String filePath = "";
@@ -46,10 +65,27 @@ public class DocUploadController {
             filePath = multipartFile.getOriginalFilename();
             try {
                 multipartFile.transferTo(new File("E:\\"+filePath));
+                fileNamesList.add(filePath);
             } catch (IOException e) {
                 e.printStackTrace();
+                missedFiles.add(filePath);
+                success = false;
+                continue;
             }
         }
-        return "Done";
+
+        docUploadService.storeDocData(fileNamesList);
+        missedFiles.add("test1");
+        missedFiles.add("test2");
+        if (success){
+            returnJson.put("status","true");
+        }
+        else {
+            returnJson.put("status","false");
+        }
+        returnJson.put("files",missedFiles);
+        jsonString = gson.toJson(returnJson);
+        System.out.println(jsonString);
+        return jsonString;
     }
 }
