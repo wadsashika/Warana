@@ -20,12 +20,26 @@ WARANA.module.uploadCv = function () {
             previewsContainer: "#previews", // Define the container to display the previews
             autoProcessQueue: false,
             clickable: "#add-files",
+            success: function(file, response){
+                var status = response.status;
+                var errorString = "";
+                var notifications_div = document.getElementById("notification-div");
 
-            init: function(){
-                this.on("queuecomplete", function (file) {
-                    alert("All files have uploaded ");
-                    document.getElementById("previews").innerHTML = "";
-                });
+                if (status == "false"){
+                    var fileNames = response.files;
+                    for (var a = 0; a < fileNames.length; a++){
+                        errorString = errorString.concat(fileNames[a]+ ",");
+                    }
+
+                    notifications_div.className = "alert alert-danger";
+                    notifications_div.innerHTML = "Error Occurred. Files " + errorString + " Could Not Save to Server";
+                }
+                else if (status == "true") {
+                    notifications_div.className = "alert alert-success";
+                    notifications_div.innerHTML = "All Files stored in the server successfully";
+                }
+                document.getElementById("previews").innerHTML = "";
+                notifications_div.style.display = "block";
             }
         });
     };
