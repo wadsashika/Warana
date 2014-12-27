@@ -21,15 +21,17 @@
                         Upload Your Resumes
                     </div>
                     <div class="panel-body">
-                        <div class="col-lg-3"></div>
-                        <div class="file-drop-area col-xs-12 col-lg-6" id="add-files">
-                            <button type="button" class="btn btn-default col-xs-12" id="add-doc-btn">
-                                <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
-                                Click or drop file here
-                            </button>
+                        <div class="col-xs-12">
+                            <div class="col-lg-3"></div>
+                            <div class="file-drop-area col-xs-12 col-lg-6" id="add-files">
+                                <button type="button" class="btn btn-default col-xs-12">
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                    Click or drop file here
+                                </button>
+                            </div>
+                            <div class="col-lg-3"></div>
                         </div>
-                        <div class="col-lg-3"></div>
-                        <div class="table table-striped" class="files" id="previews">
+                        <div class="float-left table table-striped" class="files" id="previews">
                             <div id="template">
                                 <!-- This is used as the file preview template -->
                                 <table id="upload-info-table" class="table table-condensed" data-show-header="false">
