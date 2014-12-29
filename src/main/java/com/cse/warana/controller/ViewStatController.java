@@ -11,11 +11,10 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -51,6 +50,40 @@ public class ViewStatController {
         LOG.info("getting data to be displayed");
 
         String jsonResultList = gson.toJson(viewStatDTOList);
+
+        return jsonResultList;
+    }
+
+    @RequestMapping(value = "/gettechnologies", method = RequestMethod.POST)
+    @ResponseBody
+    public String getTechnologyList() {
+
+        List<String> technologiesList = viewStatService.getTechnologies();
+        Gson gson = new GsonBuilder().serializeNulls().create();
+
+        return  gson.toJson(technologiesList);
+    }
+
+    @RequestMapping(value = "/advsearchresult", method = RequestMethod.POST)
+    @ResponseBody
+    public String getAdvSearchResults(@RequestParam("technologies") String[] technologies){
+        List<ViewStatDTO> advancedSearchResults = viewStatService.getAdvancedSearchResults(technologies);
+        Gson gson = new GsonBuilder().serializeNulls().create();
+        LOG.info("getting data to be displayed");
+
+        String jsonResultList = gson.toJson(advancedSearchResults);
+
+        return jsonResultList;
+    }
+
+    @RequestMapping(value = "/getstat", method = RequestMethod.POST)
+    @ResponseBody
+    public String getTechnologyScoreMap(@RequestParam("id") double id){
+        List<Map<String,Object>> techScoreList = viewStatService.getTechScoreMap(id);
+        Gson gson = new GsonBuilder().serializeNulls().create();
+        LOG.info("getting data to be displayed");
+
+        String jsonResultList = gson.toJson(techScoreList);
 
         return jsonResultList;
     }
