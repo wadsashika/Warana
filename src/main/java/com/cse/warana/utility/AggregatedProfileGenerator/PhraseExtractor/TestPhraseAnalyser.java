@@ -289,16 +289,23 @@ public class TestPhraseAnalyser {
 
 
                 // =============  Absolute similarity
-                if (algoKey.equals(goldenKey) || comparotor.GetAbbrSimilarity(abbrMap, algoKey, goldenKey)) {
+//                if (algoKey.equals(goldenKey) || comparotor.GetAbbrSimilarity(abbrMap, algoKey, goldenKey)) {
+//                    score++;
+//                    break;
+//                }
+
+//                =============  Contains similarity
+                if (algoKey.contains(goldenKey) || comparotor.GetAbbrSimilarity(abbrMap, algoKey, goldenKey)) {
                     score++;
                     break;
                 }
 
-                // =============  Contains similarity
-//                if (algoKey.toLowerCase().contains(goldenKey.toLowerCase())|| goldenKey.toLowerCase().contains(algoKey.toLowerCase())){
-//                    if (allDocs.get(algoKey)>50 && Config.enable_filter){
-//                        continue;
-//                    }
+
+//                =============  Contains similarity without abbr
+//                if (algoKey.contains(goldenKey) ) {
+//                    score++;
+//                    break;
+//                }
 //
 //                    score++;
 //                    break;

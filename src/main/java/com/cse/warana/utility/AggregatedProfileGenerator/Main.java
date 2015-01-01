@@ -25,16 +25,7 @@ public class Main {
          * TODO implement methods to confirm whether online profiles exactly represent the desired candidate
          */
 
-        HashMap<String,Integer> map=new HashMap<String,Integer>();
 
-        map.put("one",1);
-        map.put("two",2);
-        map.put("three",3);
-
-        for (Map.Entry<String, Integer> entry : map.entrySet()) {
-            entry.setValue(5);
-        }
-        System.out.println(map.get("a"));
 
         Candidate candidate=new Candidate();
         CandidateProfileGeneratorService generatorService=new CandidateProfileGeneratorServiceImpl();

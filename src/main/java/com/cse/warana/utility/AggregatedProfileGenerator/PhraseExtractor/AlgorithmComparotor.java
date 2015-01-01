@@ -103,7 +103,7 @@ public class AlgorithmComparotor {
         }
         termsMap = (HashMap<String, Double>) fileManager.NormalizeMap(termsMap);
 
-        termsMap = aggregateAbbreviations(termsMap, abbrFile);
+//        termsMap = aggregateAbbreviations(termsMap, abbrFile);
 
 //        for (Map.Entry<String, Double> entry : termsMap.entrySet()) {
 //            System.out.println(entry.getKey()+" , "+entry.getValue());
@@ -249,14 +249,23 @@ public class AlgorithmComparotor {
             return false;
         }
 
-        if (abbrMap.containsKey(algoKey)) {
-            if (abbrMap.get(algoKey).contains(goldenKey))
+        if (abbrMap.equals(algoKey)) {
+            if (abbrMap.get(algoKey).equals(goldenKey))
                 return true;
         }
-        if (abbrMap.containsKey(goldenKey)) {
-            if (abbrMap.get(goldenKey).contains(algoKey))
+        if (abbrMap.equals(goldenKey)) {
+            if (abbrMap.get(goldenKey).equals(algoKey))
                 return true;
         }
+
+//        if (abbrMap.containsKey(algoKey)) {
+//            if (abbrMap.get(algoKey).contains(goldenKey))
+//                return true;
+//        }
+//        if (abbrMap.containsKey(goldenKey)) {
+//            if (abbrMap.get(goldenKey).contains(algoKey))
+//                return true;
+//        }
 
         return false;
     }
