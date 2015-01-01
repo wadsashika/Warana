@@ -80,8 +80,6 @@ public class DocUploadController {
         }
 
         docUploadService.storeDocData(fileNamesList);
-        missedFiles.add("test1");
-        missedFiles.add("test2");
         if (success){
             returnJson.put("status","true");
         }

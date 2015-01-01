@@ -44,6 +44,10 @@ WARANA.module.uploadCv = function () {
         });
     };
 
+    var clearMessage = function () {
+      document.getElementById("notification-div").style.display = "none";
+    };
+
     var removeAllFiles = function () {
         myDropzone.removeAllFiles();
     };
@@ -57,6 +61,7 @@ WARANA.module.uploadCv = function () {
             initialize();
             $(document).on("click", "#remove-all", removeAllFiles);
             $(document).on("click", "#upload-all", uploadAllFiles);
+            $(document).on("click", "#add-doc-btn", clearMessage);
         }
     };
 
