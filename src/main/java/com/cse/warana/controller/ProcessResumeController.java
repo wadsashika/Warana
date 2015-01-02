@@ -82,7 +82,7 @@ public class ProcessResumeController {
     public boolean deleteResume(@RequestParam("fileName") String fileName){
 
         String baseDirectory = root + uploadsPath;
-        File resumeFile = new File(baseDirectory + "\\" + fileName);
+        File resumeFile = new File(baseDirectory + File.separator + fileName);
         boolean status = false;
 
         resumesToProcessService.uploadedResumeStatusUpdate(fileName,"DELETED");

@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -38,8 +37,11 @@ public class DocUploadController {
     @Value("${warana.resources.root}")
     private String root;
 
+    @Value("${UPLOADS.PATH}")
+    private String uploadsPath;
+
     @RequestMapping(value = "/upload", method = RequestMethod.GET)
-    public ModelAndView uploadDocument(){
+    public ModelAndView uploadDocument() {
         String UPLOAD_VIEW = "upload-doc";
 
         LOG.info("Starting document upload view");
@@ -50,13 +52,15 @@ public class DocUploadController {
         return model;
     }
 
-    @RequestMapping(value = "/fileupload",method = RequestMethod.POST)
-    public @ResponseBody String uploadFilesToServer(MultipartHttpServletRequest request){
+    @RequestMapping(value = "/fileupload", method = RequestMethod.POST)
+    public
+    @ResponseBody
+    String uploadFilesToServer(MultipartHttpServletRequest request) {
 
-        String baseUploadDirectory = root+"\\Uploads\\";
+        String baseUploadDirectory = root + uploadsPath;
         ArrayList<String> fileNamesList = new ArrayList<>();
         ArrayList<String> missedFiles = new ArrayList<>();
-        HashMap<Object,Object> returnJson = new HashMap<>();
+        HashMap<Object, Object> returnJson = new HashMap<>();
         boolean success = true;
         Gson gson = new GsonBuilder().serializeNulls().create();
         String jsonString = "";
@@ -65,7 +69,7 @@ public class DocUploadController {
         MultipartFile multipartFile;
         String filePath = "";
 
-        while (itr.hasNext()){
+        while (itr.hasNext()) {
             multipartFile = request.getFile(itr.next());
             filePath = multipartFile.getOriginalFilename();
             try {
@@ -80,13 +84,12 @@ public class DocUploadController {
         }
 
         docUploadService.storeDocData(fileNamesList);
-        if (success){
-            returnJson.put("status","true");
+        if (success) {
+            returnJson.put("status", "true");
+        } else {
+            returnJson.put("status", "false");
         }
-        else {
-            returnJson.put("status","false");
-        }
-        returnJson.put("files",missedFiles);
+        returnJson.put("files", missedFiles);
         jsonString = gson.toJson(returnJson);
         System.out.println(jsonString);
         return jsonString;
