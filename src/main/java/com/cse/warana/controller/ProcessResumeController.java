@@ -123,6 +123,8 @@ public class ProcessResumeController {
             storeProcessedResumeService.storeProjectTableData(candidate,candidate_id);
             storeProcessedResumeService.storeRefereeTableData(candidate,candidate_id);
             storeProcessedResumeService.storeWorkTableData(candidate,candidate_id);
+            storeProcessedResumeService.storeNewTechnologies(cvParserService.getNewTechnologies());
+            storeProcessedResumeService.storeCandidateTechnologies(candidate,candidate_id);
             resumesToProcessService.uploadedResumeStatusUpdate(fileNames[a],"PROCESSED");
         }
 

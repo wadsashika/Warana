@@ -1,6 +1,7 @@
 package com.cse.warana.dao.impl;
 
 import com.cse.warana.dao.StoreAchievementDao;
+import com.cse.warana.model.AchievementTbl;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -8,5 +9,5 @@ import org.springframework.stereotype.Repository;
  */
 
 @Repository("storeAchievement")
-public class StoreAchievementDaoImpl extends BaseJPADaoImpl implements StoreAchievementDao {
+public class StoreAchievementDaoImpl extends BaseJPADaoImpl<AchievementTbl> implements StoreAchievementDao {
 }

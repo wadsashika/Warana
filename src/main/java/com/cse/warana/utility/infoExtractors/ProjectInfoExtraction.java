@@ -21,6 +21,7 @@ import java.util.regex.Pattern;
 public class ProjectInfoExtraction {
 
     public static ArrayList<String> technologies = new ArrayList<String>();
+    private static ArrayList<String> newTechnologies = new ArrayList<String>();
 
     private static Logger LOG = LoggerFactory.getLogger(ProjectInfoExtraction.class);private String listpath = "";
 
@@ -159,6 +160,7 @@ public class ProjectInfoExtraction {
                         // Write to the technologies file after lowering the case
                         // Also added to the technologies in order to avoid the duplicate entries entering the file.
                         technologies.add(technologyArr[a].toLowerCase().trim());
+                        newTechnologies.add(technologyArr[a].toLowerCase().trim());
                     }
                 }
                 return true;
@@ -183,6 +185,7 @@ public class ProjectInfoExtraction {
                                 // Write to the technologies file after lowering the case
                                 // Also added to the technologies in order to avoid the duplicate entries entering the file.
                                 technologies.add(tokenArr[y].toLowerCase().trim());
+                                newTechnologies.add(tokenArr[y].toLowerCase().trim());
                             }
                             if (!candidateTechnologies.contains(technologyVal)) {
                                 candidateTechnologies.add(technologyVal);
@@ -205,6 +208,7 @@ public class ProjectInfoExtraction {
                             // Write to the technologies file after lowering the case
                             // Also added to the technologies in order to avoid the duplicate entries entering the file.
                             technologies.add(tokens[y].toLowerCase().trim());
+                            newTechnologies.add(tokens[y].toLowerCase().trim());
                         }
                         LOG.info("**************" + tokens[y].toLowerCase().trim());
                     }
@@ -236,5 +240,13 @@ public class ProjectInfoExtraction {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+
+    /**
+     * Return the newly found technologies
+     */
+    public static ArrayList<String> getNewTechnologies() {
+        return newTechnologies;
     }
 }
