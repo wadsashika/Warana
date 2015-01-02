@@ -30,10 +30,10 @@ public class Main {
 
         Candidate candidate=new Candidate();
         CandidateProfileGeneratorService generatorService=new CandidateProfileGeneratorServiceImpl();
-        CVParserService cvParserService=new CVParserServiceImpl();
+//        CVParserService cvParserService=new CVParserServiceImpl();
         File cv=new File("src\\main\\resources\\Docs\\CVs\\100408J_Thilina.pdf");
 
-        generatorService.extractCVInformation(cvParserService,cv);
+//        generatorService.extractCVInformation(cvParserService,cv);
         generatorService.generateCandidateProfile(candidate);
         OnlineInfoExtractor onlineInfoExtractor=new OnlineInfoExtractor(candidate);
 

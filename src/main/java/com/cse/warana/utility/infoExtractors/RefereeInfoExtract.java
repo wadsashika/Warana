@@ -6,6 +6,7 @@ import edu.stanford.nlp.ling.CoreLabel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.sql.Ref;
 import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -39,6 +40,7 @@ public class RefereeInfoExtract {
         String classifierText = "";
         String personTitle = "";
         boolean identified = false;
+        Referee referee = null;
 
         /**
          * Get the name of the referee
@@ -62,6 +64,11 @@ public class RefereeInfoExtract {
                         Pattern pattern = Pattern.compile("<PERSON>(.*?)</PERSON>");
                         Matcher matcher = pattern.matcher(classifierText);
                         while (matcher.find()) {
+                            if (referee != null){
+                                referees.add(referee);
+                            }
+                            referee = new Referee();
+                            referee.setName(matcher.group(1));
                             LOG.info(matcher.group(1));
                         }
                         identified = true;
@@ -76,6 +83,9 @@ public class RefereeInfoExtract {
                         Matcher matcher = pattern.matcher(classifierText);
                         while (matcher.find()) {
                             LOG.info(matcher.group(1));
+                            if (referee != null){
+                                referee.setDescription(matcher.group(1));
+                            }
                         }
                         identified = true;
                     }
@@ -84,14 +94,14 @@ public class RefereeInfoExtract {
                      * TODO need some more refinement
                      * Get the phone number of the referee
                      */
-                    else if (getPhone(lineText)) {
+                    else if (getPhone(lineText,referee)) {
 
                     }
 
                     /**
                      * Get the email of the referee
                      */
-                    else if (getEmail(lineText)) {
+                    else if (getEmail(lineText,referee)) {
 
                     }
 
@@ -105,6 +115,13 @@ public class RefereeInfoExtract {
                         Matcher matcher = pattern.matcher(lineText.toLowerCase());
                         while (matcher.find()) {
                             LOG.info(matcher.group(0));
+
+                            if (referee != null){
+                                referees.add(referee);
+                            }
+
+                            referee = new Referee();
+                            referee.setName(matcher.group(0));
                         }
                         identified = true;
                     }
@@ -127,7 +144,7 @@ public class RefereeInfoExtract {
      * @param para
      * @return
      */
-    public boolean getEmail(String para) {
+    public boolean getEmail(String para, Referee referee) {
         // Initialize the regex for identifying the email
         Pattern pattern = Pattern.compile("(\\w[-._\\w]*\\w@\\w[-._\\w]*\\w\\.\\w{2,3})");
         Matcher matcher = pattern.matcher(para);
@@ -135,6 +152,7 @@ public class RefereeInfoExtract {
         while (matcher.find()) {
             String email = matcher.group();
             LOG.info(email);
+            referee.setEmail(email);
             return true;
         }
         return false;
@@ -146,11 +164,12 @@ public class RefereeInfoExtract {
      * @param para
      * @return
      */
-    public boolean getPhone(String para) {
+    public boolean getPhone(String para, Referee referee) {
         Pattern pattern = Pattern.compile("(.*phone.* | tel | mobile | office )");
         Matcher matcher = pattern.matcher(para.toLowerCase());
 
         if (matcher.find()) {
+            referee.setPhone(para);
             LOG.info(para);
             return true;
         }

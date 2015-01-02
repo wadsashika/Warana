@@ -9,6 +9,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -17,8 +18,13 @@ import java.util.regex.Pattern;
  */
 public class EducationalInfoExtract {
 
-
     private static Logger LOG = LoggerFactory.getLogger(EducationalInfoExtract.class);
+    private String listpath = "";
+
+    public EducationalInfoExtract(HashMap<String,String> paths){
+        listpath = paths.get("root") + paths.get("listPath");
+    }
+
     /**
      * Extract educational information
      *
@@ -29,12 +35,13 @@ public class EducationalInfoExtract {
      * @param allHeadings
      * @param linesCopy
      */
+
     public void extractEduInformation(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy, ArrayList<Education> educations) {
 
         BufferedReader br = null;
         String indexWord = "";
         try {
-            br = new BufferedReader(new FileReader("src\\main\\resources\\gazeteerLists\\eduIndex"));
+            br = new BufferedReader(new FileReader(listpath + "\\eduIndex"));
             indexWord = br.readLine();
         } catch (FileNotFoundException e) {
             e.printStackTrace();

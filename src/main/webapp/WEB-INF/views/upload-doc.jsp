@@ -23,7 +23,7 @@
                     <div class="panel-body">
                         <div class="col-lg-3"></div>
                         <div class="file-drop-area col-xs-12 col-lg-6" id="add-files">
-                            <button type="button" class="btn btn-default col-xs-12">
+                            <button type="button" class="btn btn-default col-xs-12" id="add-doc-btn">
                                 <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                                 Click or drop file here
                             </button>
