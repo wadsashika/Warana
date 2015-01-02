@@ -94,16 +94,16 @@ public class AlgorithmComparotor {
         if (Config.enable_weirdness)
             fileList.add(new File(path + "/" + Config.weirdness));
 
-
+        HashMap<String, Double> weightMap = fileManager.GetWeightMap(Config.weightMapPath);
         for (File file : fileList) {
             aggregateTerms(termsMap, file);
         }
         for (File file : fileList) {
-            aggregateValues(termsMap, file);
+            aggregateValues(termsMap, file, weightMap.get(file.getName()));
         }
         termsMap = (HashMap<String, Double>) fileManager.NormalizeMap(termsMap);
 
-        termsMap = aggregateAbbreviations(termsMap, abbrFile);
+//        termsMap = aggregateAbbreviations(termsMap, abbrFile);
 
 //        for (Map.Entry<String, Double> entry : termsMap.entrySet()) {
 //            System.out.println(entry.getKey()+" , "+entry.getValue());
@@ -175,7 +175,7 @@ public class AlgorithmComparotor {
         return clone;
     }
 
-    private void aggregateValues(HashMap<String, Double> termsMap, File file) {
+    private void  aggregateValues(HashMap<String, Double> termsMap, File file, Double weight) {
 //        termsMap.put("000",termsMap.get("000")+","+file.getName());
         HashMap<String, String> fileMap = new HashMap<String, String>();
         try {
@@ -198,7 +198,9 @@ public class AlgorithmComparotor {
 //                }else {
 //                    val="1";
 //                }
+
                 termsMap.put(entry.getKey(), entry.getValue() + val);
+//                termsMap.put(entry.getKey(), entry.getValue() + val*weight);
             }
 
 
@@ -213,8 +215,10 @@ public class AlgorithmComparotor {
         for (File f : file.listFiles()) {
             aggregateTerms(termsMap, f);
         }
+        HashMap<String, Double> weightMap = fileManager.GetWeightMap(Config.weightMapPath);
         for (File f : file.listFiles()) {
-            aggregateValues(termsMap, f);
+
+            aggregateValues(termsMap, f, weightMap.get(file.getName()));
         }
         fileManager.NormalizeMap(termsMap);
         termsMap = (HashMap<String, Double>) fileManager.SortByComparator(termsMap);
@@ -245,14 +249,23 @@ public class AlgorithmComparotor {
             return false;
         }
 
-        if (abbrMap.containsKey(algoKey)) {
-            if (abbrMap.get(algoKey).contains(goldenKey))
+        if (abbrMap.equals(algoKey)) {
+            if (abbrMap.get(algoKey).equals(goldenKey))
                 return true;
         }
-        if (abbrMap.containsKey(goldenKey)) {
-            if (abbrMap.get(goldenKey).contains(algoKey))
+        if (abbrMap.equals(goldenKey)) {
+            if (abbrMap.get(goldenKey).equals(algoKey))
                 return true;
         }
+
+//        if (abbrMap.containsKey(algoKey)) {
+//            if (abbrMap.get(algoKey).contains(goldenKey))
+//                return true;
+//        }
+//        if (abbrMap.containsKey(goldenKey)) {
+//            if (abbrMap.get(goldenKey).contains(algoKey))
+//                return true;
+//        }
 
         return false;
     }

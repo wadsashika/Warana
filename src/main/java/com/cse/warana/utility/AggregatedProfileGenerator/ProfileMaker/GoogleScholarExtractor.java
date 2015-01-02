@@ -14,6 +14,7 @@ public class GoogleScholarExtractor {
 
     public boolean Extract(/*Profile profile*/ Candidate candidate) {
 
+        try {
         Google g = new Google();
         String link = g.FindOnGoogleScholar(candidate.getProfile().getName());
         if (link.equals("")) {
@@ -26,11 +27,7 @@ public class GoogleScholarExtractor {
         Document doc = null;
         String picUrl, name, title;
         String[] publications;
-        try {
             doc = Jsoup.connect(link).timeout(0).get();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
 // profile pic
         if (/*profile.pic_url.equals("")*/ candidate.getProfile().getPic_url().equals("")) {
@@ -73,7 +70,12 @@ public class GoogleScholarExtractor {
 //            System.out.println("---------------------------------\n");
         }
 //        return profile;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return true;
+
+
     }
 
     public String GetSummary(String link) {

@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.util.FileCopyUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,6 +35,9 @@ public class DocUploadController {
     @Qualifier("storeUploadedResumeService")
     DocUploadService docUploadService;
 
+    @Value("${warana.resources.root}")
+    private String root;
+
     @RequestMapping(value = "/upload", method = RequestMethod.GET)
     public ModelAndView uploadDocument(){
         String UPLOAD_VIEW = "upload-doc";
@@ -49,6 +53,7 @@ public class DocUploadController {
     @RequestMapping(value = "/fileupload",method = RequestMethod.POST)
     public @ResponseBody String uploadFilesToServer(MultipartHttpServletRequest request){
 
+        String baseUploadDirectory = root+"\\Uploads\\";
         ArrayList<String> fileNamesList = new ArrayList<>();
         ArrayList<String> missedFiles = new ArrayList<>();
         HashMap<Object,Object> returnJson = new HashMap<>();
@@ -64,7 +69,7 @@ public class DocUploadController {
             multipartFile = request.getFile(itr.next());
             filePath = multipartFile.getOriginalFilename();
             try {
-                multipartFile.transferTo(new File("E:\\"+filePath));
+                multipartFile.transferTo(new File(baseUploadDirectory + filePath));
                 fileNamesList.add(filePath);
             } catch (IOException e) {
                 e.printStackTrace();

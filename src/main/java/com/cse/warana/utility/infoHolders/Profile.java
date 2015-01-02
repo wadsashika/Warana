@@ -12,6 +12,15 @@ public class Profile {
     private String gender;
     private String pic_url;
     private String title;
+    private String blogUrl;
+
+    public String getBlogUrl() {
+        return blogUrl;
+    }
+
+    public void setBlogUrl(String blogUrl) {
+        this.blogUrl = blogUrl;
+    }
 
     public String getTitle() {
         return title;
