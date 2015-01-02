@@ -1,6 +1,7 @@
 package com.cse.warana.service;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -37,6 +38,8 @@ public interface CVParserService {
     public void readPdfDocument(File file);
 
     public String test();
+
+    public ArrayList<String> getNewTechnologies();
 
 
 }

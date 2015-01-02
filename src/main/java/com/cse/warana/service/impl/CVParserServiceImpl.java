@@ -43,6 +43,7 @@ public class CVParserServiceImpl implements CVParserService {
     private static ArrayList<String> lines;
     private static ArrayList<String> linesCopy;
     private static ArrayList<String> indexedLines;
+    private static ArrayList<String> newTechnologies;
 
     private static String[] docLines;
     private static HashMap<String, ArrayList<Integer>> sectionMap;
@@ -359,6 +360,7 @@ public class CVParserServiceImpl implements CVParserService {
         }
         missedInfo.findProfileInfo(linesCopy,(Profile) infoCategoryTypes.get("PROFILE"));
 
+        newTechnologies = projInfo.getNewTechnologies();
         /**
          * String technologies is used to store the technologies of the candidate as a comma separated string
          */
@@ -426,5 +428,10 @@ public class CVParserServiceImpl implements CVParserService {
     @Override
     public String test(){
         return "Hello There";
+    }
+
+    @Override
+    public ArrayList<String> getNewTechnologies() {
+        return newTechnologies;
     }
 }

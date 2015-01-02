@@ -1,6 +1,7 @@
 package com.cse.warana.dao.impl;
 
 import com.cse.warana.dao.StoreWorkDao;
+import com.cse.warana.model.WorkExperienceTbl;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -8,5 +9,5 @@ import org.springframework.stereotype.Repository;
  */
 
 @Repository("storeWork")
-public class StoreWorkDaoImpl extends BaseJPADaoImpl implements StoreWorkDao {
+public class StoreWorkDaoImpl extends BaseJPADaoImpl<WorkExperienceTbl> implements StoreWorkDao {
 }

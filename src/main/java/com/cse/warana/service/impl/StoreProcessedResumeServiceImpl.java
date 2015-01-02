@@ -1,6 +1,8 @@
 package com.cse.warana.service.impl;
 
+import com.cse.warana.dao.GetTechnologyIdDao;
 import com.cse.warana.dao.StoreCandidateDao;
+import com.cse.warana.dao.StoreCandidateTechnologyDao;
 import com.cse.warana.dao.impl.*;
 import com.cse.warana.model.*;
 import com.cse.warana.service.StoreProcessedResumeService;
@@ -13,6 +15,7 @@ import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
 import java.sql.Ref;
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Nadeeshaan on 12/13/2014.
@@ -44,6 +47,18 @@ public class StoreProcessedResumeServiceImpl implements StoreProcessedResumeServ
     @Autowired
     @Qualifier("storeWork")
     private StoreWorkDaoImpl storeWorkDao;
+
+    @Autowired
+    @Qualifier("storeTechnology")
+    private StoreTechnologyDaoImpl storeTechnologyDao;
+
+    @Autowired
+    @Qualifier("storeCandidateTechnology")
+    private StoreCandidateTechnologyDaoImpl storeCandidateTechnologyDao;
+
+    @Autowired
+    @Qualifier("getTechnologyIds")
+    private GetTechnologyIdDao getTechnologyIdsDao;
 
     @Override
     @TransactionAttribute(TransactionAttributeType.REQUIRED)
@@ -142,7 +157,34 @@ public class StoreProcessedResumeServiceImpl implements StoreProcessedResumeServ
             refereeTbl.setEmail(referee.getEmail());
             refereeTbl.setPhone(referee.getPhone());
 
-            storeAchievementDao.saveEntity(refereeTbl);
+            storeRefereeDao.saveEntity(refereeTbl);
+        }
+    }
+
+    @Override
+    @TransactionAttribute(TransactionAttributeType.REQUIRED)
+    public void storeNewTechnologies(ArrayList<String> technologies) {
+        for (int a = 0; a < technologies.size(); a++){
+            TechnologyTbl technology = new TechnologyTbl();
+            technology.setTechnology(technologies.get(a));
+            technology.setDescription(technologies.get(a));
+
+            storeTechnologyDao.saveEntity(technology);
+        }
+    }
+
+    @Override
+    @TransactionAttribute(TransactionAttributeType.REQUIRED)
+    public void storeCandidateTechnologies(Candidate candidate, long id) {
+        List<String> techIds = getTechnologyIdsDao.getCurrentTechnologyIds(candidate.getTechnologiesList());
+
+        for (int a = 0; a < techIds.size(); a++){
+            TechnologyCandidateTbl technologyCandidateTbl = new TechnologyCandidateTbl();
+            technologyCandidateTbl.setCandidate_id(id);
+            technologyCandidateTbl.setTechnology_id(Long.parseLong(techIds.get(a)));
+            technologyCandidateTbl.setPercentage(100f/techIds.size());
+
+            storeCandidateTechnologyDao.saveEntity(technologyCandidateTbl);
         }
     }
 }
