@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -21,7 +22,11 @@ public class ProjectInfoExtraction {
 
     public static ArrayList<String> technologies = new ArrayList<String>();
 
-    private static Logger LOG = LoggerFactory.getLogger(ProjectInfoExtraction.class);
+    private static Logger LOG = LoggerFactory.getLogger(ProjectInfoExtraction.class);private String listpath = "";
+
+    public ProjectInfoExtraction(HashMap<String,String> paths){
+        listpath = paths.get("root") + paths.get("listPath");
+    }
     /**
      * Extract the project information
      *
@@ -42,7 +47,7 @@ public class ProjectInfoExtraction {
         BufferedReader br = null;
         String biWrod = "";
         try {
-            br = new BufferedReader(new FileReader("src\\main\\resources\\gazeteerLists\\projBiwordIndex"));
+            br = new BufferedReader(new FileReader(listpath + "\\projBiwordIndex"));
             biWrod = br.readLine();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -63,7 +68,7 @@ public class ProjectInfoExtraction {
 
         Pattern pattern = null;
         Matcher matcher = null;
-        populateByFile("src\\main\\resources\\gazeteerLists\\technologies", technologies);
+        populateByFile(listpath + "\\technologies", technologies);
 
 
         /**

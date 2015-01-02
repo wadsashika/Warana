@@ -9,6 +9,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -19,7 +20,11 @@ public class AchievementsInfoExtract {
 
 
     private static Logger LOG = LoggerFactory.getLogger(AchievementsInfoExtract.class);
+    private String listpath = "";
 
+    public AchievementsInfoExtract(HashMap<String,String> paths){
+        listpath = paths.get("root") + paths.get("listPath");
+    }
     /**
      * Extract the Achievement information
      *
@@ -41,7 +46,7 @@ public class AchievementsInfoExtract {
         String indexString = "";
 
         try {
-            br = new BufferedReader(new FileReader("src\\main\\resources\\gazeteerLists\\achievementsIndex"));
+            br = new BufferedReader(new FileReader(listpath + "\\achievementsIndex"));
             indexString = br.readLine();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
