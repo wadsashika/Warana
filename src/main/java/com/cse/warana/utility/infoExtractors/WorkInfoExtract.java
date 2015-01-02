@@ -11,6 +11,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -22,18 +23,19 @@ public class WorkInfoExtract {
     public static AbstractSequenceClassifier<CoreLabel> classifier = null;
     public static ArrayList<String> companies = new ArrayList<String>();
     private static Logger LOG = LoggerFactory.getLogger(AchievementsInfoExtract.class);
-
+    private String listPath = "";
     /**
      * Constructor Method
      *
      * @param clf
      */
-    public WorkInfoExtract(AbstractSequenceClassifier<CoreLabel> clf) {
+    public WorkInfoExtract(AbstractSequenceClassifier<CoreLabel> clf, HashMap<String,String> paths) {
         this.classifier = clf;
         /**
          * Load the companies gazeteer list
          */
-        populateByFile("src\\main\\resources\\gazeteerLists\\companyNames", companies);
+        listPath = paths.get("root") + paths.get("listPath");
+        populateByFile(listPath + "\\companyNames", companies);
     }
 
 

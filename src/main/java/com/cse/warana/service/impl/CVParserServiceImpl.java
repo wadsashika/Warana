@@ -49,16 +49,18 @@ public class CVParserServiceImpl implements CVParserService {
 
     private static AbstractSequenceClassifier<CoreLabel> classifier;
 
+    HashMap<String,String> pathsMap = null;
+
     private static Logger LOG;
-
-    @Value("${GAZETEER.LIST.PATH}")
-    private static String listPath;
-
 
     /**
      * Constructor
      */
-    public CVParserServiceImpl() {
+    public CVParserServiceImpl(){
+
+    }
+
+    public CVParserServiceImpl(HashMap<String,String> paths) {
 
         EducationalHeadings = new ArrayList<String>();
         ProfileHeadings = new ArrayList<String>();
@@ -76,11 +78,13 @@ public class CVParserServiceImpl implements CVParserService {
 
         LOG = LoggerFactory.getLogger(CVParserServiceImpl.class);
 
+        this.pathsMap = paths;
+
         /**
          * Load the 7 class classifier
          * Finds Time, Location, Organization, Person, Money, Percent, Date
          */
-        String serializedClassifier = "src\\main\\resources\\classifiers\\english.muc.7class.distsim.crf.ser.gz";
+        String serializedClassifier = pathsMap.get("root") + pathsMap.get("classifirePath");
         try {
             classifier = CRFClassifier.getClassifier(serializedClassifier);
         } catch (IOException e) {
@@ -102,11 +106,11 @@ public class CVParserServiceImpl implements CVParserService {
          */
         String token = "";
         try {
-            BufferedReader EduBr = new BufferedReader(new FileReader("src\\main\\resources\\gazeteerLists\\eduTokens"));
-            BufferedReader ProfsBr = new BufferedReader(new FileReader("src\\main\\resources\\gazeteerLists\\profTokens"));
-            BufferedReader WrkBr = new BufferedReader(new FileReader("src\\main\\resources\\gazeteerLists\\wrkTokens"));
-            BufferedReader AwrdBr = new BufferedReader(new FileReader("src\\main\\resources\\gazeteerLists\\awardsTokens"));
-            BufferedReader ProjBr = new BufferedReader(new FileReader("src\\main\\resources\\gazeteerLists\\projTokens"));
+            BufferedReader EduBr = new BufferedReader(new FileReader(pathsMap.get("root") + pathsMap.get("listPath") + "\\eduTokens"));
+            BufferedReader ProfsBr = new BufferedReader(new FileReader(pathsMap.get("root") + pathsMap.get("listPath") + "\\profTokens"));
+            BufferedReader WrkBr = new BufferedReader(new FileReader(pathsMap.get("root") + pathsMap.get("listPath") + "\\wrkTokens"));
+            BufferedReader AwrdBr = new BufferedReader(new FileReader(pathsMap.get("root") + pathsMap.get("listPath") + "\\awardsTokens"));
+            BufferedReader ProjBr = new BufferedReader(new FileReader(pathsMap.get("root") + pathsMap.get("listPath") + "\\projTokens"));
 
             token = EduBr.readLine();
 
@@ -322,11 +326,11 @@ public class CVParserServiceImpl implements CVParserService {
      */
     @Override
     public void parseLines(HashMap<String,Object> infoCategoryTypes) {
-        EducationalInfoExtract eduInfo = new EducationalInfoExtract();
+        EducationalInfoExtract eduInfo = new EducationalInfoExtract(pathsMap);
         PersonalInfoExtract perInfo = new PersonalInfoExtract();
-        WorkInfoExtract wrkInfo = new WorkInfoExtract(classifier);
-        AchievementsInfoExtract achInfo = new AchievementsInfoExtract();
-        ProjectInfoExtraction projInfo = new ProjectInfoExtraction();
+        WorkInfoExtract wrkInfo = new WorkInfoExtract(classifier,pathsMap);
+        AchievementsInfoExtract achInfo = new AchievementsInfoExtract(pathsMap);
+        ProjectInfoExtraction projInfo = new ProjectInfoExtraction(pathsMap);
         RefereeInfoExtract refInfo = new RefereeInfoExtract(classifier);
         FindMissedInfo missedInfo = new FindMissedInfo();
         InterestsInfoExtract interestsInfo =  new InterestsInfoExtract();

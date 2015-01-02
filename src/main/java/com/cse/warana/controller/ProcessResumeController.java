@@ -13,12 +13,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -37,9 +39,17 @@ public class ProcessResumeController {
     @Qualifier("storeProcessedResume")
     private StoreProcessedResumeService storeProcessedResumeService;
 
-//    @Autowired
-//    @Qualifier("cvParser")
-//    private CVParserService cvParserService;
+    @Value("${warana.resources.root}")
+    private String root;
+
+    @Value("${NER.CLASSIFIER.PATH}")
+    private String classifirePath;
+
+    @Value("${GAZETEER.LIST.PATH}")
+    private String listPath;
+
+    @Value("${UPLOADS.PATH}")
+    private String uploadsPath;
 
     @Autowired
     @Qualifier("generateCandidateProfile")
@@ -71,7 +81,7 @@ public class ProcessResumeController {
     @ResponseBody
     public boolean deleteResume(@RequestParam("fileName") String fileName){
 
-        String baseDirectory = "F:\\Accademic\\Semister 7\\Final_Year_Project\\CareersDay2013_CVs\\CareersDay2013_CVs\\pdfs";
+        String baseDirectory = root + uploadsPath;
         File resumeFile = new File(baseDirectory + "\\" + fileName);
         boolean status = false;
 
@@ -89,13 +99,18 @@ public class ProcessResumeController {
     @ResponseBody
     public boolean processSelectedResumes(@RequestBody String[] fileNames){
 
-        String baseDirectory = "src\\main\\resources\\Docs\\CVs";
+        HashMap<String,String> paths = new HashMap<>();
+        paths.put("root",root);
+        paths.put("classifirePath",classifirePath);
+        paths.put("listPath",listPath);
+
+        String baseDirectory = root + uploadsPath;
         ArrayList<Candidate> candidateArrayList = new ArrayList<>();
         for (int a = 0; a < fileNames.length; a++){
             System.out.println(fileNames[a]);
 
             CandidateProfileGeneratorService profileGeneratorService = new CandidateProfileGeneratorServiceImpl();
-            CVParserService cvParserService = new CVParserServiceImpl();
+            CVParserService cvParserService = new CVParserServiceImpl(paths);
 
             Candidate candidate = new Candidate();
             profileGeneratorService.extractCVInformation(cvParserService,new File(baseDirectory+"\\"+fileNames[a]));
@@ -108,6 +123,7 @@ public class ProcessResumeController {
             storeProcessedResumeService.storeProjectTableData(candidate,candidate_id);
             storeProcessedResumeService.storeRefereeTableData(candidate,candidate_id);
             storeProcessedResumeService.storeWorkTableData(candidate,candidate_id);
+            resumesToProcessService.uploadedResumeStatusUpdate(fileNames[a],"PROCESSED");
         }
 
         return true;
