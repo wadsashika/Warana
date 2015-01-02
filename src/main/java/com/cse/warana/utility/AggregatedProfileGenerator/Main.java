@@ -5,6 +5,7 @@ import com.cse.warana.service.CandidateProfileGeneratorService;
 import com.cse.warana.service.impl.CVParserServiceImpl;
 import com.cse.warana.service.impl.CandidateProfileGeneratorServiceImpl;
 import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.PhraseAnalyzer;
+import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import com.cse.warana.utility.infoExtractors.OnlineInfoExtractor;
 import com.cse.warana.utility.infoHolders.Candidate;
 import com.cse.warana.utility.infoHolders.Profile;
@@ -25,7 +26,7 @@ public class Main {
          * TODO implement methods to confirm whether online profiles exactly represent the desired candidate
          */
 
-
+        System.out.println(Config.skillsPath);
 
         Candidate candidate=new Candidate();
         CandidateProfileGeneratorService generatorService=new CandidateProfileGeneratorServiceImpl();
@@ -35,6 +36,7 @@ public class Main {
         generatorService.extractCVInformation(cvParserService,cv);
         generatorService.generateCandidateProfile(candidate);
         OnlineInfoExtractor onlineInfoExtractor=new OnlineInfoExtractor(candidate);
+
         CallName();
     }
 }
