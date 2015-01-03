@@ -27,3 +27,33 @@
 #graph-modal{
     width: 50%;
 }
+
+#compareAllMainDiv{
+    display: none;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+#compareAllChartArea{
+    width: 100%;
+}
+
+#compareAllArea{
+    width: 100%;
+}
+
+#advanced-search-panel{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+#search-submit{
+    margin-top: -9px;
+}
+
+.arrowUpDown{
+    margin-right: 15px;
+}

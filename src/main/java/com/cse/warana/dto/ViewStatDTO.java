@@ -1,6 +1,7 @@
 package com.cse.warana.dto;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created by Nadeeshaan on 11/19/2014.
@@ -12,6 +13,7 @@ public class ViewStatDTO {
     private String email;
     private String score;
     private ArrayList<String> technologies;
+    private HashMap<String,String> technologyScoreMap;
 
     public long getId() {
         return id;
@@ -51,5 +53,13 @@ public class ViewStatDTO {
 
     public void setTechnologies(ArrayList<String> technologies) {
         this.technologies = technologies;
+    }
+
+    public HashMap<String, String> getTechnologyScoreMap() {
+        return technologyScoreMap;
+    }
+
+    public void setTechnologyScoreMap(HashMap<String, String> technologyScoreMap) {
+        this.technologyScoreMap = technologyScoreMap;
     }
 }

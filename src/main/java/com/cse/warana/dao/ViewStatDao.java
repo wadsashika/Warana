@@ -12,5 +12,6 @@ public interface ViewStatDao {
     public List<ViewStatDTO> getViewStatDaoList();
     public List<String> getTechnologiesList();
     public List<ViewStatDTO> getAdvSearchResults(String[] technologies);
+    public List<ViewStatDTO> getCompareAllResults(String[] technologies);
     public List<Map<String,Object>> getTechnologiesScores(double id);
 }
