@@ -39,11 +39,30 @@
                             <h4><input type="checkbox" id="select-all" class="pages-select-all"/>Select All</h4>
                         </div>
                         <div class="table-responsive" id="stat-table-div"></div>
+
+                        <div id="compareAllMainDiv">
+                            <div id="compareAllCollapse">
+                                <h4>
+                                    <a id="compare-all-href" data-toggle="collapse" data-parent="#accordion" href="#compareAllArea"
+                                       aria-expanded="true" aria-controls="collapseOne">
+                                        <span class='glyphicon glyphicon-circle-arrow-down arrowUpDown currentDown'></span>
+                                        Technology Expertise Comparison
+                                    </a>
+                                </h4>
+                            </div>
+
+                            <div id="compareAllArea" class="panel-collapse collapse" aria-labelledby="compareAllCollapse">
+                                <div id="compareAllChartArea">
+                                </div>
+                            </div>
+                        </div>
+
                         <div id="advanced-search-panel" class="viewstat-advanced-search">
                             <div id="headingOne">
                                 <h4>
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#advancedSearch"
+                                    <a  id="advHref" data-toggle="collapse" data-parent="#accordion" href="#advancedSearch"
                                        aria-expanded="true" aria-controls="collapseOne">
+                                        <span class='glyphicon glyphicon-circle-arrow-down arrowUpDown currentDown'></span>
                                         Advanced Search
                                     </a>
                                 </h4>

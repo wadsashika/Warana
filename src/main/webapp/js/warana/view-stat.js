@@ -162,8 +162,106 @@ WARANA.module.viewStat = function () {
                 alert('Error: ' + e);
             }
         });
+
+        processCompareAllBarChart();
+
+        document.getElementById("compareAllMainDiv").style.display = "block";
     };
 
+    var drawCompareAllBarChart = function (series, categories) {
+
+        $("#compareAllChartArea").empty();
+
+        $("#compareAllChartArea").highcharts({
+            chart: {
+                type: 'column',
+                options3d: {
+                    enabled: true,
+                    alpha: 0,
+                    beta: 15,
+                    viewDistance: 100,
+                    depth: 30
+                },
+                marginTop: 80,
+                marginRight: 40
+            },
+            title: {
+                text: 'Technology Expertise Comparison'
+            },
+            xAxis: {
+                categories: categories
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Normalized Percentage (%)'
+                }
+            },
+            tooltip: {
+                headerFormat: '<span style="font-size:10px;">{point.key}</span><table>',
+                pointFormat: '<tr><td style="color:{series.color};padding:0;font-size:9px;">{series.name}: </td>' +
+                    '<td style="padding:0;font-size:9px"><b>{point.y:.1f} %</b></td></tr>',
+                footerFormat: '</table>',
+                shared: true,
+                useHTML: true
+            },
+            plotOptions: {
+                column: {
+                    pointPadding: 0.2,
+                    borderWidth: 1
+                }
+            },
+            series: series
+        });
+
+
+        $(document).on('click', "#compare-all-href" ,function () {
+            console.log("Clicked");
+            $('#compareAllChartArea').highcharts().reflow();
+        });
+    };
+
+    var processCompareAllBarChart = function () {
+
+        var technologies = $("#tagged-search-field").val();
+        var techsArr = technologies.split(",");
+        var series = [];
+        var categories = [];
+
+        for (var a = 0; a < techsArr.length; a++) {
+            categories.push(techsArr[a]);
+        }
+
+        $.ajax({
+            type: "POST",
+            url: "getcomparestats",
+            data: {technologies: technologies},
+            success: function (data) {
+                var jsonObj = JSON.parse(data);
+                for (var a = 0; a < jsonObj.length; a++) {
+                    var nameVal = jsonObj[a].name;
+                    var associativeData = {};
+                    var dataSet = [];
+                    var map = jsonObj[a].technologyScoreMap;
+
+                    for (var i = 0; i < techsArr.length; i++) {
+                        dataSet.push(parseFloat(map[techsArr[i]]));
+                    }
+
+                    associativeData["name"] = nameVal;
+                    associativeData["data"] = dataSet;
+
+                    series.push(associativeData);
+                }
+
+                drawCompareAllBarChart(series, categories);
+
+            },
+            error: function (e) {
+                alert('Error: ' + e);
+            }
+        });
+    };
 
     var drawChart = function (data) {
 
@@ -485,6 +583,21 @@ WARANA.module.viewStat = function () {
         });
     };
 
+    var changeArrowUpDown = function () {
+        if($(this).children("span:first").hasClass("currentDown")){
+            $(this).children("span:first").removeClass("currentDown");
+            $(this).children("span:first").removeClass("glyphicon-circle-arrow-down");
+            $(this).children("span:first").addClass("currentUp");
+            $(this).children("span:first").addClass("glyphicon-circle-arrow-up");
+        }
+        else if($(this).children("span:first").hasClass("currentUp")){
+            $(this).children("span:first").removeClass("currentUp");
+            $(this).children("span:first").removeClass("glyphicon-circle-arrow-up");
+            $(this).children("span:first").addClass("currentDown");
+            $(this).children("span:first").addClass("glyphicon-circle-arrow-down");
+        }
+    };
+
     return {
         init: function () {
             tagInput();
@@ -495,6 +608,8 @@ WARANA.module.viewStat = function () {
             $(document).on("click", "#search-submit", searchCandidates);
             $(document).on("click", ".view-prof", viewProfileClick);
             $(document).on("click", ".view-tech", viewStatChart);
+            $(document).on("click", "#advHref", changeArrowUpDown);
+            $(document).on("click", "#compare-all-href", changeArrowUpDown);
         }
     }
 }();

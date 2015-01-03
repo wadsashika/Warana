@@ -87,4 +87,15 @@ public class ViewStatController {
 
         return jsonResultList;
     }
+
+    @RequestMapping(value = "/getcomparestats", method = RequestMethod.POST)
+    @ResponseBody
+    public String getCompareStats(@RequestParam("technologies") String[] technologies){
+
+        List<ViewStatDTO> compareAllList = viewStatService.getCompareAllResults(technologies);
+        Gson gson = new GsonBuilder().serializeNulls().create();
+        String jsonResultList = gson.toJson(compareAllList);
+
+        return jsonResultList;
+    }
 }

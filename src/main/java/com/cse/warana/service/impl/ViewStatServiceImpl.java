@@ -46,6 +46,13 @@ public class ViewStatServiceImpl implements ViewStatService {
     }
 
     @Override
+    public List<ViewStatDTO> getCompareAllResults(String[] technologies) {
+        List<ViewStatDTO> advSearchResultDTOs = null;
+        advSearchResultDTOs = viewStatDao.getCompareAllResults(technologies);
+        return advSearchResultDTOs;
+    }
+
+    @Override
     public List<Map<String,Object>> getTechScoreMap(double id) {
 
         List<Map<String,Object>> techScoreList = null;
