@@ -113,7 +113,7 @@ public class ProcessResumeController {
             CVParserService cvParserService = new CVParserServiceImpl(paths);
 
             Candidate candidate = new Candidate();
-            profileGeneratorService.extractCVInformation(cvParserService,new File(baseDirectory+"\\"+fileNames[a]));
+            profileGeneratorService.extractCVInformation(cvParserService,new File(baseDirectory + File.separator + fileNames[a]));
             candidateArrayList.add(profileGeneratorService.generateCandidateProfile(candidate));
 
             long candidate_id = storeProcessedResumeService.storeCandidateTableData(candidate);

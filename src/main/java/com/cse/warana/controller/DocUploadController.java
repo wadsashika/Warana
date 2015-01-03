@@ -73,7 +73,7 @@ public class DocUploadController {
             multipartFile = request.getFile(itr.next());
             filePath = multipartFile.getOriginalFilename();
             try {
-                multipartFile.transferTo(new File(baseUploadDirectory + filePath));
+                multipartFile.transferTo(new File(baseUploadDirectory+ File.separator + filePath));
                 fileNamesList.add(filePath);
             } catch (IOException e) {
                 e.printStackTrace();
