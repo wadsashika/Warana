@@ -39,7 +39,7 @@ public class TechnologyListGenerator {
                 listCreator(w1, w2);
             }
         }
-        addedList.add("Technologies");
+        addedList.add("technologies");
         return addedList;
     }
 
