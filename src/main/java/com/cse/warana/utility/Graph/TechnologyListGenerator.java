@@ -21,14 +21,14 @@ public class TechnologyListGenerator {
         addedList = new ArrayList<String>();
     }
 
-//    public static void main(String at[]) throws IOException{
-//        List<String> ss= new ArrayList<String>();
-//        ss.add("computer science\\/engineering or equivalent");
-//        ss.add("java");
-//        ss.add("amicable personality");
-//        ss.add("java or c\\/c");
-//        new TechnologyListGenerator().inti(ss);
-//    }
+    public static void main(String at[]) throws IOException{
+        List<String> ss= new ArrayList<String>();
+        ss.add("computer science\\/engineering or equivalent");
+        ss.add("java");
+        ss.add("amicable personality");
+        ss.add("java or c\\/c");
+        System.out.println(new TechnologyListGenerator().inti(ss));
+    }
 
     public List<String> inti(List<String> conceptList) throws IOException {
 
