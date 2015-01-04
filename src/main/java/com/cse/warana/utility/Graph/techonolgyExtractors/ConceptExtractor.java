@@ -19,8 +19,8 @@ public class ConceptExtractor {
     //    public static void main(String a[]) throws IOException {
 //        System.out.println(new ConceptExtractor().getAvailablity("my name is computer interaction designing"));
 //    }
-    public ConceptExtractor() throws IOException {
-        cb = new ConceptBurn();
+    public ConceptExtractor(String root) throws IOException {
+        cb = new ConceptBurn(root);
         wordlist = cb.getConcepts();
         gatheredList = new ArrayList<String>();
     }

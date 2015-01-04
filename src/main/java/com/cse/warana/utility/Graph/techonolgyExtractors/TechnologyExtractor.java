@@ -13,8 +13,8 @@ public class TechnologyExtractor {
     private TechnologyBurn tb;
     private List<String> gatheredList;
 
-    public TechnologyExtractor() throws IOException {
-        tb = new TechnologyBurn();
+    public TechnologyExtractor(String root) throws IOException {
+        tb = new TechnologyBurn(root);
         wordlist = tb.getTechonologies();
         gatheredList = new ArrayList<String>();
     }

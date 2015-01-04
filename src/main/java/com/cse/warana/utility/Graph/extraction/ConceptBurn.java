@@ -1,6 +1,5 @@
 package com.cse.warana.utility.Graph.extraction;
 
-import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
@@ -17,12 +16,16 @@ import java.util.List;
 public class ConceptBurn extends BurnerClass {
     String[] list = {"web development", "augmented reality", ".Net", "artificial intelligence", "sql", "game development", "ruby", "C", "uml", "object oriented design", "Ajax", "user experience", "XML", "software engineering", "android development", "Entrepreneurship", "project management", "graphic design", "computer science"};
 
+    public ConceptBurn(String root) {
+        super(root);
+    }
+
     public Hashtable<String, Boolean> getConcepts() throws IOException {
-        String fileName="conceptfile.txt";
-        boolean f = new File(Config.termsFilePath).mkdirs();
-        File file=new File(Config.termsFilePath+fileName);
+        String fileName = "conceptfile.txt";
+        boolean f = new File(termsFilePath).mkdirs();
+        File file = new File(termsFilePath + fileName);
         if (file.exists()) {
-            List<String> lines = Files.readAllLines(Paths.get(Config.termsFilePath+fileName),
+            List<String> lines = Files.readAllLines(Paths.get(termsFilePath + fileName),
                     Charset.defaultCharset());
             for (int i = 0; i < lines.size(); i++) {
 //                System.out.println(lines.get(i));
@@ -30,7 +33,7 @@ public class ConceptBurn extends BurnerClass {
             }
         } else {
             Document document = getPage("http://en.wikipedia.org/wiki/Outline_of_computer_science");
-            File fout = new File(Config.termsFilePath+fileName);
+            File fout = new File(termsFilePath + fileName);
             fout.createNewFile();
             FileOutputStream fos = new FileOutputStream(fout);
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos));

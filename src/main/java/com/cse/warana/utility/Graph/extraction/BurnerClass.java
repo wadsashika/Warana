@@ -5,6 +5,7 @@ import org.jsoup.nodes.Document;
 
 import java.io.IOException;
 import java.util.Hashtable;
+
 /**
  * Created by Anushka on 2015-01-03.
  */
@@ -12,10 +13,12 @@ import java.util.Hashtable;
 public class BurnerClass {
     public NetworkConnectionManager networkConnectionManager;
     protected Hashtable<String, Boolean> wordlist;
+    public String termsFilePath ;
 
-    public BurnerClass() {
+    public BurnerClass(String root) {
         networkConnectionManager = new NetworkConnectionManager();
         wordlist = new Hashtable<String, Boolean>();
+        termsFilePath = root + "/Docs/Terms/";
     }
 
     public Document getPage(String urlString) throws IOException {

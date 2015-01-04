@@ -56,7 +56,6 @@ public final class Config {
     public static final String weightMapPath         =rootPath+"/Docs/WeightMap.csv";
     public static final String abbreviationsSkillsPath     =rootPath+"/Docs/Abbreviations/SkillDocs/";
     public static final String abbreviationsProfilesPath   =rootPath+"/Docs/Abbreviations/UserDocs/";
-    public static final String termsFilePath         =rootPath+"/Docs/Terms/";
 
 
     public static final int user_max_docs=10;

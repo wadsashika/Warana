@@ -1,6 +1,5 @@
 package com.cse.warana.utility.Graph.extraction;
 
-import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
 
@@ -16,19 +15,24 @@ import java.util.List;
  * Created by Anushka on 2015-01-03.
  */
 public class TechnologyBurn extends BurnerClass {
+
+    public TechnologyBurn(String root) {
+        super(root);
+    }
+
     public Hashtable<String, Boolean> getTechonologies() throws IOException {
-        String fileName="languagefile.txt";
-        boolean f = new File(Config.termsFilePath).mkdirs();
-        File file=new File(Config.termsFilePath+fileName);
+        String fileName = "languagefile.txt";
+        boolean f = new File(termsFilePath).mkdirs();
+        File file = new File(termsFilePath + fileName);
         if (file.exists()) {
-            List<String> lines = Files.readAllLines(Paths.get(Config.termsFilePath+fileName),
+            List<String> lines = Files.readAllLines(Paths.get(termsFilePath + fileName),
                     Charset.defaultCharset());
             for (int i = 0; i < lines.size(); i++) {
                 wordlist.put(lines.get(i), true);
             }
         } else {
             Document document = getPage("http://en.wikipedia.org/wiki/List_of_programming_languages");
-            File fout = new File(Config.termsFilePath+fileName);
+            File fout = new File(termsFilePath + fileName);
             fout.createNewFile();
             FileOutputStream fos = new FileOutputStream(fout);
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos));

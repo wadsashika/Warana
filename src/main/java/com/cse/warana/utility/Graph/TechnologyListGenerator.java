@@ -15,9 +15,9 @@ public class TechnologyListGenerator {
     private TechnologyExtractor tx;
     private ConceptExtractor cx;
 
-    public TechnologyListGenerator() throws IOException {
-        tx = new TechnologyExtractor();
-        cx = new ConceptExtractor();
+    public TechnologyListGenerator(String root) throws IOException {
+        tx = new TechnologyExtractor(root);
+        cx = new ConceptExtractor(root);
         addedList = new ArrayList<String>();
     }
 
@@ -27,7 +27,7 @@ public class TechnologyListGenerator {
         ss.add("java");
         ss.add("amicable personality");
         ss.add("java or c\\/c");
-        System.out.println(new TechnologyListGenerator().inti(ss));
+        System.out.println(new TechnologyListGenerator("C:\\Warana").inti(ss));
     }
 
     public List<String> inti(List<String> conceptList) throws IOException {
