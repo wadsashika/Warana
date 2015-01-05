@@ -175,7 +175,7 @@
                                         Reset
                                     </button>
                                     <button type="submit" class="btn btn-primary" id="saveBtn"><span
-                                            class="glyphicon glyphicon-save"></span>
+                                            class="glyphicon glyphicon-floppy-disk"></span>
                                         Save
                                     </button>
                                 </div>

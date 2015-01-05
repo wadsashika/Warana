@@ -154,13 +154,6 @@
             <version>1.8.6</version>
         </dependency>
 
-        <!--linkedIn api-->
-        <!--<dependency>
-            <groupId>org.springframework.social</groupId>
-            <artifactId>spring-social-linkedin</artifactId>
-            <version>1.0.0.RELEASE</version>
-        </dependency>-->
-
         <!--json -->
         <dependency>
             <groupId>org.json</groupId>
@@ -250,7 +243,6 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.11</version>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
