@@ -180,7 +180,7 @@ public class CVParserServiceImpl implements CVParserService {
                     // Section is named under EDU_INF
                     pattern = Pattern.compile(".*" + EducationalHeadings.get(ctr) + ".*");
                     matcher = pattern.matcher(line.toLowerCase());
-                    if (matcher.matches()) {
+                    if (matcher.matches() && (line.charAt(0) + "").equals((line.charAt(0) + "").toUpperCase())) {
                         if (sectionMap.containsKey("EDU_INFO")) {
                             if (!(sectionMap.get("EDU_INFO")).contains(new Integer(a))) {
                                 (sectionMap.get("EDU_INFO")).add(new Integer(a));
@@ -202,7 +202,7 @@ public class CVParserServiceImpl implements CVParserService {
                     pattern = Pattern.compile(".*" + ProfileHeadings.get(ctr) + ".*");
                     matcher = pattern.matcher(line.toLowerCase());
 
-                    if (matcher.matches()) {
+                    if (matcher.matches() && (line.charAt(0) + "").equals((line.charAt(0) + "").toUpperCase())) {
                         if (sectionMap.containsKey("PROF_INFO")) {
                             if (!(sectionMap.get("PROF_INFO")).contains(new Integer(a))) {
                                 (sectionMap.get("PROF_INFO")).add(new Integer(a));
@@ -222,7 +222,7 @@ public class CVParserServiceImpl implements CVParserService {
                     pattern = Pattern.compile(".*" + WorkHistoryHeadings.get(ctr) + ".*");
                     matcher = pattern.matcher(line.toLowerCase());
 
-                    if (matcher.matches()/* && !sectionMap.containsKey("EDU_INFO")*/) {
+                    if (matcher.matches() && (line.charAt(0) + "").equals((line.charAt(0) + "").toUpperCase())/* && !sectionMap.containsKey("EDU_INFO")*/) {
                         if (sectionMap.containsKey("WRK_INFO")) {
                             if (!(sectionMap.get("WRK_INFO")).contains(new Integer(a))) {
                                 (sectionMap.get("WRK_INFO")).add(new Integer(a));
@@ -242,7 +242,7 @@ public class CVParserServiceImpl implements CVParserService {
                     pattern = Pattern.compile(".*" + AwardsAndAchievementsHeadings.get(ctr) + ".*");
                     matcher = pattern.matcher(line.toLowerCase());
 
-                    if (matcher.matches()/* && !sectionMap.containsKey("EDU_INFO")*/) {
+                    if (matcher.matches() && (line.charAt(0) + "").equals((line.charAt(0) + "").toUpperCase())/* && !sectionMap.containsKey("EDU_INFO")*/) {
                         if (sectionMap.containsKey("AWRD_INFO")) {
                             if (!(sectionMap.get("AWRD_INFO")).contains(new Integer(a))) {
                                 (sectionMap.get("AWRD_INFO")).add(new Integer(a));
@@ -262,7 +262,7 @@ public class CVParserServiceImpl implements CVParserService {
                     pattern = Pattern.compile(".*" + ProjectsHeadings.get(ctr) + ".*");
                     matcher = pattern.matcher(line.toLowerCase());
 
-                    if (matcher.matches()/* && !sectionMap.containsKey("EDU_INFO")*/) {
+                    if (matcher.matches() && (line.charAt(0) + "").equals((line.charAt(0) + "").toUpperCase())/* && !sectionMap.containsKey("EDU_INFO")*/) {
                         if (sectionMap.containsKey("PROJ_INFO")) {
                             if (!(sectionMap.get("PROJ_INFO")).contains(new Integer(a))) {
                                 (sectionMap.get("PROJ_INFO")).add(new Integer(a));
@@ -284,7 +284,7 @@ public class CVParserServiceImpl implements CVParserService {
                 pattern = Pattern.compile(".*interests.*");
                 matcher = pattern.matcher(line.toLowerCase());
 
-                if (matcher.matches()) {
+                if (matcher.matches() && (line.charAt(0) + "").equals((line.charAt(0) + "").toUpperCase())) {
                     if (sectionMap.containsKey("INTERESTS_INFO")) {
                         if (!(sectionMap.get("INTERESTS_INFO")).contains(new Integer(a))) {
                             (sectionMap.get("INTERESTS_INFO")).add(new Integer(a));
@@ -303,7 +303,7 @@ public class CVParserServiceImpl implements CVParserService {
             pattern = Pattern.compile(".*referee.*");
             matcher = pattern.matcher(line.toLowerCase());
 
-            if (matcher.matches()) {
+            if (matcher.matches() && (line.charAt(0) + "").equals((line.charAt(0) + "").toUpperCase())) {
                 if (sectionMap.containsKey("REF_INFO")) {
                     if (!(sectionMap.get("REF_INFO")).contains(new Integer(a))) {
                         (sectionMap.get("REF_INFO")).add(new Integer(a));

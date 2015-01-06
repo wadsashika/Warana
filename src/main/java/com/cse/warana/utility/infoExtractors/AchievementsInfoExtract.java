@@ -72,7 +72,7 @@ public class AchievementsInfoExtract {
         for (int a = 0; a < headingLines.size(); a++) {
             for (int b = (headingLines.get(a).intValue() + 1); b < lines.size(); b++) {
                 lineText = lines.get(b);
-                if (allHeadings.contains(b)) {
+                if (allHeadings.contains(String.valueOf(b))) {
                     break;
                 } else {
                     if (!lineText.equals("") && !lineText.equals(" ")) {
