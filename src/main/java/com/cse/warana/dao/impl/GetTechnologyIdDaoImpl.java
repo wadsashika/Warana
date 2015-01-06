@@ -38,7 +38,7 @@ public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechno
         query.append("SELECT id \n");
         query.append("FROM technology \n");
         query.append("WHERE technology in (");
-        query.append(techList + ")");
+        query.append(techList.toString() + ")");
 
         RowMapper<String> mapper = new RowMapper<String>() {
             @Override
@@ -49,7 +49,7 @@ public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechno
             }
         };
 
-        List<String> techIds = (List<String>)getNamedParameterJdbcTemplate().query(query.toString(),mapper);
+        List<String> techIds = getNamedParameterJdbcTemplate().query(query.toString(),mapper);
 
         return techIds;
     }
