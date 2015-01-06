@@ -1,6 +1,5 @@
 package com.cse.warana.service.impl;
 
-import com.cse.warana.controller.ExampleController;
 import com.cse.warana.service.CVParserService;
 import com.cse.warana.utility.infoExtractors.*;
 import com.cse.warana.utility.infoHolders.*;
@@ -13,7 +12,6 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.util.PDFTextStripper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
@@ -50,18 +48,18 @@ public class CVParserServiceImpl implements CVParserService {
 
     private static AbstractSequenceClassifier<CoreLabel> classifier;
 
-    HashMap<String,String> pathsMap = null;
+    HashMap<String, String> pathsMap = null;
 
     private static Logger LOG;
 
     /**
      * Constructor
      */
-    public CVParserServiceImpl(){
+    public CVParserServiceImpl() {
 
     }
 
-    public CVParserServiceImpl(HashMap<String,String> paths) {
+    public CVParserServiceImpl(HashMap<String, String> paths) {
 
         EducationalHeadings = new ArrayList<String>();
         ProfileHeadings = new ArrayList<String>();
@@ -107,11 +105,11 @@ public class CVParserServiceImpl implements CVParserService {
          */
         String token = "";
         try {
-            BufferedReader EduBr = new BufferedReader(new FileReader(pathsMap.get("root") + pathsMap.get("listPath") + "\\eduTokens"));
-            BufferedReader ProfsBr = new BufferedReader(new FileReader(pathsMap.get("root") + pathsMap.get("listPath") + "\\profTokens"));
-            BufferedReader WrkBr = new BufferedReader(new FileReader(pathsMap.get("root") + pathsMap.get("listPath") + "\\wrkTokens"));
-            BufferedReader AwrdBr = new BufferedReader(new FileReader(pathsMap.get("root") + pathsMap.get("listPath") + "\\awardsTokens"));
-            BufferedReader ProjBr = new BufferedReader(new FileReader(pathsMap.get("root") + pathsMap.get("listPath") + "\\projTokens"));
+            BufferedReader EduBr = new BufferedReader(new FileReader(pathsMap.get("root") + pathsMap.get("listPath") + File.separator + "eduTokens"));
+            BufferedReader ProfsBr = new BufferedReader(new FileReader(pathsMap.get("root") + pathsMap.get("listPath") + File.separator + "profTokens"));
+            BufferedReader WrkBr = new BufferedReader(new FileReader(pathsMap.get("root") + pathsMap.get("listPath") + File.separator + "wrkTokens"));
+            BufferedReader AwrdBr = new BufferedReader(new FileReader(pathsMap.get("root") + pathsMap.get("listPath") + File.separator + "awardsTokens"));
+            BufferedReader ProjBr = new BufferedReader(new FileReader(pathsMap.get("root") + pathsMap.get("listPath") + File.separator + "projTokens"));
 
             token = EduBr.readLine();
 
@@ -326,15 +324,15 @@ public class CVParserServiceImpl implements CVParserService {
      * required information
      */
     @Override
-    public void parseLines(HashMap<String,Object> infoCategoryTypes) {
+    public void parseLines(HashMap<String, Object> infoCategoryTypes) {
         EducationalInfoExtract eduInfo = new EducationalInfoExtract(pathsMap);
         PersonalInfoExtract perInfo = new PersonalInfoExtract();
-        WorkInfoExtract wrkInfo = new WorkInfoExtract(classifier,pathsMap);
+        WorkInfoExtract wrkInfo = new WorkInfoExtract(classifier, pathsMap);
         AchievementsInfoExtract achInfo = new AchievementsInfoExtract(pathsMap);
         ProjectInfoExtraction projInfo = new ProjectInfoExtraction(pathsMap);
         RefereeInfoExtract refInfo = new RefereeInfoExtract(classifier);
         FindMissedInfo missedInfo = new FindMissedInfo();
-        InterestsInfoExtract interestsInfo =  new InterestsInfoExtract();
+        InterestsInfoExtract interestsInfo = new InterestsInfoExtract();
         ArrayList<String> candidateTechnologies = new ArrayList<String>();
 
         String previous = "";
@@ -354,18 +352,18 @@ public class CVParserServiceImpl implements CVParserService {
                 projInfo.extractProjectInfo(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy, candidateTechnologies, (ArrayList<Project>) infoCategoryTypes.get("PROJECTS_LIST"), (ArrayList<Technology>) infoCategoryTypes.get("TECHNOLOGIES_LIST"));
             } else if (pairs.getKey().equals("REF_INFO")) {
                 refInfo.getRefereeInfo(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy, (ArrayList<Referee>) infoCategoryTypes.get("REFEREE_LIST"));
-            } else if (pairs.getKey().equals("INTERESTS_INFO")){
+            } else if (pairs.getKey().equals("INTERESTS_INFO")) {
                 interestsInfo.extractInterestsInformation(lines, (ArrayList<Integer>) pairs.getValue(), indexedLines, linesCopy);
             }
         }
-        missedInfo.findProfileInfo(linesCopy,(Profile) infoCategoryTypes.get("PROFILE"));
+        missedInfo.findProfileInfo(linesCopy, (Profile) infoCategoryTypes.get("PROFILE"));
 
         newTechnologies = projInfo.getNewTechnologies();
         /**
          * String technologies is used to store the technologies of the candidate as a comma separated string
          */
         String technologies = "";
-        for (int a = 0; a < candidateTechnologies.size(); a++){
+        for (int a = 0; a < candidateTechnologies.size(); a++) {
             technologies += candidateTechnologies.get(a) + ",";
         }
     }
@@ -426,7 +424,7 @@ public class CVParserServiceImpl implements CVParserService {
     }
 
     @Override
-    public String test(){
+    public String test() {
         return "Hello There";
     }
 

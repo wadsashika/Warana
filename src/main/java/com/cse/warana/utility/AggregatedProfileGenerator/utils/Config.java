@@ -57,6 +57,7 @@ public final class Config {
     public static final String abbreviationsSkillsPath     =rootPath+"/Docs/Abbreviations/SkillDocs/";
     public static final String abbreviationsProfilesPath   =rootPath+"/Docs/Abbreviations/UserDocs/";
 
+
     public static final int user_max_docs=10;
 
 //    public static String skillsPath=            "src/com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker/Skills/SkillDocs";
