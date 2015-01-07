@@ -25,10 +25,10 @@ public class CryptoServiceImpl implements CryptoService {
 
     private Logger LOG = LoggerFactory.getLogger(CryptoServiceImpl.class);
 
-    private Cipher eCipher;
-    private Cipher dCipher;
+    private static Cipher eCipher;
+    private static Cipher dCipher;
 
-    private SecretKey key;
+    private static SecretKey key;
 
     @PostConstruct
     public void init() {
