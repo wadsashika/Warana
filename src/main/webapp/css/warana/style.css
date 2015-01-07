@@ -111,6 +111,11 @@ footer .footer-content .social {
     border-right: none;
 }
 
+.header-small-icon{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
 .login-form .form-control{
     height: 34px;
     font-size: 14px;

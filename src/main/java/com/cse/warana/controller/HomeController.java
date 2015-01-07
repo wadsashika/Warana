@@ -3,6 +3,7 @@ package com.cse.warana.controller;
 import com.cse.warana.dto.ResponseDTO;
 import com.cse.warana.dto.UserSignupDTO;
 import com.cse.warana.model.User;
+import com.cse.warana.service.CryptoService;
 import com.cse.warana.service.SignupService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,6 +29,10 @@ public class HomeController {
     @Qualifier("signupService")
     private SignupService signupService;
 
+    @Autowired
+    @Qualifier("cryptoService")
+    private CryptoService cryptoService;
+
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     public ModelAndView loadHomePage() {
         String HOME_VIEW = "home";
@@ -50,6 +55,8 @@ public class HomeController {
         LOG.debug("New User register started for [{}]", userSignupDTO);
 
         try {
+            String encryptedPassword = cryptoService.encrypt(userSignupDTO.getPassword());
+            userSignupDTO.setPassword(encryptedPassword);
             User user = signupService.registerUser(userSignupDTO);
             response.setSuccess(true);
             response.setMessage("User Register Successfully Completed");

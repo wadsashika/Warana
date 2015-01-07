@@ -1,4 +1,4 @@
-package com.cse.warana.controller;
+package com.cse.warana.login;
 
 import com.cse.warana.constants.SessionConstants;
 import com.cse.warana.model.User;
