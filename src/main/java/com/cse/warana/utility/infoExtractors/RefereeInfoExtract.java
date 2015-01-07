@@ -23,7 +23,7 @@ public class RefereeInfoExtract {
      * Constructor
      * @param clf
      */
-    public RefereeInfoExtract(AbstractSequenceClassifier<CoreLabel> clf){
+    public RefereeInfoExtract(AbstractSequenceClassifier<CoreLabel> clf) {
         this.classifier = clf;
     }
 
@@ -51,6 +51,9 @@ public class RefereeInfoExtract {
             for (int b = (headingLines.get(a).intValue() + 1); b < lines.size(); b++) {
                 lineText = lines.get(b);
                 if (allHeadings.contains(String.valueOf(b))) {
+                    if (referee != null) {
+                        referees.add(referee);
+                    }
                     break;
                 } else {
                     if (lineText.length() > 10) {
@@ -64,7 +67,10 @@ public class RefereeInfoExtract {
                         Pattern pattern = Pattern.compile("<PERSON>(.*?)</PERSON>");
                         Matcher matcher = pattern.matcher(classifierText);
                         while (matcher.find()) {
-                            if (referee != null){
+                            if (referee != null) {
+                                if (referee.getEmail() == null){
+                                    break;
+                                }
                                 referees.add(referee);
                             }
                             referee = new Referee();
@@ -78,30 +84,47 @@ public class RefereeInfoExtract {
                      * Check if the line contains a name of an organization. Such as a university, a company, etc..
                      * This is because we need to identify the referee's career, etc..
                      */
+
+                    /**
+                     * TODO
+                     * One person can be part of several organizations. Therefore we need to add a list of titles.
+                     * ArrayList of titles and then store them all
+                     * Nee to handle the organization types. Inc, etc..
+                     */
                     else if (classifierText.contains("<ORGANIZATION>") && classifierText.contains("</ORGANIZATION>")) {
                         Pattern pattern = Pattern.compile("<ORGANIZATION>(.*?)</ORGANIZATION>");
                         Matcher matcher = pattern.matcher(classifierText);
                         while (matcher.find()) {
                             LOG.info(matcher.group(1));
-                            if (referee != null){
-                                referee.setDescription(matcher.group(1));
+                            if (referee != null) {
+//                                referee.setDescription(matcher.group(1));
+                                referee.setDescription(lineText);
+                                /**
+                                 * TODO
+                                 * As the description set the whole line text
+                                 * referee.setDescription(lineText);
+                                 */
                             }
                         }
-                        identified = true;
+
+                        /**
+                         * TODO can this identified = true be removed?
+                         */
+//                        identified = true;
                     }
 
                     /**
                      * TODO need some more refinement
                      * Get the phone number of the referee
                      */
-                    else if (getPhone(lineText,referee)) {
+                    else if (getPhone(lineText, referee)) {
 
                     }
 
                     /**
                      * Get the email of the referee
                      */
-                    else if (getEmail(lineText,referee)) {
+                    else if (getEmail(lineText, referee)) {
 
                     }
 
@@ -116,12 +139,12 @@ public class RefereeInfoExtract {
                         while (matcher.find()) {
                             LOG.info(matcher.group(0));
 
-                            if (referee != null){
+                            if (referee != null) {
                                 referees.add(referee);
                             }
 
                             referee = new Referee();
-                            referee.setName(matcher.group(0));
+                            referee.setName(lineText);
                         }
                         identified = true;
                     }
@@ -134,6 +157,11 @@ public class RefereeInfoExtract {
                     }
                 }
             }
+
+            if (referee != null && a == headingLines.size()-1) {
+                referees.add(referee);
+            }
+
         }
         LOG.info("----Ending Referee Information----\n");
     }
@@ -161,6 +189,7 @@ public class RefereeInfoExtract {
 
     /**
      * Get the phone number
+     *
      * @param para
      * @return
      */

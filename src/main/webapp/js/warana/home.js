@@ -73,6 +73,7 @@ WARANA.module.home = function () {
         init: function () {
             startSlider();
             $(document).on("click", "#signupBtn", scrollAnimated);
+            $(document).on("click", "#signupBtnSm", scrollAnimated);
             $(document).on("click", "#saveBtn", signupUser);
             $(document).on("click", "#resetBtn", clearFields);
         }

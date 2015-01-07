@@ -4,10 +4,7 @@ import com.cse.warana.utility.infoHolders.Education;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.regex.Matcher;
@@ -41,7 +38,7 @@ public class EducationalInfoExtract {
         BufferedReader br = null;
         String indexWord = "";
         try {
-            br = new BufferedReader(new FileReader(listpath + "\\eduIndex"));
+            br = new BufferedReader(new FileReader(listpath + File.separator + "eduIndex"));
             indexWord = br.readLine();
         } catch (FileNotFoundException e) {
             e.printStackTrace();

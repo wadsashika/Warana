@@ -5,10 +5,7 @@ import com.cse.warana.utility.infoHolders.Technology;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.StringTokenizer;
@@ -48,7 +45,7 @@ public class ProjectInfoExtraction {
         BufferedReader br = null;
         String biWrod = "";
         try {
-            br = new BufferedReader(new FileReader(listpath + "\\projBiwordIndex"));
+            br = new BufferedReader(new FileReader(listpath + File.separator + "projBiwordIndex"));
             biWrod = br.readLine();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -69,7 +66,7 @@ public class ProjectInfoExtraction {
 
         Pattern pattern = null;
         Matcher matcher = null;
-        populateByFile(listpath + "\\technologies", technologies);
+        populateByFile(listpath + File.separator + "technologies", technologies);
 
 
         /**

@@ -104,7 +104,9 @@ footer .footer-content .social {
     border-left: none;
     color: #ffffff;
 }
-
+.dashboard-btn a{
+    padding: 2px 0 0 0 !important;
+}
 .last-button {
     border-right: none;
 }

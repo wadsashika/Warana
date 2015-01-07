@@ -4,10 +4,7 @@ import com.cse.warana.utility.infoHolders.Achievement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.regex.Matcher;
@@ -46,7 +43,7 @@ public class AchievementsInfoExtract {
         String indexString = "";
 
         try {
-            br = new BufferedReader(new FileReader(listpath + "\\achievementsIndex"));
+            br = new BufferedReader(new FileReader(listpath + File.separator + "achievementsIndex"));
             indexString = br.readLine();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -72,7 +69,7 @@ public class AchievementsInfoExtract {
         for (int a = 0; a < headingLines.size(); a++) {
             for (int b = (headingLines.get(a).intValue() + 1); b < lines.size(); b++) {
                 lineText = lines.get(b);
-                if (allHeadings.contains(b)) {
+                if (allHeadings.contains(String.valueOf(b))) {
                     break;
                 } else {
                     if (!lineText.equals("") && !lineText.equals(" ")) {
