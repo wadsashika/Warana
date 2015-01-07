@@ -12,8 +12,12 @@ import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.NoSuchPaddingException;
 import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
+import java.io.UnsupportedEncodingException;
 import java.security.InvalidKeyException;
+import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.Arrays;
 
 
 /**
@@ -27,25 +31,32 @@ public class CryptoServiceImpl implements CryptoService {
 
     private static Cipher eCipher;
     private static Cipher dCipher;
-
     private static SecretKey key;
+    private String keyString = "WaRanA@CsEUoM";
 
     @PostConstruct
     public void init() {
         try {
-            key = KeyGenerator.getInstance("DES").generateKey();
-            eCipher = Cipher.getInstance("DES");
-            dCipher = Cipher.getInstance("DES");
+            byte[] securityKey = keyString.getBytes("UTF-8");
+            MessageDigest sha = MessageDigest.getInstance("SHA-1");
+            securityKey = sha.digest(securityKey);
+            securityKey = Arrays.copyOf(securityKey, 16);
+
+            key = new SecretKeySpec(securityKey,"AES");
+            eCipher = Cipher.getInstance("AES");
+            dCipher = Cipher.getInstance("AES");
 
             eCipher.init(Cipher.ENCRYPT_MODE, key);
             dCipher.init(Cipher.DECRYPT_MODE, key);
 
         } catch (NoSuchAlgorithmException e) {
-            e.printStackTrace();
+            LOG.error("Key initialization error occurred",e);
         } catch (NoSuchPaddingException e) {
-            e.printStackTrace();
+            LOG.error("Key initialization error occurred",e);
         } catch (InvalidKeyException e) {
-            e.printStackTrace();
+            LOG.error("Key initialization error occurred",e);
+        } catch (UnsupportedEncodingException e) {
+            LOG.error("Key initialization error occurred",e);
         }
     }
 
