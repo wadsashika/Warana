@@ -100,11 +100,14 @@ public class ProcessResumeController {
     public boolean processSelectedResumes(@RequestBody String[] fileNames){
 
         HashMap<String,String> paths = new HashMap<>();
+//        paths.put("root","src\\main\\resources");
         paths.put("root",root);
+//        paths.put("classifirePath","\\classifiers\\english.muc.7class.distsim.crf.ser.gz");
         paths.put("classifirePath",classifirePath);
-        paths.put("listPath",listPath);
+        paths.put("listPath","\\gazeteerLists");
 
         String baseDirectory = root + uploadsPath;
+//        String baseDirectory = "C:\\Warana\\Uploads";
         ArrayList<Candidate> candidateArrayList = new ArrayList<>();
         for (int a = 0; a < fileNames.length; a++){
             System.out.println(fileNames[a]);
@@ -130,4 +133,10 @@ public class ProcessResumeController {
 
         return true;
     }
+
+//    public static void main(String[] args){
+//        ProcessResumeController p = new ProcessResumeController();
+//        String[] names = {"090225B_Jayawardana D.D.S.L.pdf"};
+//        p.processSelectedResumes(names);
+//    }
 }

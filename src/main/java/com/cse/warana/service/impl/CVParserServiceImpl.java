@@ -166,7 +166,12 @@ public class CVParserServiceImpl implements CVParserService {
         Matcher matcher = null;
 
         for (int a = 0; a < lines.size(); a++) {
+
             line = lines.get(a);
+            if (!line.equals("") && !Character.isLetter(line.charAt(line.length()-1))){
+                line = line.replace(line.charAt(line.length()-1),' ');
+                line = line.trim();
+            }
 
             // Assume that a heading cannot be larger than three words
             /**
@@ -182,11 +187,13 @@ public class CVParserServiceImpl implements CVParserService {
                         if (sectionMap.containsKey("EDU_INFO")) {
                             if (!(sectionMap.get("EDU_INFO")).contains(new Integer(a))) {
                                 (sectionMap.get("EDU_INFO")).add(new Integer(a));
+                                linesCopy.remove(line);
                             }
                         } else {
                             ArrayList<Integer> l = new ArrayList<Integer>();
                             l.add(new Integer(a));
                             sectionMap.put("EDU_INFO", l);
+                            linesCopy.remove(line);
                         }
                         indexedLines.add(String.valueOf(a));
 
@@ -204,11 +211,13 @@ public class CVParserServiceImpl implements CVParserService {
                         if (sectionMap.containsKey("PROF_INFO")) {
                             if (!(sectionMap.get("PROF_INFO")).contains(new Integer(a))) {
                                 (sectionMap.get("PROF_INFO")).add(new Integer(a));
+                                linesCopy.remove(line);
                             }
                         } else {
                             ArrayList<Integer> l = new ArrayList<Integer>();
                             l.add(new Integer(a));
                             sectionMap.put("PROF_INFO", l);
+                            linesCopy.remove(line);
                         }
                         indexedLines.add(String.valueOf(a));
 
@@ -224,11 +233,13 @@ public class CVParserServiceImpl implements CVParserService {
                         if (sectionMap.containsKey("WRK_INFO")) {
                             if (!(sectionMap.get("WRK_INFO")).contains(new Integer(a))) {
                                 (sectionMap.get("WRK_INFO")).add(new Integer(a));
+                                linesCopy.remove(line);
                             }
                         } else {
                             ArrayList<Integer> l = new ArrayList<Integer>();
                             l.add(new Integer(a));
                             sectionMap.put("WRK_INFO", l);
+                            linesCopy.remove(line);
                         }
                         indexedLines.add(String.valueOf(a));
 
@@ -244,11 +255,13 @@ public class CVParserServiceImpl implements CVParserService {
                         if (sectionMap.containsKey("AWRD_INFO")) {
                             if (!(sectionMap.get("AWRD_INFO")).contains(new Integer(a))) {
                                 (sectionMap.get("AWRD_INFO")).add(new Integer(a));
+                                linesCopy.remove(line);
                             }
                         } else {
                             ArrayList<Integer> l = new ArrayList<Integer>();
                             l.add(new Integer(a));
                             sectionMap.put("AWRD_INFO", l);
+                            linesCopy.remove(line);
                         }
                         indexedLines.add(String.valueOf(a));
 
@@ -264,11 +277,13 @@ public class CVParserServiceImpl implements CVParserService {
                         if (sectionMap.containsKey("PROJ_INFO")) {
                             if (!(sectionMap.get("PROJ_INFO")).contains(new Integer(a))) {
                                 (sectionMap.get("PROJ_INFO")).add(new Integer(a));
+                                linesCopy.remove(line);
                             }
                         } else {
                             ArrayList<Integer> l = new ArrayList<Integer>();
                             l.add(new Integer(a));
                             sectionMap.put("PROJ_INFO", l);
+                            linesCopy.remove(line);
                         }
                         indexedLines.add(String.valueOf(a));
 
@@ -286,11 +301,13 @@ public class CVParserServiceImpl implements CVParserService {
                     if (sectionMap.containsKey("INTERESTS_INFO")) {
                         if (!(sectionMap.get("INTERESTS_INFO")).contains(new Integer(a))) {
                             (sectionMap.get("INTERESTS_INFO")).add(new Integer(a));
+                            linesCopy.remove(line);
                         }
                     } else {
                         ArrayList<Integer> l = new ArrayList<Integer>();
                         l.add(new Integer(a));
                         sectionMap.put("INTERESTS_INFO", l);
+                        linesCopy.remove(line);
                     }
                     indexedLines.add(String.valueOf(a));
 
@@ -298,18 +315,20 @@ public class CVParserServiceImpl implements CVParserService {
                 }
             }
 
-            pattern = Pattern.compile(".*referee.*");
+            pattern = Pattern.compile("(.*referee.*|.*references.*)");
             matcher = pattern.matcher(line.toLowerCase());
 
             if (matcher.matches() && (line.charAt(0) + "").equals((line.charAt(0) + "").toUpperCase())) {
                 if (sectionMap.containsKey("REF_INFO")) {
                     if (!(sectionMap.get("REF_INFO")).contains(new Integer(a))) {
                         (sectionMap.get("REF_INFO")).add(new Integer(a));
+                        linesCopy.remove(line);
                     }
                 } else {
                     ArrayList<Integer> l = new ArrayList<Integer>();
                     l.add(new Integer(a));
                     sectionMap.put("REF_INFO", l);
+                    linesCopy.remove(line);
                 }
                 indexedLines.add(String.valueOf(a));
 
@@ -401,7 +420,7 @@ public class CVParserServiceImpl implements CVParserService {
             for (int a = 0; a < docLines.length; a++) {
                 String s = docLines[a];
                 if (!s.equals(" ")) {
-                    s = s.replaceAll("[^\\w\\s\\@\\_\\.\\,\\(\\)\\:\\-\\!\\#\\$\\%\\\\&\\*\\+\\=]", "");
+                    s = s.replaceAll("[^\\w\\s\\@\\_\\.\\,\\(\\)\\:\\!\\#\\$\\%\\&\\*\\+\\-\\=\\/\\\\]", "");
                     lines.add(s.trim());
                     // Keep a copy of the lines in order to remove them and keep track of the missed lines
                     // to extract information form them during the missed info extraction phase
