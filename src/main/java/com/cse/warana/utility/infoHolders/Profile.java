@@ -1,5 +1,8 @@
 package com.cse.warana.utility.infoHolders;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
 /**
  * Created by Nadeeshaan on 11/12/2014.
  */
@@ -13,6 +16,11 @@ public class Profile {
     private String pic_url;
     private String title;
     private String blogUrl;
+    private ArrayList<String> urls = new ArrayList<>();
+
+    public ArrayList<String> getUrls() {
+        return urls;
+    }
 
     public String getBlogUrl() {
         return blogUrl;

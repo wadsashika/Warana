@@ -20,11 +20,13 @@ public class ProjectInfoExtraction {
     public static ArrayList<String> technologies = new ArrayList<String>();
     private static ArrayList<String> newTechnologies = new ArrayList<String>();
 
-    private static Logger LOG = LoggerFactory.getLogger(ProjectInfoExtraction.class);private String listpath = "";
+    private static Logger LOG = LoggerFactory.getLogger(ProjectInfoExtraction.class);
+    private String listpath = "";
 
-    public ProjectInfoExtraction(HashMap<String,String> paths){
+    public ProjectInfoExtraction(HashMap<String, String> paths) {
         listpath = paths.get("root") + paths.get("listPath");
     }
+
     /**
      * Extract the project information
      *
@@ -34,7 +36,7 @@ public class ProjectInfoExtraction {
      * @param linesCopy
      * @throws java.io.IOException
      */
-    public void extractProjectInfo(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy, ArrayList<String> candidateTechnologies, ArrayList<Project> projects,ArrayList<Technology> techs) {
+    public void extractProjectInfo(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy, ArrayList<String> candidateTechnologies, ArrayList<Project> projects, ArrayList<Technology> techs) {
         /**
          * TODO NEED TO CHECK FOR THE TECHNOLOGIES
          * using the selected word phrase matching
@@ -66,6 +68,7 @@ public class ProjectInfoExtraction {
 
         Pattern pattern = null;
         Matcher matcher = null;
+        Project project = null;
         populateByFile(listpath + File.separator + "technologies", technologies);
 
 
@@ -85,30 +88,46 @@ public class ProjectInfoExtraction {
                 } else {
 
                     // Set the start of the set of lines which is used to describe the project
-                    if (startProjectLine == -1) {
-                        startProjectLine = b;
-                    }
-                    if (checkForTechnologiesDescription(lineText, candidateTechnologies, techs)) {
-                        endProjectLine = b;
-                        Project proj= new Project();
-                        String description = "";
-                        for (int x = startProjectLine; x < endProjectLine; x++) {
-                            tokenizer = new StringTokenizer(lines.get(x), " ");
-                            if (tokenizer.countTokens() > 2) {
-                                if (x == startProjectLine){
-                                    proj.setName(lines.get(x));
+                    pattern = Pattern.compile("(http|ftp|https):\\/\\/([\\w\\-_]+(?:(?:\\.[\\w\\-_]+)+))([\\w\\-\\.,@?^=%&amp;:/~\\+#]*[\\w\\-\\@?^=%&amp;/~\\+#])?");
+                    matcher = pattern.matcher(lineText);
+
+                    if (matcher.find()) {
+                        if (project == null && projects.size() > 0) {
+                            projects.get(projects.size() - 1).setUrl(matcher.group(0));
+//                            break;
+                        } else if (project != null) {
+                            project.setUrl(matcher.group(0));
+//                            break;
+                        }
+                    } else {
+                        if (startProjectLine == -1) {
+                            startProjectLine = b;
+                            project = new Project();
+                        }
+                        if (checkForTechnologiesDescription(lineText, candidateTechnologies, techs)) {
+                            endProjectLine = b;
+//                        Project proj= new Project();
+                            String description = "";
+                            for (int x = startProjectLine; x < endProjectLine; x++) {
+                                tokenizer = new StringTokenizer(lines.get(x), " ");
+                                if (tokenizer.countTokens() > 2) {
+                                    if (x == startProjectLine) {
+//                                    proj.setName(lines.get(x));
+                                        project.setName(lines.get(x));
+                                    } else {
+                                        description += lines.get(x);
+                                    }
+                                    LOG.info(lines.get(x));
                                 }
-                                else{
-                                    description += lines.get(x);
-                                }
-                                LOG.info(lines.get(x));
                             }
+                            project.setDescription(description);
+                            if (project.getName() != null) {
+                                projects.add(project);
+                                project = null;
+                            }
+                            startProjectLine = -1;
                         }
-                        proj.setDescription(description);
-                        if (proj.getName() != null){
-                            projects.add(proj);
-                        }
-                        startProjectLine = -1;
+
                     }
                 }
             }
@@ -149,7 +168,7 @@ public class ProjectInfoExtraction {
                     LOG.info("************" + technologyVal);
                     if (!candidateTechnologies.contains(technologyVal)) {
                         candidateTechnologies.add(technologyVal);
-                        Technology technology= new Technology();
+                        Technology technology = new Technology();
                         technology.setName(technologyVal);
                         techsList.add(technology);
                     }
@@ -187,7 +206,7 @@ public class ProjectInfoExtraction {
                             if (!candidateTechnologies.contains(technologyVal)) {
                                 candidateTechnologies.add(technologyVal);
                             }
-                           LOG.info("**************" + technologyVal);
+                            LOG.info("**************" + technologyVal);
                         }
                         return true;
                     }

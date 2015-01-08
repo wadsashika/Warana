@@ -21,6 +21,7 @@ public class RefereeInfoExtract {
 
     /**
      * Constructor
+     *
      * @param clf
      */
     public RefereeInfoExtract(AbstractSequenceClassifier<CoreLabel> clf) {
@@ -30,6 +31,7 @@ public class RefereeInfoExtract {
 
     /**
      * Extracts the refereeInfo
+     *
      * @param lines
      * @param headingLines
      * @param allHeadings
@@ -41,6 +43,8 @@ public class RefereeInfoExtract {
         String personTitle = "";
         boolean identified = false;
         Referee referee = null;
+        Pattern titlePattern = Pattern.compile("((dr\\.|prof\\.|ms\\.|miss\\.|mrs\\.|mr\\.|master\\.|rev\\.|atty\\.|hon\\.|pres\\.|gov\\.|coach\\.|ofc\\.|lt\\.|lt col\\.|col\\.|gen\\.|sec\\.)(.*?))");
+        Matcher titleMatcher = null;
 
         /**
          * Get the name of the referee
@@ -50,6 +54,7 @@ public class RefereeInfoExtract {
         for (int a = 0; a < headingLines.size(); a++) {
             for (int b = (headingLines.get(a).intValue() + 1); b < lines.size(); b++) {
                 lineText = lines.get(b);
+                titleMatcher = titlePattern.matcher(lineText.toLowerCase());
                 if (allHeadings.contains(String.valueOf(b))) {
                     if (referee != null) {
                         referees.add(referee);
@@ -68,7 +73,7 @@ public class RefereeInfoExtract {
                         Matcher matcher = pattern.matcher(classifierText);
                         while (matcher.find()) {
                             if (referee != null) {
-                                if (referee.getEmail() == null){
+                                if (referee.getEmail() == null) {
                                     break;
                                 }
                                 referees.add(referee);
@@ -97,7 +102,6 @@ public class RefereeInfoExtract {
                         while (matcher.find()) {
                             LOG.info(matcher.group(1));
                             if (referee != null) {
-//                                referee.setDescription(matcher.group(1));
                                 referee.setDescription(lineText);
                                 /**
                                  * TODO
@@ -110,7 +114,6 @@ public class RefereeInfoExtract {
                         /**
                          * TODO can this identified = true be removed?
                          */
-//                        identified = true;
                     }
 
                     /**
@@ -133,19 +136,15 @@ public class RefereeInfoExtract {
                      * This is to identify the persons with the unidentified titles from the parser
                      * This is to be used just in case stanford parser cannot identify the titles
                      */
-                    else if (lineText.toLowerCase().contains("dr.") || personTitle.toLowerCase().contains("prof.")) {
-                        Pattern pattern = Pattern.compile("((dr|prof)(.*?))");
-                        Matcher matcher = pattern.matcher(lineText.toLowerCase());
-                        while (matcher.find()) {
-                            LOG.info(matcher.group(0));
+                    else if (titleMatcher.matches()) {
+                        LOG.info(titleMatcher.group(0));
 
-                            if (referee != null) {
-                                referees.add(referee);
-                            }
-
-                            referee = new Referee();
-                            referee.setName(lineText);
+                        if (referee != null) {
+                            referees.add(referee);
                         }
+
+                        referee = new Referee();
+                        referee.setName(lineText);
                         identified = true;
                     }
 
@@ -158,7 +157,7 @@ public class RefereeInfoExtract {
                 }
             }
 
-            if (referee != null && a == headingLines.size()-1) {
+            if (referee != null && a == headingLines.size() - 1) {
                 referees.add(referee);
             }
 
@@ -169,6 +168,7 @@ public class RefereeInfoExtract {
 
     /**
      * Get the email address
+     *
      * @param para
      * @return
      */
@@ -176,14 +176,15 @@ public class RefereeInfoExtract {
         // Initialize the regex for identifying the email
         Pattern pattern = Pattern.compile("(\\w[-._\\w]*\\w@\\w[-._\\w]*\\w\\.\\w{2,3})");
         Matcher matcher = pattern.matcher(para);
+        boolean status = false;
 
-        while (matcher.find()) {
-            String email = matcher.group();
+        if (matcher.find() && referee != null && referee.getEmail() == null) {
+            String email = matcher.group(0);
             LOG.info(email);
             referee.setEmail(email);
-            return true;
+            status = true;
         }
-        return false;
+        return status;
     }
 
 
