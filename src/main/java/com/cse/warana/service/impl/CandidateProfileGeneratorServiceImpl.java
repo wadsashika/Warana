@@ -64,7 +64,7 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
     @Override
     public void extractCVInformation(CVParserService cvParser,File resumeFile) {
         cvParser.initializeHeadingTokens();
-        cvParser.identifyHeadings();
+//        cvParser.identifyHeadings();
         cvParser.readPdfDocument(resumeFile);
         cvParser.identifyHeadings();
         cvParser.parseLines(infoCategoryTypes);

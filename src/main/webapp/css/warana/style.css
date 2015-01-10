@@ -104,9 +104,16 @@ footer .footer-content .social {
     border-left: none;
     color: #ffffff;
 }
-
+.dashboard-btn a{
+    padding: 2px 0 0 0 !important;
+}
 .last-button {
     border-right: none;
+}
+
+.header-small-icon{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
 
 .login-form .form-control{

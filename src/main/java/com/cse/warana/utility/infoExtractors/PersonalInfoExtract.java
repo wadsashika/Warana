@@ -40,21 +40,21 @@ public class PersonalInfoExtract {
                 } else {
                     if (!lineText.equals("")) {
 
-                        Profile prof = new Profile();
+//                        Profile prof = new Profile();
 
-                        if (getName(lineText, prof)) {
+                        if (getName(lineText, profile)) {
                             linesCopy.remove(lineText);
 
-                        } else if (getDbo(lineText, prof)) {
+                        } else if (getDbo(lineText, profile)) {
                             linesCopy.remove(lineText);
 
-                        } else if (getEmail(lineText, prof)) {
+                        } else if (getEmail(lineText, profile)) {
                             linesCopy.remove(lineText);
 
-                        } else if (getGender(lineText, prof)) {
+                        } else if (getGender(lineText, profile)) {
                             linesCopy.remove(lineText);
 
-                        } else if (getOtherInfo(lineText, prof)) {
+                        } else if (getOtherInfo(lineText, profile)) {
                             linesCopy.remove(lineText);
 
                         }
@@ -97,7 +97,7 @@ public class PersonalInfoExtract {
                         }
                         LOG.info("");
 
-                        profile.setName(name);
+                        profile.setName(name.trim());
                         return true;
                     }
                 }
@@ -144,22 +144,22 @@ public class PersonalInfoExtract {
 
         String tokens[] = para.split(" ");
         String email = "";
+        boolean status = false;
 
         for (int a = 0; a < tokens.length; a++) {
 
             // Initialize the general email address writing pattern
             Pattern pattern = Pattern.compile("^(([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5}){1,25})+([;.](([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5}){1,25})+)*$");
-            Matcher matcher = pattern.matcher(para.trim());
+            Matcher matcher = pattern.matcher(tokens[a].trim());
 
             if (matcher.find()) {
-                email = matcher.group(1);
-                LOG.info(email);
-
-                profile.setEmail(email);
-                return true;
+                profile.setEmail(matcher.group(0));
+                status = true;
+                LOG.info(matcher.group(0));
+                break;
             }
         }
-        return false;
+        return status;
     }
 
 
@@ -203,26 +203,29 @@ public class PersonalInfoExtract {
         String tempTk = "";
         boolean foundOther = false;
 
+        Pattern urlPattern = Pattern.compile("((?<=[^a-zA-Z0-9])(?:https?\\:\\/\\/|[a-zA-Z0-9]{1,}\\.{1}|\\b)(?:\\w{1,}\\.{1}){1,5}(?:com|org|edu|gov|uk|net|ca|de|jp|fr|au|us|ru|ch|it|nl|se|no|es|mil|iq|io|ac|ly|sm){1}(?:\\/[a-zA-Z0-9]{1,})*)");
         Pattern linkedInPtrn = Pattern.compile(linkedIn);
         Pattern gitPtrn = Pattern.compile(git);
         Matcher linkedInMtch = null;
         Matcher gitMtch = null;
+        Matcher urlMatcher = urlPattern.matcher(para);
 
-        StringTokenizer tokenizer = new StringTokenizer(para, " ");
+        if (urlMatcher.find()){
+            String url = urlMatcher.group(0);
+            StringTokenizer tokenizer = new StringTokenizer(para, " ");
 
-        while (tokenizer.hasMoreElements()) {
-            tempTk = (String) tokenizer.nextElement();
-            linkedInMtch = linkedInPtrn.matcher(tempTk);
-            gitMtch = gitPtrn.matcher(tempTk);
+            linkedInMtch = linkedInPtrn.matcher(url);
 
             if (linkedInMtch.matches()) {
-                LOG.info("LinkedIn: " + tempTk);
+                profile.setLinkedIn(linkedInMtch.group(0));
+                LOG.info("LinkedIn: " + linkedInMtch.group(0));
                 foundOther = true;
-            } else if (gitMtch.matches()) {
-                LOG.info("Git: " + tempTk);
+            } else {
+                profile.getUrls().add(urlMatcher.group(0));
                 foundOther = true;
             }
         }
+
         return foundOther;
     }
 }

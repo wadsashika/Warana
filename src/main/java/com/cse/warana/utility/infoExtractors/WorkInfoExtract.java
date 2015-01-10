@@ -6,10 +6,7 @@ import edu.stanford.nlp.ling.CoreLabel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.regex.Matcher;
@@ -22,20 +19,23 @@ public class WorkInfoExtract {
 
     public static AbstractSequenceClassifier<CoreLabel> classifier = null;
     public static ArrayList<String> companies = new ArrayList<String>();
+    public static ArrayList<String> jobPositions = new ArrayList<String>();
     private static Logger LOG = LoggerFactory.getLogger(AchievementsInfoExtract.class);
     private String listPath = "";
+
     /**
      * Constructor Method
      *
      * @param clf
      */
-    public WorkInfoExtract(AbstractSequenceClassifier<CoreLabel> clf, HashMap<String,String> paths) {
+    public WorkInfoExtract(AbstractSequenceClassifier<CoreLabel> clf, HashMap<String, String> paths) {
         this.classifier = clf;
         /**
          * Load the companies gazeteer list
          */
         listPath = paths.get("root") + paths.get("listPath");
         populateByFile(listPath + "\\companyNames", companies);
+        populateByFile(listPath + "\\jobPositionsIndex", jobPositions);
     }
 
 
@@ -52,7 +52,6 @@ public class WorkInfoExtract {
         String lineText = "";
         String companyName = "";
         boolean foundCompany = false;
-        boolean newCompany = false;
         Work work = null;
 
         LOG.info("----Beginning Work Information----");
@@ -68,28 +67,9 @@ public class WorkInfoExtract {
                      * Need to mention the "at" before the company name
                      */
 
-                    if (newCompany && work != null) {
+                    if (foundCompany && work != null) {
                         worksList.add(work);
-                        newCompany = false;
-                    }
-                    else
-
-                    if (lineText.contains("at")) {
-
-                        String classifierText = "";
-                        classifierText = classifier.classifyWithInlineXML(lineText);
-
-                        if (classifierText.contains("<ORGANIZATION>")) {
-                            work = new Work();
-                            newCompany = true;
-                            Pattern pattern = Pattern.compile("<ORGANIZATION>(.*?)</ORGANIZATION>");
-                            Matcher matcher = pattern.matcher(classifierText);
-                            while (matcher.find()) {
-                                companyName = matcher.group(1);
-                                work.setCompanyName(companyName);
-                                LOG.info(companyName);
-                            }
-                        }
+                        foundCompany = false;
                     }
 
                     /**
@@ -99,21 +79,49 @@ public class WorkInfoExtract {
                      */
 
                     // Check in the Companies Gazeteer list
-                    else {
-                        String tokens[] = lineText.split(" ");
-                        for (int x = 0; x < tokens.length; x++) {
-                            if (companies.contains(tokens[x].toLowerCase())) {
-                                work = new Work();
-                                newCompany = true;
-                                companyName = findFullCompanyName(tokens, x);
-                                LOG.info(companyName);
+                    for (int x = 0; x < companies.size(); x++) {
+                        Pattern pattern = Pattern.compile(".*" + companies.get(x) + ".*");
+                        Matcher matcher = pattern.matcher(lineText.toLowerCase());
 
+                        if (matcher.find()) {
+                            work = new Work();
+                            companyName = companies.get(x);
+                            LOG.info(companyName);
+
+                            String jobPosition = "";
+                            String currentLine = lineText;
+                            jobPosition = checkJobPositions(b, currentLine, lines);
+                            if (jobPosition != null) {
                                 work.setCompanyName(companyName);
-
+                                work.setPosition(jobPosition);
                                 findDuration(lineText, lines.get(b + 1), work);
-                                LOG.info("Found");
+                                LOG.info(companyName);
                                 linesCopy.remove(lineText);
                                 foundCompany = true;
+                            }
+                        }
+                    }
+
+                    if (!foundCompany) {
+                        String classifierText = "";
+                        classifierText = classifier.classifyWithInlineXML(lineText);
+
+                        if (classifierText.contains("<ORGANIZATION>")) {
+                            work = new Work();
+                            Pattern pattern = Pattern.compile("<ORGANIZATION>(.*?)</ORGANIZATION>");
+                            Matcher matcher = pattern.matcher(classifierText);
+                            while (matcher.find()) {
+                                String jobPosition = "";
+                                String currentLine = classifierText.replaceAll("((<ORGANIZATION>)[^&]*(</ORGANIZATION>))|((<DATE>)[^&]*(</DATE>))", "");
+                                companyName = matcher.group(0).replace("<ORGANIZATION>", "").replace("</ORGANIZATION>", "");
+                                jobPosition = checkJobPositions(b, currentLine, lines);
+                                if (jobPosition != null) {
+                                    work.setCompanyName(companyName);
+                                    work.setPosition(jobPosition);
+                                    LOG.info(companyName);
+                                    foundCompany = true;
+                                }
+                                break;
                             }
                         }
                     }
@@ -123,20 +131,20 @@ public class WorkInfoExtract {
                      * Check for the common properties such as
                      * (pvt) Ltd, Inc., etc
                      */
-                    Pattern pattern = Pattern.compile("(.*[(]pvt[)] ltd.*)|(.*inc[.].*)");
-                    Matcher matcher = pattern.matcher(lineText.toLowerCase());
-
-                    if (!foundCompany && matcher.matches()) {
-                        LOG.info("");
-                        LOG.info("found");
-                        LOG.info(lineText);
-                        if (work == null){
-                            work = new Work();
-                        }
-                        findDuration(lineText, lines.get(b + 1), work);
-
-                        linesCopy.remove(lineText);
-                    }
+//                    Pattern pattern = Pattern.compile("(.*[(]pvt[)] ltd.*)|(.*inc[.].*)");
+//                    Matcher matcher = pattern.matcher(lineText.toLowerCase());
+//
+//                    if (!foundCompany && matcher.matches()) {
+//                        LOG.info("");
+//                        LOG.info("found");
+//                        LOG.info(lineText);
+//                        if (work == null) {
+//                            work = new Work();
+//                        }
+//                        findDuration(lineText, lines.get(b + 1), work);
+//
+//                        linesCopy.remove(lineText);
+//                    }
 
                     /**
                      * Check for other properties
@@ -233,4 +241,47 @@ public class WorkInfoExtract {
             e.printStackTrace();
         }
     }
+
+    /**
+     * Chek for the job Position of the candidate in a certain company
+     *
+     * @param lineNum
+     */
+    public static String checkJobPositions(int lineNum, String currentLine, ArrayList<String> lines) {
+        String jobPosition = null;
+        String patternString = ".*(";
+
+        for (int a = 0; a < jobPositions.size(); a++) {
+
+            if (a == jobPositions.size() - 1) {
+                patternString += jobPositions.get(a) + ").*";
+            } else {
+                patternString += jobPositions.get(a) + "|";
+            }
+        }
+
+        Pattern pattern = Pattern.compile(patternString);
+        Matcher matcher1 = pattern.matcher(lines.get(lineNum).toLowerCase());
+        Matcher matcher2 = pattern.matcher(lines.get(lineNum - 1).toLowerCase());
+        Matcher matcher3 = pattern.matcher(lines.get(lineNum + 1).toLowerCase());
+        if (matcher1.find()) {
+            jobPosition = currentLine;
+        } else if (matcher2.find()) {
+            jobPosition = lines.get(lineNum - 1);
+        } else if (matcher3.find()) {
+            jobPosition = lines.get(lineNum + 1);
+        }
+
+        return jobPosition;
+    }
+
+
+//    public static void main(String[] args){
+//        populateByFile("C:\\Warana\\gazeteerLists" + "\\jobPositionsIndex", jobPositions);
+//        ArrayList<String> s = new ArrayList();
+//        s.add("Hello Dear");
+//        s.add("Associate Tech lead");
+//        s.add("Senior Software Engineer");
+//        System.out.println(checkJobPositions(1, "Associate Tech lead", s));
+//    }
 }
