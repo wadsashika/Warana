@@ -34,8 +34,8 @@ public class WorkInfoExtract {
          * Load the companies gazeteer list
          */
         listPath = paths.get("root") + paths.get("listPath");
-        populateByFile(listPath + "\\companyNames", companies);
-        populateByFile(listPath + "\\jobPositionsIndex", jobPositions);
+        populateByFile(listPath + File.separator+"companyNames", companies);
+        populateByFile(listPath + File.separator+"jobPositionsIndex", jobPositions);
     }
 
 
