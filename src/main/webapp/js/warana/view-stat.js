@@ -37,6 +37,7 @@ WARANA.module.viewStat = function () {
     };
 
     var loadDataTable = function () {
+        $("#back-btn").hide();
         $.ajax({
             type: "POST",
             url: "getresult",
@@ -115,7 +116,6 @@ WARANA.module.viewStat = function () {
             data: {technologies: technologies},
             success: function (data) {
 
-                alert(data);
                 var userList = [];
                 var resultList = JSON.parse(data);
 
@@ -169,7 +169,7 @@ WARANA.module.viewStat = function () {
     };
 
     var drawCompareAllBarChart = function (series, categories) {
-
+        $("#back-btn").show();
         $("#compareAllChartArea").empty();
 
         $("#compareAllChartArea").highcharts({
@@ -586,16 +586,20 @@ WARANA.module.viewStat = function () {
     var changeArrowUpDown = function () {
         if($(this).children("span:first").hasClass("currentDown")){
             $(this).children("span:first").removeClass("currentDown");
-            $(this).children("span:first").removeClass("glyphicon-circle-arrow-down");
+            $(this).children("span:first").removeClass("glyphicon glyphicon-chevron-down");
             $(this).children("span:first").addClass("currentUp");
-            $(this).children("span:first").addClass("glyphicon-circle-arrow-up");
+            $(this).children("span:first").addClass("glyphicon glyphicon-chevron-up");
         }
         else if($(this).children("span:first").hasClass("currentUp")){
             $(this).children("span:first").removeClass("currentUp");
-            $(this).children("span:first").removeClass("glyphicon-circle-arrow-up");
+            $(this).children("span:first").removeClass("glyphicon glyphicon-chevron-up");
             $(this).children("span:first").addClass("currentDown");
-            $(this).children("span:first").addClass("glyphicon-circle-arrow-down");
+            $(this).children("span:first").addClass("glyphicon glyphicon-chevron-down");
         }
+    };
+
+    var goBack = function(){
+      location.href = "/warana/viewstat";
     };
 
     return {
@@ -610,6 +614,7 @@ WARANA.module.viewStat = function () {
             $(document).on("click", ".view-tech", viewStatChart);
             $(document).on("click", "#advHref", changeArrowUpDown);
             $(document).on("click", "#compare-all-href", changeArrowUpDown);
+            $(document).on("click", "#back-btn", goBack);
         }
     }
 }();

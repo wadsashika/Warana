@@ -77,10 +77,10 @@ public class ProcessResumeController {
         return model;
     }
 
-    @RequestMapping(value = "/process/delete", method = RequestMethod.POST)
+    @RequestMapping(value = "/process/delete", method = RequestMethod.POST, headers = {"content-type=application/json"})
     @ResponseBody
-    public boolean deleteResume(@RequestParam("fileName") String fileName){
-
+    public boolean deleteResume(@RequestBody(required = false) String fileName){
+        fileName = fileName.replace("\"","");
         String baseDirectory = root + uploadsPath;
         File resumeFile = new File(baseDirectory + File.separator + fileName);
         boolean status = false;
@@ -95,7 +95,7 @@ public class ProcessResumeController {
         return status;
     }
 
-    @RequestMapping(value = "/process/processlist", method = RequestMethod.POST)
+    @RequestMapping(value = "/process/processlist", method = RequestMethod.POST, headers = {"content-type=application/json"})
     @ResponseBody
     public boolean processSelectedResumes(@RequestBody String[] fileNames){
 
@@ -104,7 +104,7 @@ public class ProcessResumeController {
         paths.put("root",root);
 //        paths.put("classifirePath","\\classifiers\\english.muc.7class.distsim.crf.ser.gz");
         paths.put("classifirePath",classifirePath);
-        paths.put("listPath","\\gazeteerLists");
+        paths.put("listPath",File.separator+"gazeteerLists");
 
         String baseDirectory = root + uploadsPath;
 //        String baseDirectory = "C:\\Warana\\Uploads";

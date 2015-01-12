@@ -18,11 +18,12 @@ public class GraphSimilarityServiceImpl implements GraphSimilarityService {
     private Logger LOG = LoggerFactory.getLogger(GraphSimilarityServiceImpl.class);
 
     @Value("graph.similarity.epsilon")
-    private Double epsilon;
+    private String epsilonStr;
 
     @Override
     public Double getSimilarityScore(Integer[][] graphA, Integer[][] graphB) {
         LOG.info("Measuring similarity score started");
+        Double epsilon = Double.valueOf(epsilonStr);
         try {
             Graph graphX = new Graph(graphA);
             Graph graphY = new Graph(graphB);

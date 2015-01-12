@@ -30,11 +30,37 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <div class="panel panel-green">
+                <div class="panel panel-primary">
                     <div class="panel-heading">
                         User Statistics
                     </div>
                     <div class="panel-body">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div id="advanced-search-panel" class="viewstat-advanced-search">
+                                    <div id="headingOne">
+                                        <h4>
+                                            <a id="advHref" data-toggle="collapse" data-parent="#accordion"
+                                               href="#advancedSearch"
+                                               aria-expanded="true" aria-controls="collapseOne">
+                                                <span class='glyphicon glyphicon-chevron-down arrowUpDown currentDown'></span>
+                                                Advanced Search
+                                            </a>
+                                        </h4>
+                                    </div>
+                                    <div id="advancedSearch" class="panel-collapse collapse"
+                                         aria-labelledby="headingOne">
+                                        <div>
+                                            <label class="col-xs-1">Skills </label>
+                                            <input id="tagged-search-field" type="text" data-provide="typeahead"/>
+                                            <button type="submit" class="btn btn-primary" id="search-submit">Submit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                         <div id="select-all-row">
                             <h4><input type="checkbox" id="select-all" class="pages-select-all"/>Select All</h4>
                         </div>
@@ -42,43 +68,18 @@
 
                         <div id="compareAllMainDiv">
                             <div id="compareAllCollapse">
-                                <h4>
-                                    <a id="compare-all-href" data-toggle="collapse" data-parent="#accordion" href="#compareAllArea"
-                                       aria-expanded="true" aria-controls="collapseOne">
-                                        <span class='glyphicon glyphicon-circle-arrow-down arrowUpDown currentDown'></span>
-                                        Technology Expertise Comparison
-                                    </a>
-                                </h4>
-                            </div>
-
-                            <div id="compareAllArea" class="panel-collapse collapse" aria-labelledby="compareAllCollapse">
-                                <div id="compareAllChartArea">
+                                <div id="compareAllArea" class="panel-collapse " aria-labelledby="compareAllCollapse">
+                                    <div id="compareAllChartArea">
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div id="advanced-search-panel" class="viewstat-advanced-search">
-                            <div id="headingOne">
-                                <h4>
-                                    <a  id="advHref" data-toggle="collapse" data-parent="#accordion" href="#advancedSearch"
-                                       aria-expanded="true" aria-controls="collapseOne">
-                                        <span class='glyphicon glyphicon-circle-arrow-down arrowUpDown currentDown'></span>
-                                        Advanced Search
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="advancedSearch" class="panel-collapse collapse" aria-labelledby="headingOne">
-                                <div>
-                                    <input id="tagged-search-field" type="text" data-provide="typeahead"/>
-                                    <button type="submit" class="btn btn-primary" id="search-submit">Submit</button>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div class="panel-footer">
-                        <div class="action-btn-row">
-                            <button type="button" id="clear-selection" class="btn btn-warning action-btn">
-                                <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Clear
+                        <div id="operation-buttons-row" class="action-btn-row">
+                            <button type="button" class="btn btn-primary action-btn" id="back-btn">
+                                <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Back
                             </button>
                         </div>
                     </div>
@@ -86,7 +87,6 @@
                 <!-- /.col-lg-4 -->
             </div>
         </div>
-
 
     </div>
 </div>
