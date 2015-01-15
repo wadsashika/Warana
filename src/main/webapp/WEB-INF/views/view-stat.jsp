@@ -61,11 +61,6 @@
                             </div>
                         </div>
 
-                        <div id="select-all-row">
-                            <h4><input type="checkbox" id="select-all" class="pages-select-all"/>Select All</h4>
-                        </div>
-                        <div class="table-responsive" id="stat-table-div"></div>
-
                         <div id="compareAllMainDiv">
                             <div id="compareAllCollapse">
                                 <div id="compareAllArea" class="panel-collapse " aria-labelledby="compareAllCollapse">
@@ -73,8 +68,13 @@
                                     </div>
                                 </div>
                             </div>
+                            <hr>
                         </div>
 
+                        <div id="select-all-row">
+                            <h4><input type="checkbox" id="select-all" class="pages-select-all"/>Select All</h4>
+                        </div>
+                        <div id="stat-table-div"></div>
                     </div>
                     <div class="panel-footer">
                         <div id="operation-buttons-row" class="action-btn-row">
