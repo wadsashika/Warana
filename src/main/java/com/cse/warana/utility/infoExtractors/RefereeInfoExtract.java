@@ -43,7 +43,7 @@ public class RefereeInfoExtract {
         String personTitle = "";
         boolean identified = false;
         Referee referee = null;
-        Pattern titlePattern = Pattern.compile("((dr\\.|prof\\.|ms\\.|miss\\.|mrs\\.|mr\\.|master\\.|rev\\.|atty\\.|hon\\.|pres\\.|gov\\.|coach\\.|ofc\\.|lt\\.|lt col\\.|col\\.|gen\\.|sec\\.)(.*?))");
+        Pattern titlePattern = Pattern.compile("((dr\\.|prof\\.|ms\\.|miss\\.|mrs\\.|mr\\.|master\\.|rev\\.|atty\\.|hon\\.|pres\\.|gov\\.|coach\\.|ofc\\.|lt\\.|lt col\\.|col\\.|gen\\.|sec\\.|eng\\.)(.*?))");
         Matcher titleMatcher = null;
 
         /**
@@ -67,8 +67,26 @@ public class RefereeInfoExtract {
 
                     classifierText = classifier.classifyWithInlineXML(lineText);
 
+
+                    /**
+                     * TODO use the correct regex here
+                     * This is to identify the persons with the unidentified titles from the parser
+                     * This is to be used just in case stanford parser cannot identify the titles
+                     */
+                    if (titleMatcher.matches()) {
+                        LOG.info(titleMatcher.group(0));
+
+                        if (referee != null) {
+                            referees.add(referee);
+                        }
+
+                        referee = new Referee();
+                        referee.setName(lineText);
+                        identified = true;
+                    }
+
                     //Check if the line contains the person name
-                    if (classifierText.contains("<PERSON>") && classifierText.contains("</PERSON>")) {
+                    else if (classifierText.contains("<PERSON>") && classifierText.contains("</PERSON>")) {
                         Pattern pattern = Pattern.compile("<PERSON>(.*?)</PERSON>");
                         Matcher matcher = pattern.matcher(classifierText);
                         while (matcher.find()) {
@@ -129,23 +147,6 @@ public class RefereeInfoExtract {
                      */
                     else if (getEmail(lineText, referee)) {
 
-                    }
-
-                    /**
-                     * TODO use the correct regex here
-                     * This is to identify the persons with the unidentified titles from the parser
-                     * This is to be used just in case stanford parser cannot identify the titles
-                     */
-                    else if (titleMatcher.matches()) {
-                        LOG.info(titleMatcher.group(0));
-
-                        if (referee != null) {
-                            referees.add(referee);
-                        }
-
-                        referee = new Referee();
-                        referee.setName(lineText);
-                        identified = true;
                     }
 
                     /**
