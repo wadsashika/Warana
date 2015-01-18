@@ -22,7 +22,8 @@ public class ViewStatDaoImpl extends BaseJDBCDaoImpl implements ViewStatDao {
         StringBuilder query = new StringBuilder("");
         query.append("SELECT id,name,email,score \n");
         query.append("FROM candidate \n");
-        query.append("WHERE score <> 0");
+        query.append("WHERE score <> 0 \n");
+        query.append("ORDER BY score DESC");
 
         RowMapper<ViewStatDTO> mapper = new RowMapper<ViewStatDTO>() {
             @Override
@@ -90,6 +91,7 @@ public class ViewStatDaoImpl extends BaseJDBCDaoImpl implements ViewStatDao {
         candidates.append("WHERE t.technology in (" + techStr.toString() + ") \n");
         candidates.append("AND c.score <> 0 \n");
         candidates.append("GROUP BY c.id \n");
+        candidates.append("ORDER BY c.score DESC \n");
 
         RowMapper<ViewStatDTO> mapper = new RowMapper<ViewStatDTO>() {
             @Override
