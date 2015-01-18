@@ -18,13 +18,25 @@ import java.util.regex.Pattern;
 public class ProjectInfoExtraction {
 
     public static ArrayList<String> technologies = new ArrayList<String>();
+    public static ArrayList<String> techDescriptions = new ArrayList<String>();
     private static ArrayList<String> newTechnologies = new ArrayList<String>();
 
     private static Logger LOG = LoggerFactory.getLogger(ProjectInfoExtraction.class);
     private String listpath = "";
+    private String tecRegex = "(.*?)(";
 
     public ProjectInfoExtraction(HashMap<String, String> paths) {
         listpath = paths.get("root") + paths.get("listPath");
+        populateByFile(listpath + File.separator + "techDescriptionTokens", techDescriptions);
+
+        for (int a = 0; a < techDescriptions.size(); a++) {
+            if (a == techDescriptions.size() - 1) {
+                tecRegex += techDescriptions.get(a);
+            } else {
+                tecRegex += techDescriptions.get(a) + "|";
+            }
+        }
+        tecRegex += ")(.*?)";
     }
 
     /**
@@ -63,6 +75,7 @@ public class ProjectInfoExtraction {
         int wordMatchCounter = 0;
         int startProjectLine = -1;
         int endProjectLine = -1;
+        boolean technologyFound = false;
 
         StringTokenizer tokenizer = null;
 
@@ -84,6 +97,29 @@ public class ProjectInfoExtraction {
             for (int b = (headingLines.get(a).intValue() + 1); b < lines.size(); b++) {
                 lineText = lines.get(b);
                 if (allHeadings.contains(String.valueOf(b))) {
+                    if (project != null && technologyFound) {
+                        technologyFound = false;
+                        String description = "";
+                        for (int x = startProjectLine; x < endProjectLine; x++) {
+                            tokenizer = new StringTokenizer(lines.get(x), " ");
+                            if (tokenizer.countTokens() > 2) {
+                                if (x == startProjectLine) {
+                                    project.setName(lines.get(x));
+                                } else {
+                                    description += lines.get(x);
+                                }
+                                LOG.info(lines.get(x));
+                            }
+                        }
+                        project.setDescription(description);
+                        if (project.getName() != null) {
+                            projects.add(project);
+                            project = null;
+                        }
+
+                        startProjectLine = -1;
+                    }
+
                     break;
                 } else {
 
@@ -91,32 +127,27 @@ public class ProjectInfoExtraction {
                     pattern = Pattern.compile("(http|ftp|https):\\/\\/([\\w\\-_]+(?:(?:\\.[\\w\\-_]+)+))([\\w\\-\\.,@?^=%&amp;:/~\\+#]*[\\w\\-\\@?^=%&amp;/~\\+#])?");
                     matcher = pattern.matcher(lineText);
 
-                    if (matcher.find()) {
+                    if (matcher.matches()) {
                         if (project == null && projects.size() > 0) {
                             projects.get(projects.size() - 1).setUrl(matcher.group(0));
-//                            break;
                         } else if (project != null) {
                             project.setUrl(matcher.group(0));
-//                            break;
                         }
                     } else {
                         if (startProjectLine == -1) {
                             startProjectLine = b;
                             project = new Project();
                         }
-                        if (checkForTechnologiesDescription(lineText, candidateTechnologies, techs)) {
-                            endProjectLine = b;
-//                        Project proj= new Project();
+                        if (checkForTechnologiesDescription(lineText, candidateTechnologies, techs, lines)) {
+                            technologyFound = true;
+                        } else if (technologyFound) {
+                            technologyFound = false;
                             String description = "";
-                            for (int x = startProjectLine; x < endProjectLine; x++) {
+                            project.setName(lines.get(startProjectLine));
+                            for (int x = startProjectLine+1; x <= endProjectLine; x++) {
                                 tokenizer = new StringTokenizer(lines.get(x), " ");
                                 if (tokenizer.countTokens() > 2) {
-                                    if (x == startProjectLine) {
-//                                    proj.setName(lines.get(x));
-                                        project.setName(lines.get(x));
-                                    } else {
-                                        description += lines.get(x);
-                                    }
+                                    description += lines.get(x);
                                     LOG.info(lines.get(x));
                                 }
                             }
@@ -125,9 +156,12 @@ public class ProjectInfoExtraction {
                                 projects.add(project);
                                 project = null;
                             }
-                            startProjectLine = -1;
-                        }
 
+                            startProjectLine = -1;
+                            b -= 1;
+                        } else {
+                            endProjectLine = b;
+                        }
                     }
                 }
             }
@@ -144,7 +178,7 @@ public class ProjectInfoExtraction {
      * @param lineText
      * @return
      */
-    public boolean checkForTechnologiesDescription(String lineText, ArrayList<String> candidateTechnologies, ArrayList<Technology> techsList) {
+    public boolean checkForTechnologiesDescription(String lineText, ArrayList<String> candidateTechnologies, ArrayList<Technology> techsList, ArrayList<String> lines) {
         String tempText = lineText;
         String tempText2 = lineText;
         String technologyVal = "";
@@ -156,39 +190,96 @@ public class ProjectInfoExtraction {
          * Check whether the line contains the word technologies or technology
          * In order to identify the line which describes the technologies
          */
-        if (tempText.toLowerCase().contains("technologies") || tempText.toLowerCase().contains("technology")) {
 
-            String[] technologyArr = tempText.substring(tempText.toLowerCase().indexOf("technologies") + 12).split(",");
-            boolean margin = false;
+        /**
+         * Newly added
+         */
 
-            if (technologyArr.length > 0) {
-                for (int a = 0; a < technologyArr.length; a++) {
-                    technologyArr[a] = technologyArr[a].replaceAll("[:]", "");
-                    technologyVal = technologyArr[a].toLowerCase().trim();
-                    LOG.info("************" + technologyVal);
-                    if (!candidateTechnologies.contains(technologyVal)) {
-                        candidateTechnologies.add(technologyVal);
-                        Technology technology = new Technology();
-                        technology.setName(technologyVal);
-                        techsList.add(technology);
-                    }
-                    if (!technologies.contains(technologyVal)) {
-                        // Write to the technologies file after lowering the case
-                        // Also added to the technologies in order to avoid the duplicate entries entering the file.
-                        technologies.add(technologyArr[a].toLowerCase().trim());
-                        newTechnologies.add(technologyArr[a].toLowerCase().trim());
-                    }
+        /**
+         * Pattern,
+         * Technologies: ....,.....,....,...
+         * Technologies: (....,.....,....,...)
+         */
+        String[] techTokens = tempText.split("(:|-)");
+        if (tempText.toLowerCase().matches(tecRegex) && techTokens.length == 2) {
+            techTokens[1] = techTokens[1].replaceAll("(\\(|\\)|\\[|\\]|\\{|\\})", "");
+            String[] technologiesArray = techTokens[1].split(",");
+
+            for (int x = 0; x < technologiesArray.length; x++) {
+                technologyVal = technologiesArray[x].toLowerCase().trim();
+                LOG.info("************" + technologyVal);
+                if (!candidateTechnologies.contains(technologyVal)) {
+                    candidateTechnologies.add(technologyVal);
+                    Technology technology = new Technology();
+                    technology.setName(technologyVal);
+                    techsList.add(technology);
                 }
-                return true;
+                if (!technologies.contains(technologyVal)) {
+                    // Write to the technologies file after lowering the case
+                    // Also added to the technologies in order to avoid the duplicate entries entering the file.
+                    technologies.add(technologyVal);
+                    newTechnologies.add(technologyVal);
+                }
             }
-            return false;
+
+            return true;
         }
+
+//        if (lines.get(lines.indexOf(lineText)).matches("(.*?)(\\()") && lines.get(lines.indexOf(lineText) + 1).matches("(.*?)(\\))(.*?)")){
+//            String combinedLine = lineText + lines.get(lines.indexOf(lineText) + 1);
+//            Pattern pattern = Pattern.compile("(\\(|\\[|\\{)(.*?)(\\)|\\]|\\})");
+//            Matcher matcher = pattern.matcher(combinedLine);
+//
+//            String[] combinedTokenArr = (matcher.group(1)).split(",");
+//            for (int y = 0; y < combinedTokenArr.length; y++) {
+//                technologyVal = combinedTokenArr[y].toLowerCase().trim();
+//                if (!technologies.contains(technologyVal)) {
+//                    // Write to the technologies file after lowering the case
+//                    // Also added to the technologies in order to avoid the duplicate entries entering the file.
+//                    technologies.add(combinedTokenArr[y].toLowerCase().trim());
+//                    newTechnologies.add(combinedTokenArr[y].toLowerCase().trim());
+//                }
+//                if (!candidateTechnologies.contains(technologyVal)) {
+//                    candidateTechnologies.add(technologyVal);
+//                }
+//                LOG.info("**************" + technologyVal);
+//            }
+//            return true;
+//        }
+
+//        if (tempText.toLowerCase().contains("technologies") || tempText.toLowerCase().contains("technology")) {
+//
+//            String[] technologyArr = tempText.substring(tempText.toLowerCase().indexOf("technologies") + 12).split(",");
+//            boolean margin = false;
+//
+//            if (technologyArr.length > 0) {
+//                for (int a = 0; a < technologyArr.length; a++) {
+//                    technologyArr[a] = technologyArr[a].replaceAll("[:]", "");
+//                    technologyVal = technologyArr[a].toLowerCase().trim();
+//                    LOG.info("************" + technologyVal);
+//                    if (!candidateTechnologies.contains(technologyVal)) {
+//                        candidateTechnologies.add(technologyVal);
+//                        Technology technology = new Technology();
+//                        technology.setName(technologyVal);
+//                        techsList.add(technology);
+//                    }
+//                    if (!technologies.contains(technologyVal)) {
+//                        // Write to the technologies file after lowering the case
+//                        // Also added to the technologies in order to avoid the duplicate entries entering the file.
+//                        technologies.add(technologyArr[a].toLowerCase().trim());
+//                        newTechnologies.add(technologyArr[a].toLowerCase().trim());
+//                    }
+//                }
+//                return true;
+//            }
+//            return false;
+//        }
 
         /**
          * If the technologies are included within brackets and without above two checks satisfying. As an example
          * module Programming Challenge 2 (Java swing ,Joomla CMS)
          */
-        Pattern pattern = Pattern.compile("\\((.*?)\\)");
+        Pattern pattern = Pattern.compile("(\\(|\\[|\\{)(.*?)(\\)|\\]|\\})");
         Matcher matcher = pattern.matcher(tempText2);
         if (matcher.find()) {
             String[] tokenArr = (matcher.group(1)).split(",");
@@ -216,8 +307,11 @@ public class ProjectInfoExtraction {
 
         // Check the lines which are usually included technologies in the last line
         tokens = tempText2.split(",");
-        if (tokens.length > 0) {
+        if (tokens.length >= 2) {
             for (int x = 0; x < tokens.length; x++) {
+                if (tokens[x].split(" ").length > 3){
+                    return false;
+                }
                 if (technologies.contains(tokens[x].toLowerCase().trim())) {
                     for (int y = 0; y < tokens.length; y++) {
                         if (!technologies.contains(tokens[y].toLowerCase().trim())) {
@@ -225,12 +319,20 @@ public class ProjectInfoExtraction {
                             // Also added to the technologies in order to avoid the duplicate entries entering the file.
                             technologies.add(tokens[y].toLowerCase().trim());
                             newTechnologies.add(tokens[y].toLowerCase().trim());
+                            candidateTechnologies.add(technologyVal);
                         }
                         LOG.info("**************" + tokens[y].toLowerCase().trim());
                     }
-                    return true;
+//                    return true;
                 }
+//                if (x == tokens.length - 1 && (tokens[x].charAt(tokens[x].length() - 1) + "").matches("")) {
+//                    tokens[x] = (tokens[x].charAt(tokens[x].length() - 1) + "").replaceAll("\\)", "");
+//                }
+//                technologies.add(tokens[x].toLowerCase().trim());
+//                newTechnologies.add(tokens[x].toLowerCase().trim());
+//                candidateTechnologies.add(tokens[x].toLowerCase().trim());
             }
+            return true;
         }
         return false;
     }

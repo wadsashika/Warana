@@ -30,28 +30,56 @@ public class FindMissedInfo {
             terminatingLine = 15;
         }
 
+        String name = "";
+        String email = null;
+        boolean chkCtr = false;
         /**
          * Regex to Identify the basic name writing patterns
          */
-        Pattern pattern = Pattern.compile("^([a-zA-Z\\.*]+(?:\\.)?(?:(?:'| )[a-zA-Z]+(?:\\.)?)*)$");
+        Pattern pattern = Pattern.compile("(([A-Z]\\.?\\s?)*([A-Z][a-z]+\\.?\\s?)+([A-Z]\\.?\\s?[a-z]*)*)");
         Matcher matcher = null;
-        for (int a = 0; a < terminatingLine; a++) {
-            matcher = pattern.matcher(lines.get(a));
-            if (matcher.matches() && profile.getName() == null) {
-                for (int b = a + 1; b < terminatingLine; b++) {
-                    String email = getEmail(lines.get(b));
-                    if (email != null) {
-                        LOG.info("Suggested as name: " + matcher.group(0));
-                        profile.setName(matcher.group(0));
-                        profile.setEmail(email);
-                    } else {
-                        getOtherInfo(lines.get(b), profile);
+//        for (int a = 0; a < terminatingLine; a++) {
+//            matcher = pattern.matcher(lines.get(a));
+//            if (matcher.matches() && profile.getName() == null) {
+//                for (int b = a + 1; b < terminatingLine; b++) {
+//                    String email = getEmail(lines.get(b));
+//                    if (email != null) {
+//                        LOG.info("Suggested as name: " + matcher.group(0));
+//                        profile.setName(matcher.group(0));
+//                        profile.setEmail(email);
+//                    } else {
+//                        getOtherInfo(lines.get(b), profile);
+//
+//                    }
+//                }
+//            } else {
+//                getOtherInfo(lines.get(a), profile);
+//            }
+//        }
 
-                    }
-                }
-            } else {
-                getOtherInfo(lines.get(a), profile);
+        for(int a = 0; a< terminatingLine; a++){
+            matcher = pattern.matcher(lines.get(a));
+            String tmpEmail = "";
+            chkCtr = false;
+            if (matcher.matches() && name.equals("")){
+                name = matcher.group(0);
+                chkCtr = true;
             }
+            if (!chkCtr && email==null){
+                email = getEmail(lines.get(a));
+                if (email!=null){
+                    chkCtr = true;
+                }
+            }
+            if (!chkCtr){
+                getOtherInfo(lines.get(a),profile);
+            }
+
+        }
+
+        if (email!=null && !name.equals("")){
+            profile.setEmail(email);
+            profile.setName(name);
         }
     }
 

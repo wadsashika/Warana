@@ -34,6 +34,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #compareAllChartArea{
@@ -60,4 +61,18 @@
 
 #advancedSearch{
     margin-top: 20px;
+}
+#stat-table-div td{
+    font-size: 13px;
+}
+
+#stat-table{
+    width: 100%;
+}
+
+#chart-region{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
 }

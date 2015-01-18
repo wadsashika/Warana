@@ -19,7 +19,7 @@
                     </div>
                 </div>
 
-                <ul class="nav nav-tabs">
+                <ul class="nav nav-tabs" id="prof-tabs">
                     <li class="active">
                         <a href="#education" data-toggle="tab">Education</a>
                     </li>
@@ -35,6 +35,9 @@
                     <li>
                         <a href="#publications" data-toggle="tab">Publications</a>
                     </li>
+                    <li>
+                        <a href="#stat" data-toggle="tab" id="stat-tab">Technical Proficiency</a>
+                    </li>
                 </ul>
 
                 <div class="tab-content">
@@ -43,11 +46,11 @@
                     <div class="tab-pane fade" id="work-exp"></div>
                     <div class="tab-pane fade" id="projects"></div>
                     <div class="tab-pane fade" id="publications"></div>
+                    <div class="tab-pane fade" id="stat"><div id="chart-region"></div></div>
                 </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
     </div>
