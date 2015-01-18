@@ -34,8 +34,8 @@ public class WorkInfoExtract {
          * Load the companies gazeteer list
          */
         listPath = paths.get("root") + paths.get("listPath");
-        populateByFile(listPath + "\\companyNames", companies);
-        populateByFile(listPath + "\\jobPositionsIndex", jobPositions);
+        populateByFile(listPath + File.separator+"companyNames", companies);
+        populateByFile(listPath + File.separator+"jobPositionsIndex", jobPositions);
     }
 
 
@@ -83,7 +83,7 @@ public class WorkInfoExtract {
                         Pattern pattern = Pattern.compile(".*" + companies.get(x) + ".*");
                         Matcher matcher = pattern.matcher(lineText.toLowerCase());
 
-                        if (matcher.find()) {
+                        if (matcher.matches()) {
                             work = new Work();
                             companyName = companies.get(x);
                             LOG.info(companyName);
@@ -261,15 +261,21 @@ public class WorkInfoExtract {
         }
 
         Pattern pattern = Pattern.compile(patternString);
-        Matcher matcher1 = pattern.matcher(lines.get(lineNum).toLowerCase());
+        Matcher matcher1 = pattern.matcher(currentLine.toLowerCase());
         Matcher matcher2 = pattern.matcher(lines.get(lineNum - 1).toLowerCase());
         Matcher matcher3 = pattern.matcher(lines.get(lineNum + 1).toLowerCase());
+        Matcher matcher4 = pattern.matcher(lines.get(lineNum - 2).toLowerCase());
+        Matcher matcher5 = pattern.matcher(lines.get(lineNum + 2).toLowerCase());
         if (matcher1.find()) {
             jobPosition = currentLine;
         } else if (matcher2.find()) {
             jobPosition = lines.get(lineNum - 1);
         } else if (matcher3.find()) {
             jobPosition = lines.get(lineNum + 1);
+        }else if (matcher4.find()) {
+            jobPosition = lines.get(lineNum - 2);
+        }else if (matcher5.find()) {
+            jobPosition = lines.get(lineNum + 2);
         }
 
         return jobPosition;

@@ -37,6 +37,7 @@ WARANA.module.viewStat = function () {
     };
 
     var loadDataTable = function () {
+        $("#back-btn").hide();
         $.ajax({
             type: "POST",
             url: "getresult",
@@ -52,13 +53,13 @@ WARANA.module.viewStat = function () {
                     dataTableRow.push(row.name);
                     dataTableRow.push(row.email);
                     dataTableRow.push(row.score);
-                    dataTableRow.push('<button type="button" class="btn btn-primary btn-md view-prof btn-center"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> View</button>');
-                    dataTableRow.push('<button type="button" class="btn btn-primary btn-md send-email btn-center"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</button>');
+                    dataTableRow.push('<button type="button" class="btn btn-primary btn-sm view-prof btn-center"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> View</button>');
+                    dataTableRow.push('<button type="button" class="btn btn-primary btn-sm send-email btn-center"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</button>');
 
                     userList.push(dataTableRow);
                 }
 
-                $('#stat-table-div').html('<table class="table table-striped table-hover" id="stat-table"></table>');
+                $('#stat-table-div').html('<table class="table table-striped table-hover" id="stat-table" ></table>');
 
                 dataTbl = $('#stat-table').dataTable({
                     "bSort": false,
@@ -115,7 +116,6 @@ WARANA.module.viewStat = function () {
             data: {technologies: technologies},
             success: function (data) {
 
-                alert(data);
                 var userList = [];
                 var resultList = JSON.parse(data);
 
@@ -127,9 +127,8 @@ WARANA.module.viewStat = function () {
                     dataTableRow.push(row.name);
                     dataTableRow.push(row.email);
                     dataTableRow.push(row.score);
-                    dataTableRow.push('<button type="button" class="btn btn-primary btn-md view-prof btn-center"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> View</button>');
-                    dataTableRow.push('<button type="button" class="btn btn-primary btn-md view-tech btn-center"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> Stat</button>');
-                    dataTableRow.push('<button type="button" class="btn btn-primary btn-md send-email btn-center"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</button>');
+                    dataTableRow.push('<button type="button" class="btn btn-primary btn-sm view-prof btn-center"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> View</button>');
+                    dataTableRow.push('<button type="button" class="btn btn-primary btn-sm send-email btn-center"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</button>');
 
                     userList.push(dataTableRow);
                 }
@@ -145,7 +144,6 @@ WARANA.module.viewStat = function () {
                         { "title": "Name"  },
                         { "title": "Email" },
                         { "title": "Score" },
-                        { "title": ""},
                         { "title": ""},
                         { "title": ""}
 
@@ -169,7 +167,7 @@ WARANA.module.viewStat = function () {
     };
 
     var drawCompareAllBarChart = function (series, categories) {
-
+        $("#back-btn").show();
         $("#compareAllChartArea").empty();
 
         $("#compareAllChartArea").highcharts({
@@ -184,6 +182,9 @@ WARANA.module.viewStat = function () {
                 },
                 marginTop: 80,
                 marginRight: 40
+            },
+            credits: {
+                enabled: false
             },
             title: {
                 text: 'Technology Expertise Comparison'
@@ -263,61 +264,64 @@ WARANA.module.viewStat = function () {
         });
     };
 
-    var drawChart = function (data) {
-
+    var drawStatChart = function (data) {
         // Empty the div before loading chart
-        $('#chart-container').empty();
+        $('#chart-region').empty();
         // Build the chart
-        $('#chart-container').highcharts({
+        $("#chart-region").highcharts({
             chart: {
-                type: 'pie',
-                options3d: {
-                    enabled: true,
-                    alpha: 45,
-                    beta: 0
-                },
-                borderColor: '#A6A6A6',
-                borderWidth: 1,
-                borderRadius: 5,
-                backgroundColor: '#F8F8F8'
+                type: 'column'
             },
             title: {
-                text: 'Technologies Expertise for the Candidate'
+                text: 'Technology Proficiency'
             },
-            tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-            },
-            plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    depth: 35,
-                    dataLabels: {
-                        enabled: true,
-                        format: '{point.name}'
+            xAxis: {
+                type: 'category',
+                labels: {
+                    rotation: -45,
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'Verdana, sans-serif'
                     }
                 }
+            },
+            yAxis: {
+                min: 0,
+                title: {
+                    text: 'Proficiency (%)'
+                }
+            },
+            legend: {
+                enabled: false
             },
             credits: {
                 enabled: false
             },
-            series: [
-                {
-                    type: 'pie',
-                    name: 'Expertise as Percentage',
-                    data: data
+            tooltip: {
+                pointFormat: 'Proficiency percentage: <b>{point.y:.1f} %</b>'
+            },
+            series: [{
+                name: 'Proficiency(%)',
+                data: data,
+                dataLabels: {
+                    enabled: true,
+                    rotation: 0,
+                    color: '#FFFFFF',
+                    align: 'right',
+                    x: 4,
+                    y: 10,
+                    style: {
+                        fontSize: '12px',
+                        fontFamily: 'Verdana, sans-serif',
+                        textShadow: '0 0 3px black'
+                    }
                 }
-            ]
+            }]
         });
 
-        $('#chart-modal').on('show.bs.modal', function () {
-            $('#chart-container').css('visibility', 'hidden');
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function(e){
+            $('#chart-region').highcharts().reflow();
         });
-        $('#tech-chart').on('shown.bs.modal', function () {
-            $('#chart-container').css('visibility', 'initial');
-            $('#chart-container').highcharts().reflow();
-        });
-
     }
 
     var viewProfileClick = function () {
@@ -539,6 +543,8 @@ WARANA.module.viewStat = function () {
             }
         });
 
+        viewStatChart(id);
+
         $("#profile-info").modal(
             {
                 show: true
@@ -546,12 +552,9 @@ WARANA.module.viewStat = function () {
         );
     };
 
-    var viewStatChart = function () {
-        var id = dataTbl.fnGetData($(this).closest("tr").get(0))[1];
-        var name = dataTbl.fnGetData($(this).closest("tr").get(0))[2];
-        var pieChartData = [];
-
-        document.getElementById('graph-modal-title').innerHTML = name;
+    var viewStatChart = function (data) {
+        var id = data;
+        var statChartData = [];
 
         $.ajax({
             type: "POST",
@@ -564,18 +567,13 @@ WARANA.module.viewStat = function () {
                     var pieSlice = [];
                     pieSlice.push(jsonObj[i].technology);
                     pieSlice.push(jsonObj[i].percentage);
-                    pieChartData.push(pieSlice);
+                    statChartData.push(pieSlice);
                 }
 
                 /**
                  * Drawing chart
                  */
-                $("#tech-chart").modal(
-                    {
-                        show: true
-                    }
-                );
-                drawChart(pieChartData);
+                drawStatChart(statChartData);
             },
             error: function (e) {
                 alert('Error: ' + e);
@@ -586,16 +584,20 @@ WARANA.module.viewStat = function () {
     var changeArrowUpDown = function () {
         if($(this).children("span:first").hasClass("currentDown")){
             $(this).children("span:first").removeClass("currentDown");
-            $(this).children("span:first").removeClass("glyphicon-circle-arrow-down");
+            $(this).children("span:first").removeClass("glyphicon glyphicon-chevron-down");
             $(this).children("span:first").addClass("currentUp");
-            $(this).children("span:first").addClass("glyphicon-circle-arrow-up");
+            $(this).children("span:first").addClass("glyphicon glyphicon-chevron-up");
         }
         else if($(this).children("span:first").hasClass("currentUp")){
             $(this).children("span:first").removeClass("currentUp");
-            $(this).children("span:first").removeClass("glyphicon-circle-arrow-up");
+            $(this).children("span:first").removeClass("glyphicon glyphicon-chevron-up");
             $(this).children("span:first").addClass("currentDown");
-            $(this).children("span:first").addClass("glyphicon-circle-arrow-down");
+            $(this).children("span:first").addClass("glyphicon glyphicon-chevron-down");
         }
+    };
+
+    var goBack = function(){
+      location.href = "/warana/viewstat";
     };
 
     return {
@@ -607,9 +609,9 @@ WARANA.module.viewStat = function () {
             $(document).on("click", "#clear-selection", clearSelected);
             $(document).on("click", "#search-submit", searchCandidates);
             $(document).on("click", ".view-prof", viewProfileClick);
-            $(document).on("click", ".view-tech", viewStatChart);
             $(document).on("click", "#advHref", changeArrowUpDown);
             $(document).on("click", "#compare-all-href", changeArrowUpDown);
+            $(document).on("click", "#back-btn", goBack);
         }
     }
 }();

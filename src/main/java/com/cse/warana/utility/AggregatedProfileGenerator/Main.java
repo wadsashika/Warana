@@ -1,5 +1,6 @@
 package com.cse.warana.utility.AggregatedProfileGenerator;
 
+import com.cse.warana.controller.ProcessResumeController;
 import com.cse.warana.service.CVParserService;
 import com.cse.warana.service.CandidateProfileGeneratorService;
 import com.cse.warana.service.impl.CVParserServiceImpl;
@@ -9,11 +10,13 @@ import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import com.cse.warana.utility.infoExtractors.OnlineInfoExtractor;
 import com.cse.warana.utility.infoHolders.Candidate;
 import com.cse.warana.utility.infoHolders.Profile;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+
 
 public class Main {
 
@@ -21,11 +24,12 @@ public class Main {
         new Main().CallName();
     }
 
+
+    private String uploadsPath;
     public void CallName() {
         /**
          * TODO implement methods to confirm whether online profiles exactly represent the desired candidate
          */
-
         String root="C:/Warana";
         String classifirePath="\\\\classifiers\\\\english.muc.7class.distsim.crf.ser.gz";
 
@@ -34,16 +38,21 @@ public class Main {
         paths.put("root", root);
         paths.put("classifirePath",classifirePath);
         paths.put("listPath","\\gazeteerLists");
+
         Candidate candidate=new Candidate();
         CandidateProfileGeneratorService generatorService=new CandidateProfileGeneratorServiceImpl();
         CVParserService cvParserService=new CVParserServiceImpl(paths);
-
-        File cv=new File(Config.rootPath+"/Docs/CVs/100408J_Thilina.pdf");
+        File cv=new File("C:\\Warana\\Uploads\\090486A_Shanika T.G.T.pdf");
 
         generatorService.extractCVInformation(cvParserService,cv);
         generatorService.generateCandidateProfile(candidate);
         OnlineInfoExtractor onlineInfoExtractor=new OnlineInfoExtractor(candidate);
 
-        CallName();
+//        CallName();
+    }
+    void Test(){
+        ProcessResumeController resumeController=new ProcessResumeController();
+        File file=new File("C:\\Warana\\Docs\\CVs");
+        resumeController.processSelectedResumes(file.list());
     }
 }

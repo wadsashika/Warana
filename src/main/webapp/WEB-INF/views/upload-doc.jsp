@@ -1,10 +1,4 @@
 <%@include file="header.jsp" %>
-<link href='<c:url value="/css/warana/pages-commons.css" />' rel="stylesheet" type="text/css"/>
-<link href='<c:url value="/css/dropzone.css" />' rel="stylesheet" type="text/css"/>
-<link href='<c:url value="/css/warana/upload.css" />' rel="stylesheet" type="text/css"/>
-
-<script src='<c:url value="/js/dropzone.js" />' type="text/javascript"></script>
-<script src='<c:url value="/js/warana/upload.js" />' type="text/javascript"></script>
 
 <div id="wrapper">
     <div id="page-wrapper">
@@ -93,7 +87,7 @@
                                 <span class="glyphicon glyphicon-upload" aria-hidden="true"></span> Upload
                             </button>
                             <button type="button" id="remove-all" class="btn btn-primary action-btn">
-                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel
+                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel All
                             </button>
 
                         </div>
@@ -103,4 +97,12 @@
         </div>
     </div>
 </div>
+
+<link href='<c:url value="/css/warana/pages-commons.css" />' rel="stylesheet" type="text/css"/>
+<link href='<c:url value="/css/dropzone.css" />' rel="stylesheet" type="text/css"/>
+<link href='<c:url value="/css/warana/upload.css" />' rel="stylesheet" type="text/css"/>
+
+<script src='<c:url value="/js/dropzone.js" />' type="text/javascript"></script>
+<script src='<c:url value="/js/warana/upload.js" />' type="text/javascript"></script>
+
 <%@include file="footer.jsp" %>
