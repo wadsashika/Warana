@@ -26,11 +26,18 @@ public class Main {
          * TODO implement methods to confirm whether online profiles exactly represent the desired candidate
          */
 
-        System.out.println(Config.skillsPath);
+        String root="C:/Warana";
+        String classifirePath="\\\\classifiers\\\\english.muc.7class.distsim.crf.ser.gz";
 
+        HashMap<String,String> paths = new HashMap<>();
+        System.out.println(root);
+        paths.put("root", root);
+        paths.put("classifirePath",classifirePath);
+        paths.put("listPath","\\gazeteerLists");
         Candidate candidate=new Candidate();
         CandidateProfileGeneratorService generatorService=new CandidateProfileGeneratorServiceImpl();
-        CVParserService cvParserService=new CVParserServiceImpl();
+        CVParserService cvParserService=new CVParserServiceImpl(paths);
+
         File cv=new File(Config.rootPath+"/Docs/CVs/100408J_Thilina.pdf");
 
         generatorService.extractCVInformation(cvParserService,cv);
