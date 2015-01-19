@@ -42,7 +42,7 @@ public class Main {
         Candidate candidate=new Candidate();
         CandidateProfileGeneratorService generatorService=new CandidateProfileGeneratorServiceImpl();
         CVParserService cvParserService=new CVParserServiceImpl(paths);
-        File cv=new File("C:\\Warana\\Uploads\\090486A_Shanika T.G.T.pdf");
+        File cv=new File("C:\\Warana\\Docs\\CVs\\Dulanga Sashika.pdf");
 
         generatorService.extractCVInformation(cvParserService,cv);
         generatorService.generateCandidateProfile(candidate);

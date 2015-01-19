@@ -30,6 +30,8 @@ public class LinkedInExtractor {
         Profile linkedInProfile=new Profile();
 
         Google g = new Google();
+        link=candidateProfile.getLinkedIn();
+        if(link.length()==0)
         link = g.FindOnLinkedIn(candidateProfile.getName());
 
         System.out.println(link + "--------------------------");
@@ -146,9 +148,15 @@ public class LinkedInExtractor {
 
         //===============================skills
 
+
+
         ExtractSkills();
 
-        return linkedInProfile;
+        if (candidateProfile.equals(linkedInProfile)){
+            candidateProfile.copy(linkedInProfile);
+        }
+
+        return candidateProfile;
     }
 
     public Profile Extract2(String searchName, Profile profile, Candidate candidate) {
