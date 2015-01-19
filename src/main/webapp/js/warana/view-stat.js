@@ -59,7 +59,7 @@ WARANA.module.viewStat = function () {
                     userList.push(dataTableRow);
                 }
 
-                $('#stat-table-div').html('<table class="table table-striped table-hover" id="stat-table" ></table>');
+                $('#stat-table-div').html('<table class="table table-striped table-hover table-responsive" id="stat-table" ></table>');
 
                 dataTbl = $('#stat-table').dataTable({
                     "bSort": false,
@@ -368,35 +368,35 @@ WARANA.module.viewStat = function () {
                 nameDt.innerHTML = "Name";
                 profileDl.appendChild(nameDt);
                 var nameDd = document.createElement('dd');
-                nameDd.innerHTML = profile.name;
+                nameDd.innerHTML = (profile.name != null) ? profile.name : "";
                 profileDl.appendChild(nameDd);
 
                 var addressDt = document.createElement('dt');
                 addressDt.innerHTML = "Address";
                 profileDl.appendChild(addressDt);
                 var addressDd = document.createElement('dd');
-                addressDd.innerHTML = profile.address;
+                addressDd.innerHTML = (profile.address != null) ? profile.address : "";
                 profileDl.appendChild(addressDd);
 
                 var emailDt = document.createElement('dt');
                 emailDt.innerHTML = "Email";
                 profileDl.appendChild(emailDt);
                 var emailDd = document.createElement('dd');
-                emailDd.innerHTML = profile.email;
+                emailDd.innerHTML = (profile.email != null) ? profile.email : "";
                 profileDl.appendChild(emailDd);
 
                 var genderDt = document.createElement('dt');
                 genderDt.innerHTML = "Gender";
                 profileDl.appendChild(genderDt);
                 var genderDd = document.createElement('dd');
-                genderDd.innerHTML = profile.gender;
+                genderDd.innerHTML = (profile.gender != null) ? profile.gender : "";
                 profileDl.appendChild(genderDd);
 
                 var maritalDt = document.createElement('dt');
                 maritalDt.innerHTML = "Marital Status";
                 profileDl.appendChild(maritalDt);
                 var maritalDd = document.createElement('dd');
-                maritalDd.innerHTML = profile.marital_status;
+                maritalDd.innerHTML = (profile.marital_status != null) ? profile.marital_status : "";
                 profileDl.appendChild(maritalDd);
 
                 /**
@@ -421,11 +421,11 @@ WARANA.module.viewStat = function () {
                     var grade = document.createElement('p');
                     grade.className = "prof-p";
 
-                    specialization.innerHTML = education[a].specialization;
-                    grade.innerHTML = education[a].grade;
+                    specialization.innerHTML = (education[a].specialization != null) ? education[a].specialization : "";
+                    grade.innerHTML = (education[a].grade != null) ? education[a].grade : "";
 
                     dt.innerHTML = "<span class='glyphicon glyphicon-home prof-glyp' aria-hidden='true'></span>" + education[a].institution_name;
-                    dd.innerHTML = education[a].duration;
+                    dd.innerHTML = (education[a].duration != null) ? education[a].duration : "";
                     dl.appendChild(dt);
                     dl.appendChild(dd);
                     div.appendChild(dl);
@@ -452,7 +452,7 @@ WARANA.module.viewStat = function () {
                     dd.className = "prof-dd";
 
                     dt.innerHTML = "<span class='glyphicon glyphicon-flag prof-glyp' aria-hidden='true'></span>" + achievement[a].description;
-                    dd.innerHTML = achievement[a].date;
+                    dd.innerHTML = (achievement[a].date != null) ? achievement[a].date : "";
                     dl.appendChild(dt);
                     dl.appendChild(dd);
                     div.appendChild(dl);
@@ -479,8 +479,8 @@ WARANA.module.viewStat = function () {
                     post.className = "prof-p";
 
                     dt.innerHTML = "<span class='glyphicon glyphicon-bookmark prof-glyp' aria-hidden='true'></span>" + workexp[a].company_name;
-                    dd.innerHTML = workexp[a].from + " - " + workexp[a].to;
-                    post.innerHTML = workexp[a].post;
+                    dd.innerHTML = ((workexp[a].from != null) ? workexp[a].from : "") + ((workexp[a].to != null) ? (" - " + workexp[a].to) : "");
+                    post.innerHTML = (workexp[a].post != null) ? workexp[a].post : "";
                     dl.appendChild(dt);
                     dl.appendChild(dd);
                     div.appendChild(dl);
@@ -505,7 +505,7 @@ WARANA.module.viewStat = function () {
                     dd.className = "prof-dd";
 
                     dt.innerHTML = "<span class='glyphicon glyphicon-folder-open prof-glyp' aria-hidden='true'></span>" + projects[a].proj_name;
-                    dd.innerHTML = projects[a].description;
+                    dd.innerHTML = (projects[a].description != null) ? projects[a].description : "" ;
                     dl.appendChild(dt);
                     dl.appendChild(dd);
                     div.appendChild(dl);
@@ -529,7 +529,7 @@ WARANA.module.viewStat = function () {
                     dd.className = "prof-dd";
 
                     dt.innerHTML = "<span class=' glyphicon glyphicon-book prof-glyp' aria-hidden='true'></span>" + publications[a].name;
-                    dd.innerHTML = publications[a].description;
+                    dd.innerHTML = (publications[a].description != null) ? publications[a].description : "";
                     dl.appendChild(dt);
                     dl.appendChild(dd);
                     div.appendChild(dl);
