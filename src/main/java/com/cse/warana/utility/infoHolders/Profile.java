@@ -58,6 +58,9 @@ public class Profile {
     }
 
     public String getName() {
+        String[] split=name.split(" ");
+        if (split.length>1)
+            return split[0]+" "+split[1];
         return name;
     }
 
@@ -130,25 +133,25 @@ public class Profile {
             email= p.getEmail();
         }
         if (phone.length()==0){
-            name= p.getPhone();
+            phone= p.getPhone();
         }
         if (address.length()==0){
-            name= p.getAddress();
+            address= p.getAddress();
         }
         if (linkedIn.length()==0){
-            name= p.getLinkedIn();
+            linkedIn= p.getLinkedIn();
         }
         if (gender.length()==0){
-            name= p.getGender();
+            gender= p.getGender();
         }
         if (pic_url.length()==0){
-            name= p.getPic_url();
+            pic_url= p.getPic_url();
         }
         if (blogUrl.length()==0){
-            name= p.getBlogUrl();
+            blogUrl= p.getBlogUrl();
         }
         if (title.length()==0){
-            name= p.getTitle();
+            title= p.getTitle();
         }
     }
 }

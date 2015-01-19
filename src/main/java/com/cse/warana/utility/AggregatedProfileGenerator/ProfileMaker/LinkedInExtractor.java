@@ -23,7 +23,10 @@ public class LinkedInExtractor {
         skillsExtractor=new SkillsExtractor();
     }
 
-    public Profile ExtractInformation( /*Profile profile*/ Candidate candidate) {
+    public Profile ExtractInformation(  Candidate candidate) {
+
+
+    /*Extracting information from LinkedIn*/
 
         Profile candidateProfile = candidate.getProfile();
 
@@ -74,6 +77,14 @@ public class LinkedInExtractor {
         title = titleP.text();
 //        profile.title = titleP.text();
         linkedInProfile.setTitle(titleP.text());
+
+
+        if (candidateProfile.equals(linkedInProfile)){              //verification of profile
+            candidateProfile.copy(linkedInProfile);
+        }
+        else{
+            return candidateProfile;
+        }
 
         //        Education
         Elements eduTr = doc != null ? doc.select("dd.summary-education > ul > li") : null;
@@ -152,9 +163,6 @@ public class LinkedInExtractor {
 
         ExtractSkills();
 
-        if (candidateProfile.equals(linkedInProfile)){
-            candidateProfile.copy(linkedInProfile);
-        }
 
         return candidateProfile;
     }
