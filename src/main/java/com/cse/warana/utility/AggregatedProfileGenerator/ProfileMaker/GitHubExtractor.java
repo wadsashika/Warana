@@ -25,8 +25,9 @@ public class GitHubExtractor {
 
 
     public void Extract(Candidate candidate) {
-        Profile profile=candidate.getProfile();
-        String name=profile.getName();
+        Profile candidateProfile=candidate.getProfile();
+        Profile profile=new Profile();
+        String name=candidateProfile.getName();
         System.out.println("\nSearching " + name + " on GitHub");
         name = name.replaceAll(" ", "%20");
         String url = "https://api.github.com/search/users?q=" + name + "&order=desc&access_token=" + token;
@@ -34,7 +35,13 @@ public class GitHubExtractor {
         try {
             JSONObject json = new JSONObject(result);
             if (json.getInt("total_count") != 0) {
-                GetInfo(json.getJSONArray("items").getJSONObject(0).getString("url"), candidate);
+                for (int i = 0; i < json.getInt("total_count"); i++) {
+                    profile.setName(getName(json.getJSONArray("items").getJSONObject(i).getString("login")));
+                    if (candidateProfile.equals(profile)){
+                        GetInfo(json.getJSONArray("items").getJSONObject(i).getString("url"), candidate);
+                        break;
+                    }
+                }
             } else {
                 System.out.println("No GitHub profiles found");
             }
@@ -43,16 +50,26 @@ public class GitHubExtractor {
         }
     }
 
-    public String GetInfo(String profileUrl, /*Profile profile*/ Candidate candidate) {
-        String urlString = profileUrl + "/repos?access_token=" + token;
+    private String getName(String login) {
+        String result = networkManager.Get("https://api.github.com/users/"+login);
+        JSONObject jsonObject=new JSONObject(result);
+        return jsonObject.getString("name");
+    }
+
+    public String GetInfo(String profileUrl,Candidate candidate) {
+        String urlString = profileUrl + "/user?access_token=" + token;
+
+        String profileInfo = networkManager.Get(urlString);
+
+        urlString = profileUrl + "/repos?access_token=" + token;
         String info = networkManager.Get(urlString);
-        ShowInfo(info, candidate);
+        AddInfo(info, candidate);
 
 //        System.out.println();
         return info;
     }
 
-    public void ShowInfo(String jsonString, /*Profile profile*/ Candidate candidate) {
+    public void AddInfo(String jsonString,  Candidate candidate) {
         try {
 //            JSONObject json=new JSONObject(jsonString);
             JSONArray ary = new JSONArray(jsonString);
@@ -63,9 +80,9 @@ public class GitHubExtractor {
             System.out.println(jsonString);
             for (int i = 0; i < ary.length(); i++) {
                 json = ary.getJSONObject(i);
-//                System.out.println(json.get("name") + "-----------");
-//                System.out.println("Description : " + json.get("description"));
-//                System.out.println("Technology : " + json.get("language") + "\n");
+                System.out.println(json.get("name") + "-----------");
+                System.out.println("Description : " + json.get("description"));
+                System.out.println("Technology : " + json.get("language") + "\n");
 
                 proj = new Project();
 //                proj.name = GetNotNull("name",json);

@@ -23,17 +23,24 @@ public class LinkedInExtractor {
         skillsExtractor=new SkillsExtractor();
     }
 
-    public Profile ExtractInformation( /*Profile profile*/ Candidate candidate) {
+    public Profile ExtractInformation(  Candidate candidate) {
 
-        Profile profile = candidate.getProfile();
+
+    /*Extracting information from LinkedIn*/
+
+        Profile candidateProfile = candidate.getProfile();
+
+        Profile linkedInProfile=new Profile();
 
         Google g = new Google();
-        link = g.FindOnLinkedIn(profile.getName());
+        link=candidateProfile.getLinkedIn();
+        if(link.length()==0)
+        link = g.FindOnLinkedIn(candidateProfile.getName());
 
         System.out.println(link + "--------------------------");
         if (link.equals("")) {
-            profile.setName("not found");
-            return profile;
+            linkedInProfile.setName("not found");
+            return candidateProfile;
         }
         String picUrl, name, title;
         String[] publications;
@@ -47,29 +54,37 @@ public class LinkedInExtractor {
         Element profile_picture = doc != null ? doc.select("div[id=profile-picture] > img").first() : null;
         System.out.println(profile_picture);
         if (profile_picture != null) {
-            profile.setPic_url(profile_picture.attr("src"));
+            linkedInProfile.setPic_url(profile_picture.attr("src"));
         } else {
             profile_picture = doc != null ? doc.select("div.profile-picture> a > img").first() : null;
             if (profile_picture != null) {
-                profile.setPic_url(profile_picture.attr("src"));
+                linkedInProfile.setPic_url(profile_picture.attr("src"));
             }
         }
 
-        System.out.println("pic url " + profile.getPic_url());
+        System.out.println("pic url " + linkedInProfile.getPic_url());
 //        name
         Element nameDiv = doc != null ? doc.select("span.full-name").first() : null;
         System.out.println(nameDiv.text());
-        profile.setName(nameDiv.text());
+        linkedInProfile.setName(nameDiv.text());
         name = nameDiv.text();
 //        profile.name = nameDiv.text();
-        profile.setName(nameDiv.text());
+        linkedInProfile.setName(nameDiv.text());
 
 //        title
         Element titleP = doc != null ? doc.select("p").first() : null;
         System.out.println(titleP.text());
         title = titleP.text();
 //        profile.title = titleP.text();
-        profile.setTitle(titleP.text());
+        linkedInProfile.setTitle(titleP.text());
+
+
+        if (candidateProfile.equals(linkedInProfile)){              //verification of profile
+            candidateProfile.copy(linkedInProfile);
+        }
+        else{
+            return candidateProfile;
+        }
 
         //        Education
         Elements eduTr = doc != null ? doc.select("dd.summary-education > ul > li") : null;
@@ -144,9 +159,12 @@ public class LinkedInExtractor {
 
         //===============================skills
 
+
+
         ExtractSkills();
 
-        return profile;
+
+        return candidateProfile;
     }
 
     public Profile Extract2(String searchName, Profile profile, Candidate candidate) {

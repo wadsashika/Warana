@@ -10,7 +10,7 @@ import java.util.Properties;
  */
 public final class Config {
 
-    private static  String rootPath;
+    public static  String rootPath;
     static {
         Properties prop = new Properties();
         InputStream input = null;
