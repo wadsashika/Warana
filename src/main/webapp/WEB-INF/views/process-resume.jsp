@@ -62,6 +62,9 @@
                     </div>
                     <div class="panel-footer">
                         <div id="operation-buttons-row" class="action-btn-row">
+                            <button type="button" id="backBtn" class="btn btn-primary action-btn">
+                                <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Back
+                            </button>
                             <button type="button" class="btn btn-primary action-btn" id="process-resume">
                                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Process
                             </button>

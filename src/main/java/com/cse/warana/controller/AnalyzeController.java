@@ -1,6 +1,7 @@
 package com.cse.warana.controller;
 
 import com.cse.warana.dto.AnalyticResultsDTO;
+import com.cse.warana.dto.ResponseDTO;
 import com.cse.warana.dto.ResumesToAnalyseDto;
 import com.cse.warana.service.AnalyzeResumeService;
 import com.cse.warana.service.AnalyzedResultsService;
@@ -72,10 +73,15 @@ public class AnalyzeController {
 
     @RequestMapping(value = "/analyze/profile", method = RequestMethod.POST)
     @ResponseBody
-    public String deleteResume(@RequestParam("id") long id) {
+    public ResponseDTO<Map<String, String>> deleteResume(@RequestBody (required = false) long id) {
+        LOG.info("Retrieving candidate profile information");
+        System.out.println("Profile id = "+id);
+        ResponseDTO<Map<String, String>> response = new ResponseDTO<Map<String, String>>();
 
-        String candidateJson = analyzedResultsService.getCandidateData(id);
-        return candidateJson;
+        response.setSuccess(true);
+        response.setResult(analyzedResultsService.getCandidateData(id));
+
+        return response;
     }
 
 }

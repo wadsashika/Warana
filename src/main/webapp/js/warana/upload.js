@@ -52,7 +52,7 @@ WARANA.module.uploadCv = function () {
         var title = "Cancel All Uploads";
         var msg = "Are you sure want to cancel all files?";
 
-        WARANA.deleteConfirmation(removeAllFiles, title, msg);
+        WARANA.messageConfirmation(removeAllFiles, title, msg);
     };
 
     var removeAllFiles = function () {
@@ -63,12 +63,21 @@ WARANA.module.uploadCv = function () {
         myDropzone.processQueue();
     };
 
+    var backBtnClick = function () {
+        WARANA.messageConfirmation(backBtnSuccessFn, "Leave Page Confirmation", "Are you sure want to leave this page?");
+    };
+
+    var backBtnSuccessFn = function () {
+        location.href = "/warana/dashboard";
+    };
+
     return {
         init: function () {
             initialize();
             $(document).on("click", "#remove-all", removeAllFilesConfirmation);
             $(document).on("click", "#upload-all", uploadAllFiles);
             $(document).on("click", "#add-doc-btn", clearMessage);
+            $(document).on("click", "#backBtn", backBtnClick);
         }
     };
 

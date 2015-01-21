@@ -192,10 +192,6 @@
         </div>
     </div>
 </sec:authorize>
-<%--<link href='<c:url value="/css/bootstrap-modal.css" />' rel="stylesheet" type="text/css"/>
-<link href='<c:url value="/css/bootstrap-modal-bs3patch.css" />' rel="stylesheet" type="text/css"/>--%>
 
-<%--<script src='<c:url value="/js/bootstrap-modal.js" />' type="text/javascript"></script>
-<script src='<c:url value="/js/bootstrap-modalmanager.js" />' type="text/javascript"></script>--%>
 <script src='<c:url value="/js/warana/home.js" />' type="text/javascript"></script>
 <%@include file="footer.jsp" %>

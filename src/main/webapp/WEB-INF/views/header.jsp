@@ -82,7 +82,7 @@
                                         class="top-buttons last-button dropdown-toggle">${sessionScope.firstName} ${sessionScope.lastName}
                                 </button>
                                 <ul class="dropdown-menu home-links" role="menu">
-                                    <li><a href="<c:url value="/#"/>"><span
+                                    <li><a href="<c:url value="/myprofile"/>"><span
                                             class="glyphicon glyphicon-user"></span> My Profile</a></li>
                                     <li class="divider"></li>
                                     <li><a href="<c:url value="/j_spring_security_logout" />"><span
@@ -102,7 +102,7 @@
                         <li><a href="<c:url value="/dashboard"/>"><span
                                 class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
                         <li class="divider"></li>
-                        <li><a href="<c:url value="/#"/>"><span
+                        <li><a href="<c:url value="/myprofile"/>"><span
                                 class="glyphicon glyphicon-user"></span> My Profile</a></li>
                         <li class="divider"></li>
                         <li><a href="<c:url value="/j_spring_security_logout" />"><span

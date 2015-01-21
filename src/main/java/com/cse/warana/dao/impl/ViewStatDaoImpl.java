@@ -7,7 +7,10 @@ import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Nadeeshaan on 12/10/2014.
@@ -133,7 +136,7 @@ public class ViewStatDaoImpl extends BaseJDBCDaoImpl implements ViewStatDao {
         query.append("SELECT c.id as id,c.name as name,GROUP_CONCAT(p.technology) as technologies,GROUP_CONCAT(ct.percentage) as percentages \n");
         query.append("FROM candidate as c \n");
         query.append("JOIN candidate_technology as ct on c.id = ct.candidate_id \n");
-        query.append("JOIN ("+subQuery+")AS p on ct.technology_id = p.id \n");
+        query.append("JOIN (" + subQuery + ")AS p on ct.technology_id = p.id \n");
         query.append("GROUP BY c.id \n");
 
         RowMapper<ViewStatDTO> mapper = new RowMapper<ViewStatDTO>() {
@@ -142,17 +145,16 @@ public class ViewStatDaoImpl extends BaseJDBCDaoImpl implements ViewStatDao {
                 ViewStatDTO viewStatDTO = new ViewStatDTO();
                 viewStatDTO.setId(resultSet.getLong("id"));
                 viewStatDTO.setName(resultSet.getString("name"));
-                HashMap<String,String> techPercentageMap = new HashMap<>();
+                HashMap<String, String> techPercentageMap = new HashMap<>();
 
                 List<String> stTechList = Arrays.asList(resultSet.getString("technologies").split(","));
                 List<String> stPerList = Arrays.asList(resultSet.getString("percentages").split(","));
 
-                for (int a = 0; a < technologies.length; a++){
-                    if (stTechList.contains(technologies[a])){
-                        techPercentageMap.put(technologies[a],stPerList.get(stTechList.indexOf(technologies[a])));
-                    }
-                    else{
-                        techPercentageMap.put(technologies[a],"0");
+                for (int a = 0; a < technologies.length; a++) {
+                    if (stTechList.contains(technologies[a])) {
+                        techPercentageMap.put(technologies[a], stPerList.get(stTechList.indexOf(technologies[a])));
+                    } else {
+                        techPercentageMap.put(technologies[a], "0");
                     }
                 }
 

@@ -1,5 +1,6 @@
 package com.cse.warana.controller;
 
+import com.cse.warana.dto.ResponseDTO;
 import com.cse.warana.dto.ViewStatDTO;
 import com.cse.warana.service.ViewStatService;
 import com.google.gson.Gson;
@@ -9,12 +10,13 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -41,61 +43,87 @@ public class ViewStatController {
         return model;
     }
 
-    @RequestMapping(value = "/getresult", method = RequestMethod.POST)
+    @RequestMapping(value = "/viewstat/getresult", method = RequestMethod.POST, headers = {"content-type=application/json"})
     @ResponseBody
-    public String getResultList() {
+    public ResponseDTO<Map<String, String>> getResultList() {
 
+        ResponseDTO<Map<String, String>> response = new ResponseDTO<Map<String, String>>();
+        Map<String, String> initData = new HashMap<String, String>();
         List<ViewStatDTO> viewStatDTOList = viewStatService.getStatisticsDtos();
         Gson gson = new GsonBuilder().serializeNulls().create();
         LOG.info("getting data to be displayed");
 
-        String jsonResultList = gson.toJson(viewStatDTOList);
+        initData.put("resultList", gson.toJson(viewStatDTOList));
+        response.setSuccess(true);
+        response.setResult(initData);
 
-        return jsonResultList;
+        return response;
     }
 
-    @RequestMapping(value = "/gettechnologies", method = RequestMethod.POST)
+    @RequestMapping(value = "/viewstat/gettechnologies", method = RequestMethod.POST, headers = {"content-type=application/json"})
     @ResponseBody
-    public String getTechnologyList() {
+    public ResponseDTO<Map<String, String>> getTechnologyList() {
 
+        ResponseDTO<Map<String, String>> response = new ResponseDTO<Map<String, String>>();
+        Map<String, String> initData = new HashMap<String, String>();
         List<String> technologiesList = viewStatService.getTechnologies();
         Gson gson = new GsonBuilder().serializeNulls().create();
 
-        return  gson.toJson(technologiesList);
+        initData.put("technologyList", gson.toJson(technologiesList));
+
+        response.setSuccess(true);
+        response.setResult(initData);
+
+        return response;
     }
 
-    @RequestMapping(value = "/advsearchresult", method = RequestMethod.POST)
+    @RequestMapping(value = "/viewstat/advsearchresult", method = RequestMethod.POST, headers = {"content-type=application/json"})
     @ResponseBody
-    public String getAdvSearchResults(@RequestParam("technologies") String[] technologies){
+    public ResponseDTO<Map<String, String>> getAdvSearchResults(@RequestBody(required = false) String[] technologies) {
+        ResponseDTO<Map<String, String>> response = new ResponseDTO<Map<String, String>>();
+        Map<String, String> initData = new HashMap<String, String>();
         List<ViewStatDTO> advancedSearchResults = viewStatService.getAdvancedSearchResults(technologies);
         Gson gson = new GsonBuilder().serializeNulls().create();
         LOG.info("getting data to be displayed");
 
-        String jsonResultList = gson.toJson(advancedSearchResults);
+        initData.put("advancedSearchResults", gson.toJson(advancedSearchResults));
 
-        return jsonResultList;
+        response.setSuccess(true);
+        response.setResult(initData);
+
+        return response;
     }
 
-    @RequestMapping(value = "/getstat", method = RequestMethod.POST)
+    @RequestMapping(value = "/viewstat/getstat", method = RequestMethod.POST, headers = {"content-type=application/json"})
     @ResponseBody
-    public String getTechnologyScoreMap(@RequestParam("id") double id){
-        List<Map<String,Object>> techScoreList = viewStatService.getTechScoreMap(id);
-        Gson gson = new GsonBuilder().serializeNulls().create();
+    public ResponseDTO<Map<String, String>> getTechnologyScoreMap(@RequestBody(required = false) double id) {
         LOG.info("getting data to be displayed");
+        ResponseDTO<Map<String, String>> response = new ResponseDTO<Map<String, String>>();
+        Map<String, String> initData = new HashMap<String, String>();
+        Gson gson = new GsonBuilder().serializeNulls().create();
+        System.out.println("getstat id = "+id);
+        initData.put("techScoreList", gson.toJson(viewStatService.getTechScoreMap(id)));
 
-        String jsonResultList = gson.toJson(techScoreList);
+        response.setSuccess(true);
+        response.setResult(initData);
 
-        return jsonResultList;
+        return response;
     }
 
-    @RequestMapping(value = "/getcomparestats", method = RequestMethod.POST)
+    @RequestMapping(value = "/viewstat/getcomparestats", method = RequestMethod.POST, headers = {"content-type=application/json"})
     @ResponseBody
-    public String getCompareStats(@RequestParam("technologies") String[] technologies){
+    public ResponseDTO<Map<String, String>> getCompareStats(@RequestBody(required = false) String[] technologies) {
 
+        ResponseDTO<Map<String, String>> response = new ResponseDTO<Map<String, String>>();
+        Map<String, String> initData = new HashMap<String, String>();
         List<ViewStatDTO> compareAllList = viewStatService.getCompareAllResults(technologies);
         Gson gson = new GsonBuilder().serializeNulls().create();
-        String jsonResultList = gson.toJson(compareAllList);
 
-        return jsonResultList;
+        initData.put("compareAllList", gson.toJson(compareAllList));
+
+        response.setSuccess(true);
+        response.setResult(initData);
+
+        return response;
     }
 }

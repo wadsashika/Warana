@@ -83,13 +83,15 @@
                     </div>
                     <div class="panel-footer">
                         <div class="action-btn-row">
+                            <button type="button" id="backBtn" class="btn btn-primary action-btn">
+                                <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Back
+                            </button>
                             <button type="button" id="upload-all" class="btn btn-primary action-btn">
                                 <span class="glyphicon glyphicon-upload" aria-hidden="true"></span> Upload
                             </button>
                             <button type="button" id="remove-all" class="btn btn-primary action-btn">
                                 <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel All
                             </button>
-
                         </div>
                     </div>
                 </div>

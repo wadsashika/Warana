@@ -2,8 +2,6 @@ package com.cse.warana.service.impl;
 
 import com.cse.warana.dao.AnalyzedResultsDao;
 import com.cse.warana.dto.AnalyticResultsDTO;
-import com.cse.warana.dto.CandidateDTO;
-import com.cse.warana.dto.ResumesToAnalyseDto;
 import com.cse.warana.service.AnalyzedResultsService;
 import com.google.gson.Gson;
 import org.slf4j.Logger;
@@ -37,20 +35,18 @@ public class AnalyzedResultsServiceImpl implements AnalyzedResultsService {
     }
 
     @Override
-    public String getCandidateData(long id) {
+    public Map<String, String> getCandidateData(long id) {
 
-        Map<String,String> candidateData = new HashMap<>();
+        Map<String, String> candidateData = new HashMap<>();
         Gson gson = new Gson();
-        candidateData.put("profile",gson.toJson(analyzedResultsDao.getCandidateProfileData(id).get(0)));
-        candidateData.put("achievement",gson.toJson(analyzedResultsDao.getCandidateAchievementsData(id)));
-        candidateData.put("education",gson.toJson(analyzedResultsDao.getCandidateEducationData(id)));
-        candidateData.put("projects",gson.toJson(analyzedResultsDao.getCandidateProjectData(id)));
-        candidateData.put("publications",gson.toJson(analyzedResultsDao.getCandidatePublicationsData(id)));
-        candidateData.put("workexp",gson.toJson(analyzedResultsDao.getCandidateWorkExperienceData(id)));
+        candidateData.put("profile", gson.toJson(analyzedResultsDao.getCandidateProfileData(id).get(0)));
+        candidateData.put("achievement", gson.toJson(analyzedResultsDao.getCandidateAchievementsData(id)));
+        candidateData.put("education", gson.toJson(analyzedResultsDao.getCandidateEducationData(id)));
+        candidateData.put("projects", gson.toJson(analyzedResultsDao.getCandidateProjectData(id)));
+        candidateData.put("publications", gson.toJson(analyzedResultsDao.getCandidatePublicationsData(id)));
+        candidateData.put("workexp", gson.toJson(analyzedResultsDao.getCandidateWorkExperienceData(id)));
 
-        String candidateJson = gson.toJson(candidateData);
-
-        return candidateJson;
+        return candidateData;
     }
 
 

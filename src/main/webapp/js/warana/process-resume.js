@@ -30,7 +30,7 @@ WARANA.module.processResume = function () {
 
         var title = "Delete Confirmation";
         var msg = "Are you sure want to delete this CV?";
-        WARANA.deleteConfirmation(deleteResumeRow, title, msg);
+        WARANA.messageConfirmation(deleteResumeRow, title, msg);
     };
 
     var deleteResumeRow = function () {
@@ -82,12 +82,21 @@ WARANA.module.processResume = function () {
         location.href = "/warana/analyze";
     };
 
+    var backBtnClick = function () {
+        WARANA.messageConfirmation(backBtnSuccessFn, "Leave Page Confirmation", "Are you sure want to leave this page?");
+    };
+
+    var backBtnSuccessFn = function () {
+        location.href = "/warana/dashboard";
+    };
+
     return {
         init: function () {
             setFileListDataTable();
             $(document).on("click", "#select-all", selectAll);
             $(document).on("click", ".delete-resume", deleteResumeConfirmation);
             $(document).on("click", "#process-resume", processResumes);
+            $(document).on("click", "#backBtn", backBtnClick);
         }
     }
 }();

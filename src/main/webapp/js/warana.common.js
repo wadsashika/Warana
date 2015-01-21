@@ -236,7 +236,7 @@ WARANA.successMessageWithCallBack = function(successFn,msg) {
 };
 
 /* Delete confirmation alert */
-WARANA.deleteConfirmation = function(successFn,title, msg) {
+WARANA.messageConfirmation = function(successFn,title, msg) {
 
 	BootstrapDialog.show({
 		title : title,

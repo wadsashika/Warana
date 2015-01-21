@@ -58,6 +58,13 @@ WARANA.module.analyzeResume = function () {
         location.href = "/warana/viewstat";
     };
 
+    var backBtnClick = function () {
+        WARANA.messageConfirmation(backBtnSuccessFn, "Leave Page Confirmation", "Are you sure want to leave this page?");
+    };
+
+    var backBtnSuccessFn = function () {
+        location.href = "/warana/dashboard";
+    };
 
     return {
         init: function () {
@@ -65,6 +72,7 @@ WARANA.module.analyzeResume = function () {
 
             $(document).on("click", "#select-all", selectAll);
             $(document).on("click", "#analyze-candidate-btn", analyzeResumes);
+            $(document).on("click", "#backBtn", backBtnClick);
         }
     }
 
