@@ -74,7 +74,7 @@
                         <div id="select-all-row">
                             <h4><input type="checkbox" id="select-all" class="pages-select-all"/>Select All</h4>
                         </div>
-                        <div id="stat-table-div"></div>
+                        <div id="stat-table-div" class="table-responsive"></div>
                     </div>
                     <div class="panel-footer">
                         <div id="operation-buttons-row" class="action-btn-row">
