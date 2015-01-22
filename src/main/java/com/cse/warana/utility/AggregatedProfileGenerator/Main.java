@@ -27,9 +27,7 @@ public class Main {
 
     private String uploadsPath;
     public void CallName() {
-        /**
-         * TODO implement methods to confirm whether online profiles exactly represent the desired candidate
-         */
+
         String root="C:/Warana";
         String classifirePath="\\\\classifiers\\\\english.muc.7class.distsim.crf.ser.gz";
 

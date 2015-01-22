@@ -9,6 +9,7 @@ import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.PhraseA
 import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.GitHubExtractor;
 import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.GoogleScholarExtractor;
 import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.LinkedInExtractor;
+import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.WebCrawler.WebCrawler;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import com.cse.warana.utility.infoHolders.Candidate;
 
@@ -33,12 +34,13 @@ public class  OnlineInfoExtractor {
         LinkedInExtractor linkedIn = new LinkedInExtractor();
         GoogleScholarExtractor gscholar = new GoogleScholarExtractor();
         GitHubExtractor github = new GitHubExtractor("69e07dde89a8a0a6713f810cfd4c461f04f47e85");
-
+        WebCrawler webCrawler=new WebCrawler(candidate.getProfile());
         similarityCalculator = new Calculate();
 
         linkedIn.ExtractInformation( candidate);
         gscholar.Extract(candidate);
         github.Extract(candidate);
+        webCrawler.ExtractOnlineDocuments();
         if (pic_url.equalsIgnoreCase("")) {
             pic_url = "http://ryonaitis.files.wordpress.com/2012/03/images.jpg";
         }
