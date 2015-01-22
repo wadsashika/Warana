@@ -21,19 +21,21 @@ import java.util.Iterator;
  */
 public class Wikipedia {
     private NetworkManager networkManager;
-    public String filePath= Config.skillsPath;
+    public String filePath = Config.skillsPath;
     PhraseAnalyzer phraseAnalyzer;
     Google google;
+
     public Wikipedia() {
-        networkManager=new NetworkManager();
-        phraseAnalyzer=new PhraseAnalyzer();
-        google=new Google();
+        networkManager = new NetworkManager();
+        phraseAnalyzer = new PhraseAnalyzer();
+        google = new Google();
     }
-    public void GetTermsWikiAPI(String searchTerm){
-        ArrayList<String> terms=new ArrayList<String>();
+
+    public void GetTermsWikiAPI(String searchTerm) {
+        ArrayList<String> terms = new ArrayList<String>();
         JSONObject json = null;
-        searchTerm=searchTerm.replace(' ','-');
-        String url="http://en.wikipedia.org/w/api.php?format=json&action=query&titles="+searchTerm;
+        searchTerm = searchTerm.replace(' ', '-');
+        String url = "http://en.wikipedia.org/w/api.php?format=json&action=query&titles=" + searchTerm;
         String result = networkManager.Get(url);
         try {
             json = new JSONObject(result);
@@ -43,11 +45,11 @@ public class Wikipedia {
         try {
 //            System.out.println(json.getJSONObject("query").getJSONObject("pages").keys());
             Iterator keys = json.getJSONObject("query").getJSONObject("pages").keys();
-            while (keys.hasNext()){
-                String key=keys.next().toString();
+            while (keys.hasNext()) {
+                String key = keys.next().toString();
                 System.out.println(key);
-                if (!key.equals("-1")){
-                    String text=tokenizePage(key);
+                if (!key.equals("-1")) {
+                    String text = tokenizePage(key);
 //                    writeFile(searchTerm,text);
                 }
             }
@@ -56,23 +58,28 @@ public class Wikipedia {
         }
         return;
     }
-    public void GetTermsGoogle(String searchTerm){
 
-        boolean b = new File(filePath+"/"+searchTerm).mkdirs();
-        File file = new File(filePath + "/" + searchTerm);
-        if (file.list().length==0) {
-            ArrayList<String> links = google.FindOnWikipedia(searchTerm);
-            for (int i = 0; i < links.size(); i++) {
-                String link = links.get(i);
-                String text = tokenizePage(link);
-                if(text.length()>10)
-                writeFile(searchTerm, i + "", text);
-            }
+    public void GetTermsGoogle(String searchTerm) {
+        try {
+            boolean b = new File(filePath + "/" + searchTerm).mkdirs();
+            File file = new File(filePath + "/" + searchTerm);
+            if (file.list().length == 0) {
+                ArrayList<String> links = google.FindOnWikipedia(searchTerm);
+                for (int i = 0; i < links.size(); i++) {
+                    String link = links.get(i);
+                    String text = tokenizePage(link);
+                    if (text.length() > 10)
+                        writeFile(searchTerm, i + "", text);
+                }
 //            phraseAnalyzer.RecognizeTerms(Config.skillsPath + "/" + searchTerm, Config.skillsOutputPath + "/" + searchTerm );
+            }
+        } catch (Exception e) {
+            System.out.println("Invalid search term");
         }
     }
-    private String tokenizePage(String url){
-        ArrayList<String> terms=new ArrayList<String>();
+
+    private String tokenizePage(String url) {
+        ArrayList<String> terms = new ArrayList<String>();
 //        String url="http://en.wikipedia.org/wiki?curid="+url;
         Document doc = null;
         try {
@@ -87,34 +94,36 @@ public class Wikipedia {
 
         return body.text();
     }
-    private void writeFile(String skillName,String url,String text){
-        boolean b = new File(filePath+"/"+skillName).mkdirs();
+
+    private void writeFile(String skillName, String url, String text) {
+        boolean b = new File(filePath + "/" + skillName).mkdirs();
 //        if(b) {
-            File file = new File(filePath + "/" + skillName + "/" + url + ".txt");
-        if(file.exists())
+        File file = new File(filePath + "/" + skillName + "/" + url + ".txt");
+        if (file.exists())
             return;
-            // creates the file
-            try {
-                file.createNewFile();
-                // creates a FileWriter Object
-                FileWriter writer = new FileWriter(file);
-                // Writes the content to the file
-                writer.write(text);
-                writer.flush();
-                writer.close();
+        // creates the file
+        try {
+            file.createNewFile();
+            // creates a FileWriter Object
+            FileWriter writer = new FileWriter(file);
+            // Writes the content to the file
+            writer.write(text);
+            writer.flush();
+            writer.close();
 //                new File(filePath + "/" + skillName+"_out").mkdirs();
 //                phraseAnalyzer.RecognizeTerms(filePath + "/" + skillName, filePath + "/" + skillName + "_out");
 
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
-    public static void main(String[] args){
-        Wikipedia wiki=new Wikipedia();
+
+    public static void main(String[] args) {
+        Wikipedia wiki = new Wikipedia();
         wiki.GetTermsGoogle("unity 3D");
 
-        PhraseAnalyzer ph=new PhraseAnalyzer();
+        PhraseAnalyzer ph = new PhraseAnalyzer();
 //        ph.RecognizeTerms("D:\\Projects\\Repositories\\Final Year Project\\SigmaCV finder 2\\src\\com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker\\Skills\\SkillDocs\\image processing","D:\\Projects\\Repositories\\Final Year Project\\SigmaCV finder 2\\src\\com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker\\Skills\\SkillDocs\\image processing_out");
     }
 
