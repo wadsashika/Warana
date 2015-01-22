@@ -75,7 +75,7 @@ public class AnalyzeController {
     @ResponseBody
     public ResponseDTO<Map<String, String>> deleteResume(@RequestBody (required = false) long id) {
         LOG.info("Retrieving candidate profile information");
-        System.out.println("Profile id = "+id);
+
         ResponseDTO<Map<String, String>> response = new ResponseDTO<Map<String, String>>();
 
         response.setSuccess(true);

@@ -26,7 +26,8 @@ public class  OnlineInfoExtractor {
     private Calculate similarityCalculator;
 
 
-    public OnlineInfoExtractor(Candidate candidate){
+    public OnlineInfoExtractor(Candidate candidate,String rootPath){
+        Config.initialize(rootPath);
         this.candidate = candidate;
         this.name=candidate.getProfile().getName();
         this.phraseAnalyzer = new PhraseAnalyzer();

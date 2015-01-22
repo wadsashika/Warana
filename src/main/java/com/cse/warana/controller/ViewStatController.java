@@ -101,7 +101,7 @@ public class ViewStatController {
         ResponseDTO<Map<String, String>> response = new ResponseDTO<Map<String, String>>();
         Map<String, String> initData = new HashMap<String, String>();
         Gson gson = new GsonBuilder().serializeNulls().create();
-        System.out.println("getstat id = "+id);
+
         initData.put("techScoreList", gson.toJson(viewStatService.getTechScoreMap(id)));
 
         response.setSuccess(true);

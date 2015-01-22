@@ -86,8 +86,8 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
 
 
     @Override
-    public void extractOnlineProfileInformation(Candidate candidate) {                  // Candidate should be initalized with CV info before calling this method
-        OnlineInfoExtractor onlineInfoExtractor=new OnlineInfoExtractor(candidate);
+    public void extractOnlineProfileInformation(Candidate candidate, String rootPath) {                  // Candidate should be initalized with CV info before calling this method
+        OnlineInfoExtractor onlineInfoExtractor=new OnlineInfoExtractor(candidate,rootPath);
     }
 
 //    public static void main(String[] args){

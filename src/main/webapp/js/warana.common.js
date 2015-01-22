@@ -266,3 +266,16 @@ WARANA.messageConfirmation = function(successFn,title, msg) {
 	});
 };
 
+$.fn.extend({
+    enabled : function() {
+        return this.each(function() {
+            $(this).prop('disabled', false);
+        });
+    },
+    disabled : function() {
+        return this.each(function() {
+            $(this).prop('disabled', true);
+        });
+    },
+});
+

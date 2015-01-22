@@ -46,7 +46,7 @@ public class Main {
 
         generatorService.extractCVInformation(cvParserService,cv);
         generatorService.generateCandidateProfile(candidate);
-        OnlineInfoExtractor onlineInfoExtractor=new OnlineInfoExtractor(candidate);
+       // OnlineInfoExtractor onlineInfoExtractor=new OnlineInfoExtractor(candidate);
 
 //        CallName();
     }

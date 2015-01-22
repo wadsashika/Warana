@@ -19,7 +19,7 @@ public interface CandidateProfileGeneratorService {
     /**
      * Extract the candidate information from online profiles
      */
-    public void extractOnlineProfileInformation(Candidate candidate);
+    public void extractOnlineProfileInformation(Candidate candidate, String rootPath);
 
     public Candidate generateCandidateProfile(Candidate candidate);
 }

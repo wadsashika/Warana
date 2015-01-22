@@ -52,7 +52,7 @@
                     </div>
                     <div class="panel-footer">
                         <div id="operation-buttons-row" class="action-btn-row">
-                            <button type="button" id="backBtn" class="btn btn-primary action-btn">
+                            <button type="button" class="btn btn-primary action-btn" id="backBtn">
                                 <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Back
                             </button>
                             <button type="button" class="btn btn-primary action-btn" id="saveProfile">
