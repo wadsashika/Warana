@@ -65,6 +65,12 @@ public class WebCrawler {
         return driver;
     }
 
+    public void ExtractOnlineDocuments(){
+        if (profile.getBlogUrl().length()>0){
+            GetLinks(profile.getBlogUrl());
+        }
+    }
+
     public void GetLinks(String source){
 
         ArrayList<String> allLinks=new ArrayList<String>();
