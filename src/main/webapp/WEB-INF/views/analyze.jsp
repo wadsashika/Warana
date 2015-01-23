@@ -13,6 +13,22 @@
 
 
 <div id="wrapper">
+    <c:if test="${not empty resumesToProcess}">
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#analyze-candidate-btn').prop('disabled', false);
+            });
+        </script>
+    </c:if>
+
+    <c:if test="${empty resumesToProcess}">
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#analyze-candidate-btn').prop('disabled', true);
+            });
+        </script>
+    </c:if>
+
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
@@ -61,11 +77,11 @@
                     </div>
                     <div class="panel-footer">
                         <div id="operation-buttons-row" class="action-btn-row">
-                            <button type="button" class="btn btn-success action-btn" id="analyze-candidate-btn">
-                                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Analyze
+                            <button type="button" id="backBtn" class="btn btn-primary action-btn">
+                                <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Back
                             </button>
-                            <button type="button" id="clear-selection" class="btn btn-warning action-btn">
-                                <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Clear
+                            <button type="button" class="btn btn-primary action-btn" id="analyze-candidate-btn">
+                                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Analyze
                             </button>
                         </div>
                     </div>

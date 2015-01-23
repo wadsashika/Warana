@@ -77,10 +77,10 @@ public class ProcessResumeController {
         return model;
     }
 
-    @RequestMapping(value = "/process/delete", method = RequestMethod.POST)
+    @RequestMapping(value = "/process/delete", method = RequestMethod.POST, headers = {"content-type=application/json"})
     @ResponseBody
-    public boolean deleteResume(@RequestParam("fileName") String fileName){
-
+    public boolean deleteResume(@RequestBody(required = false) String fileName){
+        fileName = fileName.replace("\"","");
         String baseDirectory = root + uploadsPath;
         File resumeFile = new File(baseDirectory + File.separator + fileName);
         boolean status = false;
@@ -95,16 +95,19 @@ public class ProcessResumeController {
         return status;
     }
 
-    @RequestMapping(value = "/process/processlist", method = RequestMethod.POST)
+    @RequestMapping(value = "/process/processlist", method = RequestMethod.POST, headers = {"content-type=application/json"})
     @ResponseBody
     public boolean processSelectedResumes(@RequestBody String[] fileNames){
 
         HashMap<String,String> paths = new HashMap<>();
+//        paths.put("root","src\\main\\resources");
         paths.put("root",root);
+//        paths.put("classifirePath","\\classifiers\\english.muc.7class.distsim.crf.ser.gz");
         paths.put("classifirePath",classifirePath);
-        paths.put("listPath",listPath);
+        paths.put("listPath",File.separator+"gazeteerLists");
 
         String baseDirectory = root + uploadsPath;
+//        String baseDirectory = "C:\\Warana\\Uploads";
         ArrayList<Candidate> candidateArrayList = new ArrayList<>();
         for (int a = 0; a < fileNames.length; a++){
             System.out.println(fileNames[a]);
@@ -116,6 +119,8 @@ public class ProcessResumeController {
             profileGeneratorService.extractCVInformation(cvParserService,new File(baseDirectory + File.separator + fileNames[a]));
             candidateArrayList.add(profileGeneratorService.generateCandidateProfile(candidate));
 
+            profileGeneratorService.extractOnlineProfileInformation(candidate, paths.get("root"));
+
             long candidate_id = storeProcessedResumeService.storeCandidateTableData(candidate);
 
             storeProcessedResumeService.storeEducationalTableData(candidate,candidate_id);
@@ -123,11 +128,17 @@ public class ProcessResumeController {
             storeProcessedResumeService.storeProjectTableData(candidate,candidate_id);
             storeProcessedResumeService.storeRefereeTableData(candidate,candidate_id);
             storeProcessedResumeService.storeWorkTableData(candidate,candidate_id);
-            storeProcessedResumeService.storeNewTechnologies(cvParserService.getNewTechnologies());
-            storeProcessedResumeService.storeCandidateTechnologies(candidate,candidate_id);
+//            storeProcessedResumeService.storeNewTechnologies(cvParserService.getNewTechnologies());
+//            storeProcessedResumeService.storeCandidateTechnologies(candidate,candidate_id);
             resumesToProcessService.uploadedResumeStatusUpdate(fileNames[a],"PROCESSED");
         }
 
         return true;
     }
+
+//    public static void main(String[] args){
+//        ProcessResumeController p = new ProcessResumeController();
+//        String[] names = {"090225B_Jayawardana D.D.S.L.pdf"};
+//        p.processSelectedResumes(names);
+//    }
 }

@@ -39,8 +39,8 @@
                 <a href='<c:url value="/dashboard" />'><img src='<c:url value="/images/logo-icon.png" />'></a>
             </div>
             <sec:authorize ifNotGranted="ROLE_USER">
-                <div class="collapse navbar-collapse">
-                    <div class="hidden-sm">
+                <div class="collapse navbar-collapse header-small-icon">
+                    <div class="hidden-xs">
                         <ul class="nav navbar-nav navbar-right">
                             <li>
                                 <button id="loginBtn" data-toggle="modal" href="#login-popup" class="top-buttons">Sign
@@ -52,28 +52,24 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="visible-sm">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <button data-toggle="dropdown"
-                                        class="top-buttons last-button dropdown-toggle"><span
-                                        class="glyphicon glyphicon-align-justify"></span>
-                                </button>
-                                <ul class="dropdown-menu home-links" role="menu">
-                                    <li><a data-toggle="modal" href="#login-popup"><span
-                                            class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
-                                    <li class="divider"></li>
-                                    <li><a id="signupBtnSm" href="<c:url value="/#"/>"><span
-                                            class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="visible-xs">
+                    <button type="button" data-toggle="dropdown"
+                            class="top-buttons last-button dropdown-toggle float-right" aria-expanded="false"><span
+                            class="glyphicon glyphicon-align-justify"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right home-links" role="menu">
+                        <li><a data-toggle="modal" href="#login-popup"><span
+                                class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+                        <li class="divider"></li>
+                        <li><a id="signupBtnSm" href="<c:url value="/#"/>"><span
+                                class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    </ul>
                 </div>
             </sec:authorize>
             <sec:authorize ifAnyGranted="ROLE_USER">
-                <div class="collapse navbar-collapse">
-                    <div class="hidden-sm">
+                <div class="collapse navbar-collapse header-small-icon">
+                    <div class="hidden-xs">
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dashboard-btn">
                                 <a href="<c:url value="/dashboard"/>">
@@ -86,7 +82,7 @@
                                         class="top-buttons last-button dropdown-toggle">${sessionScope.firstName} ${sessionScope.lastName}
                                 </button>
                                 <ul class="dropdown-menu home-links" role="menu">
-                                    <li><a href="<c:url value="/#"/>"><span
+                                    <li><a href="<c:url value="/myprofile"/>"><span
                                             class="glyphicon glyphicon-user"></span> My Profile</a></li>
                                     <li class="divider"></li>
                                     <li><a href="<c:url value="/j_spring_security_logout" />"><span
@@ -94,31 +90,26 @@
                                 </ul>
                             </li>
 
-                        </ul>
-                    </div>
-                    <div class="visible-sm">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <button data-toggle="dropdown"
-                                        class="top-buttons last-button dropdown-toggle"><span
-                                        class="glyphicon glyphicon-align-justify"></span>
-                                </button>
-                                <ul class="dropdown-menu home-links" role="menu">
-                                    <li><a href="<c:url value="/dashboard"/>"><span
-                                            class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="<c:url value="/#"/>"><span
-                                            class="glyphicon glyphicon-user"></span> My Profile</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="<c:url value="/j_spring_security_logout" />"><span
-                                            class="glyphicon glyphicon-log-out"></span> Logout</a></li>
-                                </ul>
-                            </li>
                         </ul>
                     </div>
                 </div>
+                <div class="visible-xs">
+                    <button type="button" data-toggle="dropdown"
+                            class="top-buttons last-button dropdown-toggle float-right" aria-expanded="false"><span
+                            class="glyphicon glyphicon-align-justify"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right home-links" role="menu">
+                        <li><a href="<c:url value="/dashboard"/>"><span
+                                class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+                        <li class="divider"></li>
+                        <li><a href="<c:url value="/myprofile"/>"><span
+                                class="glyphicon glyphicon-user"></span> My Profile</a></li>
+                        <li class="divider"></li>
+                        <li><a href="<c:url value="/j_spring_security_logout" />"><span
+                                class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                    </ul>
+                </div>
             </sec:authorize>
         </div>
-
     </nav>
 </header>

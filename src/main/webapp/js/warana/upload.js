@@ -20,15 +20,15 @@ WARANA.module.uploadCv = function () {
             previewsContainer: "#previews", // Define the container to display the previews
             autoProcessQueue: false,
             clickable: "#add-files",
-            success: function(file, response){
+            success: function (file, response) {
                 var status = response.status;
                 var errorString = "";
                 var notifications_div = document.getElementById("notification-div");
 
-                if (status == "false"){
+                if (status == "false") {
                     var fileNames = response.files;
-                    for (var a = 0; a < fileNames.length; a++){
-                        errorString = errorString.concat(fileNames[a]+ ",");
+                    for (var a = 0; a < fileNames.length; a++) {
+                        errorString = errorString.concat(fileNames[a] + ",");
                     }
 
                     notifications_div.className = "alert alert-danger";
@@ -45,7 +45,14 @@ WARANA.module.uploadCv = function () {
     };
 
     var clearMessage = function () {
-      document.getElementById("notification-div").style.display = "none";
+        document.getElementById("notification-div").style.display = "none";
+    };
+
+    var removeAllFilesConfirmation = function () {
+        var title = "Cancel All Uploads";
+        var msg = "Are you sure want to cancel all files?";
+
+        WARANA.messageConfirmation(removeAllFiles, title, msg);
     };
 
     var removeAllFiles = function () {
@@ -56,12 +63,21 @@ WARANA.module.uploadCv = function () {
         myDropzone.processQueue();
     };
 
+    var backBtnClick = function () {
+        WARANA.messageConfirmation(backBtnSuccessFn, "Leave Page Confirmation", "Are you sure want to leave this page?");
+    };
+
+    var backBtnSuccessFn = function () {
+        location.href = "/warana/dashboard";
+    };
+
     return {
         init: function () {
             initialize();
-            $(document).on("click", "#remove-all", removeAllFiles);
+            $(document).on("click", "#remove-all", removeAllFilesConfirmation);
             $(document).on("click", "#upload-all", uploadAllFiles);
             $(document).on("click", "#add-doc-btn", clearMessage);
+            $(document).on("click", "#backBtn", backBtnClick);
         }
     };
 

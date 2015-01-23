@@ -8,40 +8,44 @@
             });
         </script>
     </c:if>
-    <div id="login-popup" class="modal  fade" tabindex="-1" data-width="350">
-        <c:if test="${not empty error}">
-            <div class="login-error">
-                <div class="ln">Username and password do not match</div>
+    <div id="login-popup" class="modal  fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <c:if test="${not empty error}">
+                    <div class="login-error">
+                        <div class="ln">Username and password do not match</div>
+                    </div>
+                </c:if>
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+                    <h3>User Login</h3>
+                </div>
+                <c:url value="/j_spring_security_check" var="loginUrl"/>
+                <form class="login-form" role="form" action="${loginUrl}" method='POST'>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <input type="email" class="mand form-control" placeholder="Email" name="j_username"
+                                           id="inputEmail3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password" name="j_password"
+                                           id="inputPassword3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary col-xs-12">Login</button>
+                    </div>
+                </form>
             </div>
-        </c:if>
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-            <h3>User Login</h3>
         </div>
-        <c:url value="/j_spring_security_check" var="loginUrl"/>
-        <form class="login-form" role="form" action="${loginUrl}" method='POST'>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <input type="email" class="mand form-control" placeholder="Email" name="j_username"
-                                   id="inputEmail3">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Password" name="j_password"
-                                   id="inputPassword3">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="submit" class="btn btn-primary col-sm-12">Login</button>
-            </div>
-        </form>
     </div>
 </div>
 
@@ -188,10 +192,6 @@
         </div>
     </div>
 </sec:authorize>
-<link href='<c:url value="/css/bootstrap-modal.css" />' rel="stylesheet" type="text/css"/>
-<link href='<c:url value="/css/bootstrap-modal-bs3patch.css" />' rel="stylesheet" type="text/css"/>
 
-<script src='<c:url value="/js/bootstrap-modal.js" />' type="text/javascript"></script>
-<script src='<c:url value="/js/bootstrap-modalmanager.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/warana/home.js" />' type="text/javascript"></script>
 <%@include file="footer.jsp" %>

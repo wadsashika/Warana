@@ -26,13 +26,14 @@
         <logout logout-success-url="/home"/>
     </http>
 
-    <beans:bean id="successHandler" class="com.cse.warana.controller.UserAuthenticationSuccessHandler">
+    <beans:bean id="successHandler" class="com.cse.warana.login.UserAuthenticationSuccessHandler">
         <beans:property name="defaultTargetUrl" value="/dashboard"/>
         <beans:property name="alwaysUseDefaultTargetUrl" value="false"/>
     </beans:bean>
 
     <authentication-manager alias="authenticationManager">
         <authentication-provider>
+            <password-encoder ref="passwordEncoder"/>
             <jdbc-user-service data-source-ref="dataSource"
                                users-by-username-query="SELECT user_name, password, 1 AS enabled
                                FROM warana.user WHERE user_name=?"
@@ -41,4 +42,5 @@
         </authentication-provider>
     </authentication-manager>
 
+    <beans:bean id="passwordEncoder" class="com.cse.warana.login.UserPasswordEncoder"></beans:bean>
 </beans:beans>

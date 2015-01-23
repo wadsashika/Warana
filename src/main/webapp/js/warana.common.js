@@ -160,58 +160,83 @@ WARANA.scrollToElement = function(ele) {
 	$(window).scrollTop(ele.offset().top).scrollLeft(ele.offset().left);
 };
 
+/* Success Message*/
+WARANA.successConfirmMessage = function(successFn, title, msg) {
 
-/* Cancel confirmation alert */
-WARANA.cancelConfirmation = function(successFn, text) {
-	var key = 1;
-	var msg = "Are you sure, you want to cancel this {1}?";
-	var title = "Cancel {1}";
-	text = text || "Record";
-	msg = msg.replace(new RegExp("\\{" + key + "\\}", "g"), function() {
-		return text;
-	});
-	title = title.replace(new RegExp("\\{" + key + "\\}", "g"), function() {
-		return text;
-	});
+    BootstrapDialog.show({
+        title : title,
+        message : msg,
+        cssClass : 'message-box',
+        type : BootstrapDialog.TYPE_SUCCESS,
+        buttons : [
+            {
+                label : 'Yes',
+                icon: 'glyphicon glyphicon-ok',
+                cssClass : 'btn-success',
+                action : function(dialogRef) {
+                    dialogRef.close();
+                    if (_.isFunction(successFn)) {
+                        successFn.call();
+                    }
+                }
+            },
+            {
+                label : 'No',
+                icon: 'glyphicon glyphicon-remove',
+                cssClass : 'btn-success',
+                action : function(dialogRef) {
+                    dialogRef.close();
+                }
+            }
+        ]
+    });
+};
 
-	BootstrapDialog.show({
-		title : title,
-		message : msg,
-		cssClass : 'message-box',
-		buttons : [
-			{
-				label : 'Yes',
-				cssClass : 'btn-primary',
-				action : function(dialogRef) {
-					dialogRef.close();
-					if (_.isFunction(successFn)) {
-						successFn.call();
-					}
-				}
-			},
-			{
-				label : 'No',
-				cssClass : 'btn-primary',
-				action : function(dialogRef) {
-					dialogRef.close();
-				}
-			}
-		]
-	});
+WARANA.successMessage = function(msg) {
+
+    BootstrapDialog.show({
+        title : "Success",
+        message : msg,
+        cssClass : 'message-box',
+        type : BootstrapDialog.TYPE_SUCCESS,
+        buttons : [
+            {
+                label : 'Ok',
+                icon: 'glyphicon glyphicon-ok',
+                cssClass : 'btn-success',
+                action : function(dialogRef) {
+                    dialogRef.close();
+                }
+            }
+        ]
+    });
+};
+
+WARANA.successMessageWithCallBack = function(successFn,msg) {
+
+    BootstrapDialog.show({
+        title : "Success",
+        message : msg,
+        cssClass : 'message-box',
+        type : BootstrapDialog.TYPE_SUCCESS,
+        buttons : [
+            {
+                label : 'Ok',
+                icon: 'glyphicon glyphicon-ok',
+                cssClass : 'btn-success',
+                action : function(dialogRef) {
+                    dialogRef.close();
+                    if (_.isFunction(successFn)) {
+                        successFn.call();
+                    }
+                }
+            }
+        ]
+    });
 };
 
 /* Delete confirmation alert */
-WARANA.deleteConfirmation = function(successFn, text) {
-	var key = 1;
-	var msg = "Are you sure, you want to Delete this {1}?";
-	var title = "Delete {1}";
-	text = text || "Record";
-	msg = msg.replace(new RegExp("\\{" + key + "\\}", "g"), function() {
-		return text;
-	});
-	title = title.replace(new RegExp("\\{" + key + "\\}", "g"), function() {
-		return text;
-	});
+WARANA.messageConfirmation = function(successFn,title, msg) {
 
 	BootstrapDialog.show({
 		title : title,
@@ -220,6 +245,7 @@ WARANA.deleteConfirmation = function(successFn, text) {
 		buttons : [
 			{
 				label : 'Yes',
+                icon: 'glyphicon glyphicon-ok',
 				cssClass : 'btn-primary',
 				action : function(dialogRef) {
 					dialogRef.close();
@@ -230,6 +256,7 @@ WARANA.deleteConfirmation = function(successFn, text) {
 			},
 			{
 				label : 'No',
+                icon: 'glyphicon glyphicon-remove',
 				cssClass : 'btn-primary',
 				action : function(dialogRef) {
 					dialogRef.close();
@@ -239,132 +266,16 @@ WARANA.deleteConfirmation = function(successFn, text) {
 	});
 };
 
-/* Copy confirmation alert */
-WARANA.copyConfirmation = function(successFn, cancelFn, text, closeFn) {
-	if (parent && parent.WARANA && parent.WARANA.module && parent.WARANA.module.homepage) {
-		var element = parent.WARANA.module.homepage.getConfirmMessageBox();
-		var messageDiv = $("<div></div>");
-		element.empty().append(messageDiv);
-		var key = 1;
-		var msg = "Are you sure, you want to copy this {1}?";
-		var title = "Copy {1}";
-		text = text || "Record";
-		msg = msg.replace(new RegExp("\\{" + key + "\\}", "g"), function() {
-			return text;
-		});
-		title = title.replace(new RegExp("\\{" + key + "\\}", "g"), function() {
-			return text;
-		});
-		messageDiv.attr('title', title);
-		messageDiv.append($('<p><label>' + msg + '</label></p>'));
-		messageDiv.dialog({
-			height : 140,
-			title : title,
-			modal : true,
-			close : function() {
-				if (_.isFunction(closeFn)) {
-					closeFn.call();
-				}
-			},
-			buttons : {
-				Yes : function() {
-					messageDiv.dialog('close');
-					if (_.isFunction(successFn)) {
-						successFn.call();
-					}
-				},
-				No : function() {
-					messageDiv.dialog('close');
-					if (_.isFunction(cancelFn)) {
-						cancelFn.call();
-					}
-				}
-			},
-			draggable : false,
-			resizable : false
-		});
-	}
-};
-
-/* page leave confirmation dialog */
-WARANA.leaveConfirmation = function(successFn) {
-	var msg = "Your changes might be discarded. Are you sure you want to leave this page?";
-	var title = "Leave this page";
-
-	BootstrapDialog.show({
-		title : title,
-		message : msg,
-		cssClass : 'message-box',
-		buttons : [
-			{
-				label : 'Yes',
-				cssClass : 'btn-primary',
-				action : function(dialogRef) {
-					dialogRef.close();
-					if (_.isFunction(successFn)) {
-						successFn.call();
-					}
-				}
-			},
-			{
-				label : 'No',
-				cssClass : 'btn-primary',
-				action : function(dialogRef) {
-					dialogRef.close();
-				}
-			}
-		]
-	});
-};
-
-/* validation error object */
-var ValidationException = function(element, errorMsg, parameters) {
-	var pElement = element;
-	var pErrorMsg = errorMsg;
-	var pParameters = parameters;
-
-	this.getElement = function() {
-		return pElement;
-	};
-
-	this.getErrorMessage = function() {
-		return pErrorMsg;
-	};
-
-	this.getParameters = function() {
-		if (pParameters == null) {
-			pParameters = {};
-		}
-		return pParameters;
-	};
-};
-/**
- * This function helps to autocomplete the date format MMDDYYY
- * Converts M to 0M and MMD to MM0D. Ex. `1/` to `01/`, `01/1/` to `01/01/`
- * Adds slash for MM and MMDD Ex. `01` to `01/`, `01/02` to `01/02/`
- * Converts YY to YYYY. Ex. `01/01/01` to `01/01/2001`
- *
- * @param {String} str
- * @return {String}
- */
-var autocompleteMMDDYYYYDateFormat = function(str) {
-	str = str.trim();
-	var matches, year,
-		looksLike_MM_slash_DD = /^(\d\d\/)?\d\d$/,
-		looksLike_MM_slash_D_slash = /^(\d\d\/)?(\d\/)$/,
-		looksLike_MM_slash_DD_slash_DD = /^(\d\d\/\d\d\/)(\d\d)$/;
-
-	if (looksLike_MM_slash_DD.test(str)) {
-		str += "/";
-	} else if (looksLike_MM_slash_D_slash.test(str)) {
-		str = str.replace(looksLike_MM_slash_D_slash, "$10$2");
-	} else if (looksLike_MM_slash_DD_slash_DD.test(str)) {
-		matches = str.match(looksLike_MM_slash_DD_slash_DD);
-		year = Number(matches[2]) < 20 ? "20" : "19";
-		str = String(matches[1]) + year + String(matches[2]);
-	}
-	return str;
-};
-
-ValidationException.prototype = new Error();
+$.fn.extend({
+    enabled : function() {
+        return this.each(function() {
+            $(this).prop('disabled', false);
+        });
+    },
+    disabled : function() {
+        return this.each(function() {
+            $(this).prop('disabled', true);
+        });
+    },
+});
 

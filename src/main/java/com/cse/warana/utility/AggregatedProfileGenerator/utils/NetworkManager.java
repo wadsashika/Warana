@@ -36,7 +36,7 @@ public class NetworkManager {
 //            Document doc = Jsoup.parse(String.valueOf(tmp));
 //            System.out.println("result " + tmp.toString());
             info = tmp.toString();
-//            ShowInfo(tmp.toString());
+//            AddInfo(tmp.toString());
         } catch (SocketTimeoutException e) {
             System.out.println("More than  elapsed.");
         } catch (MalformedURLException e) {

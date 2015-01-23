@@ -38,8 +38,9 @@ WARANA.module.home = function () {
 
             var successFn = function (result) {
                 if (result.success) {
-                    WARANA.message(WARANA.messageType.SUCCESS, result.message);
-                    loginSuccessFn();
+                    var title = "Success";
+                    var msg = "Your registration is success. Do you want to sign in now?"
+                    WARANA.successConfirmMessage(loginSuccessFn,title,msg);
                 } else {
                     WARANA.message(WARANA.messageType.ERROR, result.message);
                 }
@@ -56,9 +57,9 @@ WARANA.module.home = function () {
     var loginSuccessFn = function () {
         var email = $("#email").val();
         clearFields();
-        $("#loginBtn").trigger("click");
         $("#inputEmail3").val(email);
         $("#inputPassword3").val("");
+        $("#loginBtn").trigger("click");
     };
 
     var clearFields = function () {

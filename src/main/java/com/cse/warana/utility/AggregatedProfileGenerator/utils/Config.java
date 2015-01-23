@@ -1,5 +1,6 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.utils;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -11,13 +12,14 @@ import java.util.Properties;
 public final class Config {
 
     private static  String rootPath;
-    static {
+
+    public static void initialize(String propertyRoot){
         Properties prop = new Properties();
         InputStream input = null;
 
         try {
 
-            input = new FileInputStream("src/main/resources/warana.properties");
+            input = new FileInputStream(propertyRoot+ File.separator+"warana.properties");
 
             // load a properties file
             prop.load(input);
@@ -38,6 +40,34 @@ public final class Config {
             }
         }
     }
+
+//    static {
+//        Properties prop = new Properties();
+//        InputStream input = null;
+//
+//        try {
+//
+//            input = new FileInputStream("src/main/resources/warana.properties");
+//
+//            // load a properties file
+//            prop.load(input);
+//
+//            // get the property value and print it out
+//            rootPath = prop.getProperty("warana.resources.root");
+//
+//
+//        } catch (IOException ex) {
+//            ex.printStackTrace();
+//        } finally {
+//            if (input != null) {
+//                try {
+//                    input.close();
+//                } catch (IOException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        }
+//    }
 
 
     public static final String skillsPath=            rootPath+"/Docs/SkillDocs";

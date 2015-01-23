@@ -111,6 +111,11 @@ footer .footer-content .social {
     border-right: none;
 }
 
+.header-small-icon{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
 .login-form .form-control{
     height: 34px;
     font-size: 14px;
@@ -122,11 +127,15 @@ footer .footer-content .social {
 
 .login-error .ln {
     position: absolute;
-    left: 19%;
+    left: 30%;
     top: 63%;
     font-size: 11px;
     color: red;
     padding: 5px 15px;
+}
+
+#login-popup .modal-dialog{
+    width: 400px;
 }
 
 .carousel-inner img{
