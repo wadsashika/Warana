@@ -13,7 +13,7 @@ import javax.persistence.TypedQuery;
  * on Dec 16 0016, 2014.
  */
 @Repository("loginDao")
-public class LoginDaoImpl extends BaseJPADaoImpl implements LoginDao {
+public class LoginDaoImpl extends BaseJPADaoImpl<User> implements LoginDao {
     private static final Logger LOG = LoggerFactory.getLogger(LoginDaoImpl.class);
 
     @Override

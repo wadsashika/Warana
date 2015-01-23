@@ -12,7 +12,7 @@
             <div class="col-xs-12">
                 <div class="panel panel-primary">
                     <div class="panel-body">
-                        <div id="signup-form-body" class="form-horizontal">
+                        <div id="profile-body" class="form-horizontal">
                             <div class="form-group">
                                 <div class="col-sm-12 col-md-2">
                                     <label for="firstName" class="mand not-bold">First Name</label>
