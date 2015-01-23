@@ -1,6 +1,7 @@
 package com.cse.warana.service.impl;
 
 import com.cse.warana.dao.LoginDao;
+import com.cse.warana.dto.ChangePasswordDTO;
 import com.cse.warana.dto.UserSignupDTO;
 import com.cse.warana.model.User;
 import com.cse.warana.service.LoginService;
@@ -43,5 +44,18 @@ public class LoginServiceImpl implements LoginService {
         userProfile.setUserName(user.getEmail());
 
         return userProfile;
+    }
+
+    @Override
+    @TransactionAttribute(TransactionAttributeType.REQUIRED)
+    public boolean changePassword(ChangePasswordDTO changePasswordDTO, String username) {
+        User userProfile = loginDao.getUser(username);
+        System.out.println(userProfile.getPassword()+"--"+changePasswordDTO.getOldPassword());
+        if (userProfile.getPassword().equals(changePasswordDTO.getOldPassword())) {
+            userProfile.setPassword(changePasswordDTO.getNewPassword());
+            return true;
+        } else {
+            return false;
+        }
     }
 }

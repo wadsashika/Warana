@@ -125,6 +125,10 @@ WARANA.module.myProfile = function () {
         $("#editProfile").disabled();
     };
 
+    var changePassword = function(){
+        location.href = "/warana/myprofile/changepassword";
+    };
+
     return {
         init: function () {
             initProfile();
@@ -132,6 +136,7 @@ WARANA.module.myProfile = function () {
             $(document).on("click", "#saveProfile", saveEditedProfile);
             $(document).on("click", "#resetProfile", resetProfile);
             $(document).on("click", "#backBtn", goBackClick);
+            $(document).on("click", "#changePassword", changePassword);
         }
     };
 }();
