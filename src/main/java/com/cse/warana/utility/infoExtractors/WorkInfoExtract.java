@@ -60,8 +60,16 @@ public class WorkInfoExtract {
             for (int b = (headingLines.get(a).intValue() + 1); b < lines.size(); b++) {
                 lineText = lines.get(b);
                 if (allHeadings.contains(String.valueOf(b))) {
-                    if (work!=null){
-                        worksList.add(work);
+                    boolean duplicate = false;
+                    if (work != null && !work.getCompanyName().toLowerCase().equals("pvt) ltd")) {
+                        for (int x = 0; x < worksList.size(); x++) {
+                            if (worksList.get(x).getCompanyName().toLowerCase().equals(work.getCompanyName().toLowerCase())) {
+                                duplicate = true;
+                            }
+                        }
+                        if (!duplicate) {
+                            worksList.add(work);
+                        }
                     }
                     break;
                 } else {
@@ -71,8 +79,17 @@ public class WorkInfoExtract {
                      * Need to mention the "at" before the company name
                      */
 
-                    if (foundCompany && work != null) {
-                        worksList.add(work);
+                    if (foundCompany && work != null && !work.getCompanyName().toLowerCase().equals("pvt) ltd")) {
+                        boolean duplicate = false;
+
+                        for (int x = 0; x<worksList.size(); x++){
+                            if (worksList.get(x).getCompanyName().toLowerCase().equals(work.getCompanyName().toLowerCase())){
+                                duplicate = true;
+                            }
+                        }
+                        if (!duplicate){
+                            worksList.add(work);
+                        }
                         foundCompany = false;
                         work = null;
                     }
@@ -112,7 +129,6 @@ public class WorkInfoExtract {
                         classifierText = classifier.classifyWithInlineXML(lineText);
 
                         if (classifierText.contains("<ORGANIZATION>")) {
-                            work = new Work();
                             Pattern pattern = Pattern.compile("<ORGANIZATION>(.*?)</ORGANIZATION>");
                             Matcher matcher = pattern.matcher(classifierText);
                             while (matcher.find()) {
@@ -126,6 +142,7 @@ public class WorkInfoExtract {
                                 }
                                 jobPosition = checkJobPositions(b, currentLine, lines);
                                 if (jobPosition != null) {
+                                    work = new Work();
                                     work.setCompanyName(companyName);
                                     work.setPosition(jobPosition);
                                     LOG.info(companyName);
