@@ -60,6 +60,9 @@ public class WorkInfoExtract {
             for (int b = (headingLines.get(a).intValue() + 1); b < lines.size(); b++) {
                 lineText = lines.get(b);
                 if (allHeadings.contains(String.valueOf(b))) {
+                    if (work!=null){
+                        worksList.add(work);
+                    }
                     break;
                 } else {
                     /**
@@ -71,6 +74,7 @@ public class WorkInfoExtract {
                     if (foundCompany && work != null) {
                         worksList.add(work);
                         foundCompany = false;
+                        work = null;
                     }
 
                     /**
