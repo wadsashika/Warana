@@ -77,7 +77,7 @@ public class FindMissedInfo {
 
         }
 
-        if (email!=null && !name.equals("")){
+        if (email!=null){
             profile.setEmail(email);
             profile.setName(name);
         }

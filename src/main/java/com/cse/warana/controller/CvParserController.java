@@ -20,7 +20,7 @@ import java.io.File;
 @Controller
 public class CvParserController {
 
-    private static Logger LOG = LoggerFactory.getLogger(ExampleController.class);
+    private static Logger LOG = LoggerFactory.getLogger(CvParserController.class);
     @Autowired(required = true)
     @Qualifier(value = "cvParser")
     public CVParserService cvParserService;

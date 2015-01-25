@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -34,8 +35,8 @@ public class WorkInfoExtract {
          * Load the companies gazeteer list
          */
         listPath = paths.get("root") + paths.get("listPath");
-        populateByFile(listPath + File.separator+"companyNames", companies);
-        populateByFile(listPath + File.separator+"jobPositionsIndex", jobPositions);
+        populateByFile(listPath + File.separator + "companyNames", companies);
+        populateByFile(listPath + File.separator + "jobPositionsIndex", jobPositions);
     }
 
 
@@ -59,6 +60,17 @@ public class WorkInfoExtract {
             for (int b = (headingLines.get(a).intValue() + 1); b < lines.size(); b++) {
                 lineText = lines.get(b);
                 if (allHeadings.contains(String.valueOf(b))) {
+                    boolean duplicate = false;
+                    if (work != null && !work.getCompanyName().toLowerCase().equals("pvt) ltd")) {
+                        for (int x = 0; x < worksList.size(); x++) {
+                            if (worksList.get(x).getCompanyName().toLowerCase().equals(work.getCompanyName().toLowerCase())) {
+                                duplicate = true;
+                            }
+                        }
+                        if (!duplicate) {
+                            worksList.add(work);
+                        }
+                    }
                     break;
                 } else {
                     /**
@@ -67,9 +79,19 @@ public class WorkInfoExtract {
                      * Need to mention the "at" before the company name
                      */
 
-                    if (foundCompany && work != null) {
-                        worksList.add(work);
+                    if (foundCompany && work != null && !work.getCompanyName().toLowerCase().equals("pvt) ltd")) {
+                        boolean duplicate = false;
+
+                        for (int x = 0; x<worksList.size(); x++){
+                            if (worksList.get(x).getCompanyName().toLowerCase().equals(work.getCompanyName().toLowerCase())){
+                                duplicate = true;
+                            }
+                        }
+                        if (!duplicate){
+                            worksList.add(work);
+                        }
                         foundCompany = false;
+                        work = null;
                     }
 
                     /**
@@ -107,15 +129,20 @@ public class WorkInfoExtract {
                         classifierText = classifier.classifyWithInlineXML(lineText);
 
                         if (classifierText.contains("<ORGANIZATION>")) {
-                            work = new Work();
                             Pattern pattern = Pattern.compile("<ORGANIZATION>(.*?)</ORGANIZATION>");
                             Matcher matcher = pattern.matcher(classifierText);
                             while (matcher.find()) {
                                 String jobPosition = "";
                                 String currentLine = classifierText.replaceAll("((<ORGANIZATION>)[^&]*(</ORGANIZATION>))|((<DATE>)[^&]*(</DATE>))", "");
                                 companyName = matcher.group(0).replace("<ORGANIZATION>", "").replace("</ORGANIZATION>", "");
+                                Pattern p = Pattern.compile("(.*)trainee (.*)");
+                                Matcher m = p.matcher(companyName.toLowerCase());
+                                if (m.find()) {
+                                    break;
+                                }
                                 jobPosition = checkJobPositions(b, currentLine, lines);
                                 if (jobPosition != null) {
+                                    work = new Work();
                                     work.setCompanyName(companyName);
                                     work.setPosition(jobPosition);
                                     LOG.info(companyName);
@@ -124,35 +151,37 @@ public class WorkInfoExtract {
                                 break;
                             }
                         }
+                        String name = findCompanyNameBasedOnPattern(lineText);
+                        String jobPosition = checkJobPositions(b, lineText, lines);
+                        if (!name.equals("") && jobPosition != null) {
+                            work = new Work();
+                            work.setCompanyName(name);
+                            work.setPosition(jobPosition);
+                            LOG.info(name);
+                            foundCompany = true;
+                        }
+
                     }
 
-                    /**
-                     * TODO need to include the other company descriptors
-                     * Check for the common properties such as
-                     * (pvt) Ltd, Inc., etc
-                     */
-//                    Pattern pattern = Pattern.compile("(.*[(]pvt[)] ltd.*)|(.*inc[.].*)");
-//                    Matcher matcher = pattern.matcher(lineText.toLowerCase());
-//
-//                    if (!foundCompany && matcher.matches()) {
-//                        LOG.info("");
-//                        LOG.info("found");
-//                        LOG.info(lineText);
-//                        if (work == null) {
-//                            work = new Work();
-//                        }
-//                        findDuration(lineText, lines.get(b + 1), work);
-//
-//                        linesCopy.remove(lineText);
-//                    }
 
-                    /**
-                     * Check for other properties
-                     */
                 }
             }
         }
         LOG.info("----Ending Work Information----\n");
+    }
+
+    public String findCompanyNameBasedOnPattern(String line) {
+        String[] tokens = line.toLowerCase().split(" ");
+        ArrayList<String> tokenList = new ArrayList<>(Arrays.asList(tokens));
+
+        if (tokenList.contains("at")) {
+            int index = tokenList.indexOf("at");
+            String companyName = (index < tokenList.size() - 1) ? (((index + 1 < tokenList.size() - 1) ? tokenList.get(index + 1) : "") + ((index + 2 < tokenList.size() - 1) ? tokenList.get(index + 2) : "")) : "";
+
+            return companyName;
+        } else {
+            return "";
+        }
     }
 
 
@@ -272,9 +301,9 @@ public class WorkInfoExtract {
             jobPosition = lines.get(lineNum - 1);
         } else if (matcher3.find()) {
             jobPosition = lines.get(lineNum + 1);
-        }else if (matcher4.find()) {
+        } else if (matcher4.find()) {
             jobPosition = lines.get(lineNum - 2);
-        }else if (matcher5.find()) {
+        } else if (matcher5.find()) {
             jobPosition = lines.get(lineNum + 2);
         }
 

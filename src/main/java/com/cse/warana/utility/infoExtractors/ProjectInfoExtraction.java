@@ -279,10 +279,10 @@ public class ProjectInfoExtraction {
          * If the technologies are included within brackets and without above two checks satisfying. As an example
          * module Programming Challenge 2 (Java swing ,Joomla CMS)
          */
-        Pattern pattern = Pattern.compile("(\\(|\\[|\\{)(.*?)(\\)|\\]|\\})");
+        Pattern pattern = Pattern.compile("(.*\\(|\\[|\\{)(.*?)(\\)|\\]|\\}.*)");
         Matcher matcher = pattern.matcher(tempText2);
-        if (matcher.find()) {
-            String[] tokenArr = (matcher.group(1)).split(",");
+        if (matcher.matches()) {
+            String[] tokenArr = (matcher.group(2)).split(",");
             if (tokenArr.length > 0) {
                 for (int x = 0; x < tokenArr.length; x++) {
                     if (technologies.contains(tokenArr[x].toLowerCase().trim())) {
@@ -323,7 +323,7 @@ public class ProjectInfoExtraction {
                         }
                         LOG.info("**************" + tokens[y].toLowerCase().trim());
                     }
-//                    return true;
+                    return true;
                 }
 //                if (x == tokens.length - 1 && (tokens[x].charAt(tokens[x].length() - 1) + "").matches("")) {
 //                    tokens[x] = (tokens[x].charAt(tokens[x].length() - 1) + "").replaceAll("\\)", "");

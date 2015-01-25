@@ -12,32 +12,34 @@
             <div class="col-xs-12">
                 <div class="panel panel-primary">
                     <div class="panel-body">
-                        <div id="signup-form-body" class="form-horizontal">
-                            <div class="form-group">
-                                <div class="col-sm-12 col-md-2">
-                                    <label for="firstName" class="mand not-bold">First Name</label>
+                        <div class="form-horizontal">
+                            <div id="profile-body">
+                                <div class="form-group">
+                                    <div class="col-sm-12 col-md-2">
+                                        <label for="firstName" class="mand not-bold">First Name</label>
+                                    </div>
+                                    <div class="col-sm-8 col-md-4">
+                                        <input type="text" class="form-control" name="firstName" id="firstName"
+                                               data-valid="required">
+                                    </div>
                                 </div>
-                                <div class="col-sm-8 col-md-4">
-                                    <input type="text" class="form-control" name="firstName" id="firstName"
-                                           data-valid="required">
+                                <div class="form-group">
+                                    <div class="col-sm-12 col-md-2">
+                                        <label for="lastName" class="mand not-bold">Last Name</label>
+                                    </div>
+                                    <div class="col-sm-8 col-md-4">
+                                        <input type="text" class="form-control" name="lastName" id="lastName"
+                                               data-valid="required">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-12 col-md-2">
-                                    <label for="lastName" class="mand not-bold">Last Name</label>
-                                </div>
-                                <div class="col-sm-8 col-md-4">
-                                    <input type="text" class="form-control" name="lastName" id="lastName"
-                                           data-valid="required">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="col-sm-12 col-md-2">
-                                    <label for="email" class="mand not-bold">E-mail</label>
-                                </div>
-                                <div class="col-sm-8 col-md-4">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                           data-valid="required email">
+                                <div class="form-group">
+                                    <div class="col-sm-12 col-md-2">
+                                        <label for="email" class="mand not-bold">E-mail</label>
+                                    </div>
+                                    <div class="col-sm-8 col-md-4">
+                                        <input type="email" class="form-control" name="email" id="email"
+                                               data-valid="required email">
+                                    </div>
                                 </div>
                             </div>
                             <div class="form-group">
