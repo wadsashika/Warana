@@ -18,20 +18,29 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by Thilina on 11/19/2014.
  */
+
 public class WebCrawler {
     private FirefoxDriver driver;
     private Profile profile;
     private String baseUrl;
     FileManager fileManager;
 
+    public static void main(String[] args){
+        WebCrawler webCrawler=new WebCrawler();
+        webCrawler.ExtractOnlineDocuments("http://www.insightforfuture.blogspot.com/");
+    }
+
     public WebCrawler(Profile profile) {
-        this.profile=profile;
-        fileManager=new FileManager();
-        FirefoxProfile fp=new FirefoxProfile();
+
+        this.profile = profile;
+
+        fileManager = new FileManager();
+        FirefoxProfile fp = new FirefoxProfile();
 //        firefox_profile = driver.FirefoxProfile()
         fp.setPreference("permissions.default.stylesheet", 2);
         fp.setPreference("permissions.default.image", 2);
         fp.setPreference("dom.ipc.plugins.enabled.libflashplayer.so", false);
+//        fp.setPreference("browser.helperApps.neverAsk.saveToDisk", "application/octet-stream");
 
         this.driver = new FirefoxDriver(fp);
         driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
@@ -40,10 +49,28 @@ public class WebCrawler {
 
     }
 
-    public void SavePage(String url){
-        this.baseUrl=url;
-        driver=downloadPage(url);
-        String source=driver.getPageSource();
+    // constructor for testing without profile
+    public WebCrawler() {
+        fileManager = new FileManager();
+        FirefoxProfile fp = new FirefoxProfile();
+//        firefox_profile = driver.FirefoxProfile()
+        fp.setPreference("permissions.default.stylesheet", 2);
+        fp.setPreference("permissions.default.image", 2);
+        fp.setPreference("dom.ipc.plugins.enabled.libflashplayer.so", false);
+        fp.setPreference("browser.helperApps.neverAsk.saveToDisk", "application/octet-stream");
+
+        this.driver = new FirefoxDriver(fp);
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.MINUTES);
+
+//        driver = webdriver.Firefox(firefox_profile=firefox_profile)
+
+    }
+
+
+    public void SavePage(String url) {
+        this.baseUrl = url;
+        driver = downloadPage(url);
+        String source = driver.getPageSource();
         System.out.println(driver.getTitle());
 //        System.out.println(source);
         GetLinks(source);
@@ -53,8 +80,8 @@ public class WebCrawler {
     private FirefoxDriver downloadPage(String url) {
 //        try {
 //        driver.close();
-            driver.get(url);
-            int textLength = Jsoup.parse(driver.getPageSource()).text().length();
+        driver.get(url);
+        int textLength = Jsoup.parse(driver.getPageSource()).text().length();
 //        for (int i = 0; i < Config.maxReloadTimes; i++) {
 //            if ()
 //        }
@@ -65,17 +92,29 @@ public class WebCrawler {
         return driver;
     }
 
-    public void ExtractOnlineDocuments(){
-        if (profile.getBlogUrl().length()>0){
-            GetLinks(profile.getBlogUrl());
+    public void ExtractOnlineDocuments() {
+        if (profile.getBlogUrl().length() > 0) {
+            String blogUrl = profile.getBlogUrl();
+            if (!blogUrl.contains("http://"))
+                profile.setBlogUrl("http://"+blogUrl);
+            this.baseUrl=profile.getBlogUrl();
+            driver = downloadPage(baseUrl);
+            GetLinks(driver.getPageSource());
         }
     }
 
-    public void GetLinks(String source){
 
-        ArrayList<String> allLinks=new ArrayList<String>();
-        HashMap<String,Integer> linkMap=new HashMap<String,Integer>();
-        linkMap.put(baseUrl,0);
+    public void ExtractOnlineDocuments(String baseUrl) {
+        driver = downloadPage(baseUrl);
+        this.baseUrl=baseUrl;
+        GetLinks(driver.getPageSource());
+    }
+
+    public void GetLinks(String source) {
+
+        ArrayList<String> allLinks = new ArrayList<String>();
+        HashMap<String, Integer> linkMap = new HashMap<String, Integer>();
+        linkMap.put(baseUrl, 0);
 
         org.jsoup.nodes.Document doc = Jsoup.parse(source);
         Elements links = doc.select("a[href]");
@@ -83,8 +122,8 @@ public class WebCrawler {
 
         // href ...
         for (Element link : links) {
-            String str=link.attr("abs:href");
-            if(str.contains(baseUrl) ) {
+            String str = link.attr("abs:href");
+            if (str.contains(baseUrl)) {
                 linkMap.put(str, 0);
             }
         }
@@ -92,38 +131,39 @@ public class WebCrawler {
         saveToUserDocs(linkMap);
     }
 
-    private void saveToUserDocs(HashMap<String,Integer> linkMap) {
-        HashMap<String,String> pageMap=new HashMap<String,String>();
+    private void saveToUserDocs(HashMap<String, Integer> linkMap) {
+        HashMap<String, String> pageMap = new HashMap<String, String>();
         for (String link : linkMap.keySet()) {
             getContent(pageMap, link);
-            if (pageMap.size()>Config.user_max_docs)
+            if (pageMap.size() > Config.user_max_docs)
                 break;
         }
 
         for (Map.Entry<String, String> entry : pageMap.entrySet()) {
 
-            fileManager.WriteFile(Config.profilesPath+"/"+profile.getName(),entry);
+            fileManager.WriteFile(Config.profilesPath + "/" + profile.getName(), entry);
         }
         driver.quit();
 
     }
 
     private void getContent(HashMap<String, String> pageMap, String link) {
-        driver=downloadPage(link);
+        driver = downloadPage(link);
         try {
+            System.out.println("waiting "+link+" to download");
             Thread.sleep(1000);
+            System.out.println("waiting ended");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        if (!driver.getCurrentUrl().contains(baseUrl)){             // redirected to another website
+        if (!driver.getCurrentUrl().contains(baseUrl)) {             // redirected to another website
             return;
         }
         org.jsoup.nodes.Document doc = Jsoup.parse(driver.getPageSource());
-        if (pageMap.get(driver.getTitle())==null) {
+        if (pageMap.get(driver.getTitle()) == null) {
             pageMap.put(driver.getTitle(), doc.text());
-        }
-        else {
-            if (pageMap.get(driver.getTitle()).length()<doc.text().length()) {
+        } else {
+            if (pageMap.get(driver.getTitle()).length() < doc.text().length()) {
                 pageMap.put(driver.getTitle(), doc.text());
             }
         }

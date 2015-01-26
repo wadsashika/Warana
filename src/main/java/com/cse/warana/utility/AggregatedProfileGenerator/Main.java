@@ -44,7 +44,8 @@ public class Main {
 
         generatorService.extractCVInformation(cvParserService,cv);
         generatorService.generateCandidateProfile(candidate);
-       // OnlineInfoExtractor onlineInfoExtractor=new OnlineInfoExtractor(candidate);
+        Config.initialize("C:\\Warana");
+       OnlineInfoExtractor onlineInfoExtractor=new OnlineInfoExtractor(candidate,"C:\\Warana");
 
 //        CallName();
     }
