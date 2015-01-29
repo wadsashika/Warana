@@ -12,6 +12,23 @@ import java.util.Properties;
 public final class Config {
 
     private static  String rootPath;
+    public static String skillsPath               ;
+    public static String skillsOutputPath         ;
+    public static String normalizedSkillsPath     ;
+    public static String profilesOutputPath       ;
+    public static String profilesPath             ;
+    public static String normalizedProfilesPath   ;
+    public static String aggregatedSkillsPath     ;
+    public static String aggregatedAllDocsPath    ;
+    public static String aggregatedProfilesPath   ;
+    public static String processedProfilesPath    ;
+    public static String processedSkillsPath      ;
+    public static String goldenStandardPath       ;
+    public static String statsOutPath             ;
+    public static String weightMapPath            ;
+    public static String abbreviationsSkillsPath  ;
+    public static String abbreviationsProfilesPath;
+
 
     public static void initialize(String propertyRoot){
         Properties prop = new Properties();
@@ -28,6 +45,26 @@ public final class Config {
             rootPath = prop.getProperty("warana.resources.root");
 
 
+            skillsPath               = rootPath+"/Docs/SkillDocs";
+            skillsOutputPath         = rootPath+"/Docs/SkillDocs_out";
+            normalizedSkillsPath     = rootPath+"/Docs/Normalized/SkillDocs";
+            profilesOutputPath       = rootPath+"/Docs/UserDocs_out";
+            profilesPath             = rootPath+"/Docs/UserDocs";
+            normalizedProfilesPath   = rootPath+"/Docs/Normalized/UserDocs";
+            aggregatedSkillsPath     = rootPath+"/Docs/Aggregated/SkillDocs/";
+            aggregatedAllDocsPath    = rootPath+"/Docs/Aggregated/AllDocs/";
+            aggregatedProfilesPath   = rootPath+"/Docs/Aggregated/UserDocs/";
+            processedProfilesPath    = rootPath+"/Docs/Processed/UserDocs/";
+            processedSkillsPath      = rootPath+"/Docs/Processed/SkillDocs/";
+            goldenStandardPath       = rootPath+"/Golden Standard/";
+            statsOutPath             = rootPath+"/StatsOut/";
+            weightMapPath            = rootPath+"/Docs/WeightMap.csv";
+            abbreviationsSkillsPath  = rootPath+"/Docs/Abbreviations/SkillDocs/";
+            abbreviationsProfilesPath= rootPath+"/Docs/Abbreviations/UserDocs/";
+
+
+            System.out.println(rootPath);
+            System.out.println(skillsPath);
         } catch (IOException ex) {
             ex.printStackTrace();
         } finally {
@@ -70,22 +107,7 @@ public final class Config {
 //    }
 
 
-    public static final String skillsPath=            rootPath+"/Docs/SkillDocs";
-    public static final String skillsOutputPath=      rootPath+"/Docs/SkillDocs_out";
-    public static final String normalizedSkillsPath=  rootPath+"/Docs/Normalized/SkillDocs";
-    public static final String profilesOutputPath=    rootPath+"/Docs/UserDocs_out";
-    public static final String profilesPath=          rootPath+"/Docs/UserDocs";
-    public static final String normalizedProfilesPath=rootPath+"/Docs/Normalized/UserDocs";
-    public static final String aggregatedSkillsPath=  rootPath+"/Docs/Aggregated/SkillDocs/";
-    public static final String aggregatedAllDocsPath =rootPath+"/Docs/Aggregated/AllDocs/";
-    public static final String aggregatedProfilesPath=rootPath+"/Docs/Aggregated/UserDocs/";
-    public static final String processedProfilesPath =rootPath+"/Docs/Processed/UserDocs/";
-    public static final String processedSkillsPath   =rootPath+"/Docs/Processed/SkillDocs/";
-    public static final String goldenStandardPath    =rootPath+"/Golden Standard/";
-    public static final String statsOutPath          =rootPath+"/StatsOut/";
-    public static final String weightMapPath         =rootPath+"/Docs/WeightMap.csv";
-    public static final String abbreviationsSkillsPath     =rootPath+"/Docs/Abbreviations/SkillDocs/";
-    public static final String abbreviationsProfilesPath   =rootPath+"/Docs/Abbreviations/UserDocs/";
+
 
 
     public static final int user_max_docs=10;
