@@ -1,5 +1,6 @@
 package com.cse.warana.controller;
 
+import com.cse.warana.service.CompanyTechnologyService;
 import com.cse.warana.service.GetConceptsService;
 import com.cse.warana.utility.Graph.TechnologyListGenerator;
 import com.google.gson.Gson;
@@ -28,6 +29,10 @@ public class GetConceptsController {
     @Qualifier("getConceptsService")
     private GetConceptsService getConceptsService;
 
+    @Autowired
+    @Qualifier("companytechnologiesService")
+    private CompanyTechnologyService companyTechnologyService;
+
     private TechnologyListGenerator technologyListGenerator;
 
     @Value("${warana.resources.root}")
@@ -36,10 +41,16 @@ public class GetConceptsController {
     @RequestMapping(value = "/getConceptsName", method = RequestMethod.POST)
     @ResponseBody
     public String getTechnologyList() throws IOException {
-        technologyListGenerator= new TechnologyListGenerator(root);
-        List<String> conceptsNames = technologyListGenerator.inti(getConceptsService.getConceptsList());
+        List<String> technologyList = getConceptsService.getCompanyTechnologies();
         Gson gson = new GsonBuilder().serializeNulls().create();
+        if(technologyList.isEmpty()) {
+            technologyListGenerator = new TechnologyListGenerator(root);
+            List<String> conceptsNames = technologyListGenerator.inti(getConceptsService.getConceptsList());
+            companyTechnologyService.storeCompanyTechnologies(conceptsNames);
 
-        return  gson.toJson(conceptsNames);
+            return gson.toJson(conceptsNames);
+        }
+        return gson.toJson(technologyList);
     }
+
 }

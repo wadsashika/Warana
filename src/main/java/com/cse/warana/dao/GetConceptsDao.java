@@ -7,4 +7,5 @@ import java.util.List;
  */
 public interface GetConceptsDao {
     public List<String> getConceptsList();
+    public List<String> getTechnologyList();
 }
