@@ -76,3 +76,34 @@
     margin-right: auto;
     width: 90%;
 }
+
+#webchart{
+    width: 60%;
+    margin: auto;
+}
+
+#name-select-selector{
+    margin-top: 40px;
+}
+
+#name-select-selector-td{
+    width: 300px;
+}
+
+#generate-spiderweb{
+    margin-left: 5px;
+    margin-top: 39px;
+}
+
+#web-chart-seperator{
+    margin-bottom: 40px;
+}
+
+#webchart{
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+#web-chart-title{
+    font-size: 20px;
+}

@@ -18,5 +18,7 @@ public interface ViewStatDao {
 
     public List<ViewStatDTO> getCompareAllResults(String[] technologies);
 
+    public List<Map<String, Object>> getSpiderWebResults(String id);
+
     public List<Map<String, Object>> getTechnologiesScores(double id);
 }
