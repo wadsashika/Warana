@@ -7,4 +7,5 @@ import java.util.List;
  */
 public interface GetConceptsService {
     public List<String> getConceptsList();
+    public List<String> getCompanyTechnologies();
 }

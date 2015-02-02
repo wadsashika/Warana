@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * Created by Anushka on 2015-01-03.
  */
-public class ConceptExtractor {
+public class ConceptExtractor implements BaseExtractor {
     private Hashtable<String, Boolean> wordlist;
     private ConceptBurn cb;
     private List<String> gatheredList;
@@ -27,8 +27,14 @@ public class ConceptExtractor {
 
     public List<String> getAvailablity(String word) {
         for (String key : wordlist.keySet()) {
+            word = word.toLowerCase();
+            key = key.toLowerCase();
             if (word.contains(key)) {
-                gatheredList.add(key);
+                int lastIdx = word.lastIndexOf(key);
+                int index = lastIdx + key.length();
+                if ((index == word.length() || word.charAt(index) == 32) && (lastIdx == 0 || word.charAt(lastIdx - 1) == 32)) {
+                    gatheredList.add(key);
+                }
             }
         }
         return gatheredList;

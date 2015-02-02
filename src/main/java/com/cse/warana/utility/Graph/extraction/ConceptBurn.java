@@ -39,7 +39,7 @@ public class ConceptBurn extends BurnerClass {
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos));
             Elements exa = document.select("#bodyContent #mw-content-text ul>li a");
 
-            for (int i = 23; i < exa.size(); i++) {
+            for (int i = 26; i < exa.size(); i++) {
                 if ("Data structure".contains(exa.get(i).text())) {
                     break;
                 }

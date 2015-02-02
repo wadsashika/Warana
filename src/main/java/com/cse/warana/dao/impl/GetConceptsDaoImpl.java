@@ -12,7 +12,7 @@ import java.util.List;
  * Created by Anushka on 2015-01-02.
  */
 @Repository("getConceptsDao")
-public class GetConceptsDaoImpl extends BaseJDBCDaoImpl implements GetConceptsDao{
+public class GetConceptsDaoImpl extends BaseJDBCDaoImpl implements GetConceptsDao {
     @Override
     public List<String> getConceptsList() {
         List<String> returnList = null;
@@ -29,7 +29,27 @@ public class GetConceptsDaoImpl extends BaseJDBCDaoImpl implements GetConceptsDa
             }
         };
 
-        returnList = getNamedParameterJdbcTemplate().query(query.toString(),mapper);
+        returnList = getNamedParameterJdbcTemplate().query(query.toString(), mapper);
+
+        return returnList;
+    }
+
+    @Override
+    public List<String> getTechnologyList() {
+        List<String> returnList = null;
+
+        StringBuilder query = new StringBuilder("");
+        query.append("SELECT technology FROM company_technology");
+
+        RowMapper<String> mapper = new RowMapper<String>() {
+            @Override
+            public String mapRow(ResultSet resultSet, int i) throws SQLException {
+                String technology = resultSet.getString("technology");
+                return technology;
+            }
+        };
+
+        returnList = getNamedParameterJdbcTemplate().query(query.toString(), mapper);
 
         return returnList;
     }

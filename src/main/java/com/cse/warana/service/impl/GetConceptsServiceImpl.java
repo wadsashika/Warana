@@ -25,4 +25,12 @@ public class GetConceptsServiceImpl implements GetConceptsService{
 
         return concepts;
     }
+
+    @Override
+    public List<String> getCompanyTechnologies() {
+        List<String> technologies = null;
+        technologies = getConceptsDao.getTechnologyList();
+
+        return technologies;
+    }
 }
