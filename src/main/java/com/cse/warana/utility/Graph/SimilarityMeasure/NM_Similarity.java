@@ -429,9 +429,9 @@ public class NM_Similarity {
 
         finalGraphSimilarity = outputEnumerationFunction(graphB.getNodeList(), graphA.getNodeList()) / graphSizeB;
 
-        int changedEdgeCount = getChangedEdgeCount();
+        float changedEdgeCount = getChangedEdgeCount();
 
-        finalGraphSimilarity = Double.valueOf(f.format(finalGraphSimilarity * (1.0 / changedEdgeCount) * 100));
+        finalGraphSimilarity = Double.valueOf(f.format(finalGraphSimilarity * ((graphSizeA-changedEdgeCount) / graphSizeA) * 100));
         return finalGraphSimilarity;
     }
 

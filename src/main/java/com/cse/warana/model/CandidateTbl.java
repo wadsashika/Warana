@@ -19,7 +19,7 @@ public class CandidateTbl implements Serializable{
     private long candidateId;
 
     @Column(name = "score")
-    private long score;
+    private double score;
 
     @Column(name = "name")
     private String name;
@@ -49,11 +49,11 @@ public class CandidateTbl implements Serializable{
         this.candidateId = candidateId;
     }
 
-    public long getScore() {
+    public double getScore() {
         return score;
     }
 
-    public void setScore(long score) {
+    public void setScore(double score) {
         this.score = score;
     }
 

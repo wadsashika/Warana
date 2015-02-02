@@ -14,7 +14,9 @@ import javax.ejb.TransactionAttributeType;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Nadeeshaan on 12/5/2014.
@@ -66,5 +68,28 @@ public class AnalyzeResumeDaoImpl extends BaseJDBCDaoImpl implements AnalyzeResu
 
         return returnLst;
 
+    }
+
+    @Override
+    @TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
+    public List<String> getTechnologyListOfCandidate(Long id) {
+
+        StringBuilder query = new StringBuilder("");
+        query.append("SELECT technology \n");
+        query.append("FROM (SELECT technology_id FROM candidate c, candidate_technology ct WHERE c.id = :id and c.id = ct.candidate_id) as tid \n");
+        query.append("INNER JOIN technology \n");
+        query.append("ON tid.technology_id = technology.id \n");
+
+        Map<String, Object> paramMap = new HashMap<String, Object>();
+        paramMap.put("id", id);
+
+        RowMapper<String> mapper = new RowMapper<String>() {
+            @Override
+            public String mapRow(ResultSet rs, int i) throws SQLException {
+                return rs.getString("technology");
+            }
+        };
+
+        return getNamedParameterJdbcTemplate().query(query.toString(), paramMap, mapper);
     }
 }
