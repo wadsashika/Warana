@@ -13,6 +13,7 @@
 <script src='<c:url value="/js/sb-admin-2.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/warana/view-stat.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/highcharts.js" />' type="text/javascript"></script>
+<script src='<c:url value="/js/highcharts-more.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/highcharts-3d.js" />' type="text/javascript"></script>
 
 
@@ -66,15 +67,41 @@
                                 <div id="compareAllArea" class="panel-collapse " aria-labelledby="compareAllCollapse">
                                     <div id="compareAllChartArea">
                                     </div>
+                                    <div id="name-select">
+                                        <hr id="web-chart-seperator"/>
+                                        <div id="web-chart-title">
+                                            Map Candidate Skills against Company Knowledge Base
+                                        </div>
+                                        <table>
+                                            <tr>
+                                                <td id="name-select-selector-td">
+                                                    <select class="form-control" id="name-select-selector"/>
+                                                    </select>
+                                                </td>
+                                                <td id="btn-td">
+                                                    <button type="button" class="btn btn-primary btn-md" id="generate-spiderweb">
+                                                        Generate
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+
+                                    <div id="webchart">
+                                        <div id="spider-chart"></div>
+                                    </div>
+                                    <%--<div id="scatter-chart" class="col-lg-6 col-md-12"></div>--%>
                                 </div>
                             </div>
                             <hr>
                         </div>
 
-                        <div id="select-all-row">
-                            <h4><input type="checkbox" id="select-all" class="pages-select-all"/>Select All</h4>
+                        <div class="col-lg-12 col-md-12">
+                            <div id="select-all-row">
+                                <h4><input type="checkbox" id="select-all" class="pages-select-all"/>Select All</h4>
+                            </div>
+                            <div id="stat-table-div" class="table-responsive"></div>
                         </div>
-                        <div id="stat-table-div" class="table-responsive"></div>
                     </div>
                     <div class="panel-footer">
                         <div id="operation-buttons-row" class="action-btn-row">

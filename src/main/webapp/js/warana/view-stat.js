@@ -49,7 +49,6 @@ WARANA.module.viewStat = function () {
 
         var successFn = function (data) {
             var userList = [];
-//            var resultList = JSON.parse(data);
             if (data.success) {
                 var resultList = $.evalJSON(data.result.resultList);
 
@@ -234,6 +233,81 @@ WARANA.module.viewStat = function () {
         });
     };
 
+    var drawSpiderChart = function () {
+
+        var nameSelector = document.getElementById("name-select-selector");
+        var candidateId = nameSelector.options[nameSelector.selectedIndex].value;
+        var candidateName = nameSelector.options[nameSelector.selectedIndex].text;
+
+        var categories = [];
+        var seriesData = [];
+        $.ajax({
+            url: "viewstat/getspiderwebdata",
+            type: "POST",
+            data: {"id":candidateId},
+            success:function(data){
+                var jsonObj = JSON.parse(data);
+                for(var a = 0; a<jsonObj.length; a++){
+                    categories.push(jsonObj[a].conceptName);
+                    seriesData.push(parseFloat(jsonObj[a].percentage));
+                }
+                console.log(categories);
+                console.log(seriesData);
+
+                $('#spider-chart').highcharts({
+
+                    chart: {
+                        polar: true,
+                        type: 'area'
+                    },
+
+                    title: {
+                        text: 'Candidate Mapping',
+                        x: -80
+                    },
+
+                    pane: {
+                        size: '80%'
+                    },
+                    xAxis: {
+                        categories: categories,
+                        tickmarkPlacement: 'on',
+                        lineWidth: 0
+                    },
+
+                    yAxis: {
+                        gridLineInterpolation: 'polygon',
+                        lineWidth: 0,
+                        tickInterval: 20,
+                        min: 0,
+                        max: 100
+                    },
+
+                    tooltip: {
+                        shared: true,
+                        pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}%</b><br/>'
+                    },
+                    credits: {
+                        enabled: false
+                    },
+
+                    legend: {
+                        align: 'right',
+                        verticalAlign: 'top',
+                        y: 70,
+                        layout: 'vertical'
+                    },
+                    series: [{
+                        name: candidateName,
+                        data: seriesData,
+                        pointPlacement: 'on'
+                    }]
+
+                });
+            }
+        });
+    }
+
     var processCompareAllBarChart = function () {
 
         var technologies = $("#tagged-search-field").val();
@@ -254,12 +328,20 @@ WARANA.module.viewStat = function () {
         var successFn = function (data) {
             if (data.success) {
                 var jsonObj = $.evalJSON(data.result.compareAllList);
+                var nameSelector = document.getElementById("name-select-selector");
+                nameSelector.options.length = 0;
 
                 for (var a = 0; a < jsonObj.length; a++) {
                     var nameVal = jsonObj[a].name;
                     var associativeData = {};
                     var dataSet = [];
+                    var candidateId = jsonObj[a].id;
                     var map = jsonObj[a].technologyScoreMap;
+
+                    var option = document.createElement("option");
+                    option.value = candidateId;
+                    option.text = nameVal;
+                    nameSelector.appendChild(option);
 
                     for (var i = 0; i < techsArr.length; i++) {
                         dataSet.push(parseFloat(map[techsArr[i]]));
@@ -631,6 +713,7 @@ WARANA.module.viewStat = function () {
             $(document).on("click", "#advHref", changeArrowUpDown);
             $(document).on("click", "#compare-all-href", changeArrowUpDown);
             $(document).on("click", "#back-btn", goBack);
+            $(document).on("click", "#generate-spiderweb", drawSpiderChart);
         }
     }
 }();

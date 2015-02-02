@@ -53,8 +53,14 @@ public class ViewStatServiceImpl implements ViewStatService {
     }
 
     @Override
-    public List<Map<String, Object>> getTechScoreMap(double id) {
+    public List<Map<String, Object>> getSpiderWebResults(String id) {
+        List<Map<String, Object>> spiderWebResults = null;
+        spiderWebResults = viewStatDao.getSpiderWebResults(id);
+        return spiderWebResults;
+    }
 
+    @Override
+    public List<Map<String, Object>> getTechScoreMap(double id) {
         List<Map<String, Object>> techScoreList = null;
         techScoreList = viewStatDao.getTechnologiesScores(id);
         return techScoreList;
