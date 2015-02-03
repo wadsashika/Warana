@@ -24,7 +24,7 @@ public class Profile {
     public void setId(long id) {
         this.id = id;
     }
-
+    private String gitUrl;
     private ArrayList<String> urls = new ArrayList<>();
 
     public Profile() {
@@ -37,6 +37,14 @@ public class Profile {
         pic_url ="";
         title   ="";
         blogUrl ="";
+    }
+
+    public String getGitUrl() {
+        return gitUrl;
+    }
+
+    public void setGitUrl(String gitUrl) {
+        this.gitUrl = gitUrl;
     }
 
     public ArrayList<String> getUrls() {

@@ -169,6 +169,27 @@ public class ViewStatDaoImpl extends BaseJDBCDaoImpl implements ViewStatDao {
     }
 
     @Override
+    public List<Map<String, Object>> getSpiderWebResults(String id) {
+        List<Map<String, Object>> returnList = null;
+
+        StringBuilder subQuery = new StringBuilder("");
+        StringBuilder query = new StringBuilder("");
+        subQuery.append("SELECT t.technology as tech,ct.percentage as per,ct.candidate_id as cid \n");
+        subQuery.append("FROM technology as t, candidate_technology as ct \n");
+        subQuery.append("WHERE t.id = ct.technology_id AND ct.candidate_id = ");
+        subQuery.append(id);
+
+        query.append("SELECT cot.techology as techName,ifnull(tn.per,0) as percentage,cot.score as cscore \n");
+        query.append("FROM company_technology as cot LEFT JOIN \n");
+        query.append("(" + subQuery + ")as tn ");
+        query.append("ON cot.techology = tn.tech");
+
+        returnList = getNamedParameterJdbcTemplate().queryForList(query.toString(), new HashMap<String, Object>());
+
+        return returnList;
+    }
+
+    @Override
     public List<Map<String, Object>> getTechnologiesScores(double id) {
 
         List<Map<String, Object>> returnList = null;
