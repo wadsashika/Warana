@@ -1,8 +1,11 @@
 package com.cse.warana.utility.AggregatedProfileGenerator;
 
 import com.cse.warana.controller.ProcessResumeController;
+import com.cse.warana.dto.AnalyticResultsDTO;
 import com.cse.warana.service.CVParserService;
 import com.cse.warana.service.CandidateProfileGeneratorService;
+import com.cse.warana.service.impl.AnalyzeResumeServiceImpl;
+import com.cse.warana.service.impl.AnalyzedResultsServiceImpl;
 import com.cse.warana.service.impl.CVParserServiceImpl;
 import com.cse.warana.service.impl.CandidateProfileGeneratorServiceImpl;
 import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.PhraseAnalyzer;
@@ -14,6 +17,7 @@ import org.springframework.beans.factory.annotation.Value;
 
 import java.io.File;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -40,12 +44,13 @@ public class Main {
         Candidate candidate=new Candidate();
         CandidateProfileGeneratorService generatorService=new CandidateProfileGeneratorServiceImpl();
         CVParserService cvParserService=new CVParserServiceImpl(paths);
-        File cv=new File("C:\\Warana\\Docs\\CVs\\Andun_S_L_Gunawardana_WSO2_SE_CV.pdf");
+        File cv=new File("C:\\Warana\\Docs\\CVs\\andun.pdf");
 
         generatorService.extractCVInformation(cvParserService,cv);
         generatorService.generateCandidateProfile(candidate);
         Config.initialize("C:\\Warana");
-       OnlineInfoExtractor onlineInfoExtractor=new OnlineInfoExtractor(candidate,"C:\\Warana");
+        candidate.getProfile().setId(107);
+        OnlineInfoExtractor onlineInfoExtractor=new OnlineInfoExtractor(candidate,"C:\\Warana");
 
 //        CallName();
     }

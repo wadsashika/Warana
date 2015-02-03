@@ -5,6 +5,7 @@ import com.cse.warana.service.CVParserService;
 import com.cse.warana.service.CandidateProfileGeneratorService;
 import com.cse.warana.service.ResumesToProcessService;
 import com.cse.warana.service.StoreProcessedResumeService;
+import com.cse.warana.service.impl.AnalyzedResultsServiceImpl;
 import com.cse.warana.service.impl.CVParserServiceImpl;
 import com.cse.warana.service.impl.CandidateProfileGeneratorServiceImpl;
 import com.cse.warana.service.impl.StoreProcessedResumeServiceImpl;
@@ -22,6 +23,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Nadeeshaan on 11/15/2014.
@@ -119,9 +121,10 @@ public class ProcessResumeController {
             profileGeneratorService.extractCVInformation(cvParserService,new File(baseDirectory + File.separator + fileNames[a]));
             candidateArrayList.add(profileGeneratorService.generateCandidateProfile(candidate));
 
-            profileGeneratorService.extractOnlineProfileInformation(candidate, paths.get("root"));
 
             long candidate_id = storeProcessedResumeService.storeCandidateTableData(candidate);
+            candidate.getProfile().setId(candidate_id);
+            profileGeneratorService.extractOnlineProfileInformation(candidate, paths.get("root"));
 
             storeProcessedResumeService.storeEducationalTableData(candidate,candidate_id);
             storeProcessedResumeService.storeAchievementTableData(candidate,candidate_id);
@@ -132,6 +135,15 @@ public class ProcessResumeController {
 //            storeProcessedResumeService.storeCandidateTechnologies(candidate,candidate_id);
             resumesToProcessService.uploadedResumeStatusUpdate(fileNames[a],"PROCESSED");
         }
+
+
+//        AnalyzedResultsServiceImpl resultsService=new AnalyzedResultsServiceImpl();
+//        Map<String, String> candidateData = resultsService.getCandidateData(44);
+//
+//        for (String s : candidateData.values()) {
+//            System.out.println("================"+s);
+//        }
+
 
         return true;
     }

@@ -13,7 +13,8 @@ public class SkillAnalyzerServiceImpl implements SkillAnalyzerService {
     public void extractSkillKeyterms() {
 
         AlgorithmComparotor comparotor = new AlgorithmComparotor();
-        comparotor.ExtractTerms(Config.skillsPath,Config.skillsOutputPath);
+        comparotor.ExtractTermsBatch(Config.skillsPath, Config.skillsOutputPath);
+        comparotor.AggregateAllSkills();
         comparotor.Compare(Config.skillsOutputPath,Config.normalizedSkillsPath,Config.aggregatedSkillsPath, Config.abbreviationsSkillsPath);
     }
 
@@ -21,7 +22,7 @@ public class SkillAnalyzerServiceImpl implements SkillAnalyzerService {
     public void extractCandidateKeyterms() {
 
         AlgorithmComparotor comparotor = new AlgorithmComparotor();
-        comparotor.ExtractTerms(Config.profilesPath,Config.profilesOutputPath);
+        comparotor.ExtractTermsBatch(Config.profilesPath, Config.profilesOutputPath);
         comparotor.Compare(Config.profilesOutputPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath,Config.abbreviationsProfilesPath);
     }
 }

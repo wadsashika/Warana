@@ -15,6 +15,15 @@ public class Profile {
     private String pic_url;
     private String title;
     private String blogUrl;
+    private long id;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
     private String gitUrl;
     private ArrayList<String> urls = new ArrayList<>();
 
