@@ -1,9 +1,11 @@
 package com.cse.warana.service.impl;
 
 import com.cse.warana.dao.AnalyzeResumeDao;
+import com.cse.warana.dao.AnalyzedResultsDao;
 import com.cse.warana.dao.ResumesToProcessDao;
 import com.cse.warana.dao.StoreCandidateDao;
 import com.cse.warana.dao.impl.StoreCandidateDaoImpl;
+import com.cse.warana.dto.CandidateDTO;
 import com.cse.warana.dto.ResumesToAnalyseDto;
 import com.cse.warana.model.CandidateTbl;
 import com.cse.warana.service.AnalyzeResumeService;
@@ -34,6 +36,10 @@ public class AnalyzeResumeServiceImpl implements AnalyzeResumeService {
     @Qualifier("storeCandidate")
     private StoreCandidateDao storeCandidateDao;
 
+    @Autowired
+    @Qualifier("analyzedResults")
+    private AnalyzedResultsDao analyzedResultsDao;
+
     @Override
     @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public List<ResumesToAnalyseDto> getResumesToAnalyze() {
@@ -56,7 +62,11 @@ public class AnalyzeResumeServiceImpl implements AnalyzeResumeService {
          *
          */
 
+        List<CandidateDTO> candidateProfileData = analyzedResultsDao.getCandidateProfileData(44);
+
+
         for (int a= 0; a<idList.length; a++){
+
             CandidateTbl candidateTbl = storeCandidateDao.getEntity(CandidateTbl.class,new Long(idList[a]));
             candidateTbl.setScore(scoreList[a]);
         }

@@ -35,12 +35,12 @@ public class  OnlineInfoExtractor {
         LinkedInExtractor linkedIn = new LinkedInExtractor();
         GoogleScholarExtractor gscholar = new GoogleScholarExtractor();
         GitHubExtractor github = new GitHubExtractor("69e07dde89a8a0a6713f810cfd4c461f04f47e85");
-        WebCrawler webCrawler=new WebCrawler(candidate.getProfile());
         similarityCalculator = new Calculate();
 
         linkedIn.ExtractInformation( candidate);
         gscholar.Extract(candidate);
         github.Extract(candidate);
+        WebCrawler webCrawler=new WebCrawler(candidate.getProfile());
         webCrawler.ExtractOnlineDocuments();
         if (pic_url.equalsIgnoreCase("")) {
             pic_url = "http://ryonaitis.files.wordpress.com/2012/03/images.jpg";

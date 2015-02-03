@@ -20,14 +20,14 @@ public class TestPhraseAnalyser {
 //
 
         AlgorithmComparotor comparotor = new AlgorithmComparotor();
-//        comparotor.ExtractAbbreviations(Config.skillsPath,Config.abbreviationsSkillsPath);
+//        comparotor.ExtractAbbreviationsBatch(Config.skillsPath,Config.abbreviationsSkillsPath);
 //        Config.weightingIteration=20;
         GenerateStats(true, true, true, true, true, true, true, true);
 
 //        for(int i=1;i<10;i++) {
 ////            Config.TERM_MAX_WORDS=i;
 //        Config.weightingIteration=i;
-////            comparotor.ExtractTerms(Config.skillsPath,Config.skillsOutputPath);
+////            comparotor.ExtractTermsBatch(Config.skillsPath,Config.skillsOutputPath);
 //        Config.enable_weights_learning=true;
 //            GenerateStats(true, false, false, false, false, false, false, false);
 //            GenerateStats(false, true, false, false, false, false, false, false);
@@ -174,8 +174,8 @@ public class TestPhraseAnalyser {
 //        }
 
         AlgorithmComparotor comparotor = new AlgorithmComparotor();
-//        comparotor.ExtractTerms(Config.skillsPath,Config.skillsOutputPath);
-//        comparotor.ExtractAbbreviations(Config.skillsPath,Config.abbreviationsSkillsPath);
+//        comparotor.ExtractTermsBatch(Config.skillsPath,Config.skillsOutputPath);
+//        comparotor.ExtractAbbreviationsBatch(Config.skillsPath,Config.abbreviationsSkillsPath);
         comparotor.Compare(Config.skillsOutputPath, Config.normalizedSkillsPath, Config.aggregatedSkillsPath, Config.abbreviationsSkillsPath);
 //        comparotor.Compare(Config.profilesOutputPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath);
 //        comparotor.Compare(Config);

@@ -1,8 +1,11 @@
 package com.cse.warana.utility.AggregatedProfileGenerator;
 
 import com.cse.warana.controller.ProcessResumeController;
+import com.cse.warana.dto.AnalyticResultsDTO;
 import com.cse.warana.service.CVParserService;
 import com.cse.warana.service.CandidateProfileGeneratorService;
+import com.cse.warana.service.impl.AnalyzeResumeServiceImpl;
+import com.cse.warana.service.impl.AnalyzedResultsServiceImpl;
 import com.cse.warana.service.impl.CVParserServiceImpl;
 import com.cse.warana.service.impl.CandidateProfileGeneratorServiceImpl;
 import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.PhraseAnalyzer;
@@ -14,6 +17,7 @@ import org.springframework.beans.factory.annotation.Value;
 
 import java.io.File;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -45,7 +49,8 @@ public class Main {
         generatorService.extractCVInformation(cvParserService,cv);
         generatorService.generateCandidateProfile(candidate);
         Config.initialize("C:\\Warana");
-       OnlineInfoExtractor onlineInfoExtractor=new OnlineInfoExtractor(candidate,"C:\\Warana");
+        candidate.getProfile().setId(107);
+        OnlineInfoExtractor onlineInfoExtractor=new OnlineInfoExtractor(candidate,"C:\\Warana");
 
 //        CallName();
     }

@@ -5,8 +5,6 @@ import com.cse.warana.utility.AggregatedProfileGenerator.utils.FileManager;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.*;
 
 /**
@@ -23,14 +21,16 @@ public class AlgorithmComparotor {
     }
 
     public static void main(String[] args) {
+        Config.initialize("C:\\Warana");
         AlgorithmComparotor comparotor = new AlgorithmComparotor();
-//        comparotor.ExtractTerms(Config.skillsPath,Config.skillsOutputPath);
+//        comparotor.ExtractTermsBatch(Config.skillsPath,Config.skillsOutputPath);
+        comparotor.ExtractTermsBatch(Config.profilesPath, Config.profilesOutputPath);
 //        comparotor.Compare(Config.skillsOutputPath,Config.normalizedSkillsPath,Config.aggregatedSkillsPath, Config.abbreviationsSkillsPath);
-//        comparotor.Compare(Config.profilesOutputPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath);
+        comparotor.Compare(Config.profilesOutputPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath, Config.abbreviationsProfilesPath);
 //        comparotor.Compare(Config);
-        comparotor.AggregateAllSkills();
 //        System.out.println(Integer.MIN_VALUE);
 
+        comparotor.AggregateAllSkills();
     }
 
     public void Compare(String rootPath, String normalizedFilesPath, String aggregatedFilesPath, String abbrFilesPath) {
@@ -39,7 +39,7 @@ public class AlgorithmComparotor {
         String[] directoryNames = directories.list();
         for (String name : directoryNames) {
 //            if (name.contains("_out")){
-            NormalizeFiles(rootPath + "/" + name, normalizedFilesPath);
+            NormalizeFilesBatch(rootPath + "/" + name, normalizedFilesPath);
 //                fileManager.Normalize();
 //            }
         }
@@ -51,7 +51,7 @@ public class AlgorithmComparotor {
 
     }
 
-    private void NormalizeFiles(String path, String destPath) {
+    private void NormalizeFilesBatch(String path, String destPath) {             // normalize batch
         File root = new File(path);
         HashMap<String, String> termsMap = new HashMap<String, String>();
 //        termsMap.put("000","");
@@ -60,8 +60,16 @@ public class AlgorithmComparotor {
         }
     }
 
-    public void CompareTerms(String path, String aggregatedDestination, String abbrPath) {
+    public void NormalizeFiles(String path, String destPath) {             // normalize 1 corpus
         File root = new File(path);
+        HashMap<String, String> termsMap = new HashMap<String, String>();
+//        termsMap.put("000","");
+        for (File file : root.listFiles()) {
+            fileManager.Normalize(file, destPath);
+        }
+    }
+    public void CompareTerms(String normalizedSrc, String aggregatedDestination, String abbrPath) {
+        File root = new File(normalizedSrc);
         File abbrFile = new File(abbrPath);
         HashMap<String, Double> termsMap = new HashMap<String, Double>();
 //        termsMap.put("000","");
@@ -71,28 +79,28 @@ public class AlgorithmComparotor {
 //        root=new File("src/com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker/Skills/Normalized");
         ArrayList<File> fileList = new ArrayList<File>();
         if (Config.enable_averageCorpusTF)
-            fileList.add(new File(path + "/" + Config.averageCorpusTF));
+            fileList.add(new File(normalizedSrc + "/" + Config.averageCorpusTF));
 
         if (Config.enable_c_value)
-            fileList.add(new File(path + "/" + Config.c_value));
+            fileList.add(new File(normalizedSrc + "/" + Config.c_value));
 
         if (Config.enable_IBMglossEx)
-            fileList.add(new File(path + "/" + Config.IBMglossEx));
+            fileList.add(new File(normalizedSrc + "/" + Config.IBMglossEx));
 
         if (Config.enable_RIDF)
-            fileList.add(new File(path + "/" + Config.RIDF));
+            fileList.add(new File(normalizedSrc + "/" + Config.RIDF));
 
         if (Config.enable_simpleTF)
-            fileList.add(new File(path + "/" + Config.simpleTF));
+            fileList.add(new File(normalizedSrc + "/" + Config.simpleTF));
 
         if (Config.enable_termex)
-            fileList.add(new File(path + "/" + Config.termex));
+            fileList.add(new File(normalizedSrc + "/" + Config.termex));
 
         if (Config.enable_TFIDF)
-            fileList.add(new File(path + "/" + Config.TFIDF));
+            fileList.add(new File(normalizedSrc + "/" + Config.TFIDF));
 
         if (Config.enable_weirdness)
-            fileList.add(new File(path + "/" + Config.weirdness));
+            fileList.add(new File(normalizedSrc + "/" + Config.weirdness));
 
         HashMap<String, Double> weightMap = fileManager.GetWeightMap(Config.weightMapPath);
         for (File file : fileList) {
@@ -175,7 +183,7 @@ public class AlgorithmComparotor {
         return clone;
     }
 
-    private void  aggregateValues(HashMap<String, Double> termsMap, File file, Double weight) {
+    private void aggregateValues(HashMap<String, Double> termsMap, File file, Double weight) {
 //        termsMap.put("000",termsMap.get("000")+","+file.getName());
         HashMap<String, String> fileMap = new HashMap<String, String>();
         try {
@@ -226,14 +234,20 @@ public class AlgorithmComparotor {
 
     }
 
-    public void ExtractTerms(String rootPath, String destPath) {
+    public void ExtractTermsBatch(String rootPath, String destPath) {           // extract terms as a batch
         File root = new File(rootPath);
         for (String s : root.list()) {
             phraseAnalyzer.RecognizeTerms(rootPath + "/" + s, destPath + "/" + s);
         }
     }
 
-    public void ExtractAbbreviations(String rootPath, String destPath) {
+    public void ExtractTerms(String rootPath, String destPath) {           // extract terms from 1 corpus
+
+        phraseAnalyzer.RecognizeTerms(rootPath, destPath);
+
+    }
+
+    public void ExtractAbbreviationsBatch(String rootPath, String destPath) {        // extract abbreviations batch
         File root = new File(rootPath);
         ExtractAbbrev extractAbbrev = new ExtractAbbrev();
         File file = new File(destPath);
@@ -243,6 +257,16 @@ public class AlgorithmComparotor {
             extractAbbrev.Extract(rootPath + "/" + s, destPath);
         }
     }
+
+    public void ExtractAbbreviations(String rootPath, String destPath) {        // extract abbreviations one corpus
+        File root = new File(rootPath);
+        ExtractAbbrev extractAbbrev = new ExtractAbbrev();
+        File file = new File(destPath);
+        if (!file.exists())
+            file.mkdirs();
+        extractAbbrev.Extract(rootPath, destPath);
+    }
+
 
     public boolean GetAbbrSimilarity(HashMap<String, String> abbrMap, String algoKey, String goldenKey) {
         if (!Config.enable_abbreviations) {

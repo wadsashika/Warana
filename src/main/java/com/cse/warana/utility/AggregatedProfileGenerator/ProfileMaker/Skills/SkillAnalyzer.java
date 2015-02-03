@@ -114,6 +114,7 @@ public class SkillAnalyzer {
 
 
     public static void main(String[] args){
+        Config.initialize("C:\\Warana");
         SkillAnalyzer sk=new SkillAnalyzer();
 //        Map<String,Double> skillScores=sk.SortSkills("Nisansa Dilushan de Silva");
         sk.SortSkills();

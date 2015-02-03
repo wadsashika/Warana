@@ -1,5 +1,6 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.WebCrawler;
 
+import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparotor;
 import com.cse.warana.utility.infoExtractors.OnlineInfoExtractor;
 import com.cse.warana.utility.infoHolders.Profile;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
@@ -10,6 +11,7 @@ import org.jsoup.select.Elements;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -93,14 +95,32 @@ public class WebCrawler {
     }
 
     public void ExtractOnlineDocuments() {
+
+
+        if(profile.getBlogUrl().length()==0) {
+
+            System.out.println("blog========================================================"+profile.getBlogUrl());
+            profile.setBlogUrl("https://wadsashika.wordpress.com/");            // remove this
+        }
+        System.out.println("blog========================================================"+profile.getBlogUrl());
         if (profile.getBlogUrl().length() > 0) {
             String blogUrl = profile.getBlogUrl();
-            if (!blogUrl.contains("http://"))
+            if (!blogUrl.contains("http"))
                 profile.setBlogUrl("http://"+blogUrl);
             this.baseUrl=profile.getBlogUrl();
+            System.out.println("blog========================================================"+baseUrl);
             driver = downloadPage(baseUrl);
             GetLinks(driver.getPageSource());
+            ExtractKeyterms();
         }
+    }
+
+    private void ExtractKeyterms() {
+        AlgorithmComparotor comparotor=new AlgorithmComparotor();
+        comparotor.ExtractTerms(Config.profilesPath+ File.separator+profile.getId(),Config.profilesOutputPath+File.separator+profile.getId());
+        comparotor.ExtractAbbreviations(Config.profilesPath+ File.separator+profile.getId(),Config.abbreviationsProfilesPath+File.separator+profile.getId());
+        comparotor.NormalizeFiles(Config.profilesOutputPath+File.separator+profile.getId(),Config.normalizedProfilesPath);
+        comparotor.CompareTerms(Config.normalizedProfilesPath+File.separator+profile.getId(),Config.aggregatedProfilesPath,Config.abbreviationsProfilesPath+File.separator+profile.getId());
     }
 
 
@@ -141,7 +161,7 @@ public class WebCrawler {
 
         for (Map.Entry<String, String> entry : pageMap.entrySet()) {
 
-            fileManager.WriteFile(Config.profilesPath + "/" + profile.getName(), entry);
+            fileManager.WriteFile(Config.profilesPath + "/" + profile.getId(), entry);
         }
         driver.quit();
 
