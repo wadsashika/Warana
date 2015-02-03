@@ -242,7 +242,7 @@ public class AlgorithmComparotor {
     }
 
     public void ExtractTerms(String rootPath, String destPath) {           // extract terms from 1 corpus
-
+        System.out.println("============================="+rootPath+" : "+destPath);
         phraseAnalyzer.RecognizeTerms(rootPath, destPath);
 
     }

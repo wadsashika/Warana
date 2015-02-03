@@ -1,5 +1,6 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Skills;
 
+import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparotor;
 import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.PhraseAnalyzer;
 import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Google;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
@@ -14,6 +15,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Iterator;
 
 /**
@@ -61,17 +63,25 @@ public class Wikipedia {
 
     public void GetTermsGoogle(String searchTerm) {
         try {
+
+            ArrayList<String> links = google.FindOnWikipedia(searchTerm);
+            if (links.size() == 0)
+                return;
+
             boolean b = new File(filePath + "/" + searchTerm).mkdirs();
             File file = new File(filePath + "/" + searchTerm);
             if (file.list().length == 0) {
-                ArrayList<String> links = google.FindOnWikipedia(searchTerm);
                 for (int i = 0; i < links.size(); i++) {
                     String link = links.get(i);
                     String text = tokenizePage(link);
                     if (text.length() > 10)
                         writeFile(searchTerm, i + "", text);
                 }
-//            phraseAnalyzer.RecognizeTerms(Config.skillsPath + "/" + searchTerm, Config.skillsOutputPath + "/" + searchTerm );
+                AlgorithmComparotor comparotor = new AlgorithmComparotor();
+                comparotor.ExtractTerms(Config.skillsPath + File.separator + searchTerm, Config.skillsOutputPath + File.separator + searchTerm);
+                comparotor.ExtractAbbreviations(Config.skillsPath + File.separator + searchTerm, Config.abbreviationsSkillsPath + File.separator + searchTerm);
+                comparotor.NormalizeFiles(Config.skillsOutputPath + File.separator + searchTerm, Config.normalizedSkillsPath);
+                comparotor.CompareTerms(Config.normalizedSkillsPath + File.separator + searchTerm, Config.aggregatedSkillsPath, Config.abbreviationsSkillsPath + File.separator + searchTerm);
             }
         } catch (Exception e) {
             System.out.println("Invalid search term");

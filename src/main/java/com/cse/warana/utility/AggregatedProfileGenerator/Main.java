@@ -44,7 +44,7 @@ public class Main {
         Candidate candidate=new Candidate();
         CandidateProfileGeneratorService generatorService=new CandidateProfileGeneratorServiceImpl();
         CVParserService cvParserService=new CVParserServiceImpl(paths);
-        File cv=new File("C:\\Warana\\Docs\\CVs\\Andun_S_L_Gunawardana_WSO2_SE_CV.pdf");
+        File cv=new File("C:\\Warana\\Docs\\CVs\\andun.pdf");
 
         generatorService.extractCVInformation(cvParserService,cv);
         generatorService.generateCandidateProfile(candidate);

@@ -30,6 +30,18 @@ public final class Config {
     public static String abbreviationsProfilesPath;
 
 
+    //    jate properties
+    public static String NLP_PATH ="src/main/java/com/cse/warana/utility/AggregatedProfileGenerator/PhraseExtractor/nlp_resources";
+    public static String TEST_PATH="src/main/java/com/cse/warana/utility/AggregatedProfileGenerator/PhraseExtractor/test";
+    public static int TERM_MAX_WORDS=3;
+    public static final int MULTITHREAD_COUNTER_NUMBERS=5;
+    public static final Boolean TERM_IGNORE_DIGITS=true;
+
+    public static int minTextLength=100;
+    public static int maxReloadTimes=3;
+    public static int skillDocsLimit =10;
+
+
     public static void initialize(String propertyRoot){
         Properties prop = new Properties();
         InputStream input = null;
@@ -62,6 +74,7 @@ public final class Config {
             abbreviationsSkillsPath  = rootPath+"/Docs/Abbreviations/SkillDocs/";
             abbreviationsProfilesPath= rootPath+"/Docs/Abbreviations/UserDocs/";
 
+            NLP_PATH    =   rootPath+File.separator+"nlp_resources";
 
             System.out.println(rootPath);
             System.out.println(skillsPath);
@@ -159,15 +172,5 @@ public final class Config {
     public static boolean removeDuplications=false;
 
 
-    //    jate properties
-    public static final String NLP_PATH ="src/main/java/com/cse/warana/utility/AggregatedProfileGenerator/PhraseExtractor/nlp_resources";
-    public static final String TEST_PATH="src/main/java/com/cse/warana/utility/AggregatedProfileGenerator/PhraseExtractor/test";
-    public static int TERM_MAX_WORDS=3;
-    public static final int MULTITHREAD_COUNTER_NUMBERS=5;
-    public static final Boolean TERM_IGNORE_DIGITS=true;
-
-    public static int minTextLength=100;
-    public static int maxReloadTimes=3;
-    public static int skillDocsLimit =10;
 
 }

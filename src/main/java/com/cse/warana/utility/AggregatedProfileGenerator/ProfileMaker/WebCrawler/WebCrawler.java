@@ -96,29 +96,46 @@ public class WebCrawler {
 
     public void ExtractOnlineDocuments() {
 
-
-        if(profile.getBlogUrl().length()==0) {
-
-            System.out.println("blog========================================================"+profile.getBlogUrl());
-            profile.setBlogUrl("https://wadsashika.wordpress.com/");            // remove this
-        }
-        System.out.println("blog========================================================"+profile.getBlogUrl());
-        if (profile.getBlogUrl().length() > 0) {
-            String blogUrl = profile.getBlogUrl();
-            if (!blogUrl.contains("http"))
-                profile.setBlogUrl("http://"+blogUrl);
-            this.baseUrl=profile.getBlogUrl();
-            System.out.println("blog========================================================"+baseUrl);
-            driver = downloadPage(baseUrl);
-            GetLinks(driver.getPageSource());
+        if(profile.getUrls().size()>0) {
+            for (String url : profile.getUrls()) {
+                ExtractWebArticles(url);
+            }
             ExtractKeyterms();
         }
+
+//        if(profile.getBlogUrl().length()==0) {
+//
+//            System.out.println("blog========================================================"+profile.getBlogUrl());
+//            profile.setBlogUrl("https://wadsashika.wordpress.com/");            // remove this
+//        }
+//        System.out.println("blog========================================================"+profile.getBlogUrl());
+//        if (profile.getBlogUrl().length() > 0) {
+//            String blogUrl = profile.getBlogUrl();
+//            if (!blogUrl.contains("http"))
+//                profile.setBlogUrl("http://"+blogUrl);
+//            this.baseUrl=profile.getBlogUrl();
+//            System.out.println("blog========================================================"+baseUrl);
+//            driver = downloadPage(baseUrl);
+//            GetLinks(driver.getPageSource());
+//            ExtractKeyterms();
+//        }
+    }
+
+    public void ExtractWebArticles(String url){
+
+        if (!url.contains("http"))
+            url="http://"+url;
+
+        this.baseUrl=url;
+        System.out.println("blog========================================================"+baseUrl);
+        driver = downloadPage(baseUrl);
+        GetLinks(driver.getPageSource());
     }
 
     private void ExtractKeyterms() {
         AlgorithmComparotor comparotor=new AlgorithmComparotor();
         comparotor.ExtractTerms(Config.profilesPath+ File.separator+profile.getId(),Config.profilesOutputPath+File.separator+profile.getId());
-        comparotor.ExtractAbbreviations(Config.profilesPath+ File.separator+profile.getId(),Config.abbreviationsProfilesPath+File.separator+profile.getId());
+        comparotor.ExtractAbbreviations(Config.profilesPath + File.separator + profile.getId(), Config.abbreviationsProfilesPath + File.separator + profile.getId());
         comparotor.NormalizeFiles(Config.profilesOutputPath+File.separator+profile.getId(),Config.normalizedProfilesPath);
         comparotor.CompareTerms(Config.normalizedProfilesPath+File.separator+profile.getId(),Config.aggregatedProfilesPath,Config.abbreviationsProfilesPath+File.separator+profile.getId());
     }
@@ -132,7 +149,6 @@ public class WebCrawler {
 
     public void GetLinks(String source) {
 
-        ArrayList<String> allLinks = new ArrayList<String>();
         HashMap<String, Integer> linkMap = new HashMap<String, Integer>();
         linkMap.put(baseUrl, 0);
 
@@ -143,8 +159,8 @@ public class WebCrawler {
         // href ...
         for (Element link : links) {
             String str = link.attr("abs:href");
-            if (str.contains(baseUrl)) {
-                linkMap.put(str, 0);
+            if (str.contains(baseUrl.split("//")[1])) {
+                linkMap.put(str,linkMap.size());
             }
         }
 
@@ -176,8 +192,9 @@ public class WebCrawler {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        if (!driver.getCurrentUrl().contains(baseUrl)) {             // redirected to another website
-            return;
+        if (!driver.getCurrentUrl().contains(baseUrl.split("//")[1])) {             // redirected to another website
+            System.out.println("Rejected :"+driver.getCurrentUrl());
+            return;                                                                 // split is used because http https issue
         }
         org.jsoup.nodes.Document doc = Jsoup.parse(driver.getPageSource());
         if (pageMap.get(driver.getTitle()) == null) {
