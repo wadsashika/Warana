@@ -67,30 +67,6 @@
                                 <div id="compareAllArea" class="panel-collapse " aria-labelledby="compareAllCollapse">
                                     <div id="compareAllChartArea">
                                     </div>
-                                    <div id="name-select">
-                                        <hr id="web-chart-seperator"/>
-                                        <div id="web-chart-title">
-                                            Map Candidate Skills against Company Knowledge Base
-                                        </div>
-                                        <table>
-                                            <tr>
-                                                <td id="name-select-selector-td">
-                                                    <select class="form-control" id="name-select-selector"/>
-                                                    </select>
-                                                </td>
-                                                <td id="btn-td">
-                                                    <button type="button" class="btn btn-primary btn-md" id="generate-spiderweb">
-                                                        Generate
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </div>
-
-                                    <div id="webchart">
-                                        <div id="spider-chart"></div>
-                                    </div>
-                                    <%--<div id="scatter-chart" class="col-lg-6 col-md-12"></div>--%>
                                 </div>
                             </div>
                             <hr>

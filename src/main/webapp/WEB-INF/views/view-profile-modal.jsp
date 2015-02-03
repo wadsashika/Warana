@@ -38,6 +38,9 @@
                     <li>
                         <a href="#stat" data-toggle="tab" id="stat-tab">Technical Proficiency</a>
                     </li>
+                    <li>
+                        <a href="#spider-web" data-toggle="tab" id="spider-web-tab">Spider Web Chart</a>
+                    </li>
                 </ul>
 
                 <div class="tab-content">
@@ -47,6 +50,7 @@
                     <div class="tab-pane fade" id="projects"></div>
                     <div class="tab-pane fade" id="publications"></div>
                     <div class="tab-pane fade" id="stat"><div id="chart-region"></div></div>
+                    <div class="tab-pane fade" id="spider-web"><div id="spider-web-region"></div></div>
                 </div>
             </div>
             <div class="modal-footer">
