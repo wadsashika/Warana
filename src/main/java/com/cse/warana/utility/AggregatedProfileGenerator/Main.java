@@ -8,7 +8,9 @@ import com.cse.warana.service.impl.AnalyzeResumeServiceImpl;
 import com.cse.warana.service.impl.AnalyzedResultsServiceImpl;
 import com.cse.warana.service.impl.CVParserServiceImpl;
 import com.cse.warana.service.impl.CandidateProfileGeneratorServiceImpl;
+import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparotor;
 import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.PhraseAnalyzer;
+import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Skills.SkillAnalyzer;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import com.cse.warana.utility.infoExtractors.OnlineInfoExtractor;
 import com.cse.warana.utility.infoHolders.Candidate;
@@ -25,8 +27,16 @@ import java.util.Scanner;
 public class Main {
 
     static public  void  main(String[] args) {
-        new Main().CallName();
+//        new Main().CallName();
+        Config.initialize("C:/Warana");
+
+        AlgorithmComparotor comparotor=new AlgorithmComparotor();
+        comparotor.AggregateAllSkills();
+        SkillAnalyzer skillAnalyzer =new SkillAnalyzer();
+        skillAnalyzer.SortSkills(120);
+
     }
+
 
 
     private String uploadsPath;

@@ -1,6 +1,7 @@
 package com.cse.warana.utility.infoHolders;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created by Nadeeshaan on 11/12/2014.
@@ -14,6 +15,7 @@ public class Candidate {
     ArrayList<Technology> technologiesList;
     ArrayList<Work> worksList;
     ArrayList<Publication> publicationList;
+    HashMap<String,Double> skillScoreList;
 
     public ArrayList<Publication> getPublicationList() {
         return publicationList;
