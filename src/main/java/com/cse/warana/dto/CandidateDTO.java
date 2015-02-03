@@ -4,7 +4,7 @@ package com.cse.warana.dto;
  * Created by Nadeeshaan on 12/16/2014.
  */
 public class CandidateDTO {
-    private long score;
+    private double score;
     private String pic_path;
     private String name;
     private String address;
@@ -12,11 +12,11 @@ public class CandidateDTO {
     private String gender;
     private String marital_status;
 
-    public long getScore() {
+    public double getScore() {
         return score;
     }
 
-    public void setScore(long score) {
+    public void setScore(double score) {
         this.score = score;
     }
 

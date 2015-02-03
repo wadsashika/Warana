@@ -94,7 +94,7 @@ WARANA.common = function() {
 				type : 'POST',
 				async : true,
 				cache : true,
-				timeout : 120000,
+				timeout : 6000000,
 				url : '',
 				data : {},
 				dataType : 'json'
