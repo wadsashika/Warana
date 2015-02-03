@@ -184,13 +184,6 @@ WARANA.module.viewStat = function () {
         $("#compareAllChartArea").highcharts({
             chart: {
                 type: 'column',
-                options3d: {
-                    enabled: true,
-                    alpha: 0,
-                    beta: 15,
-                    viewDistance: 100,
-                    depth: 30
-                },
                 marginTop: 80,
                 marginRight: 40
             },
@@ -233,28 +226,30 @@ WARANA.module.viewStat = function () {
         });
     };
 
-    var drawSpiderChart = function () {
+    var drawSpiderChart = function (cId, cName) {
 
-        var nameSelector = document.getElementById("name-select-selector");
-        var candidateId = nameSelector.options[nameSelector.selectedIndex].value;
-        var candidateName = nameSelector.options[nameSelector.selectedIndex].text;
+        var candidateId = cId;
+        var candidateName = cName;
 
         var categories = [];
         var seriesData = [];
+        var companyPolygonData = [];
         $.ajax({
             url: "viewstat/getspiderwebdata",
             type: "POST",
-            data: {"id":candidateId},
-            success:function(data){
+            data: {"id": candidateId},
+            success: function (data) {
                 var jsonObj = JSON.parse(data);
-                for(var a = 0; a<jsonObj.length; a++){
-                    categories.push(jsonObj[a].conceptName);
+                alert(data);
+                for (var a = 0; a < jsonObj.length; a++) {
+                    categories.push(jsonObj[a].techName);
                     seriesData.push(parseFloat(jsonObj[a].percentage));
+                    companyPolygonData.push(parseFloat(jsonObj[a].cscore));
                 }
                 console.log(categories);
                 console.log(seriesData);
 
-                $('#spider-chart').highcharts({
+                $('#spider-web-region').highcharts({
 
                     chart: {
                         polar: true,
@@ -278,7 +273,7 @@ WARANA.module.viewStat = function () {
                     yAxis: {
                         gridLineInterpolation: 'polygon',
                         lineWidth: 0,
-                        tickInterval: 20,
+                        tickInterval: 25,
                         min: 0,
                         max: 100
                     },
@@ -297,14 +292,30 @@ WARANA.module.viewStat = function () {
                         y: 70,
                         layout: 'vertical'
                     },
-                    series: [{
-                        name: candidateName,
-                        data: seriesData,
-                        pointPlacement: 'on'
-                    }]
+                    series: [
+
+                        {
+                            type: 'area',
+                            color: '#90ED7D',
+                            name: 'Company Polygon',
+                            data: companyPolygonData,
+                            pointPlacement: 'on'
+                        },
+                        {
+                            type: 'line',
+                            color: '#434348',
+                            name: candidateName,
+                            data: seriesData,
+                            pointPlacement: 'on'
+                        }
+                    ]
 
                 });
             }
+        });
+
+        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+            $('#spider-web-region').highcharts().reflow();
         });
     }
 
@@ -328,8 +339,8 @@ WARANA.module.viewStat = function () {
         var successFn = function (data) {
             if (data.success) {
                 var jsonObj = $.evalJSON(data.result.compareAllList);
-                var nameSelector = document.getElementById("name-select-selector");
-                nameSelector.options.length = 0;
+//                var nameSelector = document.getElementById("name-select-selector");
+//                nameSelector.options.length = 0;
 
                 for (var a = 0; a < jsonObj.length; a++) {
                     var nameVal = jsonObj[a].name;
@@ -341,7 +352,7 @@ WARANA.module.viewStat = function () {
                     var option = document.createElement("option");
                     option.value = candidateId;
                     option.text = nameVal;
-                    nameSelector.appendChild(option);
+//                    nameSelector.appendChild(option);
 
                     for (var i = 0; i < techsArr.length; i++) {
                         dataSet.push(parseFloat(map[techsArr[i]]));
@@ -424,6 +435,7 @@ WARANA.module.viewStat = function () {
 
     var viewProfileClick = function () {
         var id = dataTbl.fnGetData($(this).closest("tr").get(0))[1];
+        var cName = dataTbl.fnGetData($(this).closest("tr").get(0))[2];
 
         var ajaxInitData = {
             url: 'analyze/profile',
@@ -433,7 +445,7 @@ WARANA.module.viewStat = function () {
 
         var successFn = function (data) {
             if (data.success) {
-                console.log(data.result);
+//                console.log(data.result);
                 var profile = $.evalJSON(data.result.profile);
                 var projects = $.evalJSON(data.result.projects);
                 var publications = $.evalJSON(data.result.publications);
@@ -608,7 +620,7 @@ WARANA.module.viewStat = function () {
                 dd.className = "prof-dd";
 
                 dt.innerHTML = "<span class='glyphicon glyphicon-folder-open prof-glyp' aria-hidden='true'></span>" + projects[a].proj_name;
-                dd.innerHTML = (projects[a].description != null) ? projects[a].description : "" ;
+                dd.innerHTML = (projects[a].description != null) ? projects[a].description : "";
                 dl.appendChild(dt);
                 dl.appendChild(dd);
                 div.appendChild(dl);
@@ -643,6 +655,7 @@ WARANA.module.viewStat = function () {
         WARANA.common.ajaxCall(ajaxInitData, successFn);
 
         viewStatChart(id);
+        drawSpiderChart(id, cName);
 
         $("#profile-info").modal(
             {
@@ -714,7 +727,6 @@ WARANA.module.viewStat = function () {
             $(document).on("click", "#advHref", changeArrowUpDown);
             $(document).on("click", "#compare-all-href", changeArrowUpDown);
             $(document).on("click", "#back-btn", goBack);
-            $(document).on("click", "#generate-spiderweb", drawSpiderChart);
         }
     }
 }();
