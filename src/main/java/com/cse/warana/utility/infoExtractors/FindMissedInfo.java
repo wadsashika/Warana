@@ -108,11 +108,13 @@ public class FindMissedInfo {
 
     public void getOtherInfo(String para, Profile profile) {
         String linkedIn = ".*linkedin.com.*";
+        String github = ".*github.com.*";
 
         Pattern urlPattern = Pattern.compile("((?<=[^a-zA-Z0-9])(?:https?\\:\\/\\/|[a-zA-Z0-9]{1,}\\.{1}|\\b)(?:\\w{1,}\\.{1}){1,5}(?:com|org|edu|gov|uk|net|ca|de|jp|fr|au|us|ru|ch|it|nl|se|no|es|mil|iq|io|ac|ly|sm){1}(?:\\/[a-zA-Z0-9]{1,})*)");
         Pattern linkedInPtrn = Pattern.compile(linkedIn);
-//        Pattern gitPtrn = Pattern.compile(git);
+        Pattern gitPtrn = Pattern.compile(github);
         Matcher linkedInMtch = null;
+        Matcher gitMatch = null;
         Matcher urlMatcher = urlPattern.matcher(para);
 
         if (urlMatcher.find()) {
@@ -120,11 +122,15 @@ public class FindMissedInfo {
             StringTokenizer tokenizer = new StringTokenizer(para, " ");
 
             linkedInMtch = linkedInPtrn.matcher(url);
+            gitMatch = gitPtrn.matcher(url);
 
             if (linkedInMtch.matches()) {
                 profile.setLinkedIn(linkedInMtch.group(0));
                 LOG.info("LinkedIn: " + linkedInMtch.group(0));
-            } else {
+            } else if (gitMatch.matches()){
+                profile.setGitUrl(url);
+            }
+            else {
                 profile.getUrls().add(urlMatcher.group(0));
             }
         }
