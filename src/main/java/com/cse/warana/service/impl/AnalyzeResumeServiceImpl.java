@@ -7,10 +7,14 @@ import com.cse.warana.model.CandidateTbl;
 import com.cse.warana.service.AnalyzeResumeService;
 import com.cse.warana.service.GetConceptsService;
 import com.cse.warana.service.GraphSimilarityService;
+import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparotor;
+import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Skills.SkillAnalyzer;
+import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.ejb.TransactionAttribute;
@@ -43,6 +47,9 @@ public class AnalyzeResumeServiceImpl implements AnalyzeResumeService {
     @Qualifier("getConceptsService")
     private GetConceptsService getConceptsService;
 
+    @Value("${warana.resources.root}")
+    private String root;
+
     @Override
     @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public List<ResumesToAnalyseDto> getResumesToAnalyze() {
@@ -58,6 +65,17 @@ public class AnalyzeResumeServiceImpl implements AnalyzeResumeService {
 
         double[] scoreList = new double[idList.length];
 
+
+        LOG.info("Processing userdocs to get skill scores");
+        Config.initialize(root);
+        SkillAnalyzer skillAnalyzer=new SkillAnalyzer();
+        AlgorithmComparotor comparotor=new AlgorithmComparotor();
+        comparotor.AggregateAllSkills();
+
+        for (int i = 0; i < idList.length; i++) {
+            skillAnalyzer.SortSkills(Long.parseLong(idList[i]));
+        }
+
         LOG.info("Matching the Similarity of the candidates");
 
         List<String> companyTechnologyList = getConceptsService.getCompanyTechnologies();
@@ -70,6 +88,7 @@ public class AnalyzeResumeServiceImpl implements AnalyzeResumeService {
         }
 
         for (int i = 0; i < idList.length; i++) {
+
             List<String> candidateTechnologyList = analyzeResumeDao.getTechnologyListOfCandidate(Long.parseLong(idList[i]));
             Integer[][] candidateGraph = graphSimilarityService.generateGraph(candidateTechnologyList);
 

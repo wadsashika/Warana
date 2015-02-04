@@ -26,6 +26,7 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
     private static ArrayList<Technology> technologiesList;
     private static ArrayList<Publication> publicationList;
     private static ArrayList<Work> worksList;
+    private static HashMap<String,Double> skillScoreList;
     private static HashMap<String,Object> infoCategoryTypes;
 
     /**
@@ -59,6 +60,14 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
 
         worksList = new ArrayList<>();
         infoCategoryTypes.put("WORK_LIST",worksList);
+
+
+        skillScoreList=new HashMap<String,Double>();
+        infoCategoryTypes.put("SKILLSCORE_LIST",skillScoreList);
+
+
+
+
     }
 
     @Override
