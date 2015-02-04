@@ -48,7 +48,7 @@ public class CVParserServiceImpl implements CVParserService {
 
     private static AbstractSequenceClassifier<CoreLabel> classifier;
 
-    HashMap<String, String> pathsMap = null;
+    Map<String, String> pathsMap = null;
 
     private static Logger LOG;
 
@@ -59,7 +59,7 @@ public class CVParserServiceImpl implements CVParserService {
 
     }
 
-    public CVParserServiceImpl(HashMap<String, String> paths) {
+    public void setPaths(Map<String, String> paths) {
 
         EducationalHeadings = new ArrayList<String>();
         ProfileHeadings = new ArrayList<String>();
@@ -77,7 +77,7 @@ public class CVParserServiceImpl implements CVParserService {
 
         LOG = LoggerFactory.getLogger(CVParserServiceImpl.class);
 
-        this.pathsMap = paths;
+        pathsMap = paths;
 
         /**
          * Load the 7 class classifier

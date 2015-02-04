@@ -17,6 +17,7 @@ public class LinkedInExtractor {
 
     private String link;
     private SkillsExtractor skillsExtractor;
+    private Candidate candidate;
 //    private String education = "";
 
     public LinkedInExtractor() {
@@ -25,6 +26,7 @@ public class LinkedInExtractor {
 
     public Profile ExtractInformation(  Candidate candidate) {
 
+        this.candidate=candidate;
 
     /*Extracting information from LinkedIn*/
 
@@ -161,7 +163,7 @@ public class LinkedInExtractor {
 
 
 
-        ExtractSkills();
+        ExtractSkills(candidate);
 
 
         return candidateProfile;
@@ -241,7 +243,7 @@ public class LinkedInExtractor {
         return profile;
     }
 
-    public void ExtractSkills(){
-        skillsExtractor.ExtractSkills(link);
+    public void ExtractSkills(Candidate candidate){
+        skillsExtractor.ExtractSkills(link, candidate);
     }
 }

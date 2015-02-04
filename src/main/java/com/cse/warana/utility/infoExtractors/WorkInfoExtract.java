@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -29,7 +29,7 @@ public class WorkInfoExtract {
      *
      * @param clf
      */
-    public WorkInfoExtract(AbstractSequenceClassifier<CoreLabel> clf, HashMap<String, String> paths) {
+    public WorkInfoExtract(AbstractSequenceClassifier<CoreLabel> clf, Map<String, String> paths) {
         this.classifier = clf;
         /**
          * Load the companies gazeteer list
@@ -82,12 +82,12 @@ public class WorkInfoExtract {
                     if (foundCompany && work != null && !work.getCompanyName().toLowerCase().equals("pvt) ltd")) {
                         boolean duplicate = false;
 
-                        for (int x = 0; x<worksList.size(); x++){
-                            if (worksList.get(x).getCompanyName().toLowerCase().equals(work.getCompanyName().toLowerCase())){
+                        for (int x = 0; x < worksList.size(); x++) {
+                            if (worksList.get(x).getCompanyName().toLowerCase().equals(work.getCompanyName().toLowerCase())) {
                                 duplicate = true;
                             }
                         }
-                        if (!duplicate){
+                        if (!duplicate) {
                             worksList.add(work);
                         }
                         foundCompany = false;

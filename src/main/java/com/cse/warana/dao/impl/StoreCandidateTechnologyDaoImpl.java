@@ -10,4 +10,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository("storeCandidateTechnology")
 public class StoreCandidateTechnologyDaoImpl extends BaseJPADaoImpl<TechnologyCandidateTbl> implements StoreCandidateTechnologyDao {
+
 }

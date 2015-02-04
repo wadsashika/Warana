@@ -3,11 +3,14 @@ package com.cse.warana.service;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by Nadeeshaan on 11/7/2014.
  */
 public interface CVParserService {
+
+    public void setPaths(Map<String, String> paths);
 
     /**
      * In this method, tokens are loaded to the memory(ArrayList)

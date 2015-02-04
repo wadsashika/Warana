@@ -11,20 +11,18 @@ import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by Nadeeshaan on 1/2/2015.
  */
 
-@Repository("getTechnologyIds")
+@Repository("getTechnologyIdDao")
 public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechnologyIdDao {
+
     @Override
     @TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
-    public List<String> getCurrentTechnologyIds(ArrayList<Technology> technologies) {
+    public List<String> getCurrentTechnologyIds(List<Technology> technologies) {
         StringBuilder query = new StringBuilder("");
         StringBuilder techList = new StringBuilder("");
 
@@ -45,12 +43,67 @@ public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechno
             public String mapRow(ResultSet resultSet, int i) throws SQLException {
                 String id = "";
                 id = resultSet.getString("id");
+                System.out.println(id+"//////////////////////////////////////////////////////////////");
                 return id;
             }
         };
 
-        List<String> techIds = getNamedParameterJdbcTemplate().query(query.toString(),mapper);
+        List<String> techIds=null;
+
+        try {
+            techIds = getNamedParameterJdbcTemplate().query(query.toString(),mapper);
+        }
+        catch (NullPointerException e){
+            System.out.println("Null Pointer Exception");
+        }
 
         return techIds;
+    }
+
+    @Override
+    public Map<Long, String> getTechnologyIdMap(List<Technology> technologies) {
+        StringBuilder query = new StringBuilder("");
+        StringBuilder techList = new StringBuilder("");
+
+        for (int a = 0; a < technologies.size(); a++){
+            techList.append(("'" + technologies.get(a).getName() + "'"));
+            if (a!=technologies.size()-1){
+                techList.append(",");
+            }
+        }
+
+        query.append("SELECT id, technology \n");
+        query.append("FROM technology \n");
+        query.append("WHERE technology in (");
+        query.append(techList.toString() + ")");
+
+        RowMapper<String> mapper = new RowMapper<String>() {
+            @Override
+            public String mapRow(ResultSet resultSet, int i) throws SQLException {
+                String idNameStr = "";
+                idNameStr = resultSet.getString("id") +"," + resultSet.getString("technology");
+                return idNameStr;
+            }
+        };
+
+        List<String> techIds=null;
+
+        try {
+            techIds = getNamedParameterJdbcTemplate().query(query.toString(),mapper);
+            System.out.println(techIds.size());
+        }
+        catch (NullPointerException e){
+            System.out.println("Null Pointer Exception");
+        }
+
+        Map<Long, String> techIdMap = new HashMap<Long, String>();
+
+        for (String techId : techIds) {
+            String[] idAndName = techId.trim().split(",");
+            techIdMap.put(Long.parseLong(idAndName[0]), idAndName[1]);
+        }
+
+
+        return techIdMap;
     }
 }
