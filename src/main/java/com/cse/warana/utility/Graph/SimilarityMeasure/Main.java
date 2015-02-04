@@ -93,7 +93,7 @@ public class Main {
 
             System.out.println("\nTwo graphs have " + similarityMeasure.getGraphSimilarity() + "% of similarity");*/
 
-            String[] idAndName = "dulanga,sashika ".trim().split(",");
+            String[] idAndName = "dulanga.sashika ".trim().split("\\.");
 
             System.out.println(idAndName[0]+" " +idAndName[1]);
 

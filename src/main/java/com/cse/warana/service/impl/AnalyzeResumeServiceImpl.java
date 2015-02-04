@@ -87,25 +87,24 @@ public class AnalyzeResumeServiceImpl implements AnalyzeResumeService {
 
         for (int i = 0; i < idList.length; i++) {
             Map<String, Double> sortSkills = skillAnalyzer.SortSkills(Long.parseLong(idList[i]));
-            System.out.println(sortSkills.size());
+
             List<Technology> techListStr = new ArrayList<Technology>();
+
             for (String s : sortSkills.keySet()) {
                 Technology technology = new Technology();
-                technology.setName(s);
+                technology.setName(s.split("\\.")[0].trim());
 
                 techListStr.add(technology);
             }
 
-            Map<Long, String> idTechnologyMap = getTechnologyIdDao.getTechnologyIdMap(techListStr);
+            Map<String, Long> idTechnologyMap = getTechnologyIdDao.getTechnologyIdMap(techListStr);
 
-            System.out.println(idTechnologyMap.size());
-
-            for (Long aLong : idTechnologyMap.keySet()) {
+            for (String tech : idTechnologyMap.keySet()) {
                 TechnologyCandidateTbl technologyCandidateTbl = new TechnologyCandidateTbl();
 
                 technologyCandidateTbl.setCandidate_id(Long.parseLong(idList[i]));
-                technologyCandidateTbl.setTechnology_id(aLong);
-                technologyCandidateTbl.setPercentage(sortSkills.get(idTechnologyMap.get(aLong)));
+                technologyCandidateTbl.setTechnology_id(idTechnologyMap.get(tech));
+                technologyCandidateTbl.setPercentage(sortSkills.get(tech));
                 System.out.println(technologyCandidateTbl.getCandidate_id()+"-"+technologyCandidateTbl.getTechnology_id()+"-"+technologyCandidateTbl.getPercentage());
                 storeCandidateTechnologyDao.saveEntity(technologyCandidateTbl);
             }

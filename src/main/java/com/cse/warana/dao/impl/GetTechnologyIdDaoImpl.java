@@ -61,7 +61,7 @@ public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechno
     }
 
     @Override
-    public Map<Long, String> getTechnologyIdMap(List<Technology> technologies) {
+    public Map<String, Long> getTechnologyIdMap(List<Technology> technologies) {
         StringBuilder query = new StringBuilder("");
         StringBuilder techList = new StringBuilder("");
 
@@ -71,7 +71,7 @@ public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechno
                 techList.append(",");
             }
         }
-
+        System.out.println(techList.toString());
         query.append("SELECT id, technology \n");
         query.append("FROM technology \n");
         query.append("WHERE technology in (");
@@ -96,11 +96,11 @@ public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechno
             System.out.println("Null Pointer Exception");
         }
 
-        Map<Long, String> techIdMap = new HashMap<Long, String>();
+        Map<String, Long> techIdMap = new HashMap<String, Long>();
 
         for (String techId : techIds) {
             String[] idAndName = techId.trim().split(",");
-            techIdMap.put(Long.parseLong(idAndName[0]), idAndName[1]);
+            techIdMap.put(idAndName[1], Long.parseLong(idAndName[0]));
         }
 
 
