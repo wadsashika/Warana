@@ -86,12 +86,16 @@ public class Main {
             Graph graphG = new Graph(graphGSource);
             Graph graphH = new Graph(graphHSource);
 
-            NM_Similarity similarityMeasure = new NM_Similarity(graphA, graphB, 0.0001);
+            /*NM_Similarity similarityMeasure = new NM_Similarity(graphA, graphB, 0.0001);
             Graph finalGraph = new Graph(similarityMeasure.setConstructedGraph());
 
             similarityMeasure = new NM_Similarity(graphA, finalGraph, 0.0001);
 
-            System.out.println("\nTwo graphs have " + similarityMeasure.getGraphSimilarity() + "% of similarity");
+            System.out.println("\nTwo graphs have " + similarityMeasure.getGraphSimilarity() + "% of similarity");*/
+
+            String[] idAndName = "dulanga.sashika ".trim().split("\\.");
+
+            System.out.println(idAndName[0]+" " +idAndName[1]);
 
         } catch (Exception e) {
             e.printStackTrace();

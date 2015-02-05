@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -19,7 +20,7 @@ public class AchievementsInfoExtract {
     private static Logger LOG = LoggerFactory.getLogger(AchievementsInfoExtract.class);
     private String listpath = "";
 
-    public AchievementsInfoExtract(HashMap<String,String> paths){
+    public AchievementsInfoExtract(Map<String,String> paths){
         listpath = paths.get("root") + paths.get("listPath");
     }
     /**

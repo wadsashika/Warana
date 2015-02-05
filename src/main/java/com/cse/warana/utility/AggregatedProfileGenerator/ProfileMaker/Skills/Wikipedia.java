@@ -61,12 +61,12 @@ public class Wikipedia {
         return;
     }
 
-    public void GetTermsGoogle(String searchTerm) {
+    public boolean GetTermsGoogle(String searchTerm) {
         try {
 
             ArrayList<String> links = google.FindOnWikipedia(searchTerm);
             if (links.size() == 0)
-                return;
+                return false;
 
             boolean b = new File(filePath + "/" + searchTerm).mkdirs();
             File file = new File(filePath + "/" + searchTerm);
@@ -82,10 +82,13 @@ public class Wikipedia {
                 comparotor.ExtractAbbreviations(Config.skillsPath + File.separator + searchTerm, Config.abbreviationsSkillsPath + File.separator + searchTerm);
                 comparotor.NormalizeFiles(Config.skillsOutputPath + File.separator + searchTerm, Config.normalizedSkillsPath);
                 comparotor.CompareTerms(Config.normalizedSkillsPath + File.separator + searchTerm, Config.aggregatedSkillsPath, Config.abbreviationsSkillsPath + File.separator + searchTerm);
+
             }
         } catch (Exception e) {
             System.out.println("Invalid search term");
+            return false;
         }
+        return true;
     }
 
     private String tokenizePage(String url) {
