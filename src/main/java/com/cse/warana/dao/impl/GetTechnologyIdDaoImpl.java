@@ -33,7 +33,7 @@ public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechno
             }
         }
 
-        query.append("SELECT id, technology \n");
+        query.append("SELECT id \n");
         query.append("FROM technology \n");
         query.append("WHERE technology in (");
         query.append(techList.toString() + ")");
@@ -48,27 +48,12 @@ public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechno
             }
         };
 
-        RowMapper<String> mapper2 = new RowMapper<String>() {
-            @Override
-            public String mapRow(ResultSet resultSet, int i) throws SQLException {
-                String technology = "";
-                technology = resultSet.getString("technology");
-                System.out.println(technology+"//////////////////////////////////////////////////////////////");
-                return technology;
-            }
-        };
         List<String> techIds=null;
-        List<String> techNames=null;
         HashMap<String,String> techMap=new HashMap<>();
 
         try {
             techIds = getNamedParameterJdbcTemplate().query(query.toString(),mapper);
-            techNames = getNamedParameterJdbcTemplate().query(query.toString(),mapper2);
-            int i=0;
-            for (String id : techIds) {
-                techMap.put(id,techNames.get(i));
-                i++;
-            }
+            
 
         }
         catch (NullPointerException e){
