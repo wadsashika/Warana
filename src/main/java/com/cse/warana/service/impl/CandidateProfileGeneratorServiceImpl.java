@@ -123,9 +123,7 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
             }
         }
 
-        for (Technology technology : techList) {
-            System.out.println(technology.getName()+"****************************************");
-        }
+
 
 
         technologyService.storeTechnologies(candidate.getTechnologiesList());

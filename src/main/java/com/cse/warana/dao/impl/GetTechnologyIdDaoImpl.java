@@ -53,7 +53,7 @@ public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechno
 
         try {
             techIds = getNamedParameterJdbcTemplate().query(query.toString(),mapper);
-            
+
 
         }
         catch (NullPointerException e){
