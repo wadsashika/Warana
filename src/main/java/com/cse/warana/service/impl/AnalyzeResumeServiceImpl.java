@@ -87,7 +87,7 @@ public class AnalyzeResumeServiceImpl implements AnalyzeResumeService {
 
         for (int i = 0; i < idList.length; i++) {
             Map<String, Double> sortSkills = skillAnalyzer.SortSkills(Long.parseLong(idList[i]));
-
+            System.out.println(idList[i]+"**************************");
             List<Technology> techListStr = new ArrayList<Technology>();
 
             for (String s : sortSkills.keySet()) {

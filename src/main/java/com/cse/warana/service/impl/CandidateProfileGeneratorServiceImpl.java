@@ -14,6 +14,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Nadeeshaan on 11/23/2014.
@@ -109,13 +110,23 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
     public void extractOnlineProfileInformation(Candidate candidate, String rootPath) {                  // Candidate should be initalized with CV info before calling this method
         OnlineInfoExtractor onlineInfoExtractor = new OnlineInfoExtractor(candidate, rootPath);
 
-        List<String> currentTechnologyIds = technologyIdDao.getCurrentTechnologyIds(candidate.getTechnologiesList());
-        System.out.println(currentTechnologyIds.size());
-       //TODO logic to remove redundant technologies
+        Map<String, Long> technologyIdMap = technologyIdDao.getTechnologyIdMap(candidate.getTechnologiesList());
 
-        for (String id : currentTechnologyIds) {
-            System.out.println("*******************************" + id + "*********");
+       //TODO logic to remove redundant technologies
+        ArrayList<Technology> techList = candidate.getTechnologiesList();
+        for (String key : technologyIdMap.keySet()) {
+            for (int i = 0; i < techList.size(); i++) {
+                if (key.equals(techList.get(i).getName())){
+                    techList.remove(i);
+                    break;
+                }
+            }
         }
+
+        for (Technology technology : techList) {
+            System.out.println(technology.getName()+"****************************************");
+        }
+
 
         technologyService.storeTechnologies(candidate.getTechnologiesList());
     }
