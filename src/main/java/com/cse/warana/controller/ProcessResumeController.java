@@ -131,26 +131,9 @@ public class ProcessResumeController {
             storeProcessedResumeService.storeProjectTableData(candidate,candidate_id);
             storeProcessedResumeService.storeRefereeTableData(candidate,candidate_id);
             storeProcessedResumeService.storeWorkTableData(candidate,candidate_id);
-//            storeProcessedResumeService.storeNewTechnologies(cvParserService.getNewTechnologies());
-//            storeProcessedResumeService.storeCandidateTechnologies(candidate,candidate_id);
             resumesToProcessService.uploadedResumeStatusUpdate(fileNames[a],"PROCESSED");
         }
 
-
-//        AnalyzedResultsServiceImpl resultsService=new AnalyzedResultsServiceImpl();
-//        Map<String, String> candidateData = resultsService.getCandidateData(44);
-//
-//        for (String s : candidateData.values()) {
-//            System.out.println("================"+s);
-//        }
-
-
         return true;
     }
-
-//    public static void main(String[] args){
-//        ProcessResumeController p = new ProcessResumeController();
-//        String[] names = {"090225B_Jayawardana D.D.S.L.pdf"};
-//        p.processSelectedResumes(names);
-//    }
 }
