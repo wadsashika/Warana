@@ -195,7 +195,7 @@ public class AlgorithmComparotor {
                 fileMap.put(s, line.split(",")[1]);
             }
             for (Map.Entry<String, Double> entry : termsMap.entrySet()) {
-                System.out.println(entry.getKey() + " :   " + entry.getValue().toString());
+//                System.out.println(entry.getKey() + " :   " + entry.getValue().toString());
                 Double val;
                 if (fileMap.get(entry.getKey()) != null)
                     val = Double.parseDouble(fileMap.get(entry.getKey()));
@@ -242,7 +242,7 @@ public class AlgorithmComparotor {
     }
 
     public void ExtractTerms(String rootPath, String destPath) {           // extract terms from 1 corpus
-        System.out.println("============================="+rootPath+" : "+destPath);
+//        System.out.println("============================="+rootPath+" : "+destPath);
         phraseAnalyzer.RecognizeTerms(rootPath, destPath);
 
     }

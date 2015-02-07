@@ -9,7 +9,7 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "technology")
-public class TechnologyTbl implements Serializable {
+public class  TechnologyTbl implements Serializable {
 
     private static final long serialVersionUID = 3480934615115472558L;
 

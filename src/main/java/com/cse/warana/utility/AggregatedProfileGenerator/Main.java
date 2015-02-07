@@ -27,13 +27,13 @@ import java.util.Scanner;
 public class Main {
 
     static public  void  main(String[] args) {
-//        new Main().CallName();
-        Config.initialize("C:/Warana");
+        new Main().CallName();
+//        Config.initialize("C:/Warana");
 
-        AlgorithmComparotor comparotor=new AlgorithmComparotor();
-        comparotor.AggregateAllSkills();
-        SkillAnalyzer skillAnalyzer =new SkillAnalyzer();
-        skillAnalyzer.SortSkills(120);
+//        AlgorithmComparotor comparotor=new AlgorithmComparotor();
+//        comparotor.AggregateAllSkills();
+//        SkillAnalyzer skillAnalyzer =new SkillAnalyzer();
+//        skillAnalyzer.SortSkills(120);
 
     }
 
@@ -53,10 +53,10 @@ public class Main {
 
         Candidate candidate=new Candidate();
         CandidateProfileGeneratorService generatorService=new CandidateProfileGeneratorServiceImpl();
-        CVParserService cvParserService=new CVParserServiceImpl(paths);
+        //CVParserService cvParserService=new CVParserServiceImpl(paths);
         File cv=new File("C:\\Warana\\Docs\\CVs\\andun.pdf");
 
-        generatorService.extractCVInformation(cvParserService,cv);
+        //generatorService.extractCVInformation(cvParserService,cv);
         generatorService.generateCandidateProfile(candidate);
         Config.initialize("C:\\Warana");
         candidate.getProfile().setId(107);

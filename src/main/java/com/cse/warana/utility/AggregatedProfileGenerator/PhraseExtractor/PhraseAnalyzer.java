@@ -16,6 +16,7 @@ import com.cse.warana.utility.AggregatedProfileGenerator.jate.model.Term;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.util.control.Lemmatizer;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.util.control.StopList;
 import com.cse.warana.utility.AggregatedProfileGenerator.jate.util.counter.WordCounter;
+import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -116,7 +117,7 @@ public class PhraseAnalyzer {
                 FeatureCorpusTermFrequency wordFreq = new FeatureBuilderCorpusTermFrequencyMultiThread(wordcounter, lemmatizer).build(wordDocIndex);
                 FeatureDocumentTermFrequency termDocFreq = new FeatureBuilderDocumentTermFrequencyMultiThread(wordcounter, lemmatizer).build(termDocIndex);
                 FeatureTermNest termNest = new FeatureBuilderTermNestMultiThread().build(termDocIndex);
-                FeatureRefCorpusTermFrequency bncRef = new FeatureBuilderRefCorpusTermFrequency("src/main/resources/refStats.txt").build(null);
+                FeatureRefCorpusTermFrequency bncRef = new FeatureBuilderRefCorpusTermFrequency(Config.rootPath+File.separator+"refStats.txt").build(null);
                 FeatureCorpusTermFrequency termCorpusFreq = new FeatureBuilderCorpusTermFrequencyMultiThread(wordcounter, lemmatizer).build(termDocIndex);
 
                 /* #2 */

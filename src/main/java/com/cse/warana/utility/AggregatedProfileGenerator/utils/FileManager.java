@@ -158,7 +158,7 @@ public class FileManager {
 
     public void WriteFile(String destinationPath, Map.Entry<String, String> entry) {
         boolean f = new File(destinationPath).mkdirs();
-        System.out.println(entry.getKey().replaceAll("^[.\\\\/:*?\"<>|]?[\\\\/:*?\"<>|]*", "")+".txt");
+//        System.out.println(entry.getKey().replaceAll("^[.\\\\/:*?\"<>|]?[\\\\/:*?\"<>|]*", "")+".txt");
         File file=new File(destinationPath+"/"+entry.getKey().replaceAll("[^a-zA-Z0-9\\.\\-]", "_")+".txt");
         // creates the file
         try {

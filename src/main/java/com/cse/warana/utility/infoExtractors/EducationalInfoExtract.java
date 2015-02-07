@@ -6,7 +6,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -18,13 +18,13 @@ public class EducationalInfoExtract {
     private static Logger LOG = LoggerFactory.getLogger(EducationalInfoExtract.class);
     private String listpath = "";
 
-    public EducationalInfoExtract(HashMap<String,String> paths){
+    public EducationalInfoExtract(Map<String, String> paths) {
         listpath = paths.get("root") + paths.get("listPath");
     }
 
     /**
      * Extract educational information
-     *
+     * <p/>
      * TODO find the specialized area, duration
      *
      * @param lines

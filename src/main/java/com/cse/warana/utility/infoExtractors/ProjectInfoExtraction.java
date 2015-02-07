@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -25,7 +26,7 @@ public class ProjectInfoExtraction {
     private String listpath = "";
     private String tecRegex = "(.*?)(";
 
-    public ProjectInfoExtraction(HashMap<String, String> paths) {
+    public ProjectInfoExtraction(Map<String, String> paths) {
         listpath = paths.get("root") + paths.get("listPath");
         populateByFile(listpath + File.separator + "techDescriptionTokens", techDescriptions);
 

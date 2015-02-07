@@ -25,7 +25,7 @@ public class TechnologyCandidateTbl implements Serializable {
     private long technology_id;
 
     @Column(name = "percentage")
-    private float percentage;
+    private double percentage;
 
     public long getCandidate_id() {
         return candidate_id;
@@ -43,11 +43,11 @@ public class TechnologyCandidateTbl implements Serializable {
         this.technology_id = technology_id;
     }
 
-    public float getPercentage() {
+    public double getPercentage() {
         return percentage;
     }
 
-    public void setPercentage(float percentage) {
+    public void setPercentage(double percentage) {
         this.percentage = percentage;
     }
 }

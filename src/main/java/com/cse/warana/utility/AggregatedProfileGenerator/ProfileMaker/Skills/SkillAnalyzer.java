@@ -43,13 +43,13 @@ public class SkillAnalyzer {
                 sortedSkills.put(skillName.split("_")[0], score);
 //                }
             }
-            System.out.println("\n" + file.getName() + "====================\n");
+//            System.out.println("\n" + file.getName() + "====================\n");
             sortedSkills = fileManager.SortByComparator(sortedSkills);
             fileManager.WriteFile(file.getName(), sortedSkills, Config.processedProfilesPath);
         }
     }
 
-    public void SortSkills(long id) {                                   // analyse skills for 1 user
+    public Map<String, Double> SortSkills(long id) {                                   // analyse skills for 1 user
         sortedSkills = new HashMap<String, Double>();
         File skillDocs = new File(aggregateSkillsPath);
         String[] skillNames = skillDocs.list();
@@ -59,7 +59,7 @@ public class SkillAnalyzer {
 
         if (!file.exists()) {
             System.out.println("no file :"+file.getPath());
-            return;
+            return null;
         }
 
         HashMap<String, Double> profileMap = fileManager.FileToMap(file);
@@ -69,10 +69,11 @@ public class SkillAnalyzer {
             sortedSkills.put(skillName.split("_")[0], score);
 //                }
         }
-        System.out.println("\n" + file.getName() + "====================\n");
+//        System.out.println("\n" + file.getName() + "====================\n");
         sortedSkills = fileManager.SortByComparator(sortedSkills);
         fileManager.WriteFile(file.getName(), sortedSkills, Config.processedProfilesPath);
 
+        return sortedSkills;
     }
 
 
@@ -94,11 +95,11 @@ public class SkillAnalyzer {
                     sortedSkills.put(skillName.split("_")[0], score);
                 }
             }
-            System.out.println("\n" + file.getName() + "====================\n");
+//            System.out.println("\n" + file.getName() + "====================\n");
             sortedSkills = fileManager.SortByComparator(sortedSkills);
-            for (Map.Entry<String, Double> entry : sortedSkills.entrySet()) {
-                System.out.println(entry.getKey() + " : " + entry.getValue());
-            }
+//            for (Map.Entry<String, Double> entry : sortedSkills.entrySet()) {
+//                System.out.println(entry.getKey() + " : " + entry.getValue());
+//            }
             fileManager.NormalizeMap((HashMap<String, Double>) sortedSkills);
             fileManager.WriteFile(file.getName(), sortedSkills, Config.processedSkillsPath);
         }

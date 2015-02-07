@@ -11,7 +11,7 @@ import java.util.Properties;
  */
 public final class Config {
 
-    private static  String rootPath;
+    public static  String rootPath;
     public static String skillsPath               ;
     public static String skillsOutputPath         ;
     public static String normalizedSkillsPath     ;

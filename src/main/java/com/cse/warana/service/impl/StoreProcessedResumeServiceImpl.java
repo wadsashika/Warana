@@ -57,7 +57,7 @@ public class StoreProcessedResumeServiceImpl implements StoreProcessedResumeServ
     private StoreCandidateTechnologyDaoImpl storeCandidateTechnologyDao;
 
     @Autowired
-    @Qualifier("getTechnologyIds")
+    @Qualifier("getTechnologyIdDao")
     private GetTechnologyIdDao getTechnologyIdsDao;
 
     @Override
