@@ -4,10 +4,8 @@ import com.cse.warana.controller.ProcessResumeController;
 import com.cse.warana.dto.AnalyticResultsDTO;
 import com.cse.warana.service.CVParserService;
 import com.cse.warana.service.CandidateProfileGeneratorService;
-import com.cse.warana.service.impl.AnalyzeResumeServiceImpl;
-import com.cse.warana.service.impl.AnalyzedResultsServiceImpl;
-import com.cse.warana.service.impl.CVParserServiceImpl;
-import com.cse.warana.service.impl.CandidateProfileGeneratorServiceImpl;
+import com.cse.warana.service.CompanyDocParserService;
+import com.cse.warana.service.impl.*;
 import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparotor;
 import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.PhraseAnalyzer;
 import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Skills.SkillAnalyzer;
@@ -27,7 +25,7 @@ import java.util.Scanner;
 public class Main {
 
     static public  void  main(String[] args) {
-        new Main().CallName();
+        new Main().companyDocTest();
 //        Config.initialize("C:/Warana");
 
 //        AlgorithmComparotor comparotor=new AlgorithmComparotor();
@@ -37,6 +35,12 @@ public class Main {
 
     }
 
+    public void companyDocTest(){
+//        docParserService.readCompanyDoc();
+        AlgorithmComparotor comparotor=new AlgorithmComparotor();
+        Config.initialize("C:/Warana");
+        comparotor.ExtractTermsBatch(Config.companyDocs,Config.companyDocsOut);
+    }
 
 
     private String uploadsPath;

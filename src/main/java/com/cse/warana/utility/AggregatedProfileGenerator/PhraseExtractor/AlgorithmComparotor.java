@@ -237,6 +237,7 @@ public class AlgorithmComparotor {
     public void ExtractTermsBatch(String rootPath, String destPath) {           // extract terms as a batch
         File root = new File(rootPath);
         for (String s : root.list()) {
+            System.out.println(s);
             phraseAnalyzer.RecognizeTerms(rootPath + "\\" + s, destPath + "\\" + s);
         }
     }

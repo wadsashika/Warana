@@ -28,6 +28,8 @@ public final class Config {
     public static String weightMapPath            ;
     public static String abbreviationsSkillsPath  ;
     public static String abbreviationsProfilesPath;
+    public static String companyDocs;
+    public static String companyDocsOut;
 
 
     //    jate properties
@@ -73,6 +75,8 @@ public final class Config {
             weightMapPath            = rootPath+"/Docs/WeightMap.csv";
             abbreviationsSkillsPath  = rootPath+"/Docs/Abbreviations/SkillDocs/";
             abbreviationsProfilesPath= rootPath+"/Docs/Abbreviations/UserDocs/";
+            companyDocs              = rootPath+"/CompanyDocUploads/CompanyText";
+            companyDocsOut              = rootPath+"/CompanyDocUploads/CompanyTextOut";
 
             NLP_PATH    =   rootPath+File.separator+"nlp_resources";
 
