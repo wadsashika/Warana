@@ -87,7 +87,7 @@
                 </div>
 
                 <div class="col-lg-6 col-md-6">
-                    <a href="#">
+                    <a href="adminpanel/upload">
                         <div class="tile panel-lightYellow">
                             <div class="panel-heading">
                                 <div class="row">
