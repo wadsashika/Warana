@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -21,7 +22,7 @@ public class PersonalInfoExtract {
     private ArrayList<String> nameHeaderPatterns = new ArrayList<>();
     private String listpath = "";
 
-    public PersonalInfoExtract(HashMap<String,String> paths){
+    public PersonalInfoExtract(Map<String,String> paths){
         listpath = paths.get("root") + paths.get("listPath");
     }
 
