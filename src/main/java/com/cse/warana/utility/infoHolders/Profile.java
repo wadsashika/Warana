@@ -76,9 +76,10 @@ public class Profile {
     }
 
     public String getName() {
-        String[] split=name.split(" ");
-        if (split.length>1)
-            return split[0]+" "+split[1];
+        name.replaceAll("(:|-| )","");
+//        String[] split=name.split(" ");
+//        if (split.length>1)
+//            return split[0]+" "+split[1];
         return name;
     }
 

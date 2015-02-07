@@ -23,6 +23,7 @@ public class FindMissedInfo {
      * Heuristic is we can find the email of a person most of the time around the name
      */
     public void findProfileInfo(ArrayList<String> lines, Profile profile) {
+
         int terminatingLine = 0;
         if (lines.size() < 15) {
             terminatingLine = lines.size();
@@ -33,6 +34,10 @@ public class FindMissedInfo {
         String name = "";
         String email = null;
         boolean chkCtr = false;
+
+        if (!profile.getName().equals("")){
+            name = profile.getName();
+        }
         /**
          * Regex to Identify the basic name writing patterns
          */
@@ -110,14 +115,16 @@ public class FindMissedInfo {
         String linkedIn = ".*linkedin.com.*";
         String github = ".*github.com.*";
 
-        Pattern urlPattern = Pattern.compile("((?<=[^a-zA-Z0-9])(?:https?\\:\\/\\/|[a-zA-Z0-9]{1,}\\.{1}|\\b)(?:\\w{1,}\\.{1}){1,5}(?:com|org|edu|gov|uk|net|ca|de|jp|fr|au|us|ru|ch|it|nl|se|no|es|mil|iq|io|ac|ly|sm){1}(?:\\/[a-zA-Z0-9]{1,})*)");
+        Pattern urlPattern = Pattern.compile("((?:https?\\:\\/\\/|[a-zA-Z0-9]{1,}\\.{1}|\\b)(?:\\w{1,}\\.{1}){1,5}(?:com|org|edu|gov|uk|net|ca|de|jp|fr|au|us|ru|ch|it|nl|se|no|es|mil|iq|io|ac|ly|sm){1}(?:\\/[a-zA-Z0-9]{1,})*)");
         Pattern linkedInPtrn = Pattern.compile(linkedIn);
         Pattern gitPtrn = Pattern.compile(github);
         Matcher linkedInMtch = null;
         Matcher gitMatch = null;
         Matcher urlMatcher = urlPattern.matcher(para);
+        String checkEmail = getEmail(para);
 
-        if (urlMatcher.find()) {
+        if (checkEmail==null && urlMatcher.find()) {
+
             String url = urlMatcher.group(0);
             StringTokenizer tokenizer = new StringTokenizer(para, " ");
 

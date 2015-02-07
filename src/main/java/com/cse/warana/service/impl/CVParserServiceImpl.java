@@ -348,7 +348,7 @@ public class CVParserServiceImpl implements CVParserService {
     @Override
     public void parseLines(HashMap<String, Object> infoCategoryTypes) {
         EducationalInfoExtract eduInfo = new EducationalInfoExtract(pathsMap);
-        PersonalInfoExtract perInfo = new PersonalInfoExtract();
+        PersonalInfoExtract perInfo = new PersonalInfoExtract(pathsMap);
         WorkInfoExtract wrkInfo = new WorkInfoExtract(classifier, pathsMap);
         AchievementsInfoExtract achInfo = new AchievementsInfoExtract(pathsMap);
         ProjectInfoExtraction projInfo = new ProjectInfoExtraction(pathsMap);

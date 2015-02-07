@@ -1,7 +1,14 @@
 package com.cse.warana.controller;
 
 import com.cse.warana.dto.ResumesToProcessDto;
-import com.cse.warana.service.*;
+import com.cse.warana.service.CVParserService;
+import com.cse.warana.service.CandidateProfileGeneratorService;
+import com.cse.warana.service.ResumesToProcessService;
+import com.cse.warana.service.StoreProcessedResumeService;
+import com.cse.warana.service.impl.AnalyzedResultsServiceImpl;
+import com.cse.warana.service.impl.CVParserServiceImpl;
+import com.cse.warana.service.impl.CandidateProfileGeneratorServiceImpl;
+import com.cse.warana.service.impl.StoreProcessedResumeServiceImpl;
 import com.cse.warana.utility.infoHolders.Candidate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,6 +26,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Nadeeshaan on 11/15/2014.

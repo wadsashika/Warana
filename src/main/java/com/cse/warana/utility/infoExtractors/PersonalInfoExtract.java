@@ -4,7 +4,9 @@ import com.cse.warana.utility.infoHolders.Profile;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.StringTokenizer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -16,6 +18,12 @@ public class PersonalInfoExtract {
 
 
     private static Logger LOG = LoggerFactory.getLogger(PersonalInfoExtract.class);
+    private ArrayList<String> nameHeaderPatterns = new ArrayList<>();
+    private String listpath = "";
+
+    public PersonalInfoExtract(HashMap<String,String> paths){
+        listpath = paths.get("root") + paths.get("listPath");
+    }
 
     /**
      * Extract the personal information from the text, such as name, email, gender, mobile number, etc..
@@ -30,6 +38,25 @@ public class PersonalInfoExtract {
     public void extractPersonalInformation(ArrayList<String> lines, ArrayList<Integer> headingLines, ArrayList<String> allHeadings, ArrayList<String> linesCopy, Profile profile) {
 
         String lineText = "";
+
+        /**
+         * Reading for the name headers from relevant gazetteer list
+         */
+        BufferedReader br = null;
+        String nameHeaderStr = "";
+        try {
+            br = new BufferedReader(new FileReader(listpath + File.separator + "nameHeaderPatterns"));
+            nameHeaderStr = br.readLine();
+
+            while (!nameHeaderStr.equals("end")){
+                nameHeaderPatterns.add(nameHeaderStr);
+                nameHeaderStr = br.readLine();
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         LOG.info("----Beginning Personal/profile Information----");
         for (int a = 0; a < headingLines.size(); a++) {
@@ -75,36 +102,49 @@ public class PersonalInfoExtract {
      */
     public boolean getName(String para, Profile profile) {
 
-        String tokens[] = para.split("\\W");
-        String name = "";
+        Pattern nameHeaderPattern = null;
+        Matcher nameHeaderMatcher = null;
+        boolean status = false;
 
-        for (int a = 0; a < tokens.length; a++) {
-            if (tokens[a].equalsIgnoreCase("Name")) {
-                if (a + 2 < tokens.length) {
-                    if (tokens[a + 1].equalsIgnoreCase("with") && tokens[a + 2].equalsIgnoreCase("initials")) {
-                        for (int b = a + 3; b < tokens.length; b++) {
-                            name += tokens[b] + " ";
-                            LOG.info(tokens[b]);
-                        }
-                        LOG.info("");
-
-                        profile.setName(name);
-                        return true;
-                    } else {
-                        for (int b = a + 1; b < tokens.length; b++) {
-                            name += tokens[b] + " ";
-                            LOG.info(tokens[b] + " ");
-                        }
-                        LOG.info("");
-
-                        profile.setName(name.trim());
-                        return true;
-                    }
-                }
-                return false;
+        for (int a = 0; a < nameHeaderPatterns.size(); a++){
+            nameHeaderPattern = Pattern.compile(".*("+nameHeaderPatterns.get(a)+").*");
+            nameHeaderMatcher = nameHeaderPattern.matcher(para.toLowerCase());
+            if (nameHeaderMatcher.matches()){
+                LOG.info(nameHeaderMatcher.group(1));
+                profile.setName(para.toLowerCase().replaceAll(nameHeaderMatcher.group(1),""));
+                status = true;
+                break;
             }
         }
-        return false;
+
+        return status;
+
+//        for (int a = 0; a < tokens.length; a++) {
+//            if (tokens[a].equalsIgnoreCase("Name")) {
+//                if (a + 2 < tokens.length) {
+//                    if (tokens[a + 1].equalsIgnoreCase("with") && tokens[a + 2].equalsIgnoreCase("initials")) {
+//                        for (int b = a + 3; b < tokens.length; b++) {
+//                            name += tokens[b] + " ";
+//                            LOG.info(tokens[b]);
+//                        }
+//                        LOG.info("");
+//
+//                        profile.setName(name);
+//                        return true;
+//                    } else {
+//                        for (int b = a + 1; b < tokens.length; b++) {
+//                            name += tokens[b] + " ";
+//                            LOG.info(tokens[b] + " ");
+//                        }
+//                        LOG.info("");
+//
+//                        profile.setName(name.trim());
+//                        return true;
+//                    }
+//                }
+//                return false;
+//            }
+//        }
     }
 
 

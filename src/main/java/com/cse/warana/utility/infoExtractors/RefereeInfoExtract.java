@@ -196,10 +196,10 @@ public class RefereeInfoExtract {
      * @return
      */
     public boolean getPhone(String para, Referee referee) {
-        Pattern pattern = Pattern.compile("(.*phone.* | tel | mobile | office )");
+        Pattern pattern = Pattern.compile(".*(phone|tel|mobile|office).*");
         Matcher matcher = pattern.matcher(para.toLowerCase());
 
-        if (matcher.find()) {
+        if (matcher.find() && referee != null) {
             referee.setPhone(para);
             LOG.info(para);
             return true;
