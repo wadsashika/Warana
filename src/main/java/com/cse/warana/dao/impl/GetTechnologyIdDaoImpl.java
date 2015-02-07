@@ -49,9 +49,12 @@ public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechno
         };
 
         List<String> techIds=null;
+        HashMap<String,String> techMap=new HashMap<>();
 
         try {
             techIds = getNamedParameterJdbcTemplate().query(query.toString(),mapper);
+
+
         }
         catch (NullPointerException e){
             System.out.println("Null Pointer Exception");

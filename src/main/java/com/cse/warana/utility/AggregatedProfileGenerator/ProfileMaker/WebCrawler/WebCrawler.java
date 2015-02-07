@@ -27,8 +27,8 @@ public class WebCrawler {
     private String baseUrl;
     FileManager fileManager;
 
-    public static void main(String[] args){
-        WebCrawler webCrawler=new WebCrawler();
+    public static void main(String[] args) {
+        WebCrawler webCrawler = new WebCrawler();
         webCrawler.ExtractOnlineDocuments("http://www.insightforfuture.blogspot.com/");
     }
 
@@ -96,7 +96,7 @@ public class WebCrawler {
 
     public void ExtractOnlineDocuments() {
 
-        if(profile.getUrls().size()>0) {
+        if (profile.getUrls().size() > 0) {
             for (String url : profile.getUrls()) {
                 ExtractWebArticles(url);
             }
@@ -121,29 +121,30 @@ public class WebCrawler {
 //        }
     }
 
-    public void ExtractWebArticles(String url){
+    public void ExtractWebArticles(String url) {
 
         if (!url.contains("http"))
-            url="http://"+url;
+            url = "http://" + url;
 
-        this.baseUrl=url;
-        System.out.println("blog========================================================"+baseUrl);
+        this.baseUrl = url;
+        System.out.println("blog========================================================" + baseUrl);
         driver = downloadPage(baseUrl);
         GetLinks(driver.getPageSource());
+        driver.quit();
     }
 
     private void ExtractKeyterms() {
-        AlgorithmComparotor comparotor=new AlgorithmComparotor();
-        comparotor.ExtractTerms(Config.profilesPath+ File.separator+profile.getId(),Config.profilesOutputPath+File.separator+profile.getId());
+        AlgorithmComparotor comparotor = new AlgorithmComparotor();
+        comparotor.ExtractTerms(Config.profilesPath + File.separator + profile.getId(), Config.profilesOutputPath + File.separator + profile.getId());
         comparotor.ExtractAbbreviations(Config.profilesPath + File.separator + profile.getId(), Config.abbreviationsProfilesPath + File.separator + profile.getId());
-        comparotor.NormalizeFiles(Config.profilesOutputPath+File.separator+profile.getId(),Config.normalizedProfilesPath);
-        comparotor.CompareTerms(Config.normalizedProfilesPath+File.separator+profile.getId(),Config.aggregatedProfilesPath,Config.abbreviationsProfilesPath+File.separator+profile.getId());
+        comparotor.NormalizeFiles(Config.profilesOutputPath + File.separator + profile.getId(), Config.normalizedProfilesPath);
+        comparotor.CompareTerms(Config.normalizedProfilesPath + File.separator + profile.getId(), Config.aggregatedProfilesPath, Config.abbreviationsProfilesPath + File.separator + profile.getId());
     }
 
 
     public void ExtractOnlineDocuments(String baseUrl) {
         driver = downloadPage(baseUrl);
-        this.baseUrl=baseUrl;
+        this.baseUrl = baseUrl;
         GetLinks(driver.getPageSource());
     }
 
@@ -160,7 +161,7 @@ public class WebCrawler {
         for (Element link : links) {
             String str = link.attr("abs:href");
             if (str.contains(baseUrl.split("//")[1])) {
-                linkMap.put(str,linkMap.size());
+                linkMap.put(str, linkMap.size());
             }
         }
 
@@ -179,21 +180,21 @@ public class WebCrawler {
 
             fileManager.WriteFile(Config.profilesPath + "/" + profile.getId(), entry);
         }
-        driver.quit();
+//        driver.quit();
 
     }
 
     private void getContent(HashMap<String, String> pageMap, String link) {
         driver = downloadPage(link);
         try {
-            System.out.println("waiting "+link+" to download");
+            System.out.println("waiting " + link + " to download");
             Thread.sleep(1000);
             System.out.println("waiting ended");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
         if (!driver.getCurrentUrl().contains(baseUrl.split("//")[1])) {             // redirected to another website
-            System.out.println("Rejected :"+driver.getCurrentUrl());
+            System.out.println("Rejected :" + driver.getCurrentUrl());
             return;                                                                 // split is used because http https issue
         }
         org.jsoup.nodes.Document doc = Jsoup.parse(driver.getPageSource());
