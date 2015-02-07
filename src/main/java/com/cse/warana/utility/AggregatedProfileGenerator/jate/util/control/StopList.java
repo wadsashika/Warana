@@ -41,7 +41,7 @@ public class StopList extends HashSet<String> {
 	}
 
 	private void loadStopList(final File stopListFile, final boolean lowercase) throws IOException {
-      final BufferedReader reader = new BufferedReader(new FileReader(stopListFile));
+      final BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Anushka-PC\\Documents\\GitHub\\Warana\\"+stopListFile));
       String line;
       while ((line = reader.readLine()) != null) {
          line = line.trim();

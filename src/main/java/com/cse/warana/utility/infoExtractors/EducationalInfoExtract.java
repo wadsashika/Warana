@@ -85,6 +85,7 @@ public class EducationalInfoExtract {
 
                             // Remove the line from the array list.
                             linesCopy.remove(lineText);
+                            break;
                         }
                     }
                 }

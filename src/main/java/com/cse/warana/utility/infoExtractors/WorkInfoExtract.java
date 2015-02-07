@@ -61,7 +61,7 @@ public class WorkInfoExtract {
                 lineText = lines.get(b);
                 if (allHeadings.contains(String.valueOf(b))) {
                     boolean duplicate = false;
-                    if (work != null && !work.getCompanyName().toLowerCase().equals("pvt) ltd")) {
+                    if (work != null && work.getCompanyName() !=null &&!work.getCompanyName().toLowerCase().equals("pvt) ltd")) {
                         for (int x = 0; x < worksList.size(); x++) {
                             if (worksList.get(x).getCompanyName().toLowerCase().equals(work.getCompanyName().toLowerCase())) {
                                 duplicate = true;
@@ -120,6 +120,7 @@ public class WorkInfoExtract {
                                 LOG.info(companyName);
                                 linesCopy.remove(lineText);
                                 foundCompany = true;
+                                break;
                             }
                         }
                     }

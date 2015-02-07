@@ -101,17 +101,25 @@ public class ProjectInfoExtraction {
                     if (project != null && technologyFound) {
                         technologyFound = false;
                         String description = "";
-                        for (int x = startProjectLine; x < endProjectLine; x++) {
+                        project.setName(lines.get(startProjectLine));
+                        for (int x = startProjectLine+1; x <= endProjectLine; x++) {
                             tokenizer = new StringTokenizer(lines.get(x), " ");
                             if (tokenizer.countTokens() > 2) {
-                                if (x == startProjectLine) {
-                                    project.setName(lines.get(x));
-                                } else {
-                                    description += lines.get(x);
-                                }
+                                description += lines.get(x);
                                 LOG.info(lines.get(x));
                             }
                         }
+//                        for (int x = startProjectLine; x < endProjectLine; x++) {
+//                            tokenizer = new StringTokenizer(lines.get(x), " ");
+//                            if (tokenizer.countTokens() > 2) {
+//                                if (x == startProjectLine) {
+//                                    project.setName(lines.get(x));
+//                                } else {
+//                                    description += lines.get(x);
+//                                }
+//                                LOG.info(lines.get(x));
+//                            }
+//                        }
                         project.setDescription(description);
                         if (project.getName() != null) {
                             projects.add(project);
@@ -125,7 +133,7 @@ public class ProjectInfoExtraction {
                 } else {
 
                     // Set the start of the set of lines which is used to describe the project
-                    pattern = Pattern.compile("(http|ftp|https):\\/\\/([\\w\\-_]+(?:(?:\\.[\\w\\-_]+)+))([\\w\\-\\.,@?^=%&amp;:/~\\+#]*[\\w\\-\\@?^=%&amp;/~\\+#])?");
+                    pattern = Pattern.compile(".*(http|ftp|https):\\/\\/([\\w\\-_]+(?:(?:\\.[\\w\\-_]+)+))([\\w\\-\\.,@?^=%&amp;:/~\\+#]*[\\w\\-\\@?^=%&amp;/~\\+#])?.*");
                     matcher = pattern.matcher(lineText);
 
                     if (matcher.matches()) {
@@ -201,8 +209,8 @@ public class ProjectInfoExtraction {
          * Technologies: ....,.....,....,...
          * Technologies: (....,.....,....,...)
          */
-        String[] techTokens = tempText.split("(:|-)");
-        if (tempText.toLowerCase().matches(tecRegex) && techTokens.length == 2) {
+        String[] techTokens = tempText.split("(:|-|,)");
+        if (tempText.toLowerCase().matches(tecRegex) && techTokens.length >= 2) {
             techTokens[1] = techTokens[1].replaceAll("(\\(|\\)|\\[|\\]|\\{|\\})", "");
             String[] technologiesArray = techTokens[1].split(",");
 
