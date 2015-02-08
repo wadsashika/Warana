@@ -108,6 +108,6 @@ public class CompanyDocParserServiceImpl implements CompanyDocParserService {
                 break;
             }
         }
-        companyTechnologyService.storeCompanyTechnologies(list);
+//        companyTechnologyService.storeCompanyTechnologies(list);
     }
 }
