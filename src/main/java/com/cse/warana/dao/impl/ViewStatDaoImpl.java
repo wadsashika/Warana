@@ -179,10 +179,10 @@ public class ViewStatDaoImpl extends BaseJDBCDaoImpl implements ViewStatDao {
         subQuery.append("WHERE t.id = ct.technology_id AND ct.candidate_id = ");
         subQuery.append(id);
 
-        query.append("SELECT cot.techology as techName,ifnull(tn.per,0) as percentage,cot.score as cscore \n");
+        query.append("SELECT cot.technology as techName,ifnull(tn.per,0) as percentage,cot.score as cscore \n");
         query.append("FROM company_technology as cot LEFT JOIN \n");
         query.append("(" + subQuery + ")as tn ");
-        query.append("ON cot.techology = tn.tech");
+        query.append("ON cot.technology = tn.tech");
 
         returnList = getNamedParameterJdbcTemplate().queryForList(query.toString(), new HashMap<String, Object>());
 
