@@ -5,7 +5,7 @@
 <link href='<c:url value="/css/warana/dashboard.css" />' rel="stylesheet" type="text/css"/>
 
 <script src='<c:url value="/js/d3.v2.js" />' type="text/javascript"></script>
-<script src='<c:url value="/js/warana/graph.js" />' type="text/javascript"></script>
+<%--<script src='<c:url value="/js/warana/graph.js" />' type="text/javascript"></script>--%>
 
 <div id="wrapper">
     <div id="page-wrapper">

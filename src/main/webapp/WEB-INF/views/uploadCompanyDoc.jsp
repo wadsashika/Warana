@@ -12,7 +12,7 @@
             <div class="col-lg-12">
                 <div class="panel panel-primary">
                     <div class="panel-heading">
-                        Upload Your Resumes
+                        Upload Company Documents
                     </div>
                     <div class="panel-body">
                         <div class="col-xs-12">
@@ -92,6 +92,9 @@
                             <button type="button" id="remove-all" class="btn btn-primary action-btn">
                                 <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel All
                             </button>
+                            <button type="button" id="process-all" class="btn btn-primary action-btn">
+                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Process
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -105,6 +108,6 @@
 <link href='<c:url value="/css/warana/upload.css" />' rel="stylesheet" type="text/css"/>
 
 <script src='<c:url value="/js/dropzone.js" />' type="text/javascript"></script>
-<script src='<c:url value="/js/warana/upload.js" />' type="text/javascript"></script>
+<script src='<c:url value="/js/warana/uploadCompanyDoc.js" />' type="text/javascript"></script>
 
 <%@include file="footer.jsp" %>

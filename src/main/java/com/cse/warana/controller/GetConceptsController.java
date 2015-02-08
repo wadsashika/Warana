@@ -46,7 +46,7 @@ public class GetConceptsController {
         if(technologyList.isEmpty()) {
             technologyListGenerator = new TechnologyListGenerator(root);
             List<String> conceptsNames = technologyListGenerator.inti(getConceptsService.getConceptsList());
-            companyTechnologyService.storeCompanyTechnologies(conceptsNames);
+//            companyTechnologyService.storeCompanyTechnologies(conceptsNames);
 
             return gson.toJson(conceptsNames);
         }

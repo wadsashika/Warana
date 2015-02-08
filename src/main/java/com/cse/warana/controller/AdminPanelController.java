@@ -2,6 +2,7 @@ package com.cse.warana.controller;
 
 import com.cse.warana.service.CompanyDocParserService;
 import com.cse.warana.service.CompanyDocUploadService;
+import com.cse.warana.service.CompanyTechnologyService;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.slf4j.Logger;
@@ -50,6 +51,15 @@ public class AdminPanelController {
     @Value("${DOCTEXTOUT.PATH}")
     private String outTextPath;
 
+    @Value("${COMPANYNAME}")
+    private String companyName;
+
+    @Autowired
+    @Qualifier("companytechnologiesService")
+    private CompanyTechnologyService companyTechnologyService;
+
+    private ArrayList<String> fileNamesList;
+
     @RequestMapping(value = "/adminpanel", method = RequestMethod.GET)
     public ModelAndView viewAdminPanel() {
 
@@ -72,13 +82,14 @@ public class AdminPanelController {
 
         return model;
     }
+
     @RequestMapping(value = "/adminpanel/fileupload", method = RequestMethod.POST)
     public
     @ResponseBody
     String uploadFilesToServer(MultipartHttpServletRequest request) {
 
         String baseUploadDirectory = root + uploadsPath;
-        ArrayList<String> fileNamesList = new ArrayList<>();
+        fileNamesList = new ArrayList<>();
         ArrayList<String> missedFiles = new ArrayList<>();
         HashMap<Object, Object> returnJson = new HashMap<>();
         boolean success = true;
@@ -93,9 +104,8 @@ public class AdminPanelController {
             multipartFile = request.getFile(itr.next());
             filePath = multipartFile.getOriginalFilename();
             try {
-                multipartFile.transferTo(new File(baseUploadDirectory+ File.separator + filePath));
+                multipartFile.transferTo(new File(baseUploadDirectory + File.separator + filePath));
                 fileNamesList.add(filePath);
-                companyDocParserService.readCompanyDoc(new File(baseUploadDirectory+ File.separator + filePath), baseUploadDirectory+uploadsTextPath, baseUploadDirectory+outTextPath);
             } catch (IOException e) {
                 e.printStackTrace();
                 missedFiles.add(filePath);
@@ -105,15 +115,31 @@ public class AdminPanelController {
         }
 
         docUploadService.storeDocData(fileNamesList);
+
         if (success) {
             returnJson.put("status", "true");
         } else {
             returnJson.put("status", "false");
         }
+
+
         returnJson.put("files", missedFiles);
         jsonString = gson.toJson(returnJson);
         System.out.println(jsonString);
         return jsonString;
     }
 
+    @RequestMapping(value = "/adminpanel/processDocuments", method = RequestMethod.POST)
+    @ResponseBody
+    public String getTechnologyList() throws IOException {
+        Gson gson = new GsonBuilder().serializeNulls().create();
+        String baseUploadDirectory = root + uploadsPath;
+        for(String filePath: fileNamesList){
+            companyDocParserService.readCompanyDoc(new File(baseUploadDirectory + File.separator + filePath), baseUploadDirectory + uploadsTextPath);
+        }
+
+        companyDocParserService.extractDoc(root, companyName);
+
+        return gson.toJson("true");
+    }
 }
