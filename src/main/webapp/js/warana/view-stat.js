@@ -272,10 +272,7 @@ WARANA.module.viewStat = function () {
 
                     yAxis: {
                         gridLineInterpolation: 'polygon',
-                        lineWidth: 0,
-                        tickInterval: 25,
-                        min: 0,
-                        max: 100
+                        lineWidth: 0
                     },
 
                     tooltip: {

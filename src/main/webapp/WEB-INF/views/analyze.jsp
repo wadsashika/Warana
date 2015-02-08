@@ -32,7 +32,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="dash-board-title">Process Resume</h1>
+                <h1 class="dash-board-title">Analyze Resume</h1>
                 <hr class="pages-title-hr">
             </div>
         </div>

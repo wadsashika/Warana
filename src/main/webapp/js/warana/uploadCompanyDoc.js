@@ -56,14 +56,15 @@ WARANA.module.uploadCv = function () {
 
         WARANA.messageConfirmation(removeAllFiles, title, msg);
     };
-    var processDoc= function(){
+    var processDoc = function () {
+        WARANA.displayLoadingModel();
         var ajaxInitData = {
             url: "processDocuments",
             contentType: "application/json"
         };
 
         var successFn = function (result) {
-          console.log("sdsdsddsd")
+            WARANA.hideLoadingModel();
         };
 
         WARANA.common.ajaxCall(ajaxInitData, successFn);

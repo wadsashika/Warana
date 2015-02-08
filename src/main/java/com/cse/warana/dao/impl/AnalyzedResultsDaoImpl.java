@@ -73,7 +73,7 @@ public class AnalyzedResultsDaoImpl extends BaseJDBCDaoImpl implements AnalyzedR
             public CandidateDTO mapRow(ResultSet resultSet, int i) throws SQLException {
                 CandidateDTO candidateDTO = new CandidateDTO();
 
-                candidateDTO.setScore(resultSet.getLong("score"));
+                candidateDTO.setScore(resultSet.getDouble("score"));
                 candidateDTO.setPic_path(resultSet.getString("pic_path"));
                 candidateDTO.setName(resultSet.getString("name"));
                 candidateDTO.setAddress(resultSet.getString("address"));
