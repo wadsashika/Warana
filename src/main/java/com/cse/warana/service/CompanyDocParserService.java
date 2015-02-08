@@ -6,5 +6,6 @@ import java.io.File;
  * Created by Anushka on 2015-02-05.
  */
 public interface CompanyDocParserService {
-    public void readCompanyDoc(File file, String path, String outPath);
+    public void readCompanyDoc(File file, String path);
+    public void extractDoc(String root,String companyName);
 }

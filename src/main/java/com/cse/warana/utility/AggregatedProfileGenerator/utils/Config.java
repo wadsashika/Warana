@@ -30,6 +30,9 @@ public final class Config {
     public static String abbreviationsProfilesPath;
     public static String companyDocs;
     public static String companyDocsOut;
+    public static String normalizedCompanyDocs;
+    public static String aggregatedCompanyDocs;
+    public static String abbreviationsCompanyPath;
 
 
     //    jate properties
@@ -77,6 +80,9 @@ public final class Config {
             abbreviationsProfilesPath= rootPath+"/Docs/Abbreviations/UserDocs/";
             companyDocs              = rootPath+"/CompanyDocUploads/CompanyText";
             companyDocsOut              = rootPath+"/CompanyDocUploads/CompanyTextOut";
+            normalizedCompanyDocs=rootPath+"/CompanyDocUploads/CompanyNormalizedTextOut";
+            aggregatedCompanyDocs=rootPath+"/CompanyDocUploads/CompanyAggregatedTextOut/";
+            abbreviationsCompanyPath= rootPath+"/CompanyDocUploads/CompanyAbb/";
 
             NLP_PATH    =   rootPath+File.separator+"nlp_resources";
 
