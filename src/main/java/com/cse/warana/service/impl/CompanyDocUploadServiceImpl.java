@@ -29,7 +29,7 @@ public class CompanyDocUploadServiceImpl implements CompanyDocUploadService {
             CompanyDocTbl companyDocTbl = new CompanyDocTbl();
             companyDocTbl.setFileName(fileNames.get(a));
 
-//            storeCompanyDocDao.saveEntity(companyDocTbl);
+            storeCompanyDocDao.saveEntity(companyDocTbl);
         }
     }
 }

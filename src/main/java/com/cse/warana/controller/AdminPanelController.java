@@ -3,6 +3,7 @@ package com.cse.warana.controller;
 import com.cse.warana.service.CompanyDocParserService;
 import com.cse.warana.service.CompanyDocUploadService;
 import com.cse.warana.service.CompanyTechnologyService;
+import com.cse.warana.service.GetUploadedDocService;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.slf4j.Logger;
@@ -23,6 +24,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * Created by Anushka on 2015-02-05.
@@ -58,7 +60,11 @@ public class AdminPanelController {
     @Qualifier("companytechnologiesService")
     private CompanyTechnologyService companyTechnologyService;
 
-    private ArrayList<String> fileNamesList;
+    @Autowired
+    @Qualifier("getCompanyDocUploadService")
+    private GetUploadedDocService getUploadedDocService;
+
+
 
     @RequestMapping(value = "/adminpanel", method = RequestMethod.GET)
     public ModelAndView viewAdminPanel() {
@@ -87,7 +93,7 @@ public class AdminPanelController {
     public
     @ResponseBody
     String uploadFilesToServer(MultipartHttpServletRequest request) {
-
+        ArrayList<String> fileNamesList;
         String baseUploadDirectory = root + uploadsPath;
         fileNamesList = new ArrayList<>();
         ArrayList<String> missedFiles = new ArrayList<>();
@@ -103,6 +109,7 @@ public class AdminPanelController {
         while (itr.hasNext()) {
             multipartFile = request.getFile(itr.next());
             filePath = multipartFile.getOriginalFilename();
+
             try {
                 multipartFile.transferTo(new File(baseUploadDirectory + File.separator + filePath));
                 fileNamesList.add(filePath);
@@ -134,10 +141,10 @@ public class AdminPanelController {
     public String getTechnologyList() throws IOException {
         Gson gson = new GsonBuilder().serializeNulls().create();
         String baseUploadDirectory = root + uploadsPath;
+        List<String> fileNamesList= getUploadedDocService.getUploadedDocList();
         for(String filePath: fileNamesList){
             companyDocParserService.readCompanyDoc(new File(baseUploadDirectory + File.separator + filePath), baseUploadDirectory + uploadsTextPath);
         }
-
         companyDocParserService.extractDoc(root, companyName);
 
         return gson.toJson("true");
