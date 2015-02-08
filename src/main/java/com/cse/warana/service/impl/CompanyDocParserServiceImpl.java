@@ -38,6 +38,7 @@ public class CompanyDocParserServiceImpl implements CompanyDocParserService {
         PDFTextStripper stripper = null;
         PDDocument pdoc = null;
         COSDocument cdoc = null;
+        new File(path).mkdirs();
         try {
             parser = new PDFParser(new FileInputStream(file));
         } catch (IOException e) {

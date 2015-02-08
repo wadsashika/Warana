@@ -67,7 +67,7 @@ public class SkillAnalyzer {
 //                if (skillName.contains("_out")){
             score = analyzeSkill(skillName, profileMap);
             if(score>0) {
-                sortedSkills.put(skillName.split(".csv")[0], score);
+                sortedSkills.put(skillName.split(".csv")[0].toLowerCase(), score);
 //            System.out.println(skillName.split("_")[0]+ score+"**********************************");
             }
 //                }
