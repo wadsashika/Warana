@@ -23,11 +23,9 @@ public class CompanyTechnologyServiceImpl implements CompanyTechnologyService {
 
     @Override
     @TransactionAttribute(TransactionAttributeType.REQUIRED)
-    public void storeCompanyTechnologies(List<String> technologies) {
-        CompanyTechnology companyTechnology= new CompanyTechnology();
-        for (String t: technologies){
-            companyTechnology.setTechnology(t);
-            companyTechnologyDao.saveEntity(companyTechnology);
+    public void storeCompanyTechnologies(List<CompanyTechnology> technologies) {
+        for (CompanyTechnology t: technologies){
+            companyTechnologyDao.saveEntity(t);
         }
 
     }

@@ -18,6 +18,9 @@ public class CompanyTechnology implements Serializable {
     @Column(name = "technology")
     private String technology;
 
+    @Column(name = "strength")
+    private float strength;
+
     public int getId() {
         return id;
     }
@@ -32,5 +35,13 @@ public class CompanyTechnology implements Serializable {
 
     public String getTechnology() {
         return technology;
+    }
+
+    public void setStrength(float strength) {
+        this.strength = strength;
+    }
+
+    public float getStrength() {
+        return strength;
     }
 }

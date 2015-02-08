@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `company_technology` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `technology` varchar(20) NOT NULL,
+  `technology` varchar(250) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
