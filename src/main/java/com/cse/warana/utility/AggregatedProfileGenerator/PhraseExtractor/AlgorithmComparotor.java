@@ -35,6 +35,7 @@ public class AlgorithmComparotor {
 
     public void Compare(String rootPath, String normalizedFilesPath, String aggregatedFilesPath, String abbrFilesPath) {
 //        System.out.println("Comparing "+rootPath);
+        System.out.println("++++++++++++++++++++++++++"+rootPath);
         File directories = new File(rootPath);
         String[] directoryNames = directories.list();
         for (String name : directoryNames) {
@@ -53,6 +54,7 @@ public class AlgorithmComparotor {
 
     private void NormalizeFilesBatch(String path, String destPath) {             // normalize batch
         File root = new File(path);
+        System.out.println("root ***************************"+path);
         HashMap<String, String> termsMap = new HashMap<String, String>();
 //        termsMap.put("000","");
         for (File file : root.listFiles()) {

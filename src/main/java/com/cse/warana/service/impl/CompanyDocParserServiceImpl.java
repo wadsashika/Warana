@@ -75,7 +75,9 @@ public class CompanyDocParserServiceImpl implements CompanyDocParserService {
     public void extractDoc(String root,String companyName) {
         AlgorithmComparotor algorithmComparotor = new AlgorithmComparotor();
         Config.initialize(root);
-        algorithmComparotor.ExtractTerms(Config.companyDocs + companyName, Config.companyDocsOut);
+        new File(Config.companyDocsOut+companyName).mkdirs();
+        new File(Config.normalizedCompanyDocs).mkdirs();
+        algorithmComparotor.ExtractTerms(Config.companyDocs + companyName, Config.companyDocsOut+companyName);
         algorithmComparotor.ExtractAbbreviations(Config.companyDocs + companyName, Config.abbreviationsCompanyPath);
         algorithmComparotor.Compare(Config.companyDocsOut, Config.normalizedCompanyDocs, Config.aggregatedCompanyDocs, Config.abbreviationsCompanyPath);
 
