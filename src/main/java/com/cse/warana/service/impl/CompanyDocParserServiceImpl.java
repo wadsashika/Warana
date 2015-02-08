@@ -29,6 +29,8 @@ public class CompanyDocParserServiceImpl implements CompanyDocParserService {
         PDFTextStripper stripper = null;
         PDDocument pdoc = null;
         COSDocument cdoc = null;
+        new File(path).mkdirs();
+        new File(outPath).mkdirs();
         try {
             parser = new PDFParser(new FileInputStream(file));
         } catch (IOException e) {
@@ -61,7 +63,6 @@ public class CompanyDocParserServiceImpl implements CompanyDocParserService {
         }
 
         AlgorithmComparotor algorithmComparotor= new AlgorithmComparotor();
-        System.out.println(path+"*********************************"+outPath);
         algorithmComparotor.ExtractTermsBatch(path, outPath);
 
     }

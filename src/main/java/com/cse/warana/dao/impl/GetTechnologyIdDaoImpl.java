@@ -84,7 +84,7 @@ public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechno
             @Override
             public String mapRow(ResultSet resultSet, int i) throws SQLException {
                 String idNameStr = "";
-                idNameStr = resultSet.getString("id") +"," + resultSet.getString("technology");
+                idNameStr = resultSet.getString("id") +"," + resultSet.getString("technology").toLowerCase();
                 return idNameStr;
             }
         };

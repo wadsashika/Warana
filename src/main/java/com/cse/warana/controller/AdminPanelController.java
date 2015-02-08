@@ -84,7 +84,7 @@ public class AdminPanelController {
         boolean success = true;
         Gson gson = new GsonBuilder().serializeNulls().create();
         String jsonString = "";
-
+        new File(baseUploadDirectory).mkdir();
         Iterator<String> itr = request.getFileNames();
         MultipartFile multipartFile;
         String filePath = "";

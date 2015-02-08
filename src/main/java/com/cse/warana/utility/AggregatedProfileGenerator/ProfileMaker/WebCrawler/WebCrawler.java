@@ -100,6 +100,7 @@ public class WebCrawler {
             for (String url : profile.getUrls()) {
                 ExtractWebArticles(url);
             }
+            driver.quit();
             ExtractKeyterms();
         }
 
@@ -130,7 +131,7 @@ public class WebCrawler {
         System.out.println("blog========================================================" + baseUrl);
         driver = downloadPage(baseUrl);
         GetLinks(driver.getPageSource());
-        driver.quit();
+//        driver.quit();
     }
 
     private void ExtractKeyterms() {
