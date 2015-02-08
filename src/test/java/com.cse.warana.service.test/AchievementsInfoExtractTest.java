@@ -21,8 +21,8 @@ public class AchievementsInfoExtractTest {
     private ArrayList<Achievement> achievements = new ArrayList<>();
 
     public AchievementsInfoExtractTest(){
-        paths.put("root","src/main/resources");
-        paths.put("listPath","/gazeteerLists");
+        paths.put("root", "");
+        paths.put("listPath", "/gazeteerLists");
 
         lines.add("Awards and achievements");
         lines.add("IEEE programming Competition 2012");
@@ -38,7 +38,6 @@ public class AchievementsInfoExtractTest {
 
         allHeadings.add("0");
         allHeadings.add("3");
-
 
     }
 
