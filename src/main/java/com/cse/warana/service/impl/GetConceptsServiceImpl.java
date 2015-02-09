@@ -1,6 +1,7 @@
 package com.cse.warana.service.impl;
 
 import com.cse.warana.dao.GetConceptsDao;
+import com.cse.warana.model.CompanyTechnology;
 import com.cse.warana.service.GetConceptsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -12,7 +13,7 @@ import java.util.List;
  * Created by Anushka on 2015-01-02.
  */
 @Service("getConceptsService")
-public class GetConceptsServiceImpl implements GetConceptsService{
+public class GetConceptsServiceImpl implements GetConceptsService {
 
     @Autowired
     @Qualifier("getConceptsDao")
@@ -32,5 +33,12 @@ public class GetConceptsServiceImpl implements GetConceptsService{
         technologies = getConceptsDao.getTechnologyList();
 
         return technologies;
+    }
+
+    @Override
+    public List<CompanyTechnology> getCompanyTechologyWithScore() {
+        List<CompanyTechnology> returnList = null;
+        returnList = getConceptsDao.getCompanyTechnologiesWithScore();
+        return returnList;
     }
 }

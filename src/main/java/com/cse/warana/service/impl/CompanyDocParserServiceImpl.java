@@ -1,11 +1,13 @@
 package com.cse.warana.service.impl;
 
+import com.cse.warana.dao.GetTechnologyIdDao;
 import com.cse.warana.model.CompanyTechnology;
 import com.cse.warana.service.CompanyDocParserService;
 import com.cse.warana.service.CompanyTechnologyService;
 import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparotor;
 import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Skills.SkillAnalyzer;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
+import com.cse.warana.utility.infoHolders.Technology;
 import org.apache.pdfbox.cos.COSDocument;
 import org.apache.pdfbox.pdfparser.PDFParser;
 import org.apache.pdfbox.pdmodel.PDDocument;
@@ -16,9 +18,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Created by Anushka on 2015-02-05.
@@ -31,6 +31,11 @@ public class CompanyDocParserServiceImpl implements CompanyDocParserService {
     @Autowired
     @Qualifier("companytechnologiesService")
     private CompanyTechnologyService companyTechnologyService;
+
+
+    @Autowired
+    @Qualifier("getTechnologyIdDao")
+    private GetTechnologyIdDao getTechnologyIdDao;
 
     @Override
     public void readCompanyDoc(File file, String path) {
@@ -96,24 +101,42 @@ public class CompanyDocParserServiceImpl implements CompanyDocParserService {
     private void storeTechnology(String aggregatedPath) throws FileNotFoundException {
         File file = new File(aggregatedPath);
         Scanner sc = new Scanner(file);
+        List<Technology> t = new ArrayList<Technology>();
+        Technology technology;
+        Map<String, Float> ts = new HashMap<>();
         String line;
         List<CompanyTechnology> list = new ArrayList<CompanyTechnology>();
+        List<String> strings;
         float val;
         String s;
         CompanyTechnology companyTechnology;
         while (sc.hasNextLine()) {
-            companyTechnology = new CompanyTechnology();
+            technology = new Technology();
+            strings = new ArrayList<>();
             line = sc.nextLine();
             s = line.split(",")[0].split("\\|")[0].trim();
             val = Float.parseFloat(line.split(",")[1]);
             if (val > 0) {
-                companyTechnology.setStrength(val);
-                companyTechnology.setTechnology(s);
-                list.add(companyTechnology);
+                strings.add(s);                                 //Adding values to descriptive technology
+                technology.setName(s);
+                technology.setDescriptiveTerms(strings);
+
+                ts.put(s, val);                                  //extracted data from list of docs
+                t.add(technology);
             } else {
                 break;
             }
         }
-//        companyTechnologyService.storeCompanyTechnologies(list);
+        Map<String, Long> technologies = getTechnologyIdDao.getTechnologyIdMap(t);
+        Set<String> keys = ts.keySet();
+        for (String i: keys){
+            if (technologies.containsKey(i)){
+                companyTechnology = new CompanyTechnology();
+                companyTechnology.setTechnology(technologies.get(i).intValue());
+                companyTechnology.setScore(ts.get(i));
+                list.add(companyTechnology);
+            }
+        }
+        companyTechnologyService.storeCompanyTechnologies(list);
     }
 }

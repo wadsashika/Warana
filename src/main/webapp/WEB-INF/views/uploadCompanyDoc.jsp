@@ -93,7 +93,7 @@
                                 <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel All
                             </button>
                             <button type="button" id="process-all" class="btn btn-primary action-btn">
-                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Process
+                                <span class="glyphicon glyphicon-import" aria-hidden="true"></span> Process
                             </button>
                         </div>
                     </div>
