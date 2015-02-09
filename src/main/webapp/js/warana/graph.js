@@ -6,14 +6,14 @@ WARANA.namespace("module.getGraph");
 WARANA.module.getGraph = function () {
 
     var getConceptData = function () {
-        $('#morris-area-chart').html('<img id="loading" class="center-block" src="http://preloaders.net/preloaders/287/Filling%20broken%20ring.gif">');
+        WARANA.displayLoadingModel();
         var ajaxInitData = {
-            url: "getConceptsName",
+            url: "getCompanyTechnologies",
             contentType: "application/json"
         };
 
         var successFn = function (result) {
-            $("#loading").remove();
+            WARANA.hideLoadingModel();
             graphGenerator(result);
         };
 
