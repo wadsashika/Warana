@@ -49,16 +49,37 @@ public class SkillAnalyzer {
         }
     }
 
+    public void SortSkillsBatch(String srcPath, String destPath) {
+        sortedSkills = new HashMap<String, Double>();
+        File skillDocs = new File(Config.aggregatedSkillsPath);
+        String[] skillNames = skillDocs.list();
+        new File(destPath).mkdirs();
+        double score = 0;
+        File profileRoot = new File(srcPath);
+        for (File file : profileRoot.listFiles()) {
+            System.out.println(file.getName());
+            HashMap<String, Double> profileMap = fileManager.FileToMap(file);
+            for (String skillName : skillNames) {
+                score = analyzeSkill(skillName, profileMap, srcPath);
+                sortedSkills.put(skillName.split("_")[0], score);
+                System.out.println(skillName+"-"+score);
+            }
+
+            sortedSkills = fileManager.SortByComparator(sortedSkills);
+            fileManager.WriteFile(file.getName(), sortedSkills, destPath);
+        }
+    }
+
     public Map<String, Double> SortSkills(long id) {                                   // analyse skills for 1 user
         sortedSkills = new HashMap<String, Double>();
         File skillDocs = new File(aggregateSkillsPath);
         String[] skillNames = skillDocs.list();
         double score = 0;
         File profileRoot = new File(Config.aggregatedProfilesPath);
-        File file = new File(Config.aggregatedProfilesPath + File.separator + id+".csv");
+        File file = new File(Config.aggregatedProfilesPath + File.separator + id + ".csv");
 
         if (!file.exists()) {
-            System.out.println("no file :"+file.getPath());
+            System.out.println("no file :" + file.getPath());
             return null;
         }
 
@@ -66,7 +87,7 @@ public class SkillAnalyzer {
         for (String skillName : skillNames) {
 //                if (skillName.contains("_out")){
             score = analyzeSkill(skillName, profileMap);
-            if(score>0) {
+            if (score > 0) {
                 sortedSkills.put(skillName.split(".csv")[0].toLowerCase(), score);
 //            System.out.println(skillName.split("_")[0]+ score+"**********************************");
             }
@@ -139,7 +160,26 @@ public class SkillAnalyzer {
 //        System.out.println(skillName+" : "+score);
         return score;
     }
+    private double analyzeSkill(String skillName, HashMap<String, Double> profileTermEx, String srcPath) {
+        File aggregatedSkillFile = new File(Config.aggregatedSkillsPath + "/" + skillName);
+        HashMap<String, Double> skillMap = fileManager.FileToMap(aggregatedSkillFile);
+        double score = 0;
+        int i = 0;
 
+        for (Map.Entry<String, Double> profileEntry : profileTermEx.entrySet()) {
+            i = 0;
+            for (Map.Entry<String, Double> skillEntry : skillMap.entrySet()) {
+                if (skillEntry.getKey().contains(profileEntry.getKey())) {
+                    score += profileEntry.getValue() * (skillEntry.getValue()) * (profileEntry.getKey().length() / skillEntry.getKey().length());
+                }
+
+                i++;
+                if (i > Config.maxEntries)
+                    break;
+            }
+        }
+        return score;
+    }
 
     public static void main(String[] args) {
         Config.initialize("C:\\Warana");

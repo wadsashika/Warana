@@ -180,7 +180,8 @@ public class ViewStatDaoImpl extends BaseJDBCDaoImpl implements ViewStatDao {
         subQuery.append(id);
 
         query.append("SELECT cot.technology as techName,ifnull(tn.per,0) as percentage,cot.score as cscore \n");
-        query.append("FROM company_technology as cot LEFT JOIN \n");
+        query.append("FROM (SELECT technology, score FROM company_technology comtec\n");
+        query.append("LEFT JOIN technology tec ON comtec.technology_id = tec.id) as cot LEFT JOIN \n");
         query.append("(" + subQuery + ")as tn ");
         query.append("ON cot.technology = tn.tech");
 

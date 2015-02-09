@@ -39,12 +39,12 @@ public class GetConceptsDaoImpl extends BaseJDBCDaoImpl implements GetConceptsDa
         List<String> returnList = null;
 
         StringBuilder query = new StringBuilder("");
-        query.append("SELECT technology FROM company_technology");
+        query.append("SELECT technology_id FROM company_technology");
 
         RowMapper<String> mapper = new RowMapper<String>() {
             @Override
             public String mapRow(ResultSet resultSet, int i) throws SQLException {
-                String technology = resultSet.getString("technology");
+                String technology = String.valueOf(resultSet.getLong("technology_id"));
                 return technology;
             }
         };

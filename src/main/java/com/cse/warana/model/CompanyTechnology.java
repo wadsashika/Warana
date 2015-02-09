@@ -15,10 +15,10 @@ public class CompanyTechnology implements Serializable {
     @Column(name = "id")
     private int id;
 
-    @Column(name = "technology")
+    @Column(name = "technology_id")
     private String technology;
 
-    @Column(name = "strength")
+    @Column(name = "score")
     private float strength;
 
     public int getId() {

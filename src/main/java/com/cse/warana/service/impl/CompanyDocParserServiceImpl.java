@@ -4,6 +4,7 @@ import com.cse.warana.model.CompanyTechnology;
 import com.cse.warana.service.CompanyDocParserService;
 import com.cse.warana.service.CompanyTechnologyService;
 import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparotor;
+import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Skills.SkillAnalyzer;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import org.apache.pdfbox.cos.COSDocument;
 import org.apache.pdfbox.pdfparser.PDFParser;
@@ -72,21 +73,26 @@ public class CompanyDocParserServiceImpl implements CompanyDocParserService {
     }
 
     @Override
-    public void extractDoc(String root,String companyName) {
+    public void extractDoc(String root, String companyName) {
         AlgorithmComparotor algorithmComparotor = new AlgorithmComparotor();
+        SkillAnalyzer skillAnalyzer = new SkillAnalyzer();
+
         Config.initialize(root);
-        new File(Config.companyDocsOut+companyName).mkdirs();
+        new File(Config.companyDocsOut + companyName).mkdirs();
         new File(Config.normalizedCompanyDocs).mkdirs();
-        algorithmComparotor.ExtractTerms(Config.companyDocs + companyName, Config.companyDocsOut+companyName);
+        algorithmComparotor.ExtractTerms(Config.companyDocs + companyName, Config.companyDocsOut + companyName);
         algorithmComparotor.ExtractAbbreviations(Config.companyDocs + companyName, Config.abbreviationsCompanyPath);
         algorithmComparotor.Compare(Config.companyDocsOut, Config.normalizedCompanyDocs, Config.aggregatedCompanyDocs, Config.abbreviationsCompanyPath);
+        skillAnalyzer.SortSkillsBatch(Config.aggregatedCompanyDocs, Config.processedCompanyDocs);
 
         try {
-            storeTechnology(Config.aggregatedCompanyDocs + "/" + companyName + ".csv");
+            storeTechnology(Config.processedCompanyDocs + companyName + ".csv");
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
+
     }
+
     private void storeTechnology(String aggregatedPath) throws FileNotFoundException {
         File file = new File(aggregatedPath);
         Scanner sc = new Scanner(file);
