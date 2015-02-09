@@ -47,6 +47,11 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
      * Setup the constructor
      */
     public CandidateProfileGeneratorServiceImpl() {
+    }
+
+    @Override
+    public void extractCVInformation(CVParserService cvParser, File resumeFile) {
+
         infoCategoryTypes = new HashMap<>();
 
 //        candidate = new Candidate();
@@ -80,10 +85,8 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
         infoCategoryTypes.put("SKILLSCORE_LIST", skillScoreList);
 
 
-    }
 
-    @Override
-    public void extractCVInformation(CVParserService cvParser, File resumeFile) {
+
         cvParser.initializeHeadingTokens();
 //        cvParser.identifyHeadings();
         cvParser.readPdfDocument(resumeFile);
