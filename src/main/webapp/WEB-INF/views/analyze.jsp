@@ -38,10 +38,7 @@
         </div>
         <div class="row">
             <div class="col-lg-12">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        Files List
-                    </div>
+                <div class="panel panel-default">
                     <div class="panel-body">
                         <div id="select-all-row">
                             <h4><input type="checkbox" id="select-all" class="pages-select-all"/>Select All</h4>
@@ -80,7 +77,7 @@
                             <button type="button" id="backBtn" class="btn btn-primary action-btn">
                                 <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Back
                             </button>
-                            <button type="button" class="btn btn-primary action-btn" id="analyze-candidate-btn">
+                            <button type="button" class="btn btn-primary action-btn btn-success" id="analyze-candidate-btn">
                                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Analyze
                             </button>
                         </div>

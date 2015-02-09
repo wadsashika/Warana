@@ -26,10 +26,7 @@
 
         <div class="row">
             <div class="col-lg-12">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        Files List
-                    </div>
+                <div class="panel panel-default">
                     <div class="panel-body">
                         <div id="select-all-row">
                             <h4><input type="checkbox" id="select-all" class="pages-select-all"/>Select All</h4>
@@ -65,7 +62,7 @@
                             <button type="button" id="backBtn" class="btn btn-primary action-btn">
                                 <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Back
                             </button>
-                            <button type="button" class="btn btn-primary action-btn" id="process-resume">
+                            <button type="button" class="btn btn-primary action-btn btn-success" id="process-resume">
                                 <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Process
                             </button>
                         </div>
@@ -81,6 +78,7 @@
 <link href='<c:url value="/css/dataTables.bootstrap.css" />' rel="stylesheet" type="text/css"/>
 <link href='<c:url value="/css/warana/pages-commons.css" />' rel="stylesheet" type="text/css"/>
 <link href='<c:url value="/css/font-awesome.min.css" />' rel="stylesheet" type="text/css"/>
+<link href='<c:url value="/css/warana/process-resume.css" />' rel="stylesheet" type="text/css"/>
 
 <script src='<c:url value="/js/metisMenu.min.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/jquery.dataTables.js" />' type="text/javascript"></script>

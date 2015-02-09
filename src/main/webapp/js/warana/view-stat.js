@@ -60,7 +60,7 @@ WARANA.module.viewStat = function () {
                     dataTableRow.push(row.name);
                     dataTableRow.push(row.email);
                     dataTableRow.push(row.score);
-                    dataTableRow.push('<button type="button" class="btn btn-primary btn-sm view-prof btn-center"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> View</button>');
+                    dataTableRow.push('<button type="button" class="btn btn-success btn-sm view-prof btn-center"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> View</button>');
                     dataTableRow.push('<button type="button" class="btn btn-primary btn-sm send-email btn-center"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</button>');
 
                     userList.push(dataTableRow);
@@ -138,7 +138,7 @@ WARANA.module.viewStat = function () {
                     dataTableRow.push(row.name);
                     dataTableRow.push(row.email);
                     dataTableRow.push(row.score);
-                    dataTableRow.push('<button type="button" class="btn btn-primary btn-sm view-prof btn-center"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> View</button>');
+                    dataTableRow.push('<button type="button" class="btn btn-success btn-sm view-prof btn-center"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> View</button>');
                     dataTableRow.push('<button type="button" class="btn btn-primary btn-sm send-email btn-center"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</button>');
 
                     userList.push(dataTableRow);
