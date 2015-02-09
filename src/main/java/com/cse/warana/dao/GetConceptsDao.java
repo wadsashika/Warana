@@ -1,6 +1,6 @@
 package com.cse.warana.dao;
 
-import com.cse.warana.model.CompanyTechnology;
+import com.cse.warana.dto.CompanyTechnologyViewDTO;
 
 import java.util.List;
 
@@ -10,5 +10,5 @@ import java.util.List;
 public interface GetConceptsDao {
     public List<String> getConceptsList();
     public List<String> getTechnologyList();
-    public List<CompanyTechnology> getCompanyTechnologiesWithScore();
+    public List<CompanyTechnologyViewDTO> getCompanyTechnologiesWithScore();
 }
