@@ -47,7 +47,7 @@ public class GetConceptsDaoImpl extends BaseJDBCDaoImpl implements GetConceptsDa
         RowMapper<String> mapper = new RowMapper<String>() {
             @Override
             public String mapRow(ResultSet resultSet, int i) throws SQLException {
-                String technology = String.valueOf(resultSet.getLong("technology_id"));
+                String technology = String.valueOf(resultSet.getString("technology"));
                 return technology;
             }
         };
