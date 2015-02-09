@@ -16,7 +16,7 @@ import com.cse.warana.utility.infoHolders.Candidate;
 public class  OnlineInfoExtractor {
 
     private String profileDocsPath = Config.profilesPath;
-    private Candidate candidate;
+//    private Candidate candidate;
     PhraseAnalyzer phraseAnalyzer;
     private String name = "", title = "", summary = "", pic_url = "", education = "";
 //    private ArrayList<Experience> experienceList = new ArrayList<Experience>();
@@ -28,8 +28,9 @@ public class  OnlineInfoExtractor {
 
 
     public OnlineInfoExtractor(Candidate candidate,String rootPath){
+        System.out.println("profile name ======================"+candidate.getProfile().getName());
         Config.initialize(rootPath);
-        this.candidate = candidate;
+//        this.candidate = candidate;
         this.name=candidate.getProfile().getName();
         this.phraseAnalyzer = new PhraseAnalyzer();
         LinkedInExtractor linkedIn = new LinkedInExtractor();
