@@ -16,10 +16,10 @@ public class CompanyTechnology implements Serializable {
     private int id;
 
     @Column(name = "technology_id")
-    private String technology;
+    private int technology_id;
 
     @Column(name = "score")
-    private float strength;
+    private float score;
 
     public int getId() {
         return id;
@@ -29,19 +29,19 @@ public class CompanyTechnology implements Serializable {
         this.id = id;
     }
 
-    public void setTechnology(String technology) {
-        this.technology = technology;
+    public void setTechnology(int technology_id) {
+        this.technology_id = technology_id;
     }
 
-    public String getTechnology() {
-        return technology;
+    public int getTechnology() {
+        return technology_id;
     }
 
-    public void setStrength(float strength) {
-        this.strength = strength;
+    public void setScore(float score) {
+        this.score = score;
     }
 
-    public float getStrength() {
-        return strength;
+    public float getScore() {
+        return score;
     }
 }
