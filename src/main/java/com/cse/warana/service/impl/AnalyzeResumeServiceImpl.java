@@ -81,19 +81,19 @@ public class AnalyzeResumeServiceImpl implements AnalyzeResumeService {
 
         LOG.info("Processing userdocs to get skill scores");
         Config.initialize(root);
-        SkillAnalyzer skillAnalyzer = new SkillAnalyzer();
         AlgorithmComparotor comparotor = new AlgorithmComparotor();
         comparotor.AggregateAllSkills();
+        SkillAnalyzer skillAnalyzer = new SkillAnalyzer();
 
         for (int i = 0; i < idList.length; i++) {
             Map<String, Double> sortedSkills = skillAnalyzer.SortSkills(Long.parseLong(idList[i]));
-            System.out.println(idList[i]+"**************************");
+            System.out.println(idList[i] + "**************************");
             List<Technology> techListStr = new ArrayList<Technology>();
 
             for (String s : sortedSkills.keySet()) {
                 Technology technology = new Technology();
                 technology.setName(s);
-                System.out.println(technology.getName()+"*************************************");
+                System.out.println(technology.getName() + "*************************************");
                 techListStr.add(technology);
             }
 
@@ -101,13 +101,13 @@ public class AnalyzeResumeServiceImpl implements AnalyzeResumeService {
 
             for (String tech : idTechnologyMap.keySet()) {
 
-                System.out.println(tech+"++++++++++++++++++++++++++++++");
+                System.out.println(tech + "++++++++++++++++++++++++++++++");
                 TechnologyCandidateTbl technologyCandidateTbl = new TechnologyCandidateTbl();
 
                 technologyCandidateTbl.setCandidate_id(Long.parseLong(idList[i]));
-                technologyCandidateTbl.setTechnology_id(idTechnologyMap.get(tech));
                 technologyCandidateTbl.setPercentage(sortedSkills.get(tech));
-                System.out.println(technologyCandidateTbl.getCandidate_id()+"-"+technologyCandidateTbl.getTechnology_id()+"-"+technologyCandidateTbl.getPercentage());
+                technologyCandidateTbl.setTechnology_id(idTechnologyMap.get(tech));
+                System.out.println(technologyCandidateTbl.getCandidate_id() + "-" + technologyCandidateTbl.getTechnology_id() + "-" + technologyCandidateTbl.getPercentage());
                 storeCandidateTechnologyDao.saveEntity(technologyCandidateTbl);
             }
         }
@@ -124,8 +124,8 @@ public class AnalyzeResumeServiceImpl implements AnalyzeResumeService {
         }
 
         for (int i = 0; i < idList.length; i++) {
-
-            List<String> candidateTechnologyList = analyzeResumeDao.getTechnologyListOfCandidate(Long.parseLong(idList[i]));
+            Long candidateId = Long.parseLong(idList[i]);
+            List<String> candidateTechnologyList = analyzeResumeDao.getTechnologyListOfCandidate(candidateId);
             Integer[][] candidateGraph = graphSimilarityService.generateGraph(candidateTechnologyList);
 
             for (int k = 0; k < candidateGraph.length; k++) {
@@ -136,6 +136,34 @@ public class AnalyzeResumeServiceImpl implements AnalyzeResumeService {
             }
 
             scoreList[i] = graphSimilarityService.getSimilarityScore(companyGraph, candidateGraph);
+            Map<Integer, Double> companyScoreMap = getTechnologyIdDao.getCompanyTechnologyScoreMap(candidateId);
+            Map<Integer, Double> candidateScoreMap = getTechnologyIdDao.getCompanyTechnologyScoreMap(candidateId);
+
+            List<Double> processedScoreList = new ArrayList<>();
+            Double technologyMatchingScore = 0.0;
+
+            for (Integer techId : companyScoreMap.keySet()) {
+                double companyScore = companyScoreMap.get(techId);
+                double candidateScore = candidateScoreMap.get(techId);
+                double precessedScore = candidateScore / companyScore;
+
+                if (precessedScore > 1.0) {
+                    processedScoreList.add(1.0);
+                } else {
+                    processedScoreList.add(precessedScore);
+                }
+            }
+
+            for (int n = 0; n < processedScoreList.size(); n++) {
+                technologyMatchingScore += processedScoreList.get(n);
+            }
+
+            if (processedScoreList.size() != 0) {
+                technologyMatchingScore = (technologyMatchingScore / processedScoreList.size()) * 100;
+            }
+
+            scoreList[i] = (scoreList[i] + technologyMatchingScore) / 2;
+
             System.out.println(scoreList[i]);
         }
 

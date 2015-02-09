@@ -14,4 +14,8 @@ public interface GetTechnologyIdDao {
     public List<String> getCurrentTechnologyIds(List<Technology> technologies);
 
     public Map<String, Long> getTechnologyIdMap(List<Technology> technologies);
+
+    public Map<Integer, Double> getCompanyTechnologyScoreMap(Long candidateId);
+
+    public Map<Integer, Double> getCandidateTechnologyScoreMap(Long candidateId);
 }

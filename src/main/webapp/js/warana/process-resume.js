@@ -61,6 +61,8 @@ WARANA.module.processResume = function () {
             selected.push($(this).closest('tr').children('td:eq(1)').text());
         });
 
+        WARANA.displayLoadingModel();
+
         var ajaxInitData = {
             url: 'process/processlist',
             data: JSON.stringify(selected),
@@ -69,6 +71,7 @@ WARANA.module.processResume = function () {
 
         var successFn = function (result) {
             if (result) {
+                WARANA.hideLoadingModel();
                 WARANA.successMessageWithCallBack(loadAnalyzePage, "All CVs successfully processed");
             } else {
                 WARANA.message(WARANA.messageType.ERROR, "Error has occurred");
