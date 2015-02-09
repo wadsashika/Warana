@@ -127,7 +127,8 @@ footer .footer-content .social {
 
 .login-error .ln {
     position: absolute;
-    left: 30%;
+    width: 100%;
+    left: 22%;
     top: 63%;
     font-size: 11px;
     color: red;

@@ -328,6 +328,26 @@ $.fn.extend({
         return this.each(function() {
             $(this).prop('disabled', true);
         });
-    },
+    }
 });
 
+var ValidationException = function(element, errorMsg, parameters) {
+    var pElement = element;
+    var pErrorMsg = errorMsg;
+    var pParameters = parameters;
+
+    this.getElement = function() {
+        return pElement;
+    };
+
+    this.getErrorMessage = function() {
+        return pErrorMsg;
+    };
+
+    this.getParameters = function() {
+        if (pParameters == null) {
+            pParameters = {};
+        }
+        return pParameters;
+    };
+};
