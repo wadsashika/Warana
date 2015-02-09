@@ -1,7 +1,7 @@
 package com.cse.warana.service.impl;
 
 import com.cse.warana.dao.GetConceptsDao;
-import com.cse.warana.model.CompanyTechnology;
+import com.cse.warana.dto.CompanyTechnologyViewDTO;
 import com.cse.warana.service.GetConceptsService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -36,8 +36,8 @@ public class GetConceptsServiceImpl implements GetConceptsService {
     }
 
     @Override
-    public List<CompanyTechnology> getCompanyTechologyWithScore() {
-        List<CompanyTechnology> returnList = null;
+    public List<CompanyTechnologyViewDTO> getCompanyTechologyWithScore() {
+        List<CompanyTechnologyViewDTO> returnList = null;
         returnList = getConceptsDao.getCompanyTechnologiesWithScore();
         return returnList;
     }

@@ -1,6 +1,6 @@
 package com.cse.warana.controller;
 
-import com.cse.warana.model.CompanyTechnology;
+import com.cse.warana.dto.CompanyTechnologyViewDTO;
 import com.cse.warana.service.CompanyTechnologyService;
 import com.cse.warana.service.GetConceptsService;
 import com.cse.warana.utility.Graph.TechnologyListGenerator;
@@ -43,6 +43,7 @@ public class GetConceptsController {
     @ResponseBody
     public String getTechnologyList() throws IOException {
         List<String> technologyList = getConceptsService.getCompanyTechnologies();
+        List<CompanyTechnologyViewDTO> as = getConceptsService.getCompanyTechologyWithScore();
         technologyList.add("Technologies");
         Gson gson = new GsonBuilder().serializeNulls().create();
         if(technologyList.isEmpty()) {
