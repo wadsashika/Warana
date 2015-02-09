@@ -1,7 +1,7 @@
 package com.cse.warana.dao.impl;
 
 import com.cse.warana.dao.GetConceptsDao;
-import com.cse.warana.model.CompanyTechnology;
+import com.cse.warana.dto.CompanyTechnologyViewDTO;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Repository;
 
@@ -58,21 +58,23 @@ public class GetConceptsDaoImpl extends BaseJDBCDaoImpl implements GetConceptsDa
     }
 
     @Override
-    public List<CompanyTechnology> getCompanyTechnologiesWithScore() {
-        List<CompanyTechnology> returnDtoList = null;
+    public List<CompanyTechnologyViewDTO> getCompanyTechnologiesWithScore() {
+        List<CompanyTechnologyViewDTO> returnDtoList = null;
         StringBuilder query = new StringBuilder("");
-        query.append("SELECT technology_id,score\n");
-        query.append("FROM company_technology\n");
+        query.append("SELECT technology, technology_id, score\n");
+        query.append("FROM company_technology, technology\n");
+        query.append("WHERE company_technology.technology_id=technology.id");
 
-        RowMapper<CompanyTechnology> mapper = new RowMapper<CompanyTechnology>() {
+        RowMapper<CompanyTechnologyViewDTO> mapper = new RowMapper<CompanyTechnologyViewDTO>() {
             @Override
-            public CompanyTechnology mapRow(ResultSet resultSet, int i) throws SQLException {
-                CompanyTechnology companyTechnology= new CompanyTechnology();
+            public CompanyTechnologyViewDTO mapRow(ResultSet resultSet, int i) throws SQLException {
+                CompanyTechnologyViewDTO companyTechnologyViewDTO= new CompanyTechnologyViewDTO();
 
-                companyTechnology.setTechnology(resultSet.getInt("technology_id"));
-                companyTechnology.setScore(resultSet.getFloat("score"));
+                companyTechnologyViewDTO.setTechnologyID(resultSet.getInt("technology_id"));
+                companyTechnologyViewDTO.setScore(resultSet.getFloat("score"));
+                companyTechnologyViewDTO.setTechnologyName(resultSet.getString("technology"));
 
-                return companyTechnology;
+                return companyTechnologyViewDTO;
             }
         };
 

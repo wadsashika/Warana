@@ -1,6 +1,6 @@
 package com.cse.warana.service;
 
-import com.cse.warana.model.CompanyTechnology;
+import com.cse.warana.dto.CompanyTechnologyViewDTO;
 
 import java.util.List;
 
@@ -13,5 +13,5 @@ public interface GetConceptsService {
 
     public List<String> getCompanyTechnologies();
 
-    public List<CompanyTechnology> getCompanyTechologyWithScore();
+    public List<CompanyTechnologyViewDTO> getCompanyTechologyWithScore();
 }
