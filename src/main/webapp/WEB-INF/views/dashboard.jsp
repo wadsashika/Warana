@@ -6,6 +6,10 @@
 
 <script src='<c:url value="/js/d3.v2.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/warana/graph.js" />' type="text/javascript"></script>
+<script src='<c:url value="/js/warana/dashboard.js" />' type="text/javascript"></script>
+<script src='<c:url value="/js/highcharts.js" />' type="text/javascript"></script>
+<script src='<c:url value="/js/highcharts-more.js" />' type="text/javascript"></script>
+<script src='<c:url value="/js/highcharts-3d.js" />' type="text/javascript"></script>
 
 <div id="wrapper">
     <div id="page-wrapper">
