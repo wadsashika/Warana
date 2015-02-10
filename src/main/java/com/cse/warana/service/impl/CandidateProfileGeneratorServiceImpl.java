@@ -120,6 +120,7 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
         for (String key : technologyIdMap.keySet()) {
             for (int i = 0; i < techList.size(); i++) {
                 if (key.equals(techList.get(i).getName())){
+                    System.out.println("removing ***************"+techList.get(i).getName());
                     techList.remove(i);
                     break;
                 }

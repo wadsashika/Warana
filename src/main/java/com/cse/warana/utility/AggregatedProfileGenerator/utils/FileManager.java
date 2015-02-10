@@ -1,5 +1,8 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.utils;
 
+import com.cse.warana.utility.infoHolders.Candidate;
+import com.cse.warana.utility.infoHolders.Profile;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
@@ -156,6 +159,7 @@ public class FileManager {
         }
     }
 
+
     public void WriteFile(String destinationPath, Map.Entry<String, String> entry) {
         boolean f = new File(destinationPath).mkdirs();
 //        System.out.println(entry.getKey().replaceAll("^[.\\\\/:*?\"<>|]?[\\\\/:*?\"<>|]*", "")+".txt");
@@ -174,6 +178,8 @@ public class FileManager {
             e.printStackTrace();
         }
     }
+
+
 
     public void WriteFile(String fileName, HashMap<String, Integer> dataMap, String destinationPath) {
         boolean f = new File(destinationPath).mkdirs();
@@ -299,5 +305,15 @@ public class FileManager {
         }
 
         return map;
+    }
+
+    public void WriteCandidate(Candidate candidate) {
+        HashMap<String,String> candMap=new HashMap<String,String>();
+        candMap.put("profile",candidate.toString());
+        for (Map.Entry<String, String> entry : candMap.entrySet()) {
+            WriteFile(Config.profilesPath + "/" + candidate.getProfile().getId(),entry );
+        }
+
+
     }
 }

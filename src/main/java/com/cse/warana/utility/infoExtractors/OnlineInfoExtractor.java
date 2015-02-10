@@ -11,6 +11,7 @@ import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.GoogleScho
 import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.LinkedInExtractor;
 import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.WebCrawler.WebCrawler;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
+import com.cse.warana.utility.AggregatedProfileGenerator.utils.FileManager;
 import com.cse.warana.utility.infoHolders.Candidate;
 
 public class  OnlineInfoExtractor {
@@ -43,6 +44,8 @@ public class  OnlineInfoExtractor {
         github.Extract(candidate);
         WebCrawler webCrawler=new WebCrawler(candidate.getProfile());
         webCrawler.ExtractOnlineDocuments();
+
+        new FileManager().WriteCandidate(candidate);
         if (pic_url.equalsIgnoreCase("")) {
             pic_url = "http://ryonaitis.files.wordpress.com/2012/03/images.jpg";
         }

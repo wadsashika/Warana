@@ -80,4 +80,35 @@ public class Candidate {
     public void setWorksList(ArrayList<Work> worksList) {
         this.worksList = worksList;
     }
+
+    public String toString(){
+        String str="";
+        try {
+            for (Education education : educationsList) {
+                str += education.getDegree() + education.getInstitution() + "\n";
+            }
+            for (Achievement ach : achievementsList) {
+                str += ach.getAchievement() + ach.getDescription();
+            }
+            for (Project p : projectsLists) {
+                str += p.getName() + p.getDescription();
+            }
+            for (Referee ref : refereesList) {
+                str += ref.getName() + " " + ref.getDescription() + "\n";
+            }
+            for (Technology tech : technologiesList) {
+                str += tech.getName() + "\n";
+            }
+            for (Work w : worksList) {
+                str += w.getCompanyName() + " " + w.getPosition();
+            }
+            for (Publication pub : publicationList) {
+                str += pub.getName() + " " + pub.getSummary();
+            }
+        }catch (Exception e){
+            System.out.println("Exception at candidate.toString()");
+        }
+
+        return str;
+    }
 }
