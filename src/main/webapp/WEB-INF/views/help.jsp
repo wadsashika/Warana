@@ -11,6 +11,7 @@
 <script src='<c:url value="/js/dataTables.bootstrap.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/sb-admin-2.js" />' type="text/javascript"></script>
 <script src='<c:url value="/js/warana/view-stat.js" />' type="text/javascript"></script>
+<script src='<c:url value="/js/warana/help.js" />' type="text/javascript"></script>
 
 <div id="wrapper">
     <div id="page-wrapper">
@@ -160,6 +161,13 @@
                                 </p>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <div class="action-btn-row">
+                        <button type="button" id="backBtn" class="btn btn-primary action-btn">
+                            <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Back
+                        </button>
                     </div>
                 </div>
                 <!-- /.col-lg-4 -->

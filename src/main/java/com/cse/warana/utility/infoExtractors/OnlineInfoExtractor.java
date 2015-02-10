@@ -35,7 +35,7 @@ public class  OnlineInfoExtractor {
         this.phraseAnalyzer = new PhraseAnalyzer();
         LinkedInExtractor linkedIn = new LinkedInExtractor();
         GoogleScholarExtractor gscholar = new GoogleScholarExtractor();
-        GitHubExtractor github = new GitHubExtractor("69e07dde89a8a0a6713f810cfd4c461f04f47e85");
+        GitHubExtractor github = new GitHubExtractor("021cb28d72ca970bcbec03d2b7f9e70375c5b00b");
         similarityCalculator = new Calculate();
 
         linkedIn.ExtractInformation( candidate);

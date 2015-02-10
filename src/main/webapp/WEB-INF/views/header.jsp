@@ -71,19 +71,41 @@
                 <div class="collapse navbar-collapse header-small-icon">
                     <div class="hidden-xs">
                         <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <button data-toggle="dropdown"
+                                        class="top-buttons dropdown-toggle">Dashboard
+                                </button>
+                                <ul class="dropdown-menu home-links" role="menu">
+                                    <li><a href="<c:url value="/dashboard"/>"><span
+                                            class="glyphicon glyphicon-dashboard"></span> Dashboard</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="<c:url value="/upload"/>"><span
+                                            class="glyphicon glyphicon-cloud-upload"></span> Resume Upload</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="<c:url value="/process" />"><span
+                                            class="glyphicon glyphicon-cog"></span> Process Resume'</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="<c:url value="/analyze" />"><span
+                                            class="glyphicon glyphicon-th-list"></span> Analyze</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="<c:url value="/viewstat" />"><span
+                                            class="glyphicon glyphicon-eye-open"></span> View Stat</a></li>
+                                </ul>
+                            </li>
                             <li class="dashboard-btn">
-                                <a href="<c:url value="/dashboard"/>">
-                                    <button class="top-buttons">Dashboard
+                                <a href="<c:url value="/myprofile"/>">
+                                    <button class="top-buttons">${sessionScope.firstName} ${sessionScope.lastName}
                                     </button>
                                 </a>
                             </li>
                             <li>
                                 <button data-toggle="dropdown"
-                                        class="top-buttons last-button dropdown-toggle">${sessionScope.firstName} ${sessionScope.lastName}
+                                        class="top-buttons last-button dropdown-toggle"><span
+                                        class="glyphicon glyphicon-cog"></span>
                                 </button>
                                 <ul class="dropdown-menu home-links" role="menu">
-                                    <li><a href="<c:url value="/myprofile"/>"><span
-                                            class="glyphicon glyphicon-user"></span> My Profile</a></li>
+                                    <li><a href="<c:url value="/adminpanel/upload"/>"><span
+                                            class="glyphicon glyphicon-file"></span> Company Documents</a></li>
                                     <li class="divider"></li>
                                     <li><a href="<c:url value="/help" />"><span
                                             class="glyphicon glyphicon-question-sign"></span> Help</a></li>
