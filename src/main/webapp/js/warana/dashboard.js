@@ -8,7 +8,7 @@ WARANA.module.dashboard = function () {
 
 
         $.ajax({
-            url: "viewstat/getspiderwebdata",
+            url: "dashboard/getbarchartdata",
             type: "POST",
             success: function(data){
 
@@ -19,7 +19,7 @@ WARANA.module.dashboard = function () {
                 for (var i = 0; i < jsonObj.length; i++) {
                     var singleBar = [];
                     singleBar.push(jsonObj[i].technology);
-                    singleBar.push(jsonObj[i].percentage);
+                    singleBar.push(jsonObj[i].score);
                     bars.push(singleBar);
                 }
 
@@ -55,7 +55,7 @@ WARANA.module.dashboard = function () {
                         enabled: false
                     },
                     tooltip: {
-                        pointFormat: 'Proficiency percentage: <b>{point.y:.1f} %</b>'
+                        pointFormat: 'Proficiency: <b>{point.y:.1f}</b>'
                     },
                     series: [
                         {
@@ -80,35 +80,6 @@ WARANA.module.dashboard = function () {
 
             }
         });
-
-
-
-
-        var ajaxInitData = {
-            url: 'viewstat/getstat',
-            data: $.toJSON(id),
-            contentType: "application/json"
-        };
-
-        var successFn = function (data) {
-            if (data.success) {
-                var jsonObj = $.evalJSON(data.result.techScoreList);
-
-                for (var i = 0; i < jsonObj.length; i++) {
-                    var pieSlice = [];
-                    pieSlice.push(jsonObj[i].technology);
-                    pieSlice.push(jsonObj[i].percentage);
-                    statChartData.push(pieSlice);
-                }
-
-                /**
-                 * Drawing chart
-                 */
-                drawStatChart(statChartData);
-            }
-        };
-
-        WARANA.common.ajaxCall(ajaxInitData, successFn);
 
     };
 
