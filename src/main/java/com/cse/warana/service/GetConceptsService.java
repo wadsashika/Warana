@@ -13,5 +13,5 @@ public interface GetConceptsService {
 
     public List<String> getCompanyTechnologies();
 
-    public List<CompanyTechnologyViewDTO> getCompanyTechologyWithScore();
+    public List<CompanyTechnologyViewDTO> getCompanyTechnologyWithScore();
 }

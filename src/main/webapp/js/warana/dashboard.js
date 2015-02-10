@@ -12,8 +12,6 @@ WARANA.module.dashboard = function () {
             type: "POST",
             success: function(data){
 
-                alert(data);
-
                 var jsonObj = JSON.parse(data);
 
                 for (var i = 0; i < jsonObj.length; i++) {

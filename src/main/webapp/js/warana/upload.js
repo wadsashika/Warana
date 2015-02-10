@@ -23,7 +23,6 @@ WARANA.module.uploadCv = function () {
             success: function (file, response) {
                 var status = response.status;
                 var errorString = "";
-                var notifications_div = document.getElementById("notification-div");
 
                 if (status == "false") {
                     var fileNames = response.files;
@@ -31,15 +30,12 @@ WARANA.module.uploadCv = function () {
                         errorString = errorString.concat(fileNames[a] + ",");
                     }
 
-                    notifications_div.className = "alert alert-danger";
-                    notifications_div.innerHTML = "Error Occurred. Files " + errorString + " Could Not Save to Server";
+                    WARANA.message(WARANA.messageType.ERROR,"Error Occurred. Files " + errorString + " Could Not Save to Server");
                 }
                 else if (status == "true") {
-                    notifications_div.className = "alert alert-success";
-                    notifications_div.innerHTML = "All Files stored in the server successfully";
+                    WARANA.message(WARANA.messageType.SUCCESS,"All Files stored in the server successfully");
                 }
                 document.getElementById("previews").innerHTML = "";
-                notifications_div.style.display = "block";
             }
         });
     };

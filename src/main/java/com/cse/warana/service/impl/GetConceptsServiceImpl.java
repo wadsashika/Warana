@@ -36,7 +36,7 @@ public class GetConceptsServiceImpl implements GetConceptsService {
     }
 
     @Override
-    public List<CompanyTechnologyViewDTO> getCompanyTechologyWithScore() {
+    public List<CompanyTechnologyViewDTO> getCompanyTechnologyWithScore() {
         List<CompanyTechnologyViewDTO> returnList = null;
         returnList = getConceptsDao.getCompanyTechnologiesWithScore();
         return returnList;

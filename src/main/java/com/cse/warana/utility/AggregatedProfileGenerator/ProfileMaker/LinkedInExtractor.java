@@ -39,6 +39,9 @@ public class LinkedInExtractor {
         if(link.length()==0)
         link = g.FindOnLinkedIn(candidateProfile.getName());
 
+        if (!link.contains("http"))
+            link="https://"+link;
+
         System.out.println(link + "--------------------------");
         if (link.equals("")) {
             linkedInProfile.setName("not found");

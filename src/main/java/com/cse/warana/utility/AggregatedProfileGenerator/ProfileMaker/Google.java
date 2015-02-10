@@ -72,7 +72,7 @@ public class Google {
         int i = 0;
         while (elements.size() > i) {
             link = "https://" + elements.get(i).text();
-            System.out.println(link);
+//            System.out.println(link);
             i++;
             if (link.contains(".com/citations?user=")) {
                 return link;
@@ -101,9 +101,9 @@ public class Google {
         int i = 0;
         ArrayList<String> links=new ArrayList<String>();
         for (Element element : elements) {
-            System.out.println(element.text()+" | "+searchTerm.split("[\\s|-|_]")[0]);
+//            System.out.println(element.text()+" | "+searchTerm.split("[\\s|-|_]")[0]);
             if (element.text().contains("en.wikipedia.org") && element.text().toLowerCase().contains(searchTerm.split("[\\s|-|_]")[0].toLowerCase())) {
-                System.out.println(element.text());
+//                System.out.println(element.text());
                 links.add("http://"+element.text());
                 i++;
                 if(i> Config.skillDocsLimit)

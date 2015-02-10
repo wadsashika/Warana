@@ -36,6 +36,8 @@ WARANA.module.analyzeResume = function () {
             selected.push(dataTbl.fnGetData($(this).closest("tr").get(0))[1]);
         });
 
+        WARANA.displayLoadingModel();
+
         var ajaxInitData = {
             url: 'analyze/analyzelist',
             data: JSON.stringify(selected),
@@ -44,6 +46,7 @@ WARANA.module.analyzeResume = function () {
 
         var successFn = function (result) {
             if (result) {
+                WARANA.hideLoadingModel();
                 WARANA.successMessageWithCallBack(loadStatPage, "Selected CVs analyzed successfully");
             } else {
                 WARANA.message(WARANA.messageType.ERROR, "Error has occurred");

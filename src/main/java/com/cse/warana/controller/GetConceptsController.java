@@ -43,7 +43,7 @@ public class GetConceptsController {
     @ResponseBody
     public String getTechnologyList() throws IOException {
         List<String> technologyList = getConceptsService.getCompanyTechnologies();
-        List<CompanyTechnologyViewDTO> as = getConceptsService.getCompanyTechologyWithScore();
+        List<CompanyTechnologyViewDTO> as = getConceptsService.getCompanyTechnologyWithScore();
         technologyList.add("Technologies");
         Gson gson = new GsonBuilder().serializeNulls().create();
         if(technologyList.isEmpty()) {
