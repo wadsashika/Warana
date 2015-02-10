@@ -21,32 +21,34 @@ public class LinkedInExtractor {
 //    private String education = "";
 
     public LinkedInExtractor() {
-        skillsExtractor=new SkillsExtractor();
+        skillsExtractor = new SkillsExtractor();
     }
 
-    public Profile ExtractInformation(  Candidate candidate) {
+    public Profile ExtractInformation(Candidate candidate) {
 
-        this.candidate=candidate;
+        this.candidate = candidate;
 
     /*Extracting information from LinkedIn*/
 
         Profile candidateProfile = candidate.getProfile();
 
-        Profile linkedInProfile=new Profile();
+        Profile linkedInProfile = new Profile();
 
         Google g = new Google();
-        link=candidateProfile.getLinkedIn();
-        if(link.length()==0)
-        link = g.FindOnLinkedIn(candidateProfile.getName());
+        link = candidateProfile.getLinkedIn();
+        if (link.length() == 0) {
+            link = g.FindOnLinkedIn(candidateProfile.getName());
+        } else {
 
-        if (!link.contains("http"))
-            link="https://"+link;
+            if (!link.contains("http"))
+                link = "https://" + link;
+        }
 
-        System.out.println(link + "--------------------------");
         if (link.equals("")) {
             linkedInProfile.setName("not found");
             return candidateProfile;
         }
+        System.out.println(link + "--------------------------");
         String picUrl, name, title;
         String[] publications;
         Document doc = null;
@@ -84,10 +86,9 @@ public class LinkedInExtractor {
         linkedInProfile.setTitle(titleP.text());
 
 
-        if (candidateProfile.equals(linkedInProfile)){              //verification of profile
+        if (candidateProfile.equals(linkedInProfile)) {              //verification of profile
             candidateProfile.copy(linkedInProfile);
-        }
-        else{
+        } else {
             return candidateProfile;
         }
 
@@ -163,7 +164,6 @@ public class LinkedInExtractor {
         }
 
         //===============================skills
-
 
 
         ExtractSkills(candidate);
@@ -246,7 +246,7 @@ public class LinkedInExtractor {
         return profile;
     }
 
-    public void ExtractSkills(Candidate candidate){
+    public void ExtractSkills(Candidate candidate) {
         skillsExtractor.ExtractSkills(link, candidate);
     }
 }

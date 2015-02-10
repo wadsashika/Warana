@@ -55,11 +55,24 @@ WARANA.module.viewStat = function () {
                 for (var i = 0; i < resultList.length; i++) {
                     var row = resultList[i];
                     var dataTableRow = [];
+
+                    var score_val = row.score;
                     dataTableRow.push("<input type='checkbox' class='files-checkbox'>");
                     dataTableRow.push(row.id);
                     dataTableRow.push(row.name);
                     dataTableRow.push(row.email);
-                    dataTableRow.push(row.score);
+
+                    if(score_val >= 0 && score_val <= 33){
+                        dataTableRow.push('<div class="progress progress-striped active "><div class="progress-bar progress-bar-1 progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: '+score_val+'%;"><div id="pbar-val">'+score_val+'%</div></div></div>');
+                    }
+                    else if(score_val >= 34 && score_val <= 66){
+                        dataTableRow.push('<div class="progress progress-striped active "><div class="progress-bar progress-bar-1 progress-bar-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: '+score_val+'%;"><div id="pbar-val">'+score_val+'%</div></div></div>');
+                    }
+                    else if(score_val >= 67 && score_val <= 100){
+                        dataTableRow.push('<div class="progress progress-striped active "><div class="progress-bar progress-bar-1 progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: '+score_val+'%;"><div id="pbar-val">'+score_val+'%</div></div></div>');
+                    }
+
+//                    dataTableRow.push(row.score);
                     dataTableRow.push('<button type="button" class="btn btn-success btn-sm view-prof btn-center"><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> View</button>');
                     dataTableRow.push('<button type="button" class="btn btn-primary btn-sm send-email btn-center"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</button>');
 
@@ -191,7 +204,7 @@ WARANA.module.viewStat = function () {
                 enabled: false
             },
             title: {
-                text: 'Technology Expertise Comparison'
+                text: 'Skill Expertise Comparison'
             },
             xAxis: {
                 categories: categories
@@ -199,13 +212,13 @@ WARANA.module.viewStat = function () {
             yAxis: {
                 min: 0,
                 title: {
-                    text: 'Normalized Percentage (%)'
+                    text: 'Absolute Proficiency'
                 }
             },
             tooltip: {
                 headerFormat: '<span style="font-size:10px;">{point.key}</span><table>',
                 pointFormat: '<tr><td style="color:{series.color};padding:0;font-size:9px;">{series.name}: </td>' +
-                    '<td style="padding:0;font-size:9px"><b>{point.y:.1f} %</b></td></tr>',
+                    '<td style="padding:0;font-size:9px"><b>{point.y:.1f}</b></td></tr>',
                 footerFormat: '</table>',
                 shared: true,
                 useHTML: true
@@ -276,7 +289,7 @@ WARANA.module.viewStat = function () {
 
                     tooltip: {
                         shared: true,
-                        pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}%</b><br/>'
+                        pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>'
                     },
                     credits: {
                         enabled: false
@@ -376,7 +389,7 @@ WARANA.module.viewStat = function () {
                 type: 'column'
             },
             title: {
-                text: 'Technology Proficiency'
+                text: 'Skill Proficiency'
             },
             xAxis: {
                 type: 'category',
@@ -391,7 +404,7 @@ WARANA.module.viewStat = function () {
             yAxis: {
                 min: 0,
                 title: {
-                    text: 'Proficiency (%)'
+                    text: 'Proficiency'
                 }
             },
             legend: {
@@ -401,11 +414,11 @@ WARANA.module.viewStat = function () {
                 enabled: false
             },
             tooltip: {
-                pointFormat: 'Proficiency percentage: <b>{point.y:.1f} %</b>'
+                pointFormat: 'Proficiency: <b>{point.y:.1f}</b>'
             },
             series: [
                 {
-                    name: 'Proficiency(%)',
+                    name: 'Proficiency',
                     data: data,
                     dataLabels: {
                         enabled: true,

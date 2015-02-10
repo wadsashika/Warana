@@ -140,7 +140,6 @@ public class ProcessResumeController {
             resumesToProcessService.uploadedResumeStatusUpdate(fileNames[a], "PROCESSED");
         }
 
-
         return true;
     }
 }

@@ -44,9 +44,8 @@ public class SkillsExtractor {
 //            writeFile();
             if (wiki.GetTermsGoogle(skillElement.text())) {
                 Technology t = new Technology();
-                t.setName(skillElement.text());
+                t.setName(skillElement.text().toLowerCase().trim());
                 candidate.getTechnologiesList().add(t);
-//                System.out.println(skillElement.text()+"*******************************" );
             }
         }
 

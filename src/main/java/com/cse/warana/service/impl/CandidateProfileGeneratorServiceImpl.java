@@ -13,7 +13,6 @@ import org.springframework.stereotype.Service;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -85,8 +84,6 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
         infoCategoryTypes.put("SKILLSCORE_LIST", skillScoreList);
 
 
-
-
         cvParser.initializeHeadingTokens();
 //        cvParser.identifyHeadings();
         cvParser.readPdfDocument(resumeFile);
@@ -112,32 +109,22 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
     @Override
     public void extractOnlineProfileInformation(Candidate candidate, String rootPath) {                  // Candidate should be initalized with CV info before calling this method
         OnlineInfoExtractor onlineInfoExtractor = new OnlineInfoExtractor(candidate, rootPath);
+        if (!candidate.getTechnologiesList().isEmpty()) {
+            Map<String, Long> technologyIdMap = technologyIdDao.getTechnologyIdMap(candidate.getTechnologiesList());
 
-        Map<String, Long> technologyIdMap = technologyIdDao.getTechnologyIdMap(candidate.getTechnologiesList());
-
+        
        //TODO logic to remove redundant technologies
         ArrayList<Technology> techList = candidate.getTechnologiesList();
         for (String key : technologyIdMap.keySet()) {
             for (int i = 0; i < techList.size(); i++) {
                 if (key.equals(techList.get(i).getName())){
-                    System.out.println("removing ***************"+techList.get(i).getName());
                     techList.remove(i);
                     break;
                 }
             }
+
+            technologyService.storeTechnologies(candidate.getTechnologiesList());
         }
-
-
-
-
-        technologyService.storeTechnologies(candidate.getTechnologiesList());
     }
-
-//    public static void main(String[] args){
-//        CandidateProfileGeneratorServiceImpl test = new CandidateProfileGeneratorServiceImpl();
-//        test.extractCVInformation(new CVParserServiceImpl());
-//        test.generateCandidateProfile();
-//    }
-
 
 }
