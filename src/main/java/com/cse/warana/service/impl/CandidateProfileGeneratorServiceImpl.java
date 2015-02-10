@@ -126,17 +126,7 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
             }
         }
 
-
-
-
         technologyService.storeTechnologies(candidate.getTechnologiesList());
     }
-
-//    public static void main(String[] args){
-//        CandidateProfileGeneratorServiceImpl test = new CandidateProfileGeneratorServiceImpl();
-//        test.extractCVInformation(new CVParserServiceImpl());
-//        test.generateCandidateProfile();
-//    }
-
 
 }
