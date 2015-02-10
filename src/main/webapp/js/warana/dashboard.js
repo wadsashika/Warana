@@ -28,7 +28,7 @@ WARANA.module.dashboard = function () {
                         type: 'column'
                     },
                     title: {
-                        text: 'Company Technology Proficiencies'
+                        text: 'Company Skills Proficiencies'
                     },
                     xAxis: {
                         type: 'category',

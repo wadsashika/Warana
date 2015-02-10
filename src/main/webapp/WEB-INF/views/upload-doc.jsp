@@ -63,7 +63,7 @@
                                         </td>
                                         <td>
                                             <div>
-                                                <button data-dz-remove class="btn btn-danger delete">
+                                                <button data-dz-remove class="btn btn-danger delete btn-sm">
                                                     <i class="glyphicon glyphicon-trash"></i>
                                                     <span>Remove</span>
                                                 </button>

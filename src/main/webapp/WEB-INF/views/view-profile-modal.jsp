@@ -36,7 +36,7 @@
                         <a href="#publications" data-toggle="tab">Publications</a>
                     </li>
                     <li>
-                        <a href="#stat" data-toggle="tab" id="stat-tab">Technical Proficiency</a>
+                        <a href="#stat" data-toggle="tab" id="stat-tab">Skill Proficiency</a>
                     </li>
                     <li>
                         <a href="#spider-web" data-toggle="tab" id="spider-web-tab">Spider Web Chart</a>
