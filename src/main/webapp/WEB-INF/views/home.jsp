@@ -64,7 +64,7 @@
 <div class="feature">
     <div class="container">
         <div class="head">
-            <h2><strong>Feature</strong></h2>
+            <h2><strong>Features</strong></h2>
         </div>
 
         <div class="row">
@@ -90,7 +90,7 @@
                 <div class="feature-item">
                     <span class="glyphicon glyphicon-user blue"></span>
 
-                    <h3><strong>Aggregate Profiles</strong></h3>
+                    <h3><strong>Aggregated Profiles</strong></h3>
 
                     <p>Create aggregated profiles including both information extracted from the resume and web</p>
                 </div>
