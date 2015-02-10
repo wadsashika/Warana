@@ -6,14 +6,12 @@ WARANA.namespace("module.getGraph");
 WARANA.module.getGraph = function () {
 
     var getConceptData = function () {
-        WARANA.displayLoadingModel();
         var ajaxInitData = {
             url: "getCompanyTechnologies",
             contentType: "application/json"
         };
 
         var successFn = function (result) {
-            WARANA.hideLoadingModel();
             graphGenerator(result);
         };
 
