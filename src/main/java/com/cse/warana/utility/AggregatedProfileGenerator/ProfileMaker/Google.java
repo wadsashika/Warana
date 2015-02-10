@@ -45,7 +45,7 @@ public class Google {
         if (link.contains("/dir/")) {
             return "";
         }
-        if (link.contains("lk.linkedin.com/")) {
+        if (link.contains("lk.linkedin.com/in")) {
             if (!link.contains("https://"))
                 link="https://"+link;
             return link;
