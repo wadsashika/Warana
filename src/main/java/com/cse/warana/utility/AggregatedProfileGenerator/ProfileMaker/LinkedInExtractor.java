@@ -41,14 +41,14 @@ public class LinkedInExtractor {
         } else {
 
             if (!link.contains("http"))
-                link = "http://" + link;
+                link = "https://" + link;
         }
 
-        System.out.println(link + "--------------------------");
         if (link.equals("")) {
             linkedInProfile.setName("not found");
             return candidateProfile;
         }
+        System.out.println(link + "--------------------------");
         String picUrl, name, title;
         String[] publications;
         Document doc = null;
