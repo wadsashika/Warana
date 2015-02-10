@@ -116,36 +116,34 @@ public class AnalyzeResumeServiceImpl implements AnalyzeResumeService {
 
         List<String> companyTechnologyList = getConceptsService.getCompanyTechnologies();
         Integer[][] companyGraph = graphSimilarityService.generateGraph(companyTechnologyList);
-        for (int i = 0; i < companyGraph.length; i++) {
-            for (int j = 0; j < companyGraph.length; j++) {
-                System.out.print(companyGraph[i][j] + ", ");
-            }
-            System.out.println();
-        }
 
         for (int i = 0; i < idList.length; i++) {
             Long candidateId = Long.parseLong(idList[i]);
             List<String> candidateTechnologyList = analyzeResumeDao.getTechnologyListOfCandidate(candidateId);
             Integer[][] candidateGraph = graphSimilarityService.generateGraph(candidateTechnologyList);
 
-            for (int k = 0; k < candidateGraph.length; k++) {
-                for (int j = 0; j < candidateGraph.length; j++) {
-                    System.out.print(candidateGraph[k][j] + ", ");
-                }
-                System.out.println();
-            }
-
             scoreList[i] = graphSimilarityService.getSimilarityScore(companyGraph, candidateGraph);
             Map<Integer, Double> companyScoreMap = getTechnologyIdDao.getCompanyTechnologyScoreMap(candidateId);
             Map<Integer, Double> candidateScoreMap = getTechnologyIdDao.getCompanyTechnologyScoreMap(candidateId);
 
             List<Double> processedScoreList = new ArrayList<>();
+            List<Double> companyWeightList = new ArrayList<>();
             Double technologyMatchingScore = 0.0;
+            Double companyTotalScore = 0.0;
+
+            for (Double score : companyScoreMap.values()) {
+                companyTotalScore += score;
+            }
 
             for (Integer techId : companyScoreMap.keySet()) {
                 double companyScore = companyScoreMap.get(techId);
-                double candidateScore = candidateScoreMap.get(techId);
+                double candidateScore = 0.0;
+                if (candidateScoreMap.containsKey(techId)) {
+                    candidateScore = candidateScoreMap.get(techId);
+                }
                 double precessedScore = candidateScore / companyScore;
+
+                companyWeightList.add(companyScore / companyTotalScore);
 
                 if (precessedScore > 1.0) {
                     processedScoreList.add(1.0);
@@ -155,7 +153,7 @@ public class AnalyzeResumeServiceImpl implements AnalyzeResumeService {
             }
 
             for (int n = 0; n < processedScoreList.size(); n++) {
-                technologyMatchingScore += processedScoreList.get(n);
+                technologyMatchingScore += processedScoreList.get(n) * companyWeightList.get(n);
             }
 
             if (processedScoreList.size() != 0) {

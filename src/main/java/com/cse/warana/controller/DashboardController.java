@@ -38,7 +38,7 @@ public class DashboardController {
     @ResponseBody
     public String getTechnologyBarchartData(){
         String returnJson = "";
-        List<CompanyTechnologyViewDTO> companyTechnologyViewDTOs = getConceptsService.getCompanyTechologyWithScore();
+        List<CompanyTechnologyViewDTO> companyTechnologyViewDTOs = getConceptsService.getCompanyTechnologyWithScore();
 
         Gson gson = new GsonBuilder().serializeNulls().create();
         returnJson = gson.toJson(companyTechnologyViewDTOs);

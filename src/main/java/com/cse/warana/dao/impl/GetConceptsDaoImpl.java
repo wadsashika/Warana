@@ -41,13 +41,15 @@ public class GetConceptsDaoImpl extends BaseJDBCDaoImpl implements GetConceptsDa
 
         StringBuilder query = new StringBuilder("");
 
-        query.append("SELECT technology FROM company_technology,technology WHERE company_technology.id = technology.id");
-
+        query.append("SELECT technology \n");
+        query.append("FROM company_technology ct \n");
+        query.append("INNER JOIN technology t \n");
+        query.append("ON ct.technology_id = t.id");
 
         RowMapper<String> mapper = new RowMapper<String>() {
             @Override
             public String mapRow(ResultSet resultSet, int i) throws SQLException {
-                String technology = String.valueOf(resultSet.getString("technology"));
+                String technology = resultSet.getString("technology");
                 return technology;
             }
         };

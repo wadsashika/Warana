@@ -240,7 +240,6 @@ WARANA.module.viewStat = function () {
             data: {"id": candidateId},
             success: function (data) {
                 var jsonObj = JSON.parse(data);
-                alert(data);
                 for (var a = 0; a < jsonObj.length; a++) {
                     categories.push(jsonObj[a].techName);
                     seriesData.push(parseFloat(jsonObj[a].percentage));
