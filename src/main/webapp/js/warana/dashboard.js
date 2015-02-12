@@ -60,7 +60,7 @@ WARANA.module.dashboard = function () {
                             name: 'Proficiency',
                             data: bars,
                             dataLabels: {
-                                enabled: true,
+                                enabled: false,
                                 rotation: 0,
                                 color: '#FFFFFF',
                                 align: 'right',
