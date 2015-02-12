@@ -4,7 +4,7 @@ import com.cse.warana.dao.GetTechnologyIdDao;
 import com.cse.warana.model.CompanyTechnology;
 import com.cse.warana.service.CompanyDocParserService;
 import com.cse.warana.service.CompanyTechnologyService;
-import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparotor;
+import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparator;
 import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Skills.SkillAnalyzer;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import com.cse.warana.utility.infoHolders.Technology;
@@ -79,7 +79,7 @@ public class CompanyDocParserServiceImpl implements CompanyDocParserService {
 
     @Override
     public void extractDoc(String root, String companyName) {
-        AlgorithmComparotor algorithmComparotor = new AlgorithmComparotor();
+        AlgorithmComparator algorithmComparotor = new AlgorithmComparator();
         SkillAnalyzer skillAnalyzer = new SkillAnalyzer();
 
         Config.initialize(root);
@@ -130,9 +130,9 @@ public class CompanyDocParserServiceImpl implements CompanyDocParserService {
         Map<String, Long> technologies = getTechnologyIdDao.getTechnologyIdMap(t);
         Set<String> keys = ts.keySet();
         for (String i: keys){
-            if (technologies.containsKey(i)){
+            if (technologies.containsKey(i.toLowerCase().trim())){
                 companyTechnology = new CompanyTechnology();
-                companyTechnology.setTechnology(technologies.get(i).intValue());
+                companyTechnology.setTechnology(technologies.get(i.toLowerCase().trim()).longValue());
                 companyTechnology.setScore(ts.get(i));
                 list.add(companyTechnology);
             }

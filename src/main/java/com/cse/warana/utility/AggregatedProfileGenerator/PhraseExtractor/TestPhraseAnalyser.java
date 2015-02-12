@@ -19,7 +19,7 @@ public class TestPhraseAnalyser {
 //        ApplyAlgorithms(3, true);
 //
 
-        AlgorithmComparotor comparotor = new AlgorithmComparotor();
+        AlgorithmComparator comparotor = new AlgorithmComparator();
 //        comparotor.ExtractAbbreviationsBatch(Config.skillsPath,Config.abbreviationsSkillsPath);
 //        Config.weightingIteration=20;
         GenerateStats(true, true, true, true, true, true, true, true);
@@ -148,7 +148,7 @@ public class TestPhraseAnalyser {
         for (File f : file.listFiles()) {
             ph.RecognizeTerms(Config.skillsPath + "/" + f.getName(), Config.skillsOutputPath + "/" + f.getName());
         }
-        AlgorithmComparotor comparotor = new AlgorithmComparotor();
+        AlgorithmComparator comparotor = new AlgorithmComparator();
         comparotor.AggregateAllSkills();
 
     }
@@ -173,7 +173,7 @@ public class TestPhraseAnalyser {
 //            ph.RecognizeTerms(Config.skillsPath+"/"+f.getName(),Config.skillsOutputPath+"/"+f.getName());
 //        }
 
-        AlgorithmComparotor comparotor = new AlgorithmComparotor();
+        AlgorithmComparator comparotor = new AlgorithmComparator();
 //        comparotor.ExtractTermsBatch(Config.skillsPath,Config.skillsOutputPath);
 //        comparotor.ExtractAbbreviationsBatch(Config.skillsPath,Config.abbreviationsSkillsPath);
         comparotor.Compare(Config.skillsOutputPath, Config.normalizedSkillsPath, Config.aggregatedSkillsPath, Config.abbreviationsSkillsPath);
@@ -270,7 +270,7 @@ public class TestPhraseAnalyser {
     private static double CompareMaps(HashMap<String, Double> goldenMap, HashMap<String, Double> algoMap, HashMap<String, String> abbrMap, HashMap<String, Double> stats, HashMap<String, Double> allDocs) {
         int i = 0;
         double score = 0;
-        AlgorithmComparotor comparotor = new AlgorithmComparotor();
+        AlgorithmComparator comparotor = new AlgorithmComparator();
 
         if (Config.removeDuplications) {
             FileManager fileManager = new FileManager();

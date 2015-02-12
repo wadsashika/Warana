@@ -1,6 +1,6 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Skills;
 
-import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparotor;
+import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparator;
 import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.PhraseAnalyzer;
 import com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Google;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
@@ -15,7 +15,6 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.Iterator;
 
 /**
@@ -77,7 +76,7 @@ public class Wikipedia {
                     if (text.length() > 10)
                         writeFile(searchTerm, i + "", text);
                 }
-                AlgorithmComparotor comparotor = new AlgorithmComparotor();
+                AlgorithmComparator comparotor = new AlgorithmComparator();
                 comparotor.ExtractTerms(Config.skillsPath + File.separator + searchTerm, Config.skillsOutputPath + File.separator + searchTerm);
                 comparotor.ExtractAbbreviations(Config.skillsPath + File.separator + searchTerm, Config.abbreviationsSkillsPath + File.separator + searchTerm);
                 comparotor.NormalizeFiles(Config.skillsOutputPath + File.separator + searchTerm, Config.normalizedSkillsPath);

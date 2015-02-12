@@ -10,11 +10,11 @@ import java.util.*;
 /**
  * Created by Thilina on 11/14/2014.
  */
-public class AlgorithmComparotor {
+public class AlgorithmComparator {
     private FileManager fileManager;
     private PhraseAnalyzer phraseAnalyzer;
 
-    public AlgorithmComparotor() {
+    public AlgorithmComparator() {
 
         fileManager = new FileManager();
         phraseAnalyzer = new PhraseAnalyzer();
@@ -22,7 +22,7 @@ public class AlgorithmComparotor {
 
     public static void main(String[] args) {
         Config.initialize("C:\\Warana");
-        AlgorithmComparotor comparotor = new AlgorithmComparotor();
+        AlgorithmComparator comparotor = new AlgorithmComparator();
 //        comparotor.ExtractTermsBatch(Config.skillsPath,Config.skillsOutputPath);
         comparotor.ExtractTermsBatch(Config.profilesPath, Config.profilesOutputPath);
 //        comparotor.Compare(Config.skillsOutputPath,Config.normalizedSkillsPath,Config.aggregatedSkillsPath, Config.abbreviationsSkillsPath);

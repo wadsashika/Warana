@@ -11,7 +11,7 @@ public class Technology {
     private List<String> descriptiveTerms;
 
     public String getName() {
-        return name;
+        return name.trim();
     }
 
     public void setName(String name) {

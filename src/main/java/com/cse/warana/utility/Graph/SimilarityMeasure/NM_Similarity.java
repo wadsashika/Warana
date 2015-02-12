@@ -156,7 +156,9 @@ public class NM_Similarity {
         for (int i = 0; i < graphSizeA; i++) {
             for (int j = 0; j < graphSizeB; j++) {
                 nodeSimilarity[i][j] = Double.valueOf(f.format(nodeSimilarity[i][j]));
+                System.out.print(nodeSimilarity[i][j] + "    ");
             }
+            System.out.println();
         }
     }
 
@@ -416,9 +418,6 @@ public class NM_Similarity {
             }
         }
 
-        if (changedEdgeCount == 0) {
-            changedEdgeCount = 1;
-        }
         return changedEdgeCount;
     }
 
@@ -431,7 +430,7 @@ public class NM_Similarity {
 
         float changedEdgeCount = getChangedEdgeCount();
 
-        finalGraphSimilarity = Double.valueOf(f.format(finalGraphSimilarity * ((graphSizeA-changedEdgeCount) / graphSizeA) * 100));
+        finalGraphSimilarity = Double.valueOf(f.format(finalGraphSimilarity * ((graphSizeA - changedEdgeCount) / graphSizeA) * 100));
         return finalGraphSimilarity;
     }
 

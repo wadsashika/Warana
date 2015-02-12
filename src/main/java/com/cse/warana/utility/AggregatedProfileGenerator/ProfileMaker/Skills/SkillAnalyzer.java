@@ -1,6 +1,6 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.Skills;
 
-import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparotor;
+import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparator;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.FileManager;
 
@@ -32,7 +32,7 @@ public class SkillAnalyzer {
         File skillDocs = new File(aggregateSkillsPath);
         String[] skillNames = skillDocs.list();
         double score = 0;
-        AlgorithmComparotor comparotor = new AlgorithmComparotor();
+        AlgorithmComparator comparotor = new AlgorithmComparator();
         comparotor.Compare(Config.profilesOutputPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath, Config.abbreviationsProfilesPath);
         File profileRoot = new File(Config.aggregatedProfilesPath);
         for (File file : profileRoot.listFiles()) {
@@ -106,7 +106,7 @@ public class SkillAnalyzer {
         File skillDocs = new File(aggregateSkillsPath);
         String[] skillNames = skillDocs.list();
         double score = 0;
-        AlgorithmComparotor comparotor = new AlgorithmComparotor();
+        AlgorithmComparator comparotor = new AlgorithmComparator();
         comparotor.Compare(Config.profilesPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath, Config.abbreviationsProfilesPath);
 //        File profileTermEx=new File("D:\\Projects\\Repositories\\Final Year Project\\SigmaCV finder 2\\src\\com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker\\Skills\\Aggregated\\UserDocs\\Thilina Premasiri_out.csv");
         File profileRoot = new File(Config.aggregatedSkillsPath);

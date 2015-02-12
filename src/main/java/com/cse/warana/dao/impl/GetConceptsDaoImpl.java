@@ -64,13 +64,13 @@ public class GetConceptsDaoImpl extends BaseJDBCDaoImpl implements GetConceptsDa
         List<CompanyTechnologyViewDTO> returnDtoList = null;
         StringBuilder query = new StringBuilder("");
         query.append("SELECT technology, technology_id, score\n");
-        query.append("FROM company_technology, technology\n");
-        query.append("WHERE company_technology.technology_id=technology.id");
+        query.append("FROM company_technology ct, technology \n");
+        query.append("WHERE ct.technology_id=technology.id");
 
         RowMapper<CompanyTechnologyViewDTO> mapper = new RowMapper<CompanyTechnologyViewDTO>() {
             @Override
             public CompanyTechnologyViewDTO mapRow(ResultSet resultSet, int i) throws SQLException {
-                CompanyTechnologyViewDTO companyTechnologyViewDTO= new CompanyTechnologyViewDTO();
+                CompanyTechnologyViewDTO companyTechnologyViewDTO = new CompanyTechnologyViewDTO();
 
                 companyTechnologyViewDTO.setTechnologyID(resultSet.getInt("technology_id"));
                 companyTechnologyViewDTO.setScore(resultSet.getFloat("score"));

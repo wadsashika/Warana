@@ -111,20 +111,26 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
         OnlineInfoExtractor onlineInfoExtractor = new OnlineInfoExtractor(candidate, rootPath);
         if (!candidate.getTechnologiesList().isEmpty()) {
             Map<String, Long> technologyIdMap = technologyIdDao.getTechnologyIdMap(candidate.getTechnologiesList());
-
-
-            //TODO logic to remove redundant technologies
+       
             ArrayList<Technology> techList = candidate.getTechnologiesList();
+            ArrayList<Technology> modifiedTechList = new ArrayList<>();
+            boolean[] removed = new boolean[techList.size()];
+
             for (String key : technologyIdMap.keySet()) {
                 for (int i = 0; i < techList.size(); i++) {
-                    if (key.equals(techList.get(i).getName())) {
-                        techList.remove(i);
-                        break;
+                    if (key.equals(techList.get(i).getName()) && !removed[i]) {
+                        removed[i] = true;
                     }
                 }
-
-                technologyService.storeTechnologies(candidate.getTechnologiesList());
             }
+
+            for (int i = 0; i < removed.length; i++) {
+                if (!removed[i]) {
+                    modifiedTechList.add(techList.get(i));
+                }
+            }
+
+            technologyService.storeTechnologies(modifiedTechList);
         }
     }
 

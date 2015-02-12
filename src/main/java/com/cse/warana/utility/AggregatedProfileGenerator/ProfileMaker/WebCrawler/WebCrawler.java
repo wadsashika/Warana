@@ -1,10 +1,9 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.ProfileMaker.WebCrawler;
 
-import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparotor;
-import com.cse.warana.utility.infoExtractors.OnlineInfoExtractor;
-import com.cse.warana.utility.infoHolders.Profile;
+import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparator;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.FileManager;
+import com.cse.warana.utility.infoHolders.Profile;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
@@ -12,7 +11,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxProfile;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -27,10 +25,6 @@ public class WebCrawler {
     private String baseUrl;
     FileManager fileManager;
 
-    public static void main(String[] args) {
-        WebCrawler webCrawler = new WebCrawler();
-        webCrawler.ExtractOnlineDocuments("http://www.insightforfuture.blogspot.com/");
-    }
 
     public WebCrawler(Profile profile) {
 
@@ -102,6 +96,8 @@ public class WebCrawler {
             }
             driver.quit();
             ExtractKeyterms();
+        } else {
+            driver.quit();
         }
 
 //        if(profile.getBlogUrl().length()==0) {
@@ -135,7 +131,7 @@ public class WebCrawler {
     }
 
     private void ExtractKeyterms() {
-        AlgorithmComparotor comparotor = new AlgorithmComparotor();
+        AlgorithmComparator comparotor = new AlgorithmComparator();
         comparotor.ExtractTerms(Config.profilesPath + File.separator + profile.getId(), Config.profilesOutputPath + File.separator + profile.getId());
         comparotor.ExtractAbbreviations(Config.profilesPath + File.separator + profile.getId(), Config.abbreviationsProfilesPath + File.separator + profile.getId());
         comparotor.NormalizeFiles(Config.profilesOutputPath + File.separator + profile.getId(), Config.normalizedProfilesPath);

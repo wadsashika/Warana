@@ -16,7 +16,7 @@ public class CompanyTechnology implements Serializable {
     private int id;
 
     @Column(name = "technology_id")
-    private int technology_id;
+    private long technology_id;
 
     @Column(name = "score")
     private float score;
@@ -29,11 +29,11 @@ public class CompanyTechnology implements Serializable {
         this.id = id;
     }
 
-    public void setTechnology(int technology_id) {
+    public void setTechnology(long technology_id) {
         this.technology_id = technology_id;
     }
 
-    public int getTechnology() {
+    public long getTechnology() {
         return technology_id;
     }
 

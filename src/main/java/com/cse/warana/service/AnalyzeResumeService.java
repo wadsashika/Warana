@@ -12,4 +12,6 @@ public interface AnalyzeResumeService {
     public List<ResumesToAnalyseDto> getResumesToAnalyze();
 
     public boolean analyzeSelectedListOfCandidates(String[] idList);
+
+    public boolean calculateCandidateTechnologyScore(String[] idList);
 }

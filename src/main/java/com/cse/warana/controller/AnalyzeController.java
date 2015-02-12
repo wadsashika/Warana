@@ -67,6 +67,7 @@ public class AnalyzeController {
     @RequestMapping(value = "analyze/analyzelist", method = RequestMethod.POST)
     @ResponseBody
     public boolean analyzeSelectedResumes(@RequestBody String[] idList) {
+        analyzeResumeService.calculateCandidateTechnologyScore(idList);
         analyzeResumeService.analyzeSelectedListOfCandidates(idList);
         return true;
     }

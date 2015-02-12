@@ -1,6 +1,6 @@
 package com.cse.warana.utility.AggregatedProfileGenerator.TechnolohySimilarity;
 
-import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparotor;
+import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparator;
 import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.ExtractAbbrev;
 import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.PhraseAnalyzer;
 import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.TestPhraseAnalyser;
@@ -18,7 +18,7 @@ public class Extractor {
     private Wikipedia wiki;
     private PhraseAnalyzer pa;
     private FileManager fileManager;
-    private AlgorithmComparotor ac;
+    private AlgorithmComparator ac;
     private ExtractAbbrev eabb;
     private TestPhraseAnalyser tac;
 
@@ -26,7 +26,7 @@ public class Extractor {
         wiki = new Wikipedia();
         pa = new PhraseAnalyzer();
         fileManager = new FileManager();
-        ac = new AlgorithmComparotor();
+        ac = new AlgorithmComparator();
         eabb = new ExtractAbbrev();
         tac = new TestPhraseAnalyser();
     }
@@ -80,7 +80,7 @@ public class Extractor {
     private double CompareMaps(HashMap<String, Double> goldenMap, HashMap<String, Double> algoMap, HashMap<String, String> abbrMap, HashMap<String, Double> stats, HashMap<String, Double> allDocs) {
         int i = 0;
         double score = 0;
-        AlgorithmComparotor comparotor = new AlgorithmComparotor();
+        AlgorithmComparator comparotor = new AlgorithmComparator();
 
         if (Config.removeDuplications) {
             FileManager fileManager = new FileManager();

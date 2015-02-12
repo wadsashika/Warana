@@ -1,7 +1,7 @@
 package com.cse.warana.service.impl;
 
 import com.cse.warana.service.SkillAnalyzerService;
-import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparotor;
+import com.cse.warana.utility.AggregatedProfileGenerator.PhraseExtractor.AlgorithmComparator;
 import com.cse.warana.utility.AggregatedProfileGenerator.utils.Config;
 
 /**
@@ -12,7 +12,7 @@ public class SkillAnalyzerServiceImpl implements SkillAnalyzerService {
     @Override
     public void extractSkillKeyterms() {
 
-        AlgorithmComparotor comparotor = new AlgorithmComparotor();
+        AlgorithmComparator comparotor = new AlgorithmComparator();
         comparotor.ExtractTermsBatch(Config.skillsPath, Config.skillsOutputPath);
         comparotor.AggregateAllSkills();
         comparotor.Compare(Config.skillsOutputPath,Config.normalizedSkillsPath,Config.aggregatedSkillsPath, Config.abbreviationsSkillsPath);
@@ -21,7 +21,7 @@ public class SkillAnalyzerServiceImpl implements SkillAnalyzerService {
     @Override
     public void extractCandidateKeyterms() {
 
-        AlgorithmComparotor comparotor = new AlgorithmComparotor();
+        AlgorithmComparator comparotor = new AlgorithmComparator();
         comparotor.ExtractTermsBatch(Config.profilesPath, Config.profilesOutputPath);
         comparotor.Compare(Config.profilesOutputPath, Config.normalizedProfilesPath, Config.aggregatedProfilesPath,Config.abbreviationsProfilesPath);
     }

@@ -34,9 +34,14 @@ public class  OnlineInfoExtractor {
 //        this.candidate = candidate;
         this.name=candidate.getProfile().getName();
         this.phraseAnalyzer = new PhraseAnalyzer();
+
         LinkedInExtractor linkedIn = new LinkedInExtractor();
+
         GoogleScholarExtractor gscholar = new GoogleScholarExtractor();
-        GitHubExtractor github = new GitHubExtractor("021cb28d72ca970bcbec03d2b7f9e70375c5b00b");
+
+//        GitHubExtractor github = new GitHubExtractor("021cb28d72ca970bcbec03d2b7f9e70375c5b00b");
+        GitHubExtractor github = new GitHubExtractor("ac175f76262521924ce5e33c9cfd0e7ef79ccffa");
+
         similarityCalculator = new Calculate();
 
         linkedIn.ExtractInformation( candidate);

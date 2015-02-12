@@ -74,7 +74,7 @@ public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechno
                 techList.append(",");
             }
         }
-        System.out.println(techList.toString());
+        System.out.println("tech list---------"+techList.toString());
         query.append("SELECT id, technology \n");
         query.append("FROM technology \n");
         query.append("WHERE technology in (");
@@ -101,8 +101,8 @@ public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechno
         Map<String, Long> techIdMap = new HashMap<String, Long>();
 
         for (String techId : techIds) {
-            String[] idAndName = techId.trim().split(",");
-            techIdMap.put(idAndName[1], Long.parseLong(idAndName[0]));
+            String[] idAndName = techId.split(",");
+            techIdMap.put(idAndName[1].trim(), Long.parseLong(idAndName[0]));
         }
 
 

@@ -40,8 +40,11 @@ public class LinkedInExtractor {
             link = g.FindOnLinkedIn(candidateProfile.getName());
         } else {
 
-            if (!link.contains("http"))
+            if (!link.contains("http")){
                 link = "https://" + link;
+            } else if(link.contains("http") && !link.contains("https")){
+                link.replace("http","https");
+            }
         }
 
         if (link.equals("")) {
@@ -72,7 +75,7 @@ public class LinkedInExtractor {
         System.out.println("pic url " + linkedInProfile.getPic_url());
 //        name
         Element nameDiv = doc != null ? doc.select("span.full-name").first() : null;
-        System.out.println(nameDiv.text());
+//        System.out.println(nameDiv.text());
         linkedInProfile.setName(nameDiv.text());
         name = nameDiv.text();
 //        profile.name = nameDiv.text();
@@ -109,8 +112,9 @@ public class LinkedInExtractor {
 
 //        publications
         Publication pb;
-        Elements pub = doc != null ? doc.select("div[class=background-publications] > div[class=editable-item section-item] > div > hgroup > h4 ") : null;
-        Elements pubSummary = doc != null ? doc.select("div[class=editable-item section-item] > div > p") : null;
+        Elements pub = doc != null ? doc.select("div[id *= publication-]>div > hgroup > h4 ") : null;
+        Elements pubSummary = doc != null ? doc.select("div[id *= publication-]>div > p") : null;
+
         publications = new String[pub.size()];
         for (int i = 0; i < pub.size(); i++) {
             System.out.println(pub.get(i).text());
