@@ -428,7 +428,7 @@ WARANA.module.viewStat = function () {
                     name: 'Proficiency',
                     data: data,
                     dataLabels: {
-                        enabled: true,
+                        enabled: false,
                         rotation: 0,
                         color: '#FFFFFF',
                         align: 'right',
