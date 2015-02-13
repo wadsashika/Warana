@@ -460,7 +460,6 @@ WARANA.module.viewStat = function () {
         };
 
         var successFn = function (data) {
-            alert(data);
             if (data.success) {
 //                console.log(data.result);
                 var profile = $.evalJSON(data.result.profile);
@@ -551,7 +550,6 @@ WARANA.module.viewStat = function () {
 
                 var grade = document.createElement('p');
                 grade.className = "prof-p";
-                alert(education[a]);
                 specialization.innerHTML = (education[a].specialization != null) ? education[a].specialization : "";
                 grade.innerHTML = (education[a].grade != null) ? education[a].grade : "";
 
