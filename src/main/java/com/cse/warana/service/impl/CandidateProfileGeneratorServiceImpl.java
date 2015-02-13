@@ -112,6 +112,7 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
         if (!candidate.getTechnologiesList().isEmpty()) {
             Map<String, Long> technologyIdMap = technologyIdDao.getTechnologyIdMap(candidate.getTechnologiesList());
 
+
             //TODO logic to remove redundant technologies
             ArrayList<Technology> techList = candidate.getTechnologiesList();
             for (String key : technologyIdMap.keySet()) {
@@ -121,9 +122,9 @@ public class CandidateProfileGeneratorServiceImpl implements CandidateProfileGen
                         break;
                     }
                 }
-            }
 
-            technologyService.storeTechnologies(candidate.getTechnologiesList());
+                technologyService.storeTechnologies(candidate.getTechnologiesList());
+            }
         }
     }
 
