@@ -49,10 +49,14 @@
                                     <div id="advancedSearch" class="panel-collapse collapse"
                                          aria-labelledby="headingOne">
                                         <div>
-                                            <label class="col-xs-1">Skills </label>
-                                            <input id="tagged-search-field" type="text" data-provide="typeahead"/>
-                                            <button type="submit" class="btn btn-primary" id="search-submit">Submit
-                                            </button>
+                                            <div class="col-xs-12 col-sm-1">
+                                                <label>Skills </label></div>
+                                            <div class="col-xs-12 col-sm-10">
+                                                <input id="tagged-search-field" type="text" data-provide="typeahead"/>
+                                                <button type="submit" class="btn btn-primary"
+                                                        id="search-submit">Submit
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

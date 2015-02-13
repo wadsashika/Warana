@@ -36,7 +36,7 @@ public class LinkedInExtractor {
 
         Google g = new Google();
         link = candidateProfile.getLinkedIn();
-        if (link.length() == 0) {
+        if (link.length() == 0 || link.contains("pub")) {
             link = g.FindOnLinkedIn(candidateProfile.getName());
         } else {
 
@@ -87,10 +87,14 @@ public class LinkedInExtractor {
         title = titleP.text();
 //        profile.title = titleP.text();
         linkedInProfile.setTitle(titleP.text());
-
+        if (candidateProfile.getName().length() < 2){
+            candidateProfile.setName(linkedInProfile.getName());
+        }
 
         if (candidateProfile.equals(linkedInProfile)) {              //verification of profile
             candidateProfile.copy(linkedInProfile);
+            candidateProfile.setName(linkedInProfile.getName());
+            System.out.println("-------------EQUALS-----------");
         } else {
             return candidateProfile;
         }

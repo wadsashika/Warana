@@ -5,24 +5,20 @@ import com.cse.warana.dto.ResponseDTO;
 import com.cse.warana.dto.ResumesToAnalyseDto;
 import com.cse.warana.service.AnalyzeResumeService;
 import com.cse.warana.service.AnalyzedResultsService;
-import com.cse.warana.service.impl.AnalyzeResumeServiceImpl;
-import com.cse.warana.utility.infoHolders.Candidate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by Nadeeshaan on 11/15/2014.
- */
 
 @Controller
 public class AnalyzeController {
@@ -74,7 +70,7 @@ public class AnalyzeController {
 
     @RequestMapping(value = "/analyze/profile", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseDTO<Map<String, String>> deleteResume(@RequestBody (required = false) long id) {
+    public ResponseDTO<Map<String, String>> deleteResume(@RequestBody(required = false) long id) {
         LOG.info("Retrieving candidate profile information");
 
         ResponseDTO<Map<String, String>> response = new ResponseDTO<Map<String, String>>();

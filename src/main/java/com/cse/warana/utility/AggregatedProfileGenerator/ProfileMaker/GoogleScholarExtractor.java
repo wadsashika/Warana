@@ -79,7 +79,7 @@ public class GoogleScholarExtractor {
 //            System.out.println("---------------------------------\n");
             }
 //        return profile;
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return true;
@@ -97,7 +97,7 @@ public class GoogleScholarExtractor {
                 summary = sumDiv.text();
                 System.out.println("Summary ::::::::::::::::::" + sumDiv.text() + "\n");
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return summary;

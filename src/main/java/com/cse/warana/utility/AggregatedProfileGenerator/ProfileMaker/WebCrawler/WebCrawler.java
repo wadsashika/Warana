@@ -139,14 +139,15 @@ public class WebCrawler {
     }
 
 
-    public void ExtractOnlineDocuments(String baseUrl) {
+    public void ExtractOnlineDocuments(String baseUrl) throws InterruptedException {
         driver = downloadPage(baseUrl);
         this.baseUrl = baseUrl;
         GetLinks(driver.getPageSource());
+        Thread.sleep(10000);
     }
 
     public void GetLinks(String source) {
-
+        System.out.println(source);
         HashMap<String, Integer> linkMap = new HashMap<String, Integer>();
         linkMap.put(baseUrl, 0);
 

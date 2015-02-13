@@ -62,13 +62,13 @@ WARANA.module.viewStat = function () {
                     dataTableRow.push(row.name);
                     dataTableRow.push(row.email);
 
-                    if(score_val >= 0 && score_val <= 33){
+                    if(score_val >= 0 && score_val <= 24){
                         dataTableRow.push('<div class="progress progress-striped active "><div class="progress-bar progress-bar-1 progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: '+score_val+'%;"><div id="pbar-val">'+score_val+'%</div></div></div>');
                     }
-                    else if(score_val >= 34 && score_val <= 66){
+                    else if(score_val >= 25 && score_val <= 49){
                         dataTableRow.push('<div class="progress progress-striped active "><div class="progress-bar progress-bar-1 progress-bar-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: '+score_val+'%;"><div id="pbar-val">'+score_val+'%</div></div></div>');
                     }
-                    else if(score_val >= 67 && score_val <= 100){
+                    else if(score_val >= 50 && score_val <= 100){
                         dataTableRow.push('<div class="progress progress-striped active "><div class="progress-bar progress-bar-1 progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: '+score_val+'%;"><div id="pbar-val">'+score_val+'%</div></div></div>');
                     }
 
@@ -150,13 +150,13 @@ WARANA.module.viewStat = function () {
                     dataTableRow.push(row.email);
                     var score_val = row.score;
 
-                    if(score_val >= 0 && score_val <= 33){
+                    if(score_val >= 0 && score_val <= 24){
                         dataTableRow.push('<div class="progress progress-striped active "><div class="progress-bar progress-bar-1 progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: '+score_val+'%;"><div id="pbar-val">'+score_val+'%</div></div></div>');
                     }
-                    else if(score_val >= 34 && score_val <= 66){
+                    else if(score_val >= 25 && score_val <= 49){
                         dataTableRow.push('<div class="progress progress-striped active "><div class="progress-bar progress-bar-1 progress-bar-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: '+score_val+'%;"><div id="pbar-val">'+score_val+'%</div></div></div>');
                     }
-                    else if(score_val >= 67 && score_val <= 100){
+                    else if(score_val >= 50 && score_val <= 100){
                         dataTableRow.push('<div class="progress progress-striped active "><div class="progress-bar progress-bar-1 progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: '+score_val+'%;"><div id="pbar-val">'+score_val+'%</div></div></div>');
                     }
 
@@ -501,12 +501,12 @@ WARANA.module.viewStat = function () {
             nameDd.innerHTML = (profile.name != null) ? profile.name : "";
             profileDl.appendChild(nameDd);
 
-            var addressDt = document.createElement('dt');
+           /* var addressDt = document.createElement('dt');
             addressDt.innerHTML = "Address";
             profileDl.appendChild(addressDt);
             var addressDd = document.createElement('dd');
             addressDd.innerHTML = (profile.address != null) ? profile.address : "";
-            profileDl.appendChild(addressDd);
+            profileDl.appendChild(addressDd);*/
 
             var emailDt = document.createElement('dt');
             emailDt.innerHTML = "Email";
@@ -515,19 +515,19 @@ WARANA.module.viewStat = function () {
             emailDd.innerHTML = (profile.email != null) ? profile.email : "";
             profileDl.appendChild(emailDd);
 
-            var genderDt = document.createElement('dt');
+           /* var genderDt = document.createElement('dt');
             genderDt.innerHTML = "Gender";
             profileDl.appendChild(genderDt);
             var genderDd = document.createElement('dd');
             genderDd.innerHTML = (profile.gender != null) ? profile.gender : "";
-            profileDl.appendChild(genderDd);
+            profileDl.appendChild(genderDd);*/
 
-            var maritalDt = document.createElement('dt');
+            /*var maritalDt = document.createElement('dt');
             maritalDt.innerHTML = "Marital Status";
             profileDl.appendChild(maritalDt);
             var maritalDd = document.createElement('dd');
             maritalDd.innerHTML = (profile.marital_status != null) ? profile.marital_status : "";
-            profileDl.appendChild(maritalDd);
+            profileDl.appendChild(maritalDd);*/
 
             /**
              * Setting the Educations Information tab data

@@ -16,9 +16,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
-/**
- * Created by Nadeeshaan on 11/14/2014.
- */
 @Controller
 public class DashboardController {
     private static final Logger LOG = LoggerFactory.getLogger(DashboardController.class);
@@ -36,7 +33,8 @@ public class DashboardController {
 
     @RequestMapping(value = "/dashboard/getbarchartdata", method = RequestMethod.POST)
     @ResponseBody
-    public String getTechnologyBarchartData(){
+    public String getTechnologyBarchartData() {
+        LOG.info("Get Bar Chart data started");
         String returnJson = "";
         List<CompanyTechnologyViewDTO> companyTechnologyViewDTOs = getConceptsService.getCompanyTechnologyWithScore();
 

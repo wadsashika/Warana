@@ -26,9 +26,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
-/**
- * Created by Anushka on 2015-02-05.
- */
+
 @Controller
 public class AdminPanelController {
     private static final Logger LOG = LoggerFactory.getLogger(ViewStatController.class);
@@ -65,7 +63,6 @@ public class AdminPanelController {
     private GetUploadedDocService getUploadedDocService;
 
 
-
     @RequestMapping(value = "/adminpanel", method = RequestMethod.GET)
     public ModelAndView viewAdminPanel() {
 
@@ -93,6 +90,8 @@ public class AdminPanelController {
     public
     @ResponseBody
     String uploadFilesToServer(MultipartHttpServletRequest request) {
+        LOG.info("Upload Files Started");
+
         ArrayList<String> fileNamesList;
         String baseUploadDirectory = root + uploadsPath;
         fileNamesList = new ArrayList<>();
@@ -139,10 +138,11 @@ public class AdminPanelController {
     @RequestMapping(value = "/adminpanel/processDocuments", method = RequestMethod.POST)
     @ResponseBody
     public String getTechnologyList() throws IOException {
+        LOG.info("Process Document Started");
         Gson gson = new GsonBuilder().serializeNulls().create();
         String baseUploadDirectory = root + uploadsPath;
-        List<String> fileNamesList= getUploadedDocService.getUploadedDocList();
-        for(String filePath: fileNamesList){
+        List<String> fileNamesList = getUploadedDocService.getUploadedDocList();
+        for (String filePath : fileNamesList) {
             companyDocParserService.readCompanyDoc(new File(baseUploadDirectory + File.separator + filePath), baseUploadDirectory + uploadsTextPath);
         }
         companyDocParserService.extractDoc(root, companyName);

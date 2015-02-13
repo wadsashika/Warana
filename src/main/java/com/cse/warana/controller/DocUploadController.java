@@ -22,9 +22,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
-/**
- * Created by Nadeeshaan on 11/21/2014.
- */
 
 @Controller
 public class DocUploadController {
@@ -73,10 +70,10 @@ public class DocUploadController {
             multipartFile = request.getFile(itr.next());
             filePath = multipartFile.getOriginalFilename();
             try {
-                multipartFile.transferTo(new File(baseUploadDirectory+ File.separator + filePath));
+                multipartFile.transferTo(new File(baseUploadDirectory + File.separator + filePath));
                 fileNamesList.add(filePath);
             } catch (IOException e) {
-                e.printStackTrace();
+                LOG.error("File access error" + e);
                 missedFiles.add(filePath);
                 success = false;
                 continue;

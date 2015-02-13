@@ -145,7 +145,7 @@ public class Profile {
         return true;
     }
     public void copy(Profile p){
-        if (name.length()==0){
+        if (name.length()==0 || name.equals(" ")){
             name= p.getName();
         }
         if (email.length()==0){
