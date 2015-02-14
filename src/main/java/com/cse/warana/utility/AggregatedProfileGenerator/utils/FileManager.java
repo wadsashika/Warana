@@ -310,6 +310,7 @@ public class FileManager {
     public void WriteCandidate(Candidate candidate) {
         HashMap<String,String> candMap=new HashMap<String,String>();
         candMap.put("profile",candidate.toString());
+        candMap.put("profile2",candidate.toString());
         for (Map.Entry<String, String> entry : candMap.entrySet()) {
             WriteFile(Config.profilesPath + "/" + candidate.getProfile().getId(),entry );
         }

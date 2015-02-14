@@ -57,8 +57,6 @@ public class  OnlineInfoExtractor {
 
 //        Display();
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-//        System.out.println(toString());
-//        writeFile();
-//        ExtractPhrases();
+
     }
 }
