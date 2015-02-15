@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Welcome to Warana</title>
+    <link rel="icon" type="image/x-icon" href='<c:url value="/images/favcon.ico" />'>
 
     <%--common css files--%>
     <link href='<c:url value="/css/bootstrap.css" />' rel="stylesheet" type="text/css"/>

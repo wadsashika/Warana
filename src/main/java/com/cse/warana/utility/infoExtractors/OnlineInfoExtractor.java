@@ -47,10 +47,10 @@ public class  OnlineInfoExtractor {
         linkedIn.ExtractInformation( candidate);
         gscholar.Extract(candidate);
         github.Extract(candidate);
+        new FileManager().WriteCandidate(candidate);
         WebCrawler webCrawler=new WebCrawler(candidate.getProfile());
         webCrawler.ExtractOnlineDocuments();
 
-        new FileManager().WriteCandidate(candidate);
         if (pic_url.equalsIgnoreCase("")) {
             pic_url = "http://ryonaitis.files.wordpress.com/2012/03/images.jpg";
         }

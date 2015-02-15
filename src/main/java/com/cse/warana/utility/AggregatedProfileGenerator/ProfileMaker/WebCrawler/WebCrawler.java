@@ -95,11 +95,10 @@ public class WebCrawler {
                 ExtractWebArticles(url);
             }
             driver.quit();
-            ExtractKeyterms();
         } else {
             driver.quit();
         }
-
+        ExtractKeyterms();
 //        if(profile.getBlogUrl().length()==0) {
 //
 //            System.out.println("blog========================================================"+profile.getBlogUrl());

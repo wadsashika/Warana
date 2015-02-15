@@ -9,6 +9,7 @@ import javax.ejb.TransactionAttribute;
 import javax.ejb.TransactionAttributeType;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -74,7 +75,7 @@ public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechno
                 techList.append(",");
             }
         }
-        System.out.println("tech list---------"+techList.toString());
+        System.out.println("tech list---------" + techList.toString());
         query.append("SELECT id, technology \n");
         query.append("FROM technology \n");
         query.append("WHERE technology in (");
@@ -89,10 +90,12 @@ public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechno
             }
         };
 
-        List<String> techIds = null;
+        List<String> techIds = Collections.emptyList();
 
         try {
-            techIds = getNamedParameterJdbcTemplate().query(query.toString(), mapper);
+            if (technologies.size() > 0) {
+                techIds = getNamedParameterJdbcTemplate().query(query.toString(), mapper);
+            }
             System.out.println(techIds.size());
         } catch (NullPointerException e) {
             System.out.println("Null Pointer Exception");
@@ -121,7 +124,7 @@ public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechno
         query.append("FROM candidate_technology ct \n");
         query.append("INNER JOIN company_technology comt ON ct.technology_id = comt.technology_id \n");
         query.append(") merged \n");
-        query.append("WHERE merged.candidate_id = '" + candidateId+"'");
+        query.append("WHERE merged.candidate_id = '" + candidateId + "'");
 
         RowMapper<String> mapper = new RowMapper<String>() {
             @Override
@@ -150,7 +153,7 @@ public class GetTechnologyIdDaoImpl extends BaseJDBCDaoImpl implements GetTechno
 
         query.append("SELECT ct.technology_id, ct.percentage \n");
         query.append("FROM candidate_technology ct \n");
-        query.append("WHERE ct.candidate_id = '" + candidateId+"'");
+        query.append("WHERE ct.candidate_id = '" + candidateId + "'");
 
         RowMapper<String> mapper = new RowMapper<String>() {
             @Override
